@@ -1,0 +1,47 @@
+<?xml version="1.0" ?><!DOCTYPE NmLoader SYSTEM "standardX24.dtd">
+<NmLoader>
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>/</csvdomain>
+    <csvtypeId>com.ptc.core.lwc.server.LWCStructEnumAttTemplate</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>ALL</csvprincipal>
+    <csvpermissionList>0</csvpermissionList>
+    <csvstate>ALL</csvstate>
+    <csvallExceptPrincipal></csvallExceptPrincipal>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=CATL]/Default/PDM</csvdomain>
+    <csvtypeId>com.CATLBattery.CATLChangeActivity2</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>ALL</csvprincipal>
+    <csvpermissionList>0/2</csvpermissionList>
+    <csvstate>ALL</csvstate>
+    <csvallExceptPrincipal></csvallExceptPrincipal>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=CATL]/Default/PDM</csvdomain>
+    <csvtypeId>com.CATLBattery.BomReviewPN</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>ALL</csvprincipal>
+    <csvpermissionList>0/2</csvpermissionList>
+    <csvstate>ALL</csvstate>
+    <csvallExceptPrincipal></csvallExceptPrincipal>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=CATL]/Default/PDM</csvdomain>
+    <csvtypeId>com.CATLBattery.PartApplyPN</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>ALL</csvprincipal>
+    <csvpermissionList>0/2</csvpermissionList>
+    <csvstate>ALL</csvstate>
+    <csvallExceptPrincipal></csvallExceptPrincipal>
+</csvAccessRule>
+
+</NmLoader>

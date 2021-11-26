@@ -1,0 +1,520 @@
+<?xml version="1.0" ?><!DOCTYPE NmLoader SYSTEM "standardX24.dtd">
+<NmLoader>
+<csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance" >
+    <csvname>/catl/integration</csvname>
+    <csvcontainerClass></csvcontainerClass>
+    <csvcontainerName></csvcontainerName>
+    <csvorganization></csvorganization>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvuser></csvuser>
+    <csvclientName></csvclientName>
+    <csvvalue>FALSE</csvvalue>
+    <csvlock></csvlock>
+    <csvlockOnly></csvlockOnly>
+</csvPreferenceInstance>
+
+<csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance" >
+    <csvname>/com/ptc/windchill/cadx/CadxStandAloneEnabled</csvname>
+    <csvcontainerClass></csvcontainerClass>
+    <csvcontainerName></csvcontainerName>
+    <csvorganization></csvorganization>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvuser></csvuser>
+    <csvclientName></csvclientName>
+    <csvvalue>TRUE</csvvalue>
+    <csvlock></csvlock>
+    <csvlockOnly></csvlockOnly>
+</csvPreferenceInstance>
+
+<csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance" >
+    <csvname>/com/ptc/windchill/enterprise/search/allSearchTypes</csvname>
+    <csvcontainerClass></csvcontainerClass>
+    <csvcontainerName></csvcontainerName>
+    <csvorganization></csvorganization>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvuser></csvuser>
+    <csvclientName></csvclientName>
+    <csvvalue>WCTYPE|wt.epm.EPMDocument|com.CATLBattery.DefaultEPMDocument,com.ptc.windchill.wp.AbstractWorkPackage,com.ptc.windchill.enterprise.report.Report,wt.query.template.ReportTemplate,com.ptc.wpcfg.doc.VariantSpec,wt.part.WTPart,wt.part.WTProductConfiguration,wt.part.WTProductInstance2,wt.workflow.notebook.ImportedBookmark,wt.pdmlink.PDMLinkProduct,wt.change2.WTVariance,com.ptc.windchill.enterprise.requirement.Specification,wt.inf.library.WTLibrary,wt.dataops.archive.Archive,com.ptc.windchill.ixb.importer.ImportJob,WCTYPE|wt.epm.EPMDocument|com.CATLBattery.DynamicDocument,wt.change2.WTChangeRequest2,wt.change2.WTChangeOrder2,wt.workflow.engine.WfProcess,wt.workflow.work.WorkItem,wt.meeting.Meeting,wt.part.alternaterep.WTPartAlternateRep,wt.workflow.forum.DiscussionPosting,wt.maturity.PromotionNotice,com.ptc.windchill.rd.ReceivedDelivery,wt.vc.baseline.ManagedBaseline,com.ptc.core.managedcollection.ManagedCollectionImpl,wt.doc.WTDocument,wt.change2.WTChangeIssue,com.ptc.windchill.enterprise.requirement.Requirement,com.ptc.windchill.option.model.Option,com.ptc.windchill.option.model.OptionSet,com.ptc.windchill.option.model.Choice,WCTYPE|wt.epm.EPMDocument|com.CATLBattery.DynamicDocument|com.CATLBattery.Note,com.ptc.windchill.option.model.Group,wt.change2.WTChangeActivity2
+    </csvvalue>
+    <csvlock></csvlock>
+    <csvlockOnly></csvlockOnly>
+</csvPreferenceInstance>
+
+<csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance" >
+    <csvname>/com/ptc/windchill/enterprise/search/includeIndexGlobalSearch</csvname>
+    <csvcontainerClass></csvcontainerClass>
+    <csvcontainerName></csvcontainerName>
+    <csvorganization></csvorganization>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvuser></csvuser>
+    <csvclientName></csvclientName>
+    <csvvalue>FALSE</csvvalue>
+    <csvlock></csvlock>
+    <csvlockOnly></csvlockOnly>
+</csvPreferenceInstance>
+
+<csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance" >
+    <csvname>/com/ptc/windchill/enterprise/search/latestVersionDefaultSearch</csvname>
+    <csvcontainerClass></csvcontainerClass>
+    <csvcontainerName></csvcontainerName>
+    <csvorganization></csvorganization>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvuser></csvuser>
+    <csvclientName></csvclientName>
+    <csvvalue>TRUE</csvvalue>
+    <csvlock></csvlock>
+    <csvlockOnly></csvlockOnly>
+</csvPreferenceInstance>
+
+<csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance" >
+    <csvname>/customization/enable</csvname>
+    <csvcontainerClass></csvcontainerClass>
+    <csvcontainerName></csvcontainerName>
+    <csvorganization></csvorganization>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvuser></csvuser>
+    <csvclientName></csvclientName>
+    <csvvalue>TRUE</csvvalue>
+    <csvlock></csvlock>
+    <csvlockOnly></csvlockOnly>
+</csvPreferenceInstance>
+
+<csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance" >
+    <csvname>/partManagement/isShowQuantityAndRefDesForSubstitute</csvname>
+    <csvcontainerClass></csvcontainerClass>
+    <csvcontainerName></csvcontainerName>
+    <csvorganization></csvorganization>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvuser></csvuser>
+    <csvclientName></csvclientName>
+    <csvvalue>TRUE</csvvalue>
+    <csvlock></csvlock>
+    <csvlockOnly></csvlockOnly>
+</csvPreferenceInstance>
+
+<csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance" >
+    <csvname>/pdmlink/relatedDocument/releasedStateList</csvname>
+    <csvcontainerClass></csvcontainerClass>
+    <csvcontainerName></csvcontainerName>
+    <csvorganization></csvorganization>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvuser></csvuser>
+    <csvclientName></csvclientName>
+    <csvvalue></csvvalue>
+    <csvlock></csvlock>
+    <csvlockOnly></csvlockOnly>
+</csvPreferenceInstance>
+
+<csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance" >
+    <csvname>/ProjectLink/hideGuestsGroup</csvname>
+    <csvcontainerClass></csvcontainerClass>
+    <csvcontainerName></csvcontainerName>
+    <csvorganization></csvorganization>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvuser></csvuser>
+    <csvclientName></csvclientName>
+    <csvvalue>TRUE</csvvalue>
+    <csvlock></csvlock>
+    <csvlockOnly></csvlockOnly>
+</csvPreferenceInstance>
+
+<csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance" >
+    <csvname>/wt/admin/displayDomains</csvname>
+    <csvcontainerClass></csvcontainerClass>
+    <csvcontainerName></csvcontainerName>
+    <csvorganization></csvorganization>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvuser></csvuser>
+    <csvclientName></csvclientName>
+    <csvvalue>TRUE</csvvalue>
+    <csvlock></csvlock>
+    <csvlockOnly></csvlockOnly>
+</csvPreferenceInstance>
+
+<csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance" >
+    <csvname>/wt/change2/affectedEndItems/enabled</csvname>
+    <csvcontainerClass></csvcontainerClass>
+    <csvcontainerName></csvcontainerName>
+    <csvorganization></csvorganization>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvuser></csvuser>
+    <csvclientName></csvclientName>
+    <csvvalue>FALSE</csvvalue>
+    <csvlock></csvlock>
+    <csvlockOnly></csvlockOnly>
+</csvPreferenceInstance>
+
+<csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance" >
+    <csvname>/wt/change2/DefaultChangeTaskName</csvname>
+    <csvcontainerClass></csvcontainerClass>
+    <csvcontainerName></csvcontainerName>
+    <csvorganization></csvorganization>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvuser></csvuser>
+    <csvclientName></csvclientName>
+    <csvvalue>变更任务</csvvalue>
+    <csvlock></csvlock>
+    <csvlockOnly></csvlockOnly>
+</csvPreferenceInstance>
+
+<csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance" >
+    <csvname>/wt/change2/InlineEditDispositionInWizard</csvname>
+    <csvcontainerClass></csvcontainerClass>
+    <csvcontainerName></csvcontainerName>
+    <csvorganization></csvorganization>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvuser></csvuser>
+    <csvclientName></csvclientName>
+    <csvvalue>FALSE</csvvalue>
+    <csvlock></csvlock>
+    <csvlockOnly></csvlockOnly>
+</csvPreferenceInstance>
+
+<csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance" >
+    <csvname>/wt/change2/ManyToManyCRCO</csvname>
+    <csvcontainerClass></csvcontainerClass>
+    <csvcontainerName></csvcontainerName>
+    <csvorganization></csvorganization>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvuser></csvuser>
+    <csvclientName></csvclientName>
+    <csvvalue>TRUE</csvvalue>
+    <csvlock></csvlock>
+    <csvlockOnly></csvlockOnly>
+</csvPreferenceInstance>
+
+<csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance" >
+    <csvname>/wt/change2/PropagateChangeItems</csvname>
+    <csvcontainerClass></csvcontainerClass>
+    <csvcontainerName></csvcontainerName>
+    <csvorganization></csvorganization>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvuser></csvuser>
+    <csvclientName></csvclientName>
+    <csvvalue>selected</csvvalue>
+    <csvlock></csvlock>
+    <csvlockOnly></csvlockOnly>
+</csvPreferenceInstance>
+
+<csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance" >
+    <csvname>/wt/maturity/requiredModifyAccessForPromote</csvname>
+    <csvcontainerClass></csvcontainerClass>
+    <csvcontainerName></csvcontainerName>
+    <csvorganization></csvorganization>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvuser></csvuser>
+    <csvclientName></csvclientName>
+    <csvvalue>FALSE</csvvalue>
+    <csvlock></csvlock>
+    <csvlockOnly></csvlockOnly>
+</csvPreferenceInstance>
+
+<csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance" >
+    <csvname>AutoAssociateDropNumberFileExtension</csvname>
+    <csvcontainerClass></csvcontainerClass>
+    <csvcontainerName></csvcontainerName>
+    <csvorganization></csvorganization>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvuser></csvuser>
+    <csvclientName></csvclientName>
+    <csvvalue>TRUE</csvvalue>
+    <csvlock></csvlock>
+    <csvlockOnly></csvlockOnly>
+</csvPreferenceInstance>
+
+<csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance" >
+    <csvname>AutoAssociateOnCheckin</csvname>
+    <csvcontainerClass></csvcontainerClass>
+    <csvcontainerName></csvcontainerName>
+    <csvorganization></csvorganization>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvuser></csvuser>
+    <csvclientName></csvclientName>
+    <csvvalue>TRUE</csvvalue>
+    <csvlock></csvlock>
+    <csvlockOnly></csvlockOnly>
+</csvPreferenceInstance>
+
+<csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance" >
+    <csvname>COLLECT_ITEMS_FROM_CHANGE_ITEM_AFFECTED_ITEMS_COLLECTOR_CATEGORY.CollectItemsFromChangeItem_AffectedItems.ASSOCIATED_WTPART.default.option.id</csvname>
+    <csvcontainerClass></csvcontainerClass>
+    <csvcontainerName></csvcontainerName>
+    <csvorganization></csvorganization>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvuser></csvuser>
+    <csvclientName></csvclientName>
+    <csvvalue>All</csvvalue>
+    <csvlock></csvlock>
+    <csvlockOnly></csvlockOnly>
+</csvPreferenceInstance>
+
+<csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance" >
+    <csvname>com.ptc.windchill.esi.wf.autoLaunch</csvname>
+    <csvcontainerClass></csvcontainerClass>
+    <csvcontainerName></csvcontainerName>
+    <csvorganization></csvorganization>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvuser></csvuser>
+    <csvclientName></csvclientName>
+    <csvvalue>FALSE</csvvalue>
+    <csvlock></csvlock>
+    <csvlockOnly></csvlockOnly>
+</csvPreferenceInstance>
+
+<csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance" >
+    <csvname>CreateAssociateNewWTPart</csvname>
+    <csvcontainerClass></csvcontainerClass>
+    <csvcontainerName></csvcontainerName>
+    <csvorganization></csvorganization>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvuser></csvuser>
+    <csvclientName></csvclientName>
+    <csvvalue>NEVER</csvvalue>
+    <csvlock></csvlock>
+    <csvlockOnly></csvlockOnly>
+</csvPreferenceInstance>
+
+<csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance" >
+    <csvname>EXPOSE_PROCESS_MANAGER_PREF</csvname>
+    <csvcontainerClass></csvcontainerClass>
+    <csvcontainerName></csvcontainerName>
+    <csvorganization></csvorganization>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvuser></csvuser>
+    <csvclientName></csvclientName>
+    <csvvalue>ALL</csvvalue>
+    <csvlock></csvlock>
+    <csvlockOnly></csvlockOnly>
+</csvPreferenceInstance>
+
+<csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance" >
+    <csvname>NamingParameter</csvname>
+    <csvcontainerClass></csvcontainerClass>
+    <csvcontainerName></csvcontainerName>
+    <csvorganization></csvorganization>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvuser></csvuser>
+    <csvclientName></csvclientName>
+    <csvvalue>CAT:DEFINITION</csvvalue>
+    <csvlock></csvlock>
+    <csvlockOnly></csvlockOnly>
+</csvPreferenceInstance>
+
+<csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance" >
+    <csvname>PartFinderCreator</csvname>
+    <csvcontainerClass></csvcontainerClass>
+    <csvcontainerName></csvcontainerName>
+    <csvorganization></csvorganization>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvuser></csvuser>
+    <csvclientName></csvclientName>
+    <csvvalue>com.catl.bom.cad.CatlFinderCreator</csvvalue>
+    <csvlock></csvlock>
+    <csvlockOnly></csvlockOnly>
+</csvPreferenceInstance>
+
+<csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance" >
+    <csvname>pdmSecurity/accessPermissionModify</csvname>
+    <csvcontainerClass></csvcontainerClass>
+    <csvcontainerName></csvcontainerName>
+    <csvorganization></csvorganization>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvuser></csvuser>
+    <csvclientName></csvclientName>
+    <csvvalue>UPDATE</csvvalue>
+    <csvlock></csvlock>
+    <csvlockOnly></csvlockOnly>
+</csvPreferenceInstance>
+
+<csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance" >
+    <csvname>pdmSecurity/accessPermissionModifyContent</csvname>
+    <csvcontainerClass></csvcontainerClass>
+    <csvcontainerName></csvcontainerName>
+    <csvorganization></csvorganization>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvuser></csvuser>
+    <csvclientName></csvclientName>
+    <csvvalue>UPDATE</csvvalue>
+    <csvlock></csvlock>
+    <csvlockOnly></csvlockOnly>
+</csvPreferenceInstance>
+
+<csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance" >
+    <csvname>pdmSecurity/accessPermissionModifyIdentity</csvname>
+    <csvcontainerClass></csvcontainerClass>
+    <csvcontainerName></csvcontainerName>
+    <csvorganization></csvorganization>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvuser></csvuser>
+    <csvclientName></csvclientName>
+    <csvvalue>UPDATE</csvvalue>
+    <csvlock></csvlock>
+    <csvlockOnly></csvlockOnly>
+</csvPreferenceInstance>
+
+<csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance" >
+    <csvname>pdmSecurity/accessPermissionRevise</csvname>
+    <csvcontainerClass></csvcontainerClass>
+    <csvcontainerName></csvcontainerName>
+    <csvorganization></csvorganization>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvuser></csvuser>
+    <csvclientName></csvclientName>
+    <csvvalue>UPDATE</csvvalue>
+    <csvlock></csvlock>
+    <csvlockOnly></csvlockOnly>
+</csvPreferenceInstance>
+
+<csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance" >
+    <csvname>PREFERENCE_PROMOTION_COLLECTOR_CATEGORY.DisplayCollectedObjects</csvname>
+    <csvcontainerClass></csvcontainerClass>
+    <csvcontainerName></csvcontainerName>
+    <csvorganization></csvorganization>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvuser></csvuser>
+    <csvclientName></csvclientName>
+    <csvvalue>StructureAndAssociated</csvvalue>
+    <csvlock></csvlock>
+    <csvlockOnly></csvlockOnly>
+</csvPreferenceInstance>
+
+<csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance" >
+    <csvname>RemoveItemsOnCheckin</csvname>
+    <csvcontainerClass></csvcontainerClass>
+    <csvcontainerName></csvcontainerName>
+    <csvorganization></csvorganization>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvuser></csvuser>
+    <csvclientName></csvclientName>
+    <csvvalue>TRUE</csvvalue>
+    <csvlock></csvlock>
+    <csvlockOnly></csvlockOnly>
+</csvPreferenceInstance>
+
+<csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance" >
+    <csvname>ResolveIncompleteItems</csvname>
+    <csvcontainerClass></csvcontainerClass>
+    <csvcontainerName></csvcontainerName>
+    <csvorganization></csvorganization>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvuser></csvuser>
+    <csvclientName></csvclientName>
+    <csvvalue>TRUE</csvvalue>
+    <csvlock></csvlock>
+    <csvlockOnly></csvlockOnly>
+</csvPreferenceInstance>
+
+<csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance" >
+    <csvname>REVISE_COLLECTOR_CATEGORY.ReviseItems.ASSOCIATED_WTPART.default.option.id</csvname>
+    <csvcontainerClass></csvcontainerClass>
+    <csvcontainerName></csvcontainerName>
+    <csvorganization></csvorganization>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvuser></csvuser>
+    <csvclientName></csvclientName>
+    <csvvalue>None</csvvalue>
+    <csvlock></csvlock>
+    <csvlockOnly></csvlockOnly>
+</csvPreferenceInstance>
+
+<csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance" >
+    <csvname>REVISE_COLLECTOR_CATEGORY.ReviseItems.CADDOC_DEPENDENTS.default.option.id</csvname>
+    <csvcontainerClass></csvcontainerClass>
+    <csvcontainerName></csvcontainerName>
+    <csvorganization></csvorganization>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvuser></csvuser>
+    <csvclientName></csvclientName>
+    <csvvalue>None</csvvalue>
+    <csvlock></csvlock>
+    <csvlockOnly></csvlockOnly>
+</csvPreferenceInstance>
+
+<csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance" >
+    <csvname>security/accessPermissionConfiguration</csvname>
+    <csvcontainerClass></csvcontainerClass>
+    <csvcontainerName></csvcontainerName>
+    <csvorganization></csvorganization>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvuser></csvuser>
+    <csvclientName></csvclientName>
+    <csvvalue></csvvalue>
+    <csvlock></csvlock>
+    <csvlockOnly></csvlockOnly>
+</csvPreferenceInstance>
+
+<csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance" >
+    <csvname>security/accessPermissionModifyIdentity</csvname>
+    <csvcontainerClass></csvcontainerClass>
+    <csvcontainerName></csvcontainerName>
+    <csvorganization></csvorganization>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvuser></csvuser>
+    <csvclientName></csvclientName>
+    <csvvalue>VIEW</csvvalue>
+    <csvlock></csvlock>
+    <csvlockOnly></csvlockOnly>
+</csvPreferenceInstance>
+
+<csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance" >
+    <csvname>security/pdmAccessPermissionConfiguration</csvname>
+    <csvcontainerClass></csvcontainerClass>
+    <csvcontainerName></csvcontainerName>
+    <csvorganization></csvorganization>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvuser></csvuser>
+    <csvclientName></csvclientName>
+    <csvvalue></csvvalue>
+    <csvlock></csvlock>
+    <csvlockOnly></csvlockOnly>
+</csvPreferenceInstance>
+
+<csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance" >
+    <csvname>/wt/maturity/requiredModifyAccessForPromote</csvname>
+    <csvcontainerClass></csvcontainerClass>
+    <csvcontainerName></csvcontainerName>
+    <csvorganization></csvorganization>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvuser></csvuser>
+    <csvclientName></csvclientName>
+    <csvvalue>false</csvvalue>
+    <csvlock></csvlock>
+    <csvlockOnly></csvlockOnly>
+</csvPreferenceInstance>
+<csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance" >
+    <csvname>pdmSecurity/accessPermissionFullControl</csvname>
+    <csvcontainerClass></csvcontainerClass>
+    <csvcontainerName></csvcontainerName>
+    <csvorganization></csvorganization>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvuser></csvuser>
+    <csvclientName></csvclientName>
+    <csvvalue>UPDATE</csvvalue>
+    <csvlock></csvlock>
+    <csvlockOnly></csvlockOnly>
+</csvPreferenceInstance>
+<csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance" >
+    <csvname>pdmSecurity/accessPermissionSetState</csvname>
+    <csvcontainerClass></csvcontainerClass>
+    <csvcontainerName></csvcontainerName>
+    <csvorganization></csvorganization>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvuser></csvuser>
+    <csvclientName></csvclientName>
+    <csvvalue>UPDATE</csvvalue>
+    <csvlock></csvlock>
+    <csvlockOnly></csvlockOnly>
+</csvPreferenceInstance>
+<csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance" >
+    <csvname>pdmSecurity/accessPermissionAdministrative</csvname>
+    <csvcontainerClass></csvcontainerClass>
+    <csvcontainerName></csvcontainerName>
+    <csvorganization></csvorganization>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvuser></csvuser>
+    <csvclientName></csvclientName>
+    <csvvalue>UPDATE</csvvalue>
+    <csvlock></csvlock>
+    <csvlockOnly></csvlockOnly>
+</csvPreferenceInstance>
+</NmLoader>

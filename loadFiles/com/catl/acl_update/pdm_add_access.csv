@@ -1,0 +1,4 @@
+#AccessRule,user,domain,typeId,permission,principal,permissionList,state,allExceptPrincipal
+AccessRule,,[/wt.inf.container.OrgContainer=CATL]/Default/PDM,WCTYPE|wt.change2.WTChangeActivity2|com.CATLBattery.CATLDChangeActivity2,+,ALL,0/1/2,ALL,false
+AccessRule,,[/wt.inf.container.OrgContainer=CATL]/Default/PDM,WCTYPE|wt.maturity.PromotionNotice|com.CATLBattery.DisabledForDesignPN,+,ALL,0/1/2,ALL,false
+AccessRule,,[/wt.inf.container.OrgContainer=CATL]/Default/PDM,WCTYPE|wt.maturity.PromotionNotice|com.CATLBattery.UpgradeFaePartMaturityPN,+,ALL,0/1/2,ALL,false

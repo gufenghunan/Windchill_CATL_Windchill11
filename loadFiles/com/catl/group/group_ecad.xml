@@ -1,0 +1,11 @@
+<?xml version="1.0" ?><!DOCTYPE NmLoader SYSTEM "standardX24.dtd">
+<NmLoader>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>ECAD工程师组</csvgroupName>
+    <csvdescription>ECAD工程师组</csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+</NmLoader>

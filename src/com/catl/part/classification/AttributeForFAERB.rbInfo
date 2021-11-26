@@ -1,0 +1,11 @@
+ResourceInfo.class=wt.tools.resource.EnumResourceInfo
+
+NONE.value=NONE
+NONE.order=10
+NONE.defaultValue=true
+
+CUSTOMIZED.value=CUSTOMIZED
+CUSTOMIZED.order=20
+
+SOURCE.value=SOURCE
+SOURCE.order=30

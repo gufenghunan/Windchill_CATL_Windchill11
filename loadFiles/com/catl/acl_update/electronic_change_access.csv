@@ -1,0 +1,8 @@
+#AccessRule,user,domain,typeId,permission,principal,permissionList,state,allExceptPrincipal
+AccessRule,,[/wt.inf.container.OrgContainer=CATL/wt.inf.library.WTLibrary=电子电气件]/Default/CATLDefault/Common,WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.autocadDrawing,+,teamMembers,0/2/10,ALL,false
+AccessRule,,[/wt.inf.container.OrgContainer=CATL/wt.inf.library.WTLibrary=电子电气件]/Default/CATLDefault/Common,WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.autocadDrawing,+,teamMembers,7,RELEASED,false
+AccessRule,,[/wt.inf.container.OrgContainer=CATL/wt.inf.library.WTLibrary=电子电气件]/Default/CATLDefault/Common,WCTYPE|wt.epm.EPMDocument,!,dms(组已注销),1/11/16,RELEASED,false
+AccessRule,,[/wt.inf.container.OrgContainer=CATL/wt.inf.library.WTLibrary=电子电气件]/Default/CATLDefault/Common,WCTYPE|wt.epm.EPMDocument,+,teamMembers,0/2/10,ALL,false
+AccessRule,,[/wt.inf.container.OrgContainer=CATL/wt.inf.library.WTLibrary=电子电气件]/Default/CATLDefault/Common,WCTYPE|wt.epm.EPMDocument,+,teamMembers,7,RELEASED,false
+AccessRule,,[/wt.inf.container.OrgContainer=CATL/wt.inf.library.WTLibrary=电子电气件]/Default/CATLDefault/Common,WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart,+,teamMembers,0/2/10,ALL,false
+AccessRule,,[/wt.inf.container.OrgContainer=CATL/wt.inf.library.WTLibrary=电子电气件]/Default/CATLDefault/Common,WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart,+,teamMembers,7,RELEASED,false

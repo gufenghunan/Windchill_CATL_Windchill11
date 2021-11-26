@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!DOCTYPE loadFileList SYSTEM "/wt/load/windchillLoad.dtd">
+<loadFileList>
+	
+	<!-- WTDocument 技术条件图文档 Type -->
+	<loadFile filename="com/catl/type/doc_js/WTDocument_js_0.xml" title="WTDocument_js__0.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/type/doc_js/WTDocument_js_1.xml" title="WTDocument_js__1.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/type/doc_js/WTDocument_js_2.xml" title="WTDocument_js__2.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+</loadFileList>

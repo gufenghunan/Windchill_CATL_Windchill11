@@ -1,0 +1,37 @@
+以下是全量部署测试环境时的部署步骤，请遵照执行！谢谢！
+
+1、	从SVN更新，获取最新的代码；
+2、	运行ANT脚本build.xml中的target “make_dist_jar_file”，脚本将自动编译代码，并打包所有代码到build/dist/目录下的catl-full.jar文件中；
+3、	将catl-full.jar复制到服务器的某个目录，如d:\ptc\Windchill下；
+4、	将build.xml复制到%WT_HOME%下，即Windchill目录，并改名为build_catl.xml;
+5、	停止Windchill服务
+6、	在Windchill Shell中运行下面的命令，来部署所有的代码；
+ant -f %WT_HOME%/build_catl.xml -Drelease.package.name=%WT_HOME%\catl-full.jar install_full_delpoy_jar
+ant -f $WT_HOME/build_catl.xml -Drelease.package.name=$WT_HOME/catl-full.jar install_full_delpoy_jar
+7、     在Windchill Shell中运行下面的命令，来部署配置文件；
+xconfmanager -p
+./xconfmanager -p
+8、      在windchill shell下执行windchill com.catl.line.queue.CreateQueue orgadmin 778899
+9、	启动Windchill服务
+10、	如需加载新的流程模板等操作，请参考代码库根目录中loadData.bat进行
+
+
+注意：
+部署过程中，将清空Windchill中以下目录的文件，请务必保证所有的代码均已上传到SVN进行管理，禁止未经管控的代码上服务器
+			<fileset dir="${windchill.root.dir}/codebase/com/catl" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/codebase/com/ptc/xworks" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/codebase/config/actions/xworks" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/codebase/config/custom" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/codebase/config/mvc/xworks" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/codebase/netmarkets/jsp/catl" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/codebase/netmarkets/jsp/xworks" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/db/sql3/com/catl" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/db/sql3/ext/xworks" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/loadFiles/com/catl" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/loadFiles/ext/xworks" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/loadXMLFiles/com/catl" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/tasks/com/catl" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/tasks/xworks" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/wtSafeArea/ptcCurrent" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/wtSafeArea/ptcOrig" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/wtSafeArea/siteMod" includes="**/*" />

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!DOCTYPE listofactions SYSTEM 'actions.dtd'>
+<listofactions>
+   <objecttype name="catlprincipal" resourceBundle="com.catl.principal.resource.CATLPrincipalRB">
+        <action name="removeGroupAndTeam">
+            <command class="com.catl.principal.processors.RemoveGroupAndTeamProcessor" method="removeGroupAndTeam" />
+            <includeFilter name="CATLPrincipalFilter"/>
+        </action>
+   </objecttype>
+</listofactions>

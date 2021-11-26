@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Configuration SYSTEM "xconf.dtd">
+<Configuration targetFile="codebase/com/ptc/core/rule/server/delegate/init/RuleConfigurableTypeAttribute.properties">
+   <!-- windchill properties -->
+   
+   <!--   
+          The format of the entries is as follows:
+          <type classname>=<logical attribute names separated by commas>
+
+          Example
+          wt.part.WTPart=number,name,lifeCycle,lifeCycle.id,teamTemplate,teamTemplate.id,folder.id
+    -->      
+   <Property name="wt.access.agreement.AuthorizationAgreement" default="number,lifeCycle.id,lifeCycle,folder.id"/>
+   <Property name="wt.annotation.StructuredAnnotationSet" default=""/>
+   <Property name="wt.change2.WTAnalysisActivity" default=""/>
+   <Property name="wt.change2.WTChangeIssue" default="number,lifeCycle.id,lifeCycle,teamTemplate,teamTemplate.id,folder.id,organization.id"/>
+   <Property name="wt.change2.WTChangeInvestigation" default=""/>
+   <Property name="wt.change2.WTChangeOrder2" default="number,lifeCycle.id,lifeCycle,teamTemplate,teamTemplate.id,folder.id,organization.id"/>
+   <Property name="wt.change2.WTChangeActivity2" default="number,lifeCycle.id,lifeCycle,teamTemplate,teamTemplate.id,organization.id"/>
+   <Property name="wt.change2.WTChangeProposal" default=""/>
+   <Property name="wt.change2.WTChangeRequest2" default="number,lifeCycle.id,lifeCycle,teamTemplate,teamTemplate.id,folder.id,organization.id"/>   
+   <Property name="wt.change2.WTVariance" default="number,lifeCycle.id,lifeCycle,teamTemplate,teamTemplate.id,folder.id,organization.id"/>
+   <Property name="wt.doc.WTDocument" default="number,lifeCycle.id,lifeCycle,teamTemplate,teamTemplate.id,folder.id,organization.id"/>
+   <Property name="wt.enterprise.Managed" default=""/>
+   <Property name="wt.epm.EPMDocument" default="number,name,lifeCycle.id,lifeCycle,teamTemplate,teamTemplate.id,folder.id,organization.id"/>
+   <Property name="wt.epm.familytable.EPMSepFamilyTable" default=""/>
+   <Property name="wt.maturity.PromotionNotice" default="number,lifeCycle.id,lifeCycle,teamTemplate,teamTemplate.id,folder.id,organization.id"/>
+   <Property name="wt.meeting.actionitem.DiscreteActionItem" default=""/>
+   <Property name="wt.meeting.MeetingCenterMeeting" default=""/>
+   <Property name="wt.meeting.TraditionalMeeting" default=""/>
+   <Property name="wt.part.alternaterep.WTPartAlternateRep" default="number,name,lifeCycle,lifeCycle.id,teamTemplate,teamTemplate.id,folder.id,organization.id"/>
+   <Property name="wt.part.WTPart" default="number,name,lifeCycle,lifeCycle.id,teamTemplate,teamTemplate.id,folder.id,organization.id"/>  
+   <Property name="wt.part.WTProductConfiguration" default="lifeCycle.id,lifeCycle,teamTemplate,teamTemplate.id"/>
+   <Property name="wt.part.WTProductInstance2" default="lifeCycle.id,lifeCycle,teamTemplate,teamTemplate.id"/>
+   <Property name="wt.vc.baseline.ManagedBaseline" default="number,lifeCycle.id,lifeCycle,teamTemplate,teamTemplate.id,folder.id"/>
+   
+</Configuration>

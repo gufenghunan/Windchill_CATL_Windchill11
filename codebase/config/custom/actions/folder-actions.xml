@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE listofactions SYSTEM 'actions.dtd'>
+<listofactions> 
+	<objecttype name="catl" class="" resourceBundle="com.catl.module.resource.CATLCreateRB"> 
+		<action name="createWizardFolders" ajax="component"> 
+			<command windowType="popup" class="com.catl.common.jca.CATLCreateWizardFolderProcess" method="doOperation" url="netmarkets/jsp/catl/folder/createWizardFolders.jsp"/> 
+		</action>
+ 
+		<action name="setFolderAttribute"> 
+			<command windowType="wizard_step" url="netmarkets/jsp/catl/folder/setFolderAttribute.jsp"/> 
+		</action>
+		
+		<action name="createDisabledForDesignPN" ajax="component" uicomponent="PROMOTE">
+			<description>Promote create wizard</description>
+			<command url="netmarkets/jsp/promotionRequest/create.jsp" class="com.catl.common.jca.CatlCreatePromotionRequestProcess" method="execute" windowType="popup"/>
+			<includeFilter name="MaturityAndDesignDisabledFilter"/>
+		</action>
+		
+		<action name="createFAEMaterialsMaturity" selectRequired="true" ajax="component" uicomponent="PROMOTE">
+			<description>Promote create wizard</description>
+			<command url="netmarkets/jsp/promotionRequest/create.jsp" class="com.catl.common.jca.CatlCreatePromotionRequestProcess" method="execute" windowType="popup"/>
+			<includeFilter name="FAEMaterialsMaturityFilter"/>
+			<includeFilter name="MaturityAndDesignDisabledFilter"/>
+		</action> 
+		
+		<action name="createSourceChangePN" selectRequired="true" ajax="component" uicomponent="PROMOTE">
+			<description>Promote create wizard</description>
+			<command url="netmarkets/jsp/promotionRequest/create.jsp" class="com.catl.common.jca.CatlCreatePromotionRequestProcess" method="execute" windowType="popup"/>
+		</action>
+		
+		
+		<action name="createPlatformChangePN" selectRequired="true" ajax="component" uicomponent="PROMOTE">
+			<description>Promote create wizard</description>
+			<command url="netmarkets/jsp/promotionRequest/create.jsp" class="com.catl.common.jca.CatlCreatePromotionRequestProcess" method="execute" windowType="popup"/>
+		</action>
+	</objecttype> 
+</listofactions>

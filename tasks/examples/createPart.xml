@@ -1,0 +1,97 @@
+<?xml version="1.0" standalone="yes"?>
+<%@taglib uri="http://www.ptc.com/infoengine/taglib/core" prefix="ie"%>
+<%@taglib uri="/com/infoengine/tlds/iejstl.tld" prefix="c"%>
+<%
+//System.out.println(com.infoengine.au.NamingService.getVMName());
+%>
+<ie:unit>
+
+	<ie:init>
+		<ie:webject name="Start-Session" type="ACT">
+			<ie:param name="INSTANCE" data="$(@FORM[]supporting-adapter[*])"
+				valueSeparator=";" delim=";"
+				default="<%=com.infoengine.au.NamingService.getVMName()%>" />
+			<ie:param name="GROUP_OUT" data="session" />
+		</ie:webject>
+		<ie:webject name="Start-Transaction" type="ACT">
+			<ie:param name="INSTANCE" data="$(session[]instance[])" />
+			<ie:param name="SESSION_ID" data="$(session[]session_id[])" />
+		</ie:webject>
+	</ie:init>
+
+    <!-- 查询名为TestProduct-01的产品库 -->
+	<ie:webject name="Query-Objects" type="OBJ">
+		<ie:param name="ACCEPT_LANGUAGE" data="$(@SERVER[]accept_language[])" />
+		<ie:param name="AUTHORIZATION" data="$(@SERVER[]authorization[0])" />
+		<ie:param name="INSTANCE" data="$(session[]instance[])" />
+		<ie:param name="SESSION_ID" data="$(session[]session_id[])" />
+		<ie:param name="TYPE" data="wt.pdmlink.PDMLinkProduct" />
+		<ie:param name="WHERE" data="(containerInfo.name='TestProduct-01')" />
+		<ie:param name="ATTRIBUTE" data="*" />
+		<ie:param name="GROUP_OUT" data="containerGroup" />
+	</ie:webject>
+	
+	<!-- 查询名为parts的文件夹 -->
+	<ie:webject name="Query-Objects" type="OBJ">
+		<ie:param name="ACCEPT_LANGUAGE" data="$(@SERVER[]accept_language[])" />
+		<ie:param name="AUTHORIZATION" data="$(@SERVER[]authorization[0])" />
+		<ie:param name="INSTANCE" data="$(session[]instance[])" />
+		<ie:param name="SESSION_ID" data="$(session[]session_id[])" />
+		<ie:param name="TYPE" data="wt.folder.SubFolder" />
+		<ie:param name="CONTAINER_REF" data="$(containerGroup[]obid[])" />
+		<ie:param name="WHERE" data="(name='parts')" />
+		<ie:param name="ATTRIBUTE" data="*" />
+		<ie:param name="GROUP_OUT" data="folderGroup" />
+	</ie:webject>
+
+    <!-- 创建Part -->
+	<ie:webject name="Create-Objects" type="ACT">
+		<ie:param name="INSTANCE" data="$(session[]instance[])" />
+		<ie:param name="SESSION_ID" data="$(session[]session_id[])" />
+		<ie:param name="ACCEPT_LANGUAGE" data="$(@SERVER[]accept_language[])" />
+		<ie:param name="AUTHORIZATION" data="$(@SERVER[]authorization[0])" />
+				
+		<ie:param name="TYPE" data="com.ptc.xworks.TestPart02" />
+		<ie:param name="ATTRIBUTE" data="*" />
+		<ie:param name="ATTRIBUTE" data="XWORKS_STR_01" />
+		<ie:param name="CONTAINER_REF" data="$(containerGroup[]obid[])" />
+		<ie:param name="FIELD" data="name='testpart-00123'" />
+		<ie:param name="FIELD" data="domainRef=$(folderGroup[]domainRef[])" />
+		<ie:param name="FIELD" data="folder.id=$(folderGroup[]obid[])" />
+		<!-- 设置IBA属性 -->
+		<ie:param name="FIELD" data="XWORKS_STR_01='1'" />
+		<ie:param name="FIELD" data="XWORKS_STR_02='2'" />
+		<ie:param name="FIELD" data="XWORKS_STR_03='3'" />
+		<ie:param name="FIELD" data="XWORKS_LONG_01='10202'" />
+		<ie:param name="FIELD" data="XWORKS_DATE_01='2017/01/23'" />
+		<ie:param name="GROUP_OUT" data="createdPart" />
+	</ie:webject>
+
+	<ie:success>
+		<ie:webject name="Commit-Transaction" type="ACT">
+			<ie:param name="INSTANCE" data="$(session[]instance[])" />
+			<ie:param name="SESSION_ID" data="$(session[]session_id[])" />
+		</ie:webject>
+		<ie:webject name="End-Session" type="ACT">
+			<ie:param name="INSTANCE" data="$(session[]instance[])" />
+			<ie:param name="SESSION_ID" data="$(session[]session_id[])" />
+		</ie:webject>
+		<ie:webject name="Return-Groups" type="GRP">
+			<ie:param name="GROUP_IN" data="createdPart" />
+			<ie:param name="GROUP_IN" data="folderGroup" />
+		</ie:webject>
+	</ie:success>
+
+	<ie:failure>
+		<ie:webject name="Rollback-Transaction" type="ACT">
+			<ie:param name="INSTANCE" data="$(session[]instance[])" />
+			<ie:param name="SESSION_ID" data="$(session[]session_id[])" />
+		</ie:webject>
+		<ie:webject name="End-Session" type="ACT">
+			<ie:param name="INSTANCE" data="$(session[]instance[])" />
+			<ie:param name="SESSION_ID" data="$(session[]session_id[])" />
+		</ie:webject>
+		<ie:webject name="Throw-Exception" type="MGT" />
+	</ie:failure>
+
+</ie:unit>

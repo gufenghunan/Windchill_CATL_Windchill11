@@ -1,0 +1,97 @@
+<?xml version="1.0" standalone="yes"?>
+<!DOCTYPE PROCESS>
+<PROCESS NAME="Create-Object">
+<unit>
+  <webject name="Transaction" type="ACT">
+    <param name="INSTANCE"  data="${@FORM[]w4cinstance[]}"/>
+    <param name="DBUSER" data="w4c"/>
+    <param name="PASSWD" data="w4c"/>
+    <param name="ACTION"    data="START"/>
+    <param name="GROUP_OUT" data="session"/>
+  </webject>
+  
+  <webject name="Query-Objects" type="OBJ">
+    <param name="INSTANCE"  data="${@FORM[]w4cinstance[]}"/>
+    <param name="DBUSER" data="w4c"/>
+    <param name="PASSWD" data="w4c"/>
+    <param name="ATTRIBUTE"   data="PART_NUMBER"/>
+    <param name="CLASS"       data="${@FORM[]tableName[]}"/>
+    <param name="WHERE"       data="PART_NUMBER='${@FORM[]partNumber[]}'"/>
+    <param name="GROUP_OUT"   data="QueryPart"/>
+  </webject>
+  <%
+	  Group queryPartGroup = getGroup("QueryPart");
+	  String partNumber = (String)queryPartGroup.getAttributeValue(0, "PART_NUMBER");
+	  if(queryPartGroup.getElementCount() == 0){
+  %>
+  <webject name="Prepared-Batch-Update" type="ACT">
+    <param name="INSTANCE"    data="${@FORM[]w4cinstance[]}"/>
+    <param name="DBUSER" data="w4c"/>
+    <param name="PASSWD" data="w4c"/>
+    <param name="SESSION_ID" data="${session[]session_id[]}"/>
+    <param name="SQL"         data="INSERT INTO ${@FORM[]tableName[]} (${@FORM[]columnnames[]}) VALUES (${@FORM[]preparedvalues[]})"/>
+    <param name="DELIMITER"   data="${@FORM[]delimiter[]}"/>
+    <param name="PARAMTYPES"  data="${@FORM[]paramtypes[]}"/>
+    <param name="PARAMVALUES" data="${@FORM[]paramvalues[]}"/>
+    <param name="GROUP_OUT"   data="${@FORM[]groupout[]}"/>
+  </webject>
+  <%
+  }else{
+  	String columnNames = (String)getParam("columnnames");
+	columnNames = columnNames.replaceAll(",", "=?,");
+	columnNames = columnNames + "=?";
+	setParam("columnnames", columnNames);
+  %>
+  <webject name="Prepared-Batch-Update" type="ACT">
+     <param name="INSTANCE"    data="${@FORM[]w4cinstance[]}"/>
+     <param name="DBUSER" data="w4c"/>
+     <param name="PASSWD" data="w4c"/>
+     <param name="SESSION_ID" data="${session[]session_id[]}"/>
+     <param name="SQL"         data="UPDATE ${@FORM[]tableName[]} SET ${@FORM[]columnnames[]} WHERE PART_NUMBER=?"/>
+     <param name="DELIMITER"   data="${@FORM[]delimiter[]}"/>
+     <param name="PARAMTYPES"  data="${@FORM[]paramtypes[]}${@FORM[]delimiter[]}VARCHAR"/>
+     <param name="PARAMVALUES" data="${@FORM[]paramvalues[]}${@FORM[]delimiter[]}'${@FORM[]partNumber[]}'"/>
+     <param name="GROUP_OUT"   data="${@FORM[]groupout[]}"/>
+  </webject>
+  <%}%>
+  <webject name="Transaction" type="ACT">
+    <param name="INSTANCE"  data="${@FORM[]w4cinstance[]}"/>
+    <param name="DBUSER" data="w4c"/>
+    <param name="PASSWD" data="w4c"/>
+    <param name="SESSION_ID" data="${session[]session_id[]}"/>
+    <param name="ACTION"    data="COMMIT"/>
+  </webject>
+  <success>
+    <webject name="Create-Group" type="GRP">
+      <param name="ELEMENT" data="SUCCESS=success"/>
+      <param name="DELIMITER" data=":"/>
+      <param name="GROUP_OUT" data="success"/>
+    </webject>
+    
+    <webject name="Transaction" type="ACT">
+     <param name="INSTANCE"  data="${@FORM[]w4cinstance[]}"/>
+     <param name="DBUSER" data="w4c"/>
+     <param name="PASSWD" data="w4c"/>
+     <param name="SESSION_ID" data="${session[]session_id[]}"/>
+     <param name="ACTION"    data="END"/>
+    </webject>
+    
+  </success>
+  
+  <failure>
+    <webject name="Create-Group" type="GRP">
+      <param name="ELEMENT" data="FAILURE=failure"/>
+      <param name="DELIMITER" data=":"/>
+      <param name="GROUP_OUT" data="failure"/>
+    </webject>
+        
+    <webject name="Transaction" type="ACT">
+      <param name="INSTANCE"  data="${@FORM[]w4cinstance[]}"/>
+      <param name="SESSION_ID" data="${session[]session_id[]}"/>
+      <param name="ACTION"    data="ROLLBACK"/>
+    </webject>
+        
+    <webject name="Throw-Exception" type="MGT"/>
+  </failure>
+</unit>
+</PROCESS>

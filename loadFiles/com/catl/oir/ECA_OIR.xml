@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE OrganizationConfig SYSTEM "standardX24.dtd">
+<OrganizationConfig>
+	<TypeBasedRule>
+		<EngineRule isDefault="false" enabled="true">
+			<ruleName>CATL ECA</ruleName>
+			<ruleSpecification><![CDATA[
+				
+			<AttributeValues objType="wt.change2.WTChangeActivity2">
+           
+               <!-- set the number to a generated number -->
+               <AttrValue id="number" algorithm="com.ptc.windchill.enterprise.revisionControlled.server.impl.NumberGenerator">
+                   <Arg>ECA</Arg>
+				   <Arg>{GEN:wt.enterprise.SequenceGenerator:WTCHANGEACTIVITYID_seq:10:0}</Arg>
+               </AttrValue>
+
+                <AttrValue id="lifeCycle.id" algorithm="com.ptc.core.foundation.lifecycle.server.impl.LifeCycleTemplateAttributeAlgorithm">
+                    <Arg>LC_ECA</Arg>
+               </AttrValue>
+
+
+            </AttributeValues>
+
+              
+
+
+			  ]]></ruleSpecification>
+		    <ruleType type="INIT" />
+		</EngineRule>
+		<className>wt.change2.WTChangeActivity2</className>
+	</TypeBasedRule>
+</OrganizationConfig>  
+             
+
+         

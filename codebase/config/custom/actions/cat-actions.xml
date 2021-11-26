@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<listofactions>
+	<objecttype name="cat" resourceBundle="com.ptc.cat.catActionsRB">
+
+	
+		<action name="newRevisionGWT" ajax="component">
+			<command class="com.ptc.cat.ui.client.action.NewRevisionAction" method="execute" url="/servlet/WindchillAuthGW/wt.enterprise.URLProcessor/generateForm" windowType="lightbox"/>
+			<includeFilter name="com.ptc.cat.ui.client.internal.action.OneOrMoreSelectionFilter"/>
+			<includeFilter name="com.ptc.cat.ui.client.internal.action.DisableForAdminLockedFilter"/>
+			<includeFilter name="com.ptc.cat.ui.client.internal.action.DisableForPartToCadBuildAdminLockedFilter"/>
+			<includeFilter name="ReivseFilter"/>
+		</action>
+
+		<action name="newRevisionWithLargeIconGWT" ajax="component">
+			<command class="com.ptc.cat.ui.client.action.NewRevisionAction" method="execute" url="/servlet/WindchillAuthGW/wt.enterprise.URLProcessor/generateForm" windowType="lightbox"/>
+			<includeFilter name="com.ptc.cat.ui.client.internal.action.OneOrMoreSelectionFilter"/>
+			<includeFilter name="com.ptc.cat.ui.client.internal.action.DisableForAdminLockedFilter"/>
+			<includeFilter name="com.ptc.cat.ui.client.internal.action.DisableForPartToCadBuildAdminLockedFilter"/>
+			<includeFilter name="ReivseFilter"/>
+		</action>
+
+	</objecttype>
+</listofactions>

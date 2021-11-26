@@ -1,0 +1,27 @@
+dn: ptcMetaType=JDBC Adapter,cn=meta,<base>
+ptcHelp: /JDBCLDAPEntryCreate.html
+ptcPropertyHelp: /JDBCAdapterPropertiesRef.html
+ptcMetaObjectClass: ptcInfoEngineAdapter
+ptcMetaSectionDisplay: serviceclass,hostport,coservices,serial,properties
+ptcMetaType: JDBC Adapter
+ptcMetaOrder: <service>.url,<service>.drivers,<service>.databaseType,<service>.maxQuerySize,<service>.autoCommitSupported,<service>.autoCommit,<service>.resultSetScrollingCapability,<service>.socketAccess.maxThreadCount,<service>.maxContextCacheSize,<service>.maxContextAge,<service>.secret.text,<service>.secret.text2,<service>.secret.algorithm
+objectClass: top
+objectClass: ptcServiceMeta
+ptcMetaInstalled: true
+ptcServiceClassName: com.infoengine.jdbc.JDBCAdapterImpl
+ptcResourceBundle: com.infoengine.jdbc.JDBCResource
+description: define properties used by a jdbc adapter
+ptcProperty: *<service>.url:RB/DBURL:RB/DBURL_HELP:string
+ptcProperty: *<service>.drivers:RB/DBDRIVERS:RB/DBDRIVERS_HELP:javaclass
+ptcProperty: *<service>.databaseType:RB/DBTYPE:RB/DBTYPE_HELP:string{Oracle,Non Oracle}
+ptcProperty: <service>.maxQuerySize:RB/MAXQUERY:RB/MAXQUERY_HELP:int
+ptcProperty: <service>.autoCommitSupported:RB/AUTOCOMMITSUP:RB/AUTOCOMMITSUP_HELP:boolean
+ptcProperty: <service>.autoCommit:RB/AUTOCOMMIT:RB/AUTOCOMMIT_HELP:boolean
+ptcProperty: <service>.resultSetScrollingCapability:RB/RSETSCROLLCAPABILITY:RB/RSETSCROLLCAPABILITY_HELP:string{Default,TYPE_FORWARD_ONLY}
+ptcProperty: <service>.socketAccess.maxThreadCount:RB/MAXTHREADS:RB/MAXTHREADS_HELP:int<0-150>
+ptcProperty: <service>.maxContextCacheSize:RB/CACHESIZE:RB/CACHESIZE_HELP:int
+ptcProperty: <service>.maxContextAge:RB/CONTEXTAGE:RB/CONTEXTAGE_HELP:int
+ptcProperty: <service>.secret.text:RB/SECRET:RB/SECRET_HELP:string
+ptcProperty: <service>.secret.text2:RB/SECRET2:RB/SECRET2_HELP:string
+ptcProperty: <service>.secret.algorithm:RB/SECRET_ALG:RB/SECRET_ALG_HELP:string{SHA-1,MD5}
+

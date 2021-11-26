@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE NmLoader
+  SYSTEM "standardX26.dtd">
+<NmLoader>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>CATL</csvname>
+      <csvhierarchyDisplayName>CATL</csvhierarchyDisplayName>
+      <csvorganizerPaths></csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name/>
+      <csvdescription/>
+      <csvdata_type>ORG</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier/>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>CATL_Maturity</csvname>
+      <csvhierarchyDisplayName>成熟度</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>成熟度</csvdisplay_name>
+      <csvdescription>CATL_Maturity</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>CATL_Maturity</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>CATL_Platform</csvname>
+      <csvhierarchyDisplayName>CATL_Platform</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>产品线标识</csvdisplay_name>
+      <csvdescription>CATL_Platform</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>CATL_Platform</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>CATL_FAEStatus</csvname>
+      <csvhierarchyDisplayName>FAE状态</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>FAE状态</csvdisplay_name>
+      <csvdescription>CATL_FAEStatus</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>CATL_FAEStatus</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>ranking</csvname>
+      <csvhierarchyDisplayName>ranking</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>ranking</csvdisplay_name>
+      <csvdescription>ranking</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>ranking</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+</NmLoader>

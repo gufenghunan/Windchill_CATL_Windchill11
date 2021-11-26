@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Configuration SYSTEM "xconf.dtd">
+<Configuration targetFile="codebase/com/ptc/xworks/config/xworks-windchill.properties">
+
+	<AddToProperty name="wt.services.applicationcontext.WTServiceProviderFromProperties.customPropertyFiles"
+		 value="com/ptc/xworks/config/xworks-windchill.properties" />
+
+	<!-- start ApplicationContext before init StandardQueueService -->
+	<Property name="wt.services.service.39" overridable="true" targetFile="codebase/wt.properties"
+		default="com.ptc.xworks.util.XWroksApplicationContextLoader/com.ptc.xworks.util.StandardXWorksApplicationContextLoader" />
+
+	<Property name="wt.services.service.21002" overridable="true" targetFile="codebase/wt.properties"
+		default="com.ptc.xworks.workflow.listener.WorkflowListenerService/com.ptc.xworks.workflow.listener.StandardWorkflowListenerService" />
+
+	<Property name="wt.services.service.21004" overridable="true" targetFile="codebase/wt.properties"
+		default="com.ptc.xworks.windchill.listener.XWorksListenerService/com.ptc.xworks.windchill.listener.StandardXWorksListenerService" />
+
+	<Property name="wt.services.service.21006" overridable="true" targetFile="codebase/wt.properties"
+		default="com.ptc.xworks.windchill.listener.XWorksEventService/com.ptc.xworks.windchill.listener.StandardXWorksEventService" />
+
+	<Property name="wt.services.service.21008" overridable="true" targetFile="codebase/wt.properties"
+    	default="com.ptc.xworks.windchill.job.JobService/com.ptc.xworks.windchill.job.queue.StandardJobService"/>
+             
+	<Property name="wt.services.service.21010" overridable="true" targetFile="codebase/wt.properties"
+		default="com.ptc.xworks.windchill.job.StepService/com.ptc.xworks.windchill.job.queue.StandardStepService"/>	
+		
+	<Property name="wt.services.service.22001" overridable="true" targetFile="codebase/wt.properties"
+		default="com.ptc.xworks.playbox.PlayboxService/com.ptc.xworks.playbox.StandardPlayboxService"/>			
+		
+	<Property name="com.ptc.xworks.worklist.workItemLinkEvenCompleted" overridable="true" targetFile="codebase/wt.properties"
+		default="true" />
+
+	<Property name="com.ptc.xworks.worklist.workItemLinkForAll" overridable="true" targetFile="codebase/wt.properties"
+		default="true" />
+
+	<Property name="com.ptc.xworks.object.OnlyAdminCanChangeNumber" overridable="true" targetFile="codebase/wt.properties"
+		default="false" />
+		
+	<Property name="com.ptc.xworks.search.defaultObjectSearchExecutor" overridable="true" targetFile="codebase/wt.properties"
+		default="com.ptc.xworks.workflow.relatedobject.WindchillObjectSearchExecutor" />		
+
+	<Property name="com.ptc.xworks.workflow.defaultTaskFormProcessor" overridable="true" targetFile="codebase/wt.properties"
+		default="com.ptc.xworks.xmlobject.workflow.WorkItemCommentsCheckingFormProcessor" />	
+		
+	<Property name="com.ptc.xworks.workflow.commentsRequiredVotes" overridable="true" targetFile="codebase/wt.properties"
+		default="Reject,Rejected,驳回,退回,拒绝,不通过,审核不通过,撤单,取消" />		
+		
+	<Property name="netmarkets.presentation.cssFiles" overridable="true" targetFile="codebase/presentation.properties"
+		default="netmarkets/css/ptc.fileuploader.css,netmarkets/css/xworks.css" />		
+
+	<Service name="com.ptc.core.components.descriptor.DataUtility">
+		<Option serviceClass="com.ptc.xworks.xmlobject.workflow.WorkflowProgressBarDataUtility" selector="process_progress"
+			requestor="java.lang.Object" cardinality="duplicate" />
+		<Option serviceClass="com.ptc.xworks.xmlobject.workflow.WorkflowVariablesDataUtility" selector="workitem_customvariable"
+			requestor="java.lang.Object" cardinality="singleton" />
+		<Option serviceClass="com.ptc.xworks.xmlobject.windchill.TooltipDisplayedDefaultDataUtility" selector="null"
+			requestor="java.lang.Object" cardinality="duplicate" />
+		<Option serviceClass="com.ptc.xworks.xmlobject.windchill.ExtendedDisplayIdentifierDataUtility" selector="displayIdentifier"
+			requestor="java.lang.Object" cardinality="duplicate" />
+		<Option serviceClass="com.ptc.xworks.xmlobject.workflow.ExtendedWorkflowDataUtility" selector="workName"
+			requestor="java.lang.Object" cardinality="singleton" />
+		<Option serviceClass="com.ptc.xworks.xmlobject.workflow.ExtendedWorkflowDataUtility" selector="workStartDate"
+			requestor="java.lang.Object" cardinality="singleton" />			
+		<Option serviceClass="com.ptc.xworks.workflow.relatedobject.NonSelectableDataUtility" selector="non_selectable_column"
+			requestor="java.lang.Object" cardinality="duplicate" />
+		<Option serviceClass="com.ptc.xworks.workflow.relatedobject.RelatedObjectSeedStatusDataUtility" selector="RelatedObjectSeedStatus"
+			requestor="java.lang.Object" cardinality="duplicate" />
+		<Option serviceClass="com.ptc.xworks.promotion.builders.SetupWorkflowParticipantsDataUtility" selector="xworksNmActionOnSetupParticipants"
+			requestor="java.lang.Object" cardinality="singleton" />
+		<!--
+		<Option serviceClass="com.ptc.xworks.windchill.datautilities.ExtendedRenameNumberDataUtility" selector="renameNumber"
+			requestor="java.lang.Object" cardinality="duplicate" />
+		-->
+		<Option serviceClass="com.ptc.xworks.xmlobject.web.guifactory.FolderPickerNameDataUtility" selector="xworksFolderName"
+			requestor="java.lang.Object" cardinality="duplicate" />
+		<Option serviceClass="com.ptc.xworks.workflow.relatedobject.RelatedObjectAnnotationDataUtility" selector="ReleatedObjectAnnotation"
+			requestor="java.lang.Object" cardinality="duplicate" />
+		<Option serviceClass="com.ptc.xworks.workflow.builders.ExtendedSetupParticipantsDataUtility" selector="nmActionOnSetupParticipants"
+			requestor="java.lang.Object" cardinality="singleton" />						
+	</Service>
+
+	<Service context="default" name="com.ptc.core.components.suggest.Suggestable">
+		<Option serviceClass="ext.ptc.xworks.examples.taskform.ExampleSuggestable1" selector="exampleSuggestable1" requestor="null"
+			cardinality="singleton" />
+	</Service>
+
+	<Service context="default" name="com.ptc.core.ui.validation.SimpleValidationFilter">
+		<Option serviceClass="com.ptc.xworks.workflow.attachment.AttachmentGroupActionValidator" selector="AttachmentGroupValidator"
+			requestor="null" cardinality="duplicate" />
+		<Option serviceClass="com.ptc.xworks.workflow.relatedobject.RelatedObjectGroupActionValidator" selector="RelatedObjectValidator"
+			requestor="null" cardinality="duplicate" />
+		<Option serviceClass="com.ptc.xworks.promotion.builders.RelatedObjectsWizardTableActionValidationFilter" selector="promotionNoticeRelatedObjectActionValidator"
+			requestor="null" cardinality="duplicate" />
+		<Option serviceClass="com.ptc.xworks.promotion.builders.RelatedObjectGroupTabValidator" selector="relatedObjectGroupTabValidator"
+			requestor="null" cardinality="duplicate" />
+		<Option serviceClass="com.ptc.xworks.workflow.form.WorkflowFormTabValidator" selector="workflowFormValidator"
+			requestor="null" cardinality="duplicate" />
+	</Service>
+
+	<Service context="default" name="com.ptc.core.ui.validation.UIComponentValidator">
+		<Option serviceClass="com.ptc.xworks.promotion.PromotionPasteValidator" selector="promotablePaste" requestor="null"	cardinality="duplicate" />
+		<Option serviceClass="com.ptc.xworks.promotion.builders.PromotionNoticeAttachmentsValidator" selector="attributesAndContent" requestor="wt.maturity.PromotionNotice" cardinality="duplicate" />
+		<Option serviceClass="com.ptc.xworks.promotion.builders.PromotionNoticeAttachmentsValidator" selector="attachments" requestor="wt.maturity.PromotionNotice" cardinality="duplicate" />
+	</Service>
+	
+	<Service context="default" name="com.ptc.core.htmlcomp.tableview.ConfigurableTable">
+		<Option serviceClass="com.ptc.xworks.tableview.XWorksWTPartPickerResultTableView" selector="XWorksWTPartPickerResultTableView" requestor="null" cardinality="duplicate" />
+		<Option serviceClass="com.ptc.xworks.tableview.XWorksWTDocumentPickerResultTableView" selector="XWorksWTDocumentPickerResultTableView" requestor="null" cardinality="duplicate" />
+		<Option serviceClass="com.ptc.xworks.tableview.XWorksCADDocPickerResultTableView" selector="XWorksCADDocPickerResultTableView" requestor="null" cardinality="duplicate" />
+		<Option serviceClass="com.ptc.xworks.tableview.XWorksGenericPickerResultTableView" selector="XWorksGenericPickerResultTableView" requestor="null" cardinality="duplicate" />
+	</Service>	
+
+    <!-- Warning: cannot enable this!!!
+	<Service context="default" name="wt.fc.QueryStringDelegate">
+		<Option serviceClass="com.ptc.xworks.xmlobject.XmlObjectSupportedQueryStringDelegate" selector="null" requestor="com.ptc.xworks.xmlobject.XmlObjectReference" cardinality="singleton" />
+		<Option serviceClass="com.ptc.xworks.xmlobject.XmlObjectSupportedQueryStringDelegate" selector="null" requestor="wt.fc.ObjectReference" cardinality="singleton" />
+		<Option serviceClass="com.ptc.xworks.xmlobject.XmlObjectSupportedQueryStringDelegate" selector="OR" requestor="java.lang.Object" cardinality="singleton" />
+	</Service>
+	-->
+
+</Configuration>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listofactions SYSTEM "actions.dtd">
+<listofactions>
+
+	<objecttype name="taskformExample" resourceBundle="ext.ptc.xworks.examples.taskform.examplesResource">
+		<action ajax="row" name="addRows">
+			<command class="ext.ptc.xworks.examples.taskform.ExampleXmlObjectCommands" method="addRows" />
+			<!-- 用于演示调用一个Action前先保存表单 -->
+			<!-- command class="com.ptc.xworks.xmlobject.workflow.ExtendedWorkitemCommands" method="save" onClick="saveFormAndSetNextAction()" /-->
+		</action>
+		<action name="removeRows" renderType="GENERAL" selectRequired="true">
+			<command onClick="removeRows(event)" windowType="no_content" />
+		</action>
+		<action name="paste" ajax="row">
+			<command class="ext.ptc.xworks.examples.taskform.ExampleXmlObjectCommands" method="paste" />
+		</action>
+
+		<action name="createExampleXmlObject1" ajax="row">
+			<command url="netmarkets/jsp/xworks/example/createAndEditExampleXmlObject1.jsp" class="ext.ptc.xworks.examples.taskform.ExampleXmlObject1CreateFormProcessor"
+				windowType="popup" />
+		</action>
+		<action name="editExampleXmlObject1" ajax="row">
+			<command url="netmarkets/jsp/xworks/example/createAndEditExampleXmlObject1.jsp" class="ext.ptc.xworks.examples.taskform.ExampleXmlObject1EditFormProcessor"
+				windowType="popup" />
+		</action>
+		<action name="viewExampleXmlObject1" ajax="row">
+			<command url="netmarkets/jsp/xworks/example/createAndEditExampleXmlObject1.jsp" windowType="popup" />
+		</action>
+		<action name="setExampleXmlObject1AttributesStep" ajax="row">
+			<command url="netmarkets/jsp/xworks/example/exampleXmlObject1AttributePanel.jsp" windowType="wizard_step" />
+		</action>
+
+		<action name="createExampleXmlObject2" ajax="row">
+			<command url="netmarkets/jsp/xworks/example/createAndEditExampleXmlObject2.jsp" class="com.ptc.core.components.forms.DefaultObjectFormProcessor"
+				windowType="popup" />
+		</action>
+		<action name="setExampleXmlObject2AttributesStep" ajax="row">
+			<command url="netmarkets/jsp/xworks/example/exampleXmlObject2AttributePanel.jsp" windowType="wizard_step" />
+		</action>
+		<action name="editExampleXmlObject2" ajax="row">
+			<command url="netmarkets/jsp/xworks/example/createAndEditExampleXmlObject2.jsp" class="com.ptc.core.components.forms.DefaultObjectFormProcessor"
+				windowType="popup" />
+		</action>
+		<action name="viewExampleXmlObject2" ajax="row">
+			<command url="netmarkets/jsp/xworks/example/createAndEditExampleXmlObject2.jsp" windowType="popup" />
+		</action>
+		
+		<action name="bomStructureExample">
+			<component name="ext.ptc.xworks.examples.taskform.ExampleBomStructureTreeTableBuilder"/>
+		</action>
+		
+		<action name="itemPickerExample1" ajax="row">
+			<command url="netmarkets/jsp/xworks/example/itemPickerExample1.jsp" class="com.ptc.core.components.forms.DefaultObjectFormProcessor" windowType="popup" />
+		</action>
+		
+		<action name="itemPickerExample2" ajax="row">
+			<command url="netmarkets/jsp/xworks/example/itemPickerExample2.jsp" class="com.ptc.core.components.forms.DefaultObjectFormProcessor" windowType="popup" />
+		</action>
+		
+		<action name="ajaxExample1" ajax="row">
+			<command class="ext.ptc.xworks.examples.taskform.ExampleXmlObjectCommands" method="ajaxExample1" onClick="validateApplicationForm(this, event)" />
+		</action>			
+	</objecttype>
+	
+</listofactions>

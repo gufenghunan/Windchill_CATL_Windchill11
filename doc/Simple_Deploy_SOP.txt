@@ -1,0 +1,13 @@
+
+1、	从SVN更新，获取最新的代码；仅打包codebase和src文件夹且不打包lib文件夹
+2、	运行ANT脚本build.xml中的target “make_simple_jar_file”，脚本将自动编译代码，并打包所有代码到build/dist/目录下的catl-simple.jar文件中；
+3、	将catl-simple.jar复制到服务器的某个目录，如d:\ptc\Windchill下；
+4、	停止Windchill服务
+5、	在Windchill Shell中运行下面的命令，来部署所有的代码；
+ant -f $WT_HOME/build_simple.xml -Drelease.package.name=$WT_HOME/catl-simple.jar install_simple_delpoy_jar
+6、     在Windchill Shell中运行下面的命令，来部署配置文件；
+xconfmanager -p
+./xconfmanager -p
+7、	启动Windchill服务
+
+

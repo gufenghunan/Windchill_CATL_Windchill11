@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!DOCTYPE loadFileList SYSTEM "/wt/load/windchillLoad.dtd">
+<loadFileList>
+	
+	
+	<loadFile filename="com/catl/context/containerTemplate.xml" title="CATL Product.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	
+	<loadFile filename="com/catl/context/containerTemplate2.xml" title="CATL Product.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	
+</loadFileList>

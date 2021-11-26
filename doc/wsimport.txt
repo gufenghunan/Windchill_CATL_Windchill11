@@ -1,0 +1,16 @@
+wsimport -Xdebug -verbose -keep -d d:\ws -p com.catl.integration.pi.part.fae -encoding UTF-8 -Xauthfile d:\ws\auth.txt http://ndsapd111.atlbattery.com:50900/dir/wsdl?p=sa/bb0dbebabf8d3e209ddc0b2757265d05
+
+wsimport -Xdebug -verbose -keep -d d:\ws -p com.catl.integration.pi.part.maturity -encoding UTF-8 -Xauthfile d:\ws\auth.txt http://ndsapd111.atlbattery.com:50900/dir/wsdl?p=sa/26cdad1cdbca3555840abf66c4e6ee50
+
+wsimport -Xdebug -verbose -keep -d d:\ws -p com.catl.integration.pi.part.disable -encoding UTF-8 -Xauthfile d:\ws\auth.txt http://ndsapd111.atlbattery.com:50900/dir/wsdl?p=sa/733133649d49374cb01b326ba6ffe461
+
+wsimport -Xdebug -verbose -keep -d d:\ws -p com.catl.integration.pi.part.create -encoding UTF-8 -Xauthfile d:\ws\auth.txt http://ndsapd111.atlbattery.com:50900/dir/wsdl?p=sa/02a9d7d65e33341187089cd9052b3de6
+
+wsimport -Xdebug -verbose -keep -d d:\ws -p com.catl.integration.pi.part.change -encoding UTF-8 -Xauthfile d:\ws\auth.txt http://ndsapd111.atlbattery.com:50900/dir/wsdl?p=sa/bff614efc3583c30bb3cfe095b1e2c1c
+
+wsimport -Xdebug -verbose -keep -d d:\ws -p com.catl.integration.pi.part.sapfae -encoding UTF-8 -Xauthfile d:\ws\auth.txt http://ndsapd111.atlbattery.com:50900/dir/wsdl?p=sa/e70c2a910ace307189e0ba6eabae8bf2
+
+wsgen -cp . com.catl.integration.webservice.part.PartFaeStatusUpdate -wsdl -r d:\ -keep -inlineSchemas
+
+wsgen -cp . com.catl.integration.webservice.part.PartMaturityUpdate -wsdl -r d:\ -keep -inlineSchemas
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listofactions SYSTEM "actions.dtd">
+<listofactions>
+
+	<objecttype name="oppoChangeNotice" resourceBundle="ext.ptc.xworks.examples.ecn.resource.ChangeResource" >
+		<action name="customReviseItems" ajax="row">
+			<command onClick="JCAConfirm(event,'ext.ptc.xworks.examples.ecn.resource.ChangeResource.revise_label')" class="ext.ptc.xworks.examples.ecn.processors.OppoChangeCommands" method="reviseObject"/>
+		</action>
+	</objecttype>
+		
+</listofactions>

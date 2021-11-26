@@ -1,0 +1,2 @@
+#AccessRule,user,domain,typeId,permission,principal,permissionList,state,allExceptPrincipal
+AccessRule,,[/wt.inf.container.OrgContainer=CATL]/Default/PDM,WCTYPE|wt.maturity.PromotionNotice|com.CATLBattery.SourceChangePN,+,ALL,0/2/10/13,ALL,FALSE

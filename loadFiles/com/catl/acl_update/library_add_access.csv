@@ -1,0 +1,9 @@
+#AccessRule,user,domain,typeId,permission,principal,permissionList,state,allExceptPrincipal
+AccessRule,,[/wt.inf.container.OrgContainer=CATL/wt.pdmlink.PDMLinkProduct=PLM二期测试库]/Default/CATLDefault/非FAE物料成熟度3升级报告,WCTYPE|wt.doc.WTDocument|com.CATLBattery.NFAEMaturityUp3Report,+,teamMembers,0/10,ALL,FALSE
+AccessRule,,[/wt.inf.container.OrgContainer=CATL/wt.pdmlink.PDMLinkProduct=PLM二期测试库]/Default/CATLDefault/非FAE物料成熟度3升级报告,WCTYPE|wt.doc.WTDocument|com.CATLBattery.NFAEMaturityUp3Report,+,teamMembers,0/1/10/11,MODIFICATION,FALSE
+AccessRule,,[/wt.inf.container.OrgContainer=CATL/wt.pdmlink.PDMLinkProduct=PLM二期测试库]/Default/CATLDefault/非FAE物料成熟度3升级报告,WCTYPE|wt.doc.WTDocument|com.CATLBattery.NFAEMaturityUp3Report,+,teamMembers,0/1/2/10/11/13,WRITING,FALSE
+#AccessRule,user,domain,typeId,permission,principal,permissionList,state,allExceptPrincipal
+AccessRule,,[/wt.inf.container.OrgContainer=CATL/wt.pdmlink.PDMLinkProduct=PLM二期测试库]/Default/CATLEcWf,WCTYPE|wt.change2.WTChangeActivity2|com.CATLBattery.CATLDChangeActivity2,+,teamMembers,0/2/10,ALL,FALSE
+AccessRule,,[/wt.inf.container.OrgContainer=CATL/wt.pdmlink.PDMLinkProduct=PLM二期测试库]/Default/CATLEcWf,WCTYPE|wt.change2.WTChangeOrder2|com.CATLBattery.CATLDChangeNotice,+,teamMembers,0/2/10,ALL,FALSE
+AccessRule,,[/wt.inf.container.OrgContainer=CATL/wt.pdmlink.PDMLinkProduct=PLM二期测试库]/Default/CATLEcWf,WCTYPE|wt.maturity.PromotionNotice|com.CATLBattery.DisabledForDesignPN,+,teamMembers,0/2/10,ALL,FALSE
+AccessRule,,[/wt.inf.container.OrgContainer=CATL/wt.pdmlink.PDMLinkProduct=PLM二期测试库]/Default/CATLEcWf,WCTYPE|wt.maturity.PromotionNotice|com.CATLBattery.UpgradeFaePartMaturityPN,+,teamMembers,0/2/10,ALL,FALSE

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE actionmodels SYSTEM 'actionmodels.dtd'>
+<!-- define the actions on the UI components -->
+<actionmodels>
+
+<model name="home_assignments_actions_toolbar">
+  <action name="multiupdate" type="projmgmt" shortcut="true"/>
+  <!--action name="multiaccept" type="work" shortcut="true"/-->
+  <action name="multireassign" type="work" shortcut="true"/>
+  <!--action name="multiunaccept" type="work" shortcut="true"/-->
+  <action name="editInExcel" type="actionitem" shortcut="true"/>
+  <action name="exportToExcelXML" type="actionitem"/>
+  <action name="separator" type="separator"/>
+  <action name="importFromExcelXML" type="actionitem"/>
+  <action name="searchWorkItems" type="work" shortcut="true"/>
+</model>
+
+</actionmodels>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE listofactions SYSTEM 'actions.dtd'>
+<listofactions> 
+	<objecttype name="bomload" class="wt.fc.Persistable" resourceBundle="com.catl.bom.load.resource.BOMLoadRB">
+	  	<action name="loadBOM" multiselect="true" selectRequired="false">
+			<command class="com.catl.bom.load.BOMLoadProcessor" method="execute" url="/netmarkets/jsp/catl/bom/load/bomload.jsp" windowType="popup"/>
+			<includeFilter name="BOMLoadFilter"/>
+	  	</action>
+	  	<action name="loadBOM_step" multiselect="true" selectRequired="false">
+			<command url="/netmarkets/jsp/catl/bom/load/bomload_step.jsp" windowType="wizard_step"/>
+	  	</action>
+    </objecttype>
+</listofactions>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE NmLoader
+  SYSTEM "standardX26.dtd">
+<NmLoader>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>CATL</csvname>
+      <csvhierarchyDisplayName>CATL</csvhierarchyDisplayName>
+      <csvorganizerPaths></csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name/>
+      <csvdescription/>
+      <csvdata_type>ORG</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier/>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>taskDescription</csvname>
+      <csvhierarchyDisplayName>taskDescription</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>taskDescription</csvdisplay_name>
+      <csvdescription>taskDescription</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>taskDescription</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>CATL_Allow_Edit</csvname>
+      <csvhierarchyDisplayName>允许编辑</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>允许编辑</csvdisplay_name>
+      <csvdescription>CATL_Allow_Edit</csvdescription>
+      <csvdata_type>BOOL</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>CATL_Allow_Edit</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>department</csvname>
+      <csvhierarchyDisplayName>department</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>department</csvdisplay_name>
+      <csvdescription>department</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>department</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>Personincharge</csvname>
+      <csvhierarchyDisplayName>负责人</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>负责人</csvdisplay_name>
+      <csvdescription>负责人</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>Personincharge</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+</NmLoader>

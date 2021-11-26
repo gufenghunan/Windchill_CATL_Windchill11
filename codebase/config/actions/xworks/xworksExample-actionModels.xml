@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE actionmodels SYSTEM "actionmodels.dtd">
+<actionmodels>
+
+<model name="example_xmlobject1_table_toolbar">
+	<action name="addRows" type="taskformExample" shortcut="true"/>
+	<action name="removeRows" type="taskformExample" shortcut="true"/>
+	<action name="copy" type="object" shortcut="true"/>
+	<action name="paste" type="taskformExample" shortcut="true"/>
+	<action name="delete" type="xmlobject" shortcut="true"/>
+	<action name="createExampleXmlObject1" type="taskformExample" shortcut="true"/>
+	<action name="itemPickerExample1" type="taskformExample" shortcut="true"/>
+	<action name="itemPickerExample2" type="taskformExample" shortcut="true"/>
+</model>
+
+<model name="example_xmlobject2_table_toolbar">
+	<action name="removeRows" type="taskformExample" shortcut="true"/>
+	<action name="createExampleXmlObject2" type="taskformExample" shortcut="true"/>
+</model>
+
+<model name="example_xmlobject1_table_menu_toolbar" >
+	<action name="editExampleXmlObject1" type="taskformExample" shortcut="true"/>
+	<action name="viewExampleXmlObject1" type="taskformExample" shortcut="true"/>
+	<action name="delete" type="xmlobject" shortcut="true"/>
+</model>
+
+<model name="example_xmlobject2_table_menu_toolbar" >
+	<action name="editExampleXmlObject2" type="taskformExample" shortcut="true"/>
+	<action name="viewExampleXmlObject2" type="taskformExample" shortcut="true"/>
+</model>
+
+<model name="partInfoWhereUsedTab" resourceBundle="com.ptc.core.ui.navigationRB">
+	<action name="whereUsed" type="object"/>
+	<action name="bomStructureExample" type="taskformExample" />
+</model>
+
+<model name="bomStructureExample_toolbar">
+	<action name="explode" type="folder" shortcut="true"/>
+	<action name="implode" type="folder" shortcut="true"/>
+</model>
+
+</actionmodels>

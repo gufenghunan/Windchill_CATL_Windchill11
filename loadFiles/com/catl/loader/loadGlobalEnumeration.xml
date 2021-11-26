@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!DOCTYPE loadFileList SYSTEM "/wt/load/windchillLoad.dtd">
+<loadFileList>
+	
+	<!-- 全局枚举 -->
+	<loadFile filename="com/catl/type/enum/catl_enum_ENUM_DISABLED_REASON_0.xml" title="ENUM_DISABLED_REASON" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/type/enum/catl_enum_ENUM_SOURCECHANGE_REASON_0.xml" title="source" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	
+</loadFileList>

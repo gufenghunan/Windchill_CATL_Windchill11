@@ -1,0 +1,7 @@
+wt.change2.WTChangeActivity2=com.catl.change.inventory.ECAPartLink
+wt.part.WTPart=com.catl.change.inventory.ECAPartLink
+
+/**************************************/
+
+wt.doc.WTDocumentMaster=com.catl.doc.maturityUpReport.NFAEMaturityUp3DocPartLink
+wt.part.WTPartMaster=com.catl.doc.maturityUpReport.NFAEMaturityUp3DocPartLink

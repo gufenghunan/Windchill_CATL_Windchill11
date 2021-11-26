@@ -1,0 +1,646 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	  <style type="text/css">
+table.gridtable td.c1 {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #222222;
+	background-color: #dedede;
+	text-align: center;
+	font-size: 12px;
+}
+
+table.gridtable td.c2 {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #222222;
+	background-color: #dedede;
+	text-align: center;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+table.gridtable {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #222222;
+	border-collapse: collapse;
+}
+
+table.gridtable td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #222222;
+	background-color: #ffffff;
+}
+</style>
+   </head>
+   <body >
+      <table class=gridtable>
+         <tbody>
+            <tr >
+               <td class="c1" colspan="21"><h1>设计变更报告</h1></td>
+            </tr>
+            <tr >
+               <td class="c2" rowspan="9">基本信息</td>
+               <td class="c1" colspan="2">DCN单号</td>
+               <td colspan="6">有，系统抓取</td>
+               <td class="c1" colspan="2">ENW单号</td>
+               <td colspan="10">有，目前是文本，需校验单号必须存在（无时写—）</td>
+            </tr>
+            <tr >
+               <td class="c1" colspan="2">变更申请人</td>
+               <td colspan="6">有，系统抓取</td>
+               <td class="c1" colspan="2">申请人部门</td>
+               <td colspan="4">有，下拉选择，一级部门（需更新）</td>
+               <td class="c1" colspan="2">申请日期</td>
+               <td colspan="4">有，系统抓取</td>
+            </tr>
+            <tr >
+               <td class="c1" colspan="2">项目</td>
+               <td  colspan="6">无，文本（手填）</td>
+               <td class="c1" colspan="2">项目阶段</td>
+               <td  colspan="4">有，下拉选择“A/B/C/开发/小批量/验证/发布”</td>
+               <td class="c1" colspan="2">产品线</td>
+               <td  colspan="4">无，下拉框单选“Car、Bus、ESV、ESS，通用”</td>
+            </tr>
+            <tr >
+               <td class="c1" colspan="2">变更来源</td>
+               <td colspan="6">无级联功能，下拉框选择一级部门</td>
+               <td class="c1" colspan="2">变更需求证明</td>
+               <td colspan="4">无，添加附件。目前只在DCN将所有附件在报告中放在一起</td>
+               <td class="c1" colspan="2">外部变更单号</td>
+               <td colspan="4">文本</td>
+            </tr>
+            <tr >
+               <td class="c1" colspan="2">变更类型</td>
+               <td colspan="18">有，可复选，用“回车”隔开</td>
+            </tr>
+            <tr >
+               <td class="c1" colspan="2">变更原因</td>
+               <td colspan="18">有，暂无“下拉框选择+具体原因描述”功能</td>
+            </tr>
+            <tr >
+               <td class="c1" colspan="2">变更方案</td>
+               <td colspan="18">有，文本，详细描述变更方案内容，体现必要的物料号</td>
+            </tr>
+            <tr >
+               <td class="c1" colspan="2">预计变更切换日期</td>
+               <td colspan="6">有</td>
+               <td class="c1" colspan="2">是否强制切换</td>
+               <td colspan="4">无</td>
+               <td class="c1" colspan="2">实际变更切换日期</td>
+               <td colspan="4">无，需由PE/MC（在ECA更新）填写，关系报告的生成更新频率</td>
+            </tr>
+            <tr >
+               <td class="c1" colspan="2">变更等级</td>
+               <td colspan="6">下拉菜单选择（微小/一般/重大）</td>
+               <td class="c1" colspan="2">评审结论</td>
+               <td colspan="4">下拉菜单选择（通过/不通过/带风险通过）</td>
+               <td class="c1" colspan="2">变更状态</td>
+               <td colspan="4">无</td>
+            </tr>
+            <tr >
+               <td class="c2" rowspan="5">产品设计变更方案</td>
+               <td class="c1" colspan="2">DCA实施任务</td>
+               <td class="c1">序号</td>
+               <td class="c1">受影响的半成品及产品</td>
+               <td class="c1">变更方案说明</td>
+               <td class="c1" colspan="2">PN/BOM</td>
+               <td class="c1" colspan="2">物料名称</td>
+               <td class="c1" colspan="2">3D</td>
+               <td class="c1" colspan="2">2D</td>
+               <td class="c1">2D新版本</td>
+               <td class="c1" colspan="2">图文档</td>
+               <td class="c1">预计发布日期</td>
+               <td class="c1">实际发布日期</td>
+               <td class="c1">DCA执行人/完成情况备注</td>
+               <td class="c1">DCA确认人/签审意见</td>
+            </tr>
+            <tr >
+               <td colspan="2" rowspan="2">DCA单号“回车”，并带链接。
+                  研发更改任务内容。
+               </td>
+               <td align="center" >1</td>
+               <td rowspan="4">有，报表的列信息做补充、增加对应的产品半成品，附件置顶</td>
+               <td class="c1" rowspan="4">附件置顶</td>
+               <td colspan="2">PN-3D-2D-图文档相关联的写在同一行</td>
+               <td colspan="2"></td>
+               <td colspan="2">PN-3D-2D-图文档都带链接（旧版本）</td>
+               <td colspan="2"></td>
+               <td >根据抓取2D当前版本，系统自动计算，无2D则为NA</td>
+               <td colspan="2"></td>
+               <td >DCA中填写</td>
+               <td >完成DCA任务时，由系统自动抓取数据PLM实际发布日期</td>
+               <td rowspan="2">甲{待完成}</td>
+               <td rowspan="2">甲{待审核}</td>
+            </tr>
+            <tr >
+               <td align="center" >2</td>
+               <td  colspan="2">若无关联，则单独显示一行</td>
+               <td  colspan="2"></td>
+               <td  colspan="2"></td>
+               <td  colspan="2"></td>
+               <td ></td>
+               <td  colspan="2"></td>
+               <td ></td>
+               <td ></td>
+            </tr>
+            <tr >
+               <td  colspan="2" rowspan="2">DCA单号“回车”，并带链接。
+                  研发更改任务内容。
+               </td>
+               <td align="center" >1</td>
+               <td  colspan="2">排序优先级PN-2D-图文档-3D，按对象编码排序</td>
+               <td  colspan="2"></td>
+               <td  colspan="2">DCR审阅，在DCR受印象对象取值，若在DCA审阅，在DCA受影响对象取值</td>
+               <td  colspan="2"></td>
+               <td ></td>
+               <td  colspan="2"></td>
+               <td ></td>
+               <td ></td>
+               <td  rowspan="2">甲{完成}2018/1/9{完成情况备注}</td>
+               <td  rowspan="2">甲{通过}2018/1/9{签审意见}</td>
+            </tr>
+            <tr >
+               <td align="center" >2</td>
+               <td  colspan="2"></td>
+               <td  colspan="2"></td>
+               <td  colspan="2"></td>
+               <td  colspan="2"></td>
+               <td ></td>
+               <td  colspan="2"></td>
+               <td ></td>
+               <td ></td>
+            </tr>
+            <tr >
+               <td class="c2" rowspan="4">变更验证</td>
+               <td class="c1" colspan="2">是否需要测试验证</td>
+               <td class="c1" colspan="3">测试验证项目</td>
+               <td class="c1" colspan="2">验证结果</td>
+               <td class="c1" colspan="2">测试验证报告</td>
+               <td class="c1">预计完成日期</td>
+               <td class="c1">实际完成日期</td>
+               <td class="c1" colspan="2">执行人/完成情况备注</td>
+               <td  colspan="7" rowspan="4"></td>
+            </tr>
+            <tr >
+               <td  colspan="2">下拉菜单“是”，“否”</td>
+               <td  colspan="3">流程勾选是否需要测试或Trial run，不勾选则“—”</td>
+               <td  colspan="2"></td>
+               <td  colspan="2"></td>
+               <td ></td>
+               <td ></td>
+               <td  colspan="2">甲{完成}2018/1/9{完成情况备注}</td>
+            </tr>
+            <tr >
+               <td class="c1" colspan="2">是否需要Trial Run</td>
+               <td class="c1" colspan="3">Trial Run项目</td>
+               <td class="c1" colspan="2">验证结果</td>
+               <td class="c1" colspan="2">Trial Run验证报告</td>
+               <td class="c1">预计完成日期</td>
+               <td class="c1">实际完成日期</td>
+               <td class="c1" colspan="2">执行人/完成情况备注</td>
+            </tr>
+            <tr >
+               <td  colspan="2">下拉菜单“是”，“否”</td>
+               <td  colspan="3"></td>
+               <td  colspan="2"></td>
+               <td  colspan="2"></td>
+               <td ></td>
+               <td ></td>
+               <td  colspan="2"></td>
+            </tr>
+            <tr >
+               <td class="c2" rowspan="3">变更实施_统筹</td>
+               <td class="c1" colspan="2">DCA实施任务</td>
+               <td class="c1">序号</td>
+               <td class="c1" colspan="2">切换产品/半成品PN</td>
+               <td class="c1" colspan="2">工艺文件</td>
+               <td class="c1">工艺文件新版本</td>
+               <td class="c1">文件发布日期</td>
+               <td class="c1">切换拉线</td>
+               <td class="c1">变更前末套序列号</td>
+               <td class="c1">变更后首套序列号</td>
+               <td class="c1" colspan="2">效果评估报告</td>
+               <td class="c1">预计变更切换日期</td>
+               <td class="c1">实际变更切换日期</td>
+               <td class="c1" colspan="2">DCA执行人/完成情况备注</td>
+               <td class="c1" colspan="2">DCA确认人/签审意见</td>
+            </tr>
+            <tr >
+               <td  colspan="2" rowspan="2">DCA单号“回车”，并带链接。
+                  变更统筹，更新工艺文件
+               </td>
+               <td align="center" >1</td>
+               <td  colspan="2"></td>
+               <td  colspan="2"></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td  colspan="2" rowspan="2"></td>
+               <td ></td>
+               <td ></td>
+               <td  colspan="2" rowspan="2"></td>
+               <td  colspan="2" rowspan="2"></td>
+            </tr>
+            <tr >
+               <td align="center" >2</td>
+               <td  colspan="2"></td>
+               <td  colspan="2"></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+            </tr>
+            <tr >
+               <td class="c2" rowspan="6">变更实施_物料处理</td>
+               <td class="c1" colspan="2">DCA实施任务</td>
+               <td class="c1">序号</td>
+               <td class="c1" colspan="2">旧料PN</td>
+               <td class="c1" colspan="2">物料名称</td>
+               <td class="c1">图纸版本</td>
+               <td class="c1" colspan="2">库存位置-数量</td>
+               <td class="c1">旧料类型</td>
+               <td class="c1">合计数量</td>
+               <td class="c1">处理建议</td>
+               <td class="c1">是否返工</td>
+               <td class="c1">预计处理完成日期</td>
+               <td class="c1">实际处理完成日期</td>
+               <td class="c1" colspan="2">DCA执行人/完成情况备注</td>
+               <td class="c1" colspan="2">DCA确认人/签审意见</td>
+            </tr>
+            <tr >
+               <td  colspan="2" rowspan="5">DCA单号“回车”，并带链接。
+                  新旧料处理，更新PR
+               </td>
+               <td align="center" >1</td>
+               <td  colspan="2"></td>
+               <td  colspan="2"></td>
+               <td ></td>
+               <td  colspan="2">一行里面体现多个位置库存，由PMC自行更新补充</td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td  colspan="2" rowspan="5"></td>
+               <td  colspan="2" rowspan="5"></td>
+            </tr>
+            <tr >
+               <td align="center" >2</td>
+               <td  colspan="2"></td>
+               <td  colspan="2"></td>
+               <td ></td>
+               <td  colspan="2"></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+            </tr>
+            <tr >
+               <td class="c1">序号</td>
+               <td class="c1" colspan="2">新料PN</td>
+               <td class="c1" colspan="2">物料名称</td>
+               <td class="c1">图纸版本</td>
+               <td class="c1" colspan="2">变更方式</td>
+               <td class="c1" colspan="2">变更前用量</td>
+               <td class="c1" colspan="2">变更后用量</td>
+               <td class="c1">预计到料日期</td>
+               <td class="c1">实际到料日期</td>
+            </tr>
+            <tr >
+               <td align="center" >3</td>
+               <td  colspan="2"></td>
+               <td  colspan="2"></td>
+               <td ></td>
+               <td  colspan="2"></td>
+               <td  colspan="2"></td>
+               <td  colspan="2"></td>
+               <td ></td>
+               <td ></td>
+            </tr>
+            <tr >
+               <td align="center" >4</td>
+               <td  colspan="2"></td>
+               <td  colspan="2"></td>
+               <td ></td>
+               <td  colspan="2"></td>
+               <td  colspan="2"></td>
+               <td  colspan="2"></td>
+               <td ></td>
+               <td ></td>
+            </tr>
+            <tr >
+               <td class="c2" rowspan="3">变更实施_进一步测试验证</td>
+               <td class="c1" colspan="2">DCA实施任务</td>
+               <td class="c1">序号</td>
+               <td class="c1" colspan="5">测试验证项目</td>
+               <td class="c1" colspan="2">验证结果</td>
+               <td class="c1" colspan="4">验证报告</td>
+               <td class="c1">预计完成日期</td>
+               <td class="c1">实际完成日期</td>
+               <td class="c1" colspan="2">DCA执行人/完成情况备注</td>
+               <td class="c1" colspan="2">DCA确认人/签审意见</td>
+            </tr>
+            <tr >
+               <td  colspan="2" rowspan="2">DCA单号“回车”，并带链接。
+                  进一步测试验证
+               </td>
+               <td align="center" >1</td>
+               <td  colspan="5"></td>
+               <td  colspan="2"></td>
+               <td  colspan="4"></td>
+               <td ></td>
+               <td ></td>
+               <td  colspan="2" rowspan="2"></td>
+               <td  colspan="2" rowspan="2"></td>
+            </tr>
+            <tr >
+               <td align="center" >2</td>
+               <td  colspan="5"></td>
+               <td  colspan="2"></td>
+               <td  colspan="4"></td>
+               <td ></td>
+               <td ></td>
+            </tr>
+            <tr >
+               <td class="c2" colspan="11">变更评审</td>
+               <td class="c2" colspan="10">变更实施</td>
+            </tr>
+            <tr >
+               <td class="c1">评估领域</td>
+               <td class="c1">评估部门</td>
+               <td class="c1" colspan="3">DCR会签人/签审意见</td>
+               <td class="c1" colspan="3">DCN会签人/签审意见</td>
+               <td class="c1" colspan="3">DCN加签/签审意见</td>
+               <td class="c1" colspan="4">DCA实施任务</td>
+               <td class="c1">预计完成日期</td>
+               <td class="c1">实际完成日期</td>
+               <td class="c1" colspan="2">DCA执行人/完成情况备注</td>
+               <td class="c1" colspan="2">DCA确认人/签审意见</td>
+            </tr>
+            <tr >
+               <td class="c1" colspan="2">变更发起人FM</td>
+               <td colspan="3">甲{待审核}</td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+               <td  colspan="10">—</td>
+            </tr>
+            <tr >
+               <td class="c1">项目</td>
+               <td class="c1">PM</td>
+               <td  colspan="3">甲{通过}2018/1/9{签审意见}</td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+               <td  colspan="4"></td>
+               <td ></td>
+               <td ></td>
+               <td  colspan="2"></td>
+               <td  colspan="2"></td>
+            </tr>
+            <tr >
+               <td class="c1" rowspan="5">产品设计</td>
+               <td class="c1">PD</td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+               <td  colspan="10" rowspan="5">见“产品设计变更方案”</td>
+            </tr>
+            <tr >
+               <td class="c1">EVC</td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+            </tr>
+            <tr >
+               <td class="c1">CPD</td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+            </tr>
+            <tr >
+               <td class="c1">APD</td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+            </tr>
+            <tr >
+               <td class="c1">BMS</td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+            </tr>
+            <tr >
+               <td class="c1" rowspan="6">质量/安全</td>
+               <td class="c1">PQM</td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+               <td  colspan="4"></td>
+               <td ></td>
+               <td ></td>
+               <td  colspan="2"></td>
+               <td  colspan="2"></td>
+            </tr>
+            <tr >
+               <td class="c1">PQE</td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+               <td  colspan="4"></td>
+               <td ></td>
+               <td ></td>
+               <td  colspan="2"></td>
+               <td  colspan="2"></td>
+            </tr>
+            <tr >
+               <td class="c1">SQE</td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+               <td  colspan="4"></td>
+               <td ></td>
+               <td ></td>
+               <td  colspan="2"></td>
+               <td  colspan="2"></td>
+            </tr>
+            <tr >
+               <td class="c1">DQE</td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+               <td  colspan="4"></td>
+               <td ></td>
+               <td ></td>
+               <td  colspan="2"></td>
+               <td  colspan="2"></td>
+            </tr>
+            <tr >
+               <td class="c1">TVC</td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+               <td  colspan="10">见“变更实施_进一步测试验证”</td>
+            </tr>
+            <tr >
+               <td class="c1">RSD</td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+               <td  colspan="4"></td>
+               <td ></td>
+               <td ></td>
+               <td  colspan="2"></td>
+               <td  colspan="2"></td>
+            </tr>
+            <tr >
+               <td class="c1">采购</td>
+               <td class="c1">SRC</td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+               <td  colspan="4"></td>
+               <td ></td>
+               <td ></td>
+               <td  colspan="2"></td>
+               <td  colspan="2"></td>
+            </tr>
+            <tr >
+               <td class="c1">成本</td>
+               <td class="c1">Cost</td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+               <td  colspan="4"></td>
+               <td ></td>
+               <td ></td>
+               <td  colspan="2"></td>
+               <td  colspan="2"></td>
+            </tr>
+            <tr >
+               <td class="c1" rowspan="6">工艺/制造</td>
+               <td class="c1">PE</td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+               <td  colspan="10">见“变更实施_统筹”</td>
+            </tr>
+            <tr >
+               <td class="c1">MDE</td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+               <td  colspan="4"></td>
+               <td ></td>
+               <td ></td>
+               <td  colspan="2"></td>
+               <td  colspan="2"></td>
+            </tr>
+            <tr >
+               <td class="c1">IE</td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+               <td  colspan="4"></td>
+               <td ></td>
+               <td ></td>
+               <td  colspan="2"></td>
+               <td  colspan="2"></td>
+            </tr>
+            <tr >
+               <td class="c1">MC</td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+               <td  colspan="10">见“变更实施_物料处理”</td>
+            </tr>
+            <tr >
+               <td class="c1">PC</td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+               <td  colspan="4"></td>
+               <td ></td>
+               <td ></td>
+               <td  colspan="2"></td>
+               <td  colspan="2"></td>
+            </tr>
+            <tr >
+               <td class="c1">OPN</td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+               <td  colspan="4"></td>
+               <td ></td>
+               <td ></td>
+               <td  colspan="2"></td>
+               <td  colspan="2"></td>
+            </tr>
+            <tr >
+               <td class="c1">售后</td>
+               <td class="c1">AFT-SLS</td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+               <td  colspan="4"></td>
+               <td ></td>
+               <td ></td>
+               <td  colspan="2"></td>
+               <td  colspan="2"></td>
+            </tr>
+            <tr >
+               <td class="c1">规范性审核</td>
+               <td class="c1">PDM</td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+               <td  colspan="3"></td>
+               <td  colspan="10" rowspan="6"></td>
+            </tr>
+            <tr >
+               <td class="c1" colspan="2">评审日期</td>
+               <td  colspan="3"></td>
+               <td  colspan="6"></td>
+            </tr>
+            <tr >
+               <td class="c1" colspan="2">评审方式</td>
+               <td  colspan="3"></td>
+               <td  colspan="6"></td>
+            </tr>
+            <tr >
+               <td class="c1" colspan="2">评审证明</td>
+               <td  colspan="3"></td>
+               <td  colspan="6"></td>
+            </tr>
+            <tr >
+               <td class="c1" colspan="2">线上批准日期</td>
+               <td  colspan="3"></td>
+               <td  colspan="6"></td>
+            </tr>
+            <tr >
+               <td class="c1" colspan="2">通知人员/通知日期</td>
+               <td  colspan="3">所有流程参与者以及（流程默认通知所有流程参与则，需要把左边这行字写出，不需要写具体人民，如下没有参与流程审签的人员需要额外写出人名）。
+                  变更发起人或PE选择的知会人员，中文名，并用","隔开
+               </td>
+               <td  colspan="6">所有流程参与者以及（流程默认通知所有流程参与则，需要把左边这行字写出，不需要写具体人民，如下没有参与流程审签的人员需要额外写出人名）。
+                  以及变更发起人或PE选择的知会人员，中文名，并用","隔开
+               </td>
+            </tr>
+         </tbody>
+      </table>
+   </body>
+</html>

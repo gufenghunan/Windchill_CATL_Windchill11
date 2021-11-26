@@ -1,0 +1,66 @@
+<?xml version="1.0" ?><!DOCTYPE NmLoader SYSTEM "standardX24.dtd">
+<NmLoader>
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>SUZ_30kWh项目组</csvgroupName>
+    <csvdescription></csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>FTH项目组</csvgroupName>
+    <csvdescription></csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>WLB_110.6kWh项目</csvgroupName>
+    <csvdescription></csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>NSY_33.3kWh项目组</csvgroupName>
+    <csvdescription></csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>QJF_116.5kWh项目组</csvgroupName>
+    <csvdescription></csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>QJF_174.8kWh项目组</csvgroupName>
+    <csvdescription></csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>CRC_44.96kWh项目组</csvgroupName>
+    <csvdescription></csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>DFZ_99 8kWh项目组</csvgroupName>
+    <csvdescription></csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>SHM_2.2KWH项目组</csvgroupName>
+    <csvdescription></csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+</NmLoader>

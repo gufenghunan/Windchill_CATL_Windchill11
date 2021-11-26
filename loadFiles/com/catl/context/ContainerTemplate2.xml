@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE NmLoader SYSTEM "standardX24.dtd">
+
+<NmLoader>
+
+  
+  <csvCreateContainerTemplate handler="wt.inf.template.LoadContainerTemplate.createContainerTemplate" >
+    <csvname>CATL Product 3.0</csvname>
+    <csvenabled>true</csvenabled>
+    <csvxmlPath>com/catl/CATL_Product_3_Template.xml</csvxmlPath>
+    <csvcontainerClassName>wt.pdmlink.PDMLinkProduct</csvcontainerClassName>
+    <csvparentContainerPath>/</csvparentContainerPath>
+    <csvdescription>This is the Classic container template</csvdescription>
+  </csvCreateContainerTemplate>  
+  
+  
+
+  
+</NmLoader>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE listofactions SYSTEM '../../actions.dtd'>
+
+<listofactions>
+   <objecttype name="customChangeTask" class="" resourceBundle="com.catl.change.report.resource.ECExportRB">
+		<action name="deleteChangeTask" ajax="row" uicomponent="DELETE">
+			<description>Delete change Task</description>
+			<command class="com.ptc.windchill.enterprise.object.commands.DeleteObjectCommands" method="delete" onClick="JCAConfirm(event,&apos;com.catl.change.report.resource.ECExportRB.DELETE&apos;)"/>
+		<includeFilter name="DeleteChangeTaskFilter"/>
+      </action>
+   </objecttype>
+   
+   <objecttype name="annotation" class="wt.change2.SupportingMaterial" resourceBundle="com.ptc.windchill.enterprise.annotation.annotationActionsRB">
+		<action name="PSEAnnotationsForChange" ajax="row">
+        	<description>PSE annotations for change</description>
+        	<command onClick="ptcChgLAH.handleToolbarAction(event,false,false)" class="com.ptc.windchill.enterprise.annotation.forms.AddRevisedPartsFormDelegate" method="execute" windowType="new"/>
+        	<includeFilter name="hideForObjectInProject"/>
+        	<includeFilter name="ChangeTaskObjectFilter"/>
+		</action>
+   </objecttype>
+</listofactions>

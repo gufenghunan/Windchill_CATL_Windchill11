@@ -1,0 +1,64 @@
+ResourceInfo.class=wt.tools.resource.EnumResourceInfo
+
+# Entry Contents
+
+as_needed.value.translationSource.now=as needed
+as_needed.shortDescription.translationSource.now=as needed
+as_needed.value=as needed
+as_needed.shortDescription=as needed
+as_needed.order=20
+
+cu_m.value.translationSource.now=cubic meters
+cu_m.shortDescription.translationSource.now=m^3
+cu_m.value=cubic meters
+cu_m.shortDescription=m^3
+cu_m.order=70
+
+#<TRANSLATE>
+
+ea.value.translationSource.was=each
+ea.value.translationSource.now=each
+ea.shortDescription.translationSource.now=each
+ea.value=pcs
+ea.comment=For example, how much quantity of a material would you need: 2 meters, 2 kilos, 2 each.
+ea.shortDescription=pcs
+ea.order=10
+
+kg.value.translationSource.now=kilograms
+kg.shortDescription.translationSource.now=kg
+kg.value=kilograms
+kg.shortDescription=kg
+kg.order=30
+
+l.value.translationSource.now=liters
+l.shortDescription.translationSource.now=l
+l.value=liters
+l.shortDescription=l
+l.order=50
+
+sq_m.value.translationSource.now=square meters
+sq_m.shortDescription.translationSource.now=m^2
+sq_m.value=square meters
+sq_m.shortDescription=m^2
+sq_m.order=60
+
+dm2.value=dm2
+dm2.shortDescription=dm2
+dm2.order=262
+
+g.value=g
+g.shortDescription=g
+g.order=198
+
+ml.value=ml
+ml.shortDescription=ml
+ml.order=326
+
+set.value=set
+set.comment=set
+set.shortDescription=set
+set.order=134
+
+m.value=m
+m.shortDescription=m
+m.order=40

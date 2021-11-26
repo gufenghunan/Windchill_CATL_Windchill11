@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoints xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime"
+           xmlns:jws="http://java.sun.com/xml/ns/javaee"
+           version="2.0">
+   <endpoint implementation="com.ptc.jws.service.com.ptc.windchill.ws.TwxIEWebServiceImpl"
+             name="TwxIEWebService"
+             url-pattern="/servlet/TwxIEWebService">
+      <jws:handler-chains>
+         <jws:handler-chain>
+            <jws:handler>
+               <jws:handler-class>com.ptc.jws.security.impl.WebServerAuthenticated</jws:handler-class>
+            </jws:handler>
+         </jws:handler-chain>
+      </jws:handler-chains>
+   </endpoint>
+   <endpoint implementation="com.ptc.jws.service.com.ptc.windchill.enterprise.requirement.ws.RMWebServicesImpl"
+             name="RMWebServices"
+             url-pattern="/servlet/RMWebServices">
+      <jws:handler-chains>
+         <jws:handler-chain>
+            <jws:handler>
+               <jws:handler-class>com.ptc.jws.security.impl.WebServerAuthenticated</jws:handler-class>
+            </jws:handler>
+         </jws:handler-chain>
+      </jws:handler-chains>
+   </endpoint>
+
+   <endpoint implementation="com.catl.integration.webservice.part.PartFaeStatusUpdate"
+             name="PartFaeStatusUpdate"
+             url-pattern="/servlet/webservice/part/PartFaeStatusUpdate"
+             wsdlLocation="WEB-INF/wsdl/PartFaeStatusUpdate.wsdl">
+   </endpoint>
+   <endpoint implementation="com.catl.integration.webservice.part.PartMaturityUpdate"
+             name="PartMaturityUpdate"
+             url-pattern="/servlet/webservice/part/PartMaturityUpdate"
+             wsdlLocation="WEB-INF/wsdl/PartMaturityUpdate.wsdl">
+   </endpoint> 
+   
+   <endpoint implementation="com.catl.integration.webservice.rdm.RdmDocumentSearchingService"
+             name="RdmDocumentSearchingService"
+             url-pattern="/servlet/webservice/rdm/RdmDocumentSearchingService">
+   </endpoint>
+   <endpoint implementation="com.catl.integration.webservice.rdm.RdmCreateDeliverableDocLink"
+             name="RdmCreateDeliverableDocLink"
+             url-pattern="/servlet/webservice/rdm/RdmCreateDeliverableDocLink">
+   </endpoint>
+   <endpoint implementation="com.catl.integration.webservice.rdm.RdmRemoveDeliverableDocLink"
+             name="RdmRemoveDeliverableDocLink"
+             url-pattern="/servlet/webservice/rdm/RdmRemoveDeliverableDocLink">
+   </endpoint>
+   
+   <endpoint implementation="com.catl.integration.webservice.bms.BmsCreateDeliverableDocLink"
+             name="BmsCreateDeliverableDocLink"
+             url-pattern="/servlet/webservice/bms/BmsCreateDeliverableDocLink">
+   </endpoint>
+   
+   <endpoint implementation="com.catl.integration.webservice.bms.BmsCheckSoftDocByPNLink"
+             name="BmsCheckSoftDocByPNLink"
+             url-pattern="/servlet/webservice/bms/BmsCheckSoftDocByPNLink">
+   </endpoint>
+   
+   <endpoint implementation="com.catl.integration.webservice.bms.BmsSoftwareCreateAndUpdate"
+             name="BmsSoftwareCreateAndUpdate"
+             url-pattern="/servlet/webservice/bms/BmsSoftwareCreateAndUpdate">
+   </endpoint>
+   <endpoint implementation="ext.ipe.webservice.ElecWorksService" name="ElecWorks"
+             url-pattern="/servlet/ElecWorks">
+      <jws:handler-chains>
+         <!--<jws:handler-chain>
+            <jws:handler>
+               <jws:handler-class>com.ptc.jws.security.impl.WebServerAuthenticated</jws:handler-class>
+            </jws:handler>
+         </jws:handler-chain>-->
+      </jws:handler-chains>
+ </endpoint>
+   
+</endpoints>

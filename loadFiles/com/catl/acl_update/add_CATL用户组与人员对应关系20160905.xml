@@ -1,0 +1,606 @@
+<?xml version="1.0" ?><!DOCTYPE NmLoader SYSTEM "standardX24.dtd">
+<NmLoader>
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>仓库组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60001046</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>仓库组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60006242</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>仓库组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60007130</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>仓库组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60011488</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>仓库组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60014825</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>仓库组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60005956</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>仓库组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60002380</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>仓库组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60005670</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>仓库组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60002043</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>仓库组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>orgadmin</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>orgadmin</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60000109</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60013813</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60002705</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60000048</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60000117</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60000889</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60001942</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60000107</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60000108</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60013688</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60005636</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60002270</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60001983</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60014541</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60001908</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60001910</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60001436</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60001935</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60010872</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60000052</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60001328</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60002315</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60005824</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60010805</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60003204</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60002612</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60000512</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60012004</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60000057</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60003035</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60000042</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60000043</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60000336</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60006225</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60000866</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60008318</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60000032</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60007029</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60000069</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60001187</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60007267</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60008916</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60012081</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60008073</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60000264</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60000089</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60008596</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60000640</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60001142</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60002586</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60000011</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60010041</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60000848</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60004419</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60001842</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>经理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60002582</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+</NmLoader>

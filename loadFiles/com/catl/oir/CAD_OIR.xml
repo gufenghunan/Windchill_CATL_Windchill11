@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE OrganizationConfig SYSTEM "standardX24.dtd">
+<OrganizationConfig>
+	<TypeBasedRule>
+		<EngineRule isDefault="false" enabled="true">
+			<ruleName>EPM Document</ruleName>
+			<ruleSpecification><![CDATA[
+			<AttributeValues objType="wt.epm.EPMDocument">
+
+              <!-- set the lifecycle -->
+               <AttrValue id="lifeCycle.id" algorithm="com.ptc.core.foundation.lifecycle.server.impl.LifeCycleTemplateAttributeAlgorithm">
+                  <!-- NOTE: this argument value must be the same as the name of the lifecycle template
+                             in loadFiles\pdmlink\1PhaseDevelopmentLifecycleTemplate.xml -->
+                  <Arg>LC_epmdoc_Cycle</Arg>
+               </AttrValue>
+
+			  <AttrConstraint id="number" algorithm="com.ptc.core.rule.server.impl.GatherAttributeConstraints">
+			  </AttrConstraint>
+
+            </AttributeValues>
+				  ]]></ruleSpecification>
+		    <ruleType type="INIT" />
+		</EngineRule>
+		<className>wt.epm.EPMDocument</className>
+	</TypeBasedRule>
+</OrganizationConfig>  
+               
+             

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listofactions SYSTEM "actions.dtd">
+<listofactions>
+
+	<objecttype name="work" class="wt.workflow.work.WorkItem">
+		<action name="save" enabledwhensuspended="true" ajax="row">
+			<command class="com.ptc.xworks.xmlobject.workflow.ExtendedWorkitemCommands" method="save" onClick="validateApplicationForm(this, event)" />
+		</action>
+		<!-- 注释这个Action，使用CATL的进行替代
+		<action name="complete" enabledwhensuspended="true" ajax="row">
+			<command class="com.ptc.xworks.xmlobject.workflow.ExtendedWorkitemCommands" method="complete" onClick="validateApplicationForm(this, event)" />
+		</action>
+		-->
+	</objecttype>
+
+	<objecttype name="xmlobject" resourceBundle="com.ptc.xworks.xmlobject.web.webResource">
+		<action name="delete" selectRequired="true" ajax="row">
+			<command class="com.ptc.xworks.xmlobject.web.form.XmlObjectWebCommands" method="delete" onClick="JCAConfirm(event,'com.ptc.netmarkets.util.utilResource.CONFIRM_DELETE')" />
+		</action>
+		<action name="folderPicker">
+			<command url="netmarkets/jsp/xworks/folderPicker/folderPicker.jsp" class="com.ptc.xworks.xmlobject.web.guifactory.FolderPickerFormProcessor"  windowType="popup"/>
+		</action>
+		<action name="folderPickerStep">
+			<command url="netmarkets/jsp/xworks/folderPicker/folderPickerStep.jsp" windowType="wizard_step"/>
+		</action>			
+	</objecttype>
+
+	<!-- 增加以下的配置到/config/actions/custom-actions.xml文件中 -->
+	<objecttype name="workitem" resourceBundle="com.ptc.xworks.workflow.workitemResource">
+	
+		<action name="taskDetailExtendedFrame">
+			<command url="netmarkets/jsp/xworks/workitem/taskDetailExtendedFrame.jsp" windowType="page" />
+		</action>
+	
+		<action name="taskAttachmentsPage">
+			<command url="netmarkets/jsp/xworks/workitem/taskAttachmentsPage.jsp" windowType="page" />
+			<includeFilter name="AttachmentGroupValidator" />
+		</action>
+		
+		<action name="downloadAttachment" selectRequired="true">
+			<command url="netmarkets/jsp/xworks/workitem/downloadAttachment.jsp" windowType="popup" />
+			<includeFilter name="AttachmentGroupValidator" />
+		</action>
+
+		<action name="addFileAttachment" ajax="row">
+			<command class="com.ptc.xworks.workflow.attachment.AddFileAttachmentProcessor" url="netmarkets/jsp/xworks/workitem/addAttachment.jsp"
+				windowType="popup" />
+			<includeFilter name="AttachmentGroupValidator" />
+		</action>
+
+		<action name="addFileAttachmentStep" ajax="row">
+			<command url="netmarkets/jsp/xworks/workitem/addAttachmentStep.jsp" windowType="wizard_step" />
+		</action>
+
+		<action name="addURLAttachment" ajax="row">
+			<command class="com.ptc.xworks.workflow.attachment.AddURLAttachmentProcessor" url="netmarkets/jsp/xworks/workitem/addURL.jsp"
+				windowType="popup" />
+			<includeFilter name="AttachmentGroupValidator" />
+		</action>
+
+		<action name="addURLAttachmentStep" ajax="row">
+			<command url="netmarkets/jsp/xworks/workitem/addURLStep.jsp" windowType="wizard_step" />
+		</action>
+
+		<action name="removeAttachment" selectRequired="true">
+			<command class="com.ptc.xworks.workflow.attachment.AttachmentGroupCommands"  method="removeAttachment" onClick="XmlObject.removeObjectsValidation(event,'com.ptc.xworks.workflow.workitemResource.CONFIRM_REMOVE_ATTACHMENT')"/>
+			<includeFilter name="AttachmentGroupValidator" />
+		</action>
+				
+		<action name="taskApplicationFormPage">
+			<command url="netmarkets/jsp/xworks/workitem/taskApplicationFormPage.jsp" windowType="page" />
+		</action>
+		
+		<action name="taskRelatedObjectPage">
+			<command url="netmarkets/jsp/xworks/workitem/taskRelatedObjectPage.jsp" windowType="page" />
+			<includeFilter name="RelatedObjectValidator" />
+		</action>
+
+		<action name="addRelatedObject" ajax="row">
+			<command class="com.ptc.xworks.workflow.relatedobject.RelatedObjectGroupCommands" method="doAction"
+				url="netmarkets/jsp/xworks/workitem/addRelatedObject.jsp?resolverClass=com.ptc.xworks.workflow.relatedobject.WorkItemObjectSearchingConfigViewResolver"
+				windowType="popup" />
+			<includeFilter name="RelatedObjectValidator" />
+		</action>
+
+		<action name="addRelatedObjectStep" ajax="row">
+			<command url="netmarkets/jsp/xworks/workitem/addRelatedObjectStep.jsp" windowType="wizard_step" />
+		</action>
+
+		<action name="removeRelatedObject" ajax="row" selectRequired="true">
+			<command class="com.ptc.xworks.workflow.relatedobject.RelatedObjectGroupCommands" method="doAction"  onClick="XmlObject.removeObjectsValidation(event,'com.ptc.xworks.workflow.workitemResource.CONFIRM_REMOVE_OBJECT')" />
+			<includeFilter name="RelatedObjectValidator" />
+		</action>
+		
+		<action name="copyRelatedObject" ajax="row" selectRequired="true">
+			<command class="com.ptc.netmarkets.model.NmObjectCommands" method="list_copy" windowType="no_content" onClick="onClickValidation( event, 'list_copy' )"
+			 url="netmarkets/jsp/xworks/workitem/copyReleateObject.jsp"/>
+			<includeFilter name="RelatedObjectValidator" />
+		</action>				
+		
+		<action name="pasteRelatedObject" ajax="row" uicomponent="PASTE">
+			<command class="com.ptc.xworks.workflow.relatedobject.RelatedObjectGroupCommands" method="doAction" />
+			<includeFilter name="RelatedObjectValidator" />
+		</action>
+
+		<action name="collectRelatedObject" selectRequired="true">
+			<command class="com.ptc.xworks.workflow.relatedobject.RelatedObjectGroupCommands" method="doAction" onClick="XmlObject.collectAssociatedObjectValidation(event, 'com.ptc.xworks.workflow.workitemResource.CONFIRM_COLLECT_ASSOCIATED_OBJECTS')"/>
+			<includeFilter name="RelatedObjectValidator" />
+		</action>		
+		
+		<action name="refreshRelatedObject">
+			<command class="com.ptc.xworks.workflow.relatedobject.RelatedObjectGroupCommands" method="doAction" onClick="JCAConfirm(event,'com.ptc.xworks.workflow.workitemResource.CONFIRM_REFRESH_RELATED_OBJECT_GROUP')" />
+			<includeFilter name="RelatedObjectValidator" />
+		</action>
+		
+		<action name="annotateRelatedObject" selectRequired="true">
+			<command class="com.ptc.xworks.workflow.relatedobject.RelatedObjectGroupCommands" method="doAction"	url="netmarkets/jsp/xworks/workitem/annotateRelatedObject.jsp" windowType="popup"/>
+			<includeFilter name="RelatedObjectValidator" />
+		</action>
+
+		<action name="annotateRelatedObjectStep" ajax="row">
+			<command url="netmarkets/jsp/xworks/workitem/annotateRelatedObjectStep.jsp" windowType="wizard_step" />
+		</action>
+		
+		<action name="addUsersToRole">
+			<command url="netmarkets/jsp/xworks/workitem/addUsersToRole.jsp" class="com.ptc.netmarkets.work.NmWorkItemCommands" method="addUsersToRole" windowType="popup"/>
+		</action>	
+	</objecttype>
+
+</listofactions>

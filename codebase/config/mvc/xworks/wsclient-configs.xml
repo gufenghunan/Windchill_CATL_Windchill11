@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+	 http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+	 http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+	 http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.1.xsd">
+
+<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+    <property name="locations">
+    	<bean class="com.ptc.xworks.util.HostNameBasedPropertiesSelector">
+    		<property name="propertiesFiles">
+    			<array>
+	    			<value>classpath:WEB-INF/conf/configurations.properties</value>
+	    			<value>classpath:WEB-INF/conf/configurations_vm.properties</value>
+	    			<value>classpath:WEB-INF/conf/configurations_dev.properties</value>
+	    			<value>classpath:WEB-INF/conf/configurations_sit.properties</value>
+	    			<value>classpath:WEB-INF/conf/configurations_uat.properties</value>
+    			</array>
+    		</property>
+    		<property name="marker" value="configuration.env" />
+    	</bean>
+    </property>
+</bean>
+
+<bean id="defaultAuthenticator" class="com.ptc.xworks.net.XWorksCompositedAuthenticator">
+	<property name="passwordAuthenticationProviders">
+		<list>
+			<bean class="com.ptc.xworks.net.URLBasedPasswordAuthenticationProvider">
+				<property name="urlList">
+					<list>
+						<value>http://${webservice.plm.username}:${webservice.plm.password}@${webservice.plm.hostname}/Windchill/</value>
+					</list>
+				</property>
+			</bean>
+		</list>
+	</property>
+</bean>
+
+<bean id="XWorksAuthenticatorSetter" class="com.ptc.xworks.net.JvmAuthenticatorSetter">
+	<property name="defaultAuthenticator" ref="defaultAuthenticator" />
+</bean>
+
+<bean id="transactionAuditLogInterceptor" class="com.ptc.xworks.integration.log.TransactionAuditLogInterceptor" />
+
+<bean id="HelloWorldServiceImpl" class="com.ptc.xworks.integration.webservice.JaxWsClientFactoryBean" depends-on="XWorksAuthenticatorSetter">
+	<property name="wsdlUrl" value="file://${windchill.home}/codebase/config/wsdl/HelloWorlodService.wsdl" />
+	<property name="serviceName" >
+		<bean class="com.ptc.xworks.integration.webservice.QNameFactoryBean" >
+			<property name="namespaceUri" value="http://webservices.examples.xworks.ptc.ext/"/>
+			<property name="localPart" value="HelloWorldService"/>
+		</bean>
+	</property>
+	<property name="portName" >
+		<bean class="com.ptc.xworks.integration.webservice.QNameFactoryBean" >
+			<property name="namespaceUri" value="http://webservices.examples.xworks.ptc.ext/"/>
+			<property name="localPart" value="HelloWorldServicePort"/>
+		</bean>
+	</property>	
+	<property name="serviceFactoryClass" value="ext.ptc.xworks.examples.webservices.client.helloworld.HelloWorldService_Service" />
+	<property name="servicePortClass" value="ext.ptc.xworks.examples.webservices.client.helloworld.HelloWorldService" />
+	<property name="singleton" value="false"/>
+	<property name="username" value="${webservice.plm.username}"/>
+	<property name="password" value="${webservice.plm.password}"/>
+	<property name="connectTimeout" value="${webservice.plm.connectTimeout}" />
+	<property name="requestTimeout" value="${webservice.plm.requestTimeout}" />
+</bean>
+
+<bean id="HelloWorldService" class="org.springframework.aop.framework.ProxyFactoryBean">
+	<property name="proxyInterfaces" value="ext.ptc.xworks.examples.webservices.client.helloworld.HelloWorldService"/>
+	<property name="target" ref="HelloWorldServiceImpl" />
+	<property name="interceptorNames">
+		<list>
+		 	<value>transactionAuditLogInterceptor</value>
+		</list>
+	</property>
+	<property name="singleton" value="false"/>
+</bean>
+
+</beans>

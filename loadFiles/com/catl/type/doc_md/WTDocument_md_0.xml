@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE NmLoader
+  SYSTEM "standardX26.dtd">
+<NmLoader>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>CATL</csvname>
+      <csvhierarchyDisplayName>CATL</csvhierarchyDisplayName>
+      <csvorganizerPaths></csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name/>
+      <csvdescription/>
+      <csvdata_type>ORG</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier/>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>subCategory</csvname>
+      <csvhierarchyDisplayName>subCategory</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>subCategory</csvdisplay_name>
+      <csvdescription>subCategory</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>subCategory</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>productProcess</csvname>
+      <csvhierarchyDisplayName>productProcess</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>产品工艺</csvdisplay_name>
+      <csvdescription>产品工艺</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>productProcess</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>CATL_DocType</csvname>
+      <csvhierarchyDisplayName>CATL_DocType</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>CATL_DocType</csvdisplay_name>
+      <csvdescription>CATL_DocType</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier/>
+   </csvAttrDefinizer>
+</NmLoader>

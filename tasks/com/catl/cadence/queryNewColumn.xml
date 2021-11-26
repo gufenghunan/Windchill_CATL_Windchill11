@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="yes"?>
+<!DOCTYPE PROCESS>
+<PROCESS NAME="Query-Objects">
+  <webject name="Do-SQL" type="ACT">
+    <param name="INSTANCE"  data="${@FORM[]w4cinstance[]}"/>
+    <param name="DBUSER" data="w4c"/>
+    <param name="PASSWD" data="w4c"/>
+    <param name="SQL"       data="SELECT column_name from user_tab_columns where table_name='${@FORM[]tablename[]}'"/>
+    <param name="GROUP_OUT" data="QueryColumn"/>
+  </webject>
+</PROCESS>

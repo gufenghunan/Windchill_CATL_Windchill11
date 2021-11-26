@@ -1,0 +1,169 @@
+<UndefineProperty name="wt.services/svc/default/com.ptc.core.ui.validation.UIComponentValidator/related_add_references/null/0"/>
+<UndefineProperty name="wt.services/svc/default/com.ptc.core.ui.validation.UIComponentValidator/related_add_described/null/0"/>
+<UndefineProperty name="wt.services/svc/default/com.ptc.core.ui.validation.UIComponentValidator/related_delete_references/null/0"/>
+<UndefineProperty name="wt.services/svc/default/com.ptc.core.ui.validation.UIComponentValidator/related_delete_described/null/0"/>
+
+<AddToProperty name="advancedSearch.wt.part.WTPart" value="ranking"/>
+<AddToProperty name="advancedSearch.wt.part.WTPart" value="CATL_FAEStatus"/>
+<AddToProperty name="advancedSearch.wt.part.WTPart" value="CATL_Maturity"/>
+
+<!--for test PLM-->
+<Property name="wt.mail.smtp.username" overridable="true"
+             targetFile="codebase/mail.properties"
+             value="plm-admin"/>
+<Property name="wt.mail.smtp.password" overridable="true"
+             targetFile="codebase/mail.properties"
+             value="12345qwert"/>
+
+<!--for production PLM-->
+<Property name="wt.mail.smtp.username" overridable="true"
+             targetFile="codebase/mail.properties"
+             value="plm-admin"/>
+<Property name="wt.mail.smtp.password" overridable="true"
+             targetFile="codebase/mail.properties"
+             value="12345qwert"/>
+
+
+<Property name="Config_Ftp_URL" overridable="true"
+             targetFile="codebase/com/catl/ecad/utils/FTPConfig.properties"
+             value="172.26.126.41"/>
+	<Property name="Config_Ftp_URL1" overridable="true"
+             targetFile="codebase/com/catl/ecad/utils/FTPConfig.properties"
+             value="172.16.23.14"/>
+	<Property name="Config_Ftp_User" overridable="true"
+             targetFile="codebase/com/catl/ecad/utils/FTPConfig.properties"
+             value="ecad"/>
+	<Property name="Config_Ftp_Pwd" overridable="true"
+             targetFile="codebase/com/catl/ecad/utils/FTPConfig.properties"
+             value="wcadmin"/>
+	<Property name="Config_Ftp_Path" overridable="true"
+             targetFile="codebase/com/catl/ecad/utils/FTPConfig.properties"
+             value="ecad"/>
+
+
+<!--for test RDM-->
+<Property name="rdm.address" overridable="true"
+             targetFile="codebase/config/custom/configuration.properties"
+             value="http://172.17.35.41:3000"/>
+
+<!--for production RDM-->
+<Property name="rdm.address" overridable="true"
+             targetFile="codebase/config/custom/configuration.properties"
+             value="http://rdm.catlbattery.com:8080"/>
+             
+<Property name="Config_Ftp_URL" overridable="true"
+             targetFile="codebase/com/catl/ecad/utils/FTPConfig.properties"
+             value="172.26.106.46"/>
+	<Property name="Config_Ftp_URL1" overridable="true"
+             targetFile="codebase/com/catl/ecad/utils/FTPConfig.properties"
+             value="172.16.23.15"/>
+	<Property name="Config_Ftp_User" overridable="true"
+             targetFile="codebase/com/catl/ecad/utils/FTPConfig.properties"
+             value="ecad"/>
+	<Property name="Config_Ftp_Pwd" overridable="true"
+             targetFile="codebase/com/catl/ecad/utils/FTPConfig.properties"
+             value="wcadmin"/>
+	<Property name="Config_Ftp_Path" overridable="true"
+             targetFile="codebase/com/catl/ecad/utils/FTPConfig.properties"
+             value="ecad"/>
+             
+             
+<!--for production SAP interface-->
+<Property name="sap.startFaeProcess.address" overridable="true"
+             targetFile="codebase/config/custom/configuration.properties"
+             value="http://cnpipwp.catlbattery.com:8106/dir/wsdl?p=sa/0053e12ec0603eceb08cc8b5967e098f"/>
+   <Property name="sap.updatePartMaturity.address" overridable="true"
+             targetFile="codebase/config/custom/configuration.properties"
+             value="http://cnpipwp.catlbattery.com:8106/dir/wsdl?p=sa/401aa5e9c2933aa391bfc7a20bd34ae8"/>
+   <Property name="sap.updatePartFae.address" overridable="true"
+             targetFile="codebase/config/custom/configuration.properties"
+             value="http://cnpipwp.catlbattery.com:8106/dir/wsdl?p=sa/6d4915cc52db3c49a90610e2dea7aa06"/>
+   <Property name="sap.disablePart.address" overridable="true"
+             targetFile="codebase/config/custom/configuration.properties"
+             value="http://cnpipwp.catlbattery.com:8106/dir/wsdl?p=sa/e3d9c80961c33d96a50b99782463c9f4"/>
+   <Property name="sap.sourceChange.address" overridable="true"
+             targetFile="codebase/config/custom/configuration.properties"
+             value="http://cnpipwp.catlbattery.com:8106/dir/wsdl?p=sa/a33c3daf9af93f90a338c422bd4bd4ce"/>
+   <Property name="sap.ecn.address" overridable="true"
+             targetFile="codebase/config/custom/configuration.properties"
+             value="http://cnpipwp.catlbattery.com:8106/dir/wsdl?p=sa/872cdb7cdca0339a85fa5a7eb391d593"/>
+   <Property name="sap.createPart.address" overridable="true"
+             targetFile="codebase/config/custom/configuration.properties"
+             value="http://cnpipwp.catlbattery.com:8106/dir/wsdl?p=sa/1865e8ad86e136888ead6ad15c01e2db"/>
+   <Property name="sap.createBom.address" overridable="true"
+             targetFile="codebase/config/custom/configuration.properties"
+             value="http://cnpipwp.catlbattery.com:8106/dir/wsdl?p=sa/1f802705556235a6a73d9d8815d81c89"/>
+   <Property name="sap.changePart.address" overridable="true"
+             targetFile="codebase/config/custom/configuration.properties"
+             value="http://cnpipwp.catlbattery.com:8106/dir/wsdl?p=sa/9f1359b1860a323996659658f05bef35"/>
+   <Property name="sap.changeBom.address" overridable="true"
+             targetFile="codebase/config/custom/configuration.properties"
+             value="http://cnpipwp.catlbattery.com:8106/dir/wsdl?p=sa/42ab3a37b01c309486c1b106363e9bcf"/>
+   <Property name="sap.drawing.address" overridable="true"
+             targetFile="codebase/config/custom/configuration.properties"
+             value="http://cnpipwp.catlbattery.com:8106/dir/wsdl?p=sa/cfc484fa6fce3b3596cac049d3ee7de1"/>
+   <Property name="sap.file.address" overridable="true"
+             targetFile="codebase/config/custom/configuration.properties"
+             value="http://cnpipwp.catlbattery.com:8106/dir/wsdl?p=sa/77daa6b05cac38128961d339c150de20"/>
+   <Property name="sap.pi.username" overridable="true"
+             targetFile="codebase/config/custom/configuration.properties"
+             value="PLM_PP8_001"/>
+   <Property name="sap.pi.password" overridable="true"
+             targetFile="codebase/config/custom/configuration.properties"
+             value="Plm@p8001"/>
+   <Property name="sap.pi.request_timeout" overridable="true"
+             targetFile="codebase/config/custom/configuration.properties"
+             value="600000"/>
+   <Property name="sap.pi.connect_timeout" overridable="true"
+             targetFile="codebase/config/custom/configuration.properties"
+             value="600000"/>
+
+<!--for test SAP interface-->
+	<Property name="sap.ecn.address" overridable="true"
+             targetFile="codebase/config/custom/configuration.properties"
+             value="http://cnpd020.catlbattery.com:50900/dir/wsdl?p=sa/20fe16b4aa783d30a89b8f1d76c243f2"/>
+   <Property name="sap.createPart.address" overridable="true"
+             targetFile="codebase/config/custom/configuration.properties"
+             value="http://cnpd020.catlbattery.com:50900/dir/wsdl?p=sa/2024105435f7328d9513e757226c49d2"/>
+   <Property name="sap.createBom.address" overridable="true"
+             targetFile="codebase/config/custom/configuration.properties"
+             value="http://cnpd020.catlbattery.com:50900/dir/wsdl?p=sa/ab334a52e3683308b992c0273f64b0a9"/>
+   <Property name="sap.changePart.address" overridable="true"
+             targetFile="codebase/config/custom/configuration.properties"
+             value="http://cnpd020.catlbattery.com:50900/dir/wsdl?p=sa/b6658e81f99234bc8e85f848d0d61591"/>
+   <Property name="sap.changeBom.address" overridable="true"
+             targetFile="codebase/config/custom/configuration.properties"
+             value="http://cnpd020.catlbattery.com:50900/dir/wsdl?p=sa/bbfcb7874a8633ae840f21dfc73ffef6"/>
+   <Property name="sap.drawing.address" overridable="true"
+             targetFile="codebase/config/custom/configuration.properties"
+             value="http://cnpd020.catlbattery.com:50900/dir/wsdl?p=sa/d49c844814c139628d380a7e7311bf70"/>
+   <Property name="sap.file.address" overridable="true"
+             targetFile="codebase/config/custom/configuration.properties"
+             value="http://cnpd020.catlbattery.com:50900/dir/wsdl?p=sa/672dcbbc32cc31d1a05e4395d61d94ad"/>
+   <Property name="sap.startFaeProcess.address" overridable="true"
+             targetFile="codebase/config/custom/configuration.properties"
+             value="http://cnpd020.catlbattery.com:50900/dir/wsdl?p=sa/ca8dca0b92133541aac82deba3b571ed"/>
+   <Property name="sap.updatePartMaturity.address" overridable="true"
+             targetFile="codebase/config/custom/configuration.properties"
+             value="http://cnpd020.catlbattery.com:50900/dir/wsdl?p=sa/13707cf4c90c32ec80a505bbe3ca8e95"/>
+   <Property name="sap.updatePartFae.address" overridable="true"
+             targetFile="codebase/config/custom/configuration.properties"
+             value="http://cnpd020.catlbattery.com:50900/dir/wsdl?p=sa/beca43de321a3df6b5c305d0c2b009ca"/>
+   <Property name="sap.disablePart.address" overridable="true"
+             targetFile="codebase/config/custom/configuration.properties"
+             value="http://cnpd020.catlbattery.com:50900/dir/wsdl?p=sa/d2470d4c8f6834c194897f58712dcb25"/>
+   <Property name="sap.sourceChange.address" overridable="true"
+             targetFile="codebase/config/custom/configuration.properties"
+             value="http://cnpd020.catlbattery.com:50900/dir/wsdl?p=sa/37246a3e1e1c3a468d3424dc7906c606"/>                                               
+<Property name="sap.pi.username" overridable="true"
+             targetFile="codebase/config/custom/configuration.properties"
+             value="interface"/>
+<Property name="sap.pi.password" overridable="true"
+             targetFile="codebase/config/custom/configuration.properties"
+             value="Zaq12wsx"/>
+<Property name="sap.pi.request_timeout" overridable="true"
+             targetFile="codebase/config/custom/configuration.properties"
+             value="600000"/>
+<Property name="sap.pi.connect_timeout" overridable="true"
+             targetFile="codebase/config/custom/configuration.properties"
+             value="600000"/>

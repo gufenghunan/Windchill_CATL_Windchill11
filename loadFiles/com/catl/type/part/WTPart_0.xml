@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE NmLoader
+  SYSTEM "standardX26.dtd">
+<NmLoader>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>CATL</csvname>
+      <csvhierarchyDisplayName>CATL</csvhierarchyDisplayName>
+      <csvorganizerPaths></csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name/>
+      <csvdescription/>
+      <csvdata_type>ORG</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier/>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>englishName</csvname>
+      <csvhierarchyDisplayName>englishName</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>englishName</csvdisplay_name>
+      <csvdescription>englishName</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>englishName</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>CATL_Feature</csvname>
+      <csvhierarchyDisplayName>CATL_Feature</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>特征</csvdisplay_name>
+      <csvdescription>CATL_Feature</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>CATL_Feature</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>OpenMould</csvname>
+      <csvhierarchyDisplayName>OpenMould</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>是否具备开模条件</csvdisplay_name>
+      <csvdescription>OpenMould</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>OpenMould</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>createDuplicatePart</csvname>
+      <csvhierarchyDisplayName>createDuplicatePart</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>createDuplicatePart</csvdisplay_name>
+      <csvdescription>createDuplicatePart</csvdescription>
+      <csvdata_type>BOOL</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>createDuplicatePart</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>CATL_HalfProductGrade</csvname>
+      <csvhierarchyDisplayName>CATL_HalfProductGrade</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>半成品成熟度等级</csvdisplay_name>
+      <csvdescription>半成品成熟度等级</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>CATL_HalfProductGrade</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>specification</csvname>
+      <csvhierarchyDisplayName>specification</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>specification</csvdisplay_name>
+      <csvdescription>specification</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>specification</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>cls</csvname>
+      <csvhierarchyDisplayName>cls</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>cls</csvdisplay_name>
+      <csvdescription>cls</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>cls</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>oldPartNumber</csvname>
+      <csvhierarchyDisplayName>oldPartNumber</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>旧物料号</csvdisplay_name>
+      <csvdescription>oldPartNumber</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>oldPartNumber</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>isCustomer</csvname>
+      <csvhierarchyDisplayName>isCustomer</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>是否客供</csvdisplay_name>
+      <csvdescription>isCustomer</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>isCustomer</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>ReleasedDate</csvname>
+      <csvhierarchyDisplayName>ReleasedDate</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>发布时间</csvdisplay_name>
+      <csvdescription>ReleasedDate</csvdescription>
+      <csvdata_type>TIME</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>ReleasedDate</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+</NmLoader>

@@ -1,0 +1,4 @@
+#AccessRule,user,domain,typeId,permission,principal,permissionList,state,allExceptPrincipal
+AccessRule,,[/wt.inf.container.OrgContainer=CATL/wt.inf.library.WTLibrary=Datasheet¿â]/Default/CATLDefault,WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.EDatasheetDoc,+,teamMembers,0/10,ALL,false
+AccessRule,,[/wt.inf.container.OrgContainer=CATL/wt.inf.library.WTLibrary=Datasheet¿â]/Default/CATLDefault,WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.EDatasheetDoc,+,teamMembers,7,RELEASED,false
+AccessRule,,[/wt.inf.container.OrgContainer=CATL/wt.inf.library.WTLibrary=Datasheet¿â]/Default/CATLDefault,WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.EDatasheetDoc,+,teamMembers,0/2/10,WRITING,false

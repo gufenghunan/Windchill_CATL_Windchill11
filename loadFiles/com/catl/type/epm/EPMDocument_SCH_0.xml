@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE NmLoader
+  SYSTEM "standardX26.dtd">
+<NmLoader>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>CATL_ECAD</csvname>
+      <csvhierarchyDisplayName>CATL_ECAD</csvhierarchyDisplayName>
+      <csvorganizerPaths></csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name/>
+      <csvdescription/>
+      <csvdata_type>ORG</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier/>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>CATL_PlatformName</csvname>
+      <csvhierarchyDisplayName>CATL_PlatformName</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL_ECAD</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>平台名称</csvdisplay_name>
+      <csvdescription>CATL_PlatformName</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>CATL_PlatformName</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>UWGMECAD_Organizer</csvname>
+      <csvhierarchyDisplayName>UWGMECAD_Organizer</csvhierarchyDisplayName>
+      <csvorganizerPaths></csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name/>
+      <csvdescription/>
+      <csvdata_type>ORG</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier/>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>ECAD_NEUTRAL_FORMAT_FILE</csvname>
+      <csvhierarchyDisplayName>ECAD Neutral Format File</csvhierarchyDisplayName>
+      <csvorganizerPaths>UWGMECAD_Organizer</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>ECAD Neutral Format File</csvdisplay_name>
+      <csvdescription>ECAD Neutral Format File</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>ECAD_NEUTRAL_FORMAT_FILE</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>CATL_BusinessVersion</csvname>
+      <csvhierarchyDisplayName>CATL_BusinessVersion</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL_ECAD</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>业务版本</csvdisplay_name>
+      <csvdescription>CATL_BusinessVersion</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>CATL_BusinessVersion</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>ECAD_DESIGN_ITEM</csvname>
+      <csvhierarchyDisplayName>ECAD Design Item</csvhierarchyDisplayName>
+      <csvorganizerPaths>UWGMECAD_Organizer</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>ECAD Design Item</csvdisplay_name>
+      <csvdescription>ECAD Design Item</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>ECAD_DESIGN_ITEM</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+</NmLoader>

@@ -1,0 +1,230 @@
+package com.aac.change.dbs;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import org.apache.commons.lang.StringUtils;
+
+import com.aac.change.ChangeConstants;
+import com.aac.change.bean.CAInvProFormXmlObject;
+import com.aac.change.bean.CAInvProXmlObject;
+import com.aac.change.bean.CASetDateFormXmlObject;
+import com.aac.change.bean.CNRejectRoleXmlObject;
+import com.aac.change.resource.ChangeXmlObjectRB;
+import com.aac.change.workflow.ChangeExprFunction;
+import com.ptc.core.components.util.OidHelper;
+import com.ptc.mvc.components.ComponentParams;
+import com.ptc.xworks.util.StringMessage;
+import com.ptc.xworks.util.XWorksHelper;
+import com.ptc.xworks.xmlobject.BaseXmlObjectLink;
+import com.ptc.xworks.xmlobject.BaseXmlObjectRef;
+import com.ptc.xworks.xmlobject.XmlObject;
+import com.ptc.xworks.xmlobject.XmlObjectIdentifier;
+import com.ptc.xworks.xmlobject.annotation.EnumerationValue;
+import com.ptc.xworks.xmlobject.annotation.EnumerationValueInfo;
+import com.ptc.xworks.xmlobject.store.XmlObjectStoreManager;
+import com.ptc.xworks.xmlobject.web.AttributeGuiComponentBuildContext;
+import com.ptc.xworks.xmlobject.store.StoreOptions.LoadOption;
+
+import wt.change2.WTChangeActivity2;
+import wt.epm.EPMDocument;
+import wt.fc.WTObject;
+import wt.part.WTPart;
+import wt.util.WTException;
+import wt.util.WTMessage;
+
+public class ChangeXmlObjectUtils {
+
+	public static List<CNRejectRoleXmlObject> getCNXmlObjectBeans(WTObject pbo) throws WTException{
+		List<CNRejectRoleXmlObject> list = new ArrayList<CNRejectRoleXmlObject>();
+		XmlObjectStoreManager storeManager = XWorksHelper.getXmlObjectStoreManager();
+		XmlObjectIdentifier oid = XmlObjectIdentifier.newXmlObjectIdentifier(pbo);
+		List<XmlObject> result = storeManager.navigate(oid, ChangeConstants.APPFORM_CN);
+		for (XmlObject xmlObj : result) {
+			xmlObj = storeManager.load(xmlObj.getIdentifier(), LoadOption.ALL_CHILDS);
+			list.add((CNRejectRoleXmlObject)xmlObj);
+		}
+		return list;
+	}
+	
+	public static Map<String, Boolean> getRejectRole(WTObject pbo) throws WTException{
+		Map<String, Boolean> map = new HashMap<String, Boolean>();
+		List<CNRejectRoleXmlObject> list = getCNXmlObjectBeans(pbo);
+		if(!list.isEmpty()){
+			CNRejectRoleXmlObject xmlObj = list.get(0);
+			map.put(ChangeConstants.REJECT_ROLE_AE, xmlObj.getRejectRoleAE());
+			map.put(ChangeConstants.REJECT_ROLE_PE, xmlObj.getRejectRolePE());
+			map.put(ChangeConstants.REJECT_ROLE_PQA, xmlObj.getRejectRolePQA());
+			map.put(ChangeConstants.REJECT_ROLE_ME, xmlObj.getRejectRoleME());
+			map.put(ChangeConstants.REJECT_TESTTooling, xmlObj.getRejectRoleTESTTooling());
+			map.put(ChangeConstants.REJECT_QATooling, xmlObj.getRejectRoleQATooling());
+			map.put(ChangeConstants.REJECT_PETooling, xmlObj.getRejectRolePETooling());
+		}
+		return map;
+	}
+	
+	public static List<CAInvProFormXmlObject> getCAFormBeans(WTObject pbo) throws WTException{
+		List<CAInvProFormXmlObject> list = new ArrayList<CAInvProFormXmlObject>();
+		XmlObjectStoreManager storeManager = XWorksHelper.getXmlObjectStoreManager();
+		XmlObjectIdentifier oid = XmlObjectIdentifier.newXmlObjectIdentifier(pbo);
+		List<XmlObject> result = storeManager.navigate(oid, ChangeConstants.APPFORM_CA);
+		for (XmlObject xmlObj : result) {
+			xmlObj = storeManager.load(xmlObj.getIdentifier(), LoadOption.ALL_CHILDS);
+			list.add((CAInvProFormXmlObject)xmlObj);
+		}
+		return list;
+	}
+	
+	/**
+	 * 清除变更任务的库存处理措施信息
+	 * @param ca
+	 * @throws WTException
+	 */
+	public static void clearInvPro(WTChangeActivity2 ca) throws WTException{
+		XmlObjectStoreManager storeManager = XWorksHelper.getXmlObjectStoreManager();
+		XmlObjectIdentifier oid = XmlObjectIdentifier.newXmlObjectIdentifier(ca);
+		List<XmlObject> result = storeManager.navigate(oid, ChangeConstants.APPFORM_CA);
+		for (XmlObject xmlObj : result) {
+			CAInvProFormXmlObject caForm = (CAInvProFormXmlObject)xmlObj;
+			caForm.setParentPartsRemark("");
+			caForm.setRemovePartsRemark("");
+			storeManager.save(caForm);
+		}
+		result = storeManager.navigate(oid, ChangeConstants.ChildRole_ChangeParts);
+		result.addAll(storeManager.navigate(oid, ChangeConstants.ChildRole_RemoveParts));
+		result.addAll(storeManager.navigate(oid, ChangeConstants.ChildRole_ParentParts));
+		result.addAll(storeManager.navigate(oid, ChangeConstants.ChildRole_ChangeToolings));
+		result.addAll(storeManager.navigate(oid, ChangeConstants.ChildRole_RemoveToolings));
+		if(!result.isEmpty()){
+			for (XmlObject xmlObject : result) {
+				storeManager.delete(xmlObject);
+			}
+		}
+	}
+	
+	public static List<CAInvProXmlObject> getCAInvProXmlObjectBeans(WTObject pbo, String childRole) throws WTException{
+		List<CAInvProXmlObject> list = new ArrayList<CAInvProXmlObject>();
+		XmlObjectStoreManager storeManager = XWorksHelper.getXmlObjectStoreManager();
+		XmlObjectIdentifier oid = XmlObjectIdentifier.newXmlObjectIdentifier(pbo);
+		List<XmlObject> result = storeManager.navigate(oid, childRole);
+		for (XmlObject xmlObj : result) {
+			xmlObj = storeManager.load(xmlObj.getIdentifier(), LoadOption.ALL_CHILDS);
+			list.add((CAInvProXmlObject)xmlObj);
+		}
+		return list;
+	}
+	
+	public static List<EnumerationValue> getProcessMeasuresEnum(AttributeGuiComponentBuildContext buildContext){
+		List<EnumerationValue> list = new ArrayList<EnumerationValue>();
+		ComponentParams params = buildContext.getParentComponentBuildContext().getComponentParams();
+		String childRole = (String)params.getParameter("childRole");
+		if(StringUtils.equals(childRole, ChangeConstants.ChildRole_ChangeParts) || StringUtils.equals(childRole, ChangeConstants.ChildRole_ParentParts)){
+			list.add(new EnumerationValueInfo("1", new StringMessage(getLocalMsg(ChangeXmlObjectRB.PROCESS_MEASURES_OPTION_1))));
+			list.add(new EnumerationValueInfo("2", new StringMessage(getLocalMsg(ChangeXmlObjectRB.PROCESS_MEASURES_OPTION_2))));
+			list.add(new EnumerationValueInfo("3", new StringMessage(getLocalMsg(ChangeXmlObjectRB.PROCESS_MEASURES_OPTION_3))));
+		}
+		else if(StringUtils.equals(childRole, ChangeConstants.ChildRole_RemoveParts)){
+			list.add(new EnumerationValueInfo("2", new StringMessage(getLocalMsg(ChangeXmlObjectRB.PROCESS_MEASURES_OPTION_2))));
+			list.add(new EnumerationValueInfo("3", new StringMessage(getLocalMsg(ChangeXmlObjectRB.PROCESS_MEASURES_OPTION_3))));
+		}
+		else {
+			list.add(new EnumerationValueInfo("4", new StringMessage(getLocalMsg(ChangeXmlObjectRB.PROCESS_MEASURES_OPTION_4))));
+			list.add(new EnumerationValueInfo("3", new StringMessage(getLocalMsg(ChangeXmlObjectRB.PROCESS_MEASURES_OPTION_3))));
+		}
+		return list;
+	}
+	
+	public static String getLocalMsg(String key){
+		if(StringUtils.isNotBlank(key)){
+			return WTMessage.getLocalizedMessage(ChangeConstants.RB_XmlObj, key);
+		}
+		return "";
+	}
+	
+	public static void createPartCAInvProXmlObj(WTPart part, WTChangeActivity2 ca, String childRole) throws WTException{
+		if(part != null && ca != null && StringUtils.isNotBlank(childRole)){
+			String objVersion = ChangeExprFunction.getProcessingVersion(part, part.getState().toString());
+			if(StringUtils.isNotBlank(objVersion)){
+				XmlObjectStoreManager storeManager = XWorksHelper.getXmlObjectStoreManager();
+				CAInvProXmlObject xmlObj = new CAInvProXmlObject();
+				xmlObj.setObjectRef(OidHelper.getOidAsString(part));
+				xmlObj.setObjNumber(part.getNumber());
+				xmlObj.setObjName(part.getName());
+				xmlObj.setObjVersion(objVersion);
+				storeManager.save(xmlObj);
+				BaseXmlObjectRef parentRef = BaseXmlObjectRef.newBaseXmlObjectRef(ca);
+				BaseXmlObjectRef childRef = new BaseXmlObjectRef(xmlObj);
+				BaseXmlObjectLink link = new BaseXmlObjectLink(parentRef, "applicationFormOwner", childRef, childRole);
+				storeManager.save(link);
+			}
+		}
+	}
+	
+	public static void createEPMCAInvProXmlObj(EPMDocument epm, WTChangeActivity2 ca, String childRole) throws WTException{
+		if(epm != null && ca != null && StringUtils.isNotBlank(childRole)){
+			String objVersion = ChangeExprFunction.getProcessingVersion(epm);
+			if(StringUtils.isNotBlank(objVersion)){
+				XmlObjectStoreManager storeManager = XWorksHelper.getXmlObjectStoreManager();
+				CAInvProXmlObject xmlObj = new CAInvProXmlObject();
+				xmlObj.setObjectRef(OidHelper.getOidAsString(epm));
+				xmlObj.setObjNumber(epm.getNumber());
+				xmlObj.setObjName(epm.getName());
+				xmlObj.setObjVersion(objVersion);
+				storeManager.save(xmlObj);
+				BaseXmlObjectRef parentRef = BaseXmlObjectRef.newBaseXmlObjectRef(ca);
+				BaseXmlObjectRef childRef = new BaseXmlObjectRef(xmlObj);
+				BaseXmlObjectLink link = new BaseXmlObjectLink(parentRef, "applicationFormOwner", childRef, childRole);
+				storeManager.save(link);
+			}
+		}
+	}
+	
+	/**
+	 * 获取已经添加存储处理措施记录的对象编码
+	 * @param pbo
+	 * @param childRole
+	 * @return
+	 * @throws WTException
+	 */
+	public static Set<String> getAddedObjectsNumber(WTObject pbo) throws WTException{
+		Set<String> set = new HashSet<String>();
+		List<CAInvProXmlObject> list = getCAInvProXmlObjectBeans(pbo, ChangeConstants.ChildRole_ChangeParts);
+		list.addAll(getCAInvProXmlObjectBeans(pbo, ChangeConstants.ChildRole_ParentParts));
+		list.addAll(getCAInvProXmlObjectBeans(pbo, ChangeConstants.ChildRole_RemoveParts));
+		for (CAInvProXmlObject xmlObj : list) {
+			set.add(xmlObj.getObjNumber());
+		}
+		return set;
+	}
+	
+	public static List<CASetDateFormXmlObject> getCASetDateFormBeans(WTObject pbo) throws WTException{
+		List<CASetDateFormXmlObject> list = new ArrayList<CASetDateFormXmlObject>();
+		XmlObjectStoreManager storeManager = XWorksHelper.getXmlObjectStoreManager();
+		XmlObjectIdentifier oid = XmlObjectIdentifier.newXmlObjectIdentifier(pbo);
+		List<XmlObject> result = storeManager.navigate(oid, ChangeConstants.APPFORM_CA_SETDATE);
+		for (XmlObject xmlObj : result) {
+			xmlObj = storeManager.load(xmlObj.getIdentifier(), LoadOption.ALL_CHILDS);
+			list.add((CASetDateFormXmlObject)xmlObj);
+		}
+		return list;
+	}
+	
+	public static boolean hasInvProInfoForToolingCA(WTObject pbo) throws WTException{
+		if(pbo instanceof WTChangeActivity2){
+			WTChangeActivity2 ca = (WTChangeActivity2)pbo;
+			List<CAInvProXmlObject> changeToolings = ChangeXmlObjectUtils.getCAInvProXmlObjectBeans(ca, ChangeConstants.ChildRole_ChangeToolings);
+			if(changeToolings.size() > 0){
+				return true;
+			}
+			List<CAInvProXmlObject> removeToolings = ChangeXmlObjectUtils.getCAInvProXmlObjectBeans(ca, ChangeConstants.ChildRole_RemoveToolings);
+			if(removeToolings.size() > 0){
+				return true;
+			}
+		}
+		return false;
+	}
+}

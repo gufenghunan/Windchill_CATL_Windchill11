@@ -1,0 +1,75 @@
+<project name="Project" default="full_build" basedir=".">
+	<target name="full_build"          description="Build full  customizations.">
+         <jar destfile="fullBuild.jar">
+			<fileset dir="d:\ptc\Windchill">
+				<include name="codebase/com/catl/**/*.*" />
+				<include name="codebase/config/custom/**/*.*" />
+				<include name="codebase/config/mvc/custom.xml" />
+				<include name="loadFiles/com/catl/**/*.*" />
+				<include name="loadXMLFiles/com/catl/**/*.*" />
+				<include name="codebase/netmarkets/jsp/catl/**/*.*" />
+				<include name="codebase/netmarkets/images/catl/**/*.*" />
+				<include name="db/sql3/com/catl/**/*.sql" />
+				<include name="db/sql/com/catl/**/*.sql" />
+				<include name="src/com/catl/**/*.java" />
+				<include name="tasks/com/catl/**/*.*" />
+				<include name="wtCustom/**/*.*"/>
+				<include name="bin/loadData.bat"/>
+				<include name="copyPaste.txt"/>
+				<include name="deploy.txt"/>
+				<include name="wtSafeArea/siteMod/codebase/config/actions/custom-actions.xml" />
+				<include name="wtSafeArea/siteMod/codebase/config/actions/custom-actionModels.xml" />
+			</fileset>
+		</jar>
+   </target>
+   <target name="copyToGit"          description="Copy files in Windchill to git directory.">
+     <copy todir="d:\git\catl\Windchill">
+		<fileset dir="d:\ptc\Windchill">
+		 <!--
+			  <include name="loadXMLFiles/com/catl/**/*.*"/>
+			  <include name="codebase/netmarkets/jsp/catl/**/*.*"/>
+			  <include name="codebase/config/custom/*.xconf"/>
+			  <include name="codebase/config/custom/actions/*.xml"/>
+			  <include name="wtSafeArea/siteMod/**/*.*" />
+		      <include name="wtSafeArea/ptcOrig/**/*.*" />
+		      <include name="build/build.xml" />		  
+              <include name="tasks/com/catl/**/*.*" />
+		  -->
+		  <include name="loadFiles/com/catl/type/**/*.*"/>
+		  <include name="wtCustom/wt/**/*RB_zh_CN.rbInfo"/>
+		  <include name="wtCustom/wt/**/*RB.rbInfo"/>
+		  <include name="db/sql3/com/catl/**/*.sql" />
+		  <include name="db/sql/com/catl/**/*.sql" />
+		  
+		</fileset>
+     </copy>
+       
+   </target>
+   
+   <target name="copyToWC"          description="Copy files in git to Windchill directory.">
+     <copy todir="d:\ptc\Windchill">
+		<fileset dir="D:\PLMONE\trunk\Code">
+		  <include name="**/*.*"/>		  
+		</fileset>
+     </copy>
+       
+   </target>
+   
+  <target name="gitToWC"          description="Copy files in git to Windchill directory.">
+     <copy todir="d:\ptc\Windchill">
+		<fileset dir="D:\git\catl\Windchill">
+		  <include name="**/*.*"/>		  
+		</fileset>
+     </copy>
+       
+   </target>
+    
+
+   <target name="extract"          description="Deploy customization to OOTB environment">
+       <unzip src="d:\ptc\Windchill\build\fullBuild.jar" dest="d:\ptc\Windchill"/>
+   </target>
+
+   
+  
+
+</project>

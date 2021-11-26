@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE NmLoader
+  SYSTEM "standardX26.dtd">
+<NmLoader>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>CATL</csvname>
+      <csvhierarchyDisplayName>CATL</csvhierarchyDisplayName>
+      <csvorganizerPaths></csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name/>
+      <csvdescription/>
+      <csvdata_type>ORG</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier/>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>CATL_ChangeTaskNo</csvname>
+      <csvhierarchyDisplayName>关联的ECA</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>关联的ECA</csvdisplay_name>
+      <csvdescription>CATL_ChangeTaskNo</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>CATL_ChangeTaskNo</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+</NmLoader>

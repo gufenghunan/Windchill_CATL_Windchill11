@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE loadFileList SYSTEM "/wt/load/windchillLoad.dtd">
+<loadFileList>
+	
+	<!-- WTDocument 产品模具开发图文档 Type -->
+	<loadFile filename="com/catl/type/doc_md/WTDocument_md_0.xml" title="WTDocument_md__0.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/type/doc_md/WTDocument_md_1.xml" title="WTDocument_md__1.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/type/doc_md/WTDocument_md_2.xml" title="WTDocument_md__2.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<!-- 仿真报告 -->
+	<loadFile filename="com/catl/type/doc_fz/WTDocument_fz_0.xml" title="WTDocument_fz__0.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/type/doc_fz/WTDocument_fz_1.xml" title="WTDocument_fz__1.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/type/doc_fz/WTDocument_fz_2.xml" title="WTDocument_fz__2.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<!-- 软件文档 -->
+	<loadFile filename="com/catl/type/doc_soft/WTDocument_soft_0.xml" title="WTDocument_soft__0.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/type/doc_soft/WTDocument_soft_1.xml" title="WTDocument_soft__1.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/type/doc_soft/WTDocument_soft_2.xml" title="WTDocument_soft__2.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>	
+	<!-- 产品类软件 -->
+	<loadFile filename="com/catl/type/doc_Prdsoft/WTDocument_Prdsoft_0.xml" title="WTDocument_Prdsoft__0.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/type/doc_Prdsoft/WTDocument_Prdsoft_1.xml" title="WTDocument_Prdsoft__1.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/type/doc_Prdsoft/WTDocument_Prdsoft_2.xml" title="WTDocument_Prdsoft__2.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+</loadFileList>

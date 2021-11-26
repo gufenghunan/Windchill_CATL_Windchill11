@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<!DOCTYPE actionmodels SYSTEM '../../actionmodels.dtd'>
+<!-- define the actions on the UI components -->
+<actionmodels resourceBundle="com.ptc.windchill.enterprise.change2.changeManagementActionsRB">
+
+   <model name="more change request row actions" menufor="wt.change2.WTChangeRequest2">
+      <description>Change request row actions</description>
+      <submodel name="Change object row actions open"/>
+      <action name="separator" type="separator"/>
+      <action name="loadECAffect" type="catl"/>
+      <action name="view" type="object"/>
+      <action name="separator" type="separator"/>
+      <action name="edit" type="changeRequest"/>
+      <action name="editModifyContentOnly" type="changeRequest"/>
+      <action name="reviseChangeItems" type="change"/>
+      <action name="separator" type="separator"/>
+      <action name="create" type="changeNotice"/>
+      <action name="separator" type="separator"/>
+      <action name="relatedWorkitems" type="change"/>
+      <action name="separator" type="separator"/>
+      <action name="copy" type="object"/>
+      <action name="CONTAINERMOVE" type="pdmObject"/>
+      <action name="renameObjectWizard" type="object"/>
+      <action name="setState" type="lifecycle"/>
+      <action name="deleteChangeItem" type="change"/>
+      <action name="reassignLC" type="lifecycle"/> <!-- Reassign Life Cycle -->
+      <action name="resetTeam" type="team"/>
+      <action name="separator" type="separator"/>
+      <submodel name="change objects add row actions"/>
+      <action name="separator" type="separator"/>
+      <action name="removeShare" type="object"/>
+      <action name="separator" type="separator"/>
+      <action name="summaryReport" type="change"/>
+      <action name="separator" type="separator"/>
+      <action name="ManageSecurity" type="accessPermission"/>
+      <action name="securityLabelsSingleObjJCA" type="securityLabels"/>
+      <action name="EDITSECURITYLABELSNONCOLLECTED" type="object"/>
+      <action name="createSubscription" type="subscription"/>
+   </model>
+
+   <model name="more change notice row actions" menufor="wt.change2.WTChangeOrder2">
+      <description>Change notice row actions</description>
+      <submodel name="Change object row actions open"/>
+      <action name="separator" type="separator"/>
+	  <action name="loadECAffect" type="catl"/>
+      <action name="view" type="object"/>
+      <action name="separator" type="separator"/>
+      <action name="edit" type="changeNotice"/>
+      <action name="editdcn" type="changeNotice"/>      
+      <action name="editModifyContentOnly" type="changeNotice"/>      
+      <action name="editTemplate" type="changeNotice"/>
+      <action name="reissueChange" type="change"/>
+      <action name="separator" type="separator"/>
+      <action name="relatedWorkitems" type="change"/>
+      <action name="separator" type="separator"/>
+      <action name="copy" type="object"/>
+      <action name="CONTAINERMOVE" type="pdmObject"/>
+      <action name="renameObjectWizard" type="object"/>
+      <action name="setState" type="lifecycle"/>
+      <action name="deleteChangeItem" type="change"/>
+      <action name="reassignLC" type="lifecycle"/> <!-- Reassign Life Cycle -->
+      <action name="resetTeam" type="team"/>
+      <action name="separator" type="separator"/>
+      <submodel name="change objects add row actions"/>
+      <action name="separator" type="separator"/>
+      <action name="removeShare" type="object"/>
+      <action name="separator" type="separator"/>
+      <action name="summaryReport" type="change"/>
+      <action name="implementationStatusReport" type="changeNotice"/>
+      <action name="export" type="object" />
+      <action name="separator" type="separator"/>
+      <action   name="ManageSecurityMain" type="accessPermission"/>
+      <submodel name="object_manage_security_noncollectable_submenu"  />       <!-- Manage Security -->
+      <action name="createSubscription" type="subscription"/>
+   </model>
+   
+   
+    <!-- Tabs for Change Notice Info Page -->
+   <model name="changeNoticeInfoPageTabSet" >
+      <submodel name="changeNoticeDetailsTab"/>
+      <submodel name="implementationPlanTab"/>
+      <submodel name="simplifiedImplementationPlanTab"/>
+      <submodel name="changeNoticeProcessTab"/>
+      <submodel name="changeObjectsHistoryTab"/>
+	  <action   name ="customerFileOnECN" type="catl"/>
+      <action   name="sysnavTab" type="sysnav"/>
+   </model>
+   
+   <model name="changeTask.resultingItems.table.view">
+      <description>Toolbar actions for the resulting objects table for the change task info page</description>
+      <action name="list_copy" type="object" shortcut="true"/>
+      <action name="SETSTATE_FROMCHANGE" type="pdmObject"/>
+      <action name="launchMassChange" type="massChange" shortcut="true"/>
+      <action name="setEffectivityOnViewPage" type="effectivity" shortcut="true"/>
+      <action name="viewEffectivityOnViewPage" type="effectivity" shortcut="true"/>
+      <action name="separator" type="separator"/>
+      <action name="edit" type="changeTask" shortcut="true"/>
+      <action name="multiObjectCheckIn" type="wip"/>
+      <action name="multiObjectCheckOut" type="wip"/>
+      <action name="multiObjectUndoCheckout" type="wip"/>
+      <action name="publishToCAD" type="part"/>
+      <action name="launchStructureCompareForChange" type="change"/>
+      <action name="WFADDTOWORKSPACE" type="folder"/>
+      <action name="create" type="promotionRequest"/>                <!-- Promote -->
+      <submodel name="exportlisttofile_submenu" type="object"/>
+   </model>
+
+   <model name="changeTask row actions" menufor="wt.change2.WTChangeActivity2">
+      <description>Change task row actions</description>
+      <submodel name="Change object row actions open"/>
+      <action name="separator"           type="separator"/>
+      <action name="view"                type="object"/>
+      <action name="separator"           type="separator"/>
+      <action name="edit"                type="changeTask"/>
+      <action name="deleteChangeTask"    type="customChangeTask"/>
+      <action name="editTemplate"        type="changeTask"/>
+      <action name="separator"           type="separator"/>
+      <action name="relatedWorkitems"    type="change"/>
+      <action name="separator"           type="separator"/>
+      <!-- <action name="renameObjectWizard"  type="object"/> -->
+      <action name="CONTAINERMOVE"       type="pdmObject"/>
+      <action name="setState"            type="lifecycle"/>
+      <action name="reassignLC"          type="lifecycle"/> <!-- Reassign Life Cycle -->
+      <action name="resetTeam"           type="team"/>
+      <action name="separator"           type="separator"/>
+      <submodel name="change tasks add row actions"/>
+      <action name="separator"           type="separator"/>
+      <action name="removeShare"         type="object"/>
+      <action name="separator"           type="separator"/>
+      <action   name="ManageSecurityMain" type="accessPermission"/>
+      <submodel name="object_manage_security_noncollectable_submenu"  />       <!-- Manage Security -->
+      <action name="createSubscription"  type="subscription"/>
+    </model>
+	
+     <model name="change.listChangeNotices">
+       <description>Toolbar actions for the Change Notice table under the change menu</description>
+       <action name="list_copy" type="object" shortcut="true"/>
+       <action name="changeNoticeLog" type="changeReports" shortcut="true"/>
+       <!--<action name="create" type="changeNotice" shortcut="true"/>  -->
+       <submodel name="exportlisttofile_submenu" type="object"/>
+   </model>
+</actionmodels>

@@ -1,0 +1,5 @@
+#AccessRule,user,domain,typeId,permission,principal,permissionList,state,allExceptPrincipal
+AccessRule,,/,com.ptc.core.lwc.server.LWCStructEnumAttTemplate,+,ALL,0,ALL,
+AccessRule,,[/wt.inf.container.OrgContainer=CATL]/Default/PDM,com.CATLBattery.CATLChangeActivity2,+,ALL,0/2,ALL,
+AccessRule,,[/wt.inf.container.OrgContainer=CATL]/Default/PDM,com.CATLBattery.BomReviewPN,+,ALL,0/2,ALL,
+AccessRule,,[/wt.inf.container.OrgContainer=CATL]/Default/PDM,com.CATLBattery.PartApplyPN,+,ALL,0/2,ALL,

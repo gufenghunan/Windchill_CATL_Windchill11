@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listofactions SYSTEM "actions.dtd">
+
+<listofactions>
+	
+	
+	<!-- change inventory-->
+	<objecttype class="wt.fc.Persistable" name="catlInventory" resourceBundle="com.catl.change.inventory.resource.ChangeInventoryRB" >
+		<action name="changeInventory">
+			<!--includeFilter name="XXXX"/-->
+			<command class="com.catl.change.inventory.processor.CatlChangeInventoryFormProcessor" method="execute" url="netmarkets/jsp/catl/changeInventory/changeInventory.jsp" windowType="popup"/>
+		</action>
+        <action name="changeInventoryStep" id="changeInventoryStep" preloadWizardPage="false" required="false" hidden="true" >
+           <command windowType="wizard_step" url="netmarkets/jsp/catl/changeInventory/changeInventoryStep.jsp"/>
+        </action>
+		<action name="viewChangeInventory">
+			<includeFilter name="CatlViewChangeInventoryFiler"/>
+			<command url="netmarkets/jsp/catl/changeInventory/viewChangeInventory.jsp" windowType="page"/>
+		</action>
+	</objecttype>
+	
+</listofactions>     
+
+

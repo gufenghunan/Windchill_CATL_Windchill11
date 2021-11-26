@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE NmLoader SYSTEM "standardX24.dtd">
+
+<NmLoader>
+
+
+
+
+<!-- **  Valid Relationships for CustomReferenceLink ** -->
+<csvCreateDefaultAssociationConstraintItem handler="com.ptc.core.meta.type.mgmt.server.impl.association.LoadDefaultAssociationConstraintItem.createDefaultAssociationConstraintItem" >
+    <csvlinkType>com.CATLBattery.CustomReferenceLink</csvlinkType>
+    <csvroleAType>wt.change2.WTChangeActivity2</csvroleAType>
+    <csvroleBType>wt.part.WTPart</csvroleBType>
+</csvCreateDefaultAssociationConstraintItem>
+
+
+
+</NmLoader>

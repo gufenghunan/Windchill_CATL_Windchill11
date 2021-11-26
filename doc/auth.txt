@@ -1,0 +1,7 @@
+http://PLM_PD3_001:plm-pd3001@ndsapd111.atlbattery.com:50900/dir/wsdl?p=sa/bb0dbebabf8d3e209ddc0b2757265d05
+http://PLM_PD3_001:plm-pd3001@ndsapd111.atlbattery.com:50900/dir/wsdl?p=sa/26cdad1cdbca3555840abf66c4e6ee50
+http://PLM_PD3_001:plm-pd3001@ndsapd111.atlbattery.com:50900/dir/wsdl?p=sa/733133649d49374cb01b326ba6ffe461
+http://PLM_PD3_001:plm-pd3001@ndsapd111.atlbattery.com:50900/dir/wsdl?p=sa/02a9d7d65e33341187089cd9052b3de6
+http://PLM_PD3_001:plm-pd3001@ndsapd111.atlbattery.com:50900/dir/wsdl?p=sa/bff614efc3583c30bb3cfe095b1e2c1c
+http://PLM_PD3_001:plm-pd3001@ndsapd111.atlbattery.com:50900/dir/wsdl?p=sa/e70c2a910ace307189e0ba6eabae8bf2
+ 

@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="yes"?>
+<!DOCTYPE PROCESS>
+<PROCESS NAME="Create-Object">
+  <webject name="Do-SQL" type="ACT">
+    <param name="INSTANCE"  data="${@FORM[]w4cinstance[]}"/>
+    <param name="DBUSER" data="w4c"/>
+    <param name="PASSWD" data="w4c"/>
+    <param name="SQL"       data="ALTER TABLE ${@FORM[]tablename[]} ADD (${@FORM[]columnname[]})"/>
+    <param name="SQL"		data="CREATE OR REPLACE VIEW ${@FORM[]viewname[]} AS SELECT * FROM ${@FORM[]tablename[]}"/>
+  </webject>
+</PROCESS>

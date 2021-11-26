@@ -1,0 +1,23 @@
+ResourceInfo.class=wt.tools.resource.StringResourceInfo
+ResourceInfo.customizable=true
+ResourceInfo.deprecated=false
+
+# Entry Format (values equal to default value are not included)
+# <key>.value=
+# <key>.comment=
+# <key>.argComment<n>=
+# <key>.constant=
+# <key>.customizable=
+# <key>.deprecated=
+
+chana_promotion.AddPromotable.title.value=添加
+chana_promotion.AddPromotable.icon.value=add16x16.gif
+chana_promotion.AddPromotable.moreurlinfo.value=height=700,width=650,toolbar=no,location=no,menubar=no
+chana_promotion.AddPromotable.tooltip.value=添加
+chana_promotion.AddPromotable.description.value=添加
+
+chana_promotion.RemovePromotable.title.value=删除
+chana_promotion.RemovePromotable.icon.value=remove16x16.gif
+chana_promotion.RemovePromotable.moreurlinfo.value=height=700,width=650,toolbar=no,location=no,menubar=no
+chana_promotion.RemovePromotable.tooltip.value=删除
+chana_promotion.RemovePromotable.description.value=删除

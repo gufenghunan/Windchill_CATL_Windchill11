@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE loadFileList SYSTEM "/wt/load/windchillLoad.dtd">
+
+<!-- 
+windchill wt.load.LoadFileSet -file /ptc/Windchill_11.0/Windchill/loadFiles/ext/xworks/LoadSet.xml -u wcadmin -p wcadmin -NOSERVERSTOP -UNATTENDED
+ -->
+<loadFileList>
+
+	<!-- load group and user-group relationship -->
+
+	<!-- load attributes definition -->
+	<loadFile filename="ext/xworks/examples/xworks_enum_0.xml" containerPath="/"></loadFile>
+	<!-- load soft types definition -->
+	<loadFile filename="ext/xworks/examples/xworks_testpart_0.xml" containerPath="/"></loadFile>
+	<loadFile filename="ext/xworks/examples/xworks_testpart_1.xml" containerPath="/"></loadFile>
+	<loadFile filename="ext/xworks/examples/xworks_testpart_2.xml" containerPath="/"></loadFile>
+	<loadFile filename="ext/xworks/examples/xworks_testpart_3.xml" containerPath="/"></loadFile>
+	
+	<loadFile filename="ext/xworks/examples/xworks_refdocument_0.xml" containerPath="/"></loadFile>
+	<loadFile filename="ext/xworks/examples/xworks_refdocument_1.xml" containerPath="/"></loadFile>
+	<loadFile filename="ext/xworks/examples/xworks_testdocument_0.xml" containerPath="/"></loadFile>
+	<loadFile filename="ext/xworks/examples/xworks_testdocument_1.xml" containerPath="/"></loadFile>
+
+	<loadFile filename="ext/xworks/examples/xworks_promotionNotice_0.xml" containerPath="/"></loadFile>
+	<loadFile filename="ext/xworks/examples/xworks_promotionNotice_1.xml" containerPath="/"></loadFile>
+	<loadFile filename="ext/xworks/examples/xworks_promotionNotice_2.xml" containerPath="/"></loadFile>
+
+	<!-- load workflow templates -->
+	<loadFile filename="ext/xworks/examples/WF_PromotionRequestDemoProcess01.xml" containerPath="/"></loadFile>
+	<loadFile filename="ext/xworks/examples/WF_ECNDemo.xml" containerPath="/"></loadFile>
+
+	<!-- load lifecycle templates -->
+	<loadFile filename="ext/xworks/examples/LC_ECNDemo.xml" containerPath="/"></loadFile>
+	<loadFile filename="ext/xworks/examples/LC_PartAndDocumentAndEPMDocument.xml" containerPath="/"></loadFile>
+
+	<!-- load team templates -->
+
+	<!-- load object initialize rule templates -->
+
+	<!-- load container definition -->
+
+	<!-- load task form definition -->
+
+	<!-- load access control -->
+
+	<!-- load preferences setting -->
+	<loadFile filename="ext/xworks/examples/Preference.xml" containerPath="/"></loadFile>
+	
+	<loadFile filename="ext/xworks/examples/view_ItemPickerSearchResult.xml" containerPath="/"></loadFile>
+
+</loadFileList>

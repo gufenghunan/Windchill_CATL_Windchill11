@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE listofactions SYSTEM 'actions.dtd'>
+<listofactions>
+   <objecttype name="attachments" class="wt.content.ContentHolder" resourceBundle="com.ptc.windchill.enterprise.attachments.attachmentsResource">
+      <action name="attachments_table"/>
+      <action name="attachments_soft_step" uicomponent="ATTACHMENTS" ajax="row" postloadJS="preAttachmentsStep" preloadWizardPage="false">
+         <command class="com.catl.doc.soft.processor.SoftPackageAttachmentsSubFormProcessor" windowType="wizard_step"/>
+         <includeFilter name="hideFromDTI" />
+         <includeFilter name="EDACompareFilter" />
+      </action>    
+   </objecttype>
+
+</listofactions>

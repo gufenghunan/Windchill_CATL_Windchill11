@@ -1,0 +1,3781 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ProductConfig SYSTEM "standardX24.dtd">
+<ProductConfig>
+  <OrgStructure>
+    <DomainStructure>
+      <domainLevel>
+        <parentDomain>/Private</parentDomain>
+        <domainName>System</domainName>
+        <description>一个上下文管理对象的系统域。</description>
+      </domainLevel>
+      <domainLevel>
+        <parentDomain>/Default/PDM</parentDomain>
+        <domainName>Default</domainName>
+        <description>一个上下文业务对象的默认域。</description>
+        <domainLevel>
+          <domainName>CATLDefault</domainName>
+          <domainLevel><domainName>Catia图档</domainName></domainLevel>
+          <domainLevel><domainName>Gerber文件</domainName></domainLevel>
+          <domainLevel><domainName>PCBA装配图</domainName></domainLevel>
+          <domainLevel><domainName>产品技术文件</domainName></domainLevel>
+          <domainLevel><domainName>研发过程文档</domainName></domainLevel>
+          <domainLevel><domainName>线束AutoCAD图纸</domainName></domainLevel>
+          <domainLevel><domainName>零部件</domainName></domainLevel>
+        </domainLevel>
+        <domainLevel><domainName>CATLEcWf</domainName></domainLevel>
+      </domainLevel>
+    </DomainStructure>
+    <FolderStructure>
+      <cabinet>/Default</cabinet>
+      <domainName>/Default</domainName>
+      <rootPath>/</rootPath>
+      <AdHocACLEntrySet></AdHocACLEntrySet>
+      <nestedFolder>
+        <name>更改请求</name>
+        <domainName>/Default/CATLEcWf</domainName>
+        <AdHocACLEntrySet></AdHocACLEntrySet>
+      </nestedFolder>
+      <nestedFolder>
+        <name>升级请求</name>
+        <domainName>/Default/CATLEcWf</domainName>
+        <AdHocACLEntrySet></AdHocACLEntrySet>
+      </nestedFolder>
+      <nestedFolder>
+        <name>项目文件夹模板</name>
+        <domainName>/Default/CATLDefault</domainName>
+        <AdHocACLEntrySet></AdHocACLEntrySet>
+        <nestedFolder>
+          <name>产品资料</name>
+          <AdHocACLEntrySet></AdHocACLEntrySet>
+          <nestedFolder>
+          <name>研发过程文档</name>
+          <domainName>/Default/CATLDefault/研发过程文档</domainName>
+          <AdHocACLEntrySet></AdHocACLEntrySet>
+          </nestedFolder>
+          <nestedFolder>
+          <name>产品技术文件</name>
+          <domainName>/Default/CATLDefault/产品技术文件</domainName>
+          <AdHocACLEntrySet></AdHocACLEntrySet>
+          </nestedFolder>
+        </nestedFolder>
+        <nestedFolder>
+          <name>零部件</name>
+          <domainName>/Default/CATLDefault/零部件</domainName>
+          <AdHocACLEntrySet></AdHocACLEntrySet>
+        </nestedFolder>
+        <nestedFolder>
+          <name>设计图档</name>
+          <AdHocACLEntrySet></AdHocACLEntrySet>
+          <nestedFolder>
+          <name>PCBA装配图</name>
+          <domainName>/Default/CATLDefault/PCBA装配图</domainName>
+          <AdHocACLEntrySet></AdHocACLEntrySet>
+          </nestedFolder>
+          <nestedFolder>
+          <name>Gerber文件</name>
+          <domainName>/Default/CATLDefault/Gerber文件</domainName>
+          <AdHocACLEntrySet></AdHocACLEntrySet>
+          </nestedFolder>
+          <nestedFolder>
+          <name>线束AutoCAD图纸</name>
+          <domainName>/Default/CATLDefault/线束AutoCAD图纸</domainName>
+          <AdHocACLEntrySet></AdHocACLEntrySet>
+          </nestedFolder>
+          <nestedFolder>
+          <name>CATIA图档</name>
+          <domainName>/Default/CATLDefault/Catia图档</domainName>
+          <AdHocACLEntrySet></AdHocACLEntrySet>
+          </nestedFolder>
+        </nestedFolder>
+      </nestedFolder>
+      <nestedFolder>
+        <name>更改通告</name>
+        <domainName>/Default/CATLEcWf</domainName>
+        <AdHocACLEntrySet></AdHocACLEntrySet>
+      </nestedFolder>
+    </FolderStructure>
+  </OrgStructure>
+  <ExportedRoleMemberMap>
+    <projectMember><Role roleType="BUSINESS_ATTACH"></Role></projectMember>
+    <projectMember><Role roleType="CATL_PROCESS_READER"></Role></projectMember>
+    <projectMember><Role roleType="PRODUCTION_SUPERVISOR"></Role></projectMember>
+    <projectMember><Role roleType="DEVELOP_REPRESENT"></Role></projectMember>
+    <projectMember><Role roleType="PRODUCT_SAFE_ENGINEER"></Role></projectMember>
+    <projectMember><Role roleType="CATL_PMO"></Role></projectMember>
+    <projectMember><Role roleType="POST_SALES_ENGINEER"></Role></projectMember>
+    <projectMember><Role roleType="STANDARDIZATION_ENGINEER"></Role></projectMember>
+    <projectMember><Role roleType="PRODUCT_MANAGER"></Role></projectMember>
+    <projectMember><Role roleType="PLAN_CONTROL"></Role></projectMember>
+    <projectMember><Role roleType="CATL_SE_READER"></Role></projectMember>
+    <projectMember><Role roleType="RELIABILITYENGINEER"></Role></projectMember>
+    <projectMember><Role roleType="CATL_MCAD_READER"></Role></projectMember>
+    <projectMember><Role roleType="TEST_ENGINEER"></Role></projectMember>
+    <projectMember><Role roleType="PROCUREMENT_REPRESENT"></Role></projectMember>
+    <projectMember><Role roleType="INDUSTRIAL ENGINEER"></Role></projectMember>
+    <projectMember><Role roleType="CERTIFICATION_ENGINEER"></Role></projectMember>
+    <projectMember><Role roleType="BATTERY_DEVELOPMENT_ENGINEER"></Role></projectMember>
+    <projectMember><Role roleType="DOCUMENT_CONTROLLER"></Role></projectMember>
+    <projectMember><Role roleType="CATL_QUALITY_READER"></Role></projectMember>
+    <projectMember><Role roleType="PROJECT MANAGER"></Role></projectMember>
+    <projectMember><Role roleType="CATL_THERMAL_EMULATION_READER"></Role></projectMember>
+    <projectMember><Role roleType="EQUIPMENT_ENGINEER"></Role></projectMember>
+    <projectMember><Role roleType="CATL_HARNESS_READER"></Role></projectMember>
+    <projectMember><Role roleType="CATL_MANUFACTURER_READER"></Role></projectMember>
+    <projectMember><Role roleType="BATTERY_CELL_PM"></Role></projectMember>
+    <projectMember><Role roleType="CATL_TEST_READER"></Role></projectMember>
+    <projectMember><Role roleType="MANUFACTURE_REPRESENT"></Role></projectMember>
+    <projectMember><Role roleType="QUALITY_REPRESENTATIVE"></Role></projectMember>
+    <projectMember><Role roleType="CATL_DEVICE_READER"></Role></projectMember>
+    <projectMember><Role roleType="PRODUCT_DATA_ENGINGEER"></Role></projectMember>
+    <projectMember><Role roleType="SOFTWARE ENGINEER"></Role></projectMember>
+    <projectMember><Role roleType="CUSTOMER_SERVICE_REPRESENT"></Role></projectMember>
+    <projectMember><Role roleType="COST_ENGINGEER"></Role></projectMember>
+    <projectMember><Role roleType="CATL_EE_READER"></Role></projectMember>
+    <projectMember><Role roleType="SUPPLIER_UQALITY_MANAGEMENT"></Role></projectMember>
+    <projectMember><Role roleType="MEMBERS"></Role></projectMember>
+    <projectMember><Role roleType="EE_SYSTEM_ENGINEER"></Role></projectMember>
+    <projectMember><Role roleType="WICKING_ENGINEER"></Role></projectMember>
+    <projectMember><Role roleType="SYSTEM_ENGINEER"></Role></projectMember>
+    <projectMember><Role roleType="MATERIAL_CONTROL"></Role></projectMember>
+    <projectMember><Role roleType="STRUCTURAL_DESIGN_ENGINEER"></Role></projectMember>
+    <projectMember><Role roleType="CATL_SERVICE_READER"></Role></projectMember>
+    <projectMember>
+      <Role roleType="PRODUCT MANAGER"></Role>
+      <WTPrincipalReference classType="wt.org.WTUser" fullName="orgAdmin" isInternal="false" surname="orgAdmin" userEmail="orgAdmin@abc.com">
+        <ufid>uid=orgadmin,ou=people,cn=administrativeldap,cn=windchill_10.2,o=ptc|Ldap.catlbattery.com|Ldap.catlbattery.com</ufid>
+        <name>orgAdmin</name>
+      </WTPrincipalReference>
+    </projectMember>
+    <projectMember><Role roleType="CATL_SALES"></Role></projectMember>
+    <projectMember><Role roleType="PROCESS_ENGINEER"></Role></projectMember>
+    <projectMember><Role roleType="MARKETING_REPRESENTATIVE"></Role></projectMember>
+    <projectMember><Role roleType="PROJECT_ASSISTANT"></Role></projectMember>
+    <projectMember><Role roleType="PRODUCT_DECISION_COMMITTEE"></Role></projectMember>
+    <projectMember><Role roleType="COMPONENT_ENGINEER"></Role></projectMember>
+    <projectMember><Role roleType="HARDWARE_ENGINEER"></Role></projectMember>
+    <projectMember><Role roleType="FINANCIAL_REPRESENT"></Role></projectMember>
+    <projectMember><Role roleType="PRODUCT_QUALITY_ENGINEER"></Role></projectMember>
+    <projectMember><Role roleType="THERMAL-MANAGEMENT_EMULATE_ENGINEER"></Role></projectMember>
+  </ExportedRoleMemberMap>
+  <ExportedGuestMembers></ExportedGuestMembers>
+  <ExportedTemplateFiltering></ExportedTemplateFiltering>
+  <AccessControlRule>
+    <domainName>/System</domainName>
+    <externalTypeId>WCTYPE|wt.workflow.engine.WfExecutionObject</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="MODIFY"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/System</domainName>
+    <externalTypeId>WCTYPE|wt.fc.WTObject</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>GUEST</groupName>
+      <groupType>GUEST</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/System</domainName>
+    <externalTypeId>WCTYPE|wt.fc.WTObject</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/System</domainName>
+    <externalTypeId>WCTYPE|wt.fc.WTObject</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PRODUCT MANAGER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="ALL"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.part.alternaterep.WTPartAlternateRep</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.maturity.PromotionNotice|com.CATLBattery.PartApplyPN</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.meeting.actionitem.DiscreteActionItem</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>GUEST</groupName>
+      <groupType>GUEST</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="READ"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.meeting.actionitem.DiscreteActionItem</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="false"><name>OWNER</name></WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="MODIFY"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.meeting.actionitem.DiscreteActionItem</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="READ"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTProductInstance2</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="REVISE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|com.ptc.windchill.option.model.Group</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="READ"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.part.alternaterep.WTPartAlternateRep</externalTypeId>
+    <lifecycleState>INWORK</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="MODIFY"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DELETE"></permissionField>
+        <permissionField name="MODIFY_CONTENT"></permissionField>
+        <permissionField name="CHANGE_DOMAIN"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+        <permissionField name="CHANGE_CONTEXT"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|com.ptc.windchill.option.model.ChoiceRule</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="READ"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.part.alternaterep.WTPartAlternateRep</externalTypeId>
+    <lifecycleState>UNDERREVIEW</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.annotation.StructuredAnnotationSet</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="READ"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTProductInstance2</externalTypeId>
+    <lifecycleState>INWORK</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="MODIFY"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DELETE"></permissionField>
+        <permissionField name="CHANGE_DOMAIN"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+        <permissionField name="CHANGE_CONTEXT"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.vc.baseline.ManagedBaseline</externalTypeId>
+    <lifecycleState>INWORK</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="MODIFY"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DELETE"></permissionField>
+        <permissionField name="CHANGE_DOMAIN"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+        <permissionField name="CHANGE_CONTEXT"></permissionField>
+        <permissionField name="MODIFY_IDENTITY"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.change2.WTChangeActivity2|com.CATLBattery.CATLChangeActivity2</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.part.alternaterep.WTPartAlternateRep</externalTypeId>
+    <lifecycleState>OBSOLESCENCE</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.part.alternaterep.WTPartAlternateRep</externalTypeId>
+    <lifecycleState>PROTOTYPE</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|com.ptc.windchill.option.model.Option</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="READ"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.folder.SubFolder</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>GUEST</groupName>
+      <groupType>GUEST</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="READ"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.folder.SubFolder</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="MODIFY"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTProductConfiguration</externalTypeId>
+    <lifecycleState>INWORK</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="MODIFY"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DELETE"></permissionField>
+        <permissionField name="CHANGE_DOMAIN"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+        <permissionField name="CHANGE_CONTEXT"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPartSubstituteLink</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="MODIFY"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DELETE"></permissionField>
+        <permissionField name="CHANGE_DOMAIN"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.change2.WTChangeOrder2|com.CATLBattery.CATLChangeNotice</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|com.ptc.windchill.option.model.Choice</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="READ"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.maturity.PromotionNotice|com.CATLBattery.BomReviewPN</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.change2.WTVariance</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.annotation.StructuredAnnotationSet</externalTypeId>
+    <lifecycleState>INWORK</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="MODIFY"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DELETE"></permissionField>
+        <permissionField name="CHANGE_DOMAIN"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+        <permissionField name="CHANGE_CONTEXT"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTProductInstance2</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="READ"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.folder.Cabinet</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>GUEST</groupName>
+      <groupType>GUEST</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="READ"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.folder.Cabinet</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="MODIFY"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.change2.WTVariance</externalTypeId>
+    <lifecycleState>OPEN</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="MODIFY"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="MODIFY_CONTENT"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+        <permissionField name="MODIFY_IDENTITY"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPartAlternateLink</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="MODIFY"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DELETE"></permissionField>
+        <permissionField name="CHANGE_DOMAIN"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.part.alternaterep.WTPartAlternateRep</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.fc.WTObject</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>GUEST</groupName>
+      <groupType>GUEST</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.fc.WTObject</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PRODUCT MANAGER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="ALL"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.vc.baseline.ManagedBaseline</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="READ"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.change2.WTChangeRequest2|com.CATLBattery.CATLChangeRequest</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|com.ptc.windchill.option.model.OptionSet</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="READ"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTProductConfiguration</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="READ"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Catia图档</domainName>
+    <externalTypeId>WCTYPE|wt.epm.EPMDocument</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PRODUCT_DATA_ENGINGEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Catia图档</domainName>
+    <externalTypeId>WCTYPE|wt.epm.EPMDocument</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>WICKING_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Catia图档</domainName>
+    <externalTypeId>WCTYPE|wt.epm.EPMDocument</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>EE_SYSTEM_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Catia图档</domainName>
+    <externalTypeId>WCTYPE|wt.epm.EPMDocument</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>SYSTEM_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Catia图档</domainName>
+    <externalTypeId>WCTYPE|wt.epm.EPMDocument</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>HARDWARE_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Catia图档</domainName>
+    <externalTypeId>WCTYPE|wt.epm.EPMDocument</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PROJECT_ASSISTANT</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Catia图档</domainName>
+    <externalTypeId>WCTYPE|wt.epm.EPMDocument</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>DOCUMENT_CONTROLLER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Catia图档</domainName>
+    <externalTypeId>WCTYPE|wt.epm.EPMDocument</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>THERMAL-MANAGEMENT_EMULATE_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Catia图档</domainName>
+    <externalTypeId>WCTYPE|wt.epm.EPMDocument</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>STANDARDIZATION_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Catia图档</domainName>
+    <externalTypeId>WCTYPE|wt.epm.EPMDocument</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PROJECT MANAGER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Catia图档</domainName>
+    <externalTypeId>WCTYPE|wt.epm.EPMDocument</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PROCUREMENT_REPRESENT</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Catia图档</domainName>
+    <externalTypeId>WCTYPE|wt.epm.EPMDocument</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>DEVELOP_REPRESENT</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Catia图档</domainName>
+    <externalTypeId>WCTYPE|wt.epm.EPMDocument</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>STRUCTURAL_DESIGN_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Catia图档</domainName>
+    <externalTypeId>WCTYPE|wt.epm.EPMDocument</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PRODUCT_QUALITY_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Catia图档</domainName>
+    <externalTypeId>WCTYPE|wt.epm.EPMDocument</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PRODUCT_DECISION_COMMITTEE</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Catia图档</domainName>
+    <externalTypeId>WCTYPE|wt.epm.EPMDocument</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>QUALITY_REPRESENTATIVE</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Catia图档</domainName>
+    <externalTypeId>WCTYPE|wt.epm.EPMDocument</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>TEST_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Catia图档</domainName>
+    <externalTypeId>WCTYPE|wt.epm.EPMDocument</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="REVISE"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Catia图档</domainName>
+    <externalTypeId>WCTYPE|wt.epm.EPMDocument</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>MANUFACTURE_REPRESENT</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Catia图档</domainName>
+    <externalTypeId>WCTYPE|wt.epm.EPMDocument</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CATL_MCAD_READER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Catia图档</domainName>
+    <externalTypeId>WCTYPE|wt.epm.EPMDocument</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PROCESS_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Catia图档</domainName>
+    <externalTypeId>WCTYPE|wt.epm.EPMDocument</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CATL_HARNESS_READER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Catia图档</domainName>
+    <externalTypeId>WCTYPE|wt.epm.EPMDocument</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PRODUCT_MANAGER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Catia图档</domainName>
+    <externalTypeId>WCTYPE|wt.epm.EPMDocument</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>RELIABILITYENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Catia图档</domainName>
+    <externalTypeId>WCTYPE|wt.epm.EPMDocument</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>SUPPLIER_UQALITY_MANAGEMENT</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Catia图档</domainName>
+    <externalTypeId>WCTYPE|wt.epm.EPMDocument</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CERTIFICATION_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Catia图档</domainName>
+    <externalTypeId>WCTYPE|wt.epm.EPMDocument</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PRODUCT_SAFE_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Catia图档</domainName>
+    <externalTypeId>WCTYPE|wt.epm.EPMDocument</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CATL_THERMAL_EMULATION_READER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Catia图档</domainName>
+    <externalTypeId>WCTYPE|wt.epm.EPMDocument</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>POST_SALES_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Catia图档</domainName>
+    <externalTypeId>WCTYPE|wt.epm.EPMDocument</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PRODUCTION_SUPERVISOR</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Catia图档</domainName>
+    <externalTypeId>WCTYPE|wt.epm.EPMDocument</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CUSTOMER_SERVICE_REPRESENT</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Catia图档</domainName>
+    <externalTypeId>WCTYPE|wt.epm.EPMDocument</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>MATERIAL_CONTROL</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Gerber文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.gerberDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PRODUCT_DATA_ENGINGEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Gerber文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.gerberDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>DOCUMENT_CONTROLLER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Gerber文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.gerberDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>EE_SYSTEM_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Gerber文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.gerberDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PROJECT MANAGER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Gerber文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.gerberDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>STANDARDIZATION_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Gerber文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.gerberDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>HARDWARE_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Gerber文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.gerberDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>SYSTEM_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Gerber文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.gerberDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PROCUREMENT_REPRESENT</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Gerber文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.gerberDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>DEVELOP_REPRESENT</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Gerber文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.gerberDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>STRUCTURAL_DESIGN_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Gerber文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.gerberDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PROJECT_ASSISTANT</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Gerber文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.gerberDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CERTIFICATION_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Gerber文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.gerberDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>SUPPLIER_UQALITY_MANAGEMENT</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Gerber文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.gerberDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PRODUCT_QUALITY_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Gerber文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.gerberDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PRODUCT_DECISION_COMMITTEE</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Gerber文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.gerberDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PRODUCT_SAFE_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Gerber文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.gerberDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>QUALITY_REPRESENTATIVE</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Gerber文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.gerberDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="REVISE"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Gerber文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.gerberDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CATL_EE_READER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Gerber文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.gerberDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>MATERIAL_CONTROL</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Gerber文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.gerberDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PRODUCT_MANAGER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/Gerber文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.gerberDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>RELIABILITYENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/PCBA装配图</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.pcbaDrawing</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CERTIFICATION_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/PCBA装配图</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.pcbaDrawing</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>SUPPLIER_UQALITY_MANAGEMENT</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/PCBA装配图</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.pcbaDrawing</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PRODUCT_QUALITY_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/PCBA装配图</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.pcbaDrawing</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PRODUCT_DECISION_COMMITTEE</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/PCBA装配图</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.pcbaDrawing</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PRODUCT_SAFE_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/PCBA装配图</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.pcbaDrawing</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>QUALITY_REPRESENTATIVE</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/PCBA装配图</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.pcbaDrawing</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="REVISE"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/PCBA装配图</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.pcbaDrawing</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CATL_EE_READER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/PCBA装配图</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.pcbaDrawing</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>MATERIAL_CONTROL</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/PCBA装配图</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.pcbaDrawing</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PRODUCT_MANAGER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/PCBA装配图</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.pcbaDrawing</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>RELIABILITYENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/PCBA装配图</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.pcbaDrawing</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PRODUCT_DATA_ENGINGEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/PCBA装配图</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.pcbaDrawing</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>DOCUMENT_CONTROLLER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/PCBA装配图</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.pcbaDrawing</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>EE_SYSTEM_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/PCBA装配图</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.pcbaDrawing</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PROJECT MANAGER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/PCBA装配图</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.pcbaDrawing</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>STANDARDIZATION_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/PCBA装配图</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.pcbaDrawing</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>HARDWARE_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/PCBA装配图</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.pcbaDrawing</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>SYSTEM_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/PCBA装配图</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.pcbaDrawing</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PROCUREMENT_REPRESENT</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/PCBA装配图</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.pcbaDrawing</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>DEVELOP_REPRESENT</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/PCBA装配图</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.pcbaDrawing</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>STRUCTURAL_DESIGN_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/PCBA装配图</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.pcbaDrawing</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PROJECT_ASSISTANT</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/产品技术文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.technicalDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PRODUCT_DECISION_COMMITTEE</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/产品技术文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.technicalDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>EE_SYSTEM_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/产品技术文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.technicalDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="REVISE"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/产品技术文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.technicalDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>SYSTEM_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/产品技术文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.technicalDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>MANUFACTURE_REPRESENT</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/产品技术文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.technicalDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CATL_MCAD_READER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/产品技术文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.technicalDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CATL_HARNESS_READER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/产品技术文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.technicalDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PRODUCT_MANAGER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/产品技术文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.technicalDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CATL_QUALITY_READER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/产品技术文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.technicalDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CATL_DEVICE_READER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/产品技术文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.technicalDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CATL_PROCESS_READER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/产品技术文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.technicalDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CATL_SERVICE_READER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/产品技术文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.technicalDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CATL_THERMAL_EMULATION_READER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/产品技术文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.technicalDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>POST_SALES_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/产品技术文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.technicalDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CATL_TEST_READER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/产品技术文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.technicalDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PRODUCTION_SUPERVISOR</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/产品技术文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.technicalDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CATL_EE_READER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/产品技术文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.technicalDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>DEVELOP_REPRESENT</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/产品技术文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.technicalDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CATL_MANUFACTURER_READER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/产品技术文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.technicalDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CATL_SE_READER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/产品技术文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.technicalDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PRODUCT_QUALITY_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/产品技术文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.technicalDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PRODUCT_DATA_ENGINGEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/产品技术文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.technicalDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>WICKING_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/产品技术文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.technicalDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>QUALITY_REPRESENTATIVE</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/产品技术文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.technicalDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>SOFTWARE ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/产品技术文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.technicalDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>COMPONENT_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/产品技术文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.technicalDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>HARDWARE_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/产品技术文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.technicalDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PLAN_CONTROL</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/产品技术文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.technicalDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PROCESS_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/产品技术文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.technicalDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PROJECT_ASSISTANT</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/产品技术文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.technicalDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>RELIABILITYENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/产品技术文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.technicalDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PRODUCT_SAFE_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/产品技术文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.technicalDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>DOCUMENT_CONTROLLER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/产品技术文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.technicalDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PROJECT MANAGER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/产品技术文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.technicalDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PROCUREMENT_REPRESENT</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/产品技术文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.technicalDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CUSTOMER_SERVICE_REPRESENT</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/产品技术文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.technicalDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>MATERIAL_CONTROL</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/产品技术文件</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.technicalDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>STRUCTURAL_DESIGN_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/研发过程文档</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.rdDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PRODUCT_QUALITY_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/研发过程文档</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.rdDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PRODUCT_DATA_ENGINGEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/研发过程文档</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.rdDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>WICKING_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/研发过程文档</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.rdDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>QUALITY_REPRESENTATIVE</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/研发过程文档</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.rdDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>SOFTWARE ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/研发过程文档</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.rdDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>EE_SYSTEM_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/研发过程文档</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.rdDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>COMPONENT_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/研发过程文档</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.rdDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>TEST_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/研发过程文档</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.rdDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>MANUFACTURE_REPRESENT</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/研发过程文档</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.rdDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>HARDWARE_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/研发过程文档</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.rdDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>SYSTEM_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/研发过程文档</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.rdDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PROCESS_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/研发过程文档</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.rdDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>EQUIPMENT_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/研发过程文档</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.rdDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PROJECT_ASSISTANT</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/研发过程文档</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.rdDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>RELIABILITYENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/研发过程文档</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.rdDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CERTIFICATION_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/研发过程文档</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.rdDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>SUPPLIER_UQALITY_MANAGEMENT</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/研发过程文档</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.rdDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PRODUCT_SAFE_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/研发过程文档</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.rdDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>DOCUMENT_CONTROLLER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/研发过程文档</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.rdDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>THERMAL-MANAGEMENT_EMULATE_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/研发过程文档</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.rdDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PROJECT MANAGER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/研发过程文档</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.rdDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PROCUREMENT_REPRESENT</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/研发过程文档</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.rdDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CUSTOMER_SERVICE_REPRESENT</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/研发过程文档</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.rdDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>DEVELOP_REPRESENT</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/研发过程文档</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.rdDoc</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>STRUCTURAL_DESIGN_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/研发过程文档</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.rdDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CATL_PROCESS_READER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/研发过程文档</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.rdDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PRODUCT_DECISION_COMMITTEE</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/研发过程文档</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.rdDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CATL_SERVICE_READER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/研发过程文档</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.rdDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CATL_THERMAL_EMULATION_READER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/研发过程文档</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.rdDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CATL_TEST_READER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/研发过程文档</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.rdDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="REVISE"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/研发过程文档</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.rdDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CATL_EE_READER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/研发过程文档</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.rdDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CATL_MCAD_READER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/研发过程文档</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.rdDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CATL_HARNESS_READER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/研发过程文档</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.rdDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PRODUCT_MANAGER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/研发过程文档</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.rdDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CATL_SE_READER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/研发过程文档</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.rdDoc</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CATL_DEVICE_READER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/线束AutoCAD图纸</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.autocadDrawing</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PRODUCT_DATA_ENGINGEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/线束AutoCAD图纸</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.autocadDrawing</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>WICKING_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/线束AutoCAD图纸</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.autocadDrawing</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>EE_SYSTEM_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/线束AutoCAD图纸</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.autocadDrawing</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>SYSTEM_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/线束AutoCAD图纸</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.autocadDrawing</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>HARDWARE_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/线束AutoCAD图纸</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.autocadDrawing</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PROJECT_ASSISTANT</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/线束AutoCAD图纸</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.autocadDrawing</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>DOCUMENT_CONTROLLER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/线束AutoCAD图纸</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.autocadDrawing</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>THERMAL-MANAGEMENT_EMULATE_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/线束AutoCAD图纸</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.autocadDrawing</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>STANDARDIZATION_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/线束AutoCAD图纸</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.autocadDrawing</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PROJECT MANAGER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/线束AutoCAD图纸</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.autocadDrawing</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PROCUREMENT_REPRESENT</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/线束AutoCAD图纸</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.autocadDrawing</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>DEVELOP_REPRESENT</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/线束AutoCAD图纸</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.autocadDrawing</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>STRUCTURAL_DESIGN_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/线束AutoCAD图纸</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.autocadDrawing</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PRODUCT_QUALITY_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/线束AutoCAD图纸</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.autocadDrawing</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PRODUCT_DECISION_COMMITTEE</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/线束AutoCAD图纸</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.autocadDrawing</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>QUALITY_REPRESENTATIVE</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/线束AutoCAD图纸</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.autocadDrawing</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>TEST_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/线束AutoCAD图纸</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.autocadDrawing</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="REVISE"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/线束AutoCAD图纸</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.autocadDrawing</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>MANUFACTURE_REPRESENT</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/线束AutoCAD图纸</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.autocadDrawing</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CATL_MCAD_READER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/线束AutoCAD图纸</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.autocadDrawing</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PROCESS_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/线束AutoCAD图纸</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.autocadDrawing</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CATL_HARNESS_READER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/线束AutoCAD图纸</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.autocadDrawing</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PRODUCT_MANAGER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/线束AutoCAD图纸</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.autocadDrawing</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>RELIABILITYENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/线束AutoCAD图纸</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.autocadDrawing</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>SUPPLIER_UQALITY_MANAGEMENT</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/线束AutoCAD图纸</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.autocadDrawing</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CERTIFICATION_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/线束AutoCAD图纸</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.autocadDrawing</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PRODUCT_SAFE_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/线束AutoCAD图纸</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.autocadDrawing</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>POST_SALES_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/线束AutoCAD图纸</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.autocadDrawing</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PRODUCTION_SUPERVISOR</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/线束AutoCAD图纸</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.autocadDrawing</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CUSTOMER_SERVICE_REPRESENT</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/线束AutoCAD图纸</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.autocadDrawing</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>MATERIAL_CONTROL</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PRODUCT_DATA_ENGINGEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>WICKING_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>SOFTWARE ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>EE_SYSTEM_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>FINANCIAL_REPRESENT</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>COMPONENT_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>HARDWARE_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>SYSTEM_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PLAN_CONTROL</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PROJECT_ASSISTANT</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>DOCUMENT_CONTROLLER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PROJECT MANAGER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>STANDARDIZATION_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PROCUREMENT_REPRESENT</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CUSTOMER_SERVICE_REPRESENT</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>MATERIAL_CONTROL</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>DEVELOP_REPRESENT</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>STRUCTURAL_DESIGN_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+        <permissionField name="CREATE_BY_MOVE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>COST_ENGINGEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PRODUCT_QUALITY_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>QUALITY_REPRESENTATIVE</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>TEST_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="REVISE"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>MANUFACTURE_REPRESENT</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PRODUCT_MANAGER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CATL_PMO</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>RELIABILITYENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>SUPPLIER_UQALITY_MANAGEMENT</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PRODUCT_SAFE_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CATL_SALES</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>POST_SALES_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PRODUCTION_SUPERVISOR</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PRODUCT_DECISION_COMMITTEE</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>BATTERY_CELL_PM</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>BUSINESS_ATTACH</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CATL_MCAD_READER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PROCESS_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CATL_HARNESS_READER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>MARKETING_REPRESENTATIVE</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CATL_QUALITY_READER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>EQUIPMENT_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CATL_PROCESS_READER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CERTIFICATION_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CATL_SERVICE_READER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>THERMAL-MANAGEMENT_EMULATE_ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CATL_EE_READER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CATL_MANUFACTURER_READER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>INDUSTRIAL ENGINEER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default/CATLDefault/零部件</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart|com.CATLBattery.CATLPart</externalTypeId>
+    <lifecycleState>RELEASED</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>CATL_SE_READER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AdHocACLEntrySet></AdHocACLEntrySet>
+</ProductConfig>

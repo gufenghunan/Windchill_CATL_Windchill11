@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE NmLoader
+  SYSTEM "standardX26.dtd">
+<NmLoader>
+   <csvQuantityOfMeasure handler="wt.units.service.UnitsLoader.createQOM">
+      <csvname>Temperature</csvname>
+      <csvdescription/>
+      <csvbaseUnitSymbol>K</csvbaseUnitSymbol>
+      <csvnameAndValuePairs>MKS~degC|SI~degC|CGS~degC</csvnameAndValuePairs>
+   </csvQuantityOfMeasure>
+   <csvQuantityOfMeasure handler="wt.units.service.UnitsLoader.createQOM">
+      <csvname>Length</csvname>
+      <csvdescription/>
+      <csvbaseUnitSymbol>m</csvbaseUnitSymbol>
+      <csvnameAndValuePairs></csvnameAndValuePairs>
+   </csvQuantityOfMeasure>
+   <csvQuantityOfMeasure handler="wt.units.service.UnitsLoader.createQOM">
+      <csvname>Acceleration</csvname>
+      <csvdescription/>
+      <csvbaseUnitSymbol>m/s**2</csvbaseUnitSymbol>
+      <csvnameAndValuePairs>USCS~ft/s**2</csvnameAndValuePairs>
+   </csvQuantityOfMeasure>
+</NmLoader>

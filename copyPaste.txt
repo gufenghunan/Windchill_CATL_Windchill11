@@ -1,0 +1,82 @@
+<!--load workflow-->
+
+windchill wt.load.LoadFromFile -d loadFiles\com\catl\workflow\WF_change_ECR.xml -CONT_PATH /wt.inf.container.OrgContainer=CATL -u orgadmin -p 1
+
+
+
+windchill wt.load.LoadFromFile -d loadFiles\com\catl\dms\productContainer.xml -CONT_PATH /wt.inf.container.OrgContainer=CATL -u orgadmin -p 1
+
+/****load users/
+windchill wt.load.LoadFromFile -d loadFiles\com\catl\dms\users.xml -u orgadmin -p 1
+
+
+
+/** copy paste command**/
+windchill wt.load.LoadFromFile -d loadFiles\com\catl\oir\Promotion_OIR.xml -CONT_PATH /wt.inf.container.OrgContainer=CATL -u orgadmin -p 1
+windchill wt.load.LoadFromFile -d loadFiles\com\catl\oir\Document_OIR.xml -CONT_PATH /wt.inf.container.OrgContainer=CATL -u orgadmin -p 1
+
+windchill wt.load.LoadFromFile -d loadFiles\com\catl\oir\PromotionPartApply_OIR.xml -CONT_PATH /wt.inf.container.OrgContainer=CATL -u orgadmin -p 1
+
+
+windchill wt.load.LoadFromFile -d loadFiles\com\catl\preference\preference.xml -u orgadmin -p 1
+windchill wt.load.LoadFromFile -d loadFiles\com\catl\preference\changedPreference.xml -u orgadmin -p 1
+
+
+windchill wt.load.LoadFromFile -d loadFiles\com\catl\view\BomViewTree.xml -u orgadmin -p 1
+windchill wt.load.LoadFromFile -d loadFiles\com\catl\view\BomViewUses.xml -u orgadmin -p 1
+windchill wt.load.LoadFromFile -d loadFiles\com\catl\view\FolderViewAll.xml -u orgadmin -p 1
+
+
+
+
+
+/****Command for copy all files in Windchill to git directoy****/
+1.open windchill shell
+2. ant -f build\build.xml copyToGit
+/**copy all files in git to Windchill runtime ***/
+ant -f build\build.xml copyToWC 
+
+/****export part type layout ,attributes ****/
+
+windchill wt.load.LoadFromFile -d loadFiles/com/catl/export/exportPartType.xml -u orgadmin -p 1
+windchill wt.load.LoadFromFile -d loadFiles/com/catl/export/exportDocType.xml -u orgadmin -p 1
+windchill wt.load.LoadFromFile -d loadFiles/com/catl/export/exportChangeType.xml -u orgadmin -p 1
+windchill wt.load.LoadFromFile -d loadFiles/com/catl/export/exportPromotionNoticeType.xml -u orgadmin -p 1
+windchill wt.load.LoadFromFile -d loadFiles/com/catl/export/exportGlobalEnum.xml -u orgadmin -p 1
+windchill wt.load.LoadFromFile -d loadFiles/com/catl/export/exportPartUsageLinkType.xml -u orgadmin -p 1
+
+windchill wt.load.LoadFromFile -d loadFiles\com\catl\export\exportPartType.xml -u orgadmin -p 1
+windchill wt.load.LoadFromFile -d loadFiles\com\catl\export\exportDocType.xml -u orgadmin -p 1
+windchill wt.load.LoadFromFile -d loadFiles\com\catl\export\exportChangeType.xml -u orgadmin -p 1
+windchill wt.load.LoadFromFile -d loadFiles\com\catl\export\exportPromotionNoticeType.xml -u orgadmin -p 1
+windchill wt.load.LoadFromFile -d loadFiles\com\catl\export\exportGlobalEnum.xml -u orgadmin -p 1
+windchill wt.load.LoadFromFile -d loadFiles\com\catl\export\exportPartUsageLinkType.xml -u orgadmin -p 1
+
+
+/**  load product template command****/
+windchill wt.load.LoadFromFile -d loadFiles\com\catl\context\ContainerTemplate.xml -CONT_PATH /wt.inf.container.OrgContainer=CATL -u orgadmin -1
+
+/**** load types, workfow ,lifycycle******
+
+windchill wt.load.LoadFileSet -file d:\ptc\Windchill\loadfiles\com\catl\loader\loadPartType.xml -NoServerStop -u orgadmin -p 1 -UAOps
+windchill wt.load.LoadFileSet -file d:\ptc\Windchill\loadfiles\com\catl\loader\loadDocType.xml -NoServerStop -u orgadmin -p 1 -UAOps
+windchill wt.load.LoadFileSet -file d:\ptc\Windchill\loadfiles\com\catl\loader\loadChangeType.xml -NoServerStop -u orgadmin -p 1 -UAOps
+windchill wt.load.LoadFileSet -file d:\ptc\Windchill\loadfiles\com\catl\loader\loadWorkflow.xml -NoServerStop -u orgadmin -p 1 -UAOps
+windchill wt.load.LoadFileSet -file d:\ptc\Windchill\loadfiles\com\catl\loader\loadLifeCycle.xml -NoServerStop -u orgadmin -p 1 -UAOps
+windchill wt.load.LoadFileSet -file d:\ptc\Windchill\loadfiles\com\catl\loader\loadOIR.xml -NoServerStop -u orgadmin -p 1 -UAOps
+windchill wt.load.LoadFileSet -file d:\ptc\Windchill\loadfiles\com\catl\loader\loadContextTemplate.xml -NoServerStop -u orgadmin -p 1 -UAOps
+windchill wt.load.LoadFileSet -file d:\ptc\Windchill\loadfiles\com\catl\loader\loadGlobalEnumeration.xml -NoServerStop -u orgadmin -p 1 -UAOps
+
+/*** reload action and action model****/
+windchill    com.ptc.netmarkets.util.misc.NmActionServiceHelper
+
+/**** convert csv to XML*******/
+d:\ptc\Windchill>windchill wt.load.util.CSV2XML -root d:\ptc\Windchill\loadFiles\com\catl\acces
+
+windchill wt.load.LoadFromFile -d loadFiles\com\catl\access\accessRule.xml -u orgadmin -p 1 
+
+/****test ERP interface command***
+1.open windchill shell
+/**must sure java files has updated**/
+2.windchill com.catl.bom.workflow.BomSetSapUtil oid
+3.windchill com.catl.part.PartReleasedUtil oid

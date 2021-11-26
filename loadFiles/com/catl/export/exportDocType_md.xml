@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE NmLoader SYSTEM "standardX20.dtd">
+<NmLoader>
+
+	<csvExportDefinition handler="com.ptc.core.lwc.server.TypeDefinitionExporter.beginExportDefinition">
+		<csvtoLocation>/ptc/Windchill_11.0/Windchill/loadFiles/com/catl/type/doc_md</csvtoLocation>
+		<csvtoFileName>WTDocument_md.xml</csvtoFileName>
+		<csvexportDefClass>com.ptc.core.lwc.server.LWCTypeDefinition</csvexportDefClass>
+		<csvexportNames>com.CATLBattery.mdDoc</csvexportNames>
+		<csvmode>0</csvmode>
+		<csvExportAncestorTypes>false</csvExportAncestorTypes>
+	</csvExportDefinition>
+	
+
+</NmLoader>

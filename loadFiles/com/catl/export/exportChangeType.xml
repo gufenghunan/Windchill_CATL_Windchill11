@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE NmLoader SYSTEM "standardX20.dtd">
+<NmLoader>
+
+	<csvExportDefinition handler="com.ptc.core.lwc.server.TypeDefinitionExporter.beginExportDefinition">
+		<csvtoLocation>/ptc/Windchill_11.0/Windchill/loadFiles/com/catl/type/change</csvtoLocation>
+		<csvtoFileName>WTChangeRequest2.xml</csvtoFileName>
+		<csvexportDefClass>com.ptc.core.lwc.server.LWCTypeDefinition</csvexportDefClass>
+		<csvexportNames>wt.change2.WTChangeRequest2</csvexportNames>
+		<csvmode>0</csvmode>
+		<csvExportAncestorTypes>false</csvExportAncestorTypes>
+	</csvExportDefinition>
+
+	<csvExportDefinition handler="com.ptc.core.lwc.server.TypeDefinitionExporter.beginExportDefinition">
+		<csvtoLocation>/ptc/Windchill_11.0/Windchill/loadFiles/com/catl/type/change</csvtoLocation>
+		<csvtoFileName>WTChangeActivity2.xml</csvtoFileName>
+		<csvexportDefClass>com.ptc.core.lwc.server.LWCTypeDefinition</csvexportDefClass>
+		<csvexportNames>wt.change2.WTChangeActivity2</csvexportNames>
+		<csvmode>0</csvmode>
+		<csvExportAncestorTypes>false</csvExportAncestorTypes>
+	</csvExportDefinition>
+	
+	<csvExportDefinition handler="com.ptc.core.lwc.server.TypeDefinitionExporter.beginExportDefinition">
+		<csvtoLocation>/ptc/Windchill_11.0/Windchill/loadFiles/com/catl/type/change</csvtoLocation>
+		<csvtoFileName>WTChangeOrder2.xml</csvtoFileName>
+		<csvexportDefClass>com.ptc.core.lwc.server.LWCTypeDefinition</csvexportDefClass>
+		<csvexportNames>wt.change2.WTChangeOrder2</csvexportNames>
+		<csvmode>0</csvmode>
+		<csvExportAncestorTypes>false</csvExportAncestorTypes>
+	</csvExportDefinition>
+	
+	
+
+</NmLoader>

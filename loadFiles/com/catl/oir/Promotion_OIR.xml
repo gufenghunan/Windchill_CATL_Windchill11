@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE OrganizationConfig SYSTEM "standardX24.dtd">
+<OrganizationConfig>
+	<TypeBasedRule>
+		<EngineRule isDefault="false" enabled="true">
+			<ruleName>CATL Promotion</ruleName>
+			<ruleSpecification><![CDATA[
+			<AttributeValues objType="wt.maturity.PromotionNotice">
+
+
+			    <AttrValue id="lifeCycle.id" algorithm="com.ptc.core.foundation.lifecycle.server.impl.LifeCycleTemplateAttributeAlgorithm">
+                  <Arg>LC_Promotion_Request</Arg>
+               </AttrValue>
+
+               <!-- set the folder -->
+               <AttrValue id="folder.id" algorithm="com.ptc.core.foundation.folder.server.impl.FolderPathAttributeAlgorithm">
+                  <Arg>/Default/升级请求</Arg>
+               </AttrValue>		
+			   
+               <AttrConstraint id="folder.id" algorithm="com.ptc.core.rule.server.impl.GatherAttributeConstraints">
+	       	      <Value algorithm="com.ptc.core.rule.server.impl.GetServerPreGeneratedValue"/>  
+				  <Value algorithm="com.ptc.core.rule.server.impl.GetRendererConstraint">
+                     <Arg>SelectGeneratedFolderByDefault</Arg>
+                  </Value>           
+	           </AttrConstraint>
+
+              </AttributeValues>
+
+               
+
+
+		    ]]></ruleSpecification>
+		    <ruleType type="INIT" />
+		</EngineRule>
+		<className>wt.maturity.PromotionNotice</className>
+	</TypeBasedRule>
+</OrganizationConfig>  
+
+
+		
+               

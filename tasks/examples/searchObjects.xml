@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="yes"?>
+<%@taglib uri="http://www.ptc.com/infoengine/taglib/core" prefix="ie"%>
+<%@page import="com.infoengine.au.NamingService, java.util.*, org.apache.commons.lang.StringUtils" %>
+<%
+LinkedHashSet<String> attributes = new LinkedHashSet<String>();
+attributes.add("XWORKS_BOOLEAN_01");
+attributes.add("XWORKS_STR_01");
+attributes.add("XWORKS_STR_02");
+attributes.add("XWORKS_STR_03");
+%>
+
+<ie:webject name="Search-Objects" type="OBJ">
+	<ie:param name="INSTANCE" data="${@FORM[]supporting-adapter[*]}" valueSeparator=";" delim=";" default="<%=NamingService.getVMName()%>" />
+	<ie:param name="AUTHORIZATION" data="${@SERVER[]authorization[0]}"/>
+	<ie:param name="ATTRIBUTE_TYPE_CONTEXT" data="com.ptc.xworks.TestPart02" />
+	<ie:param name="ATTRIBUTE" data="*"/>
+<%
+for (String attr : attributes) {
+%>
+    <ie:param name="ATTRIBUTE" data="<%=attr%>"/>
+<%
+}
+%>
+	<!-- TYPE必须是已WCTYPE开头的完整类型名称,如果有多个,则会造成只能查询出不同类型共有的属性 -->
+	<ie:param name="TYPE" data="com.ptc.xworks.TestPart02" delim=","/>
+	<!-- 需要排除子类型的类型 -->
+	<ie:param name="KEYWORD" data=""/>
+	<ie:param name="WHERE" data="(number='0000000143')"/>
+	<ie:param name="ITERATION" data="LATEST"/>
+	<ie:param name="VERSION" data="LATEST"/>
+	<ie:param name="SHOW_WORKING_COPY" data="false" default="false"/>
+    <ie:param name="SORTBY" data="thePersistInfo.modifyStamp"/>
+    <ie:param name="SORTED" data="DESC"/>	
+	<ie:param name="GROUP_OUT" data="resultObjects"/>
+</ie:webject>

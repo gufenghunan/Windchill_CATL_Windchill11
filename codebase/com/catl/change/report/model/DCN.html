@@ -1,0 +1,114 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head> 
+<style type="text/css">
+table.gridtable {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #222222;
+	border-collapse: collapse;
+}
+table.gridtable th {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #222222;
+	background-color: #dedede;
+}
+table.gridtable td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #222222;
+	background-color: #ffffff;
+}
+</style>
+
+<TABLE class=gridtable>
+	<TR>
+		<TD colspan=10 align="center">
+			Design Change Notice<br>
+			设计更改通知单(DCN)
+		</TD>
+	</TR>
+	<TR>
+		<TD style="text-align:center" >DCN Number<br>DCN 编号</TD>
+		<TD >dcrNumber</TD>
+		<TD style="text-align:center" >ENW Number<br>ENW 编号</TD>
+		<TD >ecnNO</TD>
+		<TD style="text-align:center" >Applicant<br>变更申请人</TD>
+		<TD >changeapplicanter</TD>
+		<TD style="text-align:center" >Project Phase<br>项目阶段</TD>
+		<TD >projectphase</TD>
+		<TD style="text-align:center" >Applicant Date<br>申请日期</TD>
+		<TD >changedate</TD>
+	</TR> 	
+	<TR>
+		<TD style="text-align:center" > Change Origin<br>变更来源</td>
+		<td >changeorigin</td>
+		<td style="text-align:center" > Change Type<br> 变更类别</td>
+		<td >changetype</td>
+		<TD style="text-align:center" > Need in ventory transition<br>是否需要库存处理</td>
+		<td >needinventory</td>
+		<TD style="text-align:center" >Need test valid ation<br>是否需要验证计划</td> 
+		<td >needtestvalidation</td>  
+		<TD style="text-align:center" >Eff Date<br>(预计)变更生效日期</TD>
+		<TD >effDate</TD>
+	</TR>
+  	<TR>
+		<TD style="text-align:center" > Change Item<br>变更名称</td>
+		<td colspan=9>changename</td>
+	</TR>
+	<TR>
+		<TD style="text-align:center" > Change reason<br>变更原因</td>
+		<td colspan=9>changereason</td>
+	</TR>
+	<TR>
+		<TD style="text-align:center" > Change description<br>变更描述</td>
+		<td colspan=9>changedescription</td>
+	</TR>
+	<Th style="text-align:center" colspan=10> Changed Data/变更数据</th>
+	<TR>
+		<TD style="text-align:center" colspan=2>Change Data Number<br>变更数据编码</td>
+		<TD style="text-align:center" colspan=2>Change Data Name<br>变更数据名称</td> 
+		<TD style="text-align:center" colspan=2>Current Version<br>当前版本</td>
+		<TD style="text-align:center" colspan=4>Changed Data Type<br>变更数据类型</td> 
+	</TR>
+	ChangePartsData
+	<Th style="text-align:center" colspan=10> Inventoty_disposition/库存处理</th>
+	<TR>
+		<TD style="text-align:center" colspan=2>Original P/N<br>旧物料编号</td>
+		<TD style="text-align:center" colspan=3>Original Part Name<br>旧物料描述</td> 
+		<TD style="text-align:center" colspan=2>Original Part Quantity<br>旧物料数量</td> 
+		<TD style="text-align:center" >Originalstatus<br>物料状态</td> 
+		<TD style="text-align:center" >Inventory Disposition<br>旧物料处理</td> 
+		<TD style="text-align:center" >Planned completion time<br>计划完成时间</td> 
+	</TR>
+	InventotyDispositionData
+	<Th style="text-align:center" colspan=10> Attachment List/附件列表</th>
+	<TR><TD style="text-align:center" colspan=10>attachmentList</td></tr>
+	<TR>
+		<TD style="text-align:center" colspan=2>Manager Conclusion & Proposal<br/>Manager结论及建议</td>
+		<TD style="text-align:center" colspan=8><br/>mcpmanager</td>
+	</tr>
+	<TR>
+		<TD style="text-align:center" colspan=2>Manager Signature<br/>Manager签名</td>
+		<TD style="text-align:center" colspan=5><br/>msmanager</td>
+		<TD style="text-align:center" >Date/日期</td>
+		<TD style="text-align:center" colspan=2><br/>madate</td>
+	</tr>
+	<TR>
+		<TD style="text-align:center" colspan=2>SE&COST Conclusion & Proposal<br/>SE&COST结论及建议</td>
+		<TD style="text-align:center" colspan=8><br/>seproposal</td>
+	</tr>
+	<TR>
+		<TD style="text-align:center" colspan=2>SE&COST Signature<br/>SE&COST签名</td>
+		<TD style="text-align:center" colspan=5><br/>sesignature</td>
+		<TD style="text-align:center" >Date/日期</td>
+		<TD style="text-align:center" colspan=2><br/>sedate</td>
+	</tr>
+</TABLE>
+</html>

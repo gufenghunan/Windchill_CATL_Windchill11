@@ -1,0 +1,521 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">
+.cspace_t1 input {
+	-webkit-margin-before: 0px;
+	-webkit-padding-before: 0px;
+	border: 0px !important;
+	height: 25px;
+}
+
+.cspace_t1 select {
+	-webkit-margin-before: 0px;
+	-webkit-padding-before: 0px;
+	border: 0px !important;
+	width: 100%;
+	height: 25px;
+}
+
+.cspace_b1 {
+	white-space-collapsing: preserve;
+}
+
+.cspace_t1 {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.cspace_r1 {
+	height: 30.25pt;
+}
+
+.cspace_r2 {
+	height: 15.75pt;
+}
+
+.cspace_c1 {
+	white-space: pre-wrap;
+	text-align: center;
+	background-color: silver;
+	border-top: thin solid black;
+	border-bottom: thin solid black;
+	border-left: thin solid black;
+	font-size: 12pt;
+}
+
+.cspace_c2 {
+	white-space: pre-wrap;
+	text-align: center;
+	background-color: silver;
+	border-top: thin solid black;
+	border-right: thin solid black;
+	border-bottom: thin solid black;
+	border-left: thin solid black;
+	font-size: 10pt;
+}
+
+.cspace_c3 {
+	white-space: pre-wrap;
+	text-align: center;
+	background-color: silver;
+	border-top: thin solid black;
+	border-right: thin solid black;
+	border-bottom: thin solid black;
+	border-left: thin solid black;
+	color: black;
+	font-size: 10pt;
+}
+
+.cspace_c4 {
+	white-space: pre-wrap;
+	color: black;
+	font-size: 10pt;
+}
+
+.cspace_c5 {
+	white-space: pre-wrap;
+	text-align: left;
+	border-top: thin solid black;
+	border-bottom: thin solid black;
+	border-left: thin solid black;
+	font-size: 10pt;
+}
+
+.cspace_c6 {
+	white-space: pre-wrap;
+	text-align: center;
+	border-top: thin solid black;
+	border-right: thin solid black;
+	border-bottom: thin solid black;
+	border-left: thin solid black;
+	font-size: 10pt;
+}
+
+.cspace_c7 {
+	white-space: pre-wrap;
+	text-align: center;
+	background-color: white;
+	border-top: thin solid black;
+	border-right: thin solid black;
+	border-bottom: thin solid black;
+	border-left: thin solid black;
+	font-weight: bold;
+	color: #ff0000;
+	font-size: 10pt;
+}
+
+.cspace_c8 {
+	white-space: pre-wrap;
+	border-top: thin solid black;
+	border-right: thin solid black;
+	border-bottom: thin solid black;
+	border-left: thin solid black;
+	color: black;
+	font-size: 10pt;
+}
+
+.cspace_c9 {
+	white-space: pre-wrap;
+	text-align: left;
+	border-top: thin solid black;
+	border-right: thin solid black;
+	border-bottom: thin solid black;
+	border-left: thin solid black;
+	font-size: 10pt;
+}
+
+.cspace_c10 {
+	white-space: pre-wrap;
+	text-align: left;
+	border-top: thin solid black;
+	border-right: thin solid black;
+	border-left: thin solid black;
+	font-size: 10pt;
+}
+
+.cspace_c11 {
+	white-space: pre-wrap;
+	text-align: left;
+	background-color: white;
+	border-top: thin solid black;
+	border-right: thin solid black;
+	border-bottom: thin solid black;
+	border-left: thin solid black;
+	font-size: 10pt;
+}
+
+.cspace_c12 {
+	white-space: pre-wrap;
+	background-color: white;
+	border-top: thin solid black;
+	border-right: thin solid black;
+	border-bottom: thin solid black;
+	border-left: thin solid black;
+	color: black;
+	font-size: 10pt;
+}
+
+.cspace_c13 {
+	white-space: pre-wrap;
+	text-align: center;
+	background-color: white;
+	border-top: thin solid black;
+	border-right: thin solid black;
+	border-bottom: thin solid black;
+	border-left: thin solid black;
+	color: black;
+	font-size: 10pt;
+}
+
+.cspace_c14 {
+	white-space: pre-wrap;
+	text-align: center;
+	background-color: white;
+	border-top: thin solid black;
+	border-right: thin solid black;
+	border-left: thin solid black;
+	color: black;
+	font-size: 10pt;
+}
+
+.cspace_c15 {
+	white-space: pre-wrap;
+	text-align: center;
+	background-color: white;
+	border-top: thin solid black;
+	border-bottom: thin solid black;
+	border-left: thin solid black;
+	color: black;
+	font-size: 10pt;
+}
+
+.title_td{
+	border:0px !important;
+    text-align:left !important;
+	font-family:\5B8B\4F53;
+	font-weight:bold;
+	font-size:12pt;
+}
+</style>
+</head>
+<body class="cspace_b1">
+	<table class="cspace_t1">
+		<tr>
+			<td class="title_td" colspan="5">残空间计算</td>
+		</tr>
+
+		<tr class="cspace_r1">
+			<td class="cspace_c1" colspan="2">&nbsp;</td>
+			<td class="cspace_c2">Real Density(g/ml)</td>
+			<td class="cspace_c2">Weight(kg)</td>
+			<td class="cspace_c2">Volume(mL)-FD</td>
+			<td class="cspace_c2">Volume(mL)-FC</td>
+			<td class="cspace_c3">Remark</td>
+		</tr>
+		<tr class="cspace_r2">
+			<td class="cspace_c5" colspan="2">Dead volume@25℃</td>
+			<td id="cspace_D5" class="cspace_c6"></td>
+			<td id="cspace_E5" class="cspace_c6"></td>
+			<td id="cspace_F5" class="cspace_c7"></td>
+			<td id="cspace_G5" class="cspace_c7"></td>
+			<td id="cspace_H5" class="cspace_c8"></td>
+		</tr>
+		<tr class="cspace_r2">
+			<td class="cspace_c5" colspan="2">Dead volume@60℃</td>
+			<td id="cspace_D6" class="cspace_c6"></td>
+			<td id="cspace_E6" class="cspace_c6"></td>
+			<td id="cspace_F6" class="cspace_c7"></td>
+			<td id="cspace_G6" class="cspace_c7"></td>
+			<td id="cspace_H6" class="cspace_c8"></td>
+		</tr>
+		<tr class="cspace_r2">
+			<td class="cspace_c9" colspan="2">电芯外观总体积(不含外极柱)</td>
+			<td id="cspace_D7" class="cspace_c6"></td>
+			<td id="cspace_E7" class="cspace_c6"></td>
+			<td id="cspace_F7" class="cspace_c7"></td>
+			<td id="cspace_G7" class="cspace_c7"></td>
+			<td id="cspace_H7" class="cspace_c8"></td>
+		</tr>
+		<tr class="cspace_r2">
+			<td class="cspace_c9" colspan="2">机械件所占的体积</td>
+			<td id="cspace_D8" class="cspace_c6"></td>
+			<td id="cspace_E8" class="cspace_c6"></td>
+			<td id="cspace_F8" class="cspace_c7"></td>
+			<td id="cspace_G8" class="cspace_c7"></td>
+			<td id="cspace_H8" class="cspace_c8"></td>
+		</tr>
+		<tr class="cspace_r2">
+			<td class="cspace_c10" rowspan="9"><div style="width:120px">Cathode</div></td>
+			<td id="cspace_C9" class="cspace_c11"></td>
+			<td id="cspace_D9" class="cspace_c6"></td>
+			<td id="cspace_E9" class="cspace_c6"></td>
+			<td id="cspace_F9" class="cspace_c7"></td>
+			<td id="cspace_G9" class="cspace_c8"></td>
+			<td id="cspace_H9" class="cspace_c8"></td>
+		</tr>
+		<tr class="cspace_r2">
+			<td id="cspace_C10" class="cspace_c11"></td>
+			<td id="cspace_D10" class="cspace_c6"></td>
+			<td id="cspace_E10" class="cspace_c6"></td>
+			<td id="cspace_F10" class="cspace_c7"></td>
+			<td id="cspace_G10" class="cspace_c8"></td>
+			<td id="cspace_H10" class="cspace_c8"></td>
+		</tr>
+		<tr class="cspace_r2">
+			<td id="cspace_C11" class="cspace_c11"></td>
+			<td id="cspace_D11" class="cspace_c6"></td>
+			<td id="cspace_E11" class="cspace_c6"></td>
+			<td id="cspace_F11" class="cspace_c7"></td>
+			<td id="cspace_G11" class="cspace_c8"></td>
+			<td id="cspace_H11" class="cspace_c8"></td>
+		</tr>
+		<tr class="cspace_r2">
+			<td id="cspace_C12" class="cspace_c11"></td>
+			<td id="cspace_D12" class="cspace_c6"></td>
+			<td id="cspace_E12" class="cspace_c6"></td>
+			<td id="cspace_F12" class="cspace_c7"></td>
+			<td id="cspace_G12" class="cspace_c8"></td>
+			<td id="cspace_H12" class="cspace_c8"></td>
+		</tr>
+		<tr class="cspace_r2">
+			<td id="cspace_C13" class="cspace_c11"></td>
+			<td id="cspace_D13" class="cspace_c6"></td>
+			<td id="cspace_E13" class="cspace_c6"></td>
+			<td id="cspace_F13" class="cspace_c7"></td>
+			<td id="cspace_G13" class="cspace_c8"></td>
+			<td id="cspace_H13" class="cspace_c8"></td>
+		</tr>
+		<tr class="cspace_r2">
+			<td id="cspace_C14" class="cspace_c11"></td>
+			<td id="cspace_D14" class="cspace_c6"></td>
+			<td id="cspace_E14" class="cspace_c6"></td>
+			<td id="cspace_F14" class="cspace_c7"></td>
+			<td id="cspace_G14" class="cspace_c8"></td>
+			<td id="cspace_H14" class="cspace_c8"></td>
+		</tr>
+		<tr class="cspace_r2">
+			<td id="cspace_C15" class="cspace_c11"></td>
+			<td id="cspace_D15" class="cspace_c6"></td>
+			<td id="cspace_E15" class="cspace_c6"></td>
+			<td id="cspace_F15" class="cspace_c7"></td>
+			<td id="cspace_G15" class="cspace_c8"></td>
+			<td id="cspace_H15" class="cspace_c8"></td>
+		</tr>
+		<tr class="cspace_r2">
+			<td id="cspace_C16" class="cspace_c11"></td>
+			<td id="cspace_D16" class="cspace_c6"></td>
+			<td id="cspace_E16" class="cspace_c6"></td>
+			<td id="cspace_F16" class="cspace_c7"></td>
+			<td id="cspace_G16" class="cspace_c8"></td>
+			<td id="cspace_H16" class="cspace_c8"></td>
+		</tr>
+		<tr class="cspace_r2">
+			<td id="cspace_C17" class="cspace_c11"></td>
+			<td id="cspace_D17" class="cspace_c6"></td>
+			<td id="cspace_E17" class="cspace_c6"></td>
+			<td id="cspace_F17" class="cspace_c7"></td>
+			<td id="cspace_G17" class="cspace_c8"></td>
+			<td id="cspace_H17" class="cspace_c8"></td>
+		</tr>
+		<tr class="cspace_r2">
+			<td class="cspace_c9" rowspan="9"><div style="width:120px">Anode</div></td>
+			<td id="cspace_C18" class="cspace_c11"></td>
+			<td id="cspace_D18" class="cspace_c6"></td>
+			<td id="cspace_E18" class="cspace_c6"></td>
+			<td id="cspace_F18" class="cspace_c7"></td>
+			<td id="cspace_G18" class="cspace_c8"></td>
+			<td id="cspace_H18" class="cspace_c8"></td>
+		</tr>
+		<tr class="cspace_r2">
+			<td id="cspace_C19" class="cspace_c11"></td>
+			<td id="cspace_D19" class="cspace_c6"></td>
+			<td id="cspace_E19" class="cspace_c6"></td>
+			<td id="cspace_F19" class="cspace_c7"></td>
+			<td id="cspace_G19" class="cspace_c8"></td>
+			<td id="cspace_H19" class="cspace_c8"></td>
+		</tr>
+		<tr class="cspace_r2">
+			<td id="cspace_C20" class="cspace_c11"></td>
+			<td id="cspace_D20" class="cspace_c6"></td>
+			<td id="cspace_E20" class="cspace_c6"></td>
+			<td id="cspace_F20" class="cspace_c7"></td>
+			<td id="cspace_G20" class="cspace_c8"></td>
+			<td id="cspace_H20" class="cspace_c8"></td>
+		</tr>
+		<tr class="cspace_r2">
+			<td id="cspace_C21" class="cspace_c11"></td>
+			<td id="cspace_D21" class="cspace_c6"></td>
+			<td id="cspace_E21" class="cspace_c6"></td>
+			<td id="cspace_F21" class="cspace_c7"></td>
+			<td id="cspace_G21" class="cspace_c8"></td>
+			<td id="cspace_H21" class="cspace_c8"></td>
+		</tr>
+		<tr class="cspace_r2">
+			<td id="cspace_C22" class="cspace_c11"></td>
+			<td id="cspace_D22" class="cspace_c6"></td>
+			<td id="cspace_E22" class="cspace_c6"></td>
+			<td id="cspace_F22" class="cspace_c7"></td>
+			<td id="cspace_G22" class="cspace_c8"></td>
+			<td id="cspace_H22" class="cspace_c8"></td>
+		</tr>
+		<tr class="cspace_r2">
+			<td id="cspace_C23" class="cspace_c11"></td>
+			<td id="cspace_D23" class="cspace_c6"></td>
+			<td id="cspace_E23" class="cspace_c6"></td>
+			<td id="cspace_F23" class="cspace_c7"></td>
+			<td id="cspace_G23" class="cspace_c8"></td>
+			<td id="cspace_H23" class="cspace_c8"></td>
+		</tr>
+		<tr class="cspace_r2">
+			<td id="cspace_C24" class="cspace_c11"></td>
+			<td id="cspace_D24" class="cspace_c6"></td>
+			<td id="cspace_E24" class="cspace_c6"></td>
+			<td id="cspace_F24" class="cspace_c7"></td>
+			<td id="cspace_G24" class="cspace_c8"></td>
+			<td id="cspace_H24" class="cspace_c8"></td>
+		</tr>
+		<tr class="cspace_r2">
+			<td id="cspace_C25" class="cspace_c11"></td>
+			<td id="cspace_D25" class="cspace_c6"></td>
+			<td id="cspace_E25" class="cspace_c6"></td>
+			<td id="cspace_F25" class="cspace_c7"></td>
+			<td id="cspace_G25" class="cspace_c8"></td>
+			<td id="cspace_H25" class="cspace_c8"></td>
+		</tr>
+		
+		<tr class="cspace_r2">
+			<td id="cspace_C26" class="cspace_c11"></td>
+			<td id="cspace_D26" class="cspace_c6"></td>
+			<td id="cspace_E26" class="cspace_c6"></td>
+			<td id="cspace_F26" class="cspace_c7"></td>
+			<td id="cspace_G26" class="cspace_c8"></td>
+			<td id="cspace_H26" class="cspace_c8"></td>
+		</tr>
+		<tr class="cspace_r2">
+			<td class="cspace_c9" rowspan="3"><div style="width:120px">Separator</div></td>
+			<td id="cspace_C27" class="cspace_c11"></td>
+			<td id="cspace_D27" class="cspace_c6"></td>
+			<td id="cspace_E27" class="cspace_c6"></td>
+			<td id="cspace_F27" class="cspace_c7"></td>
+			<td id="cspace_G27" class="cspace_c8"></td>
+			<td id="cspace_H27" class="cspace_c8"></td>
+		</tr>
+		<tr class="cspace_r2">
+			<td id="cspace_C28" class="cspace_c11"></td>
+			<td id="cspace_D28" class="cspace_c6"></td>
+			<td id="cspace_E28" class="cspace_c6 symbol" ext:qtip="Li ZhongHong:<br/>公式来源与CCS厚度与重量的关系"></td>
+			<td id="cspace_F28" class="cspace_c7"></td>
+			<td id="cspace_G28" class="cspace_c8"></td>
+			<td id="cspace_H28" class="cspace_c8"></td>
+		</tr>
+		<tr class="cspace_r2">
+			<td id="cspace_C29" class="cspace_c11"></td>
+			<td id="cspace_D29" class="cspace_c6"></td>
+			<td id="cspace_E29" class="cspace_c6"></td>
+			<td id="cspace_F29" class="cspace_c7"></td>
+			<td id="cspace_G29" class="cspace_c8"></td>
+			<td id="cspace_H29" class="cspace_c8"></td>
+		</tr>
+		<tr class="cspace_r2">
+			<td class="cspace_c9"><div style="width:120px">Electrolyte</div></td>
+			<td id="cspace_C30" class="cspace_c11"></td>
+			<td id="cspace_D30" class="cspace_c6"></td>
+			<td id="cspace_E30" class="cspace_c6"></td>
+			<td id="cspace_F30" class="cspace_c7"></td>
+			<td id="cspace_G30" class="cspace_c8"></td>
+			<td id="cspace_H30" class="cspace_c8"></td>
+		</tr>
+		<tr class="cspace_r2">
+			<td class="cspace_c9"><div style="width:120px">True volume</div></td>
+			<td id="cspace_C31" class="cspace_c11"></td>
+			<td id="cspace_D31" class="cspace_c6"></td>
+			<td id="cspace_E31" class="cspace_c6"></td>
+			<td id="cspace_F31" class="cspace_c7"></td>
+			<td id="cspace_G31" class="cspace_c8"></td>
+			<td id="cspace_H31" class="cspace_c8"></td>
+		</tr>
+		
+	</table>
+	<br>
+
+	<table class="cspace_t1">
+		<tr>
+			<td class="title_td" colspan="7">孔隙率计算@化成后</td>
+		</tr>
+		
+		<tr class="cspace_r1">
+			<td class="cspace_c1">&nbsp;</td>
+			<td class="cspace_c2">Thickness(mm)</td>
+			<td class="cspace_c2">Width(mm)</td>
+			<td class="cspace_c2">length(mm)</td>
+			<td class="cspace_c2">Shape Volume(mL)</td>
+			<td class="cspace_c2"></td>
+			<td class="cspace_c2">True Volume(mL)</td>
+			<td class="cspace_c2">Pore Volume(mL)</td>
+		</tr>
+		<tr class="cspace_r2">
+			<td class="cspace_c12"><div style="width:120px">Cathode</div></td>
+			<td id="cspace_C36" class="cspace_c13"></td>
+			<td id="cspace_D36" class="cspace_c13"></td>
+			<td id="cspace_E36" class="cspace_c13"></td>
+			<td id="cspace_F36" class="cspace_c13"></td>
+			<td id="cspace_G36" class="cspace_c13"></td>
+			<td id="cspace_H36" class="cspace_c13"></td>
+			<td id="cspace_I36" class="cspace_c13"></td>
+		</tr>
+		<tr class="cspace_r2">
+			<td class="cspace_c12"><div style="width:120px">Anode</div></td>
+			<td id="cspace_C37" class="cspace_c13"></td>
+			<td id="cspace_D37" class="cspace_c13"></td>
+			<td id="cspace_E37" class="cspace_c13"></td>
+			<td id="cspace_F37" class="cspace_c13"></td>
+			<td id="cspace_G37" class="cspace_c13"></td>
+			<td id="cspace_H37" class="cspace_c13"></td>
+			<td id="cspace_I37" class="cspace_c13"></td>
+		</tr>
+		<tr class="cspace_r2">
+			<td class="cspace_c12"><div style="width:120px">Separator</div></td>
+			<td id="cspace_C38" class="cspace_c13"></td>
+			<td id="cspace_D38" class="cspace_c13"></td>
+			<td id="cspace_E38" class="cspace_c13"></td>
+			<td id="cspace_F38" class="cspace_c13"></td>
+			<td id="cspace_G38" class="cspace_c13"></td>
+			<td id="cspace_H38" class="cspace_c13"></td>
+			<td id="cspace_I38" class="cspace_c13"></td>
+		</tr>
+		<tr class="cspace_r2">
+			<td class="cspace_c12"><div style="width:120px">CCS</div></td>
+			<td id="cspace_C39" class="cspace_c13"></td>
+			<td id="cspace_D39" class="cspace_c13"></td>
+			<td id="cspace_E39" class="cspace_c13"></td>
+			<td id="cspace_F39" class="cspace_c13"></td>
+			<td id="cspace_G39" class="cspace_c13"></td>
+			<td id="cspace_H39" class="cspace_c13"></td>
+			<td id="cspace_I39" class="cspace_c13"></td>
+		</tr>
+		<tr class="cspace_r2">
+			<td class="cspace_c12"><div style="width:120px">PCS（JR大面）</div></td>
+			<td id="cspace_C40" class="cspace_c13"></td>
+			<td id="cspace_D40" class="cspace_c13"></td>
+			<td id="cspace_E40" class="cspace_c13"></td>
+			<td id="cspace_F40" class="cspace_c13"></td>
+			<td id="cspace_G40" class="cspace_c13"></td>
+			<td id="cspace_H40" class="cspace_c14" rowspan="2"></td>
+			<td id="cspace_I40" class="cspace_c14" rowspan="2"></td>
+		</tr>
+		<tr class="cspace_r2">
+			<td class="cspace_c12"><div style="width:120px">PCS（JR两侧）</div></td>
+			<td id="cspace_C41" class="cspace_c13"></td>
+			<td id="cspace_D41" class="cspace_c13"></td>
+			<td id="cspace_E41" class="cspace_c13"></td>
+			<td id="cspace_F41" class="cspace_c13"></td>
+			<td id="cspace_G41" class="cspace_c13"></td>
+		</tr>
+		<tr class="cspace_r2">
+			<td class="cspace_c15" colspan="7">Total</td>
+			<td id="cspace_I42" class="cspace_c13"></td>
+		</tr>
+	</table>
+</body>
+</html>

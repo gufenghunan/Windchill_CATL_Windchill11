@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!DOCTYPE loadFileList SYSTEM "/wt/load/windchillLoad.dtd">
+<loadFileList>
+	
+	<!-- 加载首选项 -->
+	<loadFile filename="com/catl/preference/preference.xml" title="" containerPath="/"></loadFile>
+	<loadFile filename="com/catl/preference/changedPreference.xml" title="" containerPath="/"></loadFile>
+	<loadFile filename="com/catl/preference/changedPreference2.xm" title="" containerPath="/"></loadFile>
+	
+</loadFileList>

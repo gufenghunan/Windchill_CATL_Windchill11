@@ -1,0 +1,48 @@
+ResourceInfo.class=wt.tools.resource.EnumResourceInfo
+ResourceInfo.customizable=true
+ResourceInfo.deprecated=false
+ResourceInfo.replacement=false
+ResourceInfo.UUID=48de8535-78c4-4872-bb60-fa3b4042c6ec
+
+
+# Entry Format (values equal to default value are not included)
+# <key>.value=
+# <key>.category=
+# <key>.comment=
+# <key>.argComment<n>=
+# <key>.constant=
+# <key>.customizable=
+# <key>.deprecated=
+# <key>.abbreviatedDisplay=
+# <key>.fullDisplay=
+# <key>.shortDescription=
+# <key>.longDescription=
+# <key>.order=
+# <key>.defaultValue=
+# <key>.selectable=
+
+# Entry Contents
+
+DESIGNMODIFICATION.value=design modification
+DESIGNMODIFICATION.shortDescription=design modification
+
+DESIGNREVIEW.value=design review
+DESIGNREVIEW.shortDescription=design review
+
+MODIFICATION.value=modification
+MODIFICATION.shortDescription=modification
+
+RELEASEDFAILED.value=released failed
+RELEASEDFAILED.shortDescription=released failed
+
+TASKREVIEW.value=task review
+TASKREVIEW.shortDescription=task is reviewing
+
+WRITING.value=writing
+WRITING.shortDescription=writing
+
+DISABLED_FOR_DESIGN.value=design disabled
+DISABLED_FOR_DESIGN.shortDescription=design disabled
+
+INVALID.value=invalid
+INVALID.shortDescription=invalid

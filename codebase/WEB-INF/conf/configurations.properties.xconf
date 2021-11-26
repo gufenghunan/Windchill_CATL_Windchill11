@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Configuration SYSTEM "xconf.dtd">
+<Configuration targetFile="codebase/WEB-INF/conf/configurations.properties">
+
+	<Property name="configuration.env" overridable="true" 
+		default="catl-plm-prdapp.catlbattery.com" />
+
+	<Property name="windchill.home" overridable="true" 
+		default="/ptc/Windchill_11.0/Windchill" />
+		
+	<Property name="webservice.plm.hostname" overridable="true" 
+		default="catl-plm-prdapp.catlbattery.com" />
+
+	<Property name="webservice.plm.username" overridable="true" 
+		default="wcadmin" />
+
+	<Property name="webservice.plm.password" overridable="true" 
+		default="wcadmin" />
+
+	<Property name="webservice.plm.connectTimeout" overridable="true" 
+		default="3000" />
+
+	<Property name="webservice.plm.requestTimeout" overridable="true" 
+		default="60000" />
+		
+</Configuration>

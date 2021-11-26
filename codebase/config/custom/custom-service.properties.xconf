@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Configuration SYSTEM "xconf.dtd">
+<Configuration targetFile="codebase/service.properties">
+
+<!-- -*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-
+WARNING: Do not modify this file after it has been installed.  Use xconfmanager
+         to set, reset, or undefine properties for your installation
+-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*- -->
+
+   
+ <Service context="default" name="com.ptc.core.ui.validation.SimpleValidationFilter">
+      <Option serviceClass="com.catl.bom.load.BOMLoadValidation" selector="BOMLoadFilter" requestor="null"/>
+      <Option serviceClass="com.catl.promotion.validator.PNTreeListFilter" selector="PNTreeListFilter" requestor="null"/>
+      <Option serviceClass="com.catl.part.relation.PartDocRelationValidator" selector="removePartRelationDocValidation"  requestor="null"/>
+      <Option serviceClass="com.catl.change.filter.ReivseValidation" selector="ReivseFilter" requestor="null"/>
+      <Option serviceClass="com.catl.promotion.validator.PromotableFilter" requestor="null" selector="PromotableFilter" cardinality="duplicate" />
+      <Option serviceClass="com.catl.change.filter.CatlCreateECNValidation" selector="CreateECNFilter" requestor="null"/>
+      <Option serviceClass="com.catl.change.filter.CatlEditChangeTasckValidation" selector="EditchangeTaskFilter" requestor="null"/>
+      <Option serviceClass="com.catl.part.ImportOptimumSelectingLevelFilter" selector="importRankingFilter" requestor="null" cardinality="duplicate"/>
+      <Option serviceClass="com.catl.change.inventory.filter.ViewChangeInventoryFiler" requestor="null" selector="CatlViewChangeInventoryFiler" cardinality="duplicate"/>
+      <Option serviceClass="com.catl.change.filter.CustomerFileFilter" requestor="null" selector="hideIfNoCustomerFile" cardinality="duplicate"/>
+      <Option serviceClass="com.catl.integration.rdm.validators.HideByUserFilter" requestor="null" selector="hideByUserFilter" cardinality="duplicate"/>
+      <Option serviceClass="com.catl.pdfsignet.validators.CATLSignetFilter" requestor="null" selector="CATLSignetFilter" cardinality="duplicate"/>
+      <Option serviceClass="com.catl.pdfsignet.validators.PartCATLSignetFilter" requestor="null" selector="PartCATLSignetFilter" cardinality="duplicate"/>	
+      <Option serviceClass="com.catl.part.EditAttachmentsFilter" requestor="null" selector="EditAttachmentsFilter" cardinality="duplicate"/>
+      <Option serviceClass="com.catl.cad.validators.BatchDownloadPDFFilter" requestor="null" selector="BatchDownloadPDFFilter" cardinality="duplicate"/>
+      <Option serviceClass="com.catl.principal.validators.CATLPrincipalFilter" requestor="null" selector="CATLPrincipalFilter" cardinality="duplicate"/>
+      <Option serviceClass="com.catl.change.report.validators.CheckReportViewPermissionFilter" requestor="null" selector="CheckReportViewPermissionFilter" cardinality="duplicate"/>
+      <Option serviceClass="com.catl.part.validators.CATLMaturityUpFilter" requestor="null" selector="CATLMaturityUpFilter" cardinality="duplicate"/>
+      <Option serviceClass="com.catl.part.validators.CatlNodeConfigFilter" requestor="null" selector="CatlNodeConfigFilter" cardinality="duplicate"/>
+      <Option serviceClass="com.catl.promotion.validator.NotValidSuperstratumFilter" requestor="null" selector="NotValidSuperstratumFilter" cardinality="duplicate"/>
+      <Option serviceClass="com.catl.change.validator.ECOEditFilter" requestor="null" selector="ECOEditFilter" cardinality="duplicate"/>
+      <Option serviceClass="com.catl.change.validator.EditImplementPlanFilter" requestor="null" selector="EditImplementPlanFilter" cardinality="duplicate"/>
+      <Option serviceClass="com.catl.change.validator.ChangeTaskObjectFilter" requestor="null" selector="ChangeTaskObjectFilter" cardinality="duplicate"/>
+      <Option serviceClass="com.catl.change.validator.DeleteChangeTaskFilter" requestor="null" selector="DeleteChangeTaskFilter" cardinality="duplicate"/>
+      <Option serviceClass="com.catl.doc.maturityUpReport.validators.MaturityReportFilter" requestor="null" selector="MaturityReportFilter" cardinality="duplicate"/>
+      <Option serviceClass="com.catl.promotion.validator.FAEMaterialsMaturityFilter" requestor="null" selector="FAEMaterialsMaturityFilter" cardinality="duplicate"/>
+      <Option serviceClass="com.catl.promotion.validator.MaturityOneToThreeProcessFilter" requestor="null" selector="MaturityOneToThreeProcessFilter" cardinality="duplicate"/>
+      <Option serviceClass="com.catl.change.filter.CatlCreatePromotionByECAValidation" requestor="null" selector="CatlCreatePromotionByECAValidation" cardinality="duplicate"/>
+      <Option serviceClass="com.catl.promotion.validator.MaturityAndDesignDisabledFilter" requestor="null" selector="MaturityAndDesignDisabledFilter" cardinality="duplicate"/>
+ 	  <Option serviceClass="com.catl.change.validator.CATLChangeRequestFilter" requestor="null" selector="CATLChangeRequestFilter" cardinality="duplicate"/>
+ 	  <Option serviceClass="com.catl.doc.soft.validators.CATLSoftDocAttachmentsEditFilter" requestor="null" selector="CATLSoftDocAttachmentsEditFilter" cardinality="duplicate"/>
+ 	  <!-- 文档失效流程 -->
+ 	  <Option serviceClass="com.catl.doc.validators.CATLDocInvalidFilter" requestor="null" selector="CATLDocInvalidFilter" cardinality="duplicate"/>
+ 	  
+ 	  <!-- 建库流程、PCB设计流程 -->
+ 	  <Option requestor="null" serviceClass="com.catl.ecad.validator.StartWFFilter" selector="catlValidator" />
+	  <Option requestor="null" serviceClass="com.catl.cad.validators.CatlEquipmentRenumberFilter" selector="equipRenumberFilter" />
+	  <Option requestor="null" serviceClass="com.catl.battery.filter.CATLBatteryDesignFilter" selector="batteryDesignFilter" />
+	  <Option requestor="null" serviceClass="com.catl.ri.filter.CATLRIADesignFilter" selector="riADesignFilter" />
+	  <Option requestor="null" serviceClass="com.catl.ri.filter.CATLRIBDesignFilter" selector="riBDesignFilter" />
+	  <Option requestor="null" serviceClass="com.catl.ele.validator.EleWorkflowFilter" selector="eleWFFilter" />
+	  
+ </Service>
+ 
+ <Service context="default" name="com.ptc.core.ui.validation.UIComponentValidator">
+        <Option serviceClass="com.catl.change.validator.CustomerFileValidator" requestor="null" selector="customerFileList" />
+		
+		<Option requestor="java.lang.Object" serviceClass="com.catl.doc.validators.CATLListRepFilesValidator" selector="listRepFiles" cardinality="singleton" />
+		<Option requestor="java.lang.Object" serviceClass="com.catl.doc.validators.CATLAddUserToRoleValidator" selector="addUsersToRole" cardinality="singleton" />
+ </Service>
+
+
+   <Service context="default" name="com.ptc.core.components.descriptor.DataUtility">
+	<Option serviceClass="com.catl.change.inventory.datautilities.ChangeInventoryUtility" requestor="java.lang.Object" selector="CatlChangeInventoryUtility" cardinality="duplicate" />	
+	<Option serviceClass="com.catl.change.inventory.datautilities.ViewChangeInventoryUtility" requestor="java.lang.Object" selector="CatlViewChangeInventoryUtility" cardinality="duplicate" />	
+	<Option serviceClass="com.catl.change.DataUtility.ECATaskDesComboBoxDataUtility" requestor="java.lang.Object" selector="ECATaskDesComboBoxDataUtility" cardinality="duplicate" />	
+	<Option serviceClass="com.catl.change.DataUtility.ECANameComboBoxDataUtility" requestor="java.lang.Object" selector="ECANameComboBoxDataUtility" cardinality="duplicate" />
+   <Option serviceClass="com.catl.doc.DataUtility.IBADocTypeComboBoxDataUtility" requestor="java.lang.Object" selector="IBADocTypeComboBoxDataUtility" cardinality="duplicate" />
+   <Option serviceClass="com.catl.doc.DataUtility.IBASubCategoryComboBoxDataUtility" requestor="java.lang.Object" selector="IBASubCategoryComboBoxDataUtility" cardinality="duplicate" />
+	<Option serviceClass="com.catl.change.DataUtility.DCANameComboBoxDataUtility" requestor="java.lang.Object" selector="DCANameComboBoxDataUtility" cardinality="duplicate" />
+	<Option serviceClass="com.catl.change.DataUtility.DCATaskDesComboBoxDataUtility" requestor="java.lang.Object" selector="DCATaskDesComboBoxDataUtility" cardinality="duplicate" />
+	<!-- 文档失效流程 -->
+	<Option serviceClass="com.catl.doc.DataUtility.ENWDataUtility" requestor="java.lang.Object" selector="ENWDataUtility" cardinality="duplicate" />
+
+	<!-- SPRR文档关联的物料组 -->
+	<Option serviceClass="com.catl.part.datautilities.SPRRPartDataUtility" requestor="java.lang.Object" selector="SPRRPartDataUtility" cardinality="duplicate" />
+	
+	
+	
+	<Option serviceClass="com.catl.process.datautilities.ProcessStatusDataUtility" requestor="java.lang.Object" 
+	selector="ProcessStatusDataUtility" cardinality="duplicate" />	
+	<Option serviceClass="com.catl.change.DataUtility.CatlChangePrincipalDataUtility" requestor="java.lang.Object" 
+	selector="ROLE_ASSIGNEE" cardinality="duplicate" />	
+	<Option serviceClass="com.catl.part.datautilities.PartAttributesDataUtility" selector="PartAttributesDataUtility" requestor="java.lang.Object" cardinality="duplicate" />
+	<Option serviceClass="com.catl.part.datautilities.PartBuilderDataUtility" selector="PartBuilderDataUtility" requestor="java.lang.Object" cardinality="duplicate" />
+	<Option serviceClass="com.catl.part.datautilities.ReplacementsSubstituteDataUtility" selector="ReplacementsSubstituteDataUtility" requestor="java.lang.Object" cardinality="duplicate" />
+	<Option serviceClass="com.catl.part.datautilities.NumberAndIconDataUtility" selector="NumberAndIconDataUtility" requestor="java.lang.Object" cardinality="duplicate" />
+	<Option serviceClass="com.catl.part.classification.datautilities.NodeConfigAttrDataUtility" selector="NodeConfigAttrDataUtility" requestor="java.lang.Object" cardinality="duplicate" />
+	<Option serviceClass="com.catl.promotion.datautilities.PromotionDataUtility" selector="PromotionDataUtility" requestor="java.lang.Object" cardinality="duplicate" />
+	<Option serviceClass="com.catl.change.DataUtility.CustomImplementationPlanTableDataUtility" selector="changeTask_nmIconActions" requestor="java.lang.Object" cardinality="duplicate" targetFile="codebase/com/ptc/core/components/components.dataUtilities.properties" />
+	<Option serviceClass="com.catl.part.datautilities.CATLRenameNumberDataUtility" selector="renameNumber" requestor="java.lang.Object" cardinality="duplicate" targetFile="codebase/com/ptc/windchill/enterprise/enterprise.dataUtilities.properties" />
+	<Option serviceClass="com.catl.part.datautilities.EditDefaultUnitDataUtility" selector="EditDefaultUnitDataUtility" requestor="java.lang.Object" cardinality="duplicate" />
+	<Option serviceClass="com.catl.part.datautilities.PartNameComboBoxDataUtility" selector="PartNameComboBoxDataUtility" requestor="java.lang.Object" cardinality="duplicate" />
+	<Option serviceClass="com.catl.part.datautilities.PartSourceComboBoxDataUtility" selector="PartSourceComboBoxDataUtility" requestor="java.lang.Object" cardinality="duplicate" />
+	<Option serviceClass="com.catl.change.DataUtility.DCNChangeTypeComboBoxDataUtility" selector="DCNChangeTypeComboBoxDataUtility" requestor="java.lang.Object" cardinality="duplicate" />
+	<Option serviceClass="com.catl.part.datautilities.PartOpenMouldComboBoxDataUtility" selector="PartOpenMouldComboBoxDataUtility" requestor="java.lang.Object" cardinality="duplicate" />
+	<Option serviceClass="com.catl.part.datautilities.PartPhaseComboBoxDataUtility" selector="PartPhaseComboBoxDataUtility" requestor="java.lang.Object" cardinality="duplicate" />
+	<Option serviceClass="com.catl.part.datautilities.PartProductionLineDataUtility" selector="PartProductionLineDataUtility" requestor="java.lang.Object" cardinality="duplicate" />
+	<Option serviceClass="com.catl.part.datautilities.PartComponetTypeComboBoxDataUtility" selector="PartComponetTypeComboBoxDataUtility" requestor="java.lang.Object" cardinality="duplicate" />
+   </Service>
+	
+	<!-- 屏蔽位号合并 -->
+	<Service context="default" name="wt.part.ReferenceDesignatorSetDelegate">
+      <Option cardinality="singleton" requestor="wt.part.WTPartUsageLink" serviceClass="com.catl.ecad.delegate.CatlDefaultReferenceDesignatorSet"/>
+   </Service>
+	
+  <Service context="default" name="com.ptc.core.ui.validation.SimpleValidationFilter">
+      <Option serviceClass="com.catl.line.filter.CATLCreateBoxExplainFilter" requestor="null" selector="CATLCreateBoxExplainFilter" cardinality="duplicate"/>
+  </Service>
+   <Service context="default" name="com.ptc.core.ui.validation.SimpleValidationFilter">
+      <Option serviceClass="com.catl.line.filter.CATLCreateChildPNFilter" requestor="null" selector="CATLCreateChildPNFilter" cardinality="duplicate"/>
+  </Service>
+   <Service context="default" name="com.ptc.core.ui.validation.SimpleValidationFilter">
+      <Option serviceClass="com.catl.line.filter.CATLUpdateChildPNFilter" requestor="null" selector="CATLUpdateChildPNFilter" cardinality="duplicate"/>
+  </Service>
+    <Service context="default" name="com.ptc.core.ui.validation.SimpleValidationFilter">
+      <Option serviceClass="com.catl.require.filter.CATLCreateAfterSaleFilter" requestor="null" selector="CATLCreateAfterSaleFilter" cardinality="duplicate"/>
+  </Service>
+   <Service context="default" name="com.ptc.core.ui.validation.SimpleValidationFilter">
+      <Option serviceClass="com.catl.line.filter.CATLMultiDocFilter" requestor="null" selector="CATLMultiDocFilter" cardinality="duplicate"/>
+  </Service>
+
+ <Service context="default" name="com.ptc.core.ui.validation.SimpleValidationFilter">
+      <Option serviceClass="com.catl.line.filter.CATLMultiPartFilter" requestor="null" selector="CATLMultiPartFilter" cardinality="duplicate"/>
+  </Service>
+   <Service context="default" name="com.ptc.core.ui.validation.SimpleValidationFilter">
+      <Option serviceClass="com.catl.require.filter.CATLConfigFilter" requestor="null" selector="CATLConfigFilter" cardinality="duplicate"/>
+  </Service>
+  <Service context="default" name="com.ptc.core.ui.validation.SimpleValidationFilter">
+      <Option serviceClass="com.catl.ri.filter.CATLRIConfigFilter" requestor="null" selector="CATLRIConfigFilter" cardinality="duplicate"/>
+  </Service>
+   <Service context="default" name="com.ptc.core.ui.validation.SimpleValidationFilter">
+      <Option serviceClass="com.catl.battery.filter.CATLEVCConfigFilter" requestor="null" selector="CATLEVCConfigFilter" cardinality="duplicate"/>
+  </Service>
+  <Service context="default" name="com.ptc.core.ui.validation.SimpleValidationFilter">
+      <Option serviceClass="com.catl.pd.filter.CATLPDConfigFilter" requestor="null" selector="CATLPDConfigFilter" cardinality="duplicate"/>
+  </Service>
+
+   <!-- 模型上载重命名 -->
+  <Service context="default" name="com.ptc.windchill.uwgm.proesrv.c11n.EPMDocumentNamingDelegate" targetFile="codebase/service.properties">
+	<Option cardinality="singleton" requestor="wt.epm.EPMDocument"  serviceClass="com.catl.bom.cad.CatlEPMDocumentNamingDelegate"/>
+  </Service>
+
+  <Service context="default" name="com.ptc.windchill.uwgm.proesrv.c11n.ModeledAttributesDelegate" targetFile="codebase/service.properties">
+      <Option cardinality="singleton" order="0" overridable="true"
+              requestor="java.lang.Object"
+              serviceClass="com.catl.bom.cad.DefaultModeledAttributesDelegate"/>
+   </Service>
+  
+
+<!-- -*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-
+WARNING: Do not modify this file after it has been installed.  Use xconfmanager
+         to set, reset, or undefine properties for your installation
+-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*- -->
+
+</Configuration>

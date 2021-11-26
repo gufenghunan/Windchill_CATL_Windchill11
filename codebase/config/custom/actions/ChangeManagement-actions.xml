@@ -1,0 +1,195 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE listofactions SYSTEM '../../actions.dtd'>
+
+<listofactions>
+ <objecttype name="catl" class="" resourceBundle="com.catl.change.report.resource.ECExportRB"> 
+     <action name="loadECAffect"> 
+	   <command class="" method="" windowType="page"  url="netmarkets/jsp/catl/report/loadECAffect.jsp"/> 
+      </action> 
+
+ </objecttype> 
+ 
+<objecttype name="changeRequest" class="wt.change2.WTChangeRequest2" resourceBundle="com.ptc.windchill.enterprise.change2.changeManagementActionsRB">
+	<action name="create" uicomponent="CREATE_CHANGEREQUEST" ajax="component">
+         <description>Create a change request</description>
+         <command class="com.catl.change.processors.CatlCreateChangeRequestFormProcessor" method="execute" windowType="popup"/>
+         <includeFilter name="OptionSetLocalRuleContextFilter"/>
+         <includeFilter name="sandboxSharingValidationSimple"/>
+         <includeFilter name="restrictGuestMembers"/>
+         <includeFilter name="manAuthorized"/>
+         <includeFilter name="adminLockModifyChangeObjectsFilter"/>
+         <includeFilter name="CATLChangeRequestFilter"/>
+      </action>
+      <action name="edit" ajax="row">
+         <description>Edit a change request</description>
+         <command class="com.catl.change.processors.CatlEditChangeRequestFormProcessor" method="execute" windowType="popup"/>
+         <includeFilter name="sandboxSharingValidationSimple"/>
+         <includeFilter name="adminLockModifyChangeObjectsFilter"/>
+      </action>
+</objecttype>
+
+   <objecttype name="changeNotice" class="wt.change2.WTChangeOrder2" resourceBundle="com.ptc.windchill.enterprise.change2.changeManagementActionsRB">
+
+      <action name="create" uicomponent="CREATE_CHANGENOTICE" ajax="component">
+         <description>Create change notice</description>
+         <command class="com.catl.change.processors.CatlCreateChangeNoticeFormProcessor" method="execute" windowType="popup"/>
+         <includeFilter name="OptionSetLocalRuleContextFilter"/> 
+         <includeFilter name="sandboxSharingValidationSimple"/>
+         <includeFilter name="restrictGuestMembers"/>
+		 <includeFilter name="CreateECNFilter"/>
+         <includeFilter name="adminLockModifyChangeObjectsFilter"/>
+      </action>
+      <action name="edit" ajax="row">
+         <description>Edit change notice</description>
+         <command class="com.catl.change.processors.CatlEditChangeNoticeFormProcessor" method="execute" windowType="popup"/>
+         <includeFilter name="sandboxSharingValidationSimple"/>
+         <includeFilter name="adminLockModifyChangeObjectsFilter"/>
+         <includeFilter name="hideForChangeTemplates"/>
+         <includeFilter name="ECOEditFilter"/>
+      </action>
+
+  </objecttype> 
+ 
+ 	<objecttype name="changeNotice" class="wt.change2.WTChangeOrder2" resourceBundle="com.catl.change.resource.changeActionRB">
+
+      	<action name="createdcn" uicomponent="CREATE_CHANGENOTICE" ajax="component">
+         	<description>Create change notice</description>
+         	<command class="com.catl.change.processors.CatlCreateChangeNoticeFormProcessor" url="netmarkets/jsp/changeNotice/create.jsp" method="execute" windowType="popup"/>
+         	<includeFilter name="OptionSetLocalRuleContextFilter"/> 
+         	<includeFilter name="sandboxSharingValidationSimple"/>
+         	<includeFilter name="restrictGuestMembers"/>
+         	<includeFilter name="CreateECNFilter"/>
+        	<includeFilter name="adminLockModifyChangeObjectsFilter"/>
+        	<includeFilter name="ECOEditFilter"/>
+      </action>
+      <action name="editdcn" ajax="row">
+         	<description>Edit change notice</description>
+         	<command class="com.catl.change.processors.CatlEditChangeNoticeFormProcessor" url="netmarkets/jsp/changeNotice/edit.jsp" method="execute" windowType="popup"/>
+         	<includeFilter name="sandboxSharingValidationSimple"/>
+        	<includeFilter name="adminLockModifyChangeObjectsFilter"/>
+         	<includeFilter name="hideForChangeTemplates"/>
+         	<includeFilter name="ECOEditFilter"/>
+         	
+      </action>
+	  
+  </objecttype> 
+  
+  <objecttype name="change" class="wt.change2.ChangeItem" resourceBundle="com.ptc.windchill.enterprise.change2.changeManagementActionsRB">
+        <action name="deleteChangeItem" ajax="row" uicomponent="DELETE">
+         <description>Delete change item</description>
+         <command class="com.ptc.windchill.enterprise.object.commands.DeleteObjectCommands" method="delete" onClick="JCAConfirm(event,&apos;com.ptc.core.ui.confirmationMessagesRB.DELETE&apos;)"/>
+         <includeFilter name="sandboxSharingValidationSimple"/>
+         <includeFilter name="ECOEditFilter"/>
+      </action>
+  </objecttype>
+ 
+ 	<objecttype name="changeTask" class="wt.change2.WTChangeActivity2"
+		resourceBundle="com.ptc.windchill.enterprise.change2.changeManagementActionsRB">
+		<action name="create" ajax="page">
+			<description>Create a change task</description>
+			<command
+				class="com.catl.change.processors.CatlCreateChangeTaskFormProcessor"
+				method="execute" windowType="popup" url="?mode=CREATE" />
+			<includeFilter name="adminLockModifyChangeObjectsFilter" />
+		</action>
+		<action name="wizardCreate" ajax="row">
+			<description>Create a change task</description>
+			<command
+				class="com.catl.change.processors.CatlCreateChangeTaskFormProcessor"
+				method="execute" windowType="lightbox"
+				url="?mode=CREATE&amp;isIframeWizard=true&amp;resizeIframeWizard=false" />
+		</action>
+
+		<action name="collectItems_AffectedItems" renderType="GENERAL" selectRequired="true">
+			<description>Collect affected objects</description>
+			<command onClick="openCollectorPicker(&apos;CollectItemsFromChangeItem_AffectedItems&apos;, event)" windowType="no_content"/>
+			<includeFilter name="hideForObjectInProject"/>
+			<includeFilter name="EditchangeTaskFilter" />
+			<includeFilter name="ChangeTaskObjectFilter" />
+		</action>
+
+		<action name="edit" ajax="page">
+			<description>Edit a change task</description>
+			<command class="com.catl.change.processors.CatlEditChangeTaskFormProcessor"
+				method="execute" windowType="popup" />
+			<includeFilter name="adminLockModifyChangeObjectsFilter" />
+			<includeFilter name="hideForChangeTemplates" />
+			<includeFilter name="EditImplementPlanFilter" />
+		</action>
+		<action name="wizardEdit" ajax="row">
+			<description>Edit a change task</description>
+			<command class="com.catl.change.processors.CatlEditChangeTaskFormProcessor"
+				method="execute" windowType="lightbox"
+				url="netmarkets/jsp/changeTask/edit.jsp?isIframeWizard=true&amp;resizeIframeWizard=false" />
+			<includeFilter name="hideForChangeTemplates" />
+		</action>
+		<action name="viewAttributesWizStep" id="viewAttributesWizStep" preloadWizardPage="false" required="false">
+					<command url="netmarkets/jsp/catl/changeTask/viewAttributesWizStep.jsp" windowType="wizard_step"/>
+		</action>		
+	</objecttype>
+
+   <objecttype name="change" class="wt.change2.ChangeItem" resourceBundle="com.ptc.windchill.enterprise.change2.changeManagementActionsRB">
+      <action name="changePaste" ajax="row">
+         <description>Paste select changeables</description>
+         <command class="com.ptc.windchill.enterprise.change2.commands.PasteChangeableCommands" method="paste"/>
+		  <includeFilter name="EditchangeTaskFilter" />
+		  <includeFilter name="ChangeTaskObjectFilter" />
+      </action>
+
+      <action name="changePasteSelect" uicomponent="PASTE" ajax="row">
+          <description>Selection paste changeables</description>
+          <command class="com.ptc.windchill.enterprise.change2.commands.PasteChangeableCommands" method="pasteSelect" windowType="new"/>
+		   <includeFilter name="EditchangeTaskFilter" />
+		   <includeFilter name="ChangeTaskObjectFilter" />
+      </action>
+      
+      <action name="setDispositionPicker" selectRequired="true">
+         <description>Set the disposition for affected objects</description>
+         <command onClick="ptcChgLAH.handleSelectAction(event, false)" class="com.ptc.windchill.enterprise.change2.forms.processors.ChangeLinkAttributeProcessor" windowType="new"/>
+         <includeFilter name="ChangeTaskObjectFilter" />
+      </action>
+ </objecttype>
+
+	<objecttype name="changeable" class="wt.change2.Changeable2" resourceBundle="com.ptc.windchill.enterprise.change2.changeManagementActionsRB">
+
+		<action name="addAffectedData" ajax="row" renderType="GENERAL">
+			<description>Add affected data</description>
+			<command windowType="new"/>
+			<includeFilter name="EditchangeTaskFilter" />
+			<includeFilter name="ChangeTaskObjectFilter" />
+		</action>
+
+		<action name="removeAffectedData" renderType="GENERAL" ajax="row">
+			<description>Remove affected data</description>
+			<command onClick="changeRowHandler.removeAffectedObjects(event)" windowType="no_content"/>
+			<includeFilter name="EditchangeTaskFilter" />
+			<includeFilter name="ChangeTaskObjectFilter" />
+		</action>
+	</objecttype>
+	
+	<objecttype name="changeTask" class="wt.change2.WTChangeActivity2" resourceBundle="com.ptc.windchill.enterprise.change2.changeManagementActionsRB">
+		<action name="newOneOffVersionInChange" selectRequired="true" ajax="row" renderType="GENERAL">
+        	<description>New one-off version for affected objects</description>
+        	<command onClick="OneOffVersionHandler.processSelected(event)" windowType="no_content"/>
+        	<includeFilter name="ChangeTaskObjectFilter" />
+      	</action>
+	</objecttype>
+	
+	<objecttype name="supersede" class="wt.supersede.SupersedeGroup" resourceBundle="com.ptc.windchill.enterprise.supersede.supersedeResource">
+		<action name="createSupersedeWithNew" ajax="row" selectRequired="true" uicomponent="SUPERSEDE_CREATE">
+        	<command class="com.ptc.windchill.enterprise.supersede.processors.SupersedeWithNewFormProcessor" method="execute" windowType="popup" />
+        	<moreurlinfo>resizable=yes, scrollbars=no, height=400, width=1100</moreurlinfo>
+        	<includeFilter name="supersedeDisableForAdminLocked"/>        
+        	<includeFilter name="hideForObjectInProject"/>
+        	<includeFilter name="ChangeTaskObjectFilter" />
+		</action>
+		
+		<action name="createSupersedeWithExistingWizard" selectRequired="false" uicomponent="SUPERSEDE_CREATE">
+			<command class="com.ptc.windchill.enterprise.supersede.forms.CreateSupersedeWithExistingFormProcessor" method="execute" windowType="popup"/>
+			<includeFilter name="supersedeDisableForAdminLocked"/>
+			<includeFilter name="hideForObjectInProject"/>
+			<includeFilter name="ChangeTaskObjectFilter" />
+		</action>
+	</objecttype>
+</listofactions>

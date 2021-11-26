@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE listofactions SYSTEM '../../actions.dtd'>
+
+<listofactions>
+   <objecttype name="require"  resourceBundle="com.catl.require.resource.requireRB">               
+         <action name="changeplatform">
+            <command url="netmarkets/jsp/catl/require/changeplatform.jsp" windowType="page" />
+        </action>
+   </objecttype>
+   	<objecttype name="catl" class="" resourceBundle="com.catl.require.resource.requireRB">
+      <action name="aftersale" uicomponent="THIRD_LEVEL_RELATED_DOCUMENTS">
+			<component name = "aftersalebuilder" />
+	  </action>		
+     </objecttype>
+    <objecttype name="require" class="" resourceBundle="com.catl.require.resource.requireRB">
+	   <action name="newaftersale" ajax="row">
+			<command url="netmarkets/jsp/catl/require/newaftersale.jsp"   class="com.catl.require.processors.AfterSaleProcessor" method="execute" windowType="popup"/>
+		     <includeFilter name="CATLCreateAfterSaleFilter"/>
+		</action>
+    <action name="newaftersalefirststep">
+		<command url="netmarkets/jsp/catl/require/newaftersalefirststep.jsp" windowType="wizard_step"/>
+    </action>	
+    <action name="related_add_aftersale_part">
+			<command url="netmarkets/jsp/catl/require/addPartPicker.jsp" windowType="popup" class="com.catl.require.processors.AfterSaleCommands" method="addParts"/>
+	</action>		
+	<action name="related_delete_aftersale_part" ajax="row" selectRequired="true" multiselect="true">
+		<command  class="com.catl.require.processors.AfterSaleCommands" method="removeParts" onClick="removeParts()"/>
+	</action>
+	<action name="related_paste_aftersale_part" ajax="row" uicomponent="PASTE">
+		<command class="com.catl.require.processors.AfterSaleCommands" method="pasteParts"  onClick="pasteParts()"/>
+	</action>
+    </objecttype>
+</listofactions>

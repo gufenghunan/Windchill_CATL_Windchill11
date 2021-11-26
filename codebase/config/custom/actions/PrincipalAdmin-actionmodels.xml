@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE actionmodels SYSTEM 'actionmodels.dtd'>
+
+<actionmodels>
+
+   <model name="user actions" menufor="wt.org.WTUser">
+      <description>Actions model for WTUser from info page, participant admin, team page</description>
+      <action name="updateUser" type="user"/>
+      <action name="electronicID" type="user"/>
+      <action name="separator" type="separator"/>
+      <action name="removeParticipantFromCache" type="principal"/>
+      <action name="removeGroupAndTeam" type="catlprincipal"/>
+   </model>
+
+</actionmodels>

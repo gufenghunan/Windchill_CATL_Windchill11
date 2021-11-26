@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE loadFileList SYSTEM "/wt/load/windchillLoad.dtd">
+<loadFileList>
+	
+	<!-- part soft Type -->
+	<loadFile filename="com/catl/type/part/WTPartMaster_0.xml" title="WTPartMaster_0.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/type/part/WTPartMaster_1.xml" title="WTPartMaster_1.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/type/part/WTPartMaster_2.xml" title="WTPartMaster_2.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>	
+	<loadFile filename="com/catl/type/part/WTPart_0.xml" title="WTPart_0.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/type/part/WTPart_1.xml" title="WTPart_1.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/type/part/WTPart_2.xml" title="WTPart_2.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	
+</loadFileList>

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE loadFileList SYSTEM "/wt/load/windchillLoad.dtd">
+<loadFileList>
+	
+	<!-- Phase 1 Workflow -->
+	<loadFile filename="com/catl/workflow/WF_bom_published.xml" title="WF_bom_published.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/workflow/WF_change_ECA.xml" title="WF_change_ECA.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/workflow/WF_change_ECR.xml" title="WF_change_ECR.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/workflow/WF_change_ECN.xml" title="WF_change_ECN.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/workflow/WF_doc_published.xml" title="WF_doc_published.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/workflow/WF_part_apply.xml" title="WF_part_apply.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/workflow/WF_pdf_signet.xml" title="WF_pdf_signet.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	
+	<!-- 设计变更相关流程 -->
+	<loadFile filename="com/catl/workflow/WF_change_DCA.xml" title="设计变更任务流程" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/workflow/WF_change_DCN.xml" title="设计变更通告审批流程" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	
+	<!-- 物料成熟度相关流程 -->
+	<loadFile filename="com/catl/workflow/WF_NFAE_MaturityUp3.xml" title="CATL_非FAE物料成熟度1升级3流程" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/workflow/WF_refresh_faeStatus.xml" title="更新分类的部件FAE状态" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>	
+	<loadFile filename="com/catl/workflow/WF_FAE_MaterialsMaturity.xml" title="FAE物料成熟度升级与SAP集成流程" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>	
+	<loadFile filename="com/catl/workflow/WF_NFAE_MaturityUp3ReportRelease.xml" title="非FAE物料成熟度3升级报告发布流程" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	
+	<!-- 设计禁用相关流程 -->
+	<loadFile filename="com/catl/workflow/CATL_DisabledForDesign_PN.xml" title="物料设计禁用单流程" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/workflow/CATL_NotValid_Superstratum.xml" title="无有效上层BOM的物料报表输出流程" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	
+	<!-- Datasheet相关流程 -->
+	<loadFile filename="com/catl/workflow/WF_doc_Datasheet.xml" title="Datasheet审签流程" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	
+	<!-- ECAD建库流程-->
+	<loadFile filename="com/catl/workflow/WF_Componet_Lib.xml" title="元器件建库" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	
+	<!-- PCB设计流程-->
+	<loadFile filename="com/catl/workflow/WF_PCB_Design.xml" title="PCB设计" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	
+	<!-- 采购类型更改单-->
+	<loadFile filename="com/catl/workflow/WF_SourceChange.xml" title="采购类型更改流程" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	
+	<!-- 文档失效相关流程 -->
+	<loadFile filename="com/catl/workflow/WF_doc_invalided.xml" title="WF_doc_invalided.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+</loadFileList>

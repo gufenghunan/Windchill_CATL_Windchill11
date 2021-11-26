@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listofactions SYSTEM "actions.dtd">
+<listofactions>
+      <objecttype name="navigation" class="" resourceBundle="com.catl.integration.rdm.resource.CatlRDMResource">
+        <action name="rdm" >  
+        </action>
+      </objecttype>
+	  
+    <objecttype name="rdm" class="" resourceBundle="com.catl.integration.rdm.resource.CatlRDMResource">
+        <action name="3b8cc05e-597e-4500-84e5-310a8b54d75b">
+            <command windowType="popup" url="/netmarkets/jsp/catl/rdm/redirect.jsp?actionid=3b8cc05e-597e-4500-84e5-310a8b54d75b"/> 
+            <includeFilter name="hideByUserFilter"/>
+        </action>
+        
+        <action name="137621bf-b92a-4f71-a1b8-bb23e71dfbbb">
+            <command windowType="popup" url="/netmarkets/jsp/catl/rdm/redirect.jsp?actionid=137621bf-b92a-4f71-a1b8-bb23e71dfbbb"/> 
+            <includeFilter name="hideByUserFilter"/>
+        </action>
+        
+        <action name="9dd0572a-fd97-4b18-b546-940243a94fdf">
+            <command windowType="popup" url="/netmarkets/jsp/catl/rdm/redirect.jsp?actionid=9dd0572a-fd97-4b18-b546-940243a94fdf"/> 
+            <includeFilter name="hideByUserFilter"/>
+        </action>
+        
+        <action name="b00df805-73bf-aaaa-96d1-ee0603c8e1aa">
+            <command windowType="popup" url="/netmarkets/jsp/catl/rdm/redirect.jsp?actionid=b00df805-73bf-aaaa-96d1-ee0603c8e1aa"/> 
+            <includeFilter name="hideByUserFilter"/>
+        </action>
+        
+        <action name="342babd2-0d04-4828-a0ac-9350cc9cf668">
+            <command windowType="popup" url="/netmarkets/jsp/catl/rdm/redirect.jsp?actionid=342babd2-0d04-4828-a0ac-9350cc9cf668"/> 
+            <includeFilter name="hideByUserFilter"/>
+        </action>
+        
+        <action name="2c4d70cd-2671-46e7-a9b6-9d057e1082bf">
+            <command windowType="popup" url="/netmarkets/jsp/catl/rdm/redirect.jsp?actionid=2c4d70cd-2671-46e7-a9b6-9d057e1082bf"/> 
+            <includeFilter name="hideByUserFilter"/>
+        </action>
+        
+        <action name="37c97e40-52f2-4e04-b208-aa6ca1ffff45">
+            <command windowType="popup" url="/netmarkets/jsp/catl/rdm/redirect.jsp?actionid=37c97e40-52f2-4e04-b208-aa6ca1ffff45"/> 
+            <includeFilter name="hideByUserFilter"/>
+        </action>
+        
+        <action name="c4415e6c-d159-4b16-9fdc-7f4e29545ad2">
+            <command windowType="popup" url="/netmarkets/jsp/catl/rdm/redirect.jsp?actionid=c4415e6c-d159-4b16-9fdc-7f4e29545ad2"/> 
+            <includeFilter name="hideByUserFilter"/>
+        </action>
+        
+        <action name="b00df111-aaaa-bbbb-cccc-110603c8e130">
+            <command windowType="popup" url="/netmarkets/jsp/catl/rdm/redirect.jsp?actionid=b00df111-aaaa-bbbb-cccc-110603c8e130"/> 
+            <includeFilter name="hideByUserFilter"/>
+        </action>
+        
+        <action name="b00df222-aaaa-bbbb-cccc-110603c8e130">
+            <command windowType="popup" url="/netmarkets/jsp/catl/rdm/redirect.jsp?actionid=b00df222-aaaa-bbbb-cccc-110603c8e130"/> 
+            <includeFilter name="hideByUserFilter"/>
+        </action>
+        
+        <action name="b00df333-aaaa-bbbb-cccc-333603c8e130">
+            <command windowType="popup" url="/netmarkets/jsp/catl/rdm/redirect.jsp?actionid=b00df333-aaaa-bbbb-cccc-333603c8e130"/> 
+            <includeFilter name="hideByUserFilter"/>
+        </action>
+        
+        <action name="6c3ee2da-dd22-49f2-be3c-3781db4f3a54">
+            <command windowType="popup" url="/netmarkets/jsp/catl/rdm/redirect.jsp?actionid=6c3ee2da-dd22-49f2-be3c-3781db4f3a54"/> 
+            <includeFilter name="hideByUserFilter"/>
+        </action>
+        
+        <action name="b00df805-aaaa-bbbb-bbbb-110603c8e130">
+            <command windowType="popup" url="/netmarkets/jsp/catl/rdm/redirect.jsp?actionid=b00df805-aaaa-bbbb-bbbb-110603c8e130"/> 
+            <includeFilter name="hideByUserFilter"/>
+        </action>
+        
+        <action name="b00df444-aaaa-bbbb-cccc-110603c8e130">
+            <command windowType="popup" url="/netmarkets/jsp/catl/rdm/redirect.jsp?actionid=b00df444-aaaa-bbbb-cccc-110603c8e130"/> 
+            <includeFilter name="hideByUserFilter"/>
+        </action>
+        
+        <action name="b00df805-aaaa-492b-96d1-222203c8e130">
+            <command windowType="popup" url="/netmarkets/jsp/catl/rdm/redirect.jsp?actionid=b00df805-aaaa-492b-96d1-222203c8e130"/> 
+            <includeFilter name="hideByUserFilter"/>
+        </action>
+        
+        <action name="d4a86e04-17d1-4698-aa66-88d23e96af1c">
+            <command windowType="popup" url="/netmarkets/jsp/catl/rdm/redirect.jsp?actionid=d4a86e04-17d1-4698-aa66-88d23e96af1c"/> 
+            <includeFilter name="hideByUserFilter"/>
+        </action>
+        
+        <action name="b00df805-aaaa-492b-96d1-111103c8e130">
+            <command windowType="popup" url="/netmarkets/jsp/catl/rdm/redirect.jsp?actionid=b00df805-aaaa-492b-96d1-111103c8e130"/> 
+            <includeFilter name="hideByUserFilter"/>
+        </action>
+        
+        <action name="fa65920a-b462-4c19-bff1-98b79e0c0b99">
+            <command windowType="popup" url="/netmarkets/jsp/catl/rdm/redirect.jsp?actionid=fa65920a-b462-4c19-bff1-98b79e0c0b99"/> 
+            <includeFilter name="hideByUserFilter"/>
+        </action>
+        
+        <action name="1717f520-7f89-45a7-9939-c4a028204353">
+            <command windowType="popup" url="/netmarkets/jsp/catl/rdm/redirect.jsp?actionid=1717f520-7f89-45a7-9939-c4a028204353"/> 
+            <includeFilter name="hideByUserFilter"/>
+        </action>
+        
+        <action name="02123343-d989-4708-a179-5c77312ae7c2">
+            <command windowType="popup" url="/netmarkets/jsp/catl/rdm/redirect.jsp?actionid=02123343-d989-4708-a179-5c77312ae7c2"/> 
+            <includeFilter name="hideByUserFilter"/>
+        </action>
+        
+        <action name="46b62298-72a4-478f-851b-8f722ec4aa34">
+            <command windowType="popup" url="/netmarkets/jsp/catl/rdm/redirect.jsp?actionid=46b62298-72a4-478f-851b-8f722ec4aa34"/> 
+            <includeFilter name="hideByUserFilter"/>
+        </action>
+        
+        <action name="76d41b6d-8518-4241-b6df-b7fdd39ce7cc">
+            <command windowType="popup" url="/netmarkets/jsp/catl/rdm/redirect.jsp?actionid=76d41b6d-8518-4241-b6df-b7fdd39ce7cc"/> 
+            <includeFilter name="hideByUserFilter"/>
+        </action>
+        
+        <action name="76d41b6d-8518-4241-b6df-b7fdd39ce79c">
+            <command windowType="popup" url="/netmarkets/jsp/catl/rdm/redirect.jsp?actionid=76d41b6d-8518-4241-b6df-b7fdd39ce79c"/> 
+            <includeFilter name="hideByUserFilter"/>
+        </action>
+        
+        <action name="8a4467fb-92ac-43de-b818-c930d6ed2acb">
+            <command windowType="popup" url="/netmarkets/jsp/catl/rdm/redirect.jsp?actionid=8a4467fb-92ac-43de-b818-c930d6ed2acb"/> 
+            <includeFilter name="hideByUserFilter"/>
+        </action>
+        
+        <action name="a0d47055-456f-496b-bbc5-f7357c97351f">
+            <command windowType="popup" url="/netmarkets/jsp/catl/rdm/redirect.jsp?actionid=a0d47055-456f-496b-bbc5-f7357c97351f"/> 
+            <includeFilter name="hideByUserFilter"/>
+        </action>
+        
+        <action name="f50da078-008e-4e80-a663-0f269e558649">
+            <command windowType="popup" url="/netmarkets/jsp/catl/rdm/redirect.jsp?actionid=f50da078-008e-4e80-a663-0f269e558649"/> 
+            <includeFilter name="hideByUserFilter"/>
+        </action>
+        
+        <action name="e8da4a6f-73dd-443f-bf3d-ba12ce96ca92">
+            <command windowType="popup" url="/netmarkets/jsp/catl/rdm/redirect.jsp?actionid=e8da4a6f-73dd-443f-bf3d-ba12ce96ca92"/> 
+            <includeFilter name="hideByUserFilter"/>
+        </action>
+        
+        <action name="b00df805-73bf-492b-96d1-ee0603c8e130">
+            <command windowType="popup" url="/netmarkets/jsp/catl/rdm/redirect.jsp?actionid=b00df805-73bf-492b-96d1-ee0603c8e130"/> 
+            <includeFilter name="hideByUserFilter"/>
+        </action>
+        
+        <action name="37c97e40-52f2-4e04-b208-aa6ca14b7ce0">
+            <command windowType="popup" url="/netmarkets/jsp/catl/rdm/redirect.jsp?actionid=37c97e40-52f2-4e04-b208-aa6ca14b7ce0"/> 
+            <includeFilter name="hideByUserFilter"/>
+        </action>
+        
+        <action name="1377d1b2-f301-464a-b182-81b1ad8fcd1c">
+            <command windowType="popup" url="/netmarkets/jsp/catl/rdm/redirect.jsp?actionid=1377d1b2-f301-464a-b182-81b1ad8fcd1c"/> 
+            <includeFilter name="hideByUserFilter"/>
+        </action>
+        
+        <action name="f4396ce9-2fa6-4787-8406-424e393fa1d5">
+            <command windowType="popup" url="/netmarkets/jsp/catl/rdm/redirect.jsp?actionid=f4396ce9-2fa6-4787-8406-424e393fa1d5"/> 
+            <includeFilter name="hideByUserFilter"/>
+        </action>
+        
+        <action name="f4396ce9-2fa6-4787-8406-424e393fa1f4">
+            <command windowType="popup" url="/netmarkets/jsp/catl/rdm/redirect.jsp?actionid=f4396ce9-2fa6-4787-8406-424e393fa1f4"/> 
+            <includeFilter name="hideByUserFilter"/>
+        </action>
+        
+        <action name="6bc02755-db7c-44e9-bf74-b9d5d0faaaaa">
+            <command windowType="popup" url="/netmarkets/jsp/catl/rdm/redirect.jsp?actionid=6bc02755-db7c-44e9-bf74-b9d5d0faaaaa"/> 
+            <includeFilter name="hideByUserFilter"/>
+        </action>
+        
+        <action name="6bc02755-db7c-44e9-aaaa-aad5d0fac087">
+            <command windowType="popup" url="/netmarkets/jsp/catl/rdm/redirect.jsp?actionid=6bc02755-db7c-44e9-aaaa-aad5d0fac087"/> 
+            <includeFilter name="hideByUserFilter"/>
+        </action>
+        
+        <action name="6bc02755-db7c-44e9-bf74-b9d5d0fac087">
+            <command windowType="popup" url="/netmarkets/jsp/catl/rdm/redirect.jsp?actionid=6bc02755-db7c-44e9-bf74-b9d5d0fac087"/> 
+            <includeFilter name="hideByUserFilter"/>
+        </action>
+        
+        <action name="5ee362eb-d387-4e99-b5e6-ad73a99e48fd">
+            <command windowType="popup" url="/netmarkets/jsp/catl/rdm/redirect.jsp?actionid=5ee362eb-d387-4e99-b5e6-ad73a99e48fd"/> 
+            <includeFilter name="hideByUserFilter"/>
+        </action>
+        
+         <action name="listRDMAssignments" enabledwhensuspended="true" uicomponent="RDM_ASSIGNMENTS">
+            <component windowType="page" name="rdm.assignments.list"/>
+        </action>
+        <action name="listRDMWFAssignments" enabledwhensuspended="true" uicomponent="RDM_WFASSIGNMENTS">
+            <component windowType="page" name="rdm.workflow.list"/>
+        </action>
+    </objecttype>
+</listofactions>

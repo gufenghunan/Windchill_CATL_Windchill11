@@ -1,0 +1,14 @@
+           
+	         <AttributeValues objType="com.CATLBattery.CATLPart">
+
+              	  <AttrValue id="source" algorithm="wt.rule.algorithm.StringConstant">
+                      <Arg>buy</Arg> 
+                  </AttrValue>
+			   
+                  <AttrConstraint id="source" algorithm="com.ptc.core.rule.server.impl.GatherAttributeConstraints">
+                     <Value algorithm="com.ptc.core.rule.server.impl.GetServerPreGeneratedValue"/>                     
+                 </AttrConstraint>
+                  			   
+				         
+	       
+            </AttributeValues>  

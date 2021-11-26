@@ -1,0 +1,52 @@
+<%@page language="java" %>
+<%@taglib uri="http://www.ptc.com/infoengine/taglib/core" prefix="ie"%>
+
+<%
+Object number  = getContextGroup("FORM").getAttributeValue(0,"number");
+Object name  = getContextGroup("FORM").getAttributeValue(0,"name");
+Object buNumber  = getContextGroup("FORM").getAttributeValue(0,"buNumber");
+
+Object productCode  = getContextGroup("FORM").getAttributeValue(0,"productCode");
+
+Object libCode  = getContextGroup("FORM").getAttributeValue(0,"libCode");
+
+Object typeName  = getContextGroup("FORM").getAttributeValue(0,"typeName");
+Object ieServiceName  = getContextGroup("FORM").getAttributeValue(0,"ieServiceName");
+
+%>
+
+	
+<ie:webject name="Query-Objects" type="OBJ">
+	<ie:param name="INSTANCE"  data="${@FORM[]ieServiceName[0]}"/>
+<%
+	if(number != null){
+%>
+	<ie:param name="WHERE" data="number='${@FORM[]number[0]}'"/>
+<%
+	}
+	if(name != null){
+%>
+	<ie:param name="WHERE" data="name='${@FORM[]name[0]}'"/>
+<%
+	}
+	if(buNumber != null){
+%>
+	<ie:param name="WHERE" data="Mindray_BusinessNumber='${@FORM[]buNumber[0]}'"/>
+<%
+	}
+	if(productCode != null){
+%>
+	<ie:param name="WHERE" data="Mindray_ProductCode='${@FORM[]productCode[0]}'"/>
+<%
+	}
+	if(libCode != null){
+%>
+	<ie:param name="WHERE" data="containerReference^name='${@FORM[]libCode[0]}'"/>
+<%
+	}
+%>
+	<ie:param name="WHERE" data="checkoutInfo.state!='wrk'"/>
+	<ie:param name="TYPE" data="${@FORM[]typeName[0]}"/>
+	<ie:param name="GROUP_OUT" data="objects"/>   
+</ie:webject>
+		

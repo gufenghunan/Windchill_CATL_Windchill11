@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!DOCTYPE loadFileList SYSTEM "/wt/load/windchillLoad.dtd">
+<loadFileList>
+	
+	<!-- 升级请求SoftTypes -->
+    <loadFile filename="com/catl/type/promotionNotice/PromotionNotice_0.xml" title="PromotionNotice_0.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/type/promotionNotice/PromotionNotice_1.xml" title="PromotionNotice_1.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/type/promotionNotice/PromotionNotice_2.xml" title="PromotionNotice_2.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	
+</loadFileList>

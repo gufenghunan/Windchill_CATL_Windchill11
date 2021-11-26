@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+encoding//codebase/com/catl/cadence/conf/conf.properties=UTF-8
+encoding//codebase/com/catl/cadence/conf/initSystemConfig.properties=UTF-8
+encoding//codebase/com/catl/ecad/utils/FTPConfig.properties=UTF-8
+encoding//codebase/config/custom/DisableReasonERPMapProperties.properties=UTF-8
+encoding//codebase/config/custom/ECATaskProperties.properties=GBK
+encoding//codebase/config/custom/IBADocProperties.properties=ISO-8859-1
+encoding//codebase/netmarkets/jsp/attachments/attachments_soft_step.jsp=UTF-8
+encoding//codebase/netmarkets/jsp/catl/doc/createDocRDM.jsp=UTF-8
+encoding//codebase/netmarkets/jsp/catl/doc/error.jsp=UTF-8
+encoding//codebase/netmarkets/jsp/catl/doc/generateURL.jsp=UTF-8
+encoding//wtSafeArea/siteMod/codebase/netmarkets/jsp/changeNotice/create.jsp=UTF-8
+encoding//wtSafeArea/siteMod/codebase/netmarkets/jsp/changeTask/create.jsp=UTF-8
+encoding//wtSafeArea/siteMod/codebase/netmarkets/jsp/document/create.jspf=UTF-8
+encoding//wtSafeArea/siteMod/codebase/netmarkets/jsp/document/createDocumentSetTypeAndAttributesWizStep.jsp=UTF-8
+encoding//wtSafeArea/siteMod/codebase/netmarkets/jsp/document/editSoftAttachments.jsp=UTF-8
+encoding/<project>=UTF-8

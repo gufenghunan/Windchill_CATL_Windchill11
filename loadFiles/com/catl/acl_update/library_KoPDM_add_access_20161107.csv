@@ -1,0 +1,4 @@
+#AccessRule,user,domain,typeId,permission,principal,permissionList,state,allExceptPrincipal
+AccessRule,,/Default/CATLDefault/KoPDM(产品数据管理知识),WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.KoPDMDoc,+,PRODUCT_DATA_ENGINGEER,0/2/10/13,ALL,FALSE
+AccessRule,,/Default/CATLDefault/KoPDM(产品数据管理知识),WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.KoPDMDoc,+,teamMembers,0/10,DISABLED_FOR_DESIGN,FALSE
+AccessRule,,/Default/CATLDefault/KoPDM(产品数据管理知识),WCTYPE|wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.KoPDMDoc,+,teamMembers,0/10,RELEASED,FALSE

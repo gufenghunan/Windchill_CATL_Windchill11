@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<%@taglib uri="http://www.ptc.com/infoengine/taglib/core" prefix="ie"%>
+<%@page import="com.infoengine.SAK.IeService"%>
+<%@page import="wt.adapter.BasicWebjectDelegate"%>
+<%@page import="wt.org.WTPrincipal"%>
+<%@page import="wt.session.SessionHelper"%>
+<%@page import="java.util.*"%>
+<%@page language="java" access="http|soap"%>
+<!--com.infoengine.soap.rpc.def
+@param java.lang.String userUfid
+@return java.lang.String $(output[0]result[0])
+-->
+<%
+	int size=0;
+	String userUfid = (String)getParam ("userUfid");
+	WTPrincipal p = null;
+	
+	try{		
+		if (userUfid != null && !userUfid.equals("")){
+			p = wt.org.OrganizationServicesHelper.manager.getPrincipal(userUfid);
+			if(p != null){
+				wt.fc.QueryResult qr = wt.workflow.work.WorkflowHelper.service.getUncompletedWorkItems(p);
+				size=qr.size();	
+			}
+		}
+		System.out.println("OA query usernumber="+userUfid+",size="+size);
+	}catch ( Exception e ){
+	  throw new IEException (e);
+	}
+	String result="result="+size;
+%>
+<ie:webject name="Create-Group" type="GRP">
+    <ie:param name="GROUP_OUT" data="output"/>    
+    <ie:param name="ELEMENT" data="<%=result%>"/>
+</ie:webject>

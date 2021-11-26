@@ -1,0 +1,13 @@
+dn: ptcWindchillTypeId=com.catl,ptcRepositoryType=windchill,dc=ptc,dc=com,<base>
+ptcWindchillTypeId: com.catl
+objectClass: ptcWindchillTypeDefinition
+objectClass: ptcSchemaExtension
+objectClass: top
+
+dn: ptcCommandDelegateName=GetUnCompletedWorkSize,ptcWindchillTypeId=com.catl,ptcRepositoryType=windchill,dc=ptc,dc=com,<base>
+ptcCommandSourceCodeURL: com/catl/GetUnCompletedWorkSize.xml
+description: Get UnCompleted Work Size
+objectClass: ptcCommandDelegateDefinition
+objectClass: top
+ptcCommandDelegateName: GetUnCompletedWorkSize
+

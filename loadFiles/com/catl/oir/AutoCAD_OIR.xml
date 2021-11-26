@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE OrganizationConfig SYSTEM "standardX24.dtd">
+<OrganizationConfig>
+	<TypeBasedRule>
+		<EngineRule isDefault="false" enabled="true">
+			<ruleName>Auto CAD</ruleName>
+			<ruleSpecification><![CDATA[
+			<AttributeValues objType="wt.doc.WTDocument">
+                <AttrValue id="lifeCycle.id" algorithm="com.ptc.core.foundation.lifecycle.server.impl.LifeCycleTemplateAttributeAlgorithm">
+                    <Arg>LC_epmdoc_Cycle</Arg>
+               </AttrValue>
+            </AttributeValues>
+			 
+			  ]]></ruleSpecification>
+		    <ruleType type="INIT" />
+		</EngineRule>
+		<className>wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.autocadDrawing</className>
+	</TypeBasedRule>
+</OrganizationConfig>  
+               
+             

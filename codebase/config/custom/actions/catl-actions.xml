@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+<!DOCTYPE listofactions SYSTEM 'actions.dtd'>
+<listofactions>
+   <objecttype name="psb" resourceBundle="com.ptc.windchill.enterprise.part.psb.psbActionsRB">
+
+     <!--the origin action is in psb-actions.xml, need remove filer to let user can replace part -->
+     <action name="replacementsGWT" ajax="true">
+                        <command class="com.ptc.cat.ui.client.action.ManageReplacementAction" method="execute" url="/ptc1/part/replacements" windowType="popup"/>
+						<!-- remove this filter to let RELEASED part can be replaced also
+							<includeFilter name="com.ptc.cat.ui.client.internal.action.OneSelectionFilter"/>
+							<includeFilter name="com.ptc.cat.ui.client.internal.action.HaveParentFilter"/>
+							<includeFilter name="hideForObjectInProject"/>
+							<includeFilter name="disableForParentInTreeAdminLocked"/>
+							<includeFilter name="disableForNewObjectInWorkspace"/>
+							<includeFilter name="disableReplaceActionForPJLUserFilter"/>
+						-->
+                        <supportedTypes>
+                                <type value="wt.part.WTPart"/>
+                                <type value="wt.part.WTPartUsageLink"/>
+                                <type value="wt.part.PartUsesOccurrence"/>
+                                <type value="wt.part.RTPartPathOccurrence"/>
+                        </supportedTypes>       
+       </action>
+   </objecttype>
+   
+   <objecttype name="catlsignet" resourceBundle="com.catl.pdfsignet.resource.CATLSignetRB">
+        <action name="printSignet">
+            <command class="com.catl.pdfsignet.processors.GenerateSignetPDFProcessor" method="generateFile" />
+            <includeFilter name="CATLSignetFilter"/>
+        </action>
+        <action name="printSignetForPart">
+            <command class="com.catl.pdfsignet.processors.GenerateSignetPDFForPartProcessor" method="generateFile" />
+            <includeFilter name="PartCATLSignetFilter"/>
+        </action>
+        <action name="batchDownloadSignetPDF">
+            <command windowType="popup" url="netmarkets/jsp/catl/cad/batch_downloadpdf.jsp"/> 
+            <includeFilter name="BatchDownloadPDFFilter"/>
+        </action>
+   </objecttype>
+ 
+   <objecttype name="attachments" class="wt.content.ContentHolder" resourceBundle="com.ptc.windchill.enterprise.attachments.attachmentsResource">
+        <action name="edit_attachments" dtiUpload="true">
+            <command url="servlet/AttachmentsEditServlet" windowType="popup"/>
+            <includeFilter name="HideForDelivery" />
+            <includeFilter name="EditAttachmentsFilter" />
+        </action>
+   </objecttype>
+   
+     <!-- update by szeng 2017.09.21 for Soft Package Attachment -->
+    <objecttype name="attachments" class="wt.content.ContentHolder" resourceBundle="com.catl.doc.resource.CATLDocRB">   
+        <action name="attachments_soft_step" uicomponent="ATTACHMENTS" ajax="row" postloadJS="preAttachmentsStep" preloadWizardPage="false">
+         <command class="com.catl.doc.soft.processor.SoftPackageAttachmentsSubFormProcessor" windowType="wizard_step"/>
+         <includeFilter name="hideFromDTI" />
+         <includeFilter name="EDACompareFilter" />
+      </action>
+      
+      <action name="edit_soft_attachments" >
+         <command class="com.catl.doc.processor.CatlDocEditProcessor" method="execute" url="netmarkets/jsp/document/editSoftAttachments.jsp" windowType="popup" onClick="onClickValidation(event,'checkout')"/>
+         <includeFilter name="CATLSoftDocAttachmentsEditFilter" />
+      </action>
+            
+      <action name="addFileAttachmentSoft" ajax="row">
+         <command class="com.catl.doc.soft.processor.AttachmentCommands" method="addFileAttachment" onClick="browseForFiles(event,&apos;newFiles&apos;)"/>
+      </action>
+      
+      <action name="softAttachmentsTable">
+			<component name="com.catl.doc.soft.builders.SoftAttachmentsTableBuilder" />
+			<includeFilter name="CATLSoftDocAttachmentsEditFilter" />
+		</action>    
+   </objecttype>
+   
+   <objecttype name="catlpart" resourceBundle="com.catl.part.resource.CATLPartRB">
+   		<action name="maturity1To3">
+            <command onClick="JCAConfirm(event,'com.catl.part.resource.CATLPartRB.MATURITY_UP_CONFIRM_MSG')" class="com.catl.part.processors.CATLPartMaturityUpProcessor" method="maturityUp3" />
+            <includeFilter name="CATLMaturityUpFilter"/>
+        </action>
+        <action name="maturity3To6">
+            <command onClick="JCAConfirm(event,'com.catl.part.resource.CATLPartRB.MATURITY_UP_CONFIRM_MSG')" class="com.catl.part.processors.CATLPartMaturityUpProcessor" method="maturityUp6" />
+            <includeFilter name="CATLMaturityUpFilter"/>
+        </action>
+        <action name="maturity1To3Process">
+            <command onClick="JCAConfirm(event,'com.catl.part.resource.CATLPartRB.MATURITY_UP1TO3_CONFIRM_MSG')" class="com.catl.promotion.processors.MaturityOneToThreeProcess" method="execute" />
+            <includeFilter name="MaturityOneToThreeProcessFilter"/>
+        </action>
+        <action name="releaseSoftPart">
+            <command onClick="JCAConfirm(event,'com.catl.part.resource.CATLPartRB.RELEASE_SOFT_CONFIRM_MSG')" class="com.catl.part.processors.ReleaseSoftPartProcessor" method="releaseSoftPart" />
+       		<includeFilter name="CATLMaturityUpFilter"/>
+        </action>
+        <action name="reviseSoftPart">
+            <command onClick="JCAConfirm(event,'com.catl.part.resource.CATLPartRB.RELEASE_SOFT_CONFIRM_MSG')" class="com.catl.part.processors.ReleaseSoftPartProcessor" method="reviseSoftPartAndDoc" />
+       		<includeFilter name="CATLMaturityUpFilter"/>
+        </action>
+   </objecttype>
+   
+   <objecttype name="catlnodeconfig" resourceBundle="com.catl.part.classification.resource.CATLNodeConfigRB">
+   		<action name="nodeConfigView">
+			<component name="com.catl.part.classification.nodeConfigPanel" />
+			<includeFilter name="CatlNodeConfigFilter"/>
+		</action>
+		<action name="nodeConfigEdit">
+			<command class="com.catl.part.processors.NodeConfigEditFormProcessor" url="netmarkets/jsp/catl/part/classification/nodeConfigEdit.jsp" windowType="popup"/>
+			<includeFilter name="CatlNodeConfigFilter"/>
+		</action>
+		<action name="nodeConfigEditStep">
+			<component name="com.catl.part.classification.NodeConfigEditBuilder" windowType="wizard_step"/>
+		</action>
+		<action name="refreshPartFAEStatus">
+			<command onClick="JCAConfirm(event,'com.catl.part.classification.resource.CATLNodeConfigRB.CATL_CONFIRM_REFRESH_FAE')" 
+			class="com.catl.part.processors.RefreshPartFAEStatusCommands" method="refreshPartFAEStatus" />
+			<includeFilter name="CatlNodeConfigFilter"/>
+		</action>
+   </objecttype>
+   
+   <objecttype name="maturityReport" resourceBundle="com.catl.doc.maturityUpReport.resource.MaturityUpReportRB">
+   		<action name="addParts">
+   			<command url="netmarkets/jsp/catl/doc/maturityUpReport/relatedPartPicker.jsp" class="com.catl.doc.maturityUpReport.commands.MaturityUpReportCommands" method="addParts" windowType="popup"/>
+   			<includeFilter name="MaturityReportFilter"/>
+   		</action>
+   		<action name="removeParts">
+   			<command class="com.catl.doc.maturityUpReport.commands.MaturityUpReportCommands" method="removeParts" />
+   			<includeFilter name="MaturityReportFilter"/>
+   		</action>
+   		<action name="pasteParts">
+   			<command class="com.catl.doc.maturityUpReport.commands.MaturityUpReportCommands" method="pasteParts" />
+   			<includeFilter name="MaturityReportFilter"/>
+   		</action>
+   		<action name="relatedReportList">
+			<component name="com.catl.doc.maturityUpReport.mvc.builders.MaturityUpReportLinkBuilder" />
+		</action>
+		<action name="relatedPartList">
+			<component name="com.catl.doc.maturityUpReport.mvc.builders.MaturityUpReportLinkBuilder" />
+			<includeFilter name="MaturityReportFilter"/>
+		</action>
+   </objecttype>
+   
+  <!-- 启动PCB设计流程 -->
+   <objecttype name="catl" class="" resourceBundle="com.catl.ecad.resource.ECADResource">
+		<action name="startPCBDesign">
+			<command class="com.catl.ecad.utils.StartWorkflowFormProcessor" method="execute" url=""/>
+			<includeFilter name="catlValidator"/>			
+		</action>
+		<action name="startELEDesign">
+			<command class="com.catl.ele.util.EleWorkflowProcessor" method="execute" url=""/>		
+			<includeFilter name="eleWFFilter"/>	
+		</action>
+	</objecttype>
+	
+	<objecttype name="catl" class="" resourceBundle="com.catl.bom.cad.resource.EquipResource">
+		<action name="renameEquipment">
+			<command class="com.catl.bom.processor.CatlEquipmentRenumberProcessor" method="execute" url=""/>
+			<includeFilter name="equipRenumberFilter"/>	
+		</action>
+	</objecttype>
+	
+	<objecttype name="team" class="com.ptc.windchill.enterprise.team.server.TeamCCService" resourceBundle="com.ptc.windchill.enterprise.team.teamActionsResource">
+   		<action name="addUsersToRole" ajax="row">
+      		<command class="com.ptc.windchill.enterprise.picker.principal.PrincipalCommands" method="addPrincipal" windowType="popup"/>
+      		<includeFilter name="projectM4D"/>
+      		<includeFilter name="addUsersToRole"/>
+   		</action>
+   	</objecttype>
+   	
+   	<objecttype name="TraceSoftwareActions" resourceBundle="ext.ipe.createcad.TraceSoftwareElectricalRB">
+		<action name="createECADDocumentSetTypeAndAttributesWizStep" enabledwhensuspended="true">
+			<command class="ext.ipe.createcad.CreateECADDocumentFormProcessor" method="execute" windowType="popup"/>
+		</action>
+		
+		 <action name="createECADDocumentWizStep" enabledwhensuspended="true" afterJS="validateAttachments">
+		   <command url="wtcore/jsp/ext/ipe/ecaddoc/createECADDocumentSetTypeAndAttributesWizStep.jsp"  method="update" windowType="wizard_step"/>	
+		</action> 
+		
+		<action name="cargaElectricEBOM">
+			<label>
+				Load Electric EBOM
+			</label>
+			<description>
+				Load Electric EBOM
+			</description>
+		   <command url="ext/ipe/createcad/jsp/cargaElectricEBOM.jsp"  method="update" windowType="popup"/>	
+		</action>
+		
+		<action name="actualizarBOMElectrico">
+			<label>
+				Update Electric EBOM
+			</label>
+			<description>
+				Update Electric EBOM
+			</description>
+
+		   <command url="ext/ipe/createcad/jsp/actualizarBOM.jsp"  method="update" windowType="popup"/>	
+		</action>
+		
+		<action name="editECADDocumentSetTypeAndAttributesWizStep" enabledwhensuspended="true">		
+			<command class="ext.ipe.createcad.EditECADDocumentFormProcessor" method="execute" windowType="popup"/>
+		</action> 
+		
+		<action name="editECADDocumentWizStep" required="true" preloadWizardPage="true" enabledwhensuspended="true" afterJS="validateAttachments">
+			   <command url="wtcore/jsp/ext/ipe/ecaddoc/editECADDocumentAttributesWizStep.jsp"  method="update" windowType="wizard_step"/>				
+		</action>    			
+		
+	</objecttype>
+   	
+
+</listofactions>

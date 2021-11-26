@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE OrganizationConfig SYSTEM "standardX24.dtd">
+<OrganizationConfig>
+	<TypeBasedRule>
+		<EngineRule isDefault="false" enabled="true">
+			<ruleName>CATL DCA</ruleName>
+			<ruleSpecification><![CDATA[
+			<AttributeValues objType="com.CATLBattery.CATLDChangeActivity2">
+           
+               <!-- set the number to a generated number -->
+               <AttrValue id="number" algorithm="com.ptc.windchill.enterprise.revisionControlled.server.impl.NumberGenerator">
+                   <Arg>DCA</Arg>
+				   <Arg>{GEN:wt.enterprise.SequenceGenerator:CATL_DCA_SEQ:10:0}</Arg>
+               </AttrValue>
+
+                <AttrValue id="lifeCycle.id" algorithm="com.ptc.core.foundation.lifecycle.server.impl.LifeCycleTemplateAttributeAlgorithm">
+                    <Arg>LC_CATL_DCA</Arg>
+               </AttrValue>
+
+            </AttributeValues>
+			  ]]></ruleSpecification>
+		    <ruleType type="INIT" />
+		</EngineRule>
+		<className>wt.change2.WTChangeActivity2|com.CATLBattery.CATLDChangeActivity2</className>
+	</TypeBasedRule>
+</OrganizationConfig>  
+             
+       
+
+
+			  

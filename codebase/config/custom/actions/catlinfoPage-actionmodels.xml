@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE actionmodels SYSTEM 'actionmodels.dtd'>
+<actionmodels>
+    <model name="general" resourceBundle="com.ptc.core.ui.navigationRB">
+        <description>
+            "General" 3rd level nav menu
+        </description>
+        <action name="visualizationAndAttributes" type="object"/>                 <!-- Visualization and Attributes -->
+        <action name="primaryAttributes" type="object"/>                          <!-- Attributes -->
+        <action name="attributes" type="object"/>                                 <!-- More Attributes -->
+        <action name="separator" type="separator"/>                               <!-- ============================ -->
+        <action name="primaryContent" type="object"/>                             <!-- Primary Content -->
+        <action name="attachments" type="object"/>                                <!-- Attachments -->
+        
+        <action name="softAttachmentsTable" type="attachments"/>                  <!-- Soft Attachments add by szeng 20170921 -->
+        
+        <action name="separator" type="separator"/>                               <!-- ============================ -->
+        <action name="listAssignedOptionSet" type="filterTemplate"/>              <!-- Assigned Option Sets -->
+        <action name="listAssignedItemOptionality" type="optionality"/>           <!-- Assigned Optionality -->
+        <action name="logicReferences" type="generic"/>                           <!-- Logical References -->
+        <action name="separator" type="separator"/>                               <!-- ============================ -->
+        <action name="list" type="axlentry"/>                                     <!-- AML/AVL -->
+        <action name="allcontext" type="axlentry"/>                               <!-- AML/AVL (All Contexts) -->
+        <action name="separator" type="separator"/>                               <!-- ============================ -->
+        <action name="whereUsed" type="object"/>                                  <!-- Where Used -->
+        <action name="separator" type="separator"/>                               <!-- ============================ -->
+        <action name="allocations" type="instance"/>                              <!-- Allocations -->
+        <action name="partConfigurations" type="configuration"/>                  <!-- Part Configurations -->
+        <action name="partInstances" type="instance"/>                            <!-- Part Instances -->
+        <action name="partInstancesFromConfigDetail" type="instance"/>            <!-- Part Instances -->
+        <action name="separator" type="separator"/>                               <!-- ============================ -->
+        <action name="showZip" type="SoftwareBuild"/>                             <!-- Preview Packaged Content -->
+        <action name="separator" type="separator"/>                               <!-- ============================ -->
+        <action name="markups" type="wvs"/>                                       <!-- Annotations -->
+        <action name="effTableForPartsAndMPMLinkInfoPage" type="effectivity"/>    <!-- Effectivity -->
+        <action name="relatedComplianceSpecs" type="environment"/>                <!-- Environmental Compliance -->
+        <action name="reference" type="notebook"/>                                <!-- Notebook -->
+        <action name="repsAndMarkups" type="wvs"/>                                <!-- Representations -->
+		<action name="usedByStead" type="partStead"/>							  <!-- 5.17 ADD by zyw2 -->
+		<action name="partMaturityChangeLog" type="partStead"/>		    	      <!-- 7.05 ADD by zyw2 -->
+		<action name="partSourceChangeLog" type="partStead"/>		    	  <!-- =========================== -->
+    </model>
+    
+</actionmodels>

@@ -1,0 +1,17 @@
+dn: ptcServiceName=com.catl.catlplm.jdbcW4COracleAdapter,<base>
+ptcServiceClassName: com.infoengine.jdbc.JDBCAdapterImpl
+ptcRuntimeServiceName: com.catl.catlplm.jdbcW4COracleAdapter
+objectClass: top
+objectClass: ptcInfoEngineAdapter
+objectClass: ptcApplicationService
+objectClass: ptcApplicationProperties
+ptcMetaType: JDBC Adapter
+ptcServiceName: com.catl.catlplm.jdbcW4COracleAdapter
+ptcProperty: com.catl.catlplm.jdbcW4COracleAdapter.url=jdbc:oracle:thin:@172.26.126.41:1521:testcade
+ptcProperty: com.catl.catlplm.jdbcW4COracleAdapter.drivers=oracle.jdbc.driver.OracleDriver
+ptcProperty: com.catl.catlplm.jdbcW4COracleAdapter.dbuser=w4c
+ptcProperty: com.catl.catlplm.jdbcW4COracleAdapter.passwd=encrypted.com.catl.catlplm.jdbcW4COracleAdapter.passwd
+ptcProperty: com.catl.catlplm.jdbcW4COracleAdapter.databaseType=Oracle
+ptcProperty: com.catl.catlplm.jdbcW4COracleAdapter.autoCommitSupported=true
+ptcProperty: com.catl.catlplm.jdbcW4COracleAdapter.autoCommit=false
+

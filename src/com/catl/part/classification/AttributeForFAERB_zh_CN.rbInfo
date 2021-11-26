@@ -1,0 +1,11 @@
+ResourceInfo.class=wt.tools.resource.EnumResourceInfo
+
+NONE.value=无
+NONE.order=10
+NONE.defaultValue=true
+
+CUSTOMIZED.value=定制
+CUSTOMIZED.order=20
+
+SOURCE.value=采购类型
+SOURCE.order=30

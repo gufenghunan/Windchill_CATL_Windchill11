@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE NmLoader SYSTEM "standardX24.dtd">
+<!-- 
+windchill wt.load.LoadFromFile -d /ptc/Windchill_11.0/Windchill/loadFiles/com/catl/export/exportGlobalEnum.xml -u orgadmin -p 1 -CONT_PATH /
+ -->
+<NmLoader>
+	<csvExportDefinition handler="com.ptc.core.lwc.server.TypeDefinitionExporter.beginExportDefinition">
+		<csvtoLocation>/ptc/Windchill_11.0/Windchill/loadFiles/com/catl/type/enum</csvtoLocation>
+		<csvtoFileName>catl_enum_ENUM_DISABLED_REASON.xml</csvtoFileName>
+		<csvexportDefClass>com.ptc.core.lwc.server.LWCEnumerationDefinition</csvexportDefClass>
+		<csvexportNames>ENUM_DISABLED_REASON</csvexportNames>
+	</csvExportDefinition>
+	
+	<csvExportDefinition handler="com.ptc.core.lwc.server.TypeDefinitionExporter.beginExportDefinition">
+		<csvtoLocation>/ptc/Windchill_11.0/Windchill/loadFiles/com/catl/type/enum</csvtoLocation>
+		<csvtoFileName>catl_enum_ENUM_SOURCECHANGE_REASON.xml</csvtoFileName>
+		<csvexportDefClass>com.ptc.core.lwc.server.LWCEnumerationDefinition</csvexportDefClass>
+		<csvexportNames>source</csvexportNames>
+	</csvExportDefinition>
+</NmLoader> 

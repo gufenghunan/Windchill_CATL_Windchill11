@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE OrganizationConfig SYSTEM "standardX24.dtd">
+<OrganizationConfig>
+	<TypeBasedRule>
+		<EngineRule isDefault="false" enabled="true">
+			<ruleName>CATL Org Part</ruleName>
+			<ruleSpecification><![CDATA[
+				<AttributeValues objType="wt.part.WTPart">
+				  <!--CATL-->
+				  <AttrValue id="number" algorithm="com.catl.part.CatlPartNewNumber"> 
+						<Attr id="cls"/>
+				   </AttrValue>
+				   <!-- set the lifecycle -->
+				   <AttrValue id="lifeCycle.id" algorithm="com.ptc.core.foundation.lifecycle.server.impl.LifeCycleTemplateAttributeAlgorithm">
+					   <Arg>LC_Part_Cycle</Arg>
+				   </AttrValue>
+
+				  <!-- set the version info to a generated version info -->
+				   <AttrValue id="MBA|versionInfo" algorithm="com.ptc.core.foundation.vc.server.impl.VersionInfoGenerator">
+					  <Arg>wt.series.HarvardSeries.StateBased</Arg>
+				   </AttrValue>
+				</AttributeValues>
+		    ]]></ruleSpecification>
+		    <ruleType type="INIT" />
+		</EngineRule>
+		<className>wt.part.WTPart</className>
+	</TypeBasedRule>
+</OrganizationConfig>  
+               
+               

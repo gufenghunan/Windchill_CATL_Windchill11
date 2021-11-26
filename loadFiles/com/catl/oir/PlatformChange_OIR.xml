@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE OrganizationConfig SYSTEM "standardX24.dtd">
+<OrganizationConfig>
+	<TypeBasedRule>
+		<EngineRule isDefault="false" enabled="true">
+			<ruleName>SourceChange</ruleName>
+			<ruleSpecification><![CDATA[
+				<AttributeValues objType="com.CATLBattery.PlatformChangePN">
+            <!--  set the folder --> 
+                <AttrValue id="folder.id" algorithm="com.ptc.core.foundation.folder.server.impl.FolderPathAttributeAlgorithm">
+                    <Arg>/Default/产品线标识更改单</Arg> 
+                </AttrValue>
+            <!--  set the lifecycle --> 
+                <AttrValue id="lifeCycle.id" algorithm="com.ptc.core.foundation.lifecycle.server.impl.LifeCycleTemplateAttributeAlgorithm">
+                    <Arg>LC_产品线标识更改单</Arg> 
+                </AttrValue>
+            <!--  set the team template --> 
+                <AttrValue id="teamTemplate.id" algorithm="com.ptc.core.foundation.team.server.impl.TeamTemplateAttributeAlgorithm">
+                    <Arg>Default</Arg> 
+                </AttrValue>
+            <!--  set the number to a generated number --> 
+                <AttrValue id="number" algorithm="com.ptc.windchill.enterprise.revisionControlled.server.impl.NumberGenerator">
+                    <Arg>{GEN:wt.enterprise.SequenceGenerator:PROMOTIONNOTICEID_seq:8:0}</Arg> 
+                </AttrValue>
+                
+              
+          <AttrConstraint id="folder.id" algorithm="com.ptc.core.rule.server.impl.GatherAttributeConstraints">
+                <Value algorithm="com.ptc.core.rule.server.impl.GetServerPreGeneratedValue"/>
+                <Value algorithm="com.ptc.core.rule.server.impl.GetRendererConstraint"> 
+                    <Arg>SelectGeneratedFolderByDefault</Arg> 
+				</Value>         
+          </AttrConstraint>
+</AttributeValues>
+		    ]]></ruleSpecification>
+		    <ruleType type="INIT" />
+		</EngineRule>
+		<className>wt.maturity.PromotionNotice|com.CATLBattery.PlatformChangePN</className>
+	</TypeBasedRule>
+</OrganizationConfig>  
+               
+               

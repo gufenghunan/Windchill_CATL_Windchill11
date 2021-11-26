@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE loadFileList SYSTEM "/wt/load/windchillLoad.dtd">
+<loadFileList>
+	
+	<!-- WTDocument soft Type -->
+	<loadFile filename="com/catl/type/doc/WTDocument_0.xml" title="WTDocument_0.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/type/doc/WTDocument_1.xml" title="WTDocument_1.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/type/doc/WTDocument_2.xml" title="WTDocument_2.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/type/doc/WTDocument_3.xml" title="WTDocument_3.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+		
+</loadFileList>

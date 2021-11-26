@@ -1,0 +1,42 @@
+           
+	                   <AttributeValues objType="com.CATLBattery.CATLPart">
+
+              	  <AttrValue id="source" algorithm="wt.rule.algorithm.StringConstant">
+                      <Arg>buy</Arg> 
+                  </AttrValue>
+			   
+                  <AttrConstraint id="source" algorithm="com.ptc.core.rule.server.impl.GatherAttributeConstraints">
+                     <Value algorithm="com.ptc.core.rule.server.impl.GetServerPreGeneratedValue"/>                     
+                 </AttrConstraint>
+                    <AttrValue id="lifeCycleState" algorithm="wt.rule.algorithm.StringConstant">
+                      <Arg>DESIGN</Arg>
+                    </AttrValue>
+
+
+
+                   <AttrConstraint id="number" algorithm="wt.rule.algorithm.BooleanBranch">        
+                      <Value algorithm="com.ptc.core.rule.server.impl.IfContainerTypeEqualsProjectTest"/>       
+                      
+                      <Value algorithm="com.ptc.core.rule.server.impl.GatherAttributeConstraints">
+                         <Value algorithm="com.ptc.core.rule.server.impl.GetServerAssignedConstraint"/>                              
+                      </Value>        
+                      
+                      <Value algorithm="wt.rule.algorithm.BooleanBranch">  
+                           <Value algorithm="wt.rule.algorithm.StringEqualsTest">
+                              <Attr id="endItem"/>
+                              <Arg>true</Arg> 
+                           </Value>
+                           
+                           <Value algorithm="com.ptc.core.rule.server.impl.GatherAttributeConstraints"/>
+                           
+                           <Value algorithm="com.ptc.core.rule.server.impl.GatherAttributeConstraints">
+						      <!--
+                               <Value algorithm="com.ptc.core.rule.server.impl.GetServerAssignedConstraint"/> 
+                               <Value algorithm="com.ptc.core.rule.server.impl.GetImmutableConstraint"/> 
+							   -->
+                           </Value>        
+                       </Value>       
+                   </AttrConstraint>  				   
+				         
+	       
+            </AttributeValues>  

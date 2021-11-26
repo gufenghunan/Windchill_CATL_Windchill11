@@ -1,0 +1,11 @@
+wt.fc.ObjectToObjectLink=com.catl.change.inventory.ECAPartLink
+wt.fc.WTObject=com.catl.integration.log.DrawingSendERPLog
+wt.fc.WTObject=com.catl.integration.log.TransactionLog
+
+/**********************************************/
+
+wt.fc.ObjectToObjectLink=com.catl.doc.maturityUpReport.NFAEMaturityUp3DocPartLink
+wt.fc.WTObject=com.catl.part.classification.ClassificationNodeConfig
+wt.fc.WTObject=com.catl.integration.rdm.ObjectLinkedByRdm
+wt.fc.WTObject=com.catl.part.maturity.PartMaturityChangeLog
+wt.fc.WTObject=com.catl.part.sourceChange.PartSourceChangeLog

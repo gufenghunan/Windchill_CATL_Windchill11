@@ -1,0 +1,39 @@
+<%@page language="java" access="http|soap|internal"%>
+<%@page import="com.infoengine.object.factory.Group,com.infoengine.object.factory.Att,com.infoengine.object.factory.Element"%>
+<%@taglib uri="http://www.ptc.com/infoengine/taglib/core" prefix="ie"%>
+<%@page import="com.catl.ecad.utils.*" %>
+<!--com.infoengine.soap.rpc.def
+@param string json
+-->
+
+<%
+    String param1 = (String)getParam("json","");
+	Group group = new Group( "output" );
+	String value="";
+	String exception="";
+	
+	try {
+	    value = ECADutil.getCheckoutListInfo(param1);
+	    
+	} catch (Exception e) {
+		value="false";
+	    exception=e.getMessage();
+	   System.out.println("EPMUtil Exception:"+e);
+	}
+	
+	Element element = new Element();
+		Att att = new Att("data");
+		att.addValue(value);
+		element.addAtt(att);
+		Att ex = new Att("exception");
+		ex.addValue(exception);
+		element.addAtt(ex);
+		group.addElement(element);
+		addGroup(group);
+		System.out.println("-----------------"+value);
+%>
+
+<ie:webject name="Return-Groups" type="GRP">
+	<ie:param name="group_in"  data="output"/>
+</ie:webject>
+

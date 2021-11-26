@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listofactions SYSTEM "actions.dtd">
+<listofactions>
+    <objecttype name="navigation" class=""
+		resourceBundle="com.catl.part.ControlPanelRB">
+		<action name="controlPanel" renderType="GENERAL">
+			<command class="netmarkets" method="servlet/Navigation?tab=numbermanagement"
+				windowType="page" />
+		</action>
+	</objecttype>
+	
+	<objecttype name="navigation" class=""
+		resourceBundle="com.catl.require.resource.requireRB">
+		<action name="designconfig" renderType="GENERAL">
+			<command class="netmarkets" method="servlet/Navigation?tab=rimath" windowType="page" />
+			<includeFilter name="CATLConfigFilter"/>
+		</action>
+	</objecttype>
+	
+	<objecttype name="confignav" class="" resourceBundle="com.catl.require.resource.requireRB">
+		<action name="riconfig"  renderType="GENERAL">
+			<command class="netmarkets" url="netmarkets/jsp/catl/ri/config.jsp" windowType="page" />
+			<includeFilter name="CATLRIConfigFilter"/>
+		</action>
+		<action name="evcconfig"  renderType="GENERAL">
+			<command class="netmarkets" url="netmarkets/jsp/catl/battery/config.jsp" windowType="page" />
+			<includeFilter name="CATLEVCConfigFilter"/>
+		</action>
+		<action name="pdconfig"  renderType="GENERAL">
+			<command class="netmarkets" url="netmarkets/jsp/catl/pd/config.jsp" windowType="page" />
+			<includeFilter name="CATLPDConfigFilter"/>
+		</action>
+	</objecttype>
+	
+    <objecttype name="controlPanel" class=""	resourceBundle="com.catl.part.ControlPanelRB">
+    
+		<action name="importOptimumSelectingLevel" renderType="GENERAL">
+			<command url="netmarkets/jsp/catl/part/uploadOptimumSelectingLevelLevel.jsp" windowType="page" />
+			<includeFilter name="importRankingFilter"/>
+		</action>
+		
+		<action name="ecrReport" renderType="GENERAL">
+			<command url="netmarkets/jsp/catl/report/ecrReport.jsp" windowType="page" />
+			<includeFilter name="CheckReportViewPermissionFilter" />
+		</action>
+		
+		<action name="processApprovalReport" renderType="GENERAL">
+			<command url="netmarkets/jsp/catl/report/processApprovalTimeReport.jsp" windowType="page" />
+			<includeFilter name="CheckReportViewPermissionFilter" />
+		</action>
+		
+		<action name="bomReleaseReport" renderType="GENERAL">
+			<command url="netmarkets/jsp/catl/report/bomReleaseReport.jsp" windowType="page" />
+			<includeFilter name="CheckReportViewPermissionFilter" />
+		</action>
+		
+		<action name="wfRejectReport" renderType="GENERAL">
+			<command url="netmarkets/jsp/catl/report/wfRejectReport.jsp" windowType="page" />
+			<includeFilter name="CheckReportViewPermissionFilter" />
+		</action>
+		
+		<action name="inventoryDisposition" renderType="GENERAL">
+			<command url="netmarkets/jsp/catl/report/inventoryDisposition.jsp" windowType="page" />
+			<includeFilter name="CheckReportViewPermissionFilter" />
+		</action>
+		
+		<action name="notValidSuperstratum" renderType="GENERAL">
+			<command url="javascript:popupAction('DownloadAttachment_object', 'ptc1/netmarkets/jsp/catl/promotion/downloadAttachment.jsp', '','','','','','','','','','','','','portlet', 'poppedup', 'context', '','oid', '', '', 'none', 'com.catl.promotion.processor.NotValidSuperstratumProcessor', '', '', '','', false, 'P122011669813533', 'row', '',false, null);" class="com.catl.promotion.processor.NotValidSuperstratumProcessor" windowType="no_content" />
+			<includeFilter name="NotValidSuperstratumFilter" />
+		</action>
+		
+		<action name="addRelatedObjectStep" ajax="row">
+			<command url="netmarkets/jsp/catl/promotion/addRelatedObjectStep.jsp" windowType="wizard_step" />
+		</action>
+		
+		<action name="orgOrSiteGroupReport" renderType="GENERAL">
+			<command url="netmarkets/jsp/catl/report/orgOrSiteGroupReport.jsp" windowType="page" />
+			<includeFilter name="CheckReportViewPermissionFilter" />
+		</action>
+		
+		<action name="productRoleUserReport" renderType="GENERAL">
+			<command url="netmarkets/jsp/catl/report/productRoleUserReport.jsp" windowType="page" />
+			<includeFilter name="CheckReportViewPermissionFilter" />
+		</action>
+		<action name="trunkBOMQueryReport" renderType="GENERAL">
+			<command url="netmarkets/jsp/catl/report/trunkBOMQueryReport.jsp" windowType="page" />
+		</action>
+		
+		<action name="productFolderReport" renderType="GENERAL">
+			<command url="netmarkets/jsp/catl/report/productFolderReport.jsp" windowType="page" />
+			<includeFilter name="CheckReportViewPermissionFilter" />
+		</action>
+		
+		<action name="changeReport" renderType="GENERAL">
+			<command url="netmarkets/jsp/catl/report/changeReport.jsp" windowType="page" />
+			<includeFilter name="CheckReportViewPermissionFilter" />
+		</action>
+	</objecttype>
+</listofactions>

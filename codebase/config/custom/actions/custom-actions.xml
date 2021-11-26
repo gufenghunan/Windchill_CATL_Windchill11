@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listofactions SYSTEM "actions.dtd">
+<listofactions>
+
+    <include href="config/custom/actions/bom-actions.xml" />
+	<include href="config/custom/actions/part-actions.xml" />
+	<include href="config/custom/actions/folder-actions.xml" />
+	<include href="config/custom/actions/doc-actions.xml" />
+	<include href="config/custom/actions/PromotionRequest-actions.xml" />
+	<include href="config/custom/actions/ChangeManagement-actions.xml" />
+    <include href="config/custom/actions/pdmObject-actions.xml" />
+    <include href="config/custom/actions/catl-rdm-actions.xml" />
+    <include href="config/custom/actions/navigation-custom-actions.xml" />
+	<include href="config/custom/actions/catl-inventory-actions.xml" />
+	<include href="config/custom/actions/WorkItem-actions.xml" />
+	<include href="config/custom/actions/catl-actions.xml" />
+	<include href="config/custom/actions/PrincipalAdmin-actions.xml" />
+	<include href="config/custom/actions/ChangeTask-actions.xml" />
+	<include href="config/custom/actions/psb-actions.xml" />
+	<include href="config/custom/actions/line-actions.xml" />
+	<include href="config/custom/actions/battery-actions.xml" />
+	<include href="config/custom/actions/require-actions.xml" />
+	
+    <include href="config/actions/xworks/xworks-actions.xml" />
+    <include href="config/actions/xworks/xworksExample-actions.xml" />
+</listofactions>

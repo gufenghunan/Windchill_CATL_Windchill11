@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Configuration SYSTEM "xconf.dtd">
+<Configuration targetFile="codebase/wt.properties">
+
+<!-- -*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-
+WARNING: Do not modify this file after it has been installed.  Use xconfmanager
+         to set, reset, or undefine properties for your installation
+-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*- -->
+
+   <!--
+        bcwti
+        Copyright (c) 2007 Parametric Technology Corporation, all rights reserved.
+        ecwti
+        -->
+    <AddToProperty name="com.ptc.netmarkets.util.misc.defaultActions" value="config/custom/actions/custom-actions.xml"/>
+    <AddToProperty name="com.ptc.netmarkets.util.misc.defaultActionmodels" value="config/custom/actions/custom-actionModels.xml"/>
+    <AddToProperty name="wt.services.applicationcontext.WTServiceProviderFromProperties.customPropertyFiles" value="config/custom/configuration.properties" />
+
+    <Property default="com.catl.common.listener.CatlListenerService/com.catl.common.listener.CatlListener" name="wt.services.service.98000"/>    
+
+<!--
+    <Property default="com.catl.bom.service.CatlPartListenerService/com.catl.bom.service.StandardCatlPartListenerService" name="wt.services.service.80000"/>
+    <Property default="com.catl.doc.service.CatlDocumentListenerService/com.catl.doc.service.StandardCatlDocumentListenerService" name="wt.services.service.90000"/>
+    <Property default="com.catl.change.service.StandardCatlECRCreateListenerService/com.catl.change.service.StandardCatlECRCreateListenerService" name="wt.services.service.95000"/>
+    <Property default="com.catl.change.service.StandardCatlReviseListenerService/com.catl.change.service.StandardCatlReviseListenerService" name="wt.services.service.96000"/>
+    <Property default="com.catl.process.service.StandardCatlWorkItemService/com.catl.process.service.StandardCatlWorkItemService" name="wt.services.service.97000"/>  
+    
+      
+-->
+
+	<Property default="none" name="wt.workflow.worklist.escapeHtml"/>
+	<Property default="true" name="wt.org.services.userPasswordChangeEnabled"/>
+	<Property default="OPEN,REWORK,UNDERREVIEW,IMPLEMENTATION" name="wt.change2.pendingOrderStates"/>
+	<Property default="OPEN,REWORK,UNDERREVIEW,IMPLEMENTATION" name="wt.change2.pendingRequestStates"/>
+
+</Configuration>

@@ -1,0 +1,25 @@
+ResourceInfo.class=wt.tools.resource.EnumResourceInfo
+
+SUPPLIERINVENTORY.value=Supplier Inventory
+SUPPLIERINVENTORY.order=10
+
+SUPPLIERINTRANSIT.value=The Number of Supplier In Transit
+SUPPLIERINTRANSIT.order=20
+
+CATLRAWINVENTORY.value=CATL Raw Inventory
+CATLRAWINVENTORY.order=30
+
+CATLINPROGRESSINVENTORY.value=CATL In Progress Inventory
+CATLINPROGRESSINVENTORY.order=40
+
+CATLFINISHEDINVENTORY.value=CATL Finished Goods Inventory
+CATLFINISHEDINVENTORY.order=50
+
+CATLFINISHEDNUMBER.value=The Number of Finished Goods In Progress
+CATLFINISHEDNUMBER.order=60
+
+CATLHUBINVENTORY.value=CATL Hub Inventory
+CATLHUBINVENTORY.order=70
+
+SHIPPEDFINISHEDNUMBER.value=The Number of Shipped Finished Goods
+SHIPPEDFINISHEDNUMBER.order=80

@@ -1,0 +1,51 @@
+ResourceInfo.class=wt.tools.resource.StringResourceInfo
+ResourceInfo.customizable=true
+ResourceInfo.deprecated=false
+
+# Entry Format (values equal to default value are not included)
+# <key>.value=
+# <key>.category=
+# <key>.comment=
+# <key>.argComment<n>=
+# <key>.constant=
+# <key>.customizable=
+# <key>.deprecated=
+# <key>.abbreviatedDisplay=
+# <key>.fullDisplay=
+# <key>.shortDescription=
+# <key>.longDescription=
+# <key>.order=
+# <key>.defaultValue=
+# <key>.selectable=
+
+# Entry Contents
+
+# Crear Documento ECAD
+TraceSoftwareActions.createECADDocumentSetTypeAndAttributesWizStep.description.value=New ECAD Document
+TraceSoftwareActions.createECADDocumentSetTypeAndAttributesWizStep.title.value=New ECAD Document
+TraceSoftwareActions.createECADDocumentSetTypeAndAttributesWizStep.icon.value=New ECAD Document
+TraceSoftwareActions.createECADDocumentSetTypeAndAttributesWizStep.tooltip.value=New ECAD Document
+TraceSoftwareActions.createECADDocumentSetTypeAndAttributesWizStep.icon.value=netmarkets/images/ecad_images/new_sch.gif
+TraceSoftwareActions.createECADDocumentSetTypeAndAttributesWizStep.icon.pseudo=false
+TraceSoftwareActions.createECADDocumentSetTypeAndAttributesWizStep.moreurlinfo.value=width=600,height=600
+TraceSoftwareActions.createECADDocumentSetTypeAndAttributesWizStep.moreurlinfo.pseudo=false
+
+# Editar Documento ECAD
+TraceSoftwareActions.editECADDocumentSetTypeAndAttributesWizStep.description.value=Edit ECAD Document
+TraceSoftwareActions.editECADDocumentSetTypeAndAttributesWizStep.title.value=Edit ECAD Document
+TraceSoftwareActions.editECADDocumentSetTypeAndAttributesWizStep.icon.value=Edit ECAD Document
+TraceSoftwareActions.editECADDocumentSetTypeAndAttributesWizStep.tooltip.value=Edit ECAD Document
+TraceSoftwareActions.editECADDocumentSetTypeAndAttributesWizStep.icon.value=../../wtcore/jsp/ext/ipe/ecaddoc/images/ecad_edit.gif
+TraceSoftwareActions.editECADDocumentSetTypeAndAttributesWizStep.icon.pseudo=false
+TraceSoftwareActions.editECADDocumentSetTypeAndAttributesWizStep.moreurlinfo.value=width=600,height=600
+TraceSoftwareActions.editECADDocumentSetTypeAndAttributesWizStep.moreurlinfo.pseudo=false
+
+# Editar Documento ECAD
+#TraceSoftwareActions.loadEBOM.description.value=Load Electric BOM
+#TraceSoftwareActions.loadEBOM.title.value=Load Electric BOM
+#TraceSoftwareActions.loadEBOM.icon.value=Load Electric BOM
+#TraceSoftwareActions.loadEBOM.tooltip.value=Load Electric BOM
+#TraceSoftwareActions.loadEBOM.icon.value=../../wtcore/jsp/ext/ipe/ecaddoc/images/ebom_load.gif
+#TraceSoftwareActions.loadEBOM.icon.pseudo=false
+#TraceSoftwareActions.loadEBOM.moreurlinfo.value=width=600,height=600
+#TraceSoftwareActions.loadEBOM.moreurlinfo.pseudo=false

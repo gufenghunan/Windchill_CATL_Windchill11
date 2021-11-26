@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE listofactions SYSTEM '../../actions.dtd'>
+
+<listofactions>
+
+   <objecttype name="battery"  resourceBundle="com.catl.battery.resource.batteryRB">               
+        <action name="batterydesign">
+            <command url="netmarkets/jsp/catl/battery/batteryMain.jsp" windowType="popup"/>
+            <moreurlinfo>resizable=yes,scrollbars=no,menubar=no,toolbar=no,location=no,status=yes,height=700,width=1300</moreurlinfo>
+            <includeFilter name="batteryDesignFilter"/>
+        </action>
+        <action name="updateBatteryDoc">
+            <command url="netmarkets/jsp/catl/battery/batteryMain.jsp" windowType="popup"/>
+            <moreurlinfo>resizable=yes,scrollbars=no,menubar=no,toolbar=no,location=no,status=yes,height=700,width=1300</moreurlinfo>
+       		<includeFilter name="batteryDesignFilter"/>
+        </action>
+        <action name="summaryequal">
+          <command url="ptc1/battery/compareSummary.do" windowType="popup"/>
+       		<includeFilter name="batteryDesignFilter"/>
+        </action>
+   </objecttype>
+   
+   
+   <objecttype name="riA"  resourceBundle="com.catl.ri.resource.riRB">               
+        <action name="ridesign">
+            <command url="netmarkets/jsp/catl/ri/A/batteryMain.jsp" windowType="popup"/>
+            <moreurlinfo>resizable=yes,scrollbars=no,menubar=no,toolbar=no,location=no,status=yes,height=700,width=1300</moreurlinfo>
+            <includeFilter name="riADesignFilter"/>
+        </action>
+        <action name="updateRiDoc">
+            <command url="netmarkets/jsp/catl/ri/A/batteryMain.jsp" windowType="popup"/>
+            <moreurlinfo>resizable=yes,scrollbars=no,menubar=no,toolbar=no,location=no,status=yes,height=700,width=1300</moreurlinfo>
+       		<includeFilter name="riADesignFilter"/>
+        </action>
+   </objecttype>
+   
+      <objecttype name="riB"  resourceBundle="com.catl.ri.resource.riRB">               
+        <action name="ridesign">
+            <command url="netmarkets/jsp/catl/ri/B/batteryMain.jsp" windowType="popup"/>
+            <moreurlinfo>resizable=yes,scrollbars=no,menubar=no,toolbar=no,location=no,status=yes,height=700,width=1300</moreurlinfo>
+            <includeFilter name="riBDesignFilter"/>
+        </action>
+        <action name="updateRiDoc">
+            <command url="netmarkets/jsp/catl/ri/B/batteryMain.jsp" windowType="popup"/>
+            <moreurlinfo>resizable=yes,scrollbars=no,menubar=no,toolbar=no,location=no,status=yes,height=700,width=1300</moreurlinfo>
+       		<includeFilter name="riBDesignFilter"/>
+        </action>
+   </objecttype>
+   
+</listofactions>

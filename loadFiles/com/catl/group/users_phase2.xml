@@ -1,0 +1,50 @@
+<?xml version="1.0" ?><!DOCTYPE NmLoader SYSTEM "standardX24.dtd">
+<NmLoader>
+
+<csvUser handler="wt.load.LoadUser.createUser" >
+    <csvuser></csvuser>
+    <csvnewUser>pi_client</csvnewUser>
+    <csvwebServerID>pi_client</csvwebServerID>
+    <csvfullName>ERP集成账号</csvfullName>
+    <csvLast></csvLast>
+    <csvLocale>zh_CN</csvLocale>
+    <csvEmail>ZhengJiaH@ATLBattery.com</csvEmail>
+    <csvDescription></csvDescription>
+    <csvTitle></csvTitle>
+    <csvOrganization>CATL</csvOrganization>
+    <csvStreet1></csvStreet1>
+    <csvStreet2></csvStreet2>
+    <csvCity></csvCity>
+    <csvState></csvState>
+    <csvCountry></csvCountry>
+    <csvZipCode></csvZipCode>
+    <csvignore>x</csvignore>
+    <csvpassword>sap_1qaz@WSX</csvpassword>
+    <csvDirectoryService></csvDirectoryService>
+    <csvAllowLdapSync></csvAllowLdapSync>
+</csvUser>
+
+<csvUser handler="wt.load.LoadUser.createUser" >
+    <csvuser></csvuser>
+    <csvnewUser>rdm_client</csvnewUser>
+    <csvwebServerID>rdm_client</csvwebServerID>
+    <csvfullName>RDM集成账号</csvfullName>
+    <csvLast></csvLast>
+    <csvLocale>zh_CN</csvLocale>
+    <csvEmail>ZhengJiaH@ATLBattery.com</csvEmail>
+    <csvDescription></csvDescription>
+    <csvTitle></csvTitle>
+    <csvOrganization>CATL</csvOrganization>
+    <csvStreet1></csvStreet1>
+    <csvStreet2></csvStreet2>
+    <csvCity></csvCity>
+    <csvState></csvState>
+    <csvCountry></csvCountry>
+    <csvZipCode></csvZipCode>
+    <csvignore>x</csvignore>
+    <csvpassword>rdm_1qaz@WSX</csvpassword>
+    <csvDirectoryService></csvDirectoryService>
+    <csvAllowLdapSync></csvAllowLdapSync>
+</csvUser>
+
+</NmLoader>

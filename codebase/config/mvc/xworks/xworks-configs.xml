@@ -1,0 +1,467 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.ptc.com/schema/mvc"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+http://www.springframework.org/schema/tool http://www.springframework.org/schema/tool/spring-tool-2.5.xsd
+http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+http://www.ptc.com/schema/mvc http://www.ptc.com/schema/mvc/mvc-10.0.xsd">
+
+<bean id="xstreamFactoryBean" class="com.ptc.xworks.xmlobject.converter.XStreamFactoryBean">
+	<property name="xmlObjectClassList">
+		<bean class="com.ptc.xworks.util.TextFileListFactoryBean">
+			<property name="configLocation" value="classpath:com/ptc/xworks/config/xmlobject.classes.conf" />
+		</bean>
+	</property>
+</bean> 
+
+<bean id="baseXstreamXmlObjectConverter" class="com.ptc.xworks.xmlobject.converter.BaseXstreamXmlObjectConverter">
+	<property name="xstream" ref="xstreamFactoryBean" />
+</bean>
+
+<bean id="listBasedXmlObjectConverterResolver" class="com.ptc.xworks.xmlobject.converter.ListBasedXmlObjectConverterResolver">
+	<property name="xmlObjectConverters">
+		<list>
+			<ref bean="baseXstreamXmlObjectConverter"/>
+		</list>
+	</property>
+</bean>
+
+<bean id="xmlObjectConverterManager" class="com.ptc.xworks.xmlobject.converter.DefaultXmlObjectConverterManager">
+	<property name="converterResovler" ref="listBasedXmlObjectConverterResolver" />
+</bean>
+
+<bean id="threadLocalDatabaseResourceManager" class="com.ptc.xworks.xmlobject.store.oracle.ThreadLocalDbResourceManager">
+	<property name="jdbcUrl" value="jdbc:oracle:thin:@wc102-m020.localvm.com:1521:WIND" />
+	<property name="user" value="wind91" />
+	<property name="password" value="wind91" />
+</bean>
+
+<bean id="windchillDatabaseResourceManager" class="com.ptc.xworks.xmlobject.windchill.WindchillDatabaseResourceManager">
+</bean>
+
+<bean id="databaseResourceManagerSelector" class="com.ptc.xworks.xmlobject.windchill.DatabaseResourceManagerSelector">
+	<property name="localDatabaseResourceManager" ref="threadLocalDatabaseResourceManager" />
+	<property name="windchillDatabaseResourceManager" ref="windchillDatabaseResourceManager" />
+</bean>
+
+<bean id="idGenerator" class="com.ptc.xworks.xmlobject.store.oracle.OracleSequenceIdGenerator">
+	<property name="databaseResourceManager" ref="databaseResourceManagerSelector" />
+	<property name="sequenceName" value="SEQ_XMLOBJECT_ID"></property>
+</bean>
+
+<bean id="defaultXmlObjectStoreAnnotationProcessor" class="com.ptc.xworks.xmlobject.annotation.processor.DefaultXmlObjectStoreAnnotationProcessor">
+	<property name="databaseSchema" value=""/>
+	<property name="overrideTableMap">
+		<map>
+			<entry key="com.ptc.china.gs.applicationform.RelatedObjectInfo" value="A_XML_RELATEDOBJECTINFO" />
+		</map>
+	</property>
+</bean>
+<bean id="baseOracleXmlObjectStoreMapper" class="com.ptc.xworks.xmlobject.store.oracle.BaseXmlObjectStoreMapper">
+	<property name="databaseResourceManager" ref="databaseResourceManagerSelector" />
+	<property name="xmlObjectConverterManager" ref="xmlObjectConverterManager" />
+	<property name="currentUserResolver" ref="windchillCurrentUserResolver" />
+	<property name="idGenerator" ref="idGenerator"/>
+	<property name="xmlObjectStoreAnnotationProcessor" ref="defaultXmlObjectStoreAnnotationProcessor" />
+	<property name="supportedClasses">
+		<list>
+			<value>com.ptc.xworks.xmlobject.BaseXmlObject</value>
+		</list>
+	</property>
+</bean>
+
+<bean id="baseXmlObjectLinkStoreMapper" class="com.ptc.xworks.xmlobject.store.oracle.BaseXmlObjectLinkStoreMapper" parent="baseOracleXmlObjectStoreMapper">
+	<property name="throwExceptionIfNoDataInserted" value="false" />
+	<property name="xmlObjectLinkClass" value="com.ptc.xworks.xmlobject.BaseXmlObjectLink" />
+	<property name="supportedClasses">
+		<list>
+			<value>com.ptc.xworks.xmlobject.BaseXmlObjectLink</value>
+		</list>
+	</property>	
+</bean>
+
+<bean id="listBasedXmlObjectStoreMapperResolver" class="com.ptc.xworks.xmlobject.store.ListBasedXmlObjectStoreMapperResolver">
+	<property name="mappers">
+		<list>
+			<ref bean="baseXmlObjectLinkStoreMapper"/>
+			<ref bean="baseOracleXmlObjectStoreMapper"/>
+		</list>
+	</property>
+</bean>
+
+<bean id="mockCurrentUserResolver" class="com.ptc.xworks.xmlobject.store.oracle.MockCurrentUserResolver" />
+
+<bean id="windchillCurrentUserResolver" class="com.ptc.xworks.xmlobject.windchill.WindchillCurrentUserResolver" />
+
+<bean id="defaultXmlObjectLinkMarkerProcessor" class="com.ptc.xworks.xmlobject.store.DefaultXmlObjectLinkMarkerProcessor">
+	<property name="xmlObjectStoreAnnotationProcessor" ref="defaultXmlObjectStoreAnnotationProcessor" />
+</bean>
+
+<bean id="defaultXmlObjectStoreManager" class="com.ptc.xworks.xmlobject.store.DefaultXmlObjectStoreManager">
+	<property name="xmlObjectStoreMapperResolver" ref="listBasedXmlObjectStoreMapperResolver"/>
+	<property name="currentUserResolver" ref="windchillCurrentUserResolver" />
+	<property name="xmlObjectLinkStoreMapper" ref="baseXmlObjectLinkStoreMapper"/>
+	<property name="xmlObjectStoreAnnotationProcessor" ref="defaultXmlObjectStoreAnnotationProcessor" />
+	<property name="xmlObjectLinkMarkerProcessor" ref="defaultXmlObjectLinkMarkerProcessor" />
+</bean>
+
+<bean class="com.ptc.xworks.util.DependencyInjectionPostProcessor" >
+	<property  name="storeManager" ref="defaultXmlObjectStoreManager" />
+	<property name="messageSourceManager" ref="defaultClientMessageSourceManager" />
+	<property name="webAnnotationProcess" ref="webAnnotationProcessor" />
+	<property name="attributeGuiComponentBuilder" ref="defaultAttributeGuiComponentBuilder" />
+	<property name="componentConfigFactory">
+		<bean class="com.ptc.xworks.xmlobject.util.JcaComponentConfigFactoryResolver" />
+	</property>
+	<property name="currentLocaleResolver">
+		<bean class="com.ptc.xworks.xmlobject.windchill.WindchillCurrentLocaleResolver" />
+	</property>
+	<property name="userLoalTimeZoneResolver">
+		<bean class="com.ptc.xworks.xmlobject.windchill.WindchillUserLoalTimeZoneResolver"/>
+	</property>
+	<property name="xmlObjectSessionCache" ref="defaultXmlObjectSessionCache" />
+	<property name="attributeDefinitionProvider" ref="defaultAttributeDefinitionProvider"/>
+	<property name="globalReusableAttributeNamesResolver" ref="globalReusableAttributeNamesResolver" />
+	<property name="attributePanelLayoutProvider" ref="javaAnnotationBasedAttributePanelLayoutProvider" />
+</bean>
+
+<bean id="windchillUserResolver" class="com.ptc.xworks.xmlobject.windchill.WindchillUserResolver" />
+
+<bean id="dateConverter" class="com.ptc.xworks.xmlobject.attribute.converter.DateConverter"/>
+<bean id="timestampConverter" class="com.ptc.xworks.xmlobject.attribute.converter.TimestampConverter"/>
+<bean id="attachmentInfoConverter" class="com.ptc.xworks.xmlobject.attribute.converter.AttachmentInfoConverter"/>
+<bean id="generatedHyperlinkConverter" class="com.ptc.xworks.xmlobject.attribute.converter.GeneratedHyperlinkConverter"/>
+<bean id="windchillActionConverter" class="com.ptc.xworks.xmlobject.attribute.converter.WindchillActionConverter" />
+<bean id="valueWithDisplayTextConverter" class="com.ptc.xworks.xmlobject.attribute.converter.ValueWithDisplayTextConverter"/>
+<bean id="windchillObjectRefConverter" class="com.ptc.xworks.xmlobject.attribute.converter.WindchillObjectRefConverter">
+	<property name="windchillObjectResolver" ref="windchillObjectResolver"/>
+</bean>
+<bean id="userInfoConverter" class="com.ptc.xworks.xmlobject.attribute.converter.UserInfoConverter">
+	<property name="userResolver" ref="windchillUserResolver" />
+</bean>
+<bean id="classificationInfoConverter" class="com.ptc.xworks.xmlobject.attribute.converter.ClassificationInfoConverter"/>
+<bean id="stringArrayConverter" class="com.ptc.xworks.xmlobject.attribute.converter.StringArrayConverter"/>
+<bean id="floatingPointNumberWithUnitConverter" class="com.ptc.xworks.xmlobject.attribute.converter.FloatingPointNumberWithUnitConverter" />
+<bean id="singleAttributeConverter" class="com.ptc.xworks.xmlobject.attribute.converter.SingleAttributeConverter">
+	<property name="converters">
+		<list>
+			<ref bean="dateConverter"/>
+			<ref bean="timestampConverter"/>
+			<ref bean="attachmentInfoConverter"/>
+			<ref bean="generatedHyperlinkConverter"/>
+			<ref bean="userInfoConverter"/>
+			<ref bean="windchillActionConverter"/>
+			<ref bean="windchillObjectRefConverter" />
+			<ref bean="valueWithDisplayTextConverter"/>
+			<ref bean="classificationInfoConverter"/>
+			<ref bean="floatingPointNumberWithUnitConverter" />
+		</list>
+	</property>
+	<property name="supportedEnum">
+		<bean class="com.ptc.xworks.util.TextFileListFactoryBean">
+			<property name="configLocation" value="classpath:com/ptc/xworks/config/supportedEnum.conf" />
+		</bean>
+	</property>
+</bean>
+<bean id="arrayAttributeConverter" class="com.ptc.xworks.xmlobject.attribute.converter.ArrayAttributeConverter">
+	<property name="converters">
+		<list>
+			<ref bean="singleAttributeConverter"/>
+		</list>
+	</property>
+</bean>
+<bean id="defaultAttributeConverter" class="com.ptc.xworks.xmlobject.attribute.converter.DefaultAttributeConverter">
+	<property name="converters">
+		<list>
+			<ref bean="singleAttributeConverter"/>
+			<ref bean="arrayAttributeConverter"/>
+		</list>
+	</property>
+</bean>
+
+<bean id="defaultWebFormExtractor" class="com.ptc.xworks.xmlobject.web.form.ValidatorSupportedWebFormExtractor">
+	<property name="attributeDefinitionProvider" ref="defaultAttributeDefinitionProvider" />
+</bean>
+
+<bean id="typeBasedAttributeValueValidatorSelector" class="com.ptc.xworks.xmlobject.attribute.validator.TypeBasedAttributeValueValidatorSelector">
+	<property name="attributeValueValidators">
+		<list>
+			<bean class="com.ptc.xworks.xmlobject.attribute.validator.PrimitiveTypeNumberValidator" />
+		</list>
+	</property>
+</bean>
+
+<bean id="defaultClientMessageSourceManager" class="com.ptc.xworks.xmlobject.web.DefaultClientMessageSourceManager" />
+<bean id="webAnnotationProcessor" class="com.ptc.xworks.xmlobject.annotation.processor.DefaultXmlObjectWebAnnotationProcessor" />
+<bean id="defaultXmlObjectAnnotationProcessor" class="com.ptc.xworks.xmlobject.annotation.processor.DefaultXmlObjectAnnotationProcessor" >
+	<property name="xmlObjectStoreAnnotationProcessor" ref="defaultXmlObjectStoreAnnotationProcessor" />
+	<property name="xmlObjectWebAnnotationProcessor" ref="webAnnotationProcessor" />
+</bean>
+
+<bean id="defaultAttributeGuiComponentBuilder" class="com.ptc.xworks.xmlobject.web.guifactory.DefaultAttributeGuiComponentBuilder">
+	<property name="attributeDefinitionProvider" ref="defaultAttributeDefinitionProvider" />
+	<property name="guiComponentFactories">
+		<list>
+			<ref bean="compositeGuiComponentFactory"/>
+		</list>
+	</property>		
+</bean>
+
+<bean id="compositeGuiComponentFactory" class="com.ptc.xworks.xmlobject.web.guifactory.CompositeGuiComponentFactory">
+	<property name="guiComponentFactories">
+		<list>
+			<ref bean="textDisplayFactory"/>
+			<ref bean="textBoxFactory"/>
+			<ref bean="textAreaFactory"/>
+			<ref bean="comboBoxFactory"/>
+			<ref bean="booleanRadioFactory"/>
+			<ref bean="checkboxFactory"/>
+			<ref bean="datePickerFactory"/>
+			<ref bean="dateTimeFactory"/>
+			<ref bean="numericFactory"/>
+			<ref bean="radioGroupFactory"/>
+			<ref bean="fileUploaderFactory"/>
+			<ref bean="hyperlinkFactory" />
+			<ref bean="userPickerFactory"/>
+			<ref bean="itemPickerFactory"/>
+			<ref bean="actionButtonFactory"/>
+			<ref bean="attributeContainerFactory"/>
+			<ref bean="actionLinkFactory"/>
+			<ref bean="actionIconFactory"/>
+			<ref bean="typeIconFactory"/>
+			<ref bean="suggestBoxFactory"/>
+			<ref bean="htmlFactory"/>
+			<ref bean="classificationPickerFactory"/>
+			<ref bean="folderPickerFactory"/>
+			<ref bean="multiSelectCheckboxFactory"/>
+			<ref bean="multiSelectComboBoxFactory"/>
+			<ref bean="multiValuedTextBoxFactory"/>
+			<ref bean="multiValuedTextAreaFactory"/>
+			<ref bean="multiValuedNumericFactory"/>
+			<ref bean="multiValuedComboBoxFactory"/>
+		</list>
+	</property>
+</bean>
+
+<bean id="abstractGuiComponentFactory" class="com.ptc.xworks.xmlobject.web.guifactory.AbstractGuiComponentFactory" abstract="true">
+	<property name="enmuerationProviderDelegate" ref="compositeEnmuerationProviderDelegate" />
+</bean>
+<bean id="textDisplayFactory" class="com.ptc.xworks.xmlobject.web.guifactory.TextDisplayFactory" parent="abstractGuiComponentFactory"/>
+<bean id="textBoxFactory" class="com.ptc.xworks.xmlobject.web.guifactory.TextBoxFactory" parent="abstractGuiComponentFactory"/>
+<bean id="textAreaFactory" class="com.ptc.xworks.xmlobject.web.guifactory.TextAreaFactory" parent="abstractGuiComponentFactory"/>
+<bean id="booleanRadioFactory" class="com.ptc.xworks.xmlobject.web.guifactory.BooleanRadioFactory" parent="abstractGuiComponentFactory"/>
+<bean id="checkboxFactory" class="com.ptc.xworks.xmlobject.web.guifactory.CheckboxFactory" parent="abstractGuiComponentFactory"/>
+<bean id="datePickerFactory" class="com.ptc.xworks.xmlobject.web.guifactory.DatePickerFactory" parent="abstractGuiComponentFactory"/>
+<bean id="dateTimeFactory" class="com.ptc.xworks.xmlobject.web.guifactory.DateTimeFactory" parent="abstractGuiComponentFactory"/>
+<bean id="numericFactory" class="com.ptc.xworks.xmlobject.web.guifactory.NumericFactory" parent="abstractGuiComponentFactory"/>
+<bean id="fileUploaderFactory" class="com.ptc.xworks.xmlobject.web.guifactory.FileUploaderFactory" parent="abstractGuiComponentFactory"/>
+<bean id="hyperlinkFactory" class="com.ptc.xworks.xmlobject.web.guifactory.HyperlinkFactory" parent="abstractGuiComponentFactory"/>
+<bean id="comboBoxFactory" class="com.ptc.xworks.xmlobject.web.guifactory.ComboBoxFactory" parent="abstractGuiComponentFactory"/>
+<bean id="radioGroupFactory" class="com.ptc.xworks.xmlobject.web.guifactory.RadioGroupFactory" parent="abstractGuiComponentFactory"/>
+<bean id="actionButtonFactory" class="com.ptc.xworks.xmlobject.web.guifactory.ActionButtonFactory"/>
+<bean id="actionLinkFactory" class="com.ptc.xworks.xmlobject.web.guifactory.ActionLinkFactory" />
+<bean id="actionIconFactory" class="com.ptc.xworks.xmlobject.web.guifactory.ActionIconFactory" />
+<bean id="typeIconFactory" class="com.ptc.xworks.xmlobject.web.guifactory.TypeIconFactory" />
+<bean id="suggestBoxFactory" class="com.ptc.xworks.xmlobject.web.guifactory.SuggestBoxFactory" />
+<bean id="userPickerFactory" class="com.ptc.xworks.xmlobject.web.guifactory.UserPickerFactory" parent="abstractGuiComponentFactory">
+	<property name="userResolver" ref="windchillUserResolver" />
+</bean>
+<bean id="itemPickerFactory" class="com.ptc.xworks.xmlobject.web.guifactory.ItemPickerFactory">
+	<property name="windchillObjectResolver" ref="windchillObjectResolver" />
+</bean>
+<bean id="attributeContainerFactory" class="com.ptc.xworks.xmlobject.web.guifactory.AttributeContainerFactory" />
+<bean id="htmlFactory" class="com.ptc.xworks.xmlobject.web.guifactory.HtmlFactory" />
+<bean id="classificationPickerFactory" class="com.ptc.xworks.xmlobject.web.guifactory.ClassificationPickerFactory" />
+<bean id="folderPickerFactory" class="com.ptc.xworks.xmlobject.web.guifactory.FolderPickerFactory">
+	<property name="windchillObjectResolver" ref="windchillObjectResolver" />
+</bean>
+<bean id="multiSelectCheckboxFactory" class="com.ptc.xworks.xmlobject.web.guifactory.MultiSelectCheckboxFactory" parent="abstractGuiComponentFactory"/>
+<bean id="multiSelectComboBoxFactory" class="com.ptc.xworks.xmlobject.web.guifactory.MultiSelectComboBoxFactory" parent="abstractGuiComponentFactory"/>
+<bean id="multiValuedTextBoxFactory" class="com.ptc.xworks.xmlobject.web.guifactory.MultiValuedTextBoxFactory" parent="abstractGuiComponentFactory" />
+<bean id="multiValuedTextAreaFactory" class="com.ptc.xworks.xmlobject.web.guifactory.MultiValuedTextAreaFactory" parent="abstractGuiComponentFactory" />
+<bean id="multiValuedNumericFactory" class="com.ptc.xworks.xmlobject.web.guifactory.MultiValuedNumericFactory" parent="abstractGuiComponentFactory">
+	<property name="numericFactory" ref="numericFactory" />
+</bean>
+<bean id="multiValuedComboBoxFactory" class="com.ptc.xworks.xmlobject.web.guifactory.MultiValuedComboBoxFactory" parent="abstractGuiComponentFactory">
+	<property name="numericFactory" ref="numericFactory" />
+	<property name="textDisplayFactory" ref="textDisplayFactory" />
+</bean>
+
+<bean id="windchillObjectResolver" class="com.ptc.xworks.xmlobject.windchill.WindchillObjectResolverImpl" />
+
+<bean id="compositeEnmuerationProviderDelegate" class="com.ptc.xworks.xmlobject.web.guifactory.enumeration.CompositeEnmuerationProviderDelegate">
+	<property name="delegates">
+		<list>
+			<bean class="com.ptc.xworks.xmlobject.web.guifactory.enumeration.StringListEnumerationProviderDelegate" />
+			<bean class="com.ptc.xworks.xmlobject.web.guifactory.enumeration.JavaClassEnumerationProviderDelegate" />
+			<bean class="com.ptc.xworks.xmlobject.web.guifactory.enumeration.GlobalEnumerationProviderDelegate"/>
+			<bean class="com.ptc.xworks.xmlobject.web.guifactory.enumeration.EnumeratedTypeEnumerationProviderDelegate"/>
+			<bean class="com.ptc.xworks.xmlobject.web.guifactory.enumeration.ObjectAttributeConstraintsEnumerationProviderDelegate"/>
+			<bean class="com.ptc.xworks.xmlobject.web.guifactory.enumeration.ClassificationAttributeConstraintsEnumerationProviderDelegate"/>
+		</list>
+	</property>
+</bean>
+
+<bean id="attachmentService" class="com.ptc.xworks.xmlobject.attachment.AttachmentServiceImpl" />
+
+<bean id="defaultXmlObjectSessionCache" class="com.ptc.xworks.xmlobject.web.XmlObjectHttpSessionCache" />
+
+<bean id="workItemDynamicPermissionService" class="com.ptc.xworks.workflow.listener.WorkItemDynamicPermissionServiceImpl">
+	<property name="templateAndNodeIdParser" ref="templateAndNodeIdParser" />
+	<property name="workflowTemplateInfoService" ref="workflowTemplateInfoService" />
+	<property name="relatedObjectGroupService" ref="relatedObjectGroupService" />
+</bean>
+
+<bean id="workflowTemplateInfoService" class="com.ptc.xworks.workflow.template.WorkflowTemplateInfoServiceImpl">
+	<property name="processConfigClassName">
+		<bean class="com.ptc.xworks.util.TextFileListFactoryBean">
+			<property name="configLocation" value="classpath:com/ptc/xworks/config/workflowTemplateDef.conf"></property>
+		</bean>
+	</property>
+	<property name="templateAndNodeIdParser" ref="templateAndNodeIdParser" />
+</bean>
+
+<bean id="templateAndNodeIdParser" class="com.ptc.xworks.workflow.template.DefaultTemplateAndNodeIdParser" />
+
+<bean id="completeWorkItemCallbackInvoker" class="com.ptc.xworks.workflow.listener.CompleteWorkItemCallbackInvokerImpl">
+	<property name="workflowTemplateInfoService" ref="workflowTemplateInfoService" />
+</bean>
+
+<bean class="com.ptc.xworks.xmlobject.workflow.ExtendedWorkItemAttributesBuilder" />
+<bean class="com.ptc.xworks.xmlobject.workflow.ExtentedWorkitemInfoBuilder" />
+
+<bean id="attachmentGroupService" class="com.ptc.xworks.workflow.attachment.AttachmentGroupServiceImpl">
+	<property name="workflowTemplateInfoService" ref="workflowTemplateInfoService"/>
+	<property name="xmlObjectStoreManager" ref="defaultXmlObjectStoreManager" />
+</bean>
+
+<bean class="com.ptc.xworks.workflow.attachment.AttachmentGroupTableBuilder">
+	<property name="attachmentGroupService" ref="attachmentGroupService" />
+	<property name="workflowTemplateInfoService" ref="workflowTemplateInfoService"/>
+</bean>
+
+<bean class="com.ptc.xworks.workflow.attachment.UploadAttachmentAttributePanelBuilder" />
+<bean class="com.ptc.xworks.workflow.attachment.AddURLAttributePanelBuilder" />
+
+<bean id="relatedObjectGroupTableBuilder" class="com.ptc.xworks.workflow.relatedobject.RelatedObjectGroupTableBuilder">
+	<property name="workflowTemplateInfoService" ref="workflowTemplateInfoService"/>
+	<property name="relatedObjectGroupService" ref="relatedObjectGroupService" />
+	<property name="templateAndNodeIdParser" ref="templateAndNodeIdParser"/>
+</bean>
+
+<bean id="relatedObjectGroupDBService" class="com.ptc.xworks.workflow.relatedobject.RelatedObjectGroupDBServiceImpl">
+	<property name="workflowTemplateInfoService" ref="workflowTemplateInfoService" />
+	<property name="xmlObjectStoreManager" ref="defaultXmlObjectStoreManager" />
+</bean>
+
+<bean id="relatedObjectGroupService" class="com.ptc.xworks.workflow.relatedobject.RelatedObjectGroupServiceImpl">
+	<property name="relatedObjectGroupDBService" ref="relatedObjectGroupDBService"/>
+	<property name="workflowTemplateInfoService" ref="workflowTemplateInfoService"/>
+	<property name="xmlObjectStoreManager" ref="defaultXmlObjectStoreManager" />
+</bean>
+
+<bean class="com.ptc.xworks.workflow.relatedobject.AddRelatedObjectSearchResultTableBuilder" >
+	<property name="workflowTemplateInfoService" ref="workflowTemplateInfoService" />
+</bean>
+
+<bean id="usedLifecycleState" class="com.ptc.xworks.workflow.relatedobject.UsedLifecycleStateImpl">
+	<property name="lifeCycleStateCodes">
+		<bean class="com.ptc.xworks.util.TextFileListFactoryBean">
+			<property name="configLocation" value="classpath:com/ptc/xworks/config/lifecycleState.conf" />
+		</bean>
+	</property>
+</bean>
+
+<bean class="com.ptc.xworks.workflow.relatedobject.InfoEngineTaskObjectSearchExecutor">
+</bean>
+
+<bean class="com.ptc.xworks.workflow.relatedobject.WindchillObjectSearchExecutor">
+</bean>
+
+<bean class="com.ptc.xworks.workflow.relatedobject.DefaultObjectSearchExecutor">
+</bean>
+
+<bean class="com.ptc.xworks.promotion.builders.RelatedObjectsWizardTableBuilder">
+	<property name="promotionNoticeOptionsReader" ref="promotionNoticeOptionsReader" />
+</bean>
+
+<bean class="com.ptc.xworks.promotion.builders.SetupWorkflowParticipantsTreeBuilder">
+</bean>
+
+<bean id="promotionNoticeOptionsReader" class="com.ptc.xworks.promotion.PromotionNoticeOptionsReaderImpl">
+	<property name="optionsClasses">
+		<bean class="com.ptc.xworks.util.TextFileListFactoryBean">
+			<property name="configLocation" value="classpath:com/ptc/xworks/config/promotionNoticeOptions.conf" />
+		</bean>
+	</property>
+</bean>
+
+<bean class="com.ptc.xworks.promotion.builders.RelatedObjectsInfoPageTableBuilder">
+	<property name="workflowTemplateInfoService" ref="workflowTemplateInfoService"/>
+	<property name="relatedObjectGroupService" ref="relatedObjectGroupService" />
+</bean>
+
+<bean class="com.ptc.xworks.workflow.builders.AssociatedProcessPboTableBuilder">
+	<property name="associatedProcessPboFinder" ref="defaultAssociatedProcessPboFinder" />
+</bean>
+
+<bean id="defaultAssociatedProcessPboFinder" class="com.ptc.xworks.workflow.CompositeAssociatedProcessPboFinder">
+	<property name="associatedProcessPboFinders">
+		<list>
+			<bean class="com.ptc.xworks.workflow.relatedobject.JoinedRelatedObjectGroupPboFinder">
+				<property name="relatedObjectGroupService" ref="relatedObjectGroupService"/>
+			</bean>
+			<bean class="com.ptc.xworks.workflow.AssociatedProcessObjectSelfFinder"/>
+			<bean class="com.ptc.xworks.workflow.AssociatedPromotionNoticeFinder" />
+			<bean class="com.ptc.xworks.workflow.AssociatedChangeActivityFinder" />
+			<bean class="com.ptc.xworks.workflow.AssociatedChangeOrderFinder" />
+			<bean class="com.ptc.xworks.workflow.AssociatedChangeRequestFinder" />
+			<bean class="com.ptc.xworks.workflow.AssociatedChangeIssueFinder" />		
+		</list>
+	</property>
+</bean>
+
+<bean class="com.ptc.xworks.workflow.builders.ExtendedProcessHistoryBuilder" />
+<bean class="com.ptc.xworks.workflow.builders.ExtendedCommonTeamTableBuilder"/>
+<bean class="com.ptc.xworks.workflow.builders.ExtendedProcessStatusBuilder" />
+<bean class="com.ptc.xworks.xmlobject.web.guifactory.FolderPickerFolderTreeTableBuilder"/>
+
+<bean id="defaultWorkflowFormConfigReader" class="com.ptc.xworks.workflow.form.DefaultWorkflowFormConfigReader">
+	<property name="configClasses">
+		<bean class="com.ptc.xworks.util.TextFileListFactoryBean">
+			<property name="configLocation" value="classpath:com/ptc/xworks/config/workflowForms.conf" />
+		</bean>
+	</property>
+</bean>
+
+<bean id="defaultAttributeDefinitionProvider" class="com.ptc.xworks.xmlobject.web.JavaAnnotationBasedAttributeDefinitionProvider">
+	<property name="xmlObjectWebAnnotationProcessor" ref="webAnnotationProcessor" />
+</bean>
+
+<bean id="globalReusableAttributeNamesResolver" class="com.ptc.xworks.xmlobject.web.windchill.GlobalReusableAttributeNamesResolverImpl" />
+
+<bean id="javaAnnotationBasedAttributePanelLayoutProvider" class="com.ptc.xworks.xmlobject.web.JavaAnnotationBasedAttributePanelLayoutProvider">
+	<property name="xmlObjectWebAnnotationProcessor" ref="webAnnotationProcessor"/>
+	<property name="attributeDefinitionProvider" ref="defaultAttributeDefinitionProvider" />
+	<property name="externalAttributePanelLayoutProviders">
+		<list>
+			<bean class="com.ptc.xworks.xmlobject.web.windchill.ObjectTypeLayoutProvider" />
+			<bean class="com.ptc.xworks.xmlobject.web.windchill.ClassificationLayoutProvider" />
+			<bean class="com.ptc.xworks.xmlobject.web.windchill.ExternalAttributePanelLayoutProviderDelegate" />
+		</list>
+	</property>
+</bean>
+
+<bean class="com.ptc.xworks.promotion.builders.PromotionNoticeAttributesPanelBuilder">
+	<property name="promotionNoticeOptionsReader" ref="promotionNoticeOptionsReader" />
+</bean>
+
+<bean class="com.ptc.xworks.workflow.relatedobject.AnnotateRelatedObjectTableBuilder" parent="relatedObjectGroupTableBuilder">
+</bean>
+
+<bean class="com.ptc.xworks.workflow.builders.ExtendedSetupParticipantsTableBuilder">
+</bean>
+
+</beans>

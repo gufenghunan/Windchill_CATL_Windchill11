@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+	 http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+	 http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+	 http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.1.xsd">
+
+	<bean id="jobExecutorSelector" class="com.ptc.xworks.windchill.job.queue.impl.JobExecutorSelectorImpl">
+		<property name="jobExecutors">
+			<list>
+				<ref bean="demoJobA1" />
+				<ref bean="demoJobB1" />
+			</list>
+		</property>
+	</bean>
+
+	<bean id="queueSelector"
+		class="com.ptc.xworks.windchill.job.queue.impl.DefaultQueueSelector">
+		<property name="queueNames">
+			<list>
+				<value type="java.lang.String">WfScheduleQueue1</value>
+				<value type="java.lang.String">WfScheduleQueue2</value>
+				<value type="java.lang.String">WfScheduleQueue3</value>
+				<value type="java.lang.String">WfScheduleQueue4</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="stepService" class="com.ptc.xworks.windchill.job.queue.StepServiceFwd">
+	</bean>
+
+	<bean id="jobService" class="com.ptc.xworks.windchill.job.queue.JobServiceFwd">
+	</bean>
+
+</beans>

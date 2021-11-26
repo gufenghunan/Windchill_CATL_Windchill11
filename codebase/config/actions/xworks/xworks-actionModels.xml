@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE actionmodels SYSTEM "actionmodels.dtd">
+<actionmodels>
+
+<!-- WorkItem InfoPage 上的相关ActionModel -->
+<model name="taskDetailsPageTabSet" resourceBundle="com.ptc.xworks.workflow.workitemResource">
+	<submodel name="taskDetailsDetails"/>
+	<submodel name="taskDetailsOthers"/>
+	<submodel name="taskRelatedObjectTab"/>
+	<submodel name="taskDetailAttachments"/>
+	<submodel name="taskDetailsSetupParticipant"/>
+	<action name="reviewList" type="catl" />  <!--custom  -->
+	<action name="pnTreeList" type="catl" />  <!--custom  -->
+	<submodel name="taskDetailsAdhoc"/>
+	<submodel name="customerFile"/>   <!--custom  -->	
+</model>
+
+<model name="taskDetailAttachments" resourceBundle="com.ptc.xworks.workflow.workitemResource">
+  	<action name="taskAttachmentsPage" type="workitem"/>
+</model>
+
+<model name="taskApplicationFormTab" resourceBundle="com.ptc.xworks.workflow.workitemResource">
+  	<action name="taskApplicationFormPage" type="workitem"/>
+</model>
+
+<model name="taskRelatedObjectTab" resourceBundle="com.ptc.xworks.workflow.workitemResource">
+	<action name="taskRelatedObjectPage" type="workitem"/>
+</model>
+
+<model name="taskDetailsDetails" resourceBundle="com.ptc.xworks.workflow.workitemResource">
+    <action name="attributes" type="workitem"/>
+    <action name="taskDetailExtendedFrame" type="workitem"/>    
+</model>
+
+<model name="xworks_relatedObject_toolbar">
+	<action name="addRelatedObject" 	type="workitem" shortcut="true"/>
+	<action name="removeRelatedObject"  type="workitem" shortcut="true"/>
+	<action name="copyRelatedObject"	type="workitem" shortcut="true"/>
+	<action name="pasteRelatedObject"	type="workitem" shortcut="true"/>
+	<action name="collectRelatedObject"	type="workitem" shortcut="true"/>
+	<action name="refreshRelatedObject" type="workitem" shortcut="true"/>
+	<action name="annotateRelatedObject" type="workitem" shortcut="true"/>
+</model>
+
+<model name="xworks_relatedObject_menu_toolbar">
+	<action name="annotateRelatedObject" type="workitem" shortcut="true"/>
+</model>
+
+<model name="xworks_attachmentsGroup_toolbar_actions">
+	<action name="downloadAttachment" type="workitem" shortcut="true"/>
+	<action name="removeAttachment" type="workitem" shortcut="true"/>	
+	<action name="addFileAttachment" type="workitem" shortcut="true"/>
+	<action name="addURLAttachment" type="workitem" shortcut="true"/>
+</model>
+
+<model name="searchRelatedObjectResultTable_toolbar" resourceBundle="com.ptc.xworks.workflow.workitemResource">
+	<action name="copyRelatedObject" type="workitem" shortcut="true"/>
+</model>
+
+<model name="workitem third nav">
+  <action name="attributes" type="workitem"/>
+  <action name="routingStatus" type="workitem"/>
+  <action name="notebook" type="workitem"/>
+  <action name="discussions" type="workitem"/>
+  <action name="setupParticipant" type="workitem"/>
+  <action name="adhocActivities" type="workitem"/>
+  <action name="taskRelatedObjectPage" type="workitem"/>
+  <action name="taskAttachmentsPage" type="workitem"/>
+  <action name="taskDetailExtendedFrame" type="workitem"/>  
+  <action name="addMultipleObjects" type="workitem"/>
+  <action name="workItem_attachments" type="attachments"/>
+  <action name="customerFileList" type="catl"/>
+  <action name="reviewList" type="catl" />  <!--custom  -->
+</model>
+
+<model name="xworks_setup_partcipants_table_actions">
+	<action name="removeUserFromRole" type="work" shortcut="true"/>
+	<action name="addUsersToRole" type="workitem" shortcut="true"/>
+	<action name="explode" type="folder" shortcut="true"/>
+	<action name="implode" type="folder" shortcut="true"/>
+</model>
+
+</actionmodels>

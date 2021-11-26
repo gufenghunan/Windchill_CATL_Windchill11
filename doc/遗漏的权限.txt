@@ -1,0 +1,10 @@
+PDM域，CATL组织，开启状态，增加对DCA的所有人的创建权限
+PDM与，CATL组织，开启状态，增加对FAE物料成熟度升级单的创建权限
+/Default/CATLDefault/非FAE物料成熟度3升级报告，电子电器件等存储库，编制状态，增加对非FAE物料成熟度3升级报告的创建权限
+/System,CATL组织，全部，所有人对WfProcess的读取下载权限
+/System,CATL组织，全部，ALL对PDMLinkProduct，WTLibrary的读取权限
+
+修改下列权限
+/Default/PDM, CATL组织,所有状态，移除所有人对DCA的修改权限
+/Default/PDM, CATL组织,所有状态，移除所有人对ECA的修改权限
+

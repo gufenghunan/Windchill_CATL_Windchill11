@@ -1,0 +1,8 @@
+﻿#AccessRule,user,domain,typeId,permission,principal,permissionList,state,parentDomainContainerPath
+AccessRule,,/Default/CATLEcWf,com.CATLBattery.PartApplyPN,+,TeamMembers,/0/2/10,,
+AccessRule,,/Default/CATLEcWf,com.CATLBattery.BomReviewPN,+,TeamMembers,/0/2/10,,
+AccessRule,,/Default/CATLEcWf,com.CATLBattery.CATLChangeRequest,+,TeamMembers,/0/2/10,,
+AccessRule,,/Default/CATLEcWf,com.CATLBattery.CATLChangeNotice,+,TeamMembers,/0/2/10,,
+AccessRule,,/Default/CATLEcWf,com.CATLBattery.CATLChangeActivity2,+,TeamMembers,/0/2/10,,
+AccessRule,,/Default/CATLDefault,com.CATLBattery.CATLPart,+,TeamMembers,/0/2/10,,
+AccessRule,,/Default/CATLDefault,com.CATLBattery.CATLPart,+,TeamMembers,/7,RELEASED,

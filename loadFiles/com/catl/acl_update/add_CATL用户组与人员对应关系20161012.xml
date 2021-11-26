@@ -1,0 +1,102 @@
+<?xml version="1.0" ?><!DOCTYPE NmLoader SYSTEM "standardX24.dtd">
+<NmLoader>
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>供应商质量管理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60001852</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>供应商质量管理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60001862</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>供应商质量管理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60001848</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>供应商质量管理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60001858</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>供应商质量管理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60012447</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>供应商质量管理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60001863</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>供应商质量管理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60012459</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>供应商质量管理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60001850</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>供应商质量管理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60013610</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>供应商质量管理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60012446</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>供应商质量管理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>orgadmin</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+</NmLoader>

@@ -1,0 +1,49 @@
+<?xml version="1.0" ?><!DOCTYPE NmLoader SYSTEM "standardX24.dtd">
+<NmLoader>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>Administrators</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>orgadmin</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>Administrators</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>wcadmin</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>Administrators</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>dms</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>优选管理组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>61906</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>dms</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>61906</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+</NmLoader>

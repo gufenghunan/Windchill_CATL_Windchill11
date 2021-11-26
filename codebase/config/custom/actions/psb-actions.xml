@@ -1,0 +1,14 @@
+<listofactions>
+    <objecttype name="catlpsb" resourceBundle="com.customReports.psb.psbCustomActionsRB">
+      <action name="psbCustomReportGWT01" ajax="component">
+         <command class="com.ptc.cat.ui.client.action.LaunchURLAction" method="execute" url="netmarkets/jsp/catl/part/exportBomData.jsp" windowType="popup"/>
+            <supportedTypes>
+                <type value="wt.part.WTPart"/>
+                <type value="wt.part.WTPartUsageLink"/>
+                <type value="wt.part.PartUsesOccurrence"/>
+                <type value="wt.part.RTPartPathOccurrence"/>
+            </supportedTypes>
+      </action>
+    </objecttype>
+
+</listofactions>

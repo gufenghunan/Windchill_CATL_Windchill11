@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Build CATL PLM source code For Developer" default="deploy_all_code_to_windchill">
+
+	<description>
+		用于CATL PLM代码的编译部署
+	</description>
+	<property environment="env" />
+
+	<property name="project.version" value="0.0.1" />
+	<property name="project.dir" location="." />
+
+	<property name="src.java.dir" location="${project.dir}/src" />
+	<property name="src.wtCustom.dir" location="${project.dir}/wtCustom" />
+	<property name="src.codebase.dir" location="${project.dir}/codebase" />
+	<property name="src.netmarkets.dir" location="${src.codebase.dir}/netmarkets" />
+	<property name="src.jsp.dir" location="${src.netmarkets.dir}/jsp" />
+	<property name="src.javascript.dir" location="${src.netmarkets.dir}/javascript" />
+	<property name="src.css.dir" location="${src.netmarkets.dir}/css" />
+	<property name="src.tasks.dir" location="${project.dir}/tasks" />
+	<property name="src.webinf.dir" location="${src.codebase.dir}/WEB-INF" />
+	<property name="src.webinf.jsp.dir" location="${src.webinf.dir}/jsp" />
+	<property name="src.webinf.lib.dir" location="${src.webinf.dir}/lib" />
+	<property name="src.loadFiles.dir" location="${project.dir}/loadFiles" />
+	<property name="src.loadXMLFiles.dir" location="${project.dir}/loadXMLFiles" />
+	<property name="src.db.dir" location="${project.dir}/db" />
+	<property name="src.wtSafeArea.dir" location="${project.dir}/wtSafeArea" />
+
+	<property name="build.dir" location="${project.dir}/build" />
+	<property name="build.classes.dir" location="${project.dir}/bin" />
+	<property name="build.javadoc.dir" location="${build.dir}/javadoc" />
+	<property name="build.dist.dir" location="${build.dir}/dist" />
+	<property name="build.full.dir" location="${build.dir}/full" />
+	<property name="javadoc.dir" location="${project.dir}/javadoc" />
+
+	<property name="windchill.root.dir" location="${env.WT_HOME}" />
+	<property name="windchill.codebase.dir" location="${windchill.root.dir}/codebase" />
+	<property name="windchill.wtCustom.dir" location="${windchill.root.dir}/wtCustom" />
+	<property name="windchill.src.dir" location="${windchill.root.dir}/src" />
+	<property name="windchill.netmarkets.dir" location="${windchill.codebase.dir}/netmarkets" />
+	<property name="windchill.jsp.dir" location="${windchill.netmarkets.dir}/jsp" />
+	<property name="windchill.javascript.dir" location="${windchill.netmarkets.dir}/javascript" />
+	<property name="windchill.css.dir" location="${windchill.netmarkets.dir}/css" />
+	<property name="windchill.tasks.dir" location="${windchill.root.dir}/tasks" />
+	<property name="windchill.webinf.dir" location="${windchill.codebase.dir}/WEB-INF" />
+	<property name="windchill.webinf.jsp.dir" location="${windchill.webinf.dir}/jsp" />
+	<property name="windchill.webinf.lib.dir" location="${windchill.webinf.dir}/lib" />
+	<property name="windchill.loadFiles.dir" location="${windchill.root.dir}/loadFiles" />
+	<property name="windchill.loadXMLFiles.dir" location="${windchill.root.dir}/loadXMLFiles" />
+	<property name="windchill.db.dir" location="${windchill.root.dir}/db" />
+	<property name="windchill.wtSafeArea.dir" location="${windchill.root.dir}/wtSafeArea" />
+	
+	<property name="release.package.name" location="${windchill.root.dir}/catl-full.jar"/>
+
+	<path id="jars.windchill">
+		<pathelement location="${windchill.codebase.dir}"/>
+		<fileset dir="${windchill.webinf.lib.dir}/" includes="*.jar">
+			<exclude name="${jar.file.prefix}*"/>
+		</fileset>
+		<fileset dir="${windchill.root.dir}/lib" includes="*.jar" />
+		<!--fileset dir="${windchill.root.dir}/srclib" includes="*.jar" /-->
+		<fileset dir="${windchill.root.dir}/srclib/tool" includes="Annotations.jar" />
+	</path>
+	
+	<path id="jars.windchill.local">
+		<fileset dir="D:\Windchill_11M020" includes="*.jar">
+		</fileset>
+	</path>
+
+	<path id="jars.webinf.lib">
+		<fileset dir="${src.webinf.lib.dir}">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<path id="classpath.commpile.java">
+		<pathelement location="${build.classes.dir}" />
+		<pathelement location="${build.test.dir}" />
+		<path refid="jars.webinf.lib" />	
+		<path refid="jars.windchill.local" />
+		<!--path refid="jars.windchill" /-->
+	</path>
+
+	<!-- ============================================= compile java code  ==========================================-->
+
+	<target name="make_build_classes_path">
+		<mkdir dir="${build.classes.dir}" />
+	</target>
+
+	<target name="clean_build_classes_for_compile" depends="make_build_classes_path">
+		<delete includeemptydirs="true">
+			<fileset dir="${build.classes.dir}" includes="**/*" />
+		</delete>
+	</target>
+
+	<target name="compile_java_code" depends="clean_build_classes_for_compile">
+		<javac srcdir="${src.java.dir}" destdir="${build.classes.dir}" encoding="UTF-8" source="1.8" verbose="false" includeantruntime="true" debug="true">
+			<classpath refid="classpath.commpile.java" />
+			<!--compilerarg value="-Xlint:unchecked" /-->
+		</javac>
+	</target>
+
+
+	<!-- ============================================= Deploy java code using class files to Codebase  ==========================================-->
+
+	<target name="clean_classes_in_windchill_codebase">
+		<delete includeemptydirs="true" failonerror="false" verbose="false">
+			<fileset dir="${windchill.codebase.dir}/com/ptc/xworks" includes="**/*">
+				<exclude name="${windchill.codebase.dir}/com/ptc/xworks/config/*" />
+			</fileset>
+			<fileset dir="${windchill.codebase.dir}/com/catl" includes="**/*.class">
+			</fileset>					
+		</delete>		
+	</target>
+
+	<target name="copy_resource_to_build_classes">
+		<copy todir="${build.classes.dir}" overwrite="true" includeemptydirs="false">
+			<fileset dir="${src.java.dir}">
+				<exclude name="**/*.java" />
+				<exclude name="**/*.txt" />
+				<exclude name="**/*.sql" />
+			</fileset>
+		</copy>
+	</target>
+	
+
+	<!-- copy all compiled class files from local build to Windchill codebase -->
+	<target name="copy_classes_to_windchill_codebase">
+		<copy todir="${windchill.codebase.dir}" overwrite="true" includeemptydirs="false">
+			<fileset dir="${build.classes.dir}">
+				<exclude name="**/*.java" />
+			</fileset>
+		</copy>
+	</target>	
+	
+	<target name="copy_codebase_to_windchill_codebase">
+		<copy todir="${windchill.codebase.dir}" includeEmptyDirs="false" overwrite="true" verbose="false">
+			<fileset dir="${src.codebase.dir}">
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="copy_tasks_to_windchill_tasks">
+		<copy todir="${windchill.tasks.dir}" includeEmptyDirs="false" overwrite="true" verbose="false">
+			<fileset dir="${src.tasks.dir}">
+				<exclude name="**/*.java" />
+				<exclude name="**/*.txt" />
+				<exclude name="**/*.sql" />
+			</fileset>
+		</copy>
+	</target>
+	
+	<target name="copy_db_to_windchill_db">
+		<copy todir="${windchill.db.dir}" includeEmptyDirs="false" overwrite="true" verbose="false">
+			<fileset dir="${src.db.dir}">
+			</fileset>
+		</copy>
+	</target>
+	
+	<target name="copy_wtCustom_to_windchill_wtCustom">
+		<copy todir="${windchill.wtCustom.dir}" includeEmptyDirs="false" overwrite="true" verbose="false">
+			<fileset dir="${src.wtCustom.dir}">
+				<exclude name="**/*.java" />
+				<exclude name="**/*.txt" />
+				<exclude name="**/*.sql" />
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="copy_src_to_windchill_src">
+		<copy todir="${windchill.src.dir}" includeEmptyDirs="false" overwrite="true" verbose="false">
+			<fileset dir="${src.java.dir}">
+				<exclude name="**/*.txt" />
+				<exclude name="**/*.sql" />
+			</fileset>
+		</copy>
+	</target>
+	
+	<target name="copy_wtSafeArea_to_windchill_wtSafeArea">
+		<copy todir="${windchill.wtSafeArea.dir}" includeEmptyDirs="false" overwrite="true" verbose="false">
+			<fileset dir="${src.wtSafeArea.dir}">
+				<exclude name="**/*.java" />
+				<exclude name="**/*.txt" />
+				<exclude name="**/*.sql" />
+			</fileset>
+		</copy>
+	</target>	
+	
+	<!-- ============================================= Depoy Load Files to Windchill  ==========================================-->
+	<target name="copy_load_files_to_windchill">
+		<copy todir="${windchill.loadFiles.dir}" overwrite="false" includeemptydirs="false" verbose="false" description="copy loadFiles">
+			<fileset dir="${src.loadFiles.dir}">
+			</fileset>
+		</copy>
+		<copy todir="${windchill.loadXMLFiles.dir}" overwrite="false" includeemptydirs="false" verbose="false" description="copy loadXMLFiles">
+			<fileset dir="${src.loadXMLFiles.dir}">
+			</fileset>
+		</copy>
+	</target>
+	
+
+	<!-- ============================================= Depoy Web JSP and Javascript to Codebase  ==========================================-->
+
+	<!-- copy all jsp/javascript/css/jar file to Windchill codebase -->
+	<target name="deploy_web_resources_to_windchill">
+		<copy todir="${windchill.css.dir}" overwrite="false" includeemptydirs="false" verbose="true" description="copy css files">
+			<fileset dir="${src.css.dir}">
+				<exclude name="**/*.java" />
+			</fileset>
+		</copy>
+		<copy todir="${windchill.jsp.dir}" overwrite="false" includeemptydirs="false" verbose="true" description="copy jsp files">
+			<fileset dir="${src.jsp.dir}">
+				<exclude name="**/*.java" />
+			</fileset>
+		</copy>
+		<copy todir="${windchill.javascript.dir}" overwrite="false" includeemptydirs="false" verbose="true" description="copy javascript files">
+			<fileset dir="${src.javascript.dir}">
+				<exclude name="**/*.java" />
+			</fileset>
+		</copy>
+		<copy todir="${windchill.webinf.dir}" overwrite="false" includeemptydirs="false" verbose="true" description="copy files in WEB-INF">
+			<fileset dir="${src.webinf.dir}">
+				<exclude name="**/*.java" />
+			</fileset>
+		</copy>
+	</target>
+
+
+
+	<!-- ============================================= Depoy All code to Windchill  ==========================================-->
+	<target name="deploy_all_code_to_windchill">
+		<antcall target="compile_java_code"></antcall>
+		<antcall target="clean_classes_in_windchill_codebase"></antcall>
+		<antcall target="copy_resource_to_build_classes"></antcall>
+		<antcall target="copy_classes_to_windchill_codebase"></antcall>
+		<antcall target="copy_codebase_to_windchill_codebase"></antcall>
+		<antcall target="copy_tasks_to_windchill_tasks"></antcall>
+		<antcall target="copy_db_to_windchill_db"></antcall>
+		<antcall target="copy_wtCustom_to_windchill_wtCustom"></antcall>
+		<antcall target="copy_wtSafeArea_to_windchill_wtSafeArea"></antcall>
+		<ant antfile="${windchill.root.dir}/bin/swmaint.xml" dir="${windchill.root.dir}" inheritall="false" inheritrefs="false" target="installSiteChanges" />
+	</target>
+
+	<!-- ============================================= Generage JAVA DOC  ==========================================-->
+	<target name="make_javadoc_path">
+		<mkdir dir="${build.javadoc.dir}" />
+		<mkdir dir="${javadoc.dir}" />
+	</target>	
+
+	<target name="clean_javadoc" depends="make_javadoc_path">
+		<delete verbose="false">
+			<fileset dir="${build.javadoc.dir}" includes="**/*">
+			</fileset>
+		</delete>
+		<delete verbose="false">
+			<fileset dir="${javadoc.dir}" includes="**/*">
+			</fileset>
+		</delete>		
+	</target>
+
+	<target name="generate_javadoc" depends="clean_javadoc">
+		<javadoc sourcepath="${src.java.dir}" destdir="${javadoc.dir}" encoding="UTF-8" docencoding="UTF-8" classpathref="classpath.commpile.java" package="true">
+		</javadoc>
+	</target>
+	
+	<!-- ============================================= 构建测试环境/生产环境全量部署Jar包 ========================================== -->
+
+	<target name="make_build_dist_dir">
+		<mkdir dir="${build.dist.dir}" />
+		<mkdir dir="${build.full.dir}" />
+		<mkdir dir="${build.full.dir}/codebase" />
+		<mkdir dir="${build.full.dir}/db" />
+		<mkdir dir="${build.full.dir}/loadFiles" />
+		<mkdir dir="${build.full.dir}/loadXMLFiles" />
+		<mkdir dir="${build.full.dir}/tasks" />
+		<mkdir dir="${build.full.dir}/src" />
+		<mkdir dir="${build.full.dir}/wtCustom"/>
+		<mkdir dir="${build.full.dir}/wtSafeArea"/>
+	</target>
+	
+	<target name="clean_build_dist_dir" depends="make_build_dist_dir">
+		<delete includeemptydirs="true">
+			<fileset dir="${build.dist.dir}" includes="**/*" />
+		</delete>
+		<delete includeemptydirs="true">
+			<fileset dir="${build.dist.dir}" includes="**/*" />
+			<fileset dir="${build.full.dir}" includes="*.xml"/>
+			<fileset dir="${build.full.dir}/codebase" includes="**/*"/>
+			<fileset dir="${build.full.dir}/db" includes="**/*"/>
+			<fileset dir="${build.full.dir}/loadFiles" includes="**/*" />
+			<fileset dir="${build.full.dir}/loadXMLFiles" includes="**/*" />
+			<fileset dir="${build.full.dir}/tasks" includes="**/*"/>
+			<fileset dir="${build.full.dir}/src" includes="**/*" />
+			<fileset dir="${build.full.dir}/wtCustom" includes="**/*"/>
+			<fileset dir="${build.full.dir}/wtSafeArea" includes="**/*"/>
+		</delete>		
+	</target>
+
+	<target name="copy_allFiles_to_full_dir">
+		<copy includeEmptyDirs="false" overwrite="true" verbose="false" tofile="${build.full.dir}/build_catl.xml">
+			<fileset dir="${project.dir}">
+				<include name="build.xml"/>
+			</fileset>
+		</copy>			
+		<copy todir="${build.full.dir}/codebase" includeEmptyDirs="false" overwrite="true" verbose="false">
+			<fileset dir="${build.classes.dir}">
+			</fileset>
+		</copy>		
+		<copy todir="${build.full.dir}/codebase" includeEmptyDirs="false" overwrite="true" verbose="false">
+			<fileset dir="${src.codebase.dir}">
+			</fileset>
+		</copy>
+		<copy todir="${build.full.dir}/db" includeEmptyDirs="false" overwrite="true" verbose="false">
+			<fileset dir="${src.db.dir}">
+			</fileset>
+		</copy>			
+		<copy todir="${build.full.dir}/loadFiles" includeEmptyDirs="false" overwrite="true" verbose="false">
+			<fileset dir="${src.loadFiles.dir}">
+			</fileset>
+		</copy>		
+		<copy todir="${build.full.dir}/loadXMLFiles" includeEmptyDirs="false" overwrite="true" verbose="false">
+			<fileset dir="${src.loadXMLFiles.dir}">
+			</fileset>
+		</copy>		
+		<copy todir="${build.full.dir}/tasks" includeEmptyDirs="false" overwrite="true" verbose="false">
+			<fileset dir="${src.tasks.dir}">
+			</fileset>
+		</copy>		
+		<copy todir="${build.full.dir}/src" includeEmptyDirs="false" overwrite="true" verbose="false">
+			<fileset dir="${src.java.dir}">
+			</fileset>
+		</copy>		
+		<copy todir="${build.full.dir}/wtCustom" includeEmptyDirs="false" overwrite="true" verbose="false">
+			<fileset dir="${src.wtCustom.dir}">
+			</fileset>
+		</copy>
+		<copy todir="${build.full.dir}/wtSafeArea" includeEmptyDirs="false" overwrite="true" verbose="false">
+			<fileset dir="${src.wtSafeArea.dir}">
+			</fileset>
+		</copy>		
+	</target>
+				
+	<target name="make_dist_jar_file" depends="clean_build_dist_dir,copy_allFiles_to_full_dir">
+		<tstamp>
+			<format property="current.date.time1" pattern="yyyyMMdd_HHmmss" />
+			<format property="current.date.time2" pattern="yyyy-MM-dd HH24:mm:ss" />
+		</tstamp>
+		<jar destfile="${build.dist.dir}/catl-full.jar">
+			<fileset dir="${build.full.dir}" />
+			<!--zipfileset includes="**/*.class" src="lib/main/some.jar" /-->
+			<manifest>
+				<!--attribute name="Main-class" value="package.Main"/-->
+				<attribute name="Build-Timestamp" value="${current.date.time2}" />
+				<attribute name="Author" value="Zhou Lihua, lizhou@ptc.com" />
+			</manifest>
+		</jar>
+		<delete includeemptydirs="true">
+			<fileset dir="${build.full.dir}" includes="**/*"/>
+		</delete>		
+	</target>
+	
+	<target name="clean_windchill_dirs_for_full_delopy">
+		<delete includeemptydirs="true" failonerror="false">
+			<fileset dir="${windchill.root.dir}/codebase/com/catl" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/codebase/com/ptc/xworks" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/codebase/config/actions/xworks" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/codebase/config/custom" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/codebase/config/mvc/xworks" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/codebase/netmarkets/jsp/catl" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/codebase/netmarkets/jsp/xworks" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/db/sql3/com/catl" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/db/sql3/ext/xworks" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/loadFiles/com/catl/access" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/loadFiles/com/catl/acl_update" includes="**/*"  />
+			<fileset dir="${windchill.root.dir}/loadFiles/com/catl/context" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/loadFiles/com/catl/export" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/loadFiles/com/catl/group" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/loadFiles/com/catl/lifecycle" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/loadFiles/com/catl/loader" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/loadFiles/com/catl/oir" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/loadFiles/com/catl/part" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/loadFiles/com/catl/preference" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/loadFiles/com/catl/type" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/loadFiles/com/catl/view" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/loadFiles/com/catl/workflow" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/loadFiles/ext/xworks" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/loadXMLFiles/com/catl" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/tasks/com/catl" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/tasks/xworks" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/wtSafeArea/ptcCurrent" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/wtSafeArea/ptcOrig" includes="**/*" />
+			<fileset dir="${windchill.root.dir}/wtSafeArea/siteMod" includes="**/*" />
+		</delete>		
+	</target>
+
+	<target name="install_full_delpoy_jar" depends="clean_windchill_dirs_for_full_delopy">
+		<unjar src="${release.package.name}" dest="${windchill.root.dir}">
+		</unjar>
+		
+		<ant antfile="${windchill.root.dir}/bin/swmaint.xml" dir="${windchill.root.dir}" inheritall="false" inheritrefs="false" target="installSiteChanges" />
+		
+		<!--
+		<exec>
+			<arg value="cmd"/>
+			<arg value="/c"/>
+			<arg value="xconfmanager"/>
+			<arg value="-p"/>
+		</exec>
+		-->
+	</target>
+
+	
+</project>

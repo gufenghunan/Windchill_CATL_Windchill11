@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE loadFileList SYSTEM "/wt/load/windchillLoad.dtd">
+<loadFileList>
+	
+	<!-- 文档管理相关OIR -->
+	<loadFile filename="com/catl/oir/Document_OIR.xml" title="Document_OIR.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/oir/Datasheet_OIR.xml" title="Datasheet_OIR.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/oir/NonFAEMaturityUp3Report_OIR.xml" title="OIR_非FAE物料成熟度3升级报告" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+
+	<!-- 文档失效流程 -->
+	<loadFile filename="com/catl/oir/OIR_RdDoc_Document.xml" title="OIR_RdDoc_Document.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/oir/OIR_TechnicalDoc_Document.xml" title="OIR_TechnicalDoc_Document.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+
+	<loadFile filename="com/catl/oir/KOPDMDOC_OIR.xml" title="KOPDMDOC_OIR.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	
+	<!-- CAD图纸文档管理 OIR -->
+	<loadFile filename="com/catl/oir/CAD_OIR.xml" title="CAD_OIR.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>	
+	<loadFile filename="com/catl/oir/AutoCAD_OIR.xml" title="AutoCAD_OIR.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/oir/OIR_Gerber_Document.xml" title="OIR_Gerber_Document.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/oir/OIR_PCBA_Document.xml" title="OIR_PCBA_Document.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	
+	<!-- 零部件管理相关OIR -->
+	<loadFile filename="com/catl/oir/PART_OIR_CATL.xml" title="PART_OIR_CATL.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	
+	<!-- ECN相关OIR -->
+	<loadFile filename="com/catl/oir/ECA_OIR.xml" title="ECA_OIR.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/oir/ECN_OIR.xml" title="ECN_OIR.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/oir/ECR_OIR.xml" title="ECR_OIR.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>	
+	
+	<!-- 设计变更相关OIR -->
+	<loadFile filename="com/catl/oir/DCN_OIR.xml" title="DCN_OIR.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/oir/DCA_OIR.xml" title="DCA_OIR.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	
+	<!-- 升级请求相关OIR -->
+    <loadFile filename="com/catl/oir/PromotionPartApply_OIR.xml" title="Promotion_OIR.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+    <loadFile filename="com/catl/oir/PromotionBomReview_OIR.xml" title="PromotionBomReview_OIR.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>	
+	<loadFile filename="com/catl/oir/OIR_DisabledForDesignPN_AppForm.xml" title="OIR_物料设计禁用单" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/oir/OIR_FAE_MaterialsMaturity.xml" title="OIR_FAE物料成熟度升级单" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/oir/SourceChange_OIR.xml" title="OIR_采购类型变更单" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+
+</loadFileList>

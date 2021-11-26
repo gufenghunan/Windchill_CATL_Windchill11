@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listofactions SYSTEM "actions.dtd">
+<listofactions>
+
+	<objecttype name="promotionNotice" resourceBundle="com.ptc.xworks.promotion.promotionResource" class="wt.maturity.PromotionNotice">
+	
+		<action name="createPromotionNotice" selectRequired="false" ajax="component" uicomponent="PROMOTE">
+			<command url="netmarkets/jsp/xworks/promotionNotice/createPromotionNotice.jsp" class="com.ptc.windchill.enterprise.maturity.forms.processors.CreatePromotionRequestFormProcessor" method="execute" windowType="popup" />
+		</action>
+		
+	    <action name="relatedObjectsTableStep" preloadWizardPage="false" required="false" >
+	        <description>Promote wizard promotion objects step</description>
+            <command url="netmarkets/jsp/xworks/promotionNotice/relatedObjectsTableStep.jsp" class="com.ptc.xworks.promotion.builders.CreatePromotionNoticeFormDelegate" windowType="wizard_step"/>
+	    </action>
+	    
+	    <action name="setupParticipantsStep" preloadWizardPage="false" required="false" >
+	    	<component name="com.ptc.xworks.promotion.builders.SetupWorkflowParticipantsTreeBuilder" windowType="wizard_step" />
+	    </action>
+
+		<action name="addUserToRole" ajax="row">
+			<command class="com.ptc.xworks.promotion.builders.PromotionNoticeSetupParticipantsCommands" method="addUserToRole"
+			url="netmarkets/jsp/xworks/promotionNotice/addUserToRole.jsp" windowType="popup" />
+		</action>
+		
+		<action name="removeUserFromRole" ajax="row">
+			<command class="com.ptc.xworks.promotion.builders.PromotionNoticeSetupParticipantsCommands" method="removeUserFromRole"/>
+		</action>		
+	    
+		<action name="addRelatedObject" ajax="row">
+			<command class="com.ptc.xworks.promotion.builders.PromotionNoticeRelatedObjectCommands" method="doAction"
+			  url="netmarkets/jsp/xworks/workitem/addRelatedObject.jsp?resolverClass=com.ptc.xworks.promotion.builders.PromotionNoticeObjectSearchingConfigViewResolver"
+			  windowType="popup" />
+			  <includeFilter name="promotionNoticeRelatedObjectActionValidator" />
+		</action>
+
+		<action name="addRelatedObjectStep" ajax="row">
+			<command url="netmarkets/jsp/xworks/workitem/addRelatedObjectStep.jsp" windowType="wizard_step" />
+		</action>
+
+		<action name="removeRelatedObject" ajax="row" selectRequired="true">
+			<command class="com.ptc.xworks.promotion.builders.PromotionNoticeRelatedObjectCommands" method="doAction" />
+			<includeFilter name="promotionNoticeRelatedObjectActionValidator" />
+		</action>
+		
+		<action name="copyRelatedObject" ajax="row" selectRequired="true">
+			<command class="com.ptc.netmarkets.model.NmObjectCommands" method="list_copy" windowType="no_content" onClick="onClickValidation( event, 'list_copy' )"
+			 url="netmarkets/jsp/xworks/workitem/copyReleateObject.jsp"/>
+		</action>				
+		
+		<action name="pasteRelatedObject" ajax="row" uicomponent="PASTE">
+			<command class="com.ptc.xworks.promotion.builders.PromotionNoticeRelatedObjectCommands" method="doAction" />
+			<includeFilter name="promotionNoticeRelatedObjectActionValidator" />
+		</action>		
+		
+		<action name="collectRelatedObject" selectRequired="true">
+			<command class="com.ptc.xworks.promotion.builders.PromotionNoticeRelatedObjectCommands" method="doAction" />
+			<includeFilter name="promotionNoticeRelatedObjectActionValidator" />
+		</action>
+		
+		<action name="relatedObjectGroupsTab">
+			<component name="com.ptc.xworks.promotion.builders.RelatedObjectsInfoPageTableBuilder" windowType="page" />
+			<includeFilter name="relatedObjectGroupTabValidator" />
+		</action>
+		
+		<action name="associatedPromotionNoticeTab">
+			<command url="netmarkets/jsp/xworks/workflow/relatedProcesses.jsp" windowType="page" />
+		</action>
+
+		<action name="processHistory">
+			<command url="netmarkets/jsp/xworks/workflow/processHistory.jsp" windowType="page" />
+		</action>
+		
+		<action name="processTeam">
+			<command url="netmarkets/jsp/team/listTeamCC.jsp?viewProcessTeam=true&amp;contextObjectOid=" windowType="page" />
+		</action>
+
+		<action name="workflowForm">
+			<command url="netmarkets/jsp/xworks/workflow/workflowForm.jsp" windowType="page" />
+			<includeFilter name="workflowFormValidator" />
+		</action>	
+		
+	</objecttype>
+
+</listofactions>

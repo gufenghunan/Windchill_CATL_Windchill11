@@ -1,0 +1,83 @@
+<?xml version="1.0" ?><!DOCTYPE NmLoader SYSTEM "standardX24.dtd">
+<NmLoader>
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>EE组</csvgroupName>
+    <csvdescription></csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>SE组</csvgroupName>
+    <csvdescription></csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>测试组</csvgroupName>
+    <csvdescription></csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>工艺组</csvgroupName>
+    <csvdescription></csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>结构组</csvgroupName>
+    <csvdescription></csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>客服组</csvgroupName>
+    <csvdescription></csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>热管理仿真组</csvgroupName>
+    <csvdescription></csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>设备组</csvgroupName>
+    <csvdescription></csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>线束组</csvgroupName>
+    <csvdescription></csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>制造组</csvgroupName>
+    <csvdescription></csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>质量组</csvgroupName>
+    <csvdescription></csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+
+
+
+</NmLoader>

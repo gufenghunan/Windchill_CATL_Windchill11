@@ -1,0 +1,11 @@
+#AccessRule,user,domain,typeId,permission,principal,permissionList,state,parentDomainContainerPath
+AccessRule,,/Default/CATLDefault,com.CATLBattery.technicalDoc,+,TeamMembers,/0/2/10,,
+AccessRule,,/Default/CATLDefault,com.CATLBattery.rdDoc,+,TeamMembers,/0/2/10,,
+AccessRule,,/Default/CATLDefault,com.CATLBattery.gerberDoc,+,TeamMembers,/0/2/10,,
+AccessRule,,/Default/CATLDefault,com.CATLBattery.pcbaDrawing,+,TeamMembers,/0/2/10,,
+AccessRule,,/Default/CATLDefault,com.CATLBattery.autocadDrawing,+,TeamMembers,/0/2/10,,
+AccessRule,,/Default/CATLDefault,com.CATLBattery.technicalDoc,+,TeamMembers,/7,RELEASED,
+AccessRule,,/Default/CATLDefault,com.CATLBattery.rdDoc,+,TeamMembers,/7,RELEASED,
+AccessRule,,/Default/CATLDefault,com.CATLBattery.gerberDoc,+,TeamMembers,/7,RELEASED,
+AccessRule,,/Default/CATLDefault,com.CATLBattery.pcbaDrawing,+,TeamMembers,/7,RELEASED,
+AccessRule,,/Default/CATLDefault,com.CATLBattery.autocadDrawing,+,TeamMembers,/7,RELEASED,

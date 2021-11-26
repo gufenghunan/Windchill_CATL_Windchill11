@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE TableViewDescriptor SYSTEM "standardX24.dtd">
+<TableViewDescriptor>
+  <ObjectID><localId>com.ptc.core.htmlcomp.tableview.TableViewDescriptor:67828</localId></ObjectID>
+  <name>com.ptc.windchill.enterprise.part.psb.psbActionsRB.DEFAULT_TABLEVIEW_NAME</name>
+  <tableID>PSBUses</tableID>
+  <system>true</system>
+  <published>false</published>
+  <description> ((null))</description>
+  <matchAll>true</matchAll>
+  <hidden>false</hidden>
+  <frozenColumns>-1</frozenColumns>
+  <groupBy> ((null))</groupBy>
+  <attributes> ((null))</attributes>
+  <TableColumnDefinitions>
+    <TableColumnDefinition>
+      <name>objNumber</name>
+      <locked>false</locked>
+      <sortNumber>1</sortNumber>
+      <treeColumn>false</treeColumn>
+      <sortDescending>false</sortDescending>
+      <hidden>false</hidden>
+      <width>0</width>
+    </TableColumnDefinition>
+    <TableColumnDefinition>
+      <name>objName</name>
+      <locked>false</locked>
+      <sortNumber>0</sortNumber>
+      <treeColumn>false</treeColumn>
+      <sortDescending>false</sortDescending>
+      <hidden>false</hidden>
+      <width>0</width>
+    </TableColumnDefinition>
+    <TableColumnDefinition>
+      <name>version</name>
+      <locked>false</locked>
+      <sortNumber>0</sortNumber>
+      <treeColumn>false</treeColumn>
+      <sortDescending>false</sortDescending>
+      <hidden>false</hidden>
+      <width>0</width>
+    </TableColumnDefinition>
+    <TableColumnDefinition>
+      <name>current_lifecycle_state</name>
+      <locked>false</locked>
+      <sortNumber>0</sortNumber>
+      <treeColumn>false</treeColumn>
+      <sortDescending>false</sortDescending>
+      <hidden>false</hidden>
+      <width>0</width>
+    </TableColumnDefinition>
+    <TableColumnDefinition>
+      <name>MIBA|ranking</name>
+      <locked>false</locked>
+      <sortNumber>0</sortNumber>
+      <treeColumn>false</treeColumn>
+      <sortDescending>false</sortDescending>
+      <hidden>false</hidden>
+      <width>0</width>
+    </TableColumnDefinition>
+    <TableColumnDefinition>
+      <name>quantityAmount</name>
+      <locked>false</locked>
+      <sortNumber>0</sortNumber>
+      <treeColumn>false</treeColumn>
+      <sortDescending>false</sortDescending>
+      <hidden>false</hidden>
+      <width>0</width>
+    </TableColumnDefinition>
+    <TableColumnDefinition>
+      <name>defaultUnit</name>
+      <locked>false</locked>
+      <sortNumber>0</sortNumber>
+      <treeColumn>false</treeColumn>
+      <sortDescending>false</sortDescending>
+      <hidden>false</hidden>
+      <width>0</width>
+    </TableColumnDefinition>
+    <TableColumnDefinition>
+      <name>referenceDesignatorRange</name>
+      <locked>false</locked>
+      <sortNumber>0</sortNumber>
+      <treeColumn>false</treeColumn>
+      <sortDescending>false</sortDescending>
+      <hidden>false</hidden>
+      <width>0</width>
+    </TableColumnDefinition>
+  </TableColumnDefinitions>
+  <domain>[/]/System</domain>
+  <SecurityLabels></SecurityLabels>
+  <ownership></ownership>
+  <objectContainerPath> ((null))</objectContainerPath>
+</TableViewDescriptor>

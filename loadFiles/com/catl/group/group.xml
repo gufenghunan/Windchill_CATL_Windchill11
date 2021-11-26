@@ -1,0 +1,39 @@
+<?xml version="1.0" ?><!DOCTYPE NmLoader SYSTEM "standardX24.dtd">
+<NmLoader>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>优选管理组</csvgroupName>
+    <csvdescription>优选管理用户组</csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>dms</csvgroupName>
+    <csvdescription>历史数据处理用户组</csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>变更需要通知组</csvgroupName>
+    <csvdescription>变更需要通知组</csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>异常处理组</csvgroupName>
+    <csvdescription>异常处理组</csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>SQE变更知会组</csvgroupName>
+    <csvdescription>SQE变更知会组</csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+</NmLoader>

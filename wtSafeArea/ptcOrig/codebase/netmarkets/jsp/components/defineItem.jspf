@@ -1,0 +1,100 @@
+<%@ taglib uri="http://www.ptc.com/windchill/taglib/components" prefix="jca"%>
+<%@ taglib uri="http://www.ptc.com/windchill/taglib/picker" prefix="p"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@page import="com.ptc.core.components.rendering.guicomponents.ComboBox,
+                com.ptc.core.meta.common.TypeIdentifier,
+                com.ptc.core.meta.common.TypeInstanceIdentifier,
+                wt.util.HTMLEncoder"%><% 
+String urlForDriverAttributes = "/servlet/TypeBasedIncludeServlet?contextAction=defineItemAttributesPanel";
+if(!"".equals(createBean.getCurrentObjectHandle())) {
+    urlForDriverAttributes += "&currentObjectHandle="+createBean.getCurrentObjectHandle();
+}
+String comboBoxId = createBean.getCurrentObjectHandle() + "createType";
+%>
+<c:if test="${createBean.includeTypePicker}">
+    <%   
+    ComboBox cbox = new ComboBox();
+    cbox.setId(comboBoxId);
+    //Needing to defer for IE to render the progress
+    String refreshDriverAttributes = "PTC.wizard.attributePanelLoader.goAttributeTableProgress(); PTC.driverAttributes.refreshDriverAttributes('"+urlForDriverAttributes+"');";
+    cbox.addJsAction("onchange", "(function() { pickerGo(this.value,'"+createBean.getCurrentObjectHandle()+"'); "+refreshDriverAttributes + " }).defer(1, this);");
+    %>
+    <c:set var="p_cbox" value="<%=cbox%>"/>    
+</c:if>
+    
+<jca:renderPropertyPanel>
+    <%@ include file="/netmarkets/jsp/components/defineItemStepContextPanel.jspf"%>
+    <c:if test="${createBean.includeTypePicker}">
+    <p:typePicker id="dropdown_test" label="${typePickerLabel}" field="${p_cbox}" mode="CREATE">
+        <c:forEach items="${createBean.typePickerSeedTypes}" var="current">
+        <p:pickerParam name="seedType" value="${current}"/>
+        </c:forEach>
+        <p:pickerParam name="defaultType" value="${createBean.typePickerInitValue}"/>
+        <p:pickerParam name="displayHierarchy" value="${createBean.useHierachicalTypeListInPicker}"/>
+        <p:pickerParam name="showRoot" value="${createBean.typePickerShowRoot}"/>
+        <p:pickerParam name="adminDomainRef" value="${createBean.typePickerAdminDomainRef}"/>
+        <p:pickerParam name="containerRef" value="${createBean.containerRef}"/>
+        <p:pickerParam name="type" value="${createBean.typePickerType}"/>
+        <p:pickerParam name="required" value="true"/>
+        <c:forEach items="${createBean.typePickerFilterTypes}" var="current">
+        <p:pickerParam name="filterType" value="${current}"/>
+        </c:forEach>
+    </p:typePicker>
+    </c:if>
+    <jca:addPlaceHolder id="${createBean.currentObjectHandle}driverAttributes" />
+    <c:if test="${createBean.propagationBean != null}">
+        <jca:propagateComponent preferenceKey="${createBean.propagationBean.preferenceKey}" 
+                                label="${createBean.propagationBean.label}" 
+                                tooltip="${createBean.propagationBean.tooltip}"/>
+    </c:if>
+</jca:renderPropertyPanel>
+
+<c:if test="${createBean.includeTypePicker}">
+    <%-->for better performance of initial wizard load get default type and driver attributes with 1st request
+        instead of making ajax calls for them later<--%><% 
+    ComboBox box = (ComboBox)  pageContext.getAttribute("p_cbox");
+    TypeInstanceIdentifier tiid = createBean.getDefaultTypeInstanceIdFromTypePicker(box);
+    
+    String defaultTypeInstanceId = "";
+    if(tiid != null) {
+        TypeIdentifier tid = (TypeIdentifier) tiid.getDefinitionIdentifier();
+        defaultTypeInstanceId = tiid.toExternalForm().trim();        
+    }%>
+    <input type="hidden" id="<%=createBean.getCurrentObjectHandle()%>typeFromTypePicker" value="<%=HTMLEncoder.encodeForHTMLAttribute(defaultTypeInstanceId) %>"/>
+</c:if>
+
+<script type="text/javascript">
+PTC.onReady(function() {
+    var typeEle = $("<%=comboBoxId%>");
+    if( typeEle && typeEle.length == 0 ) {
+       <%-->close the wizard since there are no types available<--%>
+       JCAAlert("com.ptc.core.ui.errorMessagesRB.NO_TYPES");
+       wfWindowClose1();
+       return;
+    } 	    
+    var objectHandle = '<%=createBean.getCurrentObjectHandle()%>';
+    var typeFromTypePicker = Ext.getDom(objectHandle+'typeFromTypePicker');
+    if(typeFromTypePicker) {
+        <%-->reset the itemTypeInstanceId to whatever is selected in the type picker<--%>
+        if(typeFromTypePicker.value !== '') {
+	        <%-->Avoid extra ajax calls if we already know the selected type and have included driver attributes in 1st request<--%>
+	        var itemTypeInstanceId = document.getElementById(objectHandle + "itemTypeInstanceId");
+	        itemTypeInstanceId.value = typeFromTypePicker.value;
+	        <%-->retrieve the content for the driver attributes panel. <--%>
+	        refreshDriverAttributes('<%=urlForDriverAttributes%>');
+        }
+    } else {
+        <%-->this else block is for wizards that do not include the type picker 
+            (for example, the New Cad document wizard from Workspace table) 
+            do ajax call to update the hidden input to correct type instance id for whatever was in typeEle<--%>
+        PTC.wizard.log.debug('wizard does not include standard type picker at top. Seems that custom type picker is used.');
+        if (typeEle) {
+        	resetTypeInstanceId(typeEle.value, objectHandle);
+        } else {
+        	PTC.wizard.log.warn('createType hidden field for object type not found? resetTypeInstanceId could not be called');
+        }
+        <%-->retrieve the content for the driver attributes panel. <--%>
+        refreshDriverAttributes('<%=urlForDriverAttributes%>');
+    }	
+});
+</script>

@@ -1,0 +1,11 @@
+<?xml version="1.0" ?><!DOCTYPE NmLoader SYSTEM "standardX24.dtd">
+<NmLoader>
+
+<csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance">
+    <csvname>/transitions/PROMOTE/$DEFAULT</csvname>
+    <csvclientName>WINDCHILL</csvclientName>
+    <csvvalue>Promotion Request Approval Process~Promotion Request Demo Process01~Promotion Request Review Process</csvvalue>
+    <csvlock>false</csvlock>
+</csvPreferenceInstance>
+
+</NmLoader>

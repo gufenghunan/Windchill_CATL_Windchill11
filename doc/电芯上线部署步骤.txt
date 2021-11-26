@@ -1,0 +1,7 @@
+1	运行ANT脚本build.xml中的target “make_dist_jar_file”，脚本将自动编译代码，并打包所有代码到build/dist/目录下的catl-full.jar文件中；
+2、	将catl-full.jar复制到服务器的\ptc\Windchill下；
+3	停止Windchill服务
+4、	在Windchill Shell中运行下面的命令，来部署所有的代码；
+    ant -f $WT_HOME/build_catl.xml -Drelease.package.name=$WT_HOME/catl-full.jar install_full_delpoy_jar
+5    xconfmanager -p
+6、      ResourceBuild.sh wt.project.RoleRB

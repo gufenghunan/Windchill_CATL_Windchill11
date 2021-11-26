@@ -1,0 +1,40 @@
+dn: ptcWindchillTypeId=com.catl.ecad,ptcRepositoryType=windchill,dc=ptc,dc=com,<base>
+ptcWindchillTypeId: com.catl.ecad
+objectClass: top
+objectClass: ptcWindchillTypeDefinition
+objectClass: ptcSchemaExtension
+
+dn: ptcCommandDelegateName=checkin,ptcWindchillTypeId=com.catl.ecad,ptcRepositoryType=windchill,dc=ptc,dc=com,<base>
+ptcCommandSourceCodeURL: /com/catl/ecad/checkin.xml
+objectClass: ptcCommandDelegateDefinition
+objectClass: top
+description:: Q2FkZW5jZeajgOWFpQ==
+ptcCommandDelegateName: checkin
+
+dn: ptcCommandDelegateName=checkoutlist,ptcWindchillTypeId=com.catl.ecad,ptcRepositoryType=windchill,dc=ptc,dc=com,<base>
+ptcCommandSourceCodeURL: /com/catl/ecad/checkoutlist.xml
+objectClass: ptcCommandDelegateDefinition
+objectClass: top
+description:: 5qOA5Ye654q25oCB55qE5Zu+57q45riF5Y2V
+ptcCommandDelegateName: checkoutlist
+
+dn: ptcCommandDelegateName=queryepm,ptcWindchillTypeId=com.catl.ecad,ptcRepositoryType=windchill,dc=ptc,dc=com,<base>
+ptcCommandSourceCodeURL: /com/catl/ecad/queryepm.xml
+objectClass: ptcCommandDelegateDefinition
+objectClass: top
+description:: 5qC55o2uUE7mn6Xmib7lm77nurg=
+ptcCommandDelegateName: queryepm
+
+dn: ptcCommandDelegateName=checkout,ptcWindchillTypeId=com.catl.ecad,ptcRepositoryType=windchill,dc=ptc,dc=com,<base>
+ptcCommandSourceCodeURL: /com/catl/ecad/checkout.xml
+objectClass: ptcCommandDelegateDefinition
+objectClass: top
+description:: Q2FkZW5jZeWbvue6uOajgOWHug==
+ptcCommandDelegateName: checkout
+
+dn: ptcCommandDelegateName=ftpInfo,ptcWindchillTypeId=com.catl.ecad,ptcRepositoryType=windchill,dc=ptc,dc=com,<base>
+ptcCommandSourceCodeURL: /com/catl/ecad/ftpInfo.xml
+objectClass: ptcCommandDelegateDefinition
+objectClass: top
+ptcCommandDelegateName: ftpInfo
+

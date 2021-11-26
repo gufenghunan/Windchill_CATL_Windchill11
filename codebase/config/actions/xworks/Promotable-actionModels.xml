@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE actionmodels SYSTEM "actionmodels.dtd">
+<actionmodels>
+
+<model name="folderbrowser_toolbar_new_submenu" resourceBundle="com.ptc.windchill.enterprise.folder.FolderActionResource">
+   <description>'New' submenu for folder browser toolbar actions menu.</description>
+   <action   name="create"                                     type="document" shortcut="true" />                               <!-- New Document -->
+   <action   name="createMulti"                                type="document" />                                               <!-- New Multiple Documents -->
+   <action   name="uploadDocumentsFromCompressedFile"          type="document" />                                               <!-- Upload Documents from Compressed File -->
+   <action   name="separator"                                  type="separator" />
+   <action   name="createPartWizard"                           type="part" shortcut="true" />                                   <!-- New Part -->
+   <action   name="createMultiPart"                            type="part" />                                                   <!-- New Multiple Parts -->
+   <action   name="createPromotionNotice"                      type="promotionNotice" shortcut="true" />                        <!-- New Promotion Notice -->
+   <action   name="createWorkSetWizard"                        type="workSet"/>
+   <action   name="separator"                                  type="separator" />
+   <action   name="createProductFamily"                        type="productfamily"/>
+   <action   name="separator"                                  type="separator" />
+   <action   name="createMpmprocessplan"                       type="mpml"/> 		                                   <!-- New Process Plan -->
+   <action   name="createMPMResource"                       	  type="mpml"/> 		                                   <!-- New Resource -->
+   <action   name="separator"                                  type="separator" />
+   <action   name="create"                                     type="changeNotice" />                                           <!-- New Change Notice -->
+   <action   name="createChangeDirective"                      type="changeDirective" shortcut="true" />                        <!-- New Change Directive -->
+   <action   name="create"                                     type="changeRequest" shortcut="true" />                          <!-- New Change Request -->
+   <action   name="create"                                     type="problemReport" />                                          <!-- New Problem Report -->
+   <action   name="create"                                     type="softwareIssue" />                                          <!-- New Software Issue -->
+   <action   name="create"                                     type="variance" />                                               <!-- New Variance -->
+   <action   name="create"                                     type="promotionRequest" />                       <!-- New Promotion Request -->
+   <action   name="separator"                                  type="separator" />
+   <action   name="create_request"                             type="npi"/>                                                     <!-- New Part Request -->
+   <action   name="separator"                                  type="separator" />
+   <action   name="createTextualInformationElement"            type="techPubs" />                                               <!-- New Textual Information Element -->
+   <action   name="createGraphicInformationElement"            type="techPubs" />                                               <!-- New Graphic Information Element -->
+   <action   name="createPartListInformationElement"           type="techPubs" />                                               <!-- New Parts List Information Element -->
+   <action   name="createPubStructWizard"                      type="arbortext"/>                                               <!-- New Publication Structure -->
+   <action   name="createASPSWizard"                           type="asps"/>                                                    <!-- New Information Structure -->
+   <action   name="separator"                                  type="separator" />
+   <action   name="create"                                     type="folder" shortcut="true" />                                 <!-- New Folder -->
+   <action   name="add_link"                                   type="bookmark" />                                               <!-- New Link -->
+   <action   name="separator"                                  type="separator" />
+   <action   name="createECADDesign"                           type="document" resourceBundle="com.ptc.windchill.uwgm.cadx.createecaddesign.documentECADResource" /> <!-- New Ecad Design -->
+   <action   name="separator"                                  type="separator" />
+   <action   name="createNoteMenuAction"                       type="note" />                                                   <!-- New Note -->
+   <action   name="createNoteFromTemplateMenuAction"           type="note" />                                                   <!-- New Note from Template -->
+   <action   name="separator"                                  type="separator" />
+   <action   name="createBaseline"                             type="baseline" />                                               <!-- New Baseline -->
+   <action   name="create"                                     type="managedcollection" />                                      <!-- New Managed Collection -->
+   <action   name="separator"                                  type="separator" />
+   <action   name="createSpecification"                        type="specification" resourceBundle="com.ptc.windchill.enterprise.requirement.specificationActionsRB" />   <!-- New Specification -->
+   <action   name="doc_insert_from_folder"                     type="document" />                                               <!-- Insert Document -->
+   <action   name="part_insert_from_folder"                    type="part" />                                                   <!-- Insert Part -->
+   <action   name="createUDI"                                  type="udi"/>                                                     <!-- New UDI Submission -->
+</model>
+
+<model name="relatedProcessTab" resourceBundle="com.ptc.xworks.navigationRB">
+	<action name="associatedPromotionNoticeTab" type="promotionNotice" />
+	<action name="processTeam" type="promotionNotice" />
+	<action name="processHistory" type="promotionNotice" />
+	<action name="processStatus" type="workflow" />
+</model>
+
+<model name="partInfoPageTabSet" resourceBundle="com.ptc.core.ui.navigationRB">
+	<submodel name="partInfoDetailsTab"/>
+	<action name="productStructureGWT" type="psb"/>
+	<submodel name="partInfoContentTab"/>
+	<submodel name="partInfoRelatedItemsTab"/>
+	<submodel name="relatedProcessTab" />
+	<submodel name="changesTab"/>
+	<submodel name="partInfoHistoryTab"/>
+	<submodel name="partInfoWhereUsedTab"/>
+	<submodel name="requirementTraceabilityTab"/>
+	<submodel name="amlAvlTab"/>
+	<submodel name="prodAnalyticsTab"/>
+	<action name="sysnavTab" type="sysnav"/>
+	<action name="udiSubmissionsTable" type="udi"/>
+</model>
+
+<model name="third_level_nav_part">
+	<submodel name="general"/>                            <!-- General -->
+	<submodel name="relatedItems"/>                       <!-- Related Objects -->
+	<submodel name="changes"/>                            <!-- Change -->
+	<submodel name="history"/>                            <!-- History -->
+	<submodel name="collaboration"/>                      <!-- Collaboration -->
+	<submodel name="prodAnalytics"/>                      <!-- Product Analytics -->
+	<submodel name="security3rdnav"/>                           <!-- Security -->
+	<submodel name="configLinks"/>
+	<submodel name="thingworxCustomizeMenu"/>
+	<submodel name="quality"/>                      <!-- Quality Objects -->
+	<submodel name="relatedProcessTab" />
+</model>
+
+<model name="docInfoPageTabSet" resourceBundle="com.ptc.core.ui.navigationRB">
+	<submodel name="docInfoDefaultDetails"/>
+	<action name="docStructureGWT" type="docsb"/>
+	<submodel name="docContentInfoDetails"/>
+	<submodel name="docRelatedObjectsInfo"/>
+	<submodel name="relatedProcessTab" />
+	<submodel name="changesTab"/>
+	<submodel name="docObjectsHistoryTab"/>
+	<submodel name="requirementTraceabilityTab"/>
+	<action name="sysnavTab" type="sysnav"/>
+</model>
+
+<model name="third_level_nav_doc" defaultActionName="iterationHistory" defaultActionType="history">
+	<submodel name="general"/>
+	<submodel name="relatedItems"/>
+	<submodel name="changes"/>
+	<submodel name="history"/>
+	<submodel name="collaboration"/>
+	<submodel name="security3rdnav"/>
+	<!--  Security  -->
+	<submodel name="configLinks"/>
+	<submodel name="thingworxCustomizeMenu"/>
+	<submodel name="quality"/>
+	<submodel name="relatedProcessTab" />
+</model>
+
+<model name="cadInfoPageTabSet">
+	<submodel name="infoDetails_cadx"/>
+	<action name="modelStructureGWT" type="msr"/>
+	<submodel name="content_cadx"/>
+	<submodel name="related_cadx"/>
+	<submodel name="relatedProcessTab" />
+	<submodel name="changesTab"/>
+	<submodel name="history_cadx"/>
+	<submodel name="requirementTraceabilityTab"/>
+	<action name="sysnavTab" type="sysnav"/>
+</model>
+
+<model name="third_level_nav_cad" defaultActionName="cadMoreAttributeTable" defaultActionType="object">
+	<submodel name="generalCADDoc"/>
+	<submodel name="relatedItemsCADDoc"/>
+	<submodel name="changes"/>
+	<submodel name="history"/>
+	<submodel name="collaboration"/>
+	<submodel name="security3rdnav"/>
+	<!--  Security  -->
+	<submodel name="thingworxCustomizeMenu"/>
+	<submodel name="relatedProcessTab" />
+</model>
+
+<!-- 下面这个action model，仅用于XWorks框架的开发，在正式部署到客户的Project时应该移除 -->
+<model name="more parts toolbar actions new" resourceBundle="com.ptc.windchill.enterprise.part.partResource">
+	<action name="createPromotionNotice" type="promotionNotice" /><!-- New Promotion Notice -->
+	<action name="create" type="changeNotice"/>                    <!-- New Change Notice -->
+	<action name="create" type="changeRequest"/>                   <!-- New Change Request -->
+	<action name="create" type="problemReport"/>                   <!-- New Problem Report -->
+	<action name="create" type="softwareIssue"/>                   <!-- New Software Issue -->
+	<action name="create" type="variance"/>                        <!-- New Variance -->
+	<action name="create" type="promotionRequest"/>                <!-- Promote -->
+	<action name="separator" type="separator"/>                    <!-- ===================================== -->
+	<action name="createConfiguration" type="configuration"/>      <!-- New Part Configuration -->
+	<action name="createInstanceFromPart" type="instance"/>        <!-- New Part Instance -->
+	<action name="separator" type="separator"/>                    <!-- ===================================== -->
+	<action name="newViewVersion" type="part"/>                    <!-- New View Version-->
+	<action name="oneOffVersion" type="part"/>                     <!-- New One Off Version -->
+	<action name="separator" type="separator"/>                    <!-- ===================================== -->
+	<action name="defineClashJobWizard" type="clashDefinition"/>   <!-- New Clash Definition -->
+	<action name="createPARFromPart" type="par"/>                  <!-- New Part Alternate Representation -->
+	<action name="createUDI" type="udi"/>                          <!-- New UDI Submission -->
+</model>
+</actionmodels>
+

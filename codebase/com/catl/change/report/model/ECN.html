@@ -1,0 +1,341 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head> 
+<style type="text/css">
+table.gridtable {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #222222;
+	border-collapse: collapse;
+}
+table.gridtable th {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #222222;
+	background-color: #dedede;
+}
+table.gridtable td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #222222;
+	background-color: #ffffff;
+}
+</style>
+
+<TABLE class=gridtable>
+	<TR>
+		<TD colspan=10 align="center">
+			Engineer Change Notice<br>
+			工程变更通知单（ECN）
+		</TD>
+	</TR>
+	<TR>
+		<TD>ECR Number<br>ECR 编号</TD>
+		<TD colspan=4>ecrNumber</TD>
+		<TD >ECN Number<br>ECN 编号</TD>
+		<TD colspan=2>ecnNO</TD>
+		<TD>Applicant<br>变更申请人</TD>
+		<TD colspan=3>changeapplicanter</TD>
+	</TR>
+	<TR>
+		<TD> Review site<br>评审地点</td>
+		<td colspan=4>reviewsite</td>
+		<td> Change Type<br> 变更类别</td>
+		<td colspan=2>changetype</td>
+		<TD>Review Date<br>评审日期</TD>
+		<TD colspan=3>applicantiondate</TD>
+
+	</TR>
+    <TR>
+		<TD> Change Item<br>变更主题</td>
+		<td colspan=9>changeitem</td>
+		
+
+	</TR>
+	<TR>
+		<TD> State<br>阶段</td>
+		<td colspan=9>ECNStage</td>
+		
+
+	</TR>
+	<TR>
+		<TD> Change description<br>变更描述</td>
+		<td colspan=9>changedescription</td>
+		
+
+	</TR>
+    <TR>
+		<TD> Change reason<br>变更原因</td>
+		<td colspan=9 >changereason</td>
+		
+
+	</TR>
+	<TR>
+		<Th colspan=10> Change plan content/变更计划内容</th>
+	</TR>
+		<TR>
+		<TD> NO.<br>编号</td>
+		<td colspan=4>Implementation plan content<br>变更执行内容</td>
+		<td> Owner<br> 责任人</td>
+		<td colspan=2>Dept<br>部门</td>
+		<td colspan=2>Due date<br>计划完成时间</td>	</TR>
+
+
+
+
+	<TR>
+		<Th rowspan=26> CBB team comment/CBB小组意见</th>
+	</TR>
+
+   
+    
+	<TR>
+		<TD rowspan=2 colspan=2>Role角色</TD>
+		<TD rowspan=2 colspan=2>Dept部门</TD>
+		<TD colspan=4>Change effect and risk evaluation变更影响和风险评估</TD>
+	    <TD rowspan=2>Owner负责人</TD>
+
+	</TR>
+    
+	<TR>
+		<TD colspan=2>Reference for evaluation评估参考内容</TD>
+		<TD colspan =2>Comment意见</TD>
+
+	</TR>
+	<TR>
+		<TD colspan=2>LPDT(项目经理)</TD>
+		<TD colspan=2><font  size=2>PM</font></TD>
+		<TD colspan=2>项目总体计划 ■延期 ■提前 ■不变<br>项目里程碑  ■延期 ■提前 ■不变<br>产品交付   ■延期 ■提前 ■不变<br>■项目计划有改动，但不影响里程碑节点<br>■无任何影响</TD>
+		<TD colspan=2>pmcomment</TD>
+		<TD >pmowner</TD>
+
+	</TR>
+	<TR>
+		<TD colspan=2 rowspan=3>PQM(质量代表)</TD>
+		<TD colspan=2 size=20><font  size=2>PQM</font></TD>
+		<TD colspan=2>■产品质量影响<br>■是否知会客户<br>■其他影响<br>■无影响</TD>
+		<TD colspan=2>pqmcomment</TD>
+		<TD >pqmowner</TD>
+
+	</TR>
+		<TR>
+		<TD colspan=2><font  size=2>RSD</font></TD>
+		<TD colspan=2>■提升/降低产品的安全性<br>■提升/降低产品的可靠性<br>■数据不充分无法评定有无影响<br>■其他影响<br>■无任何安全和可靠性影响</TD>
+		<TD colspan=2>rsdcomment</TD>
+		<TD >rsdowner</TD>
+
+	</TR>
+		</TR>
+		<TR>
+		<TD colspan=2><font  size=2>SQE</font></TD>
+		<TD colspan=2>■变更后的尺寸、公差、性能等要求是否明确 <br>■旧件处理方式是否明确<br>■其他影响<br>■无影响</TD>
+		<TD colspan=2>sqecomment</TD>
+		<TD >sqeowner</TD>
+
+	</TR>
+		<TR>
+		<TD colspan=2 rowspan=3>DPDT(开发代表)</TD>
+		<TD colspan=2 size=20><font  size=2>PD</font></TD>
+		<TD colspan=2>■安全影响<br>■功能影响<br>■性能影响<br>■外观/外形尺寸影响<br>■重量影响br>■对其他零部件影响<br>■其他影响<br>■无影响</TD>
+		<TD colspan=2>pdcomment</TD>
+		<TD >pdowner</TD>
+
+	</TR>
+		<TR>
+		<TD colspan=2><font  size=2>R&D MD</font></TD>
+		<TD colspan=2>■结构设计影响<br>■重量影响<br>■设计公差、装配公差及整车装配的影响<br>■性能要求的影响<br>（包括IP67、防腐、阻燃、机械强度、过流能力、热管理等）<br>■标识和包装的影响<br>■其他影响<br>■无影响
+		</TD>
+		<TD colspan=2>rdmdcomment</TD>
+		<TD >rdmdowner</TD>
+
+	</TR>
+		</TR>
+		<TR>
+		<TD colspan=2><font  size=2>R&D SYS</font></TD>
+		<TD colspan=2>■电气连接影响<br>（包括走线长度、连接方式、线径大小等）<br>■系统功能是否有影响<br>（如功能加减、系统参数、充电方式、用户需求、系统控制策略等）
+          <br>■系统参数是否有变化<br>■性能要求的影响<br>（包括载流能力、充放电功率、环境适应力、负载变化、客户使用环境、标准等）<br>■系统图影响<br>■法律法规影响
+		  <br>■其他影响<br>■无影响</TD>
+		<TD colspan=2>rdsyscomment</TD>
+		<TD >rdsysowner</TD>
+
+	</TR>	<TR>
+		<TD colspan=2 rowspan=5>MPDT(制造代表)</TD>
+		<TD colspan=2 size=20><font  size=2>MPE</font></TD>
+		<TD colspan=2>■工艺流程（如：增加/减少工位，工序更换等<br>■工艺方法<br>（如：装配手法、焊接方式/方法等）■工艺参数<br>
+		■工艺文件更新:    口PFC；口PFMEA；口CP；口SOP；口CC/SC<br>■其它影响<br>■无影响</TD>
+		<TD colspan=2>mpecomment</TD>
+		<TD >mpeowner</TD>
+
+	</TR>
+		<TR>
+		<TD colspan=2><font  size=2>MDE</font></TD>
+		<TD colspan=2>■新增设备/工装/夹具<br>■新增设备/工装/夹具交期<br>■更改设备/工装/夹具<br>
+		■更改设备/工装/夹具交期<br>■其它影响<br> ■无影响</TD>
+		<TD colspan=2>mdecomment</TD>
+		<TD >mdeowner</TD>
+
+	</TR>
+			<TR>
+		<TD colspan=2><font  size=2>IE</font></TD>
+		<TD colspan=2>■产线Layout<br>■厂房设施影响<br>■是否会增加工时‘ST’<br>■是否会增加生产成本<br>
+		■其它影响<br>■无影响</TD>
+		<TD colspan=2>iecomment</TD>
+		<TD >ieowner</TD>
+
+	</TR>
+			<TR>
+		<TD colspan=2><font  size=2>MFG</font></TD>
+		<TD colspan=2></TD>
+		<TD colspan=2>mfgcomment</TD>
+		<TD >mfgowner</TD>
+
+	</TR>
+		</TR>
+		<TR>
+		<TD colspan=2><font  size=2>PC&MC</font></TD>
+		<TD colspan=2>■是否有旧状态物料库存<br>■是否有旧状态半成品库存<br>■是否有旧状态成品库存<br>■是否有旧状态在制品<br>
+		■是否影响现有生产计划<br>■新状态物料交期<br>■新状态物料切换时间<br>■其它影响</TD>
+		<TD colspan=2>pcmccomment</TD>
+		<TD >pcmcowner</TD>
+
+	</TR>
+	<TR>
+		<TD colspan=2>SRCPDT(采购代表)</TD>
+		<TD colspan=2><font  size=2>SRC</font></TD>
+		<TD colspan=2>■新物料采购的可行性和风险（技术和品质等风险说明）<br>
+       ■实现方案（新模具？新工艺？设备？）<br>
+       ■零件成本变化（增加或减少（金额））<br>
+       ■新增投资（项目与金额）<br>
+       ■新零件开发周期（项目与周期（天））<br>
+       ■新零件验证项目_（项目与费用）<br>
+       ■旧零件是否能生产（能或否（原因））<br>
+       ■旧零件成品库存（数量与金额）<br>
+       ■旧零件半成品库存（项目、数量与金额）<br>
+       ■旧零件原料库存（项目、数量与金额）<br>
+       ■未交订单和授权（订单号与数量）<br>
+       ■其它影响<br>                    
+       ■无影响</TD>
+		<TD colspan=2>srccomment</TD>
+		<TD >srcowner</TD>
+
+	</TR>
+
+ 	<TR>
+		<TD colspan=2>CSPDT(客服代表)</TD>
+		<TD colspan=2><font  size=2>AFT-SLS</font></TD>
+		<TD colspan=2>■是否增加了维修难度<br>■ 是否涉及已出厂的产品<br>■ 是否需要批量整改<br>■ 是否需要准备/更新售后备件<br>■ 其它影响<br>■ 无影响</TD>
+		<TD colspan=2>aftslscomment</TD>
+		<TD >aftslsowner</TD>
+
+	</TR>
+		<TR>
+		<TD colspan=2>FPDT(项目经理)</TD>
+		<TD colspan=2><font  size=2>FNC</font></TD>
+		<TD colspan=2>■产品成本增加/降低（单个产品成本__，总成本__）<br>■项目费用增加/减少（须考虑增加/报废的物料，工夹具，返工成本等）<br>■ 其它影响<br>■ 无影响</TD>
+		<TD colspan=2>fnccomment</TD>
+		<TD >fncowner</TD>
+
+	</TR>
+		<TR>
+		<TD colspan=2>MKTPDT(市场代表)</TD>
+		<TD colspan=2><font  size=2>SLS&MKT</font></TD>
+		<TD colspan=2>■客户是否接受承担变更费用<br>■ 与客户确定变更日期__发货日期__<br>■ 其它影响<br>■ 无影响</TD>
+		<TD colspan=2>slsmktcomment</TD>
+		<TD >slsmktowner</TD>
+
+	</TR>
+	<TR>
+		<TD colspan=2 rowspan=2><font  size=3>专家</font></TD>
+		<TD colspan=2 size=20></TD>
+		<TD colspan=5 rowspan=2>expertcomment</TD>
+	</TR>
+		<TR>
+		<TD colspan=2></TD>
+	</TR>
+
+		<TR>
+		<TD colspan=4 rowspan=5>Final comment<br>最终意见</TD>
+		<TD colspan=2 size=20>Change classification<br>变更分类</TD>
+		<TD colspan=3>changeclassification</TD>
+
+
+	</TR>
+		<TR>
+		<TD colspan=2>Conclusion<br>评审结论</TD>
+		<TD colspan=3>finalconclusion</TD>
+
+
+	</TR>
+			<TR>
+		<TD colspan=2>Need to inform customer or not<br>是否需要知会客户</TD>
+		<TD colspan=3>needinformcustomer</TD>
+
+
+	</TR>
+			<TR>
+		<TD colspan=2>Need customer approval or not<br>是否需要客户批准</TD>
+		<TD colspan=3>needcustomerapproval</TD>
+
+
+	</TR>
+		</TR>
+		<TR>
+		<TD colspan=2>Eff Date<br>(预计)变更生效日期</TD>
+		<TD colspan=3>effdate</TD>
+
+
+	</TR>
+
+	<TR>
+	<TD colspan=1 rowspan =2>Manager comment<br>责任部门经理意见</TD>
+		<TD colspan=4>Owner 负责人</TD>
+		<TD colspan=5>Comment 意见</TD>
+	</TR>
+		<TR>
+		<TD colspan=4>dept_manager_owner</TD>
+		<TD colspan=5>dept_manager_comment</TD>
+	</TR>
+	<TR>
+	<TD colspan=1 rowspan =2>Director comment<br>责任部门总监意见</TD>
+		<TD colspan=4>Owner 负责人</TD>
+		<TD colspan=5>Comment 意见</TD>
+	</TR>
+		<TR>
+		<TD colspan=4>dept_director_owner</TD>
+		<TD colspan=5>dept_director_comment</TD>
+	</TR>
+		<TR>
+	<TD colspan=1 rowspan =2>RSD Manager comment<br>RSD部门经理意见</TD>
+		<TD colspan=4>Owner 负责人</TD>
+		<TD colspan=5>Comment 意见</TD>
+	</TR>
+		<TR>
+		<TD colspan=4>rsd_manager_owner</TD>
+		<TD colspan=5>rsd_manager_comment</TD>
+	</TR>
+		<TR>
+	<TD colspan=1 rowspan =2>RSD Director comment<br>RSD 部门总监意见</TD>
+		<TD colspan=4>Owner 负责人</TD>
+		<TD colspan=5>Comment 意见</TD>
+	</TR>
+		<TR>
+		<TD colspan=4>rsd_director_owner</TD>
+		<TD colspan=5>rsd_director_comment</TD>
+	</TR>
+			<TR>
+	<TD colspan=1 rowspan =2>Customer comment<br>客户意见</TD>
+		<TD colspan=4>Owner 负责人</TD>
+		<TD colspan=5>Comment 意见</TD>
+	</TR>
+		<TR>
+		<TD colspan=4>customer_owner</TD>
+		<TD colspan=5>customer_comment</TD>
+	</TR>
+
+</TABLE>
+</html>

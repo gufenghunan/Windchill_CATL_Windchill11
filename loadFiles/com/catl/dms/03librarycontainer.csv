@@ -1,0 +1,7 @@
+#Container,containerClass,containerName,sharedTeamName,containerExtendable,parentContainerPath,containerTemplateRef,businessNamespace,sharingEnabled,creator,owner,subscriber,conferencingURL,description,organization,creatorSelector
+Container,wt.inf.library.WTLibrary,电芯,,,,CATL Cell,,,orgadmin,,,,,CATL,
+Container,wt.inf.library.WTLibrary,电子电气件,,,,CATL Electronic,,,orgadmin,,,,,CATL,
+Container,wt.inf.library.WTLibrary,紧固件,,,,CATL Fastener,,,orgadmin,,,,,CATL,
+Container,wt.inf.library.WTLibrary,公共文档库,,,,CATL Public Document,,,orgadmin,,,,,CATL,
+Container,wt.inf.library.WTLibrary,原材料,,,,CATL Raw Materials,,,orgadmin,,,,,CATL,
+Container,wt.inf.library.WTLibrary,模板库,,,,CATL Templates,,,orgadmin,,,,,CATL,

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE actionmodels SYSTEM 'actionmodels.dtd'>
+<actionmodels>
+   <!--add by hdong 20180102-->
+   <model name="partInfoRelatedItemsTab" resourceBundle="com.ptc.core.ui.navigationRB">
+     <action name="relatedPartsDocuments" type="part"/>
+     <action name="aftersale" type="catl"/>
+     <action name="relatedPartsReferences" type="part"/>
+     <action name="relatedPartsCADDocuments" type="part"/>
+     <action name="alternates" type="part"/>
+     <action name="substitutes" type="part"/>
+     <action name="relatedMPMProcessPlans" type="part"/>
+     <action name="relatedPartsEnterpriseData" type="enterprisedata"/>
+     <action name="relatedPartsLists" type="part"/>
+     <action name="missingObjectsTable" type="persistedCollectable" />
+     <action name="relatedDesignSolution" type="part"/>                <!-- Design Solutions -->
+     <action name="distributionList" type="tgt"/>
+    </model>
+    
+        <model name="relatedItems" resourceBundle="com.ptc.core.ui.navigationRB">
+        <description>
+            "Related Objects" 3rd level nav menu
+        </description>
+        <action name="relatedCADDocsCADDocuments" type="part"/>                <!-- CAD Documents -->
+        <action name="relatedPartsCADDocuments" type="part"/>                  <!-- CAD/Dynamic Documents -->
+        <action name="aftersale" type="catl"/>
+        <action name="relatedPartsDocuments" type="part"/>                     <!-- Described By Documents -->
+        <action name="relatedPartsReferences" type="part"/>                    <!-- References Documents -->
+        <action name="relatedDocumentsDocuments" type="document"/>             <!-- Reference Documents -->
+        <action name="relatedDocumentsReferencedBy" type="document"/>          <!-- Referenced By Documents -->
+        <action name="relatedTranslations" type="translation"/>                <!-- Related Translations -->
+        <action name="baseLanguage" type="translation"/>                       <!-- Base Languages -->
+        <action name="documents" type="supplier"/>                             <!-- Documents -->
+        <action name="relatedWorkSetDocuments" type="workSet"/>                <!-- Documents -->
+        <action name="relatedPartInstanceDocuments" type="instance"/>          <!-- Documents -->
+        <action name="separator" type="separator"/>                            <!-- ====================================== -->
+        <action name="relatedDocumentsParts" type="document"/>                 <!-- Parts -->	
+        <action name="relatedCADDocsParts" type="part"/>                       <!-- Parts -->
+        <action name="relatedDocumentPartInstances" type="document"/>          <!-- Part Instances -->
+        <action name="parts" type="supplier"/>                                 <!-- Supplied Parts -->
+        <action name="separator" type="separator"/>                            <!-- ====================================== -->
+        <action name="alternates" type="part"/>                                <!-- Alternates -->
+        <action name="alternateFor" type="part"/>                              <!-- Alternate For -->
+        <action name="substitutes" type="part"/>                               <!-- Substitutes -->
+        <action name="substitutesFor" type="part"/>                            <!-- Substitutes For -->
+        <action name="separator" type="separator"/>                            <!-- ====================================== -->
+        <action name="variants" type="generic"/>                               <!-- Variants -->
+        <action name="variantspecs_all" type="generic"/>                       <!-- Variant Specifications -->
+        <action name="variantspecsofvariant" type="variant"/>                  <!-- Variant Specifications -->
+        <action name="separator" type="separator"/>                            <!-- ====================================== -->
+        <action name="singleLevelTraceability" type="object"/>                 <!-- Requirements Single-level Traceability -->
+        <action name="TraceabilityLinksTable" type="requirement"/>             <!-- Requirements Multi-level Traceability -->
+        <action name="listTraces" type="traceable"/>         <!-- Traceability -->
+        <action name="SpecificationsTable" type="requirement"/>                <!-- Specifications -->
+        <action name="separator" type="separator"/>                            <!-- ====================================== -->
+        <action name="relatedClashes" type="clashReport"/>                     <!-- Related Interferences -->
+        <action name="relatedClashReports" type="clashReport"/>                <!-- Related Interference Detection Reports -->
+        <action name="separator" type="separator"/>                            <!-- ====================================== -->
+        <action name="traceabilityRoleBLinkTable" type="object"/>              <!-- As-Defined -->
+        <action name="traceabilityRoleALinkTable" type="object"/>              <!-- As-Designed -->
+        <action name="handedPartsRoleALinkTable" type="object"/>               <!-- Right Handed Parts -->
+        <action name="handedPartsRoleBLinkTable" type="object"/>               <!-- Left Handed Parts -->
+        <action name="separator" type="separator"/>                            <!-- ====================================== -->
+        <action name="AccomRequirements" type ="SoftwareBuild"/>               <!-- Accomplished Requirements -->
+        <action name="relatedActionItems" type="actionitem"/>                  <!-- Action Items -->
+        <action name="activites" type="reqlObject"/>                           <!-- Activities -->
+        <action name="affectedEndItemsTable" type="change"/>                   <!-- Affected End Items -->
+        <action name="affectedDataTable" type="change"/>                       <!-- Affected Objects -->
+        <action name="affectedAndResultingItems" type="changeTask"/>           <!-- Affected/Resulting Objects -->
+        <action name="changeSummary" type="changeNotice"/>                     <!-- Affected and Resulting Data for all Change Tasks on a Change Notice -->
+		<action name="sumaChangeTree"         type="suma"/>			    	   <!-- Supplier Parts and related documents for Resulting data for change notice-->
+        <action name="analysisActivitiesTable" type="analysisActivity"/>       <!-- Analysis Activities -->
+        <action name="annotationSets" type="annotation"/>                      <!-- Annotations -->
+        <action name="plan_deliverable_activities" type="planActivity"/>       <!-- Associated Activities -->
+        <action name="associatedBuildsTable" type="softwareDefect"/>           <!-- Associated Builds -->
+        <action name="showAssociatedDefects" type ="SoftwareBuild"/>           <!-- Associated Defects -->
+        <action name="plan_activity_deliverables" type="planActivity"/>        <!-- Associated Deliverables -->
+        <action name="relatedBaselines" type="object"/>                        <!-- Baselines -->
+        <action name="baselineObjects" type="baseline"/>                       <!-- Baseline Objects -->
+        <action name="context_adapters" type="scmi"/>                          <!-- Clearcase Adapters -->
+        <action name="relatedWorkSetComponents" type="workSet"/>               <!-- Components -->
+        <action name="generics" type="variant"/>                               <!-- Configurable Parts -->
+        <action name="designSolutionEff" type="object"/>                       <!-- Configuration Items -->
+        <action name="relatedContexts" type="object"/>                         <!-- Contexts -->
+        <action name="relatedCC" type="mpml"/>				       <!-- Control Characteristics -->
+        <action name="relatedDeliverables" type="deliverable"/>                <!-- Deliverables -->
+		<action name="scheduledDeliverables" type="planActivity"/>             <!-- PlanActivities which act as Scheduled Deliverables. -->
+        <action name="view_plans" type="project"/>
+        <action name="relatedDesignSolution" type="part"/>                     <!-- Design Solutions -->
+        <action name="lowLevelPartEff" type="part"/>                           <!-- Design Solutions -->
+        <action name="distributionList" type="tgt"/>                           <!-- Distribute Targets -->
+        <action name="implementationPlanTable" type="changeNotice"/>           <!-- Implementation Plan -->
+        <action name="relatedManagedCollection" type="managedcollection"/>     <!-- Managed Collection -->
+        <action name="missingObjectsTable" type="persistedCollectable" />      <!-- Missing Object Table -->
+        <action name="relatedNotes" type="note"/>                              <!-- Notes -->
+        <action name="relatedPackages" type="wp"/>                             <!-- Packages -->
+        <action name="predecessors" type="plan"/>                              <!-- Predecessors -->
+        <action name="promotionItemsTable" type="promotionRequest"/>           <!-- Promotion Objects -->
+        <action name="relatedMPMProcessPlans" type="part"/>                    <!-- Process Plan -->
+        <action name="relatedPartsEnterpriseData" type="enterprisedata"/>      <!-- Enterprise Data -->
+        <action name="relatedPartsLists" type="part"/>                         <!-- Parts Lists -->
+        <action name="associatedChangeAnalysisTable" type="changeRequest"/>    <!-- Proposals and Investigations -->
+        <action name="publishedContent" type="object"/>                        <!-- Published Content -->
+        <action name="resources" type="plan"/>                                 <!-- Resources -->
+        <action name="actionItemSubjects" type="actionitem"/>                  <!-- Subjects -->
+        <action name="successorList" type="wp"/>                               <!-- Successors -->
+        <action name="supersedes" type="part"/>                                <!-- Supersedes Table -->
+        <action name="contacts" type="supplier"/>                              <!-- Supplier Contacts -->
+        <action name="changeWorkItemsTable" type="changeNotice"/>              <!-- Work Items -->
+        <action name="relatedWorkSets" type="workSet"/>                        <!-- Work Sets -->
+        <action name="separator" type="separator"/>                            <!-- ====================================== -->
+        <action name="relatedMeetings" type="meeting"/>                        <!-- Meetings -->
+        <action name="plan_activity_subjects" type="planActivity" />		   <!-- Subjects for Scheduled Deliverables -->
+
+    </model>
+    
+      <model name="aftersaleToolBar">
+	  	<action name="related_add_aftersale_part" type="require" shortcut="true"/>
+	  	<action name="related_delete_aftersale_part" type="require" shortcut="true"/>
+	  	<action name="related_paste_aftersale_part" type="require" shortcut="true"/>
+      </model>
+</actionmodels>

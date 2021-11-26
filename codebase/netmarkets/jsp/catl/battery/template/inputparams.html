@@ -1,0 +1,606 @@
+<html>
+<head>
+<meta http-equiv="inputparams_content-Type"
+	content="text/html; charset=UTF-8">
+<style type="text/css">
+.noticetitle{
+  text-align: left !important;
+  font-size: 12px;
+}
+.s1{
+text-align:left
+}
+.s2{
+text-align:left;
+font-weight:bold
+}
+.s1span{
+margin-left:310px;
+}
+.s1span input{
+border:0px !important;
+}
+.paddingd{
+padding-bottom:5px;
+}
+.inputparams_b1 {
+	white-space-collapsing: preserve;
+}
+
+.inputparams_t1 {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width:1400px;
+}
+
+.hidetd{
+    border:0px !important;
+    background-color:#FFF !important;
+}
+
+.inputparams_r1 {
+	height: 15.75pt;
+}
+
+.inputparams_r2 {
+	height: 31.5pt;
+	background-color:silver;
+}
+
+.inputparams_r3 {
+	height: 21.0pt;
+	background-color:silver;
+}
+
+.inputparams_r4 {
+	height: 22.5pt;
+	background-color:silver;
+}
+
+.inputparams_r5 {
+	height: 33.75pt;
+	background-color:silver;
+}
+
+.inputparams_r6 {
+	height: 21.75pt;
+	background-color:silver;
+}
+.inputparams_t1 input{
+   -webkit-margin-before: 0px;
+   -webkit-padding-before: 0px;
+   border:0px !important;
+   width:100%;
+   height:25px;
+}
+.inputparams_t1 td{
+   width:100px !important;
+   border:1px solid black;
+   text-align:center;
+   height:25px;
+}
+
+.inputparams_t1 select{
+   -webkit-margin-before: 0px;
+   -webkit-padding-before: 0px;
+   border:0px !important;
+   width:100%;
+   height:25px;
+}
+
+.title_td{
+	border:0px !important;
+    text-align:left !important;
+	font-family:\5B8B\4F53;
+	font-weight:bold;
+	font-size:12pt;
+}
+</style>
+</head>
+<body class="inputparams_b1">
+ <div style="margin-left:10px;"><div style="display:inline"><input name="C3" id="input_inputparams_C3"/><span style="font-size:16px;font-weight:bold">Ah Cell design form</span></div></div>
+	<table class="inputparams_t1">
+		<tr>
+			<td class='title_td' colspan="12">Output ----- 电芯级别（容量ok？群裕度ok？残空间ok？）</td>
+		</tr>
+
+		<tr class="inputparams_r2">
+			<td>Mean 1C_CAP(Ah)</td>
+			<td>Min 1C_CAP(Ah)</td>
+			<td>Mean 1/3C_CAP(Ah)</td>
+			<td>Min 1/3C_CAP(Ah)</td>
+			<td>群裕度_厚度方向</td>
+			<td>群裕度_宽度方向</td>
+			<td>标称能量密度(Wh/Kg)</td>
+			<td>标称能量密度(Wh/L)</td>
+			<td>Tab 到卷芯最内圈边缘的距离La</td>
+			<td>极耳边距Lb</td>
+			<td>放电CB</td>
+			<td>宽度方向(含方形热压)群裕度是否ok</td>
+		</tr>
+		<tr class="inputparams_r1">
+			<td id="inputparams_B7"></td>
+			<td id="inputparams_C7"></td>
+			<td id="inputparams_D7"></td>
+			<td id="inputparams_E7"></td>
+			<td id="inputparams_F7"></td>
+			<td id="inputparams_G7"></td>
+			<td id="inputparams_H7"></td>
+			<td id="inputparams_I7"></td>
+			<td id="inputparams_J7"></td>
+			<td id="inputparams_K7"></td>
+			<td id="inputparams_L7"></td>
+			<td id="inputparams_M7"></td>
+		</tr>
+	</table>
+	<br>
+
+
+	<table class="inputparams_t1">
+		<tr>
+			<td class='title_td' colspan="12">Input ------- 机械件级别</td>
+		</tr>
+
+		<tr class="inputparams_r3">
+			<td>Model</td>
+			<td>电芯厚度(mm)</td>
+			<td>电芯宽度(mm)</td>
+			<td>电芯肩高(mm)</td>
+			<td>壳体大面壁厚(mm)</td>
+			<td>壳体侧面壁厚(mm)</td>
+			<td>壳体底厚(mm)</td>
+			<td>顶盖板厚(mm)</td>
+			<td>支架(下塑胶)高(mm)</td>
+			<td>底托板厚(mm)</td>
+			<td>Mylar厚(mm)</td>
+			<td>顶封宽度理论计算值(mm)</td>
+		</tr>
+		<tr class="inputparams_r1">
+			<td id="inputparams_B11" ext:qtip="机械件组合填写完整显示新模型"></td>
+			<td id="inputparams_C11"></td>
+			<td id="inputparams_D11"></td>
+			<td id="inputparams_E11"></td>
+			<td id="inputparams_F11"></td>
+			<td id="inputparams_G11"></td>
+			<td id="inputparams_H11"></td>
+			<td id="inputparams_I11"></td>
+			<td id="inputparams_J11"></td>
+			<td id="inputparams_K11"></td>
+			<td id="inputparams_L11"></td>
+			<td id="inputparams_M11"></td>
+		</tr>
+	</table>
+	<br>
+
+
+	<table class="inputparams_t1">
+		<tr>
+			<td class='title_td' colspan="12">Input ------- 电芯级别</td>
+		</tr>
+
+		<tr class="inputparams_r4">
+		       <td>Voltage (V)</td>
+               <td>充电 Cell balance</td>
+               <td>Cathode Layers</td>
+               <td>极耳中心距(mm)</td>
+               <td>Anode overhang (mm)</td>
+               <td>Separator overhang(mm)</td>
+               <td>隔膜下压(mm)</td>
+               <td>顶封宽度(mm)</td>
+               <td>阳极距离卷绕底部距离(mm)</td>
+               <td>长度方向阴阳极overhang(mm)</td>
+               <td>Jelly roll(个)</td>
+               <td>阴极1C(mAh/g)</td>
+               <td>容量COV</td>
+               <td>是否方形热压</td>
+               <td>极耳设计</td>
+		</tr>
+		<tr class="inputparams_r1">
+			<td id="inputparams_B15"></td>
+			<td id="inputparams_C15"></td>
+			<td id="inputparams_D15"></td>
+			<td id="inputparams_E15"></td>
+			<td id="inputparams_F15"></td>
+			<td id="inputparams_G15"></td>
+			<td id="inputparams_H15"></td>
+			<td id="inputparams_I15"></td>
+			<td id="inputparams_J15"></td>
+			<td id="inputparams_K15"></td>
+			<td id="inputparams_L15"></td>
+			<td id="inputparams_M15"></td>
+			<td id="inputparams_N15"></td>
+			<td id="inputparams_O15"></td>
+			<td id="inputparams_P15"></td>
+		</tr>
+	</table>
+	<br>
+
+	<table class="inputparams_t1">
+		<tr>
+			<td class='title_td' colspan="12">Input ------- 极片级别</td>
+		</tr>
+
+		<tr class="inputparams_r5">
+			   <td>Item</td>
+               <td><div style="width:100px">Active Material</div></td>
+               <td><div style="width:100px">基材厚度(mm)</div></td>
+               <td><div style="width:100px">扣电1st 去程 Cap.(嵌锂)(mAh/g)</div></td>
+               <td><div style="width:100px">扣电1st 回程 Cap.(脱锂)(mAh/g)</div></td>
+               <td><div style="width:100px">Full cell 1/3C Disc cap.(mAh/g)</div></td>
+               <td><div style="width:100px">Loading</div></td>
+               <td><div style="width:100px">Weight (g/1540mm2)</div></td>
+               <td><div style="width:100px">Density (g/cm3)</div></td>
+               <td><div style="width:100px">卷绕反弹(vs冷压)</div></td>
+               <td><div style="width:100px">化成反弹(vs冷压)</div></td>
+               <td><div style="width:100px">满充反弹(vs冷压)</div></td>
+               <td><div style="width:100px">EOL反弹(vs冷压)</div></td>
+               <td><div style="width:100px">长度延展 (冷压vs涂布)</div></td>
+               <td><div style="width:100px">极片参数是否经过SE确认</div></td>
+               <td><div style="width:80px">连续/间歇涂布</div></td>
+               <td class="hidetd"></td>
+		</tr>
+		<tr class="inputparams_r1">
+			<td>Anode</td>
+			<td id="inputparams_C19"></td>
+			<td id="inputparams_D19"></td>
+			<td id="inputparams_E19"></td>
+			<td id="inputparams_F19"></td>
+			<td id="inputparams_G19"></td>
+			<td id="inputparams_H19"></td>
+			<td id="inputparams_I19"></td>
+			<td id="inputparams_J19"></td>
+			<td id="inputparams_K19"></td>
+			<td id="inputparams_L19"></td>
+			<td id="inputparams_M19"></td>
+			<td id="inputparams_N19"></td>
+			<td id="inputparams_O19"></td>
+			<td id="inputparams_P19"></td>
+			<td id="inputparams_Q19"></td>
+			<td class="hidetd"><div style="width:250px" class="s1">间歇涂布默认第1、2两层为单面区</div></td>
+		</tr>
+		<tr class="inputparams_r1">
+			<td>Cathode</td>
+			<td id="inputparams_C20"></td>
+			<td id="inputparams_D20"></td>
+			<td id="inputparams_E20"></td>
+			<td id="inputparams_F20"></td>
+			<td id="inputparams_G20"></td>
+			<td id="inputparams_H20"></td>
+			<td id="inputparams_I20"></td>
+			<td id="inputparams_J20"></td>
+			<td id="inputparams_K20"></td>
+			<td id="inputparams_L20"></td>
+			<td id="inputparams_M20"></td>
+			<td id="inputparams_N20"></td>
+			<td id="inputparams_O20"></td>
+			<td id="inputparams_P20"></td>
+			<td id="inputparams_Q20"></td>
+			<td class="hidetd"><div style="width:250px" class="s1">间歇涂布默认倒数第1、2两层为单面区</div></td>
+		</tr>
+		<tr class="inputparams_r1">
+			<td rowspan="2">Al foil</td>
+			<td id="inputparams_C21"></td>
+			<td id="inputparams_D21"></td>
+		</tr>
+		<tr class="inputparams_r1">
+			<td id="inputparams_C22"></td>
+			<td id="inputparams_D22"></td>
+			<td class="hidetd"></td>
+		</tr>
+
+		<tr class="inputparams_r4">
+			<td rowspan="5" style="background-color:#FFF">Separater</td>
+			<td id="inputparams_C23"  style="background-color:#FFF"></td>
+			<td id="inputparams_D23"  style="background-color:#FFF"></td>
+			<td class="hidetd"></td>
+			<td>阴极</td>
+			<td>涂布公差(g/1540mm2)</td>
+			<td>冷压公差(mm)</td>
+			<td>单面C.W.(g/1540mm2)</td>
+			<td>Density (g/cm3)</td>
+			<td class="hidetd"></td>
+			<td>阳极</td>
+			<td>涂布公差(g/1540mm2)</td>
+			<td>冷压公差(mm)</td>
+			<td>单面C.W.(g/1540mm2)</td>
+			<td>Density (g/cm3)</td>
+		</tr>
+		<tr class="inputparams_r1">
+			<td id="inputparams_C24"></td>
+			<td id="inputparams_D24"></td>
+			<td class="hidetd"></td>
+			<td>上限</td>
+			<td id="inputparams_G24"></td>
+			<td id="inputparams_H24"></td>
+			<td id="inputparams_I24"></td>
+			<td id="inputparams_J24"></td>
+			<td class="hidetd"></td>
+			<td>下限</td>
+			<td id="inputparams_M24"></td>
+			<td id="inputparams_N24"></td>
+			<td id="inputparams_O24"></td>
+			<td id="inputparams_P24"></td>
+		</tr>
+		<tr class="inputparams_r1">
+			<td id="inputparams_C25"></td>
+			<td id="inputparams_D25"></td>
+			<td class="hidetd"></td>
+			<td>下限</td>
+			<td id="inputparams_G25"></td>
+			<td id="inputparams_H25"></td>
+			<td id="inputparams_I25"></td>
+			<td id="inputparams_J25"></td>
+			<td class="hidetd"></td>
+			<td>上限</td>
+			<td id="inputparams_M25"></td>
+			<td id="inputparams_N25"></td>
+			<td id="inputparams_O25"></td>
+			<td id="inputparams_P25"></td>
+		</tr>
+		<tr class="inputparams_r1">
+			<td id="inputparams_C26"></td>
+			<td id="inputparams_D26"></td>
+			<td class="hidetd noticetitle" colspan="3">参考值:0.8um(1.5mg),1.4um(2.5mg)</td>
+			<td class="hidetd" colspan="3"><div class="s1">参考值:0.8um(1.5mg),1.4um(2.5mg)</div></td>
+			<td class="hidetd"></td>
+			<td class="hidetd"></td>
+			<td class="hidetd"></td>
+			<td class="hidetd"></td>
+			<td class="hidetd"></td>
+			<td class="hidetd"></td>
+			<td class="hidetd"></td>
+			<td class="hidetd"></td>
+			<td class="hidetd"></td>
+		</tr>
+		<tr class="inputparams_r1">
+			<td id="inputparams_C27"></td>
+			<td id="inputparams_D27"></td>
+			<td class="hidetd noticetitle" colspan="3">参考值:5um(1.5mg),8um(2.5mg)</td>
+			<td class="hidetd" colspan="3"><div class="s1">参考值:5um(1.5mg),8um(2.5mg)</div></td>
+			<td style="background-color:silver">极限CB</td>
+			<td style="background-color:silver">首次充电CB</td>
+			<td style="background-color:silver">放电CB</td>
+			<td class="hidetd"></td>
+			<td colspan="2" rowspan="2" style="background-color:silver">阴极脱锂后的不可逆容量(mAh/1540.25mm2)</td>
+			<td colspan="2" rowspan="2" style="background-color:silver">阳极嵌锂后消耗的容量(mAh/1540.25mm2)</td>
+			<td rowspan="2" colspan="2" style="background-color:silver">SOC偏移(阴阳极不可逆容量不均衡，造成实际SOC偏移)</td>
+		</tr>
+		<tr class="inputparams_r1">
+			<td rowspan="2">Pattern</td>
+			<td id="inputparams_C28"></td>
+			<td id="inputparams_D28"></td>
+			<td class="hidetd noticetitle" colspan="3">参考值:0um(假设Gap全部压掉)</td>
+			<td class="hidetd" colspan="3"><div class="s1">参考值:0um(假设Gap全部压掉)</div></td>
+			<td style="background-color:silver">最小值</td>
+			<td id="inputparams_I28"></td>
+			<td id="inputparams_J28"></td>
+		</tr>
+		<tr class="inputparams_r1">
+			<td id="inputparams_C29"></td>
+			<td id="inputparams_D29"></td>
+			<td class="hidetd noticetitle" colspan="3">参考值:20um</td>
+			<td class="hidetd" colspan="3"><div class="s1">参考值:20um</div></td>
+			<td style="background-color:silver">最大值</td>
+			<td id="inputparams_I29"></td>
+			<td id="inputparams_J29"></td>
+			<td class="hidetd"></td>
+			<td id="inputparams_L29" colspan="2"></td>
+			<td id="inputparams_N29" colspan="2"></td>
+			<td id="inputparams_P29" colspan="2"></td>
+		</tr>
+	</table>
+	<br>
+    <div class="s1 paddingd"> 注意：PCS厚度加在隔离摸厚度里，Pattern厚度加在阴极里；是否热压对PCS和Pattern的厚度影响明显，故需区别对待常规热压和方形热压<span class="s1span"><input type="text" id="input_inputparams_L30" readonly="readonly"/></span></div>
+	<table class="inputparams_t1">
+		<tr>
+			<td class="title_td" colspan="2">Input ------- 卷针</td>
+			<td class="hidetd"></td>
+			<td class="title_td" colspan="3">Input ------- 极耳</td>
+			<td class="hidetd"></td>
+			<td class="title_td" colspan="8">Input ------- 电解液</td>
+		</tr>
+
+		<tr class="inputparams_r6">
+			<td>卷针</td>
+			<td>参数</td>
+			<td class="hidetd"></td>
+			<td>上宽(mm)</td>
+			<td>下宽(mm)</td>
+			<td>极耳高度(mm)</td>
+			<td class="hidetd"></td>
+			<td>EL.</td>
+			<td>Weight(g)</td>
+			<td>注液后残空间@25℃(ml)</td>
+			<td>JR总空隙体积@化成后</td>
+			<td>EL总体积/JR总孔隙体积@化成后</td>
+			<td>保液系数(g/Ah)</td>
+			<td>最低保液系数(g/Ah)</td>
+			<td>最高保液系数(g/Ah)</td>
+		</tr>
+		<tr class="inputparams_r1">
+			<td>周长</td>
+			<td id="inputparams_C34"></td>
+			<td class="hidetd"></td>
+			<td id="inputparams_E34"></td>
+			<td id="inputparams_F34"></td>
+			<td id="inputparams_G34"></td>
+			<td class="hidetd"></td>
+			<td id="inputparams_I34"></td>
+			<td id="inputparams_J34"></td>
+			<td id="inputparams_K34"></td>
+			<td id="inputparams_L34"></td>
+			<td id="inputparams_M34"></td>
+			<td id="inputparams_N34"></td>
+			<td id="inputparams_O34"></td>
+			<td id="inputparams_P34"></td>
+		</tr>
+		<tr class="inputparams_r1">
+			<td>首圈周长</td>
+			<td id="inputparams_C35"></td>
+			<td class="hidetd"></td>
+		</tr>
+	</table>
+	<br>
+
+
+	<table class="inputparams_t1">
+		<tr>
+			<td class="title_td" colspan="11">中间计算过程-----极片参数</td>
+		</tr>
+
+		<tr class="inputparams_r4">
+			<td>Electrode</td>
+			<td>箔材厚度@热压前</td>
+			<td>Width</td>
+			<td>连续面膜长@卷绕</td>
+			<td>间歇面膜长@卷绕</td>
+			<td>单面区长度@卷绕</td>
+			<td>Single layer thickness</td>
+			<td>Calender thickness</td>
+			<td>Winding swelling</td>
+			<td>Formation swelling</td>
+			<td>Full charge swelling</td>
+			<td>EOL Swelling</td>
+		</tr>
+		<tr class="inputparams_r1">
+			<td>Anode</td>
+			<td id="inputparams_C39"></td>
+			<td id="inputparams_D39"></td>
+			<td id="inputparams_E39"></td>
+			<td id="inputparams_F39"></td>
+			<td id="inputparams_G39"></td>
+			<td id="inputparams_H39"></td>
+			<td id="inputparams_I39"></td>
+			<td id="inputparams_J39"></td>
+			<td id="inputparams_K39"></td>
+			<td id="inputparams_L39"></td>
+			<td id="inputparams_M39"></td>
+		</tr>
+		<tr class="inputparams_r1">
+			<td>Cathode</td>
+			<td id="inputparams_C40"></td>
+			<td id="inputparams_D40"></td>
+			<td id="inputparams_E40"></td>
+			<td id="inputparams_F40"></td>
+			<td id="inputparams_G40"></td>
+			<td id="inputparams_H40"></td>
+			<td id="inputparams_I40"></td>
+			<td id="inputparams_J40"></td>
+			<td id="inputparams_K40"></td>
+			<td id="inputparams_L40"></td>
+			<td id="inputparams_M40"></td>
+		</tr>
+		<tr class="inputparams_r1">
+			<td>Separater</td>
+			<td id="inputparams_C41"></td>
+			<td id="inputparams_D41"></td>
+			<td id="inputparams_E41"></td>
+		</tr>
+	</table>
+	<br>
+
+
+	<table class="inputparams_t1">
+		<tr>
+			<td class='title_td' colspan="7">中间计算过程 ----- JR厚度尺寸</td>
+		</tr>
+
+		<tr class="inputparams_r3">
+			<td colspan="2">JR 参数_厚度</td>
+			<td>热压后(mm)</td>
+			<td>化成后(mm)</td>
+			<td>满充后(mean)下限(mm)</td>
+			<td>满充后(mean)(mm)</td>
+			<td>满充后(mean)上限(mm)</td>
+			<td>满充后计算的COV(以36水平)</td>
+			<td>EOL</td>
+			<td>壳体内腔厚(mm)</td>
+			<td>建议卷针宽度(mm)</td>
+			<td class="hidetd"></td>
+			<td>电芯厚度COV</td>
+			<td>壳体大面壁厚COV</td>
+		</tr>
+		<tr class="inputparams_r1">
+			<td rowspan="2">设计值</td>
+			<td id="inputparams_C45"></td>
+			<td id="inputparams_D45"></td>
+			<td id="inputparams_E45"></td>
+			<td id="inputparams_F45"></td>
+			<td id="inputparams_G45"></td>
+			<td id="inputparams_H45"></td>
+			<td id="inputparams_I45"></td>
+			<td id="inputparams_J45"></td>
+			<td id="inputparams_K45"></td>
+			<td id="inputparams_L45"></td>
+			<td class="hidetd"></td>
+			<td id="inputparams_N45"></td>
+			<td id="inputparams_O45"></td>
+		</tr>
+		<tr class="inputparams_r1">
+			<td id="inputparams_C46"></td>
+			<td id="inputparams_D46"></td>
+			<td id="inputparams_E46"></td>
+			<td id="inputparams_F46"></td>
+			<td id="inputparams_G46"></td>
+			<td id="inputparams_H46"></td>
+			<td id="inputparams_I46"></td>
+			<td id="inputparams_J46"></td>
+			<td class="hidetd"></td>
+			<td class="hidetd"></td>
+			<td class="hidetd"></td>
+		</tr>
+	</table>
+	<br>
+    <div class="s2 paddingd">注：阴极涂布方式(连续/间歇)会影响空卷隔膜层数</div>
+
+	<table class="inputparams_t1">
+		<tr>
+			<td class='title_td' colspan="6">中间计算过程 ----- JR宽度尺寸(常规热压)</td>
+			<td class="hidetd"></td>
+			<td class='title_td' colspan="5">中间计算过程 ----- JR宽度尺寸(方形热压)</td>
+		</tr>
+
+		<tr class="inputparams_r2">
+			<td colspan="2">JR 参数_宽度</td>
+			<td>常规热压后(mm)</td>
+			<td>常规热压容许的最大值(mm)</td>
+			<td>壳体内腔宽(mm)</td>
+			<td>JR单侧包Mylar层数</td>
+			<td class="hidetd"></td>
+			<td colspan="2">JR 参数_宽度</td>
+			<td>JR Gap from PCS &amp; Pattern</td>
+			<td>JR两侧需要为极片膨胀预留空间</td>
+			<td>方形热压后</td>
+		</tr>
+		<tr class="inputparams_r1">
+			<td rowspan="2">设计值</td>
+			<td id="inputparams_C52"></td>
+			<td id="inputparams_D52"></td>
+			<td id="inputparams_E52"></td>
+			<td id="inputparams_F52"></td>
+			<td id="inputparams_G52"></td>
+			<td class="hidetd"></td>
+			<td rowspan="2">设计值</td>
+			<td>宽度</td>
+			<td id="inputparams_K52"></td>
+			<td id="inputparams_L52"></td>
+			<td id="inputparams_M52"></td>
+		</tr>
+		<tr class="inputparams_r1">
+			<td id="inputparams_C53"></td>
+			<td id="inputparams_D53"></td>
+			<td id="inputparams_E53"></td>
+			<td class="hidetd"></td>
+			<td class="hidetd"></td>
+			<td class="hidetd"></td>
+			<td>群裕度</td>
+			<td id="inputparams_K53" colspan="2"></td>
+			<td id="inputparams_M53"></td>
+		</tr>
+	</table>
+	<table><tr>
+	<td><img src="netmarkets/jsp/catl/battery/image/info_1.png" border=0></td>
+	<td><img style="padding-left:220px" src="netmarkets/jsp/catl/battery/image/info_2.png" border=0></td>
+	</tr></table>
+</body>
+</html>

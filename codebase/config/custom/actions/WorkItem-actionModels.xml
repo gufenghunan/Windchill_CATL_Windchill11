@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE actionmodels SYSTEM "actionmodels.dtd">
+<actionmodels>
+
+
+   <model name="customerFile" resourceBundle="com.catl.change.resource.changeActionRB">
+         <action name="customerFileList" type="catl"/>   
+   </model>
+   
+   
+   <model name="taskDetailsPageTabSet" resourceBundle="wt.workflow.worklist.worklistResource">
+		<submodel name="taskDetailsDetails"/>
+		<submodel name="taskDetailsOthers"/>
+		<submodel name="taskDetailsSetupParticipant"/>
+		<action name="reviewList" type="catl" />  <!--custom  -->
+		<action name="pnTreeList" type="catl" />  <!--custom  -->
+		<submodel name="taskDetailsAdhoc"/>
+		<submodel name="customerFile"/>   <!--custom  -->	
+</model>
+
+
+<model name="workitem third nav">
+  <action name="attributes" type="workitem"/>
+  <action name="routingStatus" type="workitem"/>
+  <action name="notebook" type="workitem"/>
+  <action name="discussions" type="workitem"/>
+  <action name="setupParticipant" type="workitem"/>
+  <action name="adhocActivities" type="workitem"/>
+  <action name="addMultipleObjects" type="workitem"/>
+  <action name="workItem_attachments" type="attachments"/>
+  <action name="customerFileList" type="catl"/>
+  <action name="reviewList" type="catl" />  <!--custom  -->
+   
+ </model>
+
+	<model name="workitem third nav configurable">
+		<action name="attributes" type="workitem"/>
+		<action name="routingStatus" type="workitem"/>
+		<action name="notebook" type="workitem"/>
+		<action name="discussions" type="workitem"/>
+		<action name="setupParticipant" type="workitem"/>
+		<action name="adhocActivities" type="workitem"/>
+		<action name="workflowTaskPboAttributes" type="object"/>
+		<action name="workItemActivityVariables" type="workitem"/>
+		<action name="workItemSignOffComponent" type="workitem"/>
+		<action name="saveComplete" type="workitem"/>
+		<action name="workflowTaskPboAction" type="workitem"/>
+		<action name="reviewTask_ResultingDataTable" type="changeTask"/>
+		<action name="reviewApproveTask_PromotionObjectsTable" type="promotionRequest"/>
+		<action name="completeTask_ResultingDataTable" type="changeTask"/>
+		<action name="workItem_ChangeSummary" type="changeNotice"/>
+		<action name="auditTask_changeSummary" type="changeNotice"/>
+		<action name="workItem_attachments" type="attachments"/>
+		<action name="workItem_AffectedDataTable" type="changeRequest"/>
+		<action name="workItem_AssociatedChangeIssues" type="changeRequest"/>
+		<action name="workItem_RelatedChangeNoticesTable" type="changeRequest"/>
+		<action name="workItem_AffectedDataTable" type="changeTask"/>
+		<action name="workItem_ResultingDataTable" type="changeTask"/>
+		<action name="workItem_implementationPlanTable" type="changeNotice"/>
+		<action name="workItem_RelatedChangeRequestsTable" type="change"/>
+		<action name="workItem_associatedChangeItemTable" type="change"/>
+		<action name="workItem_associatedReferenceItemTable" type="change"/>
+		<action name="workItem_changeWorkItemsTable" type="change"/>
+	 	<action name="customerFileList" type="catl"/>
+        <action name="reviewList" type="catl" />  <!--custom  -->
+        <action name="FillMPN" type="line" />  <!--custom  -->
+        <action name="changeplatform" type="require" />  <!--custom  -->
+         
+ 	</model>
+
+
+
+
+	
+</actionmodels>

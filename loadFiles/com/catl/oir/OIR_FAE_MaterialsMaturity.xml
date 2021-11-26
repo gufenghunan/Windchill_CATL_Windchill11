@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE OrganizationConfig SYSTEM "standardX24.dtd">
+<OrganizationConfig>
+	<TypeBasedRule>
+		<EngineRule isDefault="false" enabled="true">
+			<ruleName>OIR_FAE_MaterialsMaturity</ruleName>
+			<ruleSpecification><![CDATA[
+            <AttributeValues objType="com.CATLBattery.UpgradeFaePartMaturityPN">
+            <!--  set the folder --> 
+                <AttrValue id="folder.id" algorithm="com.ptc.core.foundation.folder.server.impl.FolderPathAttributeAlgorithm">
+                    <Arg>/Default/升级请求</Arg> 
+                </AttrValue>
+            <!--  set the lifecycle --> 
+                <AttrValue id="lifeCycle.id" algorithm="com.ptc.core.foundation.lifecycle.server.impl.LifeCycleTemplateAttributeAlgorithm">
+                    <Arg>LC_FAE物料成熟度升级单</Arg> 
+                </AttrValue>
+            <!--  set the team template --> 
+                <AttrValue id="teamTemplate.id" algorithm="com.ptc.core.foundation.team.server.impl.TeamTemplateAttributeAlgorithm">
+                    <Arg>Default</Arg> 
+                </AttrValue>
+            <!--  set the number to a generated number --> 
+                <AttrValue id="number" algorithm="com.ptc.windchill.enterprise.revisionControlled.server.impl.NumberGenerator">
+                    <Arg>{GEN:wt.enterprise.SequenceGenerator:PROMOTIONNOTICEID_seq:8:0}</Arg> 
+                </AttrValue>
+                
+      <!-- specify AttrConstraint tag -->
+          <AttrConstraint id="lifeCycle.id" algorithm="com.ptc.core.rule.server.impl.GatherAttributeConstraints">              
+               <Value algorithm="com.ptc.core.rule.server.impl.GetServerAssignedConstraint"/>
+               <Value algorithm="com.ptc.core.rule.server.impl.GetImmutableConstraint"/>
+          </AttrConstraint>
+          <AttrConstraint id="lifeCycle" algorithm="com.ptc.core.rule.server.impl.GatherAttributeConstraints">
+               <Value algorithm="com.ptc.core.rule.server.impl.GetServerAssignedConstraint"/>      
+               <Value algorithm="com.ptc.core.rule.server.impl.GetImmutableConstraint"/>
+          </AttrConstraint>
+          <AttrConstraint id="folder.id" algorithm="com.ptc.core.rule.server.impl.GatherAttributeConstraints">
+                <Value algorithm="com.ptc.core.rule.server.impl.GetServerPreGeneratedValue"/>
+                <Value algorithm="com.ptc.core.rule.server.impl.GetRendererConstraint"> 
+                    <Arg>SelectGeneratedFolderByDefault</Arg> 
+				</Value>         
+          </AttrConstraint>
+          <AttrConstraint id="number" algorithm="com.ptc.core.rule.server.impl.GatherAttributeConstraints">
+                <Value algorithm="com.ptc.core.rule.server.impl.GetServerAssignedConstraint"/>
+                <Value algorithm="com.ptc.core.rule.server.impl.GetImmutableConstraint"/>
+          </AttrConstraint>
+          <AttrConstraint id="teamTemplate.id" algorithm="com.ptc.core.rule.server.impl.GatherAttributeConstraints">             
+                <Value algorithm="com.ptc.core.rule.server.impl.GetServerAssignedConstraint"/>                         
+                <Value algorithm="com.ptc.core.rule.server.impl.GetImmutableConstraint"/>
+          </AttrConstraint>
+          <AttrConstraint id="teamTemplate" algorithm="com.ptc.core.rule.server.impl.GatherAttributeConstraints">
+                <Value algorithm="com.ptc.core.rule.server.impl.GetServerAssignedConstraint"/>      
+                <Value algorithm="com.ptc.core.rule.server.impl.GetImmutableConstraint"/>
+          </AttrConstraint>
+          <AttrConstraint id="organization.id" algorithm="com.ptc.core.rule.server.impl.GatherAttributeConstraints">
+                <Value algorithm="com.ptc.core.rule.server.impl.GetServerPreGeneratedValue"> 
+                 <Value algorithm="com.ptc.windchill.enterprise.org.server.impl.OwningOrgDefaultAlgorithm"/> 
+                </Value> 
+          </AttrConstraint>
+          </AttributeValues>
+			]]></ruleSpecification>
+		    <ruleType type="INIT" />
+		</EngineRule>
+		<className>wt.maturity.PromotionNotice|com.CATLBattery.UpgradeFaePartMaturityPN</className>
+	</TypeBasedRule>
+</OrganizationConfig>         

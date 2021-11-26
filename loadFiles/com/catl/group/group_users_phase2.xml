@@ -1,0 +1,111 @@
+<?xml version="1.0" ?><!DOCTYPE NmLoader SYSTEM "standardX24.dtd">
+<NmLoader>
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>PCB小组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60000091</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>PCB小组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60000282</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>PCB小组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60007383</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>PCB小组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60013825</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>PCB小组</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60009033</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>PDM部门成员</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60000048</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>PDM部门成员</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60011763</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>PDM部门成员</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60008318</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>PDM部门成员</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60001039</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>PDM部门成员</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60006230</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>PDM部门成员</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60009525</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>PDM部门成员</csvgroupName>
+    <csvgroupNameDirectoryService></csvgroupNameDirectoryService>
+    <csvuserName>60011547</csvuserName>
+    <csvuserNameDirectoryService></csvuserNameDirectoryService>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+</NmLoader>

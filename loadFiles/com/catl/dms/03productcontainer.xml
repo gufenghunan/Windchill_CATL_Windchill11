@@ -1,0 +1,1137 @@
+<?xml version="1.0" ?><!DOCTYPE NmLoader SYSTEM "standardX24.dtd">
+<NmLoader>
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>SWX</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>CYG</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>SCK</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>ZQY</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>HNC</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>XDL</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>XLV</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>FKC</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>SYX</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>SDQ</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>NSS</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>SHW</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>YZX</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>BKL</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>SFD</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>GZQ</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>CFT</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>ZJH</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>NJL</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>SDL</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>HJL</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>TJN</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>JHA</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>MUC</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>SQE</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>FTC</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>FSE</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>XLM</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>GBD</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>CAC</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>FSA</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>FMA</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>INV</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>SOL</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>PAR</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>ZBB</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>GER</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>CNM</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>GMS</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>GEM</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>QGJ</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>GXB</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>TCT</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>GDR</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>EAB</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>COG</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>HAB</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>HDJ</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>SHP</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>TSL</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>ALF</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>GHE</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>ZLY</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>SKL</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>QHR</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>ZXT</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>AOE</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>ZZT</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>ZZG</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>PLD</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>eCar</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>eBus</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer" >
+    <csvuser>orgadmin</csvuser>
+    <csvname>ESS</csvname>
+    <csvnumber></csvnumber>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvdescription></csvdescription>
+    <csvview></csvview>
+    <csvvariation1></csvvariation1>
+    <csvvariation2></csvvariation2>
+    <csvsource></csvsource>
+    <csvdefaultUnit></csvdefaultUnit>
+    <csvtype></csvtype>
+    <csvcontainerTemplate>CATL Product</csvcontainerTemplate>
+    <csvorganizationName>CATL</csvorganizationName>
+    <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+</NmLoader>

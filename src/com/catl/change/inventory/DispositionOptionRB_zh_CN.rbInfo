@@ -1,0 +1,16 @@
+ResourceInfo.class=wt.tools.resource.EnumResourceInfo
+
+SCRAPIMMEDIATELY.value=立即报废
+SCRAPIMMEDIATELY.order=10
+
+REWORKCOMPLETELY.value=全部返工
+REWORKCOMPLETELY.order=20
+
+SWITCHAFTERUSING.value=用完切换
+SWITCHAFTERUSING.order=30
+
+SCRAPOTHERS.value=配套用完切换，其余报废
+SCRAPOTHERS.order=40
+
+OTHERPROJECTUSE.value=用于其他项目
+OTHERPROJECTUSE.order=50

@@ -1,0 +1,434 @@
+//////////////////////////////////////////////////////////////////////////////////
+//////////// XWorks框架所需的Javascript函数库
+//////////////////////////////////////////////////////////////////////////////////
+
+var XmlObject = {};
+
+// 这个函数废弃，使用下面的validateInputValue函数进行替换
+XmlObject.validateValueByRegExp = function(inputElement, regexpStr, errorMessage) {
+	//window.alert(a);
+	if (inputElement.value == "" ) {
+		return true;
+	}
+	//window.alert(regexpStr);
+	//window.alert(errorMessage);
+	var regexp = new RegExp(regexpStr);
+	//regexp.compile();
+	var value = inputElement.value;
+	//window.alert(regexp);
+	if (!regexp.test(value)) {
+		window.alert(errorMessage);
+		window.setTimeout(function() {
+			inputElement.focus();
+			}, 10);
+		return false;
+	}
+	return true;
+};
+
+// 检查用户输入的值是否符合传入的正则表达式的要求,如果不满足，则显示传入的errorMessage
+XmlObject.validateInputValue = function(inputElement, regexpStr, errorMessage) {
+	var value = inputElement.value;
+    var regexp = new RegExp(regexpStr);
+    if (value) {
+        if (!regexp.test(value)) {
+            var orig_onBlur = inputElement.onblur;
+            inputElement.onblur = undefined;
+
+            //JCAAlert(errorMessageRB, "", []);
+            window.alert(errorMessage);
+
+            // Reset focus to the bad field and restore the old onBlur handler.
+            setTimeout(function(){
+                PTC.wizard.setSelect(inputElement.name);
+                inputElement.onblur = orig_onBlur;
+            }, 5);
+            return false;
+        }
+    }
+    return true;
+};
+
+XmlObject.notifyEventToOtherAttributes = function(inputElement, eventName, attributeName, xmlObjectOid) {
+	
+	var toggleElement = function(elements) {
+		for (var i = 0; i < elements.length; i++) {
+			var e = elements[i];
+			var id = e.getAttribute("id") + "";
+			if (id.indexOf(xmlObjectOid) != -1) {
+				var functionName = e.getAttribute("on_change_stringattr2");
+				if (functionName.indexOf("enableAndRequiredForEdit") != -1) {
+					var func = eval("enableAndRequiredForEdit");
+					var enableWhenIsValue = functionName.substr(functionName.indexOf("|") + 1);
+					func(inputElement, e, enableWhenIsValue);
+				}
+			}
+		}
+	};
+
+	//查找属性名称为on_<eventName>_<attributeName> HTML元素, 并且ID为<xmlObjectOid>开头
+	var htmlAttrName = "on_" + eventName + "_" + attributeName;
+	htmlAttrName = htmlAttrName.toLowerCase();
+	var selector = "textarea[" + htmlAttrName + "]";
+	var elements = $$(selector);
+	toggleElement(elements);
+	
+	selector = "input[" + htmlAttrName + "]";
+	elements = $$(selector);
+	toggleElement(elements);
+	
+	selector = "select[" + htmlAttrName + "]";
+	elements = $$(selector);
+	toggleElement(elements);
+
+};
+
+XmlObject.clearUploadAttachment = function(imgButton, fileUploaderId) {
+	//console.log(attachmentId);
+	var fileUploader = $(fileUploaderId + "");
+	//console.log(typeof attachment);
+	if (typeof fileUploader == "object" && (fileUploader.readAttribute("type") == "file" || fileUploader.readAttribute("type") == "hidden")) {
+		var fileName = fileUploader.readAttribute("value");
+		console.log("fileName=" + fileName);
+		if (fileName == "") {
+			return;
+		}
+		fileUploader.setAttribute("value","");
+		$(fileUploaderId + "_clearUploaded").setAttribute("value", "true");//set _clearUploaded to true
+		
+		// clean the file name displayed 
+		var fileUploaderDisplayText = $(fileUploaderId + "_fileUploaderDisplayText");
+		if (typeof fileUploaderDisplayText == "object") {
+			fileUploaderDisplayText.setAttribute("value", "");
+			fileUploaderDisplayText.value = "";
+			var siblingsOfDisplayText = $(fileUploaderDisplayText).siblings();
+			for (var i = 0; i < siblingsOfDisplayText.length; i++) {
+				var e = siblingsOfDisplayText[i];
+				if (e.tagName == "DIV" && e.readAttribute("class") == "progressBar") {
+					e.hide();
+				}
+			}
+		}
+	}
+};
+
+function enableAndRequiredForEdit(eventSourceElement, targetElement, enableWhenIsValue) {
+	if (eventSourceElement.value == enableWhenIsValue) {
+		targetElement.disabled = false;
+		targetElement.readOnly = false;
+		targetElement.addClassName("required");
+	} else {
+		targetElement.disabled = true;
+		targetElement.readOnly = true;
+		targetElement.removeClassName(("required"));
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////
+//////////// 相关对象分组表格中所需的JS函数
+//////////////////////////////////////////////////////////////////////////////////
+XmlObject.removeObjectsValidation = function(event, messageSource) {
+    var selRows = PTC.jca.table.Utils.getSelectedItmesByEvent(event);
+
+    if (selRows === null || selRows.length === 0) {
+        JCAAlert("com.ptc.netmarkets.util.utilResource.NONE_CHECKED");
+        return false;
+    }
+    else {
+        return JCAConfirm(event,messageSource);
+    }
+};
+
+XmlObject.collectAssociatedObjectValidation = function(event, messageSource) {
+    var selRows = PTC.jca.table.Utils.getSelectedItmesByEvent(event);
+
+    if (selRows === null || selRows.length === 0) {
+        JCAAlert("com.ptc.netmarkets.util.utilResource.NONE_CHECKED");
+        return false;
+    }
+    else {
+        return JCAConfirm(event,messageSource);
+    }
+};
+
+//////////////////////////////////////////////////////////////////////////////////
+//////////// 刷新AttributePanel所需的JS函数
+//////////////////////////////////////////////////////////////////////////////////
+XmlObject.switchAttributePanelToReloadScreen = function (htmlId) {
+	var attributePanelDiv = Ext.get(htmlId);
+	if(attributePanelDiv && attributePanelDiv.dom)  {
+    	var newHTML = "<div style=\"background: url(netmarkets/javascript/ext/resources/images/default/shared/blue-loading.gif) no-repeat center center; height: 100px\">&nbsp;</div>";
+    	PTC.navigation.overwrite(attributePanelDiv.dom, newHTML);
+	}
+};
+
+XmlObject.reloadHtmlElement = function (htmlId, url, extraParams, doFade, doAsync, successFunc) {
+	doAsync = doAsync || false;
+	if (doFade === null || doFade === undefined) {
+	    doFade = true;	
+	}
+	var mainForm = getMainForm();
+	var formData = Ext.lib.Ajax.serializeForm(mainForm);
+	formData = formData + "&portlet=component";
+	if (extraParams === null || extraParams === undefined) {
+		extraParams = "";
+	}
+	if (extraParams != "") {
+		formData = extraParams + "&" + formData; // 将extraParams放在前面，保证extraParams中的参数会覆盖formData中的表单参数
+	}
+	var contextDropDownURL = getPageUrl(url, htmlId);
+	getElementHtml(formData, htmlId, doAsync, contextDropDownURL, doFade, successFunc);
+};
+
+//这个函数用于重新加载Attribute Panel
+XmlObject.reloadAttributePanel = function(attributePanelBuilder, componentId, extraParams, successCallback) {
+	if (componentId == undefined || componentId == "" || componentId == null) {
+		componentId = "attributePanel";
+	}
+	var divId = componentId + "_" + attributePanelBuilder + "__AttributesTablePaneOuter_";
+	// In Windchill 10.2, the id of div html for AttributePanel has a random number suffix, so ...
+	// Windchill 11.0 no this issue!
+	tableDiv = $$("div[id^='" + divId + "']"); // Use Prototype to select div html elements
+	//console.log(typeof tableDiv); //output object
+	if (tableDiv && tableDiv.length > 0) {
+		for (var i = 0; i < tableDiv.length; i++) {
+			//console.log(tableDiv[i].id);
+			divId = tableDiv[i].id;
+			break;
+		}
+	} else {
+		window.alert("Cannot find a div html element:" + divId);
+		return;
+	}
+
+	var url = "/ptc1/comp/" + attributePanelBuilder;
+	XmlObject.switchAttributePanelToReloadScreen(divId);
+	//refreshElement = function(id,url,doFade,doAsync,successFunc)
+	XmlObject.reloadHtmlElement(divId, url, extraParams, false, true, successCallback);
+};
+
+//////////////////////////////////////////////////////////////////////////////////
+//////////// Item Picker 相关的支持函数
+//////////////////////////////////////////////////////////////////////////////////
+function xworksPickerInputComponentCallback(objects, pickerID, attr, displayFieldId) {
+    var updateHiddenField = document.getElementsByName(pickerID)[0];
+    var updateDisplayField = document.getElementsByName(displayFieldId)[0];
+    if(updateDisplayField) {
+        PTC.util._setMainFormStartingElement(updateDisplayField);
+    }
+    var myJSONObjects = objects.pickedObject;
+    var attrArray = [attr];
+    if (typeof attr == 'string') {
+    	var displayAttributeNames = attr.replace(" ","");
+    	if(displayAttributeNames.indexOf(",") > 0) {
+    		var attrArrayTemp = displayAttributeNames.split(",");
+    		attrArray = [];
+    		for (var i = 0; i< attrArrayTemp.length; i++) {
+    			//window.alert(attrArray[i]);
+    			attrArray.push(attrArrayTemp[i]);
+    		}
+    	}
+    }
+    for (var i = 0; i < myJSONObjects.length; i++) {
+        var oid = myJSONObjects[i].oid;
+        var displayAttr = "";
+        if (attrArray.length == 1) {
+        	// 只有一个属性
+        	displayAttr = myJSONObjects[i][attrArray[0]];
+        } else {
+    		// 有多个属性,则将多个属性链接起来    		
+    		for (var j = 0; j< attrArray.length; j++) {
+    			if (j == 0) {
+    				displayAttr = myJSONObjects[i][attrArray[j]];
+    			} else {
+    				displayAttr = displayAttr + ", " +  myJSONObjects[i][attrArray[j]];
+    			}
+    		}
+        }
+        updateHiddenField.value = oid;
+        updateDisplayField.value = displayAttr;
+    }
+}
+
+//////////////////////////////////////////////////////////////////////////////////
+//////////// Folder Picker 相关的支持函数
+//////////////////////////////////////////////////////////////////////////////////
+XmlObject.clearFolderPicker = function (valueFieldId, displayFieldId) {
+	var valueFieldElement = document.getElementById(valueFieldId);
+	var displayFieldElement = document.getElementById(displayFieldId);
+	valueFieldElement.value = "";
+	displayFieldElement.value = "";
+	displayFieldElement.title = "";
+};
+
+XmlObject.openFolderPickerWindow = function(valueFieldId, displayFieldId) {
+	var folderOid = document.getElementById(valueFieldId).value;
+	var folderPickerCallbackElements = document.getElementsByName(valueFieldId + "_folderPickerCallback");
+	if (folderPickerCallbackElements == null || folderPickerCallbackElements.length == 0) {
+		window.alert("ERROR: Cannot get folderPickerCallback");
+	}
+	var folderPickerCallback = folderPickerCallbackElements[0].value;
+	var params = {'valueFieldId':valueFieldId,'displayFieldId':displayFieldId,'folderOid':folderOid,'folderPickerCallback':folderPickerCallback};
+	var url = "ptc1/xworks/folderPicker/folderPicker";
+	url = url + "?" + Ext.urlEncode(params);
+	popupAction('folderPicker_xmlobject', url, '','','','','','','','','','','','','portlet', 'poppedup', 'context', '','oid', '', '', 'none', 'com.ptc.xworks.xmlobject.web.guifactory.FolderPickerFormProcessor', '', 'height=800,width=500', '','', false, '', 'component', '',false, '');
+
+};
+
+XmlObject.folderPickerCallback = function(valueFieldId, folderOid, displayFieldId, location) {
+	var valueField = document.getElementById(valueFieldId);
+	var displayField = document.getElementById(displayFieldId);
+	//window.alert(displayFieldId + "=" + location);
+	valueField.value = folderOid;
+	displayField.value = location;
+	displayField.title = location;
+};
+
+//////////////////////////////////////////////////////////////////////////////////
+////// Copy的OOTB的Ext.ux.grid.BufferView的doClean代码
+////// 参见Windchill\codebase\netmarkets\javascript\util\ext-and-extensions-debug.js
+//////////////////////////////////////////////////////////////////////////////////
+var ootb_Ext_ux_grid_BufferView_doClean = function() {
+    try {
+    if (this.ds !== undefined && this.getVisibleRowCount() > 0) {
+        var vr = this.getVisibleRows();
+        var first = vr.first - this.cacheSize;
+        var last = vr.last + this.cacheSize;
+
+        var i = 0, rows = this.getRows();
+        // if first is less than 0, all rows have been rendered
+        // so lets clean the end...
+        if(first <= 0){
+            i = last + 1;
+        }
+        var rows_length = rows.length;
+        for (var len = this.ds.getCount(); i < len; i++) {
+            // if current row is outside of first and last and
+            // has content, update the innerHTML to nothing
+            var row = rows[i];
+            if (!this.isVisible(i, vr) && i < rows_length && this._cache[i] !== undefined) {                    
+                if (this.variableRowHeight === true && (this._rowHeightCache[i] === undefined || row.style.height === 'auto' || row.style.height==='')) {
+                    var rh = row.offsetHeight;
+                    row.style.height = (rh - this.borderHeight)+"px"; 
+                    this._rowHeightCache[i] = rh;
+                }
+                this.preCleanRow(row);
+                if (Ext.isIE) {
+                    PTC.util.purge(row, true);
+                }
+                row.innerHTML = '';
+                delete this._cache[i];
+                delete this._ghostCache[i];
+            }
+        }
+    }
+    } catch (e) {
+        jsca.log(e);
+        //EXT PTC OVERRIDE - rows can be deleted from operations while the clean up in in process.
+    }
+};
+
+
+//////////////////////////////////////////////////////////////////////////////////
+////// 在流程表单页面，判断传入的路由是否已经被选中
+//////////////////////////////////////////////////////////////////////////////////
+XmlObject.isRoutingSelected = function(vote) {
+	var routingChoices = $$("input[id^=routingChoice_]");
+	if (routingChoices.length > 0) {
+		for (var i = 0; i < routingChoices.length; i++) {
+			if (routingChoices[i].checked == true && vote == routingChoices[i].value) {
+				return true;
+			}
+		}
+	}
+	return false;
+};
+
+
+/**
+ * 用于限制用户在TextBox或TextArea中的输入的最大值，用于替换OOTB的JS函数PTC.wizard.limitCharsOnKeyPress()
+ * an error alert is given
+ * @param {Object} fieldName html field name (eg. input, textarea, etc.)
+ * @param {Object} maxByteLength maxium allowed bytes (necessary for multibyte chars)
+ * @param {Object} maxStringLength max amount of latin chars allows in field
+ * @param {Object} e user key e from the browser (most likely a "onkeypress" in this case)
+ */
+XmlObject.limitCharsOnKeyPress = function(field, maxByteLength, maxStringLength, e){
+    var result = true;
+    // check if all necessary params were sent in
+    if (field && e) {
+        var keynum = e.keyCode ? e.keyCode /*IE*/ : e.which /*Firefox*/;
+
+        //do not limitChars if user is pressing keys like delete, directional, etc.
+        if (PTC.util.isCharInputKey(e)) {
+            // If text is selected in the field, it will replace this text so allow it
+            if (PTC.util.eventTargetHasSelection(e)) {
+                return true;
+            }
+
+            var elVal = XmlObject.getElementValue(field);
+            if (elVal === null) {
+                return true;
+            }
+
+            var newChar = String.fromCharCode(keynum);
+
+            // first check against string length, as string length is always less than byte length
+            var fieldStringLength = elVal.length;
+            var toAddStringLength = newChar.length;
+            result = PTC.wizard.isNotGreaterThanMax((fieldStringLength + toAddStringLength), maxStringLength, e);
+            if (!result) { // return early if string is longer than max
+                return result;
+            }
+
+            // next check if the length exceeds the max byte length
+            var newTotalByteLength = PTC.util.getByteLength(elVal) + PTC.util.getByteLength(newChar);
+            var key='com.ptc.core.ui.errorMessagesRB.NEW_TEXT_AREA_LENGTH_EXCEED_BYTE';
+            result = PTC.wizard.isNotGreaterThanMax(newTotalByteLength, maxByteLength, e, key);
+        }
+    }
+    return result;
+};
+
+/**
+ * 用于替换OOTB的JS函数PTC.wizard.getElementValueByName()
+ */
+XmlObject.getElementValue = function(field) {
+    var elems = field;
+    if (!elems) {
+        return null;
+    }
+    // if there was more than one field found with the given name, just use the 1st one found by default
+    var el = elems;
+    return el.value;
+};
+
+/**
+ * 用于替换OOTB的JS函数PTC.wizard.limitChars()
+ * Used for onblur of text boxes and text areas. If, onblur, the text exceeds the allowed lengths, return an error msg.
+ * @param {Object} fieldName
+ * @param {Object} maxByteLength
+ * @param {Object} maxStringLength
+ * @param {Object} e
+ */
+XmlObject.limitChars = function(field, maxByteLength, maxStringLength, e){
+    var result = true;
+    if (field) {
+        var elVal = XmlObject.getElementValue(field);
+        if (elVal === null) {
+            return result;
+        }
+
+        // first check against string length, as string length is always less than byte length
+        result = PTC.wizard.isNotGreaterThanMax(elVal.length, maxStringLength, e);
+        if (!result) {  // return early if string is longer than max
+            return result;
+        }
+
+        // next check if the length exceeds the max byte length
+         var key='com.ptc.core.ui.errorMessagesRB.NEW_TEXT_AREA_LENGTH_EXCEED_BYTE';
+        result = PTC.wizard.isNotGreaterThanMax(PTC.util.getByteLength(elVal), maxByteLength, e, key);
+    }
+    return result;
+};
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listofactions SYSTEM "actions.dtd">
+<listofactions>
+    
+    <objecttype name="catl" >
+		 <action name="customerFileList" resourceBundle="com.catl.change.resource.changeActionRB">
+			 <component name="workflowTask.pbo"  urlParams="pboCompId=netmarkets.notebookfolder.referenceNotebook"/>
+		  </action>
+		  
+		  <action name="customerFileOnECN" resourceBundle="com.catl.change.resource.changeActionRB">
+			 <component name="netmarkets.notebookfolder.referenceNotebook" windowType="page"/>
+                   <includeFilter name="hideIfNoCustomerFile"/>
+		  </action>
+		  
+		  <action name="reviewList" resourceBundle="com.catl.common.resource.CatlActionRB">
+		  	   <component name ="com.catl.process.mvc.builder.ProcessStatusTableBuilder"/>
+	      </action>
+	      <action name="pnTreeList" resourceBundle="com.catl.common.resource.CatlActionRB">
+		  	   <component name ="com.catl.promotion.mvc.PromotionTreeTableBuilder"/>
+		  	   <includeFilter name="PNTreeListFilter"/>
+	      </action>
+	      
+    </objecttype>
+
+   
+	
+</listofactions>

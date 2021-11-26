@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.ptc.com/schema/mvc"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+http://www.ptc.com/schema/mvc http://www.ptc.com/schema/mvc/mvc-10.0.xsd">
+
+	<mvc:builder-scan base-package="com.ptc.mvc.builders" />
+	<mvc:builder-scan base-package="com.ptc.core.ui.actiongroup" />
+
+	<bean class="com.ptc.jca.mvc.builders.DefaultEditAttributesWizStepBuilder" />
+	<bean class="com.ptc.jca.mvc.builders.DefaultInfoComponentBuilder" />
+	<bean class="com.ptc.jca.mvc.builders.DefaultMiniInfoComponentBuilder" />
+	<bean class="com.ptc.jca.mvc.builders.DefaultSetAttributesWizStepBuilder" />
+	<bean class="com.ptc.jca.mvc.builders.DefineItemAttributesWizStepBuilder" />
+	<bean class="com.ptc.jca.mvc.builders.PrimaryAttributesBuilder" />
+	<bean class="com.ptc.jca.mvc.builders.TypedAttributesPanelBuilder" />
+	<bean class="com.ptc.jca.mvc.builders.VisualizationAttributesBuilder" />
+	
+	<!-- Overridden for unit tests -->
+	<bean id="defaultHandlerMappings"
+		class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+		<property name="location"
+			value="classpath:/config/mvc/common-urlMappings.properties" />
+	</bean>
+
+	<!-- Validates ComponentBuilder annotations -->
+	<bean
+		class="com.ptc.mvc.components.support.ComponentBuilderBeanPostProcessor">
+		<property name="typeBasedBeanNameFactory" ref="typeBasedBeanNameFactory" />
+		<property name="componentConfigFactory" ref="jcaComponentConfigFactory" />
+		<property name="infoComponentConfigFactory">
+			<bean class="com.ptc.mvc.components.DefaultInfoComponentConfigFactory">
+				<property name="jcaComponentConfigFactory" ref="jcaComponentConfigFactory" />
+			</bean>
+		</property>
+		<property name="typedAttrLayOutFactory">
+			<bean class="com.ptc.jca.mvc.components.JcaTypedAttrLayOutFactory" />
+		</property>
+	</bean>
+
+	<!-- Creates ComponentConfig implementations -->
+	<bean name="jcaComponentConfigFactory" class="com.ptc.jca.mvc.components.JcaComponentConfigFactory"
+		factory-method="getInstance" />
+
+	<!-- A base configuration for component handler mappings -->
+	<bean id="abstractComponentHandlerMapping" abstract="true"
+		class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="interceptors">
+			<list>
+				<ref bean="pageModelInterceptor" />
+			</list>
+		</property>
+	</bean>
+
+	<!-- The default component handler mapping. Note that the defaultHandler 
+		property means that this mapping will catch every request that falls to it, 
+		and thus this mapping is unordered -->
+	<bean id="componentHandlerMapping" parent="abstractComponentHandlerMapping">
+		<property name="interceptors">
+			<list>
+				<ref bean="mobileRequestInterceptor" />
+				<ref bean="pageModelInterceptor" />
+				<ref bean="typeBasedRedirectionInterceptor" />
+			</list>
+		</property>
+		<property name="mappings" ref="componentHandlerMappings" />
+		<property name="defaultHandler" ref="netmarketsController" />
+	</bean>
+
+	<bean id="componentHandlerMappings"
+		class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+		<property name="properties">
+			<props>
+				<prop key="/comp/**">componentController</prop>
+				<prop key="/tcomp/**">typeBasedComponentController
+				</prop>
+			</props>
+		</property>
+	</bean>
+
+	<!-- handles redirection if resolvers for the context object is not available 
+		[only for type-based lookup requests] -->
+	<bean id="typeBasedRedirectionInterceptor"
+		class="com.ptc.jca.mvc.components.TypeBasedRedirectionInterceptor">
+		<property name="mappings">
+			<bean
+				class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+				<property name="location"
+					value="classpath:/config/mvc/redirection.properties" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="pageModelInterceptor"
+		class="com.ptc.jca.mvc.components.JcaPageModelHandlerInterceptor" />
+
+	<bean id="mobileRequestInterceptor"
+		class="com.ptc.jca.mvc.components.DefaultMobileRequestRedirectionInterceptor" />
+	
+	<!-- Handles legacy netmarkets urls -->
+	<bean id="netmarketsController" class="com.ptc.jca.mvc.controllers.LegacyController">
+		<property name="resourceRequestHandler">
+			<bean class="org.springframework.web.servlet.resource.ResourceHttpRequestHandler">
+			<property name="locations" value="#{T(com.ptc.jca.mvc.controllers.CodebaseResourceLocator).getCodebaseResourceLocation()}" />
+			</bean>
+		</property>
+	</bean>
+
+	<!-- ComponentController Beans -->
+	<bean id="componentController" class="com.ptc.mvc.components.ComponentController">
+		<property name="componentBuilderResolver" ref="jcaComponentBuilderResolver" />
+		<property name="componentParamsFactory">
+			<bean class="com.ptc.jca.mvc.components.JcaComponentParamsFactory" />
+		</property>
+		<property name="defaultViewMappings">
+			<map>
+				<entry key="com.ptc.mvc.components.TreeConfig" value="/components/tree.jsp" />
+				<entry key="com.ptc.mvc.components.TableConfig" value="/components/table.jsp" />
+				<entry key="com.ptc.mvc.components.AttributesTableConfig"
+					value="/components/table.jsp" />
+				<entry key="com.ptc.mvc.components.AttributePanelConfig"
+					value="/components/attributePanel.jsp" />
+			</map>
+		</property>
+		<property name="componentBuilderInterceptor" ref="componentBuilderInterceptor" />
+	</bean>
+
+	<alias alias="componentBuilderInterceptor" name="jcaComponentBuilderInterceptor" />
+	<bean id="jcaComponentBuilderInterceptor"
+		class="com.ptc.jca.mvc.components.JcaComponentBuilderInterceptor" />
+
+	<!-- Converts raw data into ComponentData, using DataUtilities -->
+	<!--bean id="jcaComponentDataConverter" class="com.ptc.jca.mvc.components.JcaComponentDataConverter" /-->
+	<bean id="jcaComponentDataConverter" class="com.ptc.jca.mvc.components.XmlObjectSupportedJcaComponentDataConverter" />
+
+	<bean id="jcaComponentDataBuilder"
+		class="com.ptc.jca.mvc.components.DefaultJcaComponentDataBuilder"
+		scope="prototype">
+		<property name="componentDataConverter" ref="jcaComponentDataConverter" />
+	</bean>
+	<!-- Wraps app developer builders in a JCA builder, which converts raw data 
+		into component data -->
+	<bean id="jcaComponentBuilderResolver" class="com.ptc.jca.mvc.components.JcaComponentBuilderResolver">
+		<property name="internalResolver">
+			<!-- This is defaulted in mvc.xml and overridden in CoreHtmlComp-configs.xml -->
+			<ref bean="configurableComponentBuilderResolver" />
+		</property>
+		<lookup-method name="createJcaDataBuilder" bean="jcaComponentDataBuilder" />
+	</bean>
+
+	<bean id="typeBasedComponentController" class="com.ptc.mvc.components.ComponentController"
+		parent="componentController">
+		<property name="componentBuilderResolver" ref="typeBasedComponentBuilderResolver" />
+	</bean>
+
+	<!-- The ComponentBuilderResolver for a typeBasedLook up -->
+	<bean id="typeBasedComponentBuilderResolver"
+		class="com.ptc.jca.mvc.components.TypeBasedComponentBuilderResolver"
+		parent="jcaComponentBuilderResolver">
+		<property name="beanNameFactory" ref="typeBasedBeanNameFactory" />
+	</bean>
+
+
+
+	<!-- Beans used in properties file -->
+	<bean id="actionController" class="com.ptc.jca.mvc.controllers.ActionController" />
+	<bean id="actionsMenuController" class="com.ptc.jca.mvc.controllers.ActionsMenuController" />
+	<bean id="typeBasedIncludeController" class="com.ptc.jca.mvc.controllers.TypeBasedIncludeController" />
+	<bean id="uiValidationAJAXController" class="com.ptc.jca.mvc.controllers.UIValidationAJAXController" />
+	<bean id="recentListController" class="com.ptc.jca.mvc.controllers.RecentListController" />
+	<bean id="navigationController" class="com.ptc.jca.mvc.controllers.NavigationController" />
+	<bean id="suggestController" class="com.ptc.jca.mvc.controllers.SuggestController" />
+	<bean id="appController"
+		class="org.springframework.web.servlet.mvc.ParameterizableViewController">
+		<property name="viewName" value="/WEB-INF/jsp/shell.jsp" />
+        <!-- Injecting supportedMethods as Spring 4.3.2 does not support POST method for ParameterizableViewController-->
+        <property name="supportedMethods">
+            <list>
+                <value>GET</value>
+                <value>POST</value>
+                <value>HEAD</value>
+            </list>
+        </property>
+	</bean>
+	<bean class="com.ptc.jca.mvc.controllers.ServerStateController" />
+	<bean class="com.ptc.jca.mvc.controllers.Log4JavascriptController" />
+	<bean class="com.ptc.jca.mvc.controllers.TabController" />
+	<bean class="com.ptc.jca.mvc.controllers.NumericController" />
+	<bean class="com.ptc.jca.mvc.controllers.BreadCrumbController" />
+    <bean class="com.ptc.jca.mvc.controllers.WTPropertiesController" />
+	<bean class="com.ptc.jca.mvc.controllers.HomePageController" />
+	<bean class="com.ptc.jca.mvc.controllers.MyStuffPageTabController" />
+    <bean class="com.ptc.jca.mvc.controllers.RecomputeDefaultTypeController" />
+    <bean class="com.ptc.jca.mvc.controllers.ThingWorxController" />
+	<!-- Parent defined in mvc.xml -->
+	<bean id="dataSourcePoller" parent="abstractDataSourcePoller">
+		<property name="writer">
+			<bean class="com.ptc.jca.mvc.components.JcaDataSourceResultSerializer">
+				<constructor-arg>
+					<!-- Configured in applicationContext.xml -->
+					<ref bean="dataSourceConfig" />
+				</constructor-arg>
+			</bean>
+		</property>
+	</bean>
+
+	<!-- LifeCycle State Diagram -->
+	<bean
+		class="com.ptc.core.components.lifecyclediagram.LifecycleStateDiagramController" />
+	<!--External Request -->
+	<bean class="com.ptc.jca.mvc.controllers.ExternalRequestController" />
+	<bean class="com.ptc.jca.mvc.controllers.ExternalRequestCallBackController" />
+	<bean id="actionGroupController" class="com.ptc.core.ui.actiongroup.ActionGroupController" />
+    
+    <!-- URL Validation Handler Configuration  -->
+    <bean id="jcaURLValidationHandler" class="com.ptc.core.ui.validation.JCAURLValidationFilterHandler" />
+    <bean id="tpURLValidationHandler" class="com.ptc.core.ui.validation.TPURLValidationFilterHandler" />
+    <bean id="gwtURLValidationHandler" class="com.ptc.core.ui.validation.GWTURLValidationFilterHandler" />
+
+    <bean class="com.ptc.core.ui.validation.URLValidationHelper"
+        factory-method="getInstance" lazy-init="false" scope="singleton">
+        <property name="URLValidationFilterHandlerMap">
+            <map>
+                <entry key="/com.ptc.windchill.wncgwt.WncGWT/**" value-ref="gwtURLValidationHandler" />
+                <entry key="/wt.enterprise.URLProcessor/**" value-ref="tpURLValidationHandler" />
+            </map>
+        </property>
+        <property name="defaultHandler" ref="jcaURLValidationHandler"/>
+    </bean>
+
+</beans>

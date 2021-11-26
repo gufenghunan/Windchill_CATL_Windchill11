@@ -1,0 +1,198 @@
+<?xml version="1.0" standalone="yes"?>
+<!DOCTYPE PROCESS>
+<PROCESS NAME="Create-Object">
+  <webject name="Do-SQL" type="ACT">
+    <param name="INSTANCE"  data="${@FORM[]w4cinstance[]}"/>
+    <param name="DBUSER" data="w4c"/>
+    <param name="PASSWD" data="w4c"/>
+    <param name="SQL"       data="CREATE TABLE ${@FORM[]tablename1[]}(
+    	Old_CATL_PN VARCHAR2(60), 
+	    PART_NUMBER VARCHAR2(60) PRIMARY KEY, 
+	    Description VARCHAR2(2000), 
+	    Part_type VARCHAR2(200),
+	    Grade VARCHAR2(40),
+	    Category VARCHAR2(200),
+	    Value VARCHAR2(200),
+	    Tolerance VARCHAR2(200),
+	    Withstanding_Voltage VARCHAR2(200),
+	    
+	    Schematic_Part VARCHAR2(200),
+	    Component_Footprint VARCHAR2(200),
+	    Assembly_Type VARCHAR2(200),
+	    Old_Footprint VARCHAR2(200),
+	    ALT_SYMBOLS VARCHAR2(200),
+	    EDADOC_Footprint VARCHAR2(200),
+	    IPC7351_Footprint_A_Maximum VARCHAR2(200),
+	    IPC7351_Footprint_B_Normal VARCHAR2(200),
+	    IPC7351_Footprint_C_Minimum VARCHAR2(200),
+	    Vibration_Footprint VARCHAR2(200),
+	    
+	    Manufacturer1 VARCHAR2(200),
+	    MPN1 VARCHAR2(200),
+	    Datasheet1 VARCHAR2(200),
+	    Working_Temperature_Range VARCHAR2(200),
+	    Soldering_Temperature VARCHAR2(200),
+	    MSL_Level VARCHAR2(200),
+	    RoHS VARCHAR2(200),
+	    Pb_Free VARCHAR2(200),
+	    Halogen_Free VARCHAR2(200),
+	    Packaging VARCHAR2(200),
+	    
+	    PPM VARCHAR2(200),
+	    Power VARCHAR2(200),
+	    Material VARCHAR2(200),
+	    Diameter VARCHAR2(200),
+	    Height VARCHAR2(200),
+	    Bobbin_Number VARCHAR2(200),
+	    Core_Type VARCHAR2(200),
+	    Junction_Temperature_Range VARCHAR2(200),
+	    RDS_on VARCHAR2(200),
+	    Insulation_Voltage VARCHAR2(200),
+	    
+	    Connector_Color VARCHAR2(200),
+	    Frequency VARCHAR2(200),
+	    Functional_Classification VARCHAR2(200),
+	    Rated_Current VARCHAR2(200),
+	    Rated_Voltage VARCHAR2(200),
+		catl_Current VARCHAR2(200),
+	    Measure_Range VARCHAR2(200),
+	    Driving_Voltage VARCHAR2(200),
+	    Pin_Quantity VARCHAR2(200),
+		Pin_Spacing VARCHAR2(200),
+	    
+	    Insulation_Resistance VARCHAR2(200),
+	    Pin_Film VARCHAR2(200),
+	    Flame_Retardancy VARCHAR2(200),
+	    Inbreaking_Protection_Grade VARCHAR2(200),
+	    Contact_Resistance VARCHAR2(200),
+	    Voltage VARCHAR2(200),
+	    Special_Explanation VARCHAR2(200),
+	    Applicant_Name VARCHAR2(200),
+	    Ver VARCHAR2(200),
+	    MATERIAL_NAME VARCHAR2(200),
+	    State VARCHAR2(200),
+	    
+	    MATERIAL_SPECIFICATION VARCHAR2(2000),
+	    UNIT VARCHAR2(200),
+	    Manufacturer2 VARCHAR2(200),
+	    MPN2 VARCHAR2(200),
+	    Datasheet2 VARCHAR2(200),
+	    MPN3 VARCHAR2(200),
+	    Manufacturer3_PN VARCHAR2(200),
+	    Datasheet3 VARCHAR2(200),
+	    CATL_PN_2nd VARCHAR2(200),
+	    MATERIAL_NAME_2nd VARCHAR2(200),
+	    
+	    MATERIAL_SPECIFICATION_2nd VARCHAR2(200),
+	    CATL_PN_3rd VARCHAR2(200),
+	    MATERIAL_NAME_3rd VARCHAR2(200),
+	    MATERIAL_SPECIFICATION_3rd VARCHAR2(200)
+    )"/>
+    
+    <param name="SQL"       data="CREATE TABLE ${@FORM[]tablename2[]}(
+    	Old_CATL_PN VARCHAR2(60), 
+	    PART_NUMBER VARCHAR2(60) PRIMARY KEY, 
+	    Description VARCHAR2(2000), 
+	    Part_type VARCHAR2(200),
+	    Grade VARCHAR2(40),
+	    Category VARCHAR2(200),
+	    Value VARCHAR2(200),
+	    Tolerance VARCHAR2(200),
+	    Withstanding_Voltage VARCHAR2(200),
+	    
+	    Schematic_Part VARCHAR2(200),
+	    Component_Footprint VARCHAR2(200),
+	    Assembly_Type VARCHAR2(200),
+	    Old_Footprint VARCHAR2(200),
+	    ALT_SYMBOLS VARCHAR2(200),
+	    EDADOC_Footprint VARCHAR2(200),
+	    IPC7351_Footprint_A_Maximum VARCHAR2(200),
+	    IPC7351_Footprint_B_Normal VARCHAR2(200),
+	    IPC7351_Footprint_C_Minimum VARCHAR2(200),
+	    Vibration_Footprint VARCHAR2(200),
+	    
+	    Manufacturer1 VARCHAR2(200),
+	    MPN1 VARCHAR2(200),
+	    Datasheet1 VARCHAR2(200),
+	    Working_Temperature_Range VARCHAR2(200),
+	    Soldering_Temperature VARCHAR2(200),
+	    MSL_Level VARCHAR2(200),
+	    RoHS VARCHAR2(200),
+	    Pb_Free VARCHAR2(200),
+	    Halogen_Free VARCHAR2(200),
+	    Packaging VARCHAR2(200),
+	    
+	    PPM VARCHAR2(200),
+	    Power VARCHAR2(200),
+	    Material VARCHAR2(200),
+	    Diameter VARCHAR2(200),
+	    Height VARCHAR2(200),
+	    Bobbin_Number VARCHAR2(200),
+	    Core_Type VARCHAR2(200),
+	    Junction_Temperature_Range VARCHAR2(200),
+	    RDS_on VARCHAR2(200),
+	    Insulation_Voltage VARCHAR2(200),
+	    
+	    Connector_Color VARCHAR2(200),
+	    Frequency VARCHAR2(200),
+	    Functional_Classification VARCHAR2(200),
+	    Rated_Current VARCHAR2(200),
+	    Rated_Voltage VARCHAR2(200),
+		catl_Current VARCHAR2(200),
+	    Measure_Range VARCHAR2(200),
+	    Driving_Voltage VARCHAR2(200),
+	    Pin_Quantity VARCHAR2(200),
+		Pin_Spacing VARCHAR2(200),
+	    
+	    Insulation_Resistance VARCHAR2(200),
+	    Pin_Film VARCHAR2(200),
+	    Flame_Retardancy VARCHAR2(200),
+	    Inbreaking_Protection_Grade VARCHAR2(200),
+	    Contact_Resistance VARCHAR2(200),
+	    Voltage VARCHAR2(200),
+	    Special_Explanation VARCHAR2(200),
+	    Applicant_Name VARCHAR2(200),
+	    Ver VARCHAR2(200),
+	    MATERIAL_NAME VARCHAR2(200),
+	    State VARCHAR2(200),
+	    
+	    MATERIAL_SPECIFICATION VARCHAR2(2000),
+	    UNIT VARCHAR2(200),
+	    Manufacturer2 VARCHAR2(200),
+	    MPN2 VARCHAR2(200),
+	    Datasheet2 VARCHAR2(200),
+	    MPN3 VARCHAR2(200),
+	    Manufacturer3_PN VARCHAR2(200),
+	    Datasheet3 VARCHAR2(200),
+	    CATL_PN_2nd VARCHAR2(200),
+	    MATERIAL_NAME_2nd VARCHAR2(200),
+	    
+	    MATERIAL_SPECIFICATION_2nd VARCHAR2(200),
+	    CATL_PN_3rd VARCHAR2(200),
+	    MATERIAL_NAME_3rd VARCHAR2(200),
+	    MATERIAL_SPECIFICATION_3rd VARCHAR2(200)
+    )"/>
+    
+    <param name="SQL"       data="CREATE TABLE ${@FORM[]tablename3[]}(
+    	Old_CATL_PN VARCHAR2(60), 
+	    PART_NUMBER VARCHAR2(60) PRIMARY KEY, 
+	    Description VARCHAR2(2000), 
+	    Part_type VARCHAR2(200),
+	    Value VARCHAR2(200),
+	    Schematic_Part VARCHAR2(200),
+	    Old_Footprint VARCHAR2(200),
+	    Applicant_Name VARCHAR2(200),
+	    Ver VARCHAR2(200),
+	    MATERIAL_NAME VARCHAR2(200),
+	    State VARCHAR2(200),
+	    MATERIAL_SPECIFICATION VARCHAR2(2000),
+	    UNIT VARCHAR2(200)
+    )"/>
+    
+    <param name="SQL" data="CREATE OR REPLACE VIEW ${@FORM[]viewname1[]} AS SELECT * FROM ${@FORM[]tablename1[]}"/>
+    <param name="SQL" data="CREATE OR REPLACE VIEW ${@FORM[]viewname2[]} AS SELECT * FROM ${@FORM[]tablename2[]}"/>
+    <param name="SQL" data="CREATE OR REPLACE VIEW ${@FORM[]viewname3[]} AS SELECT * FROM ${@FORM[]tablename3[]}"/>
+   
+    <param name="GROUP_OUT" data="groupout"/>
+  </webject>
+</PROCESS>

@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<!DOCTYPE listofactions SYSTEM '../../actions.dtd'>
+<listofactions>
+   <objecttype name="promotionRequest" class="wt.maturity.PromotionNotice" resourceBundle="com.ptc.windchill.enterprise.maturity.promotionRequestActionsRB">
+      <action name="promotionItemsTable">
+      	 <component name="promotionRequest.promotionItems.table"/>
+         <description>Promotion items table</description>
+      </action>
+      <action name="preferenceTable">
+         <description>Preference table</description>
+      </action>
+      <action name="delete" ajax="row" uicomponent="DELETE">
+         <description>Delete promotion request</description>
+         <command class="com.ptc.windchill.enterprise.object.commands.DeleteObjectCommands" method="delete" onClick="JCAConfirm(event,&apos;com.ptc.core.ui.confirmationMessagesRB.DELETE&apos;)"/>
+         <includeFilter name="hideFromNonDeleteUser"/>
+      </action>
+      <action name="createPromotionPreference">
+        <description>Create promotion preference</description>
+        <command class="com.ptc.windchill.enterprise.maturity.forms.processors.PromotionPreferenceFormProcessor" method="execute" windowType="popup"/>
+      </action>
+      <action name="promotionPreferenceStep">
+       <description>Promotion preference create step</description>
+        <command windowType="wizard_step"/>
+      </action>
+      <action name="create" selectRequired="true" ajax="component" uicomponent="PROMOTE">
+       <description>Promote create wizard</description>
+        <command class="com.catl.common.jca.CatlCreatePromotionRequestProcess" method="execute" windowType="popup"/>
+         <includeFilter name="OptionSetLocalRuleContextFilter"/>
+         <includeFilter name="restrictGuestMembers"/>
+         <includeFilter name="CatlCreatePromotionByECAValidation"/>
+      <includeFilter name="manAuthorized"/></action>
+      <action name="promotionObjectsTableStep" preloadWizardPage="false" required="true" afterJS="PTC.promotion.validatePromotionTable" beforeJS="PTC.promotion.disableDefaultCollectionAttribute">
+        <description>Promote wizard promotion objects step</description>
+        <command class="com.ptc.windchill.enterprise.maturity.forms.delegates.PromotionObjectsFormDelegate" windowType="wizard_step"/>
+      </action>
+      <action name="promoteObjects" id="promoteObjects" renderType="GENERAL" selectRequired="true" shortcut="true">
+        <description>Promote wizard promote objects table action</description>
+        <command onClick="PTC.promotion.promoteObjects(event)" windowType="no_content"/>
+      </action>
+      <action name="collectBaselineItems" renderType="GENERAL" selectRequired="true" ajax="row">
+        <description>Collect items to be added to the promotion request</description>
+        <command onClick="openCollectorPicker('Promote', event)" windowType="no_content"/>
+      </action>
+      <action name="addPromotables" ajax="row">
+      	<description>Add promotables using an item picker</description>
+      	<command class="com.ptc.windchill.enterprise.maturity.forms.processors.PromotablePickerFormProcessor" method="execute" windowType="popup"/>
+      </action>
+      <action name="paste" ajax="row" uicomponent="PASTE">
+         <description>Paste promotables</description>
+         <command class="com.ptc.windchill.enterprise.maturity.commands.PromotionPasteCommands" method="paste"/>
+      </action>
+      <action name="pasteSelect" uicomponent="PASTE" ajax="row">
+         <description>Paste selected promotables</description>
+         <command class="com.ptc.windchill.enterprise.maturity.commands.PromotionPasteCommands" method="pasteSelect" windowType="new" url="netmarkets/jsp/object/pasteSelect.jsp"/>
+      </action>
+      <action name="remove" renderType="GENERAL" selectRequired="true">
+        <description>Removes objects in the promotion request object list table</description>
+        <command windowType="no_content" onClick="PTC.promotion.removeRows(event)"/>
+      </action>
+      <action name="workflowParticipantsStep" required="false" preloadWizardPage="false" hidden="true">
+        <description>Promote wizard promotion objects step</description>
+        <command class="com.ptc.core.components.forms.DefaultObjectFormProcessorDelegate" windowType="wizard_step"/>
+      </action>
+      <action name="reviewApproveTask_PromotionObjectsTable">
+            <description>Action used on the Review/Approve Promotion Request workflow task to get the configurable workflow version of the Promotion Objects table.</description>
+            <component name="workflowTask.pbo" urlParams="pboCompId=promotionRequest.promotionItems.table"/>
+            <includeFilter name="configurableTypeBaseFilter"/>
+      </action>
+   </objecttype>
+   
+   
+   
+    <objecttype name="CatlPromotion" class="wt.maturity.PromotionNotice" 
+     	         resourceBundle="com.catl.promotion.resource.promotionResource">
+    
+	   <action name="removePromotables" selectRequired="true" ajax="component">
+	         	<command class="com.catl.promotion.processor.RemovePromotableFormProcessor" 
+	         		method="execute" />
+	         	<includeFilter name="PromotableFilter" />
+	      </action>
+	      <action name="addPromotables" ajax="component">
+	      	  	<command url="/netmarkets/jsp/catl/promotion/addPromotables.jsp" 
+	      	  		            class="com.catl.promotion.processor.AddPromotableFormProcessor" 
+	      	  		            method="execute"   windowType="popup"/>
+	      	  	<includeFilter name="PromotableFilter" />
+	      </action> 
+	      
+	      <action name="refreshPromotables" ajax="component">
+	      	  	<command class="com.catl.promotion.processor.RefreshPromotableFormProcessor" method="execute"/>
+	      	  	<includeFilter name="PromotableFilter" />
+	      </action> 
+	      <action name="promotionModification">
+				<command url="/netmarkets/jsp/catl/promotion/loadPromotionNotice.jsp" method="execute" windowType="popup"/>
+				<includeFilter name="PromotableFilter" />
+		  </action>
+          
+          <!-- 批量修改Part的Source --> 
+        <action name="MaintenancePartSource"> 
+            <command url="/netmarkets/jsp/catl/promotion/maintenancePartSource.jsp" windowType="popup" class="com.catl.promotion.processor.MaintenancePartSourceProcessor" method="excute" />
+        </action>
+        <action name="MaintenancePartSource_step"> 
+            <command url="/netmarkets/jsp/catl/promotion/maintenancePartSource_step.jsp" windowType="wizard_step" />
+        </action>
+        
+         <!-- 批量修改放大倍数 --> 
+        <action name="Magnification"> 
+            <command url="/netmarkets/jsp/catl/promotion/magnification.jsp" windowType="popup" class="com.catl.promotion.processor.MagnificationProcessor" method="excute" />
+        </action>
+        <action name="Magnification_step"> 
+            <command url="/netmarkets/jsp/catl/promotion/magnification_step.jsp" windowType="wizard_step" />
+        </action>
+        
+        <action name="createFAEMaterialsMaturity" selectRequired="true" ajax="component" uicomponent="PROMOTE">
+			<description>Promote create wizard</description>
+			<command url="netmarkets/jsp/promotionRequest/create.jsp" class="com.catl.common.jca.CatlCreatePromotionRequestProcess" method="execute" windowType="popup"/>
+		</action>
+		<action name="createDisabledForDesignPN" ajax="component" uicomponent="PROMOTE">
+			<description>Promote create wizard</description>
+			<command url="netmarkets/jsp/promotionRequest/create.jsp" class="com.catl.common.jca.CatlCreatePromotionRequestProcess" method="execute" windowType="popup"/>
+		</action> 
+    </objecttype>
+   
+	<objecttype name="workitem" resourceBundle="com.catl.promotion.resource.promotionResource">
+		<action name="addDesignDisabledObject">
+			<command method="save" class="com.ptc.xworks.xmlobject.workflow.ExtendedWorkitemCommands" onClick="saveFormAndSetNextAction()" />
+		</action>		
+		<action name="removeDesignDisabledObject" ajax="row" selectRequired="true" multiselect="true">
+			<command method="removeDesignDisabledObject" class="com.catl.promotion.processors.DesignDisabledCommands" />
+		</action>
+		<action name="pasteDesignDisabledObject" ajax="row" uicomponent="PASTE">
+			<command method="save" class="com.ptc.xworks.xmlobject.workflow.ExtendedWorkitemCommands" onClick="pasteFormAndSetNextAction()" />
+		</action>
+		
+		<action name="addSourceChangeObject">
+			<command method="save" class="com.ptc.xworks.xmlobject.workflow.ExtendedWorkitemCommands" onClick="saveFormAndSetNextAction()" />
+		</action>		
+		<action name="removeSourceChangeObject" ajax="row" selectRequired="true" multiselect="true">
+			<command method="removeSourceChangeObject" class="com.catl.promotion.processors.SourceChangeCommands" />
+		</action>
+		<action name="pasteSourceChangeObject" ajax="row" uicomponent="PASTE">
+			<command method="save" class="com.ptc.xworks.xmlobject.workflow.ExtendedWorkitemCommands" onClick="pasteFormAndSetNextAction()" />
+		</action>
+		
+	</objecttype>
+	<objecttype name="faeMaturityAndDesignDisabledPromotion" resourceBundle="com.catl.promotion.resource.promotionResource">
+		<action name="promotionObjectsTableStep" preloadWizardPage="false" required="true"> 
+			<command url="netmarkets/jsp/catl/promotion/promotionObjectsTableStep.jsp" class="com.catl.promotion.delegates.CatlPromotionObjectsFormDelegate" windowType="wizard_step" />
+		</action>
+		<action name="addPromotables" ajax="row">
+			<command url="netmarkets/jsp/catl/promotion/addCatlPromotionObjects.jsp" windowType="popup" />
+		</action>
+		<action name="catlPaste" ajax="row" uicomponent="PASTE">
+         	<description>Paste promotables</description>
+         	<command windowType="no_content" onClick="catlPasteItems(event)"/>
+      	</action>
+	</objecttype>
+</listofactions>

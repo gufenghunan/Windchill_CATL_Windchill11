@@ -1,0 +1,91 @@
+<?xml version="1.0"?><!DOCTYPE NmLoader SYSTEM "standardX24.dtd">
+
+<NmLoader>
+	<csvPreferenceCategory handler="wt.preference.LoadPreference.createPreferenceCategory">
+		<csvname>CATL_CATEGORY</csvname>
+		<csvparentName />
+		<csvdisplayName>CATL Customization</csvdisplayName>
+		<csvdescription />
+	</csvPreferenceCategory>
+
+	<csvPreferenceDefinition handler="wt.preference.LoadPreference.createPreferenceDefinition">
+		<csvname>/catl/integration</csvname>
+		<csvvisibility>SITE</csvvisibility>
+		<csvcategoryName>CATL_CATEGORY</csvcategoryName>
+		<csvdisplayName>ERP Publish Switch</csvdisplayName>
+		<csvdescription>ERP Publish Switch</csvdescription>
+		<csvlongDescription>ERP Publish Switch</csvlongDescription>
+		<csvdefaultValue>false</csvdefaultValue>
+		<csvhandler>com.ptc.windchill.enterprise.preference.handler.BooleanPreferenceValueHandler</csvhandler>		
+    </csvPreferenceDefinition>
+
+    <csvLinkPreferenceClientDefinition handler="wt.preference.LoadPreference.setClientDefinitionLink">
+		<csvname>/catl/integration</csvname>
+		<csvclientName>WINDCHILL</csvclientName>
+    </csvLinkPreferenceClientDefinition>
+    
+    <csvPreferenceDefinition handler="wt.preference.LoadPreference.createPreferenceDefinition">
+        <csvname>/catl/PDF_Encrypted_PW</csvname>
+        <csvvisibility>SITE</csvvisibility>
+        <csvcategoryName>CATL_CATEGORY</csvcategoryName>
+        <csvdisplayName>PDF加密密码</csvdisplayName>
+        <csvdescription>PDF加密密码</csvdescription>
+        <csvlongDescription>PDF加密密码</csvlongDescription>
+        <csvdefaultValue>CATL</csvdefaultValue>
+        <csvhandler>com.ptc.windchill.enterprise.preference.handler.StringPreferenceValueHandler</csvhandler>      
+    </csvPreferenceDefinition>
+
+    <csvLinkPreferenceClientDefinition handler="wt.preference.LoadPreference.setClientDefinitionLink">
+        <csvname>/catl/PDF_Encrypted_PW</csvname>
+        <csvclientName>WINDCHILL</csvclientName>
+    </csvLinkPreferenceClientDefinition>
+    
+    <csvPreferenceDefinition handler="wt.preference.LoadPreference.createPreferenceDefinition">
+		<csvname>/catl/checkSelf</csvname>
+		<csvvisibility>SITE</csvvisibility>
+		<csvcategoryName>CATL_CATEGORY</csvcategoryName>
+		<csvdisplayName>工作流参与者不能选择自己校验是否开启</csvdisplayName>
+		<csvdescription>工作流参与者不能选择自己校验是否开启</csvdescription>
+		<csvlongDescription>工作流参与者不能选择自己校验是否开启</csvlongDescription>
+		<csvdefaultValue>true</csvdefaultValue>
+		<csvhandler>com.ptc.windchill.enterprise.preference.handler.BooleanPreferenceValueHandler</csvhandler>		
+    </csvPreferenceDefinition>
+
+    <csvLinkPreferenceClientDefinition handler="wt.preference.LoadPreference.setClientDefinitionLink">
+		<csvname>/catl/checkSelf</csvname>
+		<csvclientName>WINDCHILL</csvclientName>
+    </csvLinkPreferenceClientDefinition>
+    
+    <csvPreferenceDefinition handler="wt.preference.LoadPreference.createPreferenceDefinition">
+        <csvname>/catl/drawing_send_erp</csvname>
+        <csvvisibility>SITE</csvvisibility>
+        <csvcategoryName>CATL_CATEGORY</csvcategoryName>
+        <csvdisplayName>发送ERP图纸根目录</csvdisplayName>
+        <csvdescription>发送ERP图纸根目录</csvdescription>
+        <csvlongDescription>发送ERP图纸根目录</csvlongDescription>
+        <csvdefaultValue>E:\\drawing_send_erp\\</csvdefaultValue>
+        <csvhandler>com.ptc.windchill.enterprise.preference.handler.StringPreferenceValueHandler</csvhandler>      
+    </csvPreferenceDefinition>
+
+    <csvLinkPreferenceClientDefinition handler="wt.preference.LoadPreference.setClientDefinitionLink">
+        <csvname>/catl/drawing_send_erp</csvname>
+        <csvclientName>WINDCHILL</csvclientName>
+    </csvLinkPreferenceClientDefinition>
+    
+    <csvPreferenceDefinition handler="wt.preference.LoadPreference.createPreferenceDefinition">
+        <csvname>/catl/drawing_send_erp_mapping</csvname>
+        <csvvisibility>SITE</csvvisibility>
+        <csvcategoryName>CATL_CATEGORY</csvcategoryName> 
+        <csvdisplayName>发送ERP图纸根目录映射路径</csvdisplayName>
+        <csvdescription>发送ERP图纸根目录映射路径</csvdescription>
+        <csvlongDescription>发送ERP图纸根目录映射路径</csvlongDescription>
+        <csvdefaultValue>\\172.17.35.45\drawing_send_erp\</csvdefaultValue>
+        <csvhandler>com.ptc.windchill.enterprise.preference.handler.StringPreferenceValueHandler</csvhandler>      
+    </csvPreferenceDefinition>
+
+    <csvLinkPreferenceClientDefinition handler="wt.preference.LoadPreference.setClientDefinitionLink">
+        <csvname>/catl/drawing_send_erp_mapping</csvname>
+        <csvclientName>WINDCHILL</csvclientName>
+    </csvLinkPreferenceClientDefinition>
+	
+</NmLoader>

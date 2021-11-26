@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE NmLoader
+  SYSTEM "standardX26.dtd">
+<NmLoader>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>XWORKS_Attributes</csvname>
+      <csvhierarchyDisplayName>XWorks测试属性</csvhierarchyDisplayName>
+      <csvorganizerPaths></csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name/>
+      <csvdescription/>
+      <csvdata_type>ORG</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier/>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>XWORKS_STR_01</csvname>
+      <csvhierarchyDisplayName>XWORKS_STR_01</csvhierarchyDisplayName>
+      <csvorganizerPaths>XWORKS_Attributes</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>XWORKS_STR_01</csvdisplay_name>
+      <csvdescription>XWORKS_STR_01</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>XWORKS_STR_01</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+</NmLoader>

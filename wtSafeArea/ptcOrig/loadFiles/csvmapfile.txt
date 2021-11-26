@@ -1,0 +1,593 @@
+#-----------Date formats are expected to match the locale of the server.
+#-----------For Ranking Context and Ranking Data Import
+CreateRankingData~create~wt.csm.ranking.RankingDataLoader.createRankingData~contextName~rankableClassname~partName~nodeId~criterionClassname~criterionData~criteriaKey
+CreateRankingContext~create~wt.csm.ranking.RankingContextLoader.createRankingContext~name~description~criteriaMap
+#-----------
+#-----------For Classification Node Constraints Export/Import
+BeginCSMConstraints~create~wt.csm.constraint.CSMConstraintLoader.beginCreateConstraint~structureClassName~nodeName~parentID~importOption
+EndCSMConstraints~create~wt.csm.constraint.CSMConstraintLoader.endCreateConstraint
+ContainerConstraint~create~wt.csm.constraint.CSMConstraintLoader.createContainerConstraint~ConstraintType~minimum~maximum~discreteSet
+SingleDefinitionConstraint~create~wt.csm.constraint.CSMConstraintLoader.createSingleDefinitionConstraint~attrHierarchyID~ConstraintType~minimum~maximum~discreteSet~appliesToDescendents
+SingleDefinitionConstraintByName~create~wt.csm.constraint.CSMConstraintLoader.createSingleDefinitionConstraintByName~attributeName~ConstraintType~minimum~maximum~discreteSet~appliesToDescendents
+#-----------End of constraints
+#-----------For Navigation Structure Export/Loader
+BeginNavStruct~create~wt.csm.navigation.NavigationLoader.beginNavStructure~navType~name~label~targetClassName~showGraphTab~showAllAttributes
+EndNavStruct~create~wt.csm.navigation.NavigationLoader.endNavStructure
+#
+BeginExportNodeTemplate~create~wt.csm.navigation.NavigationLoader.beginExportNodeTemplate~name~label~targetClassName
+EndExportNodeTemplate~create~wt.csm.navigation.NavigationLoader.endExportNodeTemplate
+#
+AddNavTab~create~wt.csm.navigation.NavigationLoader.addNavTab~newTabLabel~refDefinition
+AddIndependentNode~create~wt.csm.navigation.NavigationLoader.addIndependentNode~independentNodes
+#
+SetElementValue~create~wt.csm.navigation.NavigationLoader.setElementValue~type~definition~valueType~value1~value2
+AddElementToNavTab~create~wt.csm.navigation.NavigationLoader.addElementToNavTab~targetTab~type~definition~tbNot~visible~enforced~order
+AddElementToNodeTab~create~wt.csm.navigation.NavigationLoader.addElementToNodeTab~navType~nodeName~targetTab~type~definition~tbNot~visible~enforced~order
+#
+SaveNavStruct~create~wt.csm.navigation.NavigationLoader.saveNavStructure
+#-----------End of Navigation Structure Export/Loader
+#
+BeginUpdateBusinessEntity~create~wt.csm.businessentity.BusinessEntityLoader.beginUpdateBusinessEntity~name
+EndUpdateBusinessEntity~create~wt.csm.businessentity.BusinessEntityLoader.endUpdateBusinessEntity
+#
+BeginCreateOrUpdateWTPart~create~wt.part.LoadPart.beginCreateOrUpdateWTPart~partName~partNumber~type~genericType~collapsible~logicbasePath~source~folder~lifecycle~view~variation1~variation2~teamTemplate~lifecyclestate~typedef~classToUpdate~organizationName~organizationID~securityLabels~serviceable~servicekit~authoringLanguage
+EndCreateOrUpdateWTPart~create~wt.part.LoadPart.endCreateOrUpdateWTPart~parentContainerPath
+CreateOrUpdateIBAValue~create~wt.iba.value.service.LoadValue.createOrUpdateIBAValue~definition~value1~value2~dependency_id
+#
+BeginBusinessEntity~create~wt.csm.businessentity.BusinessEntityLoader.beginCreateBusinessEntity~name
+EndBusinessEntity~create~wt.csm.businessentity.BusinessEntityLoader.endCreateBusinessEntity
+BeginAttributeHierarchyLoader~create~wt.iba.definition.DefinitionLoaderWithCache.setupAHCache
+AttrDefinizer~create~wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer~name~hierarchyDisplayName~organizerPaths~definitionPaths~display_name~description~data_type~QoMName~nameValuePairs~logicalIdentifier
+EndAttributeHierarchyLoader~create~wt.iba.definition.DefinitionLoaderWithCache.removeAHCache
+BeginExport~create~wt.export.Export.createExportMechanism~ExportMechanismClassName~ExportMechanismParameters
+Export~create~wt.export.Export.execute~mapFileKey~exportClassName~objectLocator~searchCriteria~imageRootDir~comment
+EndExport~create~wt.export.Export.closeExportMechanism
+RemoveCSMConstraint~create~wt.csm.constraint.CSMConstraintRemover.removeCSMConstraint
+ClassificationImagesRootDir~create~wt.csm.navigation.ClassificationNodeLoader.getImageRootDirectory~imageDir
+BeginClassNode~create~wt.csm.navigation.ClassificationNodeLoader.beginCreateClassNode~structureClassName~nodeName~parentID~description~imageFile~refDefName~internalID
+EndClassNode~create~wt.csm.navigation.ClassificationNodeLoader.endCreateClassNode
+General~create~wt.doc.LoadDoc.createGeneral~user~name~title~number~type~description~department~saveIn~teamTemplate~domain~lifecycletemplate~lifecyclestate~typedef~primarycontenttype~path~format~contdesc~version~iteration
+Document~create~wt.doc.LoadDoc.createGeneral~user~name~title~number~type~description~department~saveIn~teamTemplate~domain~lifecycletemplate~lifecyclestate~typedef~primarycontenttype~path~format~contdesc~version~iteration~securityLabels
+DocumentRetainContent~create~wt.doc.LoadDoc.createDocumentRetainContent~user~name~title~number~type~description~department~saveIn~teamTemplate~domain~lifecycletemplate~lifecyclestate~typedef~primarycontenttype~path~format~contdesc~version~iteration
+Requirement~create~com.ptc.windchill.enterprise.requirement.handler.ReqlImportHandler.createRequirement~number~user~name~description~priority~softtype~folder
+Specification~create~com.ptc.windchill.enterprise.requirement.handler.ReqlImportHandler.createSpecification~number~user~name~description~priority~softtype~folder
+SpecificationUsageLink~create~com.ptc.windchill.enterprise.requirement.handler.ReqlImportHandler.createSpecificationUsageLink~parentnumber~childnumber
+WTDocumentDependencyLink~create~wt.doc.LoadDoc.addDocumentDependency~doc~referenceddoc~comment
+Specification~create~wt.doc.LoadDoc.createSpec~user~name~title~number~description~department~saveIn~teamTemplate~domain~lifecycletemplate~lifecyclestate~typedef~primarycontenttype~path~format~contdesc~version~iteration
+BeginWTDocument~create~wt.doc.LoadDoc.beginCreateWTDocument~name~title~number~type~description~department~saveIn~teamTemplate~domain~lifecycletemplate~lifecyclestate~typedef~version~iteration~securityLabels
+EndWTDocument~create~wt.doc.LoadDoc.endCreateWTDocument~primarycontenttype~path~format~contdesc~parentContainerPath
+BeginWTDocumentRetainContent~create~wt.doc.LoadDoc.beginCreateWTDocumentRetainContent~name~title~number~type~description~department~saveIn~teamTemplate~domain~lifecycletemplate~lifecyclestate~typedef~version~iteration~securityLabels
+EndWTDocumentRetainContent~create~wt.doc.LoadDoc.endCreateWTDocumentRetainContent~primarycontenttype~path~format~contdesc
+MeasurementSystem~create~wt.units.service.UnitsLoader.createMS~name~description~nameValuePairs
+QuantityOfMeasure~create~wt.units.service.UnitsLoader.createQOM~name~description~baseUnitSymbol~nameAndValuePairs
+ClassificationNavStruct~create~wt.csm.ClassificationLoader.createClassification~name~parentID~uniqueID~description
+BeginWTPM~create~wt.part.LoadPart.beginWTPM~number~name
+EndWTPM~create~wt.part.LoadPart.endWTPM
+IBAValue~create~wt.iba.value.service.LoadValue.createIBAValue~definition~value1~value2~dependency_id
+OLDIBAValue~create~wt.iba.value.service.LoadValue.oldCreateIBAValue~definition~value1~value2~dependent-definition~dependent-locator~dependent-identifier
+endIBAHolder~create~wt.iba.value.service.LoadValue.endIBAHolder
+BeginIBAContainer~create~wt.iba.value.service.LoadValue.beginIBAContainer~container-name
+EndIBAContainer~create~wt.iba.value.service.LoadValue.endIBAContainer
+ContentURL~create~wt.load.LoadContent.createContentURL~user~linkTo~contdesc
+ContentFile~create~wt.load.LoadContent.createContentFile~user~path
+ReplaceContentFile~create~wt.load.LoadContent.replaceContentFile~user~path
+ContentAggregate~create~wt.load.LoadContent.createAggregate~user~path~format~contdesc
+ContentAggregateFile~create~wt.load.LoadContent.createAggregateFile~user~path
+ContentAggregateURL~create~wt.load.LoadContent.createAggregateURL~user~linkTo~contdesc
+SetDefaultDirectory~create~wt.load.LoadContent.setDefaultDirectory~defaultDirectory
+SetDefaultURL~create~wt.load.LoadContent.setDefaultURL~defaultURL
+Cabinet~create~wt.folder.LoadFolder.createCabinet~user~cabinet~adminDomain~description~owner~isPersonal
+SubFolder~create~wt.folder.LoadFolder.createSubFolder~user~folderPath~adminDomain
+FolderShortcut~create~wt.folder.LoadFolder.createFolderShortcut~user~shortcutTarget~folderPath
+Shortcut~create~wt.folder.LoadFolder.createShortcut~user~shortcutTarget~folderPath
+User~create~wt.load.LoadUser.createUser~user~newUser~webServerID~fullName~Last~Locale~Email~Description~Title~Organization~Street1~Street2~City~State~Country~ZipCode~ignore~password~DirectoryService~AllowLdapSync
+Group~create~wt.load.LoadUser.createGroup~user~groupName~description~DirectoryService
+UserGroup~create~wt.load.LoadUser.createUserGroup~user~groupName~groupNameDirectoryService~userName~userNameDirectoryService~DirectoryService
+UserPicture~create~wt.org.LoadUserPicture.update~userName~path
+GroupGroup~create~wt.org.LoadPrincipal.createGroupGroup~user~parentGroupName~childGroupName~parentDirectoryService~childDirectoryService
+Domain~create~wt.load.LoadUser.createDomain~user~name~description~parentDomainPath
+Container~create~wt.inf.container.LoadContainer.createContainer~containerClass~containerName~sharedTeamName~containerExtendable~parentContainerPath~containerTemplateRef~businessNamespace~sharingEnabled~creator~owner~subscriber~conferencingURL~description~organization~creatorSelector
+ClassicContainer~create~wt.inf.container.LoadContainer.createClassicContainer~containerClass~containerTemplateRef~businessNamespace~sharingEnabled~creator~owner~subscriber~conferencingURL~creatorSelector
+ExchangeContainer~create~wt.inf.container.LoadContainer.createExchangeContainer~containerClass~containerTemplateRef~businessNamespace~sharingEnabled~creator~owner~subscriber~conferencingURL~creatorSelector
+OrgContainer~create~wt.inf.container.LoadContainer.createOrgContainer~containerName~containerTemplateRef~businessNamespace~sharingEnabled~creator~owner~subscriber~conferencingURL~description~internetDomain~OrganizationAddress~conferencingID~restrictedDirectorySearchScope
+SiteOrgContainer~create~wt.inf.container.LoadContainer.createSiteOrgContainer~containerTemplateRef
+OrgAdmin~create~wt.load.LoadUser.createOrgAdmin~user~newUser~webServerID~fullName~Last~Locale~Email~Description~Title~Organization~Street1~Street2~City~State~Country~ZipCode~ignore~password
+SiteAdmin~create~wt.load.LoadUser.createSiteAdmin~user~newUser~webServerID~fullName~Last~Locale~Email~Description~Title~Organization~Street1~Street2~City~State~Country~ZipCode~ignore~password
+
+ViewPreference~create~wt.part.LoadPart.setUserDefaultView~user~view
+AccessRule~create~wt.load.LoadUser.createAccessRule~user~domain~typeId~permission~principal~permissionList~state~allExceptPrincipal
+View~create~wt.vc.views.LoadView.createView~viewName
+ViewAssociation~create~wt.vc.views.LoadView.associateViews~parentView~childView
+Part~create~wt.part.LoadPart.createPart~user~partName~partNumber~type~genericType~collapsible~logicbasePath~source~folder~lifecycle~view~variation1~variation2~teamTemplate~lifecyclestate~typedef~version~iteration~parentContainerPath~enditem~traceCode~organizationName~organizationID~createTimestamp~modifyTimestamp~securityLabels~minRequired~maxAllowed~defaultUnit~phantom~serviceable~servicekit~authoringLanguage
+ProductContainer~create~wt.part.LoadPart.createProductContainer~user~name~number~sharedTeamName~containerExtendable~description~view~variation1~variation2~source~defaultUnit~type~containerTemplate~organizationName~organizationID
+SetAsPrimaryEndItem~create~wt.part.LoadPart.setAsPrimaryEndItem~partNumber
+ProductUser~create~wt.part.LoadPart.assignUserToProduct~user~name~role
+BeginWTPart~create~wt.part.LoadPart.beginCreateWTPart~user~partName~partNumber~type~genericType~collapsible~logicbasePath~source~folder~lifecycle~view~variation1~variation2~teamTemplate~lifecyclestate~typedef~version~iteration~enditem~traceCode~organizationName~organizationID~securityLabels~createTimestamp~modifyTimestamp~minRequired~maxAllowed~defaultUnit~serviceable~servicekit~authoringLanguage
+EndWTPart~create~wt.part.LoadPart.endCreateWTPart~parentContainerPath
+ConfigurationItem~create~wt.effectivity.LoadEffectivity.createConfigurationItem~name~description~effectivityType~folder~lifecycle~teamTemplate~lifecyclestate
+WTDatedEffectivity~create~wt.effectivity.LoadEffectivity.createWTDatedEffectivity~prodNumber~typeModifier~startDate~endDate~configItem
+WTLotEffectivity~create~wt.effectivity.LoadEffectivity.createWTLotEffectivity~startNumber~endNumber~configItem
+WTSerialNumberedEffectivity~create~wt.effectivity.LoadEffectivity.createWTSerialNumberedEffectivity~startNumber~endNumber~configItem
+ProductLotNumberEffectivity~create~wt.part.LoadPart.createProductLotNumberEffectivity~prodNumber~type~targetNumber~targetVer~typeModifier~startNumber~endNumber
+ProductSerialNumberEffectivity~create~wt.part.LoadPart.createProductSerialNumberEffectivity~prodNumber~type~targetNumber~targetVer~typeModifier~startNumber~endNumber
+ProductMSNEffectivity~create~wt.part.LoadPart.createProductMSNEffectivity~prodNumber~type~targetNumber~targetVer~typeModifier~startNumber~endNumber
+ProductBlockEffectivity~create~wt.part.LoadPart.createProductBlockEffectivity~prodNumber~type~targetNumber~targetVer~typeModifier~startNumber~endNumber
+ChangeDirectiveMSNEffectivity~create~wt.eff.LoadEff.createChangeDirectiveMSNEffectivity~changeDirectiveNumber~effContextNumber~typeModifier~startNumber~endNumber
+
+AssemblyAdd~create~wt.part.LoadPart.addPartToAssembly~assemblyPartNumber~constituentPartNumber~constituentPartQty~constituentPartUnit~componentId~inclusionOption~quantityOption~reference~assemblyPartVersion~assemblyPartIteration~assemblyPartView~assemblyPartVariation1~assemblyPartVariation2~organizationName~organizationID~lineNumber
+#Added AspsAssemblyAdd tag to support itemNumber attribute on BaseUsageLink for SIM module
+AspsAssemblyAdd~create~wt.part.LoadPart.addPartToAssembly~assemblyPartNumber~constituentPartNumber~constituentPartQty~constituentPartUnit~componentId~inclusionOption~quantityOption~reference~assemblyPartVersion~assemblyPartIteration~assemblyPartView~assemblyPartVariation1~assemblyPartVariation2~organizationName~organizationID~lineNumber~itemNumber
+AssemblyAddLoad~create~wt.part.LoadPart.addPartToAssemblyLoad~assemblyPartNumber~constituentPartNumber~constituentPartQty~constituentPartUnit~componentId~inclusionOption~quantityOption~reference~assemblyPartVersion~assemblyPartIteration~assemblyPartView~assemblyPartVariation1~assemblyPartVariation2~organizationName~organizationID
+PartDocReference~create~wt.part.LoadPart.createPartDocReference~docNumber~partNumber~partVersion~partIteration~partView~partVariation1~partVariation2~organizationName~organizationID
+PartDocDescribes~create~wt.part.LoadPart.createPartDocDescribes~docNumber~docVersion~docIteration~partNumber~partVersion~partIteration~partView~partVariation1~partVariation2~organizationName~organizationID
+PartDocLink~create~wt.part.LoadPart.createPartDocLink~docNumber~docVersion~docIteration~partNumber~partVersion~partIteration~partView~partVariation1~partVariation2~organizationName~organizationID~docRemoveOldRev
+PartEPMDocDescribes~create~wt.epm.LoadEPMDoc.createPartEPMDocDescribes~fileName~docVersion~docIteration~partNumber~partVersion~partIteration~partView~partVariation1~partVariation2~organizationName~organizationID
+NewViewVersion~create~wt.part.LoadPart.createNewViewVersion~partName~partNumber~partVersion~partIteration~partView~partVariation1~partVariation2~type~genericType~logicbasePath~source~folder~lifecycle~view~variation1~variation2~teamTemplate~lifecyclestate~typedef~version~iteration~parentContainerPath~organizationName~organizationID
+AssemblyRemove~create~wt.part.LoadPart.removePartFromAssembly~assemblyPartNumber~assemblyPartVersion~constituentPartNumber~assemblyPartIteration~assemblyPartView~assemblyPartVariation1~assemblyPartVariation2~organizationName~organizationID
+OccurrencedAssemblyAdd~create~wt.part.LoadPart.addPartToOccurrencedAssembly~assemblyPartNumber~assemblyPartVersion~constituentPartNumber~constituentPartQty~constituentPartUnit~componentId~inclusionOption~quantityOption~reference~lineNumber~findNumber~occurrenceLocation~referenceDesignator~assemblyPartIteration~assemblyPartView~assemblyPartVariation1~assemblyPartVariation2~organizationName~organizationID
+OccurrencedAssemblyAddLoad~create~wt.part.LoadPart.addPartToOccurrencedAssemblyLoad~assemblyPartNumber~assemblyPartVersion~constituentPartNumber~constituentPartQty~constituentPartUnit~componentId~inclusionOption~quantityOption~reference~lineNumber~findNumber~occurrenceLocation~referenceDesignator~assemblyPartIteration~assemblyPartView~assemblyPartVariation1~assemblyPartVariation2~organizationName~organizationID
+BeginOccurrencedAssemblyAdd~create~wt.part.LoadPart.beginOccurrencedAssemblyAdd~assemblyPartNumber~assemblyPartVersion~constituentPartNumber~constituentPartQty~constituentPartUnit~componentId~inclusionOption~quantityOption~reference~lineNumber~findNumber~occurrenceLocation~referenceDesignator~assemblyPartIteration~assemblyPartView~assemblyPartVariation1~assemblyPartVariation2~organizationName~organizationID
+EndOccurrencedAssemblyAdd~create~wt.part.LoadPart.endOccurrencedAssemblyAdd
+PartRepresentation~create~wt.part.LoadPart.createPartRepresentation~partNumber~partVersion~partIteration~repDirectory~repName~repDescription~repDefault~repCreateThumbnail~repStoreEdz~partView~partVariation1~partVariation2~organizationName~organizationID
+CachePart~create~wt.part.LoadPart.cachePart~partNumber~partVersion~partIteration~partView~partVariation1~partVariation2~organizationName~organizationID
+IndexPolicyRule~create~wt.index.LoadIndexRule.createIndexRule~user~domain~type~event~state~collection
+LifeCycleTemplateBegin~create~wt.lifecycle.LoadLifeCycle.createLifeCycleTemplate~name~description~supportedClass~folderLocation~enabled~routing~basic
+LifeCycleTemplateEnd~create~wt.lifecycle.LoadLifeCycle.createLifeCycleTemplateEnd
+Criterion~create~wt.lifecycle.LoadLifeCycle.createCriterion~assertion~satisfied
+PhaseTemplateBegin~create~wt.lifecycle.LoadLifeCycle.createPhaseTemplateBegin~name~phaseState~phaseWorkflow~gateWorkflow~seriesSelector
+PhaseTemplateEnd~create~wt.lifecycle.LoadLifeCycle.createPhaseTemplateEnd
+PhaseSuccessionBegin~create~wt.lifecycle.LoadLifeCycle.createPhaseSuccessionBegin~lifeCycleName~predecessorPhaseState~successorPhaseState~phaseTransition
+RoleHolder~create~wt.project.LoadProject.createRoleHolder~roleToAssign~assignedPrincipal
+ActorRoleHolder~create~wt.project.LoadProject.createActorRoleHolder~roleToAssign~assignedActorRole
+RoleHolder2~create~wt.team.LoadTeam.createRoleHolder~roleToAssign~assignedPrincipal
+ActorRoleHolder2~create~wt.team.LoadTeam.createActorRoleHolder~roleToAssign~assignedActorRole
+IndirectRoleHolder~create~wt.project.LoadProject.createIndirectRoleHolder~roleToAssign~assignedRole
+ProjectBegin~create~wt.project.LoadProject.createProjectBegin~name~description~folderLocation~enabled
+ProjectEnd~create~wt.project.LoadProject.createProjectEnd
+Project2Begin~create~wt.projmgmt.admin.LoadProject2.createProject2Begin~name~description~template
+Project2End~create~wt.projmgmt.admin.LoadProject2.createProject2End
+Project2User~add~wt.projmgmt.admin.LoadProject2.addUserToRole~user~role
+TeamTemplateBegin~create~wt.team.LoadTeam.createTeamTemplateBegin~name~description~folderLocation~enabled
+TeamTemplateEnd~create~wt.team.LoadTeam.createTeamTemplateEnd
+WTAclEntry~create~wt.lifecycle.LoadLifeCycle.createWTAclEntry~role~permission
+DataFormat~create~wt.content.LoadDataFormat.createDataFormat~formatName~mimeType~description~indexable~fileFormatOnly~standardIconStr~extensions
+ReportTemplate~create~wt.query.template.LoadReportTemplate.createReportTemplate~folder~name~description~xml~xslType~service~containerPath~url1~url2~inputPage~resourceBundle
+##------Workflow entries (Begin)
+WfProcessTemplateBegin~create~wt.workflow.definer.LoadWorkflow.createProcessTemplate~xCoordinate~yCoordinate~routerType~routingEvents~autoRoutingExpression~uniqueId~name~description~category~instructions~iconName~duration~processDuration~startDelay~startProcessDelay~notifyBeforeDeadline~timeToDeadline~notifyAfterDeadline~timePastDeadline~responsibleRole~enabled~folderLocation~dedicatedQueue
+WfProcessTemplateEnd~create~wt.workflow.definer.LoadWorkflow.saveProcessTemplate
+WfAssignedActivityTemplateBegin~create~wt.workflow.definer.LoadWorkflow.createAssignedActivityTemplate~xCoordinate~yCoordinate~routerType~routingEvents~autoRoutingExpression~uniqueId~name~description~category~instructions~iconName~duration~processDuration~startDelay~startProcessDelay~notifyBeforeDeadline~timeToDeadline~notifyAfterDeadline~timePastDeadline~responsibleRole~task~sendNotification~localProject~variableProject~signingRequired
+WfAssignedActivityTemplateEnd~create~wt.workflow.definer.LoadWorkflow.saveAssignedActivityTemplate
+WfAdHocActivityTemplateBegin~create~wt.workflow.definer.LoadWorkflow.createAdHocActivityTemplate~xCoordinate~yCoordinate~routerType~routingEvents~autoRoutingExpression~uniqueId~name~description~category~instructions~iconName~duration~processDuration~startDelay~startProcessDelay~notifyBeforeDeadline~timeToDeadline~notifyAfterDeadline~timePastDeadline~responsibleRole~task~sendNotification~localProject~variableProject~signingRequired
+WfAdHocActivityTemplateEnd~create~wt.workflow.definer.LoadWorkflow.saveAdHocActivityTemplate
+WfProxyTemplateBegin~create~wt.workflow.definer.LoadWorkflow.createProxyTemplate~xCoordinate~yCoordinate~routerType~routingEvents~autoRoutingExpression~uniqueId~name~description~category~instructions~iconName~duration~processDuration~startDelay~startProcessDelay~notifyBeforeDeadline~timeToDeadline~notifyAfterDeadline~timePastDeadline~responsibleRole~subTemplate
+WfProxyTemplateEnd~create~wt.workflow.definer.LoadWorkflow.saveProxyTemplate
+WfBlockTemplateBegin~create~wt.workflow.definer.LoadWorkflow.createBlockTemplate~xCoordinate~yCoordinate~routerType~routingEvents~autoRoutingExpression~uniqueId~name~description~category~instructions~iconName~duration~processDuration~startDelay~startProcessDelay~notifyBeforeDeadline~timeToDeadline~notifyAfterDeadline~timePastDeadline~responsibleRole
+WfBlockTemplateEnd~create~wt.workflow.definer.LoadWorkflow.saveBlockTemplate
+WfExternalMethodTemplateBegin~create~wt.workflow.definer.LoadWorkflow.createExternalMethodTemplate~xCoordinate~yCoordinate~routerType~routingEvents~autoRoutingExpression~uniqueId~name~description~category~instructions~iconName~duration~processDuration~startDelay~startProcessDelay~notifyBeforeDeadline~timeToDeadline~notifyAfterDeadline~timePastDeadline~responsibleRole~host~serviceName~methodName~methodReturn
+WfExternalMethodTemplateEnd~create~wt.workflow.definer.LoadWorkflow.saveExternalMethodTemplate
+WfInternalMethodTemplateBegin~create~wt.workflow.definer.LoadWorkflow.createInternalMethodTemplate~xCoordinate~yCoordinate~routerType~routingEvents~autoRoutingExpression~uniqueId~name~description~category~instructions~iconName~duration~processDuration~startDelay~startProcessDelay~notifyBeforeDeadline~timeToDeadline~notifyAfterDeadline~timePastDeadline~responsibleRole~host~serviceName~methodName~methodReturn
+WfInternalMethodTemplateEnd~create~wt.workflow.definer.LoadWorkflow.saveInternalMethodTemplate
+WfApplRobotTemplateBegin~create~wt.workflow.definer.LoadWorkflow.createApplRobotTemplate~xCoordinate~yCoordinate~routerType~routingEvents~autoRoutingExpression~uniqueId~name~description~category~instructions~iconName~duration~processDuration~startDelay~startProcessDelay~notifyBeforeDeadline~timeToDeadline~notifyAfterDeadline~timePastDeadline~responsibleRole~host~command~synchronous
+WfApplRobotTemplateEnd~create~wt.workflow.definer.LoadWorkflow.saveApplRobotTemplate
+WfExprRobotTemplateBegin~create~wt.workflow.definer.LoadWorkflow.createExprRobotTemplate~xCoordinate~yCoordinate~routerType~routingEvents~autoRoutingExpression~uniqueId~name~description~category~instructions~iconName~duration~processDuration~startDelay~startProcessDelay~notifyBeforeDeadline~timeToDeadline~notifyAfterDeadline~timePastDeadline~responsibleRole~host
+WfExprRobotTemplateEnd~create~wt.workflow.definer.LoadWorkflow.saveExprRobotTemplate
+WfSynchRobotTemplateBegin~create~wt.workflow.definer.LoadWorkflow.createSynchRobotTemplate~xCoordinate~yCoordinate~routerType~routingEvents~autoRoutingExpression~uniqueId~name~description~category~instructions~iconName~duration~processDuration~startDelay~startProcessDelay~notifyBeforeDeadline~timeToDeadline~notifyAfterDeadline~timePastDeadline~responsibleRole~host~eventKey~targetClass~synchType~targetVariableName
+WfSynchRobotTemplateEnd~create~wt.workflow.definer.LoadWorkflow.saveSynchRobotTemplate
+WfURLRobotTemplateBegin~create~wt.workflow.definer.LoadWorkflow.createURLRobotTemplate~xCoordinate~yCoordinate~routerType~routingEvents~autoRoutingExpression~uniqueId~name~description~category~instructions~iconName~duration~processDuration~startDelay~startProcessDelay~notifyBeforeDeadline~timeToDeadline~notifyAfterDeadline~timePastDeadline~responsibleRole~host~taskURL~taskResponseVariable
+WfURLRobotTemplateEnd~create~wt.workflow.definer.LoadWorkflow.saveURLRobotTemplate
+WfTimerTemplateBegin~create~wt.workflow.definer.LoadWorkflow.createTimerTemplate~xCoordinate~yCoordinate~routerType~routingEvents~autoRoutingExpression~uniqueId~name~description~category~instructions~iconName~duration~processDuration~startDelay~startProcessDelay~notifyBeforeDeadline~timeToDeadline~notifyAfterDeadline~timePastDeadline~responsibleRole~host~timerDelay~timerProcessDelay
+WfTimerTemplateEnd~create~wt.workflow.definer.LoadWorkflow.saveTimerTemplate
+WfConnectorTemplate~create~wt.workflow.definer.LoadWorkflow.createConnectorTemplate~xCoordinate~yCoordinate~routerType~routingEvents~autoRoutingExpression~uniqueId~function~type~threshold~terminateActivities
+WfNodeTemplateLinkBegin~create~wt.workflow.definer.LoadWorkflow.createNodeTemplateLink~sourceNode~destNode~backLoop
+WfNodeTemplateLinkEnd~create~wt.workflow.definer.LoadWorkflow.saveNodeTemplateLink
+#--WfEventAction pair is available for any WfNodeTemplate (all except NodeTemplateLink)
+WfEventActionPair~create~wt.workflow.definer.LoadWorkflow.addEventActionPair~event~action
+#--WfAssignees are available for any WfAssignedActivityObject (this includes WfAdHocActivityTemplate) and WfInternalMethodTemplate
+WfPrincipalAssignee~create~wt.workflow.definer.LoadWorkflow.addPrincipalAssignee~principal~required~completionPolicyType~completionPolicyValue
+WfRoleAssignee~create~wt.workflow.definer.LoadWorkflow.addRoleAssignee~role~required~completionPolicyType~completionPolicyValue
+WfActorAssignee~create~wt.workflow.definer.LoadWorkflow.addActorAssignee~actor~required~completionPolicyType~completionPolicyValue
+WfProjectAssignee~create~wt.workflow.definer.LoadWorkflow.addProjectAssignee~projectAssignee~required~completionPolicyType~completionPolicyValue
+WfTeamAssignee~create~wt.workflow.definer.LoadWorkflow.addTeamAssignee~teamAssignee~required~completionPolicyType~completionPolicyValue
+WfVariableAssignee~create~wt.workflow.definer.LoadWorkflow.addVariableAssignee~variableAssignee~required~completionPolicyType~completionPolicyValue
+#--WfOverdueNotificationRoleAssignee is available for any WfTemplateObject
+WfOverdueNotificationRoleAssignee~create~wt.workflow.definer.LoadWorkflow.addOverdueNotificationRole~role
+#--WfVariable is available for any WfTemplateObject
+WfVariable~create~wt.workflow.definer.LoadWorkflow.addVariable~name~type~required~visible~mutable~resetable~initializeFrom~copyInto~defaultValue~permissionList~readOnly~displayNames
+#--WfTransition is available for any WfTemplateObject
+WfTransition~create~wt.workflow.definer.LoadWorkflow.addTransition~transition~exprBody~checkSyntax
+#--WfExpression is available for any WfTemplateObject
+WfExpression~create~wt.workflow.definer.LoadWorkflow.addExpression~expression~exprBody~checkSyntax
+#--WfOverdueAction is available for any WfTemplateObject
+WfOverdueAction~create~wt.workflow.definer.LoadWorkflow.addOverdueAction~overdueAction~overdueActionFlag
+#--WfExceptionAction is available for any WfTemplateObject
+WfExceptionAction~create~wt.workflow.definer.LoadWorkflow.addExceptionAction~exceptionAction~exceptionActionFlag
+#--WfAuditAction is available for any WfTemplateObject
+WfAuditAction~create~wt.workflow.definer.LoadWorkflow.addAuditAction~auditAction~auditActionFlag
+#--WfVotingAction is available for any WfTemplateObject
+WfVotingAction~create~wt.workflow.definer.LoadWorkflow.addVotingAction~votingAction~votingActionFlag
+#--WfIgnoreUnresolvedRoleAction is available for any WfTemplateObject
+WfIgnoreUnresolvedRoleAction~create~wt.workflow.definer.LoadWorkflow.addIgnoreUnresolvedRoleAction~ignoreUnresolvedRoleAction~ignoreUnresolvedRoleActionFlag
+#--WfSignature is available for WfExternalMethodTemplate or WfInternalMethodTemplate
+WfSignature~create~wt.workflow.definer.LoadWorkflow.addSignature~signature
+#--WfEnvironment is available for WfApplRobotTemplate
+WfEnvironment~create~wt.workflow.definer.LoadWorkflow.addEnvironment~environment
+WfNotificationBegin~create~wt.workflow.definer.LoadWorkflow.createNotification~subject~body~xCoordinate~yCoordinate
+WfNotificationEnd~create~wt.workflow.definer.LoadWorkflow.saveNotification
+#Role Setup & ResourcePool
+WfRoleSetup~create~wt.workflow.definer.LoadWorkflow.addRoleSetup~assigneeType~assigneeName~role~viewPermission~addPermission~removePermission
+WfResourcePool~create~wt.workflow.definer.LoadWorkflow.addResourcePool~role~resourcePoolType~resourcePoolName
+WfDefaultRoleSetup~create~wt.workflow.definer.LoadWorkflow.defaultRoleSetup~value
+#Role Reset Map
+WfRoleResetMap~create~wt.workflow.definer.LoadWorkflow.addRoleResetMap~role~reset
+# Render HTML or PDF
+RenderChoice~create~wt.workflow.definer.LoadWorkflow.renderTemplate~render
+#  TaskFormTemplate Name
+TaskFormTemplate~create~wt.workflow.definer.LoadWorkflow.saveTaskFormTemplate~TemplateName
+##------Workflow entries (End)
+PrefEntry~create~wt.prefs.LoadPrefEntry.createPrefEntry~name~value~node~user~context
+#-- Entries for creating the NotebookTemplate and Notebook for the admin user
+NotebookTemplate~create~wt.workflow.notebook.LoadNotebook.createNotebookTemplate~isUser
+Notebook~create~wt.workflow.notebook.LoadNotebook.createNotebook~parentContainerPath
+#Load container template
+CreateContainerTemplate~create~wt.inf.template.LoadContainerTemplate.createContainerTemplate~name~enabled~xmlPath~containerClassName~parentContainerPath~description
+AddPrincipalToRole~create~wt.inf.team.LoadContainerTeam.addPrincipalToRole~containerClass~containerName~role~principalNameOrDN~serviceName~useSharedTeam
+AddGuest~create~wt.inf.team.LoadContainerTeam.addGuest~containerClass~containerName~principalNameOrDN~serviceName
+AddOrgAdministrator~create~wt.inf.container.LoadContainer.addOrgAdministrator~userNameOrDN
+AddSiteAdministrator~create~wt.inf.container.LoadContainer.addSiteAdministrator~userNameOrDN
+AddCreator~create~wt.inf.container.LoadContainer.addCreator~userNameOrDN~containerClassName
+ActivateContainer~create~wt.inf.team.LoadContainerTeam.activateContainer~containerClass~containerName
+#Load BaseCriterionDefs
+BaseCriterionDef~create~wt.dataops.objectcol.LoadBaseCriterionDef.createBaseCriterionDef~path~uniqueId~primaryDef
+CriterionDefValidWith~create~wt.dataops.objectcol.LoadBaseCriterionDef.createCriterionDefValidWith~sourceNode~targetNodes
+RelationshipMapDef~create~wt.dataops.objectcol.LoadBaseCriterionDef.createRelationshipMapDef~path~uniqueId
+RelationshipMaps~create~wt.dataops.objectcol.LoadBaseCriterionDef.createRelationshipMaps~mapDefinitionId
+#--Load File Based Versioning
+CreateFileBasedBegin~create~wt.series.LoadFileBasedSeries.createFileBasedBegin~fileName
+##------ESI entries (Begin)
+BeginESITarget~create~com.ptc.windchill.esi.load.LoadESI.beginCreateESITarget~typedef~number~name~description~taskURI~defaultForContext~status~responseMetaInfoPath
+EndESITarget~create~com.ptc.windchill.esi.load.LoadESI.endCreateESITarget
+ESITargetAssignmentLink~create~com.ptc.windchill.esi.load.LoadESI.createESITargetAssignmentLink~releasableObjectNumber~releasableObjectType~version~iteration~number~view
+BeginESITargetAssignmentLink~create~com.ptc.windchill.esi.load.LoadESI.beginCreateESITargetAssignmentLink~typedef~releasableObjectNumber~releasableObjectType~version~iteration~number~view
+EndESITargetAssignmentLink~create~com.ptc.windchill.esi.load.LoadESI.endCreateESITargetAssignmentLink
+##------ESI entries (End)
+#Load Supplier
+CreateWTOrganization~create~wt.org.LoadPrincipal.createWTOrganization~name~codingSystem~organizationId~description~address~conferencingURL~conferencingId~domain~internetDomain~classification~directoryService
+CreateSupplier~create~com.ptc.windchill.suma.supplier.LoadSupplier.createSupplier~SupplierType~organization~domain~lifecycletemplate~lifecyclestate~teamTemplate~type
+EndSupplier~create~com.ptc.windchill.suma.supplier.LoadSupplier.endCreateSupplier
+AddContactToSupplier~create~com.ptc.windchill.suma.supplier.LoadSupplier.addContactToSupplier~SupplierType~organization~user~name~description~Email~phone
+AddDocumentToSupplier~create~com.ptc.windchill.suma.supplier.LoadSupplier.addDocumentToSupplier~SupplierType~organization~docNumber~docContainerPath
+ManufacturerPart~create~com.ptc.windchill.suma.part.LoadPart.createManufacturerPart~user~partName~partNumber~type~source~folder~lifecycle~view~variation1~variation2~teamTemplate~lifecyclestate~typedef~version~iteration~parentContainerPath~manufacturerID~manufacturerName~securityLabels~serviceable~servicekit
+BeginManufacturerPart~create~com.ptc.windchill.suma.part.LoadPart.beginCreateManufacturerPart~partName~partNumber~type~source~folder~lifecycle~view~variation1~variation2~teamTemplate~lifecyclestate~typedef~version~iteration~manufacturerID~manufacturerName~securityLabels~serviceable~servicekit
+EndManufacturerPart~create~com.ptc.windchill.suma.part.LoadPart.endCreateManufacturerPart~parentContainerPath
+VendorPart~create~com.ptc.windchill.suma.part.LoadPart.createVendorPart~user~partName~partNumber~type~source~folder~lifecycle~view~variation1~variation2~teamTemplate~lifecyclestate~typedef~version~iteration~parentContainerPath~vendorID~vendorName~securityLabels~serviceable~servicekit
+BeginVendorPart~create~com.ptc.windchill.suma.part.LoadPart.beginCreateVendorPart~partName~partNumber~type~source~folder~lifecycle~view~variation1~variation2~teamTemplate~lifecyclestate~typedef~version~iteration~vendorID~vendorName~securityLabels~serviceable~servicekit
+EndVendorPart~create~com.ptc.windchill.suma.part.LoadPart.endCreateVendorPart~parentContainerPath
+AddAML~create~com.ptc.windchill.suma.axl.LoadAXL.addAML~OEMPartNumber~OEMVersion~OEMIteration~OEMView~OEMVariation1~OEMVariation2~OEMOrganizationID~OEMOrganizationName~sourcingContext~manufacturerPartNumber~manufacturerName~manufacturerID~manufacturerPartContainer~manufacturerSourcingStatus
+AddAVL~create~com.ptc.windchill.suma.axl.LoadAXL.addAVL~OEMPartNumber~OEMVersion~OEMIteration~OEMView~OEMVariation1~OEMVariation2~OEMOrganizationID~OEMOrganizationName~sourcingContext~vendorPartNumber~vendorName~vendorID~vendorPartContainer~vendorSourcingStatus~manufacturerPartNumber~manufacturerName~manufacturerID~manufacturerPartContainer
+RemoveAML~create~com.ptc.windchill.suma.axl.LoadAXL.removeAML~OEMPartNumber~OEMVersion~OEMIteration~OEMView~OEMVariation1~OEMVariation2~OEMOrganizationID~OEMOrganizationName~sourcingContext~manufacturerPartNumber~manufacturerName~manufacturerID~manufacturerPartContainer
+RemoveAVL~create~com.ptc.windchill.suma.axl.LoadAXL.removeAVL~OEMPartNumber~OEMVersion~OEMIteration~OEMView~OEMVariation1~OEMVariation2~OEMOrganizationID~OEMOrganizationName~sourcingContext~vendorPartNumber~vendorName~vendorID~vendorPartContainer
+SetAMLPreference~create~com.ptc.windchill.suma.axl.LoadAXL.setAMLPreference~OEMPartNumber~OEMVersion~OEMIteration~OEMView~OEMVariation1~OEMVariation2~OEMOrganizationID~OEMOrganizationName~sourcingContext~manufacturerPartNumber~manufacturerName~manufacturerID~manufacturerPartContainer~manufacturerSourcingStatus
+SetAVLPreference~create~com.ptc.windchill.suma.axl.LoadAXL.setAVLPreference~OEMPartNumber~OEMVersion~OEMIteration~OEMView~OEMVariation1~OEMVariation2~OEMOrganizationID~OEMOrganizationName~sourcingContext~vendorPartNumber~vendorName~vendorID~vendorPartContainer~vendorSourcingStatus
+SourcingContext~create~com.ptc.windchill.suma.axl.LoadAXL.createContext~name~typedef
+EndSourcingContext~create~com.ptc.windchill.suma.axl.LoadAXL.endCreateContext
+
+#-----TaskformTemplates-------#
+CreateTaskformTemplate~create~com.ptc.netmarkets.workflow.taskformtemplates.LoadTaskformTemplate.createTemplate~FileName~FilePath~TaskType~PboClass~FileFormat~description
+
+#----- Reporting -------#
+CreateReport~create~com.ptc.windchill.enterprise.report.LoadReport.createReport~name~containerPath~description~inputPage~resourceBundle~uiContext~readyForUse~soapClass~soapMethod~reportTemplateName~reportTemplateContainerPath
+
+#--ProcessOverview
+CreateProcessOverview~create~wt.workflow.definer.LoadWorkflow.createProcessOverview~contentID~contentLocale~fileName
+LoadProcessOverview~create~wt.workflow.definer.LoadWorkflow.loadProcessOverview~contentLocale~fileName
+
+#--- Change object loader --------#
+ProblemReport~create~wt.change2.LoadChange.problemReport~problemReportName~problemReportNumber~problemReportDescription~lifecyclestate
+ChangeRequest~create~wt.change2.LoadChange.createChangeRequest~changeRequestName~changeRequestNumber~changeRequestDescription~lifecyclestate
+ChangeNotice~create~wt.change2.LoadChange.createChangeNotice~changeNoticeName~changeNoticeNumber~changeNoticeDescription~lifecyclestate
+ChangeActivity~create~wt.change2.LoadChange.createChangeActivity~changeActivityName~changeActivityNumber~changeActivityDescription~lifecyclestate
+BeginChangeDirective~create~wt.change2.LoadChangeDirective.beginCreateWTChangeDirective~chgDirectiveNumber~typedef~description~needDate~folder~lifecycle~lifecyclestate~teamTemplate~createTimestamp~modifyTimestamp~user
+EndChangeDirective~create~wt.change2.LoadChangeDirective.endCreateWTChangeDirective
+AddImpactedItem~create~wt.change2.LoadChangeDirective.AddImpactedItemToChangeDirective~chgDirectiveNumber~impactedItemNumber
+
+CreateChangeLinkBegin~create~wt.change2.LoadChange.createChangeLinkBegin
+CreateChangeLinkEnd~create~wt.change2.LoadChange.createChangeLinkEnd
+RelevantRequestData~create~wt.change2.LoadChange.addRelevantRequestData~changeObject~changeableNumber~changeableType
+AffectedActivityData~create~wt.change2.LoadChange.addAffectedActivityData~changeObject~changeableNumber~changeableType
+ChangeRecord~create~wt.change2.LoadChange.addChangeRecord~changeObject~changeableNumber~changeableType
+
+#--- Maturity object loader --------#
+PromotionNotice~create~wt.maturity.LoadMaturity.createPromotionNotice~promotionNoticeName~promotionNoticeNumber~promotionNoticeDescription
+AddPromotionObject~create~wt.maturity.LoadMaturity.addPromotionObject~persistableNumber~persistableType~isPromotionTarget
+CreateMaturityLinkBegin~create~wt.maturity.LoadMaturity.createMaturityLinkBegin
+CreateMaturityLinkEnd~create~wt.maturity.LoadMaturity.createMaturityLinkEnd
+
+DeletePreferenceCategory~create~wt.preference.LoadPreference.deletePreferenceCategory~name
+DeletePreferenceClient~create~wt.preference.LoadPreference.deletePreferenceClient~name
+DeletePreferenceDefinition~create~wt.preference.LoadPreference.deletePreferenceDefinition~name
+DeletePreferenceInstance~create~wt.preference.LoadPreference.deletePreferenceInstance~name~containerClass~containerName~organization~parentContainerPath~user~clientName
+LinkPreferenceClientDefinition~create~wt.preference.LoadPreference.setClientDefinitionLink~name~clientName
+PreferenceCategory~create~wt.preference.LoadPreference.createPreferenceCategory~name~parentName~displayName~description
+PreferenceClient~create~wt.preference.LoadPreference.createPreferenceClient~name~parentName~displayName~description
+PreferenceDefinition~create~wt.preference.LoadPreference.createPreferenceDefinition~name~visibility~categoryName~displayName~description~longDescription~defaultValue~handler~clientOverride~clientDelegate~clientData~showIfInstalled~hideIfInstalled
+PreferenceInstance~create~wt.preference.LoadPreference.createPreferenceInstance~name~containerClass~containerName~organization~parentContainerPath~user~clientName~value~lock~lockOnly
+UnlinkPreferenceClientDefinition~create~wt.preference.LoadPreference.deleteClientDefinitionLink~name~clientName
+
+#--- Authorization Agreement loader ------#
+AuthorizationAgreement~create~wt.access.agreement.LoadAgreement.createAgreement~agreementName~csvagreementStartDate~csvagreementEndDate~csvagreementIsActive~csvagreementAuthorizedRelatedChangeTypes~csvauthorizedParts~csvauthorizedPrincipals
+
+#--- Variant and Options loader ------#
+VariantSpec~create~com.ptc.wpcfg.load.LoadHelper.createVariantSpec~batchInputFilePath~description~folder~lifecycle~lifecyclestate~parentContainerPath~organizationName~organizationID~baselinenumber
+GenericVariantLink~create~com.ptc.wpcfg.load.LoadHelper.createGenericVariantLink~genericNumber~genericVersion~variantNumber~variantVersion~organizationName~organizationID
+ParamAttrDefnLink~create~com.ptc.wpcfg.load.LoadHelper.createParamAttrDefnLink~genericNumber~genericVersion~genericIteration~parameterName~definition
+
+EPMAuthoringAppVersion~create~wt.epm.LoadAuthoringAppVersion.createAuthoringAppVersions~authoringApp~versionNumber~versionName
+SiteViewPreference~create~wt.part.LoadPart.setSiteDefaultView~view
+
+#--- Shared team object loader ---#
+CreateSharedTeam~create~wt.inf.team.ix.LoadSharedTeam.createSharedTeam~sharedTeamName~sharedTeamDescription~sharedTeamOwner~sharedTeamInvitation~sharedTeamEnabled~sharedTeamExtendable
+CreateSharedTeamTemplate~create~wt.inf.template.LoadContainerTemplate.createSharedTeamTemplate~name~enabled~xmlPath~parentContainerPath~description
+
+#--- Collector Preferences loader ---#
+CollectorPreferenceDefinition~create~com.ptc.core.htmlcomp.collection.engine.LoadCollectorPreferences.createCollectorPreferenceDefinitions
+
+#--- DefaultAssociationConstraintItem loader ---#
+CreateDefaultAssociationConstraintItem~create~com.ptc.core.meta.type.mgmt.server.impl.association.LoadDefaultAssociationConstraintItem.createDefaultAssociationConstraintItem~linkType~roleAType~roleBType
+
+#--- Configurable Links loader ---#
+ConfigurableLink~create~wt.configurablelink.LoadConfigurableLink.createConfigurableReferenceLink~linkType~roleANumber~roleAVersion~roleAIteration~roleAView~roleAVariation1~roleAVariation2~roleAOrganizationId~roleAOrganizationName~roleBNumber~roleBOrganizationId~roleBOrganizationName
+ConfigurableMastersLink~create~wt.configurablelink.LoadConfigurableLink.createConfigurableMastersLink~linkType~roleANumber~roleAOrganizationId~roleAOrganizationName~roleBNumber~roleBOrganizationId~roleBOrganizationName
+ConfigurableDescribeLink~create~wt.configurablelink.LoadConfigurableLink.createConfigurableDescribeLink~linkType~roleANumber~roleAVersion~roleAIteration~roleAView~roleAVariation1~roleAVariation2~roleAOrganizationId~roleAOrganizationName~roleBNumber~roleBVersion~roleBIteration~roleBView~roleBVariation1~roleBVariation2~roleBOrganizationId~roleBOrganizationName~issuspect
+BeginConfigurableLink~create~wt.configurablelink.LoadConfigurableLink.beginCreateConfigurableLink~linkType~roleANumber~roleAVersion~roleAView~roleAVariation1~roleAVariation2~roleAOrganizationId~roleAOrganizationName~roleBNumber~roleBVersion~roleBView~roleBVariation1~roleBVariation2~roleBOrganizationId~roleBOrganizationName
+EndConfigurableLink~create~wt.configurablelink.LoadConfigurableLink.endCreateConfigurableLink
+
+#--- ATO: Navigation Filter Template loader ---#
+BeginNavigationFilterTemplate~create~wt.filter.LoadFilter.beginCreateNFT~name~type~description~supportExclusion~supportPartIba
+AddNavigationFilterAttribute~create~wt.filter.LoadFilter.addNavigationFilterAttribute~name~type~group~value
+EndNavigationFilterTemplate~create~wt.filter.LoadFilter.endCreateNFT
+RegisterNavigationFilterTemplate~create~wt.filter.LoadFilter.registerNavigationFilterTemplate~name~type~templateContainerPath~targetContainerPath
+BeginNavigationCriteria~create~wt.filter.LoadFilter.beginCreateNavigationCriteria~name~user~partNumber
+EndNavigationCriteria~create~wt.filter.LoadFilter.endCreateNavigationCriteria
+BeginNavigationFilter~create~wt.filter.LoadFilter.beginCreateNavigationFilter~nftname
+EndNavigationFilter~create~wt.filter.LoadFilter.endCreateNavigationFilter
+
+#--- ATO: loader ---#
+OptionGroup~create~com.ptc.windchill.option.load.Loader.createGroup~name~optionTypeDef
+BeginOption~create~com.ptc.windchill.option.load.Loader.beginOption~typedef~name~description~optionDataType~QoMName~OverrideDisplayUnits~optionGroup~requiredOption~singleChoiceSelection~number
+EndOption~create~com.ptc.windchill.option.load.Loader.endOption
+BeginEditOption~create~com.ptc.windchill.option.load.Loader.beginEditOption~number~name~containerPath~description~optionDataType~QoMName~OverrideDisplayUnits~requiredOption~singleChoiceSelection
+EndEditOption~create~com.ptc.windchill.option.load.Loader.endEditOption
+BeginChoice~create~com.ptc.windchill.option.load.Loader.beginChoice~name~description~choiceDataValue~option~typedef~number
+EndChoice~create~com.ptc.windchill.option.load.Loader.endChoice
+EditChoice~create~com.ptc.windchill.option.load.Loader.editChoice~number~name~description~choiceDataValue
+BeginOptionSet~create~com.ptc.windchill.option.load.Loader.beginCreateOptionSet~name~typedef~description~supportExclusionOptionChoices~supportItemOptionChoices~supportEffectivityOnOptionChoices~referenceOptionPoolRulesAutomatically
+AddChoice~create~com.ptc.windchill.option.load.Loader.addChoice~name~containerPath~startDate~endDate
+EndOptionSet~create~com.ptc.windchill.option.load.Loader.endCreateOptionSet
+ChoiceMappableChoiceLink~create~com.ptc.windchill.option.load.Loader.createChoiceMappableChoiceLink~choiceName~option~InstanceValue~Exclude~containerPath
+BeginChoiceMapping~create~com.ptc.windchill.option.load.Loader.beginChoiceMapping~sourceChoiceName~number~description~local~optionSet~containerPath~lifecycletemplate~lifecyclestate~teamTemplate
+ChoiceMappingTargetChoice~create~com.ptc.windchill.option.load.Loader.createChoiceMappingTargetChoice~targetChoiceName~containerPath
+EndChoiceMapping~create~com.ptc.windchill.option.load.Loader.endChoiceMapping
+BeginChoiceEnable~create~com.ptc.windchill.option.load.Loader.beginChoiceMapping~sourceChoiceName~number~description~local~optionSet~containerPath~lifecycletemplate~lifecyclestate~teamTemplate
+ChoiceEnableTargetChoice~create~com.ptc.windchill.option.load.Loader.createChoiceMappingTargetChoice~targetChoiceName~containerPath
+EndChoiceEnable~create~com.ptc.windchill.option.load.Loader.endChoiceMapping
+BeginChoiceConstraint~create~com.ptc.windchill.option.load.Loader.beginChoiceConstraint~number~description~local~optionSet~lifecycletemplate~lifecyclestate~teamTemplate
+ConstraintChoice~create~com.ptc.windchill.option.load.Loader.constraintChoice~name~containerPath
+EndChoiceConstraint~create~com.ptc.windchill.option.load.Loader.endChoiceConstraint
+RegisterOptionSet~create~com.ptc.windchill.option.load.Loader.registerOptionSet~name~state~optionSetContainerPath~OptionSetAssignableClass~OptionSetAssignableNumber
+BeginNavCriteria~create~com.ptc.windchill.option.load.Loader.beginCreateNavCriteria~name~user~partNumber~applicableType~sharedToAll
+EndNavCriteria~create~com.ptc.windchill.option.load.Loader.endNavCriteria
+BeginNavFilter~create~com.ptc.windchill.option.load.Loader.beginCreateNavFilter~optionSet~filterMode
+EndNavFilter~create~com.ptc.windchill.option.load.Loader.endCreateNavFilter
+BeginConditionalRule~create~com.ptc.windchill.option.load.Loader.beginConditionalRule~number~ruleType~containerPath
+AddRuleMember~create~com.ptc.windchill.option.load.Loader.addRuleMember~memberName~memberNumber~memberClass~containerPath~ruleMemberAction
+EndConditionalRule~create~com.ptc.windchill.option.load.Loader.endConditionalRule
+BeginAssignExpression~create~com.ptc.windchill.option.load.Loader.beginAssignExpression~expression~referenceDesignator
+AddLogicalExpression~create~com.ptc.windchill.option.load.Loader.addLogicalExpression~number~expression~description
+AddLogicalExpressionMember~create~com.ptc.windchill.option.load.Loader.addLogicalExpressionMember~memberName~memberNumber~memberClass~containerPath
+EndLogicalExpression~create~com.ptc.windchill.option.load.Loader.endLogicalExpression
+EndAssignExpression~create~com.ptc.windchill.option.load.Loader.endAssignExpression
+BeginAlias~create~com.ptc.windchill.option.load.Loader.beginAlias~typedef~name~expressionString~version~iteration~number~description~containerPath~folder~lifecycletemplate~lifecyclestate
+EndAlias~create~com.ptc.windchill.option.load.Loader.endAlias
+BeginAssignBasicExpression~create~com.ptc.windchill.option.load.Loader.beginAssignBasicExpression~optionSet~referenceDesignator
+EndAssignBasicExpression~create~com.ptc.windchill.option.load.Loader.endAssignBasicExpression
+BeginAssignBasicIndependentExpression~create~com.ptc.windchill.option.load.Loader.beginAssignBasicIndependentExpression~optionSet~referenceDesignator
+EndAssignBasicIndependentExpression~create~com.ptc.windchill.option.load.Loader.endAssignBasicIndependentExpression
+BeginIndependentAssignExpression~create~com.ptc.windchill.option.load.Loader.beginIndependentAssignExpression~expression~referenceDesignator
+EndIndependentAssignExpression~create~com.ptc.windchill.option.load.Loader.endIndependentAssignExpression
+
+
+#EndAlias~create~com.ptc.windchill.option.load.Loader.endChoice
+
+
+#--- ATO: ExternalLogicLink loader ---#
+ExternalLogicLink~create~wt.generic.LoadGeneric.createExternalLogicLink~assemblyPartNumber~constituentPartNumber~reference
+
+#--- Formula loader ---#
+FormulaMetaData~create~com.ptc.windchill.mpml.formula.LoadFormula.createFormulaMetaData~user~name~description~type~formulaClassName~folder~parentContainerPath~organizationName~organizationID~createTimestamp~modifyTimestamp
+FormulaSet~create~com.ptc.windchill.mpml.formula.LoadFormula.createFormulaSet~user~name~description~folder~parentContainerPath~organizationName~organizationID~createTimestamp~modifyTimestamp
+AddFormulaMetaData~create~com.ptc.windchill.mpml.formula.LoadFormula.addFormulaMetaDataToFormulaSet~formulaSetName~formulaMetaDataName~attributeName~organizationName~organizationID
+RemoveFormulaMetaData~create~com.ptc.windchill.mpml.formula.LoadFormula.removeFormulaMetaDataFromFormulaSet~formulaSetName~formulaMetaDataName~attributeName~organizationName~organizationID
+
+#--- Configuring WTMasterProcessTemplate ---#
+WTMasterProcessTemplate~create~com.ptc.windchill.dpimpl.LoadWTMasterProcessTemplate.createMasterProcessTemplate~name~description~xmlPath
+
+#--- PartList loader ---#
+PartList~create~com.ptc.arbortext.windchill.partlist.LoadPartList.createPartList~user~name~number~folder~lifecycle~typedef~view~teamTemplate~lifecyclestate~parentContainerPath~version~iteration~description~informationType~partListItemType~organizationName~organizationID~createTimestamp~modifyTimestamp
+BeginPartList~create~com.ptc.arbortext.windchill.partlist.LoadPartList.beginPartList~user~name~number~folder~lifecycle~typedef~view~teamTemplate~lifecyclestate~parentContainerPath~version~iteration~description~informationType~partListItemType~organizationName~organizationID~createTimestamp~modifyTimestamp
+EndPartList~create~com.ptc.arbortext.windchill.partlist.LoadPartList.endPartList
+PartListItem~create~com.ptc.arbortext.windchill.partlist.LoadPartList.createPartListItem~parentNumber~parentVersion~parentIteration~parentView~childNumber~itemNumber~lineNumber~itemSequenceNumber~indenture~quantity~serviceable~illustrated~remarks~instanceIds~componentIds~structureId~graphicRef~organizationName~organizationID~typedef
+BeginPartListItem~create~com.ptc.arbortext.windchill.partlist.LoadPartList.beginPartListItem~parentNumber~parentVersion~parentIteration~parentView~childNumber~itemNumber~lineNumber~itemSequenceNumber~indenture~quantity~serviceable~illustrated~remarks~instanceIds~componentIds~structureId~graphicRef~organizationName~organizationID~typedef
+EndPartListItem~create~com.ptc.arbortext.windchill.partlist.LoadPartList.endPartListItem
+PartToPartListLink~create~com.ptc.arbortext.windchill.partlist.LoadPartList.createPartToPartListLink~partNumber~partVersion~partIteration~partView~partListNumber
+PartListToPartLink~create~com.ptc.arbortext.windchill.partlist.LoadPartList.createPartListToPartLink~partListNumber~partListVersion~partListIteration~partListView~partNumber~partVersion~partIteration~partView
+PartListToEPMDocumentLink~create~com.ptc.arbortext.windchill.partlist.LoadPartList.createPartListToEPMDocumentLink~partListNumber~partListVersion~partListIteration~partListView~fileName~docVersion~docIteration~format~graphicRef~printOrder~printView
+
+#--- Translation Link loader ---#
+TranslationLink~create~com.ptc.arbortext.windchill.translation.load.LoadTranslationLink.createTranslationLink~sourceNumber~sourceVersion~sourceIteration~translationNumber~translationVersion~translationIteration~language
+
+#--- MPMLink loader ---#
+MfgStandardGroup~create~com.ptc.windchill.mpml.mfgprocess.LoadMfgStandardGroup.createMfgStandardGroup~user~name~number~description~view~folder~lifecycle~lifecyclestate~teamTemplate~typedef~parentContainerPath~version~iteration~createTimestamp~modifyTimestamp
+BeginMPMMfgStandardGroup~create~com.ptc.windchill.mpml.mfgprocess.LoadMfgStandardGroup.beginMfgStandardGroup~user~name~number~description~view~folder~lifecycle~lifecyclestate~teamTemplate~typedef~parentContainerPath~version~iteration~createTimestamp~modifyTimestamp
+EndMPMMfgStandardGroup~create~com.ptc.windchill.mpml.mfgprocess.LoadMfgStandardGroup.endMfgStandardGroup
+MfgProcess~create~com.ptc.windchill.mpml.mfgprocess.LoadMfgProcess.createMfgProcess~user~name~number~category~description~longDescription~view~folder~lifecycle~lifecyclestate~teamTemplate~typedef~parentContainerPath~version~iteration~createTimestamp~modifyTimestamp
+BeginMPMMfgProcess~create~com.ptc.windchill.mpml.mfgprocess.LoadMfgProcess.beginMfgProcess~user~name~number~category~description~longDescription~view~folder~lifecycle~lifecyclestate~teamTemplate~typedef~parentContainerPath~version~iteration~createTimestamp~modifyTimestamp
+EndMPMMfgProcess~create~com.ptc.windchill.mpml.mfgprocess.LoadMfgProcess.endMfgProcess
+CreateStandardUsageLink~create~com.ptc.windchill.mpml.mfgprocess.LoadMfgStandardGroup.createStandardUsageLink~typedef~parentNumber~parentVersion~parentIteration~parentView~childType~childNumber
+BeginMPMMfgStandardUsageLink~create~com.ptc.windchill.mpml.mfgprocess.LoadMfgStandardGroup.beginMPMMfgStandardUsageLink~typedef~parentNumber~parentVersion~parentIteration~parentView~childType~childNumber
+EndMPMMfgStandardUsageLink~create~com.ptc.windchill.mpml.mfgprocess.LoadMfgStandardGroup.endMPMMfgStandardUsageLink
+CreateCompatibilityLink~create~com.ptc.windchill.mpml.LoadCommonMPMLinks.createCompatibilityLink~typedef~parentType~parentNumber~parentVersion~parentIteration~parentView~childType~childNumber~compatibilityType~stepUsageRate1~stepUsageRate2~stepUsageRate3~stepUsageRate4~stepUsageRate5~stepUsageRate6~stepUsageRate7~stepUsageRate8
+BeginMPMCompatibilityLink~create~com.ptc.windchill.mpml.LoadCommonMPMLinks.beginMPMCompatibilityLink~typedef~parentType~parentNumber~parentVersion~parentIteration~parentView~childType~childNumber~compatibilityType~stepUsageRate1~stepUsageRate2~stepUsageRate3~stepUsageRate4~stepUsageRate5~stepUsageRate6~stepUsageRate7~stepUsageRate8
+EndMPMCompatibilityLink~create~com.ptc.windchill.mpml.LoadCommonMPMLinks.endMPMCompatibilityLink
+CreateMPMDocumentDescribeLink~create~com.ptc.windchill.mpml.LoadCommonMPMLinks.createMPMDocumentDescribeLink~parentType~parentNumber~parentVersion~parentIteration~parentView~childNumber~childVersion~childIteration
+CreateMPMDocumentReferenceLink~create~com.ptc.windchill.mpml.LoadCommonMPMLinks.createMPMDocumentReferenceLink~parentType~parentNumber~parentVersion~parentIteration~parentView~childNumber
+CreateAlternateUnitLink~create~com.ptc.windchill.mpml.LoadCommonMPMLinks.createAlternateUnitLink~typedef~parentType~parentNumber~alternateUnit~numerator~denominator
+BeginAlternateUnitLink~create~com.ptc.windchill.mpml.LoadCommonMPMLinks.beginAlternateUnitLink~typedef~parentType~parentNumber~alternateUnit~numerator~denominator
+EndAlternateUnitLink~create~com.ptc.windchill.mpml.LoadCommonMPMLinks.endAlternateUnitLink
+CreatePartToPlantAsignmentLink~create~com.ptc.windchill.mpml.LoadCommonMPMLinks.createPartToPlantAsignmentLink~typedef~parentNumber~parentVersion~parentIteration~parentView~childNumber
+BeginMPMPartToPlantAssignmentLink~create~com.ptc.windchill.mpml.LoadCommonMPMLinks.beginMPMPartToPlantAssignmentLink~typedef~parentNumber~parentVersion~parentIteration~parentView~childNumber
+EndMPMPartToPlantAssignmentLink~create~com.ptc.windchill.mpml.LoadCommonMPMLinks.endMPMPartToPlantAssignmentLink
+CreateEquivalenceLink~create~wt.associativity.LoadAssociativityLinks.createEquivalenceLink~typedef~parentNumber~parentVersion~parentIteration~parentView~childNumber~childVersion~childIteration~childView~description~upstreamContext~downstreamContext~consumable
+BeginEquivalenceLink~create~wt.associativity.LoadAssociativityLinks.beginEquivalenceLink~typedef~parentNumber~parentVersion~parentIteration~parentView~childNumber~childVersion~childIteration~childView~description~upstreamContext~downstreamContext~consumable
+EndEquivalenceLink~create~wt.associativity.LoadAssociativityLinks.endEquivalenceLink
+CreateConsumptionLink~create~wt.associativity.LoadAssociativityLinks.createConsumptionLink~downStreamRootPartNumber~downStreamPath~downStreamLeafPartView~upStreamRootPartNumber~upStreamPath~upStreamLeafPartView
+CreateProcessPlan~create~com.ptc.windchill.mpml.processplan.LoadProcessPlan.createProcessPlan~user~name~number~category~description~standardProcessPlan~defaultUnit~folder~lifecycle~view~teamTemplate~lifecyclestate~typedef~parentContainerPath~version~iteration~organizationName~organizationID~createTimestamp~modifyTimestamp
+BeginProcessPlan~create~com.ptc.windchill.mpml.processplan.LoadProcessPlan.beginProcessPlan~user~name~number~category~description~standardProcessPlan~defaultUnit~folder~lifecycle~view~teamTemplate~lifecyclestate~typedef~parentContainerPath~version~iteration~organizationName~organizationID~createTimestamp~modifyTimestamp
+EndProcessPlan~create~com.ptc.windchill.mpml.processplan.LoadProcessPlan.endProcessPlan
+CreatePartToProcessPlanLink~create~com.ptc.windchill.mpml.processplan.LoadProcessPlan.createPartToProcessPlanLink~typedef~parentNumber~parentVersion~parentIteration~parentView~childNumber~childVersion~childIteration~childView
+BeginPartToProcessPlanLink~create~com.ptc.windchill.mpml.processplan.LoadProcessPlan.beginPartToProcessPlanLink~typedef~parentNumber~parentVersion~parentIteration~parentView~childNumber~childVersion~childIteration~childView
+EndPartToProcessPlanLink~create~com.ptc.windchill.mpml.processplan.LoadProcessPlan.endPartToProcessPlanLink
+CreateStandardProcedureLink~create~com.ptc.windchill.mpml.processplan.LoadProcessPlan.createStandardProcedureLink~typedef~parentNumber~parentVersion~parentIteration~parentView~parentType~childNumber~opLabel
+BeginStandardProcedureLink~create~com.ptc.windchill.mpml.processplan.LoadProcessPlan.beginStandardProcedureLink~typedef~parentNumber~parentVersion~parentIteration~parentView~parentType~childNumber~opLabel
+EndStandardProcedureLink~create~com.ptc.windchill.mpml.processplan.LoadProcessPlan.endStandardProcedureLink
+CreateOperation~create~com.ptc.windchill.mpml.processplan.operation.LoadOperation.createOperation~user~name~number~category~description~defaultUnit~folder~lifecycle~view~teamTemplate~lifecyclestate~typedef~parentContainerPath~version~iteration~organizationName~organizationID~createTimestamp~modifyTimestamp
+BeginOperation~create~com.ptc.windchill.mpml.processplan.operation.LoadOperation.beginOperation~user~name~number~category~description~defaultUnit~folder~lifecycle~view~teamTemplate~lifecyclestate~typedef~parentContainerPath~version~iteration~organizationName~organizationID~createTimestamp~modifyTimestamp
+EndOperation~create~com.ptc.windchill.mpml.processplan.operation.LoadOperation.endOperation
+CreateOperationUsageLink~create~com.ptc.windchill.mpml.processplan.operation.LoadOperation.createOperationUsageLink~typedef~parentNumber~parentVersion~parentIteration~parentView~parentType~childNumber~opLabel
+BeginOperationUsageLink~create~com.ptc.windchill.mpml.processplan.operation.LoadOperation.beginOperationUsageLink~typedef~parentNumber~parentVersion~parentIteration~parentView~parentType~childNumber~opLabel
+EndOperationUsageLink~create~com.ptc.windchill.mpml.processplan.operation.LoadOperation.endOperationUsageLink
+CreateOperationToPartLink~create~com.ptc.windchill.mpml.processplan.operation.LoadOperation.createOperationToPartLink~typedef~parentNumber~parentVersion~parentIteration~parentView~childNumber~defaultUnit~quantity~allocationType~cmpIdPath~lineNumberPath~assemblyNumber~description
+BeginOperationToPartLink~create~com.ptc.windchill.mpml.processplan.operation.LoadOperation.beginOperationToPartLink~typedef~parentNumber~parentVersion~parentIteration~parentView~childNumber~defaultUnit~quantity~allocationType~cmpIdPath~lineNumberPath~assemblyNumber~description
+EndOperationToPartLink~create~com.ptc.windchill.mpml.processplan.operation.LoadOperation.endOperationToPartLink
+CreateSequence~create~com.ptc.windchill.mpml.processplan.sequence.LoadSequence.createSequence~user~name~number~description~defaultUnit~folder~lifecycle~view~teamTemplate~lifecyclestate~typedef~parentContainerPath~version~iteration~organizationName~organizationID~createTimestamp~modifyTimestamp
+BeginSequence~create~com.ptc.windchill.mpml.processplan.sequence.LoadSequence.beginSequence~user~name~number~description~defaultUnit~folder~lifecycle~view~teamTemplate~lifecyclestate~typedef~parentContainerPath~version~iteration~organizationName~organizationID~createTimestamp~modifyTimestamp
+EndSequence~create~com.ptc.windchill.mpml.processplan.sequence.LoadSequence.endSequence
+CreateSequenceUsageLink~create~com.ptc.windchill.mpml.processplan.sequence.LoadSequence.createSequenceUsageLink~typedef~parentNumber~parentVersion~parentIteration~parentView~parentType~childNumber~seqLinkNumber~category~seqBranchingOpLabel~seqReturnOpLabel
+BeginSequenceUsageLink~create~com.ptc.windchill.mpml.processplan.sequence.LoadSequence.beginSequenceUsageLink~typedef~parentNumber~parentVersion~parentIteration~parentView~parentType~childNumber~seqLinkNumber~category~seqBranchingOpLabel~seqReturnOpLabel
+EndSequenceUsageLink~create~com.ptc.windchill.mpml.processplan.sequence.LoadSequence.endSequenceUsageLink
+CreateOperationToWorkCenterLink~create~com.ptc.windchill.mpml.processplan.operation.LoadOperation.createOperationToWorkCenterLink~typedef~parentNumber~parentVersion~parentIteration~parentView~childNumber~plantNumber~plantVersion~plantIteration~plantView~department~description
+BeginOperationToWorkCenterLink~create~com.ptc.windchill.mpml.processplan.operation.LoadOperation.beginOperationToWorkCenterLink~typedef~parentNumber~parentVersion~parentIteration~parentView~childNumber~plantNumber~plantVersion~plantIteration~plantView~department~description
+EndOperationToWorkCenterLink~create~com.ptc.windchill.mpml.processplan.operation.LoadOperation.endOperationToWorkCenterLink
+CreatePlantAssignmentLink~create~com.ptc.windchill.mpml.LoadCommonMPMLinks.createPlantAssignmentLink~typedef~parentNumber~parentVersion~parentIteration~parentView~parentType~childNumber
+BeginPlantAssignmentLink~create~com.ptc.windchill.mpml.LoadCommonMPMLinks.beginPlantAssignmentLink~typedef~parentNumber~parentVersion~parentIteration~parentView~parentType~childNumber
+EndPlantAssignmentLink~create~com.ptc.windchill.mpml.LoadCommonMPMLinks.endPlantAssignmentLink
+CreateOperationToConsumableLink~create~com.ptc.windchill.mpml.processplan.operation.LoadOperation.createOperationToConsumableLink~typedef~parentNumber~parentVersion~parentIteration~parentView~childNumber~defaultUnit~quantity~allocationNumber~description~scheduled~usageRate
+BeginOperationToConsumableLink~create~com.ptc.windchill.mpml.processplan.operation.LoadOperation.beginOperationToConsumableLink~typedef~parentNumber~parentVersion~parentIteration~parentView~childNumber~defaultUnit~quantity~allocationNumber~description~scheduled~usageRate
+EndOperationToConsumableLink~create~com.ptc.windchill.mpml.processplan.operation.LoadOperation.endOperationToConsumableLink
+CreateProcessPlanRepresentation~create~com.ptc.windchill.mpml.processplan.LoadProcessPlan.createProcessPlanRepresentation~parentNumber~parentVersion~parentIteration~parentView~repDirectory~repName~repDescription~repDefault~repCreateThumbnail~repStoreEdz
+CreateOperationRepresentation~create~com.ptc.windchill.mpml.processplan.operation.LoadOperation.createOperationRepresentation~parentNumber~parentVersion~parentIteration~parentView~repDirectory~repName~repDescription~repDefault~repCreateThumbnail~repStoreEdz
+CreateSequenceRepresentation~create~com.ptc.windchill.mpml.processplan.sequence.LoadSequence.createSequenceRepresentation~parentNumber~parentVersion~parentIteration~parentView~repDirectory~repName~repDescription~repDefault~repCreateThumbnail~repStoreEdz
+MPMPlant~create~com.ptc.windchill.mpml.resource.LoadResource.createPlant~user~name~number~source~category~folder~lifecycle~view~teamTemplate~lifecyclestate~typedef~parentContainerPath~version~iteration~organizationName~organizationID~createTimestamp~modifyTimestamp~external~description~address~City~State~Country~ZipCode
+BeginMPMPlant~create~com.ptc.windchill.mpml.resource.LoadResource.beginPlant~user~name~number~source~category~folder~lifecycle~view~teamTemplate~lifecyclestate~typedef~parentContainerPath~version~iteration~organizationName~organizationID~createTimestamp~modifyTimestamp~external~description~address~City~State~Country~ZipCode
+EndMPMPlant~create~com.ptc.windchill.mpml.resource.LoadResource.endPlant
+MPMWorkCenter~create~com.ptc.windchill.mpml.resource.LoadResource.createWorkCenter~user~name~number~source~defaultUnit~category~usage~folder~lifecycle~view~teamTemplate~lifecyclestate~typedef~parentContainerPath~version~iteration~organizationName~organizationID~createTimestamp~modifyTimestamp~erpValidationCode~external~description
+BeginMPMWorkCenter~create~com.ptc.windchill.mpml.resource.LoadResource.beginWorkCenter~user~name~number~source~defaultUnit~category~usage~folder~lifecycle~view~teamTemplate~lifecyclestate~typedef~parentContainerPath~version~iteration~organizationName~organizationID~createTimestamp~modifyTimestamp~erpValidationCode~external~description
+EndMPMWorkCenter~create~com.ptc.windchill.mpml.resource.LoadResource.endWorkCenter
+MPMTooling~create~com.ptc.windchill.mpml.resource.LoadResource.createTooling~user~name~number~source~defaultUnit~category~usage~folder~lifecycle~view~teamTemplate~lifecyclestate~typedef~parentContainerPath~version~iteration~organizationName~organizationID~createTimestamp~modifyTimestamp~description
+BeginMPMTooling~create~com.ptc.windchill.mpml.resource.LoadResource.beginTooling~user~name~number~source~defaultUnit~category~usage~folder~lifecycle~view~teamTemplate~lifecyclestate~typedef~parentContainerPath~version~iteration~organizationName~organizationID~createTimestamp~modifyTimestamp~description
+EndMPMTooling~create~com.ptc.windchill.mpml.resource.LoadResource.endTooling
+MPMSkill~create~com.ptc.windchill.mpml.resource.LoadResource.createSkill~user~name~number~defaultUnit~category~usage~folder~lifecycle~view~teamTemplate~lifecyclestate~typedef~parentContainerPath~version~iteration~organizationName~organizationID~createTimestamp~modifyTimestamp~description
+BeginMPMSkill~create~com.ptc.windchill.mpml.resource.LoadResource.beginSkill~user~name~number~defaultUnit~category~usage~folder~lifecycle~view~teamTemplate~lifecyclestate~typedef~parentContainerPath~version~iteration~organizationName~organizationID~createTimestamp~modifyTimestamp~description
+EndMPMSkill~create~com.ptc.windchill.mpml.resource.LoadResource.endSkill
+MPMResourceGroup~create~com.ptc.windchill.mpml.resource.LoadResource.createResourceGroup~user~name~number~defaultUnit~category~department~folder~lifecycle~view~teamTemplate~lifecyclestate~typedef~parentContainerPath~version~iteration~organizationName~organizationID~createTimestamp~modifyTimestamp~description
+BeginMPMResourceGroup~create~com.ptc.windchill.mpml.resource.LoadResource.beginResourceGroup~user~name~number~defaultUnit~category~department~folder~lifecycle~view~teamTemplate~lifecyclestate~typedef~parentContainerPath~version~iteration~organizationName~organizationID~createTimestamp~modifyTimestamp~description
+EndMPMResourceGroup~create~com.ptc.windchill.mpml.resource.LoadResource.endResourceGroup
+MPMProcessingMaterial~create~com.ptc.windchill.mpml.resource.LoadResource.createProcessingMaterial~user~name~number~source~defaultUnit~category~usage~folder~lifecycle~view~teamTemplate~lifecyclestate~typedef~parentContainerPath~version~iteration~organizationName~organizationID~createTimestamp~modifyTimestamp~description
+BeginMPMProcessingMaterial~create~com.ptc.windchill.mpml.resource.LoadResource.beginProcessingMaterial~user~name~number~source~defaultUnit~category~usage~folder~lifecycle~view~teamTemplate~lifecyclestate~typedef~parentContainerPath~version~iteration~organizationName~organizationID~createTimestamp~modifyTimestamp~description
+EndMPMProcessingMaterial~create~com.ptc.windchill.mpml.resource.LoadResource.endProcessingMaterial
+ResourceToResourceLink~create~com.ptc.windchill.mpml.resource.LoadResource.addResourceToResource~typedef~assemblyPartNumber~constituentPartNumber~constituentPartQty~constituentPartUnit~componentId~inclusionOption~quantityOption~reference~assemblyPartVersion~assemblyPartIteration~assemblyPartView~assemblyPartVariation1~assemblyPartVariation2~organizationName~organizationID
+BeginResourceToResourceLink~create~com.ptc.windchill.mpml.resource.LoadResource.beginAddResourceToResource~typedef~assemblyPartNumber~assemblyPartVersion~constituentPartNumber~constituentPartQty~constituentPartUnit~componentId~inclusionOption~quantityOption~reference~lineNumber~findNumber~occurrenceLocation~referenceDesignator~assemblyPartIteration~assemblyPartView~assemblyPartVariation1~assemblyPartVariation2~organizationName~organizationID
+EndResourceToResourceLink~create~com.ptc.windchill.mpml.resource.LoadResource.endAddResourceToResource
+CreateWorkcenterToFormulasetLink~create~com.ptc.windchill.mpml.resource.LoadResource.createWorkcenterToFormulasetLink~typedef~parentNumber~parentVersion~parentIteration~parentView~childName
+CreateOperationToOperatedPartLink~create~com.ptc.windchill.mpml.processplan.operation.LoadOperation.createOperationToOperatedPartLink~typedef~parentNumber~parentVersion~parentIteration~parentView~childNumber~quantity~defaultUnit~description
+BeginOperationToOperatedPartLink~create~com.ptc.windchill.mpml.processplan.operation.LoadOperation.beginOperationToOperatedPartLink~typedef~parentNumber~parentVersion~parentIteration~parentView~childNumber~quantity~defaultUnit~description
+EndOperationToOperatedPartLink~create~com.ptc.windchill.mpml.processplan.operation.LoadOperation.endOperationToOperatedPartLink
+CreateOperationProcessLink~create~com.ptc.windchill.mpml.processplan.operation.LoadOperation.createOperationProcessLink~typedef~parentNumber~parentVersion~parentIteration~parentView~childNumber~description
+BeginOperationProcessLink~create~com.ptc.windchill.mpml.processplan.operation.LoadOperation.beginOperationProcessLink~typedef~parentNumber~parentVersion~parentIteration~parentView~childNumber~description
+EndOperationProcessLink~create~com.ptc.windchill.mpml.processplan.operation.LoadOperation.endOperationProcessLink
+CreatePrecedenceConstraintLink~create~com.ptc.windchill.mpml.processplan.operation.LoadOperation.createPrecedenceConstraintLink~typedef~parentNumber~parentVersion~parentIteration~parentView~childNumber~childType~opLabel~required~constraintType
+BeginPrecedenceConstraintLink~create~com.ptc.windchill.mpml.processplan.operation.LoadOperation.beginPrecedenceConstraintLink~typedef~parentNumber~parentVersion~parentIteration~parentView~childNumber~childType~opLabel~required~constraintType
+EndPrecedenceConstraintLink~create~com.ptc.windchill.mpml.processplan.operation.LoadOperation.endPrecedenceConstraintLink
+CreateResourceRepresentation~create~com.ptc.windchill.mpml.resource.LoadResource.createResourceRepresentation~parentNumber~parentVersion~parentIteration~parentView~repDirectory~repName~repDescription~repDefault~repCreateThumbnail~repStoreEdz
+
+#--- CollaborationSite Loader ---#
+CollaborationSite~create~wt.fedInfra.collaboration.LoadCollaborationSite.createCollaborationSite~name~description~siteURL~repositoryName~repositoryGUID~repositoryDomain~sitePrincipal
+
+#--- ERPMaterial and ERPPartSpecificPlantData Loader ---#
+CreateERPMaterialLink~create~wt.esi.LoadERPMaterial.createERPMaterialLink~typedef~partNumber~modifyTimestamp
+BeginERPMaterialLink~create~wt.esi.LoadERPMaterial.beginERPMaterialLink~csvtypedef~csvpartNumber~csvmodifyTimestamp
+EndERPMaterialLink~create~wt.esi.LoadERPMaterial.endERPMaterialLink
+CreateERPMaterial~create~wt.esi.LoadERPMaterial.createERPMaterial~csvtypedef~csvuser~csvpartNumber~csvrevisionLabel~csvmodifyTimestamp
+BeginERPMaterial~create~wt.esi.LoadERPMaterial.beginERPMaterial~csvtypedef~csvuser~csvpartNumber~csvrevisionLabel~csvmodifyTimestamp
+EndERPMaterial~create~wt.esi.LoadERPMaterial.endERPMaterial
+CreateERPMaterialDocumentDescribeLink~create~wt.esi.LoadERPMaterial.createERPMaterialDocumentDescribeLink~csvtypedef~csvpartNumber~csverpMaterialRevisionLabel~csvchildNumber~csvchildVersion~csvchildIteration
+BeginERPMaterialDocumentDescribeLink~create~wt.esi.LoadERPMaterial.beginERPMaterialDocumentDescribeLink~csvtypedef~csvpartNumber~csverpMaterialRevisionLabel~csvchildNumber~csvchildVersion~csvchildIteration
+EndERPMaterialDocumentDescribeLink~create~wt.esi.LoadERPMaterial.endERPMaterialDocumentDescribeLink
+CreateERPMaterialDocumentReferenceLink~create~wt.esi.LoadERPMaterial.createERPMaterialDocumentReferenceLink~csvtypedef~csvpartNumber~csverpMaterialRevisionLabel~csvchildNumber
+BeginERPMaterialDocumentReferenceLink~create~wt.esi.LoadERPMaterial.beginERPMaterialDocumentReferenceLink~csvtypedef~csvpartNumber~csverpMaterialRevisionLabel~csvchildNumber
+EndERPMaterialDocumentReferenceLink~create~wt.esi.LoadERPMaterial.endERPMaterialDocumentReferenceLink
+CreateERPPartSpecificPlantDataLink~create~wt.esi.LoadERPPartSpecificPlantData.createERPPartSpecificPlantDataLink~csvtypedef~csvpartNumber~csverpMaterialRevisionLabel~csvplantTypedef~csvview~csvstorageLocation~csvcreateTimestamp~csvmodifyTimestamp
+BeginERPPartSpecificPlantDataLink~create~wt.esi.LoadERPPartSpecificPlantData.beginERPPartSpecificPlantDataLink~csvtypedef~csvpartNumber~csverpMaterialRevisionLabel~csvplantTypedef~csvview~csvstorageLocation~csvcreateTimestamp~csvmodifyTimestamp
+EndERPPartSpecificPlantDataLink~create~wt.esi.LoadERPPartSpecificPlantData.endERPPartSpecificPlantDataLink
+BeginUpdateERPPartSpecificPlantData~create~wt.esi.LoadERPPartSpecificPlantData.beginUpdateERPPartSpecificPlantData~csvtypedef~csvuser~csvpartNumber~csverpMaterialRevisionLabel~csvview~csvstorageLocation~csvmodifyTimestamp
+EndUpdateERPPartSpecificPlantData~create~wt.esi.LoadERPPartSpecificPlantData.endUpdateERPPartSpecificPlantData
+
+#--- Site Information Category Loader ---#
+SystemConfigurationCollectorCategory~create~com.ptc.customersupport.categorypersist.CategoryLoad.createCategory~categoryMbeanName~categoryDisplayName~categoryDescription~categoryEditable~pluginClassNames
+
+
+#--- HandleNewTableViewsOnUpgrade loader ---#
+HandleNewTableViewsOnUpgrade~create~csvTableID
+
+#--- csvUpdateTableView loader ---#
+csvUpdateTableView~create~csvTableID~csvViewName~csvObjectType
+
+#--- LicenseGroups loader ---#
+LicenseGroups~create~wt.org.LoadLicenseGroups.load
+
+#--- Conflict Resolution loader ---#
+CreateConflictResolution~create~wt.fedInfra.LoadConflictResolution.createConflictResolution~conflictType~resolutionType~contextKey~contextValue
+GetConflictResolution~create~wt.fedInfra.LoadConflictResolution.getAllConflictResolutionForContext~contextKey~contextValue
+DeleteConflictResolution~create~wt.fedInfra.LoadConflictResolution.deleteConflictResolution~conflictType~resolutionType~contextKey~contextValue
+DeleteAllConflictResolution~create~wt.fedInfra.LoadConflictResolution.deleteAllConflictResolutionForContext~contextKey~contextValue
+
+#--- Cognos Reports loader ---#
+UpdateCognosModel~create~com.ptc.windchill.enterprise.report.ReportHelper.updateCognosModel
+LoadCognosReportSpec~create~com.ptc.windchill.enterprise.report.ReportHelper.loadCognosReports~Assembly
+DeleteCognosReport~create~com.ptc.windchill.enterprise.report.ReportHelper.deleteCognosReports~ReportName
+
+#--- Meeting WebBased/Traditional loader ---#
+MeetingBegin~create~wt.meeting.MeetingLoader.beginCreateMeeting~MeetingType~MeetingTopic~Host~Date~Time~Duration~TeleconferencePhoneNum~TeleconferenceInfo~MeetingLocation~MeetingPass~TextMinutes~TextAgenda~MeetingStatus
+AgendaDocument~create~wt.meeting.MeetingLoader.linkMeetingAgenda~AgendaDocumentNumber~AgendaDocumentVersion
+MinutesDocument~create~wt.meeting.MeetingLoader.linkMeetingMinutes~MinutesDocumentNumber~MinutesDocumentVersion
+MeetingSubject~create~wt.meeting.MeetingLoader.linkMeetingSubject~SubjectObjectClass~SubjectObjectNumber~SubjectObjectVersion
+MeetingParticipant~create~wt.meeting.MeetingLoader.linkMeetingParticipant~ParticipantType~ParticipantName
+MeetingEnd~create~wt.meeting.MeetingLoader.endCreateMeeting
+
+UpdateCognosModel~create~com.ptc.windchill.enterprise.report.ReportHelper.updateCognosModel
+LoadCognosReportSpec~create~com.ptc.windchill.enterprise.report.ReportHelper.loadCognosReports~Assembly
+DeleteCognosReport~create~com.ptc.windchill.enterprise.report.ReportHelper.deleteCognosReports~ReportName
+
+
+#--- Supersede Loader Begin ---#
+BeginCreateSupersede~create~wt.supersede.LoadSupersede.beginCreateSupersede
+CreateSuperseded~create~wt.supersede.LoadSupersede.createSuperseded~supersededNumber~supersededName
+CreateSuperseding~create~wt.supersede.LoadSupersede.createSuperseding~supersedingNumber~supersedingName
+EndCreateSupersede~create~wt.supersede.LoadSupersede.endCreateSupersede
+
+BeginUpdateSupersede~create~wt.supersede.LoadSupersede.beginUpdateSupersede~supersededNumber~supersededName~supersedingNumber~supersedingName
+AddSupersede~create~wt.supersede.LoadSupersede.addSupersede~supersededNumber~supersededName~supersedingNumber~supersedingName
+DeleteSupersede~create~wt.supersede.LoadSupersede.deleteSupersede~supersededNumber~supersededName~supersedingNumber~supersedingName
+EndUpdateSupersede~create~wt.supersede.LoadSupersede.endUpdateSupersede
+
+RemoveSupersede~create~wt.supersede.LoadSupersede.removeSupersede~supersededNumber~supersededName~supersedingNumber~supersedingName
+#--- Supersede Loader End ---#

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE loadFileList SYSTEM "/wt/load/windchillLoad.dtd">
+<loadFileList>
+	
+	<!-- Change Request soft Type  -->
+	<loadFile filename="com/catl/type/change/WTChangeRequest2_0.xml" title="WTChangeRequest2_0.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/type/change/WTChangeRequest2_1.xml" title="WTChangeRequest2_1.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/type/change/WTChangeRequest2_2.xml" title="WTChangeRequest2_2.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+    
+	<!-- change activity soft Type   -->
+	<loadFile filename="com/catl/type/change/WTChangeActivity2_0.xml" title="WTChangeActivity2_0.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/type/change/WTChangeActivity2_1.xml" title="WTChangeActivity2_1.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/type/change/WTChangeActivity2_2.xml" title="WTChangeActivity2_2.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+    
+	<!-- change Order soft Type -->
+	<loadFile filename="com/catl/type/change/WTChangeOrder2_0.xml" title="WTChangeOrder2_0.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/type/change/WTChangeOrder2_1.xml" title="WTChangeOrder2_1.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/type/change/WTChangeOrder2_2.xml" title="WTChangeOrder2_2.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+		
+</loadFileList>

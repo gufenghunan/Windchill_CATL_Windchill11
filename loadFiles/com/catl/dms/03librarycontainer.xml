@@ -1,0 +1,111 @@
+<?xml version="1.0" ?><!DOCTYPE NmLoader SYSTEM "standardX24.dtd">
+<NmLoader>
+<csvContainer handler="wt.inf.container.LoadContainer.createContainer" >
+    <csvcontainerClass>wt.inf.library.WTLibrary</csvcontainerClass>
+    <csvcontainerName>电芯</csvcontainerName>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvcontainerTemplateRef>CATL Cell</csvcontainerTemplateRef>
+    <csvbusinessNamespace></csvbusinessNamespace>
+    <csvsharingEnabled></csvsharingEnabled>
+    <csvcreator>orgadmin</csvcreator>
+    <csvowner></csvowner>
+    <csvsubscriber></csvsubscriber>
+    <csvconferencingURL></csvconferencingURL>
+    <csvdescription></csvdescription>
+    <csvorganization>CATL</csvorganization>
+    <csvcreatorSelector></csvcreatorSelector>
+</csvContainer>
+
+<csvContainer handler="wt.inf.container.LoadContainer.createContainer" >
+    <csvcontainerClass>wt.inf.library.WTLibrary</csvcontainerClass>
+    <csvcontainerName>电子电气件</csvcontainerName>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvcontainerTemplateRef>CATL Electronic</csvcontainerTemplateRef>
+    <csvbusinessNamespace></csvbusinessNamespace>
+    <csvsharingEnabled></csvsharingEnabled>
+    <csvcreator>orgadmin</csvcreator>
+    <csvowner></csvowner>
+    <csvsubscriber></csvsubscriber>
+    <csvconferencingURL></csvconferencingURL>
+    <csvdescription></csvdescription>
+    <csvorganization>CATL</csvorganization>
+    <csvcreatorSelector></csvcreatorSelector>
+</csvContainer>
+
+<csvContainer handler="wt.inf.container.LoadContainer.createContainer" >
+    <csvcontainerClass>wt.inf.library.WTLibrary</csvcontainerClass>
+    <csvcontainerName>紧固件</csvcontainerName>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvcontainerTemplateRef>CATL Fastener</csvcontainerTemplateRef>
+    <csvbusinessNamespace></csvbusinessNamespace>
+    <csvsharingEnabled></csvsharingEnabled>
+    <csvcreator>orgadmin</csvcreator>
+    <csvowner></csvowner>
+    <csvsubscriber></csvsubscriber>
+    <csvconferencingURL></csvconferencingURL>
+    <csvdescription></csvdescription>
+    <csvorganization>CATL</csvorganization>
+    <csvcreatorSelector></csvcreatorSelector>
+</csvContainer>
+
+<csvContainer handler="wt.inf.container.LoadContainer.createContainer" >
+    <csvcontainerClass>wt.inf.library.WTLibrary</csvcontainerClass>
+    <csvcontainerName>公共文档库</csvcontainerName>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvcontainerTemplateRef>CATL Public Document</csvcontainerTemplateRef>
+    <csvbusinessNamespace></csvbusinessNamespace>
+    <csvsharingEnabled></csvsharingEnabled>
+    <csvcreator>orgadmin</csvcreator>
+    <csvowner></csvowner>
+    <csvsubscriber></csvsubscriber>
+    <csvconferencingURL></csvconferencingURL>
+    <csvdescription></csvdescription>
+    <csvorganization>CATL</csvorganization>
+    <csvcreatorSelector></csvcreatorSelector>
+</csvContainer>
+
+<csvContainer handler="wt.inf.container.LoadContainer.createContainer" >
+    <csvcontainerClass>wt.inf.library.WTLibrary</csvcontainerClass>
+    <csvcontainerName>原材料</csvcontainerName>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvcontainerTemplateRef>CATL Raw Materials</csvcontainerTemplateRef>
+    <csvbusinessNamespace></csvbusinessNamespace>
+    <csvsharingEnabled></csvsharingEnabled>
+    <csvcreator>orgadmin</csvcreator>
+    <csvowner></csvowner>
+    <csvsubscriber></csvsubscriber>
+    <csvconferencingURL></csvconferencingURL>
+    <csvdescription></csvdescription>
+    <csvorganization>CATL</csvorganization>
+    <csvcreatorSelector></csvcreatorSelector>
+</csvContainer>
+
+<csvContainer handler="wt.inf.container.LoadContainer.createContainer" >
+    <csvcontainerClass>wt.inf.library.WTLibrary</csvcontainerClass>
+    <csvcontainerName>模板库</csvcontainerName>
+    <csvsharedTeamName></csvsharedTeamName>
+    <csvcontainerExtendable></csvcontainerExtendable>
+    <csvparentContainerPath></csvparentContainerPath>
+    <csvcontainerTemplateRef>CATL Templates</csvcontainerTemplateRef>
+    <csvbusinessNamespace></csvbusinessNamespace>
+    <csvsharingEnabled></csvsharingEnabled>
+    <csvcreator>orgadmin</csvcreator>
+    <csvowner></csvowner>
+    <csvsubscriber></csvsubscriber>
+    <csvconferencingURL></csvconferencingURL>
+    <csvdescription></csvdescription>
+    <csvorganization>CATL</csvorganization>
+    <csvcreatorSelector></csvcreatorSelector>
+</csvContainer>
+
+</NmLoader>

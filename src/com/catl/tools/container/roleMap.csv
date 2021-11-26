@@ -1,0 +1,12 @@
+ProductList,8001,8002,6006,001B,004A
+LibraryList,TestLib-01,Lib2,,,
+ProjectList,000001,0001,,,
+RolePrincipal,TECHTEAM_JISHUFAGUI,loaduser0001,,,
+RolePrincipal,TECHTEAM_JISHUFAGUI,loaduser0002,,,
+RolePrincipal,TECHTEAM_JISHUFAGUI,loaduser0003,,,
+RolePrincipal,TECHTEAM_JISHUFAGUI,loaduser0004,,,
+RolePrincipal,TECHTEAM_DQA,loaduser0005,,,
+RolePrincipal,TECHTEAM_DQA,loaduser0006,,,
+RolePrincipal,TECHTEAM_DQA,loaduser0007,,,
+RolePrincipal,TECHTEAM_DQA,loaduser0008,,,
+RolePrincipal,TECHTEAM_DQA,loaduser0009,,,

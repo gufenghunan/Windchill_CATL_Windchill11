@@ -1,0 +1,91 @@
+/*** Install Windchill 10.2 M030 CPS08 ****/
+
+      Support     Support                                    Installer
+      Datecode    Release Number  Release Id                 Sequence   Display Label
+  --  --------    --------------  ---------------            ---------  ---------------------
+      M030-CPS08  10.2            pdml.10.2.30.08.03         01         PTC Windchill PDMLink 10.2
+      M030-CPS08  10.2            wsp.10.2.30.08.03          01         PTC Windchill 10.2 Service Pack
+      M030        10.2            whc.10.2.30.00.39          01         PTC Windchill 10.2 Help Center
+      M030-CPS08  10.2            ptlc.10.2.30.08.03         01         PTC Windchill PartsLink 10.2
+      M030        10.2            infomodeler.10.2.30.00.39  01         PTC Windchill 10.2 Information Modeler
+      M030-CPS08  10.2            ie.10.2.30.08.03           01         PTC Windchill 10.2 Info*Engine
+      M030-CPS08  10.2            esi.10.2.30.08.03          01         PTC Windchill 10.2 ESI Services
+      M030-CPS07  10.2            solr.10.2.30.07.04         01         PTC Windchill 10.2 Index Search
+      M030-CPS08  10.2            commonpdm.10.2.30.08.03    01         PTC Windchill 10.2 Common Base
+      M030-CPS06  10.2            wlp.10.2.30.06.01          01         PTC Windchill 10.2 MultiLanguage Pack
+      M030-CPS07  10.2            wgm.10.2.30.07.01          02         PTC Windchill 10.2 Workgroup Managers
+      M030-CPS08  10.2            wnc.10.2.30.08.03          01         PTC Windchill 10.2 Services
+
+  There are no patches installed.
+  
+
+/****Steps to  build customization package ****/
+
+--01 first get all source and configuraton from git
+   git pull origin master
+--02 copy git artfacts to Winchill 
+   Open windchill shell
+   cd d:\ptc\Windchill
+   ant -f build\build.xml copyToWC    
+--03 generate customer build, this will compile java source, build resource, generate sql etc,  //TODO, clean before build
+   ant -f bin\tools.xml customer_build
+--04 generate jar for customization deploy package ,fullBuild.jar will generate in the build directory
+   ant -f build\build.xml 
+
+/*****Steps to deploy *****/
+--01. copy fullBuild.jar to the target environment's Windchill directory.  
+--02  extract package
+    java -xvf fullBuild.jar
+--03. register xconf files 
+    xconfmanager -i \codebase\config\custom\custom.xconf -p
+    xconfmanager -i \codebase\com\ptc\xworks\config\xworks-windchill.properties.xconf -p
+
+--03.5  copy site.xconf.add to site.xconf, then execute xconfmanager 
+    xconfmanager -p
+
+--03.6  add the following lines to WTPart attributes in codebase\logicAttributes.xml
+
+        <Property>
+            <LogicalForm>ranking</LogicalForm>
+            <ExternalForm>MBA|masterReference^WCTYPE|wt.part.WTPartMaster~IBA|ranking</ExternalForm>
+        </Property>
+	
+
+advancedSearch.wt.part.WTPart=thePersistInfo.createStamp,iterationInfo.creator,defaultUnit,lock.locker,search_name,search_number,ownership.owner,source,state.state,partType,thePersistInfo.modifyStamp,iterationInfo.modifier,view.id,organization.id,oemPreference,endItem,versionInfo.identifier.versionId,iterationInfo.identifier.iterationId,collapsible,interopInfo.iopState,defaultTraceCode,genericType,ranking        
+        
+--06 cd db/sql3
+      sqlplus plm/plm
+      @com/catl/change/inventory/Make_pkg_inventory_Table.sql
+      @com/catl/change/inventory/Make_pkg_inventory_Index.sql
+      @com/catl/integration/log/Make_pkg_log_Table.sql
+      @com/catl/create_custom_tables.sql
+      @ext/xworks/create_sequences.sql
+      @ext/xworks/create_xml_tables.sql        
+
+--04 *** load data ****/
+	windchill wt.load.LoadFromFile -d loadFiles\com\catl\preference\changedPreference2.xml -u orgadmin -p 1
+    d:\ptc\Windchill\bin\loadData.bat
+--05 install site Change
+    ant -f bin/swmaint.xml installSiteChanges
+    
+    ant -f %WT_HOME%/bin/jsfrag_combine.xml
+
+
+--07  create ObjectNumber table in database
+
+
+---Trouble shooting -----
+1. Classification is not selectable when create Part. Need load classification node 
+
+------delete promotion request team  role---
+1.delete all role in team
+2.
+xconfmanager -s "wt.org.services.userPasswordChangeEnabled=true" -t "codebase/wt.properties" -p
+
+3. Open D:\ptc\Windchill\codebase\com\ptc\windchill\enterprise\search\server\SearchableReferenceAttributes.properties
+
+commont the following line 
+
+#specification=com.ptc.windchill.enterprise.requirement.Specification,name,objRefSearchTermProducer,search,,,genericPicker
+
+

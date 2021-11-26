@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Configuration SYSTEM "xconf.dtd">
+<Configuration targetFile="codebase/config/custom/configuration.properties">
+
+<!-- -*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-
+WARNING: Do not modify this file after it has been installed.  Use xconfmanager
+         to set, reset, or undefine properties for your installation
+-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*- -->
+
+   
+<Property default="catl" name="customer"/>
+<Property default="10,11,12,13,14,15,19,30,31,32,33,34,35,36,37,38,39,41,560121,560122,550550,550551,550554,540850,540851,540852,540853,RDEE01,RDEE02,RDEE03,RDEE04,RDEE05,RDEE06,RDEE09,RDEE20,RDEE21" name="datasheet"/>
+<Property default="pi_client" name="webservice.clientUser.pi"/>
+<Property default="rdm_client" name="webservice.clientUser.rdm"/>
+<Property default="30000" name="rdm.request.timeout"/>
+<Property default="POP,PFMEA,CP,PFC,SOP,CPK,PS,PTS,ISA,MAD,SCM,CCSC,WI,VPS,PL" name="mustInputDocIdDocType"/>
+<Property default="ICD,APD,ICP,POP,TRAR,MAD,DFMEA,PCCSC,SCM,DBR,OCP,PSDC,VTD,TSR,PPS,PMM,CS,CDG,EQP,FAT,LOPR,SER,PUI,LOTP,FSI" name="auto_write_number_into_document"/>
+
+
+<!-- 文档失效流程 -->
+<Property default="ENW" name="ENWDocType"/>
+<Property default="APD,CP,PFC,PMM,PII,PUI,PS,ISA,CS,PPS,MAD,PCL,PL,VPS,SWS,AFSPID,ENW,WI,PTS,SOP,EPI" name="couldVoidType"/>
+
+<!-- 创建文档接口 -->
+<Property default="产品类软件-SW-P" name="SubCategoryType"/>
+
+<!-- 物料组 创建半成品成熟度等级为高-->
+<Property default="770150,770151,770152,770153,770250,780150,780151,780152" name="PartGroup"/>
+
+<Property default="991300" name="magnificationPartGroup"/>
+<Property default="IQC_Default_Notify1,IQC_Default_Notify2" name="IQC_INFORM"/>
+<Property default="770150,770151,770152,770153,770154,770250,770251,770252,P" name="BOM_WorkFlow_SE_CHECK"/>
+<Property default="3" name="ECNAttachmentsCount"/>
+
+ <!--装箱单-->
+<Property default="991400" name="create_box_explain_group"/>
+<Property default="DESIGN,DESIGNMODIFICATION," name="create_box_explain_part_state"/>
+<Property default="装箱说明" name="create_box_explain_doc_name"/>
+<Property default="/设计图档/线束AutoCAD图纸" name="create_box_explain_doc_folder"/>
+
+<Property default="360142|高压连接器插头,360141|高压连接器插头,360242|低压连接器插头,370140|锁螺栓端子" name="connector_according"/>
+<Property name="config_tag_path" default="/codebase/config/custom/config/tag_config.xls"/>
+<Property name="config_express_path" default="/codebase/config/custom/config/dwgrule_config.xls"/>
+<Property name="dwg_temp_path" default="/codebase/config/custom/temp/dwg/"/>
+<Property name="file_temp" default="/codebase/temp/"/>
+
+<Property name="config_nosignature_state" default="已发布"/>
+<Property name="config_filter_updatechildpn_state" default="设计,设计修改"/>
+<Property name="config_createchildpn_folder" default="零部件"/>
+<Property name="config_part_folder" default="零部件"/>
+<Property name="config_autocad_folder" default="线束AutoCAD图纸"/>
+<Property name="config_autocaddoc_folder" default="/线束AutoCAD图纸"/>
+<Property name="config_topdf_number_prefix" default="3"/>
+
+<Property name="config_filter_asmpn_state" default="设计,设计修改"/>
+
+<Property name="config_topdf_prefix" default="5501,5502,5506,5507,5508"/>
+<Property name="config_speical_clf_group" default="RD,TM,A,C,6"/>
+<Property name="config_sendSAP_speical_clfgroup" default="P,740100"/>
+<Property name="verifyPlatform" default="Y"/>
+
+
+<!-- -*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-
+WARNING: Do not modify this file after it has been installed.  Use xconfmanager
+         to set, reset, or undefine properties for your installation
+-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*-!-*- -->
+
+
+</Configuration>

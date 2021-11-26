@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE OrganizationConfig SYSTEM "standardX24.dtd">
+<OrganizationConfig>
+	<TypeBasedRule>
+		<EngineRule isDefault="false" enabled="true">
+			<ruleName>CATL ECR</ruleName>
+			<ruleSpecification><![CDATA[
+			   <AttributeValues objType="wt.change2.WTChangeRequest2">
+
+               <!-- set the folder -->
+               <AttrValue id="folder.id" algorithm="com.ptc.core.foundation.folder.server.impl.FolderPathAttributeAlgorithm">
+                  <Arg>/Default/更改请求</Arg>
+               </AttrValue>
+
+			   <AttrValue id="lifeCycle.id" algorithm="com.ptc.core.foundation.lifecycle.server.impl.LifeCycleTemplateAttributeAlgorithm">
+                    <Arg>LC_ECR</Arg>
+               </AttrValue>
+ 
+               <!-- set the number to a generated number -->
+                <AttrValue id="number" algorithm="com.catl.change.CatlEcrNewNunber">
+          	    </AttrValue>
+
+				 <AttrConstraint id="folder.id" algorithm="com.ptc.core.rule.server.impl.GatherAttributeConstraints">
+	       	      <Value algorithm="com.ptc.core.rule.server.impl.GetServerPreGeneratedValue"/>  
+				  <Value algorithm="com.ptc.core.rule.server.impl.GetRendererConstraint">
+                     <Arg>SelectGeneratedFolderByDefault</Arg>
+                  </Value>           
+	          </AttrConstraint>
+
+            </AttributeValues>
+		  ]]></ruleSpecification>
+		    <ruleType type="INIT" />
+		</EngineRule>
+		<className>wt.change2.WTChangeRequest2</className>
+	</TypeBasedRule>
+</OrganizationConfig>  
+             
+
+         

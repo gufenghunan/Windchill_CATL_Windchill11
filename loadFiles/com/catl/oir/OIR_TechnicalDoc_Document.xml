@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE OrganizationConfig SYSTEM "standardX24.dtd">
+<OrganizationConfig>
+	<TypeBasedRule>
+		<EngineRule isDefault="false" enabled="true">
+			<ruleName>technicalDoc</ruleName>
+			<ruleSpecification><![CDATA[
+			<AttributeValues objType="com.CATLBattery.technicalDoc">
+                <AttrValue id="lifeCycle.id" algorithm="com.ptc.core.foundation.lifecycle.server.impl.LifeCycleTemplateAttributeAlgorithm">
+                    <Arg>LC_doc_Cycle_Rd_TechnicalDoc</Arg>
+               </AttrValue>
+            </AttributeValues>
+			 
+			  ]]></ruleSpecification>
+		    <ruleType type="INIT" />
+		</EngineRule>
+		<className>wt.doc.WTDocument|com.ptc.ReferenceDocument|com.CATLBattery.technicalDoc</className>
+	</TypeBasedRule>
+</OrganizationConfig>  
+               
+             

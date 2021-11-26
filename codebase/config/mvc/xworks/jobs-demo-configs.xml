@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+	 http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+	 http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+	 http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.1.xsd">
+
+	<bean id="demoStepA01" class="ext.ptc.xworks.examples.job.demo.DemoStepA01">
+		<property name="stepName" value="demoStepA01" />
+	</bean>
+
+	<bean id="demoStepA02" class="ext.ptc.xworks.examples.job.demo.DemoStepA02">
+		<property name="stepName" value="demoStepA02" />
+	</bean>
+
+	<bean id="demoStepA03" class="ext.ptc.xworks.examples.job.demo.DemoStepA03">
+		<property name="stepName" value="demoStepA03" />
+	</bean>
+
+	<bean id="demoJobA1" class="ext.ptc.xworks.examples.job.demo.DemoJobA1">
+		<property name="jobName" value="demoJobA1" />
+		<property name="steps">
+			<list>
+				<ref bean="demoStepA01" />
+				<ref bean="demoStepA02" />
+				<ref bean="demoStepA03" />
+			</list>
+		</property>
+	</bean>
+
+	<bean id="demoJobB1" class="ext.ptc.xworks.examples.job.demo.DemoJobB1">
+		<property name="jobName" value="demoJobB1" />
+		<property name="stepService" ref="stepService" />
+		<property name="steps">
+			<list>
+				<ref bean="demoStepA01" />
+				<ref bean="demoStepA02" />
+				<ref bean="demoStepA03" />
+			</list>
+		</property>
+	</bean>
+
+</beans>

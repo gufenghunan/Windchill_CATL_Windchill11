@@ -1,0 +1,27 @@
+ResourceInfo.class=wt.tools.resource.EnumResourceInfo
+
+# Entry Contents
+
+DESIGNMODIFICATION.value=设计修改
+DESIGNMODIFICATION.shortDescription=设计修改
+
+DESIGNREVIEW.value=设计审阅
+DESIGNREVIEW.shortDescription=设计审阅
+
+MODIFICATION.value=修改
+MODIFICATION.shortDescription=修改
+
+RELEASEDFAILED.value=发布失败
+RELEASEDFAILED.shortDescription=发布失败
+
+TASKREVIEW.value=任务审阅中
+TASKREVIEW.shortDescription=任务审阅中
+
+WRITING.value=编制
+WRITING.shortDescription=编制
+
+DISABLED_FOR_DESIGN.value=设计禁用
+DISABLED_FOR_DESIGN.shortDescription=设计禁用
+
+INVALID.value=已失效
+INVALID.shortDescription=已失效

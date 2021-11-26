@@ -1,0 +1,16 @@
+ResourceInfo.class=wt.tools.resource.EnumResourceInfo
+
+SCRAPIMMEDIATELY.value=Scrap Immediately
+SCRAPIMMEDIATELY.order=10
+
+REWORKCOMPLETELY.value=Rework Completely
+REWORKCOMPLETELY.order=20
+
+SWITCHAFTERUSING.value=Switch After Using
+SWITCHAFTERUSING.order=30
+
+SCRAPOTHERS.value=Switch After Using For Same Kind, Scrap Others
+SCRAPOTHERS.order=40
+
+OTHERPROJECTUSE.value=Other Project Use
+OTHERPROJECTUSE.order=50

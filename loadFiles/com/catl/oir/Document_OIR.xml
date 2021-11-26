@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE OrganizationConfig SYSTEM "standardX24.dtd">
+<OrganizationConfig>
+	<TypeBasedRule>
+		<EngineRule isDefault="false" enabled="true">
+			<ruleName>CATL Document</ruleName>
+			<ruleSpecification><![CDATA[
+			<AttributeValues objType="wt.doc.WTDocument">
+        
+               <AttrValue id="lifeCycle.id" algorithm="com.ptc.core.foundation.lifecycle.server.impl.LifeCycleTemplateAttributeAlgorithm">
+                  <Arg>
+                     LC_doc_Cycle
+                  </Arg>
+               </AttrValue>
+
+			   <AttrValue id="number" algorithm="com.catl.doc.CatlDocNewNumber">
+          	      <Attr id="subCategory"/>
+               </AttrValue>
+            </AttributeValues>
+
+			  ]]></ruleSpecification>
+		    <ruleType type="INIT" />
+		</EngineRule>
+		<className>wt.doc.WTDocument</className>
+	</TypeBasedRule>
+</OrganizationConfig>  
+             

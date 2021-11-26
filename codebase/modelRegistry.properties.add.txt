@@ -1,0 +1,11 @@
+com.catl.change.inventory=ECAPartLink
+com.catl.integration.log=TransactionLog
+com.catl.integration.log=DrawingSendERPLog
+
+/**************************************/
+
+com.catl.doc.maturityUpReport=NFAEMaturityUp3DocPartLink
+com.catl.part.classification=ClassificationNodeConfig
+com.catl.integration.rdm=ObjectLinkedByRdm
+com.catl.part.maturity=PartMaturityChangeLog
+com.catl.part.sourceChange=PartSourceChangeLog

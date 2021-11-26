@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE NmLoader
+  SYSTEM "standardX26.dtd">
+<NmLoader>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>CustomizationExampleAttributes</csvname>
+      <csvhierarchyDisplayName>Customization_Example_Attributes</csvhierarchyDisplayName>
+      <csvorganizerPaths></csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name/>
+      <csvdescription>Attributes used in customization examples</csvdescription>
+      <csvdata_type>ORG</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier/>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>org.example.FakePages</csvname>
+      <csvhierarchyDisplayName>org.example.FakePages</csvhierarchyDisplayName>
+      <csvorganizerPaths>CustomizationExampleAttributes</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>Pages</csvdisplay_name>
+      <csvdescription/>
+      <csvdata_type>INT</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier/>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>CATL</csvname>
+      <csvhierarchyDisplayName>CATL</csvhierarchyDisplayName>
+      <csvorganizerPaths></csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name/>
+      <csvdescription/>
+      <csvdata_type>ORG</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier/>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>subCategory</csvname>
+      <csvhierarchyDisplayName>subCategory</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>subCategory</csvdisplay_name>
+      <csvdescription>subCategory</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>subCategory</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>CATL_Model</csvname>
+      <csvhierarchyDisplayName>CATL_Model</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>CATL_Model</csvdisplay_name>
+      <csvdescription>CATL_Model</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>CATL_Model</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>notes</csvname>
+      <csvhierarchyDisplayName>notes</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>notes</csvdisplay_name>
+      <csvdescription>notes</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>notes</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>softName</csvname>
+      <csvhierarchyDisplayName>softName</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>软件名称</csvdisplay_name>
+      <csvdescription>softName</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>softName</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>CellModulePACK_weight</csvname>
+      <csvhierarchyDisplayName>CellModulePACK_weight</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>电芯/模组/PACK重量(KG)</csvdisplay_name>
+      <csvdescription>电芯/模组/PACK重量(KG)</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>CellModulePACK_weight</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>Hardware_Version</csvname>
+      <csvhierarchyDisplayName>HW版本</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>HW版本</csvdisplay_name>
+      <csvdescription>Hardware_Version</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>Hardware_Version</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>CATL_DOC_ActualTakeEffectTime</csvname>
+      <csvhierarchyDisplayName>CATL_DOC_ActualTakeEffectTime</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>实际生效日期</csvdisplay_name>
+      <csvdescription>CATL_DOC_ActualTakeEffectTime</csvdescription>
+      <csvdata_type>TIME</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>CATL_DOC_ActualTakeEffectTime</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>Group_Type</csvname>
+      <csvhierarchyDisplayName>Group_Type</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>成组方式</csvdisplay_name>
+      <csvdescription>成组方式</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>Group_Type</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>org.example.FakePrice</csvname>
+      <csvhierarchyDisplayName>org.example.FakePrice</csvhierarchyDisplayName>
+      <csvorganizerPaths>CustomizationExampleAttributes</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>Price</csvdisplay_name>
+      <csvdescription/>
+      <csvdata_type>FLOAT</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier/>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>CATL_DOC_EstimatedVoidTime</csvname>
+      <csvhierarchyDisplayName>CATL_DOC_EstimatedVoidTime</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>预计失效日期</csvdisplay_name>
+      <csvdescription>预计失效日期</csvdescription>
+      <csvdata_type>TIME</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>CATL_DOC_EstimatedVoidTime</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>org.example.FakePubDate</csvname>
+      <csvhierarchyDisplayName>org.example.FakePubDate</csvhierarchyDisplayName>
+      <csvorganizerPaths>CustomizationExampleAttributes</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>Publication Date</csvdisplay_name>
+      <csvdescription/>
+      <csvdata_type>TIME</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier/>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>productProcess</csvname>
+      <csvhierarchyDisplayName>productProcess</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>产品工艺</csvdisplay_name>
+      <csvdescription>产品工艺</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>productProcess</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>projectCode</csvname>
+      <csvhierarchyDisplayName>projectCode</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>projectCode</csvdisplay_name>
+      <csvdescription>projectCode</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>projectCode</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>Working_Condition</csvname>
+      <csvhierarchyDisplayName>Working_Condition</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>工况</csvdisplay_name>
+      <csvdescription>工况</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>Working_Condition</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>org.example.FakeMass</csvname>
+      <csvhierarchyDisplayName>org.example.FakeMass</csvhierarchyDisplayName>
+      <csvorganizerPaths>CustomizationExampleAttributes</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>Mass</csvdisplay_name>
+      <csvdescription/>
+      <csvdata_type>UNIT</csvdata_type>
+      <csvQoMName>Mass</csvQoMName>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier/>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>org.example.FakeWebPage</csvname>
+      <csvhierarchyDisplayName>org.example.FakeWebPage</csvhierarchyDisplayName>
+      <csvorganizerPaths>CustomizationExampleAttributes</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>Web Page</csvdisplay_name>
+      <csvdescription/>
+      <csvdata_type>URL</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier/>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>Cell_ModelNumber</csvname>
+      <csvhierarchyDisplayName>Cell_ModelNumber</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>电芯型号</csvdisplay_name>
+      <csvdescription>电芯型号</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>Cell_ModelNumber</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>docID</csvname>
+      <csvhierarchyDisplayName>docID</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>docID</csvdisplay_name>
+      <csvdescription>docID</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>docID</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>Cell_Mode</csvname>
+      <csvhierarchyDisplayName>电芯类型</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>电芯类型</csvdisplay_name>
+      <csvdescription>Cell_Mode</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>Cell_Mode</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>org.example.FakeEnum</csvname>
+      <csvhierarchyDisplayName>org.example.FakeEnum</csvhierarchyDisplayName>
+      <csvorganizerPaths>CustomizationExampleAttributes</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>AEnum</csvdisplay_name>
+      <csvdescription/>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier/>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>CATL_DOC_ActualVoidTime</csvname>
+      <csvhierarchyDisplayName>CATL_DOC_ActualVoidTime</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>实际失效日期</csvdisplay_name>
+      <csvdescription>CATL_DOC_ActualVoidTime</csvdescription>
+      <csvdata_type>TIME</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>CATL_DOC_ActualVoidTime</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>org.example.FakeISBN</csvname>
+      <csvhierarchyDisplayName>org.example.FakeISBN</csvhierarchyDisplayName>
+      <csvorganizerPaths>CustomizationExampleAttributes</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>ISBN</csvdisplay_name>
+      <csvdescription/>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier/>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>CATL_DOC_ReplaceDoc</csvname>
+      <csvhierarchyDisplayName>CATL_DOC_ReplaceDoc</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>被替换ENW编码</csvdisplay_name>
+      <csvdescription>被替换ENW编码</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>CATL_DOC_ReplaceDoc</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>CATL_Brand</csvname>
+      <csvhierarchyDisplayName>CATL_Brand</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>CATL_Brand</csvdisplay_name>
+      <csvdescription>CATL_Brand</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>CATL_Brand</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>CATL_KeyParameters</csvname>
+      <csvhierarchyDisplayName>CATL_KeyParameters</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>CATL_KeyParameters</csvdisplay_name>
+      <csvdescription>CATL_KeyParameters</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>CATL_KeyParameters</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>outputPhase</csvname>
+      <csvhierarchyDisplayName>outputPhase</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>outputPhase</csvdisplay_name>
+      <csvdescription>outputPhase</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>outputPhase</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>org.example.FakeArea</csvname>
+      <csvhierarchyDisplayName>org.example.FakeArea</csvhierarchyDisplayName>
+      <csvorganizerPaths>CustomizationExampleAttributes</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>Area</csvdisplay_name>
+      <csvdescription/>
+      <csvdata_type>UNIT</csvdata_type>
+      <csvQoMName>Area</csvQoMName>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier/>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>CATL_DOC_EstimatedTakeEffectTime</csvname>
+      <csvhierarchyDisplayName>CATL_DOC_EstimatedTakeEffectTime</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>预计生效日期</csvdisplay_name>
+      <csvdescription>预计生效日期</csvdescription>
+      <csvdata_type>TIME</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>CATL_DOC_EstimatedTakeEffectTime</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>Cell_Capacity</csvname>
+      <csvhierarchyDisplayName>电芯容量(Ah)</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>电芯容量(Ah)</csvdisplay_name>
+      <csvdescription>Cell_Capacity</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>Cell_Capacity</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>projectName</csvname>
+      <csvhierarchyDisplayName>projectName</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>projectName</csvdisplay_name>
+      <csvdescription>projectName</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>projectName</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>ReleasedDate</csvname>
+      <csvhierarchyDisplayName>ReleasedDate</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>发布时间</csvdisplay_name>
+      <csvdescription>ReleasedDate</csvdescription>
+      <csvdata_type>TIME</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>ReleasedDate</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>org.example.FakeDigitalAvail</csvname>
+      <csvhierarchyDisplayName>org.example.FakeDigitalAvail</csvhierarchyDisplayName>
+      <csvorganizerPaths>CustomizationExampleAttributes</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>Digital Edition Available</csvdisplay_name>
+      <csvdescription/>
+      <csvdata_type>BOOL</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier/>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>CATL_DocType</csvname>
+      <csvhierarchyDisplayName>CATL_DocType</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>CATL_DocType</csvdisplay_name>
+      <csvdescription>CATL_DocType</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier/>
+   </csvAttrDefinizer>
+</NmLoader>

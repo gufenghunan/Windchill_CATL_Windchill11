@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE listofactions SYSTEM 'actions.dtd'>
+<listofactions>
+   <objecttype name="pdmObject" class="wt.fc.WTObject">
+
+      <action name="REVISEITEMS" checkaccess="true" enabledwhensuspended="true" renderType="PDM">
+         <command windowType="popup" class="java.lang.Object" method="REVISEITEMS"/>
+         <includeFilter name="sandboxSharingValidationSimple"/>
+         <includeFilter name="hideFromNonAgreementMgrs"/>
+         <includeFilter name="hideForAdminLocked"/>
+		 <includeFilter name="ReivseFilter"/>
+         <includeFilter name="disableForPartToCadBuildAdminLocked"/>
+      </action>
+      
+      <action name="MULTIREVISEITEMS_FROMFOLDERS" checkaccess="true" enabledwhensuspended="true" renderType="PDM">
+         <command windowType="popup" class="java.lang.Object" method="MULTIREVISEITEMS_FROMFOLDERS" onClick="validateSomethingSelected(event)"/>
+         <includeFilter name="disableForAdminLocked"/>
+         <includeFilter name="ReivseFilter"/>
+         <includeFilter name="disableForPartToCadBuildAdminLocked"/>
+      </action>
+    
+   </objecttype>
+   	<objecttype name="work" class="wt.workflow.work.WorkItem">
+		<action name="complete" enabledwhensuspended="true" ajax="row">
+			<command class="com.catl.common.processors.CatlNmWorkItemCommands" method="complete" onClick="validateApplicationForm()"/>
+      </action>
+	</objecttype>
+
+</listofactions>

@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE NmLoader
+  SYSTEM "standardX26.dtd">
+<NmLoader>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>PTC_SYSTEM_ATTRIBUTES</csvname>
+      <csvhierarchyDisplayName>PTC_SYSTEM_ATTRIBUTES</csvhierarchyDisplayName>
+      <csvorganizerPaths></csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name/>
+      <csvdescription/>
+      <csvdata_type>ORG</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier/>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>PTC_NOTE_TEXT</csvname>
+      <csvhierarchyDisplayName>Note Text</csvhierarchyDisplayName>
+      <csvorganizerPaths>PTC_SYSTEM_ATTRIBUTES</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>Note Text</csvdisplay_name>
+      <csvdescription>Note Text</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>PTC_NOTE_TEXT</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>CATL_CATIA</csvname>
+      <csvhierarchyDisplayName>CATL_CATIA</csvhierarchyDisplayName>
+      <csvorganizerPaths></csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name/>
+      <csvdescription/>
+      <csvdata_type>ORG</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier/>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>PTC_WM_TECHN</csvname>
+      <csvhierarchyDisplayName>PTC_WM_TECHN</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL_CATIA</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>技术</csvdisplay_name>
+      <csvdescription>PTC_WM_TECHN</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>PTC_WM_TECHN</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>UWGMECAD_Organizer</csvname>
+      <csvhierarchyDisplayName>UWGMECAD_Organizer</csvhierarchyDisplayName>
+      <csvorganizerPaths></csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name/>
+      <csvdescription/>
+      <csvdata_type>ORG</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier/>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>ECADAssemblies</csvname>
+      <csvhierarchyDisplayName>ECAD Assemblies</csvhierarchyDisplayName>
+      <csvorganizerPaths>UWGMECAD_Organizer</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>ECAD Assemblies</csvdisplay_name>
+      <csvdescription>ECAD Assemblies</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>ECADAssemblies</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>CATL_ECAD</csvname>
+      <csvhierarchyDisplayName>CATL_ECAD</csvhierarchyDisplayName>
+      <csvorganizerPaths></csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name/>
+      <csvdescription/>
+      <csvdata_type>ORG</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier/>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>CATL_PlatformName</csvname>
+      <csvhierarchyDisplayName>CATL_PlatformName</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL_ECAD</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>平台名称</csvdisplay_name>
+      <csvdescription>CATL_PlatformName</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>CATL_PlatformName</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>PTC_WM_DESIGN</csvname>
+      <csvhierarchyDisplayName>PTC_WM_DESIGN</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL_CATIA</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>设计</csvdisplay_name>
+      <csvdescription>PTC_WM_DESIGN</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>PTC_WM_DESIGN</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>PTC_WM_DESIGN_DATE</csvname>
+      <csvhierarchyDisplayName>PTC_WM_DESIGN_DATE</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL_CATIA</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>设计日期</csvdisplay_name>
+      <csvdescription>PTC_WM_DESIGN_DATE</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>PTC_WM_DESIGN_DATE</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>PTC_WM_PN</csvname>
+      <csvhierarchyDisplayName>PTC_WM_PN</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL_CATIA</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>图号</csvdisplay_name>
+      <csvdescription>PTC_WM_PN</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>PTC_WM_PN</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>PTC_WM_APPRO_DATE</csvname>
+      <csvhierarchyDisplayName>PTC_WM_APPRO_DATE</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL_CATIA</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>批准日期</csvdisplay_name>
+      <csvdescription>PTC_WM_APPRO_DATE</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>PTC_WM_APPRO_DATE</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>ADW_DM_Attributes</csvname>
+      <csvhierarchyDisplayName>ADW_DM_Attributes</csvhierarchyDisplayName>
+      <csvorganizerPaths></csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name/>
+      <csvdescription/>
+      <csvdata_type>ORG</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier/>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>ADWRootDesign</csvname>
+      <csvhierarchyDisplayName>ADW Root Design</csvhierarchyDisplayName>
+      <csvorganizerPaths>ADW_DM_Attributes</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>ADW Root Design</csvdisplay_name>
+      <csvdescription>ADW Root Design</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>ADWRootDesign</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>PTC_ECAD_ASSEMBLY_PART_NUMBER</csvname>
+      <csvhierarchyDisplayName>ECAD Assembly Part Number</csvhierarchyDisplayName>
+      <csvorganizerPaths>UWGMECAD_Organizer</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>ECAD Assembly Part Number</csvdisplay_name>
+      <csvdescription>ECAD Assembly Part Number</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>PTC_ECAD_ASSEMBLY_PART_NUMBER</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>PTC_ECAD_BOARD_PART_NAME</csvname>
+      <csvhierarchyDisplayName>ECAD Board Part Name</csvhierarchyDisplayName>
+      <csvorganizerPaths>UWGMECAD_Organizer</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>ECAD Board Part Name</csvdisplay_name>
+      <csvdescription>ECAD Board Part Name</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>PTC_ECAD_BOARD_PART_NAME</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>PTC_DD_LANGUAGE</csvname>
+      <csvhierarchyDisplayName>PTC_DD_LANGUAGE</csvhierarchyDisplayName>
+      <csvorganizerPaths>PTC_SYSTEM_ATTRIBUTES</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>PTC_DD_LANGUAGE</csvdisplay_name>
+      <csvdescription>PTC_DD_LANGUAGE</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>PTC_DD_LANGUAGE</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>ADWFlowType</csvname>
+      <csvhierarchyDisplayName>ADW Flow Type</csvhierarchyDisplayName>
+      <csvorganizerPaths>ADW_DM_Attributes</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>ADW Flow Type</csvdisplay_name>
+      <csvdescription>ADW Flow Type</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>ADWFlowType</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>ECAD_NEUTRAL_FORMAT_FILE</csvname>
+      <csvhierarchyDisplayName>ECAD Neutral Format File</csvhierarchyDisplayName>
+      <csvorganizerPaths>UWGMECAD_Organizer</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>ECAD Neutral Format File</csvdisplay_name>
+      <csvdescription>ECAD Neutral Format File</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>ECAD_NEUTRAL_FORMAT_FILE</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>InformationType</csvname>
+      <csvhierarchyDisplayName>InformationType</csvhierarchyDisplayName>
+      <csvorganizerPaths>PTC_SYSTEM_ATTRIBUTES</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>InformationType</csvdisplay_name>
+      <csvdescription>InformationType</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>InformationType</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>PTC_WM_APPRO</csvname>
+      <csvhierarchyDisplayName>PTC_WM_APPRO</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL_CATIA</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>批准</csvdisplay_name>
+      <csvdescription>PTC_WM_APPRO</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>PTC_WM_APPRO</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>ADWBlockLibPath</csvname>
+      <csvhierarchyDisplayName>ADW Block Library Path</csvhierarchyDisplayName>
+      <csvorganizerPaths>ADW_DM_Attributes</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>ADW Block Library Path</csvdisplay_name>
+      <csvdescription>ADW Block Library Path</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>ADWBlockLibPath</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>PTC_DD_EXTENDED_DOC_TYPE</csvname>
+      <csvhierarchyDisplayName>PTC_DD_EXTENDED_DOC_TYPE</csvhierarchyDisplayName>
+      <csvorganizerPaths>PTC_SYSTEM_ATTRIBUTES</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>PTC_DD_EXTENDED_DOC_TYPE</csvdisplay_name>
+      <csvdescription>PTC_DD_EXTENDED_DOC_TYPE</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>PTC_DD_EXTENDED_DOC_TYPE</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>ADWType</csvname>
+      <csvhierarchyDisplayName>ADW Type</csvhierarchyDisplayName>
+      <csvorganizerPaths>ADW_DM_Attributes</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>ADW Type</csvdisplay_name>
+      <csvdescription>ADW Type</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>ADWType</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>PTC_WM_CHECK</csvname>
+      <csvhierarchyDisplayName>PTC_WM_CHECK</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL_CATIA</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>审核</csvdisplay_name>
+      <csvdescription>PTC_WM_CHECK</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>PTC_WM_CHECK</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>ADWMetadataVersion</csvname>
+      <csvhierarchyDisplayName>ADW Metadata Version</csvhierarchyDisplayName>
+      <csvorganizerPaths>ADW_DM_Attributes</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>ADW Metadata Version</csvdisplay_name>
+      <csvdescription>ADW Metadata Version</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>ADWMetadataVersion</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>PTC_DD_TRANSLATE</csvname>
+      <csvhierarchyDisplayName>PTC_DD_TRANSLATE</csvhierarchyDisplayName>
+      <csvorganizerPaths>PTC_SYSTEM_ATTRIBUTES</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>PTC_DD_TRANSLATE</csvdisplay_name>
+      <csvdescription>PTC_DD_TRANSLATE</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>PTC_DD_TRANSLATE</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>PTC_ECAD_ASSEMBLY_PART_NAME</csvname>
+      <csvhierarchyDisplayName>ECAD Assembly Part Name</csvhierarchyDisplayName>
+      <csvorganizerPaths>UWGMECAD_Organizer</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>ECAD Assembly Part Name</csvdisplay_name>
+      <csvdescription>ECAD Assembly Part Name</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>PTC_ECAD_ASSEMBLY_PART_NAME</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>PTC_ECAD_BOARD_PART_NUMBER</csvname>
+      <csvhierarchyDisplayName>ECAD Board Part Number</csvhierarchyDisplayName>
+      <csvorganizerPaths>UWGMECAD_Organizer</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>ECAD Board Part Number</csvdisplay_name>
+      <csvdescription>ECAD Board Part Number</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>PTC_ECAD_BOARD_PART_NUMBER</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>CATL_BusinessVersion</csvname>
+      <csvhierarchyDisplayName>CATL_BusinessVersion</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL_ECAD</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>业务版本</csvdisplay_name>
+      <csvdescription>CATL_BusinessVersion</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>CATL_BusinessVersion</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>PTC_WM_ECN_NO</csvname>
+      <csvhierarchyDisplayName>PTC_WM_ECN_NO</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL_CATIA</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>变更单号</csvdisplay_name>
+      <csvdescription>PTC_WM_ECN_NO</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>PTC_WM_ECN_NO</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>PTC_WM_TECHN_DATE</csvname>
+      <csvhierarchyDisplayName>PTC_WM_TECHN_DATE</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL_CATIA</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>技术日期</csvdisplay_name>
+      <csvdescription>PTC_WM_TECHN_DATE</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>PTC_WM_TECHN_DATE</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>PTC_ECAD_ADW_MANAGED_DESIGN</csvname>
+      <csvhierarchyDisplayName>ADW Managed Design</csvhierarchyDisplayName>
+      <csvorganizerPaths>ADW_DM_Attributes</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>ADW Managed Design</csvdisplay_name>
+      <csvdescription>ADW Managed Design</csvdescription>
+      <csvdata_type>BOOL</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>PTC_ECAD_ADW_MANAGED_DESIGN</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>PTC_WM_CHECK_DATE</csvname>
+      <csvhierarchyDisplayName>PTC_WM_CHECK_DATE</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL_CATIA</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>审核日期</csvdisplay_name>
+      <csvdescription>PTC_WM_CHECK_DATE</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>PTC_WM_CHECK_DATE</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>ECAD_DESIGN_ITEM</csvname>
+      <csvhierarchyDisplayName>ECAD Design Item</csvhierarchyDisplayName>
+      <csvorganizerPaths>UWGMECAD_Organizer</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>ECAD Design Item</csvdisplay_name>
+      <csvdescription>ECAD Design Item</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>ECAD_DESIGN_ITEM</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>CATL</csvname>
+      <csvhierarchyDisplayName>CATL</csvhierarchyDisplayName>
+      <csvorganizerPaths></csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name/>
+      <csvdescription/>
+      <csvdata_type>ORG</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier/>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>ReleasedDate</csvname>
+      <csvhierarchyDisplayName>ReleasedDate</csvhierarchyDisplayName>
+      <csvorganizerPaths>CATL</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>发布时间</csvdisplay_name>
+      <csvdescription>ReleasedDate</csvdescription>
+      <csvdata_type>TIME</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>ReleasedDate</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+</NmLoader>

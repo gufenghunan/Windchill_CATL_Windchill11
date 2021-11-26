@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE actionmodels SYSTEM "actionmodels.dtd">
+<actionmodels>
+    <model name="home customization">
+        <description>
+            Used for the customization options on the homepage
+        </description>
+        <action name="listRDMAssignments" type="rdm"/>
+        <action name="listRDMWFAssignments" type="rdm"/>
+        <action name="listAssignments" type="work"/>
+        <!-- added by cuironghai begin -->
+        <action name="createIssueRetestWF" type="issue"/>
+        <!-- added by cuironghai end -->
+        <action name="listUpdates" type="report"/>
+        <action name="listCheckedOutWork" type="user"/>
+        <action name="homeList" type="wp"/>
+        <action name="MyWorkspace" type="workspaces"/>
+        <action name="list_mine" type="meeting"/>
+        <action name="userNotebook" type="user"/>
+        <action name="listSubscriptions" type="subscription"/>
+        <action name="reports" type="user"/>
+        <action name="savedReports" type="user"/>
+        <action name="dataMonitors" type="user"/>
+        <action name="assignedClashesNav" type="clashReport"/>
+        <action name="quickaction" type="qms"/>
+        <action name="participationView" type="forumTopic"/>
+    </model>
+
+    <model name="rdm navigation" resourceBundle="com.catl.integration.rdm.resource.CatlRDMResource">
+       <description> RDM </description>
+       <submodel name="My Space"/> 
+       <submodel name="Project"/>
+	   <submodel name="Lesson"/>
+       <submodel name="Department"/>
+       <submodel name="Document"/>
+	   <submodel name="Resource"/>
+       <submodel name="System"/>
+    </model>
+	
+	<model name="My Space" resourceBundle="com.catl.integration.rdm.resource.CatlRDMResource">
+		<action name="3b8cc05e-597e-4500-84e5-310a8b54d75b" type="rdm"/>
+		<action name="137621bf-b92a-4f71-a1b8-bb23e71dfbbb" type="rdm"/>
+		<action name="9dd0572a-fd97-4b18-b546-940243a94fdf" type="rdm"/>
+		<action name="b00df805-73bf-aaaa-96d1-ee0603c8e1aa" type="rdm"/>
+	</model>
+	
+	<model name="Project" resourceBundle="com.catl.integration.rdm.resource.CatlRDMResource">
+		<action name="342babd2-0d04-4828-a0ac-9350cc9cf668" type="rdm"/> <!-- 立项管理 -->
+		<action name="2c4d70cd-2671-46e7-a9b6-9d057e1082bf" type="rdm"/> <!-- 项目管理 -->
+		<action name="37c97e40-52f2-4e04-b208-aa6ca1ffff45" type="rdm"/> <!-- 评审管理 -->
+		<action name="c4415e6c-d159-4b16-9fdc-7f4e29545ad2" type="rdm"/> <!-- 专项评审 -->
+		<action name="b00df111-aaaa-bbbb-cccc-110603c8e130" type="rdm"/> <!-- 会议管理 -->
+		<action name="b00df222-aaaa-bbbb-cccc-110603c8e130" type="rdm"/> <!-- 设备申请 -->
+		<action name="b00df333-aaaa-bbbb-cccc-333603c8e130" type="rdm"/> <!-- 变更管理 -->
+		<action name="6c3ee2da-dd22-49f2-be3c-3781db4f3a54" type="rdm"/> <!-- 结项管理 -->
+	</model>
+	
+	<model name="Department" resourceBundle="com.catl.integration.rdm.resource.CatlRDMResource">
+		<action name="b00df805-aaaa-bbbb-bbbb-110603c8e130" type="rdm"/>
+		<action name="b00df444-aaaa-bbbb-cccc-110603c8e130" type="rdm"/>
+	</model>
+	
+	<model name="Document" resourceBundle="com.catl.integration.rdm.resource.CatlRDMResource">
+		<action name="b00df805-aaaa-492b-96d1-222203c8e130" type="rdm"/>
+		<action name="d4a86e04-17d1-4698-aa66-88d23e96af1c" type="rdm"/>
+		<action name="b00df805-aaaa-492b-96d1-111103c8e130" type="rdm"/>
+	</model>
+	
+	<model name="Resource" resourceBundle="com.catl.integration.rdm.resource.CatlRDMResource">
+		<action name="fa65920a-b462-4c19-bff1-98b79e0c0b99" type="rdm"/>
+		<action name="1717f520-7f89-45a7-9939-c4a028204353" type="rdm"/>
+		<action name="02123343-d989-4708-a179-5c77312ae7c2" type="rdm"/>
+		<action name="46b62298-72a4-478f-851b-8f722ec4aa34" type="rdm"/>
+	</model>
+	
+	<model name="Lesson" resourceBundle="com.catl.integration.rdm.resource.CatlRDMResource">
+		<action name="76d41b6d-8518-4241-b6df-b7fdd39ce7cc" type="rdm"/> <!-- 风险管理 -->
+		<action name="76d41b6d-8518-4241-b6df-b7fdd39ce79c" type="rdm"/> <!-- 问题管理 -->
+		<action name="8a4467fb-92ac-43de-b818-c930d6ed2acb" type="rdm"/> <!-- 评审问题管理 -->
+		<action name="a0d47055-456f-496b-bbc5-f7357c97351f" type="rdm"/> <!-- 8D报告 -->
+		
+	</model>
+
+    <model name="System" resourceBundle="com.catl.integration.rdm.resource.CatlRDMResource">
+        <action name="f50da078-008e-4e80-a663-0f269e558649" type="rdm"/>  <!-- Company -->
+        <action name="e8da4a6f-73dd-443f-bf3d-ba12ce96ca92" type="rdm"/>  <!-- Department -->
+        <action name="b00df805-73bf-492b-96d1-ee0603c8e130" type="rdm"/>  <!-- User -->
+        <action name="37c97e40-52f2-4e04-b208-aa6ca14b7ce0" type="rdm"/>  <!-- Role -->
+        <action name="1377d1b2-f301-464a-b182-81b1ad8fcd1c" type="rdm"/>  <!-- Calendar -->
+        <action name="f4396ce9-2fa6-4787-8406-424e393fa1d5" type="rdm"/>  <!-- Basic Info -->
+        <action name="f4396ce9-2fa6-4787-8406-424e393fa1f4" type="rdm"/>  <!-- Advanced -->
+        <action name="6bc02755-db7c-44e9-bf74-b9d5d0faaaaa" type="rdm"/>  <!-- Workflow -->
+        <action name="6bc02755-db7c-44e9-aaaa-aad5d0fac087" type="rdm"/>  <!-- Lifecycle -->
+        <action name="6bc02755-db7c-44e9-bf74-b9d5d0fac087" type="rdm"/>  <!-- Extend -->
+        <action name="5ee362eb-d387-4e99-b5e6-ad73a99e48fd" type="rdm"/>  <!-- Configure -->
+    </model>
+  
+</actionmodels>

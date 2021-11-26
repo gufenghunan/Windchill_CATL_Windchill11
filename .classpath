@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="codebase/WEB-INF/lib/bcprov-jdk15on-153.jar"/>
+	<classpathentry kind="lib" path="codebase/WEB-INF/lib/itextpdf-5.5.7.jar"/>
+	<classpathentry kind="lib" path="codebase/WEB-INF/lib/jsmartcom_zh_CN.jar"/>
+	<classpathentry kind="lib" path="codebase/WEB-INF/lib/xdb.jar"/>
+	<classpathentry kind="lib" path="codebase/WEB-INF/lib/xmlparserv2.jar"/>
+	<classpathentry kind="lib" path="codebase/WEB-INF/lib/xstream-1.4.8.jar"/>
+	<classpathentry kind="lib" path="codebase/WEB-INF/lib/xworks-test.jar"/>
+	<classpathentry kind="lib" path="codebase/WEB-INF/lib/xworks.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/D:/jar_file/javadoc/xworks-javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="codebase/WEB-INF/lib/TeighaJavaCore.jar"/>
+	<classpathentry kind="lib" path="codebase/WEB-INF/lib/TeighaJavaDwg.jar"/>
+	<classpathentry kind="lib" path="codebase/WEB-INF/lib/itext-asian-5.2.0.jar"/>
+	<classpathentry kind="lib" path="codebase/WEB-INF/lib/itext7-io-7.0.2.jar"/>
+	<classpathentry kind="lib" path="codebase/WEB-INF/lib/itext7-kernel-7.0.2.jar"/>
+	<classpathentry kind="lib" path="codebase/WEB-INF/lib/json-lib-2.2.3-jdk15.jar"/>
+	<classpathentry kind="lib" path="codebase/WEB-INF/lib/quartz-2.3.0.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/11_0M030"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

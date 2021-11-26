@@ -1,0 +1,18 @@
+<?xml version="1.0" ?><!DOCTYPE NmLoader SYSTEM "standardX24.dtd">
+<NmLoader>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>PCB小组</csvgroupName>
+    <csvdescription>PCB小组</csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>PDM部门成员</csvgroupName>
+    <csvdescription>PDM部门成员</csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+</NmLoader>

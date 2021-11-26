@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE actionmodels SYSTEM 'actionmodels.dtd'>
+<actionmodels>
+
+	<model name="promotionRequest_promotionItems_table">
+		<description>Toolbar actions for the problem reports, variances, change requests, and change notices tables under the change menu</description>
+		<action name="list_copy"           type="object" shortcut="true"/>    
+		<action name="addPromotables" type="CatlPromotion" shortcut="true" />
+		<action name="removePromotables" type="CatlPromotion" shortcut="true" />
+	</model>
+	
+	<model name="promotion request row actions" menufor="wt.maturity.PromotionNotice">
+		<description>Promotion notice row actions</description>
+		<action name="view"                type="object"/>
+		<action name="separator"           type="separator"/>
+		<action name="ManageSecurity"      type="accessPermission"/>
+		<action name="delete"       type="promotionRequest"/>
+		<action name="promotionModification"       type="CatlPromotion"/>
+		<action name="separator"           type="separator"/>
+		<action name="reassignLC"          type="lifecycle"/> <!-- Reassign Life Cycle -->
+		<action name="resetTeam"           type="team"/>
+		<action name="separator"           type="separator"/>
+		<action name="CONTAINERMOVE"        type="pdmObject"/>
+		<action name="createSubscription"  type="subscription"/>
+	</model>
+   
+	<model name="designDisabled_toolbar">
+		<action name="addDesignDisabledObject" 	type="workitem" shortcut="true"/>
+		<action name="removeDesignDisabledObject"  type="workitem" shortcut="true"/>
+		<action name="pasteDesignDisabledObject"	type="workitem" shortcut="true"/>
+	</model>
+	
+	<model name="sourceChange_toolbar">
+		<action name="addSourceChangeObject" 	type="workitem" shortcut="true"/>
+		<action name="removeSourceChangeObject"  type="workitem" shortcut="true"/>
+		<action name="pasteSourceChangeObject"	type="workitem" shortcut="true"/>
+	</model>
+	<model name="faeMaturityAndDesignDisabledPromotion_wizard_promotionItems">
+		<action name="catlPaste"		   type="faeMaturityAndDesignDisabledPromotion" shortcut="true"/>
+		<action name="addPromotables"      type="faeMaturityAndDesignDisabledPromotion" shortcut="true"/>
+		<action name="remove"              type="promotionRequest" shortcut="true"/>	
+	</model>
+   
+</actionmodels>

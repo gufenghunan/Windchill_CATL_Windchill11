@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE actionmodels SYSTEM "actionmodels.dtd">
+<actionmodels>
+
+	<include href="config/custom/actions/part-actionModels.xml" />
+	<include href="config/custom/actions/folder-actionModels.xml" />
+    <include href="config/custom/actions/ChangeManagement-actionModels.xml" />
+    <include href="config/custom/actions/PromotionRequest-actionModels.xml" />
+    <include href="config/custom/actions/catl-rdm-actionModels.xml" />
+    <include href="config/custom/actions/navigation-actionModels.xml" />
+	<include href="config/custom/actions/catl-inventory-actionModels.xml" />
+	<include href="config/custom/actions/WorkItem-actionModels.xml" />
+    <include href="config/custom/actions/catl-actionModels.xml" />
+    <include href="config/custom/actions/PrincipalAdmin-actionmodels.xml" />
+    <include href="config/custom/actions/NetMarkets-actionmodels.xml" />
+    <include href="config/custom/actions/catlinfoPage-actionmodels.xml" />   <!-- 专用物料的actionModel -->
+	<include href="config/custom/actions/SearchCustom-actionmodels.xml" />
+	<include href="config/custom/actions/psb-actionmodels.xml" />
+    <include href="config/custom/actions/require-actionmodels.xml"/>
+    
+    <include href="config/actions/xworks/xworks-actionModels.xml" />
+    <include href="config/actions/xworks/xworksExample-actionModels.xml" />
+	
+</actionmodels>
+

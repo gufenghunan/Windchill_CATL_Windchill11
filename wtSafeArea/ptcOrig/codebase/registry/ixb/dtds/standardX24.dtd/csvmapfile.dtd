@@ -1,0 +1,3632 @@
+<!ELEMENT NmLoader ( (csvDocument*,
+                          csvWTDocumentDependencyLink*,
+                          csvSiteAdmin*,
+                          csvWfTimerTemplateBegin*,
+                          csvProject2End*,
+                          csvPrefEntry*,
+                          csvWfSynchRobotTemplateBegin*,
+                          csvEndBusinessEntity*,
+                          csvWfEnvironment*,
+                          csvClassificationImagesRootDir*,
+                          csvCreateFileBasedBegin*,
+                          csvActorRoleHolder2*,
+                          csvWfConnectorTemplate*,
+                          csvWfSynchRobotTemplateEnd*,
+                          csvAddPrincipalToRole*,
+                          csvExchangeContainer*,
+                          csvPhaseTemplateBegin*,
+                          csvCreateContainerTemplate*,
+                          csvCreateSharedTeamTemplate*,
+                          csvCreateTaskformTemplate*,
+                          csvLifeCycleTemplateBegin*,
+                          csvPartRepresentation*,
+                          csvReplaceContentFile*,
+                          csvAddCreator*,
+                          csvWfOverdueNotificationRoleAssignee*,
+                          csvSiteOrgContainer*,
+                          csvContainerConstraint*,
+                          csvWfPrincipalAssignee*,
+                          csvWfExternalMethodTemplateEnd*,
+                          csvProject2User*,
+                          csvTeamTemplateEnd*,
+                          csvWfProxyTemplateBegin*,
+                          csvWTSerialNumberedEffectivity*,
+                          csvProductSerialNumberEffectivity*,
+                          csvProductLotNumberEffectivity*,
+                          csvProductMSNEffectivity*,
+                          csvProductBlockEffectivity*,
+                          csvChangeDirectiveMSNEffectivity*,
+                          csvConfigurableDescribeLink*,
+                          csvConfigurableMastersLink*,
+                          csvBeginConfigurableLink*,
+                          csvEndConfigurableLink*,
+                          csvSaveNavStruct*,
+                          csvBeginWTDocument*,
+                          csvWfInternalMethodTemplateEnd*,
+                          csvBeginWTDocumentRetainContent*,
+                          csvAddElementToNodeTab*,
+                          csvBeginCreateOrUpdateWTPart*,
+                          csvPartDocLink*,
+                          csvIndirectRoleHolder*,
+                          csvBeginClassNode*,
+                          csvBeginSpecification*,
+                          csvEndSpecification*,
+                          csvContentURL*,
+                          csvWfProcessTemplateEnd*,
+                          csvWfExternalMethodTemplateBegin*,
+                          csvWfNodeTemplateLinkEnd*,
+                          csvBeginCSMConstraints*,
+                          csvNewViewVersion*,
+                          csvWTLotEffectivity*,
+                          csvRemoveCSMConstraint*,
+                          csvOccurrencedAssemblyAdd*,
+                          csvBeginOccurrencedAssemblyAdd*,
+                          csvEndOccurrencedAssemblyAdd*,
+                          csvAddSiteAdministrator*,
+                          csvRelationshipMapDef*,
+                          csvNotebookTemplate*,
+                          csvQuantityOfMeasure*,
+                          csvBeginNavStruct*,
+                          csvWfVariable*,
+                          csvAddOrgAdministrator*,
+                          csvNotebook*,
+                          csvWfExprRobotTemplateEnd*,
+                          csvSetElementValue*,
+                          csvSetDefaultDirectory*,
+                          csvAttrDefinizer*,
+                          csvRenameAttrDefinizer*,
+                          csvSingleDefinitionConstraint*,
+                          csvWfApplRobotTemplateBegin*,
+                          csvOrgAdmin*,
+                          csvContentAggregateURL*,
+                          csvEndCSMConstraints*,
+                          csvWfTeamAssignee*,
+                          csvWfOverdueAction*,
+                          csvAddNavTab*,
+                          csvEndAttributeHierarchyLoader*,
+                          csvBeginWTPart*,
+                          csvBeginExport*,
+                          csvEndWTPart*,
+                          csvEndExport*,
+                          csvExport*,
+                          csvActivateContainer*,
+                          csvContentFile*,
+                          csvWfURLRobotTemplateEnd*,
+                          csvCachePart*,
+                          csvWfProjectAssignee*,
+                          csvEndWTDocumentRetainContent*,
+                          csvRelationshipMaps*,
+                          csvAccessRule*,
+                          csvContentAggregate*,
+                          csvWfInternalMethodTemplateBegin*,
+                          csvLifeCycleTemplateEnd*,
+                          csvCreateOrUpdateIBAValue*,
+                          csvContainer*,
+                          csvOLDIBAValue*,
+                          csvFolderShortcut*,
+                          csvWfAdHocActivityTemplateBegin*,
+                          csvWfAssignedActivityTemplateBegin*,
+                          csvClassicContainer*,
+                          csvUser*,
+                          csvUserPicture*,
+                          csvEndIBAContainer*,
+                          csvShortcut*,
+                          csvEndCreateOrUpdateWTPart*,
+                          csvProject2Begin*,
+                          csvQualityBegin*,
+                          csvQualityEnd*,
+                          csvNewPlaceBegin*,
+                          csvNewPlaceEnd*,
+                          csvNewPersonBegin*,
+                          csvNewPersonEnd*,
+                          csvCAPAChangeRequestBegin*,
+                          csvCAPAChangeRequestEnd*,
+                          csvNonconformanceBegin*,
+                          csvNonconformanceEnd*,
+                          csvCustomerExperienceBegin*,
+                          csvCustomerExperienceEnd*,
+                          csvUDISubmissionBegin*,
+                          csvUDISubmissionEnd*,
+                          csvPartDocReference*,
+                          csvBeginWTPartReferenceLink*,
+                          csvEndWTPartReferenceLink*,
+                          csvConfigurableLink*,
+                          csvPart*,
+                          csvPartList*,
+                          csvBeginPartList*,
+                          csvEndPartList*,
+                          csvPartListItem*,
+                          csvBeginPartListItem*,
+                          csvEndPartListItem*,
+                          csvPartToPartListLink*,
+                          csvPartListToPartLink*,
+                          csvPartListToEPMDocumentLink*,
+                          csvTranslationLink*,
+                          csvWfNodeTemplateLinkBegin*,
+                          csvWfURLRobotTemplateBegin*,
+                          csvWfAdHocActivityTemplateEnd*,
+                          csvWTDatedEffectivity*,
+                          csvWfApplRobotTemplateEnd*,
+                          csvWfProcessTemplateBegin*,
+                          csvBeginUpdateBusinessEntity*,
+                          csvendIBAHolder*,
+                          csvProductContainer*,
+                          csvSetAsPrimaryEndItem*,
+                          csvWfSignature*,
+                          csvAssemblyAddLoad*,
+                          csvViewPreference*,
+                          csvSiteViewPreference*,
+                          csvWfEventActionPair*,
+                          csvRoleHolder*,
+                          csvUserGroup*,
+                          csvGroupGroup*,
+                          csvAssemblyRemove*,
+                          csvOrgContainer*,
+                          csvTeamTemplateBegin*,
+                          csvEndWTDocument*,
+                          csvWfTransition*,
+                          csvWfActorAssignee*,
+                          csvProductUser*,
+                          csvSubFolder*,
+                          csvWfNotificationEnd*,
+                          csvWfVariableAssignee*,
+                          csvSingleDefinitionConstraintByName*,
+                          csvViewAssociation*,
+                          csvBeginIBAContainer*,
+                          csvBaseCriterionDef*,
+                          csvRoleHolder2*,
+                          csvCreateRankingContext*,
+                          csvExportDefinition*,
+                          csvEndBaseDefsRbInfos*,
+                          csvEndPropertyDefView*,
+                          csvUpdatePropertyDefView*,                           
+                          csvUpdateDatatypeDefView*,                           
+                          csvEndDatatypeDefView*,
+                          csvEndScreenDefView*,
+                          csvEndDisplayStyleView*,      
+                          csvEndOrganizerView*,           
+                          csvEndEnumMemberView*,
+                          csvEndEnumDefView*,
+                          csvEndUpdateEnumDefView*,
+                          csvEndConstraintRuleDefView*,
+                          csvEndConstraintDefView*,
+                          csvEndNestedLayoutDefView*,
+                          csvEndTableDefView*,
+                          csvEndImageAttrComponentDefView*,
+                          csvEndGroupMemberView*, 
+                          csvEndGroupDefView*,
+                          csvEndLayoutDefView*,
+                          csvEndAttributeDefView*,
+                          csvEndTypeDefView*,
+                          csvEndTypes*,
+                          csvEndTypeLoadModes*,
+                          csvWfProxyTemplateEnd*,
+                          csvWTAclEntry*,
+                          csvDataFormat*,
+                          csvBeginBusinessEntity*,
+                          csvView*,
+                          csvIBAValue*,
+                          csvEndClassNode*,
+                          csvEndWTPM*,
+                          csvWfBlockTemplateEnd*,
+                          csvAssemblyAdd*,
+                          csvAspsAssemblyAdd*,
+                          csvBeginAttributeHierarchyLoader*,
+                          csvReportTemplate*,
+                          csvCreateReport*,
+                          csvCriterionDefValidWith*,
+                          csvPhaseTemplateEnd*,
+                          csvWfRoleAssignee*,
+                          csvEndExportNodeTemplate*,
+                          csvOccurrencedAssemblyAddLoad*,
+                          csvBeginRequirement*,
+                          csvEndRequirement*,
+                          csvSpecificationUsageLink*,
+                          csvWfExceptionAction*,
+                          csvWfAuditAction*,
+                          csvWfIgnoreUnresolvedRoleAction*,
+                          csvWfVotingAction*,
+                          csvTypeNodeIconRoot*,
+                          csvContentRoot*,
+                          csvBeginExportNodeTemplate*,
+                          csvDomain*,
+                          csvPhaseSuccessionBegin*,
+                          csvMeasurementSystem*,
+                          csvBeginWTPM*,
+                          csvEndNavStruct*,
+                          csvAddIndependentNode*,
+                          csvCreateRankingData*,
+                          csvAddGuest*,
+                          csvProjectBegin*,
+                          csvClassificationNavStruct*,
+                          csvWfExprRobotTemplateBegin*,
+                          csvWfExpression*,
+                          csvGeneral*,
+                          csvContentAggregateFile*,
+                          csvAddElementToNavTab*,
+                          csvEndUpdateBusinessEntity*,
+                          csvActorRoleHolder*,
+                          csvDeleteTypes*,
+                          csvDeleteAttributes*,
+                          csvBeginBaseDefsRbInfos*,
+                          csvBeginPropertyDefView*,
+                          csvSaveCustomPropertyDefinition*,
+                          csvDeleteCustomPropertyDefinition*,
+                          csvBeginDatatypeDefView*,
+                          csvBeginScreenDefView*,
+                          csvUpdateScreenDefView*,
+                          csvBeginDisplayStyleView*,
+                          csvBeginOrganizerView*,
+                          csvBeginEnumDefView*,
+                          csvBeginUpdateEnumDefView*,
+                          csvBeginEnumMemberView*,
+                          csvBeginConstraintRuleDefView*,
+                          csvUpdateConstraintRuleDefView*,
+                          csvBeginUpdateTypeDefView*,
+                          csvUpdateLayoutDefView*,
+                          csvUpdateAttributeDefaultDefView*,
+                          csvUpdateALayoutAttributes*,
+                          csvUpdateAllLayoutsAttributes*,
+                          csvRenameTypeDefView*,
+                          csvRenameAttributeDefView*,
+                          csvRenameGroupDefView*,
+                          csvUpdateGroupDisplayStyle*,
+                          csvAddLayoutDefView*,
+                          csvAddDynamicGroupDefView*,
+                          csvAddGroupDefView*,
+                          csvAddNestedLayoutDefView*,
+                          csvAddTableDefView*,
+                          csvAddImageAttrComponentDefView*,
+                          csvBeginUpdateProperties*,
+                          csvAddCondition*,
+                          csvUpdatePropertyValue*,
+                          csvEndUpdateProperties*,
+                          csvEndUpdateTypeDefView*,
+                          csvBeginTypeLoadModes*,
+                          csvBeginTypes*,
+                          csvBeginTypeDefView*,
+                          csvLWCTypeWriteLog*,
+                          csvBeginAttributeDefView*,
+                          csvPropertyValue*,
+                          csvBeginLayoutDefView*,
+                          csvBeginGroupDefView*,
+                          csvBeginGroupMemberView*,
+                          csvBeginTableDefView*,
+                          csvBeginImageAttrComponentDefView*,
+                          csvBeginNestedLayoutDefView*,
+                          csvBeginConstraintDefView*,
+                          csvCreateDefaultAssociationConstraintItem*,
+                          csvProjectEnd*,
+                          csvDocumentRetainContent*,
+                          csvCabinet*,
+                          csvSetDefaultURL*,
+                          csvPartDocDescribes*,
+                          csvPartEPMDocDescribes*,
+                          csvBeginWTPartDescribeLink*,
+                          csvEndWTPartDescribeLink*,
+                          csvWfAssignedActivityTemplateEnd*,
+                          csvConfigurationItem*,
+                          csvWfBlockTemplateBegin*,
+                          csvWfTimerTemplateEnd*,
+                          csvIndexPolicyRule*,
+                          csvCriterion*,
+                          csvWfNotificationBegin*,
+                          csvGroup*,
+                          csvDeletePreferenceCategory*,
+                          csvDeletePreferenceClient*,
+                          csvDeletePreferenceDefinition*,
+                          csvDeletePreferenceInstance*,
+                          csvLinkPreferenceClientDefinition*,
+                          csvUnlinkPreferenceClientDefinition*,
+                          csvPreferenceCategory*,
+                          csvPreferenceClient*,
+                          csvPreferenceDefinition*,
+                          csvPreferenceInstance*,
+                          csvBeginESITarget*,
+                          csvEndESITarget*,
+                          csvESITargetAssignmentLink*,
+                          csvBeginESITargetAssignmentLink*,
+                          csvEndESITargetAssignmentLink*,
+                          csvEPMAuthoringAppVersion*,
+                          csvCreateWTOrganization*,
+                          csvBeginGenericVariantLinks*,
+                          csvGenericVariantLink*,
+                          csvEndGenericVariantLinks*,
+                          csvParamAttrDefnLink*,
+                          csvVariantSpec*,
+                          csvWfRoleSetup*,
+                          csvWfResourcePool*,
+                          csvWfRoleResetMap*,                          
+
+                          csvCreateProcessOverview*,
+                          csvLoadProcessOverview*,
+                          csvCreateSupplier*,
+                          csvEndSupplier*,
+                          csvAddContactToSupplier*,
+                          csvAddDocumentToSupplier*,
+                          csvSourcingContext*,
+                          csvEndSourcingContext*,
+                          csvManufacturerPart*,
+                          csvBeginManufacturerPart*,
+                          csvEndManufacturerPart*,
+                          csvVendorPart*,
+                          csvBeginVendorPart*,
+                          csvEndVendorPart*,
+                          csvAddAML*,
+                          csvAddAVL*,
+                          csvRemoveAML*,
+                          csvRemoveAVL*,
+                          csvSetAMLPreference*,
+                          csvSetAVLPreference*,
+                          csvProblemReport*,
+                          csvWTVariance*,
+                          csvChangeRequest*,
+                          csvChangeNotice*,
+                          csvChangeActivity*,
+                          csvBeginChangeDirective*,
+                          csvEndChangeDirective*,
+                          csvAddImpactedItem*,
+                          csvRelevantRequestData*,
+                          csvAffectedActivityData*,
+                          csvChangeRecord*,
+                          csvCreateChangeLinkBegin*,
+                          csvCreateChangeLinkEnd*,
+                          csvPromotionNotice*,
+                          csvAddPromotionObject*,
+                          csvCreateMaturityLinkBegin*,
+                          csvCreateMaturityLinkEnd*,
+                          csvRenderChoice*,
+                          csvTaskFormTemplate*,
+                          csvWfDefaultRoleSetup*,
+                          csvCreateSharedTeam*,
+                          csvCollectorPreferenceDefinition*,
+                          csvBeginNavigationFilterTemplate*,
+                          csvAddNavigationFilterAttribute*,
+                          csvEndNavigationFilterTemplate*,
+                          csvRegisterNavigationFilterTemplate*,
+                          csvOptionGroup*,
+                          csvBeginOption*,
+                          csvEndOption*,
+                          csvBeginEditOption*,
+
+                          csvEndEditOption*,
+
+                          csvBeginChoice*,
+                          csvEndChoice*,
+                          csvEditChoice*,
+
+                          csvBeginAlias*,
+                          csvEndAlias*,
+                          csvBeginOptionSet*,
+                          csvAddChoice*,
+                          csvEndOptionSet*,
+                          csvChoiceMappableChoiceLink*,
+                          csvBeginChoiceMapping*,
+                          csvChoiceMappingTargetChoice*,
+                          csvEndChoiceMapping*,
+                          csvBeginChoiceEnable*,
+                          csvChoiceEnableTargetChoice*,
+                          csvEndChoiceEnable*,
+                          csvBeginChoiceConstraint*,
+                          csvConstraintChoice*,
+                          csvEndChoiceConstraint*,
+                          csvRegisterOptionSet*,
+                          csvOptionSetAssignableClass*,
+                          csvOptionSetAssignableNumber*,
+                          csvBeginNavCriteria*,
+                          csvEndNavCriteria*,
+                          csvBeginNavFilter*,
+                          csvEndNavFilter*,
+                          csvBeginConditionalRule*,
+                          csvEndConditionalRule*,
+                          csvBeginRuleMemberAction*,
+                          csvEndRuleMemberAction*,
+                          csvAddRuleActionMember*,
+                          csvAddRuleMember*,
+                          csvBeginAssignExpression*,
+                          csvAddLogicalExpression*,
+                          csvAddLogicalExpressionMember*,
+                          csvEndLogicalExpression*,
+                          csvEndAssignExpression*,
+                          csvBeginIndependentAssignExpression*,
+                          csvEndIndependentAssignExpression*,
+                          csvBeginAssignBasicIndependentExpression*,
+                          csvEndAssignBasicIndependentExpression*,
+                          csvBeginAssignBasicExpression*,
+                          csvEndAssignBasicExpression*,
+                          csvAddBasicExpressionMember*,
+                          csvExternalLogicLink*,
+                          csvFormulaMetaData*,
+                          csvFormulaSet*,
+                          csvAddFormulaMetaData*,
+                          csvBeginSecurityLabels*,
+                          csvEndSecurityLabels*,
+                          csvRemoveFormulaMetaData*,
+                          csvMPMPlant*,
+                          csvBeginMPMPlant*,
+                          csvEndMPMPlant*,
+                          csvMPMWorkCenter*,
+                          csvBeginMPMWorkCenter*,
+                          csvEndMPMWorkCenter*,
+                          csvMPMTooling*,
+                          csvBeginMPMTooling*,
+                          csvEndMPMTooling*,
+                          csvMPMSkill*,
+                          csvBeginMPMSkill*,
+                          csvEndMPMSkill*,
+                          csvMPMProcessingMaterial*,
+                          csvBeginMPMProcessingMaterial*,
+                          csvEndMPMProcessingMaterial*,
+                          csvMPMResourceGroup*,
+                          csvBeginMPMResourceGroup*,
+                          csvEndMPMResourceGroup*,
+                          csvResourceToResourceLink*,
+                          csvBeginResourceToResourceLink*,
+                          csvEndResourceToResourceLink*,
+                          csvCreateWorkcenterToFormulasetLink*,
+                          csvCreateResourceRepresentation*,
+                          csvBeginProcessPlan*,
+                          csvEndProcessPlan*,
+                          csvCreateProcessPlan*,
+                          csvCreateProcessPlanRepresentation*,
+                          csvBeginOperation*,
+                          csvEndOperation*,
+                          csvCreateOperation*,
+                          csvCreateOperationRepresentation*,
+                          csvBeginSequence*,
+                          csvEndSequence*,
+                          csvCreateSequence*,
+                          csvCreateSequenceRepresentation*,
+                          csvCreateOperationUsageLink*,
+                          csvBeginOperationUsageLink*,
+                          csvEndOperationUsageLink*,
+                          csvCreateSequenceUsageLink*,
+                          csvBeginSequenceUsageLink*,
+                          csvEndSequenceUsageLink*,
+                          csvBeginPartToProcessPlanLink*,
+                          csvEndPartToProcessPlanLink*,
+                          csvCreatePartToProcessPlanLink*,
+                          csvCreatePlantAssignmentLink*,
+                          csvBeginPlantAssignmentLink*,
+                          csvEndPlantAssignmentLink*,
+                          csvCreateOperationToPartLink*,
+                          csvBeginOperationToPartLink*,
+                          csvEndOperationToPartLink*,
+                          csvCreateOperationToConsumableLink*,
+                          csvBeginOperationToConsumableLink*,
+                          csvEndOperationToConsumableLink*,
+                          csvCreateOperationToWorkCenterLink*,
+                          csvBeginOperationToWorkCenterLink*,
+                          csvEndOperationToWorkCenterLink*,
+                          csvCreateOperationToOperatedPartLink*,
+                          csvBeginOperationToOperatedPartLink*,
+                          csvEndOperationToOperatedPartLink*,
+                          csvCreateOperationProcessLink*,
+                          csvBeginOperationProcessLink*,
+                          csvEndOperationProcessLink*,
+                          csvCreatePrecedenceConstraintLink*,
+                          csvBeginPrecedenceConstraintLink*,
+                          csvEndPrecedenceConstraintLink*,
+                          csvCreateStandardProcedureLink*,
+                          csvBeginStandardProcedureLink*,
+                          csvEndStandardProcedureLink*,
+                          csvMfgStandardGroup*,
+                          csvBeginMPMMfgStandardGroup*,
+                          csvEndMPMMfgStandardGroup*,
+                          csvMfgProcess*,
+                          csvBeginMPMMfgProcess*,
+                          csvEndMPMMfgProcess*,
+                          csvCreateStandardUsageLink*,
+                          csvBeginMPMMfgStandardUsageLink*,
+                          csvEndMPMMfgStandardUsageLink*,
+                          csvCreateCompatibilityLink*,
+                          csvBeginMPMCompatibilityLink*,
+                          csvEndMPMCompatibilityLink*,
+                          csvCreateMPMDocumentDescribeLink*,
+                          csvCreateMPMDocumentReferenceLink*,
+                          csvCreateAlternateUnitLink*,
+                          csvBeginAlternateUnitLink*,
+                          csvEndAlternateUnitLink*,
+                          csvCreatePartToPlantAsignmentLink*,
+                          csvBeginMPMPartToPlantAssignmentLink*,
+                          csvEndMPMPartToPlantAssignmentLink*,
+                          csvCreateEquivalenceLink*,
+                          csvBeginEquivalenceLink*,
+                          csvEndEquivalenceLink*,
+                          csvBeginMVPreferenceInstance*,
+                          csvMVPreferenceInstance*,
+                          csvEndMVPreferenceInstance*,
+                          csvCreateConsumptionLink*,
+                          csvCreateERPMaterial*,
+                          csvBeginERPMaterial*,
+                          csvEndERPMaterial*,
+                          csvCreateERPMaterialLink*,
+                          csvBeginERPMaterialLink*,
+                          csvEndERPMaterialLink*,
+                          csvCreateERPMaterialDocumentDescribeLink*,
+                          csvBeginERPMaterialDocumentDescribeLink*,
+                          csvEndERPMaterialDocumentDescribeLink*,
+                          csvCreateERPMaterialDocumentReferenceLink*,
+                          csvBeginERPMaterialDocumentReferenceLink*,
+                          csvEndERPMaterialDocumentReferenceLink*,
+                          csvCreateERPPartSpecificPlantDataLink*,
+                          csvBeginERPPartSpecificPlantDataLink*,
+                          csvEndERPPartSpecificPlantDataLink*,
+                          csvBeginUpdateERPPartSpecificPlantData*,
+                          csvEndUpdateERPPartSpecificPlantData*,
+                          csvCollaborationSite*,
+                          csvCreateConflictResolution*,
+                          csvDeleteConflictResolution*,
+                          csvDeleteAllConflictResolution*,
+                          csvGetConflictResolution*,
+                          csvLoadValue*,
+                          csvSystemConfigurationCollectorCategory*,
+                          csvLinkPreferenceCategoryDefinition*,
+                          csvExecuteImport*,
+                          csvAuthorizationAgreement*,
+                          csvHandleNewTableViewsOnUpgrade*,
+                          csvUpdateTableView*,
+                          csvClientTab*,
+                          csvLoadLicenseGroups*,
+                          csvMasterProcessTemplate*,
+                          csvProductPlanTemplate*,
+                          csvDeleteCognosReport*,
+                          csvUpdateCognosModel*,
+                          csvLoadCognosReportSpec*,
+                          csvManagedBaseline*,
+                          csvBeginCreateSupersede*,
+                          csvEndCreateSupersede*,
+                          csvCreateSuperseded*,
+                          csvCreateSuperseding*,
+                          csvBeginUpdateSupersede*,
+                          csvEndUpdateSupersede*,
+                          csvAddSupersede*,
+                          csvDeleteSupersede*,
+                          csvRemoveSupersede*,
+                          csvBeginCreateUpdateAssemblySubstitute*,
+                          csvBeginCreateUpdateSubstituteLink*,
+                          csvEndCreateUpdateSubstituteLink*,
+                          csvEndCreateUpdateAssemblySubstitute*,
+                          csvBeginCreateUpdateAlternateLink*,
+                          csvEndCreateUpdateAlternateLink*,
+                          csvCreateUpdateAlternateLink*,
+                          csvauthoringLanguage*)*)
+>
+
+<!-- Replacements start -->
+<!ELEMENT csvBeginCreateUpdateAssemblySubstitute (csvpartNumber,csvpartName?,csvorganizationName?,csvorganizationID?,csvversion?,csvview?)>
+<!ATTLIST csvBeginCreateUpdateAssemblySubstitute handler CDATA #REQUIRED>
+
+<!ELEMENT csvEndCreateUpdateAssemblySubstitute EMPTY>
+<!ATTLIST csvEndCreateUpdateAssemblySubstitute handler CDATA #REQUIRED>
+
+<!ELEMENT csvBeginCreateUpdateSubstituteLink (csvsubstituteForPartNumber,csvsubstituteForPartName?,csvsubstituteForPartOrganizationName?,csvsubstituteForPartOrganizationID?,csvsubstituteForLineNumber?,csvsubstitutePartNumber,csvsubstitutePartName?,csvsubstitutePartOrganizationName?,csvsubstitutePartOrganizationID?,csvreplacementType?,csvsubstitutePartReferenceDesignator?,csvsubstitutePartUnit?,csvsubstitutePartAmount?)>
+<!ATTLIST csvBeginCreateUpdateSubstituteLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvEndCreateUpdateSubstituteLink EMPTY>
+<!ATTLIST csvEndCreateUpdateSubstituteLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvsubstituteForPartNumber (#PCDATA)>
+<!ELEMENT csvsubstituteForPartName (#PCDATA)>
+<!ELEMENT csvsubstituteForPartOrganizationName (#PCDATA)>
+<!ELEMENT csvsubstituteForPartOrganizationID (#PCDATA)>
+<!ELEMENT csvsubstituteForLineNumber (#PCDATA)>
+
+<!ELEMENT csvsubstitutePartNumber (#PCDATA)>
+<!ELEMENT csvsubstitutePartName (#PCDATA)>
+<!ELEMENT csvsubstitutePartOrganizationName (#PCDATA)>
+<!ELEMENT csvsubstitutePartOrganizationID (#PCDATA)>
+<!ELEMENT csvsubstitutePartReferenceDesignator (#PCDATA)>
+
+<!ELEMENT csvsubstitutePartAmount (#PCDATA)>
+<!ELEMENT csvsubstitutePartUnit (#PCDATA)>
+
+<!ELEMENT csvBeginCreateUpdateAlternateLink (csvalternatePartNumber, csvalternatePartName?, csvalternatePartOrganizationName?, csvalternatePartOrganizationID?, csvalternateForPartNumber, csvalternateForPartName?, csvalternateForPartOrganizationName?, csvalternateForPartOrganizationID?, csvtwoWayStatus?, csvreplacementType?)>
+<!ATTLIST csvBeginCreateUpdateAlternateLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvEndCreateUpdateAlternateLink EMPTY>
+<!ATTLIST csvEndCreateUpdateAlternateLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvCreateUpdateAlternateLink (csvalternatePartNumber, csvalternatePartName?, csvalternatePartOrganizationName?, csvalternatePartOrganizationID?, csvalternateForPartNumber, csvalternateForPartName?, csvalternateForPartOrganizationName?, csvalternateForPartOrganizationID?, csvtwoWayStatus?, csvreplacementType?)>
+<!ATTLIST csvCreateUpdateAlternateLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvalternatePartNumber (#PCDATA) >
+<!ELEMENT csvalternatePartName (#PCDATA) >
+<!ELEMENT csvalternatePartOrganizationName (#PCDATA) >
+<!ELEMENT csvalternatePartOrganizationID (#PCDATA) >
+<!ELEMENT csvalternateForPartNumber (#PCDATA) >
+<!ELEMENT csvalternateForPartName (#PCDATA) >
+<!ELEMENT csvalternateForPartOrganizationName (#PCDATA) >
+<!ELEMENT csvalternateForPartOrganizationID (#PCDATA) >
+<!ELEMENT csvtwoWayStatus (#PCDATA) >
+
+<!ELEMENT csvreplacementType (#PCDATA)>
+<!-- Replacements end -->
+
+
+<!-- Supersede relation start -->
+<!ELEMENT csvBeginCreateSupersede EMPTY>
+<!ATTLIST csvBeginCreateSupersede handler CDATA #REQUIRED>
+
+<!ELEMENT csvEndCreateSupersede EMPTY>
+<!ATTLIST csvEndCreateSupersede handler CDATA #REQUIRED>
+
+<!ELEMENT csvCreateSuperseded (csvsupersededNumber,csvsupersededName?)>
+<!ATTLIST csvCreateSuperseded handler CDATA #REQUIRED>
+
+<!ELEMENT csvCreateSuperseding (csvsupersedingNumber,csvsupersedingName?)>
+<!ATTLIST csvCreateSuperseding handler CDATA #REQUIRED>
+
+<!ELEMENT csvBeginUpdateSupersede (csvsupersededNumber,csvsupersededName?,csvsupersedingNumber,csvsupersedingName?)>
+<!ATTLIST csvBeginUpdateSupersede handler CDATA #REQUIRED>
+
+<!ELEMENT csvEndUpdateSupersede EMPTY>
+<!ATTLIST csvEndUpdateSupersede handler CDATA #REQUIRED>
+
+<!ELEMENT csvAddSupersede (csvsupersededNumber,csvsupersededName?,csvsupersedingNumber,csvsupersedingName?)>
+<!ATTLIST csvAddSupersede handler CDATA #REQUIRED>
+
+<!ELEMENT csvDeleteSupersede (csvsupersededNumber,csvsupersededName?,csvsupersedingNumber,csvsupersedingName?)>
+<!ATTLIST csvDeleteSupersede handler CDATA #REQUIRED>
+
+<!ELEMENT csvRemoveSupersede (csvsupersededNumber,csvsupersededName?,csvsupersedingNumber,csvsupersedingName?)>
+<!ATTLIST csvRemoveSupersede handler CDATA #REQUIRED>
+
+<!ELEMENT csvsupersededNumber (#PCDATA)>
+<!ELEMENT csvsupersededName (#PCDATA)>
+
+<!ELEMENT csvsupersedingNumber (#PCDATA)>
+<!ELEMENT csvsupersedingName (#PCDATA)>
+<!-- Supersede relation end -->
+
+<!ELEMENT csvUpdateCognosModel EMPTY>
+<!ATTLIST csvUpdateCognosModel handler CDATA #REQUIRED>
+
+<!ELEMENT csvLoadCognosReportSpec (csvAssembly)>
+<!ATTLIST csvLoadCognosReportSpec handler CDATA #REQUIRED>
+<!ELEMENT csvAssembly (#PCDATA)>
+
+<!ELEMENT csvDeleteCognosReport (csvReportName)>
+<!ATTLIST csvDeleteCognosReport handler CDATA #REQUIRED>
+<!ELEMENT csvReportName (#PCDATA)>
+
+<!ELEMENT csvExecuteImport (csvimportFilename, csvimportRules?, csvimportValidate?, csvimportDetailedLog?, csvimportOverrideConflicts?)>
+<!ATTLIST csvExecuteImport handler CDATA #IMPLIED>
+<!ELEMENT csvimportFilename (#PCDATA)>
+<!ELEMENT csvimportRules (#PCDATA)>
+<!ELEMENT csvimportValidate (#PCDATA)>
+<!ELEMENT csvimportDetailedLog (#PCDATA)>
+<!ELEMENT csvimportOverrideConflicts (#PCDATA)>
+
+<!ELEMENT csvLoadValue (csvname, csvrefType?, csvrefAtt?, csvvalue)>
+<!ATTLIST csvLoadValue handler CDATA #IMPLIED>
+<!ELEMENT csvrefType (#PCDATA)>
+<!ELEMENT csvrefAtt (#PCDATA)>
+
+<!ELEMENT csvExportDefinition (csvtoLocation, csvtoFileName?, csvexportDefClass, csvnameSpace?, csvexportNames?, csvexportFilteredTypes?,csvmode?, csvdebug?, csvExportAncestorTypes?, csvskipValidate?)>
+<!ATTLIST csvExportDefinition handler CDATA #IMPLIED>
+<!ELEMENT csvtoLocation (#PCDATA)>
+<!ELEMENT csvtoFileName (#PCDATA)>
+<!ELEMENT csvexportDefClass (#PCDATA)>
+<!ELEMENT csvexportNames (#PCDATA)>
+<!ELEMENT csvexportFilteredTypes (#PCDATA)>
+<!ELEMENT csvmode (#PCDATA)>
+<!ELEMENT csvdebug (#PCDATA)>
+<!ELEMENT csvExportAncestorTypes (#PCDATA)>
+<!ELEMENT csvskipValidate (#PCDATA)>
+
+<!ELEMENT csvBeginBaseDefsRbInfos (csvrbInfoPackage?)>
+<!ATTLIST csvBeginBaseDefsRbInfos handler CDATA #IMPLIED>
+<!ELEMENT csvrbInfoPackage (#PCDATA)>
+
+<!ELEMENT csvEndBaseDefsRbInfos EMPTY >
+<!ATTLIST csvEndBaseDefsRbInfos handler CDATA #IMPLIED>
+        
+
+<!ELEMENT csvBeginPropertyDefView (csvobjectOid?, csvname, csvholderClass, csvdatatype, csvsortOrder?, csvinherited?, csvcontentHolder?, csvlegalFileTypeList?, csvoverridable?, csvlocalizable?, csvdatatypeAppliedTo?, csvhidden?, csvreadOnly?, csvminValue?, csvmaxValue?, csvmaxLength?, csvpattern?, csvenumDef?, csvtargetRoot?)>
+<!ATTLIST csvBeginPropertyDefView handler CDATA #IMPLIED>
+<!ELEMENT csvobjectOid (#PCDATA)>
+<!ELEMENT csvholderClass (#PCDATA)>
+<!ELEMENT csvdatatype (#PCDATA)>
+<!ELEMENT csvsortOrder (#PCDATA)>
+<!ELEMENT csvinherited (#PCDATA)>
+<!ELEMENT csvcontentHolder (#PCDATA)>
+<!ELEMENT csvlegalFileTypeList (#PCDATA)>
+<!ELEMENT csvoverridable (#PCDATA)>
+<!ELEMENT csvlocalizable (#PCDATA)>
+<!ELEMENT csvdatatypeAppliedTo (#PCDATA)>
+<!ELEMENT csvhidden (#PCDATA)>
+<!ELEMENT csvminValue (#PCDATA)>
+<!ELEMENT csvmaxValue (#PCDATA)>
+<!ELEMENT csvmaxLength (#PCDATA)>
+<!ELEMENT csvpattern (#PCDATA)>
+<!ELEMENT csvenumDef (#PCDATA)>
+<!ELEMENT csvtargetRoot (#PCDATA)>
+
+<!ELEMENT csvEndPropertyDefView  EMPTY >
+<!ATTLIST csvEndPropertyDefView  handler CDATA #IMPLIED>
+
+<!ELEMENT csvUpdatePropertyDefView (csvname, csvholderClass, csvdatatypeAppliedTo?, csvtargetRoot?, csvupdatedHolderClass?, csvtypesToRemove?, csvtypesToAdd?)>
+<!ATTLIST csvUpdatePropertyDefView handler CDATA #IMPLIED>
+<!ELEMENT csvupdatedHolderClass (#PCDATA)>
+
+<!ELEMENT csvSaveCustomPropertyDefinition (csvCustomPropertyName, csvCustomPropertyDisplayName_Default, csvCustomPropertyDisplayName_en_us?, csvCustomPropertyDisplayName_en_gb?, csvCustomPropertyDisplayName_fr?, csvCustomPropertyDisplayName_de?, csvCustomPropertyDisplayName_es?, csvCustomPropertyDisplayName_ja?, csvCustomPropertyDisplayName_it?, csvCustomPropertyDisplayName_ko?, csvCustomPropertyDisplayName_zh_cn?, csvCustomPropertyDisplayName_zh_tw?, csvCustomPropertyDisplayName_ru?, csvCustomPropertyDescription?)>
+<!ATTLIST csvSaveCustomPropertyDefinition handler CDATA #IMPLIED>
+<!ELEMENT csvCustomPropertyName (#PCDATA)>
+<!ELEMENT csvCustomPropertyDisplayName_Default (#PCDATA)>
+<!ELEMENT csvCustomPropertyDisplayName_en_us (#PCDATA)>
+<!ELEMENT csvCustomPropertyDisplayName_en_gb (#PCDATA)>
+<!ELEMENT csvCustomPropertyDisplayName_fr (#PCDATA)>
+<!ELEMENT csvCustomPropertyDisplayName_de (#PCDATA)>
+<!ELEMENT csvCustomPropertyDisplayName_es (#PCDATA)>
+<!ELEMENT csvCustomPropertyDisplayName_ja (#PCDATA)>
+<!ELEMENT csvCustomPropertyDisplayName_it (#PCDATA)>
+<!ELEMENT csvCustomPropertyDisplayName_ko (#PCDATA)>
+<!ELEMENT csvCustomPropertyDisplayName_zh_cn (#PCDATA)>
+<!ELEMENT csvCustomPropertyDisplayName_zh_tw (#PCDATA)>
+<!ELEMENT csvCustomPropertyDisplayName_ru (#PCDATA)>
+<!ELEMENT csvCustomPropertyDescription (#PCDATA)>
+
+<!ELEMENT csvDeleteCustomPropertyDefinition (csvCustomPropertyName)>
+<!ATTLIST csvDeleteCustomPropertyDefinition handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginDatatypeDefView (csvobjectOid?, csvname, csvhandlerClass)>
+<!ATTLIST csvBeginDatatypeDefView handler CDATA #IMPLIED>
+<!ELEMENT csvhandlerClass (#PCDATA)>
+
+<!ELEMENT csvEndDatatypeDefView  EMPTY >
+<!ATTLIST csvEndDatatypeDefView  handler CDATA #IMPLIED>
+
+<!ELEMENT csvUpdateDatatypeDefView (csvname, csvtypesToRemove?, csvtypesToAdd?)>
+<!ATTLIST csvUpdateDatatypeDefView handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginScreenDefView (csvobjectOid?, csvname, csvcontainerDomain?, csvoperationName)>
+<!ATTLIST csvBeginScreenDefView handler CDATA #IMPLIED>
+<!ELEMENT csvoperationName (#PCDATA)>
+
+<!ELEMENT csvEndScreenDefView  EMPTY >
+<!ATTLIST csvEndScreenDefView  handler CDATA #IMPLIED>
+
+<!ELEMENT csvUpdateScreenDefView (csvname, csvtypesToRemove?, csvtypesToAdd?)>
+<!ATTLIST csvUpdateScreenDefView handler CDATA #IMPLIED>
+<!ELEMENT csvtypesToRemove (#PCDATA)>
+<!ELEMENT csvtypesToAdd (#PCDATA)>
+
+<!ELEMENT csvBeginDisplayStyleView (csvobjectOid?, csvname, csvisDefault, csvisAttributeDisplayStyle, csvisView?, csvdatatype?)>
+<!ATTLIST csvBeginDisplayStyleView handler CDATA #IMPLIED>
+<!ELEMENT csvisDefault (#PCDATA)>
+<!ELEMENT csvisAttributeDisplayStyle (#PCDATA)>
+<!ELEMENT csvisView (#PCDATA)>
+
+<!ELEMENT csvEndDisplayStyleView  EMPTY >
+<!ATTLIST csvEndDisplayStyleView  handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginOrganizerView (csvobjectOid?, csvname, csvcontainerDomain?, csvparent?)>
+<!ATTLIST csvBeginOrganizerView handler CDATA #IMPLIED>
+<!ELEMENT csvparent (#PCDATA)>
+
+<!ELEMENT csvEndOrganizerView  EMPTY >
+<!ATTLIST csvEndOrganizerView  handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginEnumDefView (csvobjectOid?, csvname, csvcontainerDomain?, csvmaster?, csvsystem?, csvorganizer?, csvdomainRef?)>
+<!ATTLIST csvBeginEnumDefView handler CDATA #IMPLIED>
+<!ELEMENT csvmaster (#PCDATA)>
+<!ELEMENT csvsystem (#PCDATA)>
+<!ELEMENT csvorganizer (#PCDATA)>
+<!ELEMENT csvdomainRef (#PCDATA)>
+
+<!ELEMENT csvEndEnumDefView  EMPTY >
+<!ATTLIST csvEndEnumDefView  handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginUpdateEnumDefView (csvobjectOid?, csvname, csvcontainerDomain?, csvmaster?, csvsystem?, csvorganizer?)>
+<!ATTLIST csvBeginUpdateEnumDefView handler CDATA #IMPLIED>
+
+<!ELEMENT csvEndUpdateEnumDefView  EMPTY >
+<!ATTLIST csvEndUpdateEnumDefView  handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginEnumMemberView (csvobjectOid?, csvenumDefId?, csvname)>
+<!ATTLIST csvBeginEnumMemberView handler CDATA #IMPLIED>
+<!ELEMENT csvenumDefId (#PCDATA)>
+
+<!ELEMENT csvEndEnumMemberView  EMPTY >
+<!ATTLIST csvEndEnumMemberView  handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginConstraintRuleDefView (csvobjectOid?, csvruleClassname, csvdefClassname, csvdatatype, csvdefQualifier?, csvrenderer?, csvdisableable?, csvcanBeCondition?)>
+<!ATTLIST csvBeginConstraintRuleDefView handler CDATA #IMPLIED>
+<!ELEMENT csvruleClassname (#PCDATA)>
+<!ELEMENT csvdefClassname (#PCDATA)>
+<!ELEMENT csvdefQualifier (#PCDATA)>
+<!ELEMENT csvrenderer (#PCDATA)>
+<!ELEMENT csvdisableable (#PCDATA)>
+<!ELEMENT csvcanBeCondition (#PCDATA)>
+
+<!ELEMENT csvUpdateConstraintRuleDefView (csvruleClassname, csvdefClassname, csvdatatype, csvdefQualifier?, csvtypesToRemove?, csvtypesToAdd?)>
+<!ATTLIST csvUpdateConstraintRuleDefView handler CDATA #IMPLIED>
+
+<!ELEMENT csvEndConstraintRuleDefView  EMPTY >
+<!ATTLIST csvEndConstraintRuleDefView  handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginTypeLoadModes ( csvaddMode, csvaddAttr2GroupFlag? )>
+<!ATTLIST csvBeginTypeLoadModes  handler CDATA #IMPLIED>
+<!ELEMENT csvaddMode (#PCDATA) >
+<!ELEMENT csvaddAttr2GroupFlag (#PCDATA) >
+
+<!ELEMENT csvEndTypeLoadModes  EMPTY >
+<!ATTLIST csvEndTypeLoadModes  handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginTypes (csvattTemplate?, csvnameSpace?)>
+<!ATTLIST csvBeginTypes handler CDATA #IMPLIED>
+<!ELEMENT csvattTemplate (#PCDATA)>
+<!ELEMENT csvnameSpace (#PCDATA)>
+
+<!ELEMENT csvEndTypes  EMPTY >
+<!ATTLIST csvEndTypes  handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginTypeDefView (csvobjectOid?, csvattTemplate?, csvnameSpace?, csvname, csvcontainerDomain?, csvtypeParent?)>
+<!ATTLIST csvBeginTypeDefView handler CDATA #IMPLIED>
+<!ELEMENT csvcontainerDomain (#PCDATA)>
+<!ELEMENT csvtypeParent (#PCDATA)>
+
+<!ELEMENT csvLWCTypeWriteLog (csvtypeMsg)>
+<!ATTLIST csvLWCTypeWriteLog handler CDATA #IMPLIED>
+<!ELEMENT csvtypeMsg (#PCDATA)>
+
+<!ELEMENT csvEndTypeDefView  EMPTY >
+<!ATTLIST csvEndTypeDefView  handler CDATA #IMPLIED>
+
+<!ELEMENT csvPropertyValue (csvobjectOid?, csvname, csvisDefault?, csvholderId?, csvcontextId?, csvvalue?, csvlocale_en_us?, csvlocale_en_gb?, csvlocale_fr?, csvlocale_de?, csvlocale_es?, csvlocale_ja?, csvlocale_it?, csvlocale_ko?, csvlocale_ru?, csvlocale_zh_cn?, csvlocale_zh_tw?, csvlocale_cs?, csvlocale_el?, csvlocale_hu?, csvlocale_pl?, csvlocale_pt_br?, csvlocale_sk?, csvlocale_sl?, csvlocale_tr?, csvfilename?,csvfilepath?)>
+<!ATTLIST csvPropertyValue handler CDATA #IMPLIED>
+<!ELEMENT csvholderId (#PCDATA)>
+<!ELEMENT csvcontextId (#PCDATA)>
+<!ELEMENT csvlocale_en_us (#PCDATA)>
+<!ELEMENT csvlocale_en_gb (#PCDATA)>
+<!ELEMENT csvlocale_fr (#PCDATA)>
+<!ELEMENT csvlocale_de (#PCDATA)>
+<!ELEMENT csvlocale_es (#PCDATA)>
+<!ELEMENT csvlocale_ja (#PCDATA)>
+<!ELEMENT csvlocale_it (#PCDATA)>
+<!ELEMENT csvlocale_ko (#PCDATA)>
+<!ELEMENT csvlocale_ru (#PCDATA)>
+<!ELEMENT csvlocale_zh_cn (#PCDATA)>
+<!ELEMENT csvlocale_zh_tw (#PCDATA)>
+<!ELEMENT csvlocale_cs (#PCDATA)>
+<!ELEMENT csvlocale_sk (#PCDATA)>
+<!ELEMENT csvlocale_pl (#PCDATA)>
+<!ELEMENT csvlocale_hu (#PCDATA)>
+<!ELEMENT csvlocale_sl (#PCDATA)>
+<!ELEMENT csvlocale_el (#PCDATA)>
+<!ELEMENT csvlocale_tr (#PCDATA)>
+<!ELEMENT csvlocale_pt_br (#PCDATA)>
+<!ELEMENT csvfilename (#PCDATA)>
+<!ELEMENT csvfilepath (#PCDATA)>
+
+<!ELEMENT csvBeginAttributeDefView (csvobjectOid?, csvname, csvtypeDefId?, csvattDefClass, csvdatatype?, csvIBA?, csvQoM?, csvviewStyle?, csveditStyle?, csvdefaults?,csvsourceTextAttribute?,csvtranslationDictionary?)>
+<!ATTLIST csvBeginAttributeDefView handler CDATA #IMPLIED>
+<!ELEMENT csvtypeDefId (#PCDATA)>
+<!ELEMENT csvattDefClass (#PCDATA)>
+<!ELEMENT csvIBA (#PCDATA)>
+<!ELEMENT csvQoM (#PCDATA)>
+<!ELEMENT csvviewStyle (#PCDATA)>
+<!ELEMENT csveditStyle (#PCDATA)>
+<!ELEMENT csvdefaults (#PCDATA)>
+<!ELEMENT csvsourceTextAttribute (#PCDATA)>
+<!ELEMENT csvtranslationDictionary (#PCDATA)>
+
+<!ELEMENT csvEndAttributeDefView  EMPTY >
+<!ATTLIST csvEndAttributeDefView  handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginLayoutDefView (csvobjectOid?, csvname, csvtypeContext?, csvdefaultGroup?, csvprofiles?, csvscreens?)>
+<!ATTLIST csvBeginLayoutDefView handler CDATA #IMPLIED>
+<!ELEMENT csvtypeContext (#PCDATA)>
+<!ELEMENT csvdefaultGroup (#PCDATA)>
+<!ELEMENT csvprofiles (#PCDATA)>
+<!ELEMENT csvscreens (#PCDATA)>
+
+<!ELEMENT csvEndLayoutDefView  EMPTY >
+<!ATTLIST csvEndLayoutDefView  handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginGroupDefView (csvobjectOid?, csvname, csvisStatic, csvstyle?, csvcontextId?, csvlayoutId?)>
+<!ATTLIST csvBeginGroupDefView handler CDATA #IMPLIED>
+<!ELEMENT csvisStatic (#PCDATA)>
+<!ELEMENT csvstyle (#PCDATA)>
+<!ELEMENT csvlayoutId (#PCDATA)>
+
+<!ELEMENT csvEndGroupDefView  EMPTY >
+<!ATTLIST csvEndGroupDefView  handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginGroupMemberView (csvobjectOid?, csvtypeContext?, csvgroupId?, csvname)>
+<!ATTLIST csvBeginGroupMemberView handler CDATA #IMPLIED>
+<!ELEMENT csvgroupId (#PCDATA)>
+
+<!ELEMENT csvEndGroupMemberView  EMPTY >
+<!ATTLIST csvEndGroupMemberView  handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginTableDefView (csvobjectOid?, csvname, csvattributeName, csvcontextId?, csvlayoutId?)>
+<!ATTLIST csvBeginTableDefView handler CDATA #IMPLIED>
+
+<!ELEMENT csvEndTableDefView  EMPTY >
+<!ATTLIST csvEndTableDefView  handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginImageAttrComponentDefView (csvobjectOid?, csvname, csvattributeName, csvcontextId?, csvlayoutId?)>
+<!ATTLIST csvBeginImageAttrComponentDefView handler CDATA #IMPLIED>
+
+<!ELEMENT csvEndImageAttrComponentDefView  EMPTY >
+<!ATTLIST csvEndImageAttrComponentDefView  handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginNestedLayoutDefView (csvobjectOid?, csvname, csvattributeName, csvcontextId?, csvlayoutId?)>
+<!ATTLIST csvBeginNestedLayoutDefView handler CDATA #IMPLIED>
+
+<!ELEMENT csvEndNestedLayoutDefView  EMPTY >
+<!ATTLIST csvEndNestedLayoutDefView  handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginConstraintDefView (csvobjectOid?, csvloadID?, csvconditionLoadID?, csvconditionForLoadID?, csvtypeContext?, csvruleClassname, csvdefClassname, csvruleData, csvdefQualifier?)>
+<!ATTLIST csvBeginConstraintDefView handler CDATA #IMPLIED>
+<!ELEMENT csvloadID (#PCDATA)>
+<!ELEMENT csvconditionLoadID (#PCDATA)>
+<!ELEMENT csvconditionForLoadID (#PCDATA)>
+<!ELEMENT csvruleData (#PCDATA)>
+
+<!ELEMENT csvEndConstraintDefView  EMPTY >
+<!ATTLIST csvEndConstraintDefView  handler CDATA #IMPLIED>
+
+<!ELEMENT csvDeleteTypes (csvattTemplate?, csvdefNames) >
+<!ATTLIST csvDeleteTypes  handler CDATA #IMPLIED>
+<!ELEMENT csvdefNames (#PCDATA)>
+
+<!ELEMENT csvDeleteAttributes (csvattTemplate?, csvtypeContext, csvdefNames, csvmandated?) >
+<!ATTLIST csvDeleteAttributes handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginUpdateTypeDefView (csvname, csvmandated?) >
+<!ATTLIST csvBeginUpdateTypeDefView  handler CDATA #IMPLIED>
+<!ELEMENT csvmandated (#PCDATA)>
+
+<!ELEMENT csvEndUpdateTypeDefView EMPTY >
+<!ATTLIST csvEndUpdateTypeDefView  handler CDATA #IMPLIED>
+
+<!ELEMENT csvUpdateLayoutDefView (csvId, csvifValue?, csvvalue, csvmandated?) >
+<!ATTLIST csvUpdateLayoutDefView  handler CDATA #IMPLIED>
+<!ELEMENT csvId (#PCDATA)>
+<!ELEMENT csvifValue (#PCDATA)>
+
+<!ELEMENT csvUpdateAttributeDefaultDefView (csvname, csvifValue?, csvvalue, csvmandated?) >
+<!ATTLIST csvUpdateAttributeDefaultDefView  handler CDATA #IMPLIED>
+
+<!ELEMENT csvUpdateALayoutAttributes (csvId, csvgroup, csvaddAtt?, csvremoveAtt?, csvrefObj?, csvinsertDir?, csvmandated?) >
+<!ATTLIST csvUpdateALayoutAttributes  handler CDATA #IMPLIED>
+<!ELEMENT csvaddAtt (#PCDATA)>
+<!ELEMENT csvremoveAtt (#PCDATA)>
+
+<!ELEMENT csvRenameTypeDefView (csvvalue, csvmandated?) >
+<!ATTLIST csvRenameTypeDefView  handler CDATA #IMPLIED>
+
+<!ELEMENT csvRenameAttributeDefView (csvname, csvvalue, csvmandated?) >
+<!ATTLIST csvRenameAttributeDefView  handler CDATA #IMPLIED>
+
+<!ELEMENT csvRenameGroupDefView (csvId, csvgroup, csvvalue, csvmandated?) >
+<!ATTLIST csvRenameGroupDefView  handler CDATA #IMPLIED>
+
+<!ELEMENT csvUpdateGroupDisplayStyle (csvId, csvgroup, csvstyle, csvmandated?) >
+<!ATTLIST csvUpdateGroupDisplayStyle  handler CDATA #IMPLIED>
+
+<!ELEMENT csvAddLayoutDefView (csvId, csvobj2Add, csvmandated?) >
+<!ATTLIST csvAddLayoutDefView  handler CDATA #IMPLIED>
+
+<!ELEMENT csvAddDynamicGroupDefView (csvId, csvobj2Add, csvattributeName, csvrefObj?, csvinsertDir?, csvmandated?) >
+<!ATTLIST csvAddDynamicGroupDefView  handler CDATA #IMPLIED>
+<!ELEMENT csvobj2Add (#PCDATA)>
+<!ELEMENT csvrefObj (#PCDATA)>
+<!ELEMENT csvinsertDir (#PCDATA)>
+
+<!ELEMENT csvAddGroupDefView (csvId, csvobj2Add, csvstyle?, csvisDefault?, csvrefObj?, csvinsertDir?, csvmandated?) >
+<!ATTLIST csvAddGroupDefView  handler CDATA #IMPLIED>
+
+<!ELEMENT csvAddNestedLayoutDefView (csvId, csvobj2Add, csvattributeName, csvrefObj?, csvinsertDir?, csvmandated?) >
+<!ATTLIST csvAddNestedLayoutDefView  handler CDATA #IMPLIED>
+
+<!ELEMENT csvAddTableDefView (csvId, csvobj2Add, csvattributeName, csvrefObj?, csvinsertDir?, csvmandated?) >
+<!ATTLIST csvAddTableDefView  handler CDATA #IMPLIED>
+
+<!ELEMENT csvAddImageAttrComponentDefView (csvId, csvobj2Add, csvattributeName, csvrefObj?, csvinsertDir?, csvmandated?) >
+<!ATTLIST csvAddImageAttrComponentDefView  handler CDATA #IMPLIED>
+
+<!ELEMENT csvUpdateAllLayoutsAttributes (csvaddAtt?, csvremoveAtt?, csvreplace?, csvmandated?) >
+<!ATTLIST csvUpdateAllLayoutsAttributes  handler CDATA #IMPLIED>
+<!ELEMENT csvreplace (#PCDATA)>
+
+<!ELEMENT csvBeginUpdateProperties (csvmandated?) >
+<!ATTLIST csvBeginUpdateProperties  handler CDATA #IMPLIED>
+
+<!ELEMENT csvEndUpdateProperties EMPTY >
+<!ATTLIST csvEndUpdateProperties  handler CDATA #IMPLIED>
+
+<!ELEMENT csvAddCondition (csvobject, csvname, csvvalue) >
+<!ATTLIST csvAddCondition  handler CDATA #IMPLIED>
+<!ELEMENT csvobject (#PCDATA)>
+
+<!ELEMENT csvUpdatePropertyValue (csvobject, csvname, csvisDefault?, csvholderId?, csvcontextId?, csvvalue?, csvlocale_en_us?, csvlocale_en_gb?, csvlocale_fr?, csvlocale_de?, csvlocale_es?, csvlocale_ja?, csvlocale_it?, csvlocale_ko?, csvlocale_ru?, csvlocale_zh_cn?, csvlocale_zh_tw?)>
+<!ATTLIST csvUpdatePropertyValue handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginSecurityLabels (csvsecurityLabels) >
+<!ATTLIST csvBeginSecurityLabels  handler CDATA #IMPLIED>
+<!ELEMENT csvsecurityLabels (#PCDATA)>
+<!ELEMENT csvEndSecurityLabels EMPTY>
+<!ATTLIST csvEndSecurityLabels  handler CDATA #IMPLIED>
+
+<!ELEMENT csvDocument ( csvuser, csvname, csvtitle, csvnumber, csvtype, csvdescription, csvdepartment, csvsaveIn, csvteamTemplate, csvdomain, csvlifecycletemplate, csvlifecyclestate, csvtypedef, csvprimarycontenttype, csvpath, csvformat, csvcontdesc, csvversion, csviteration, csvsecurityLabels? )>
+
+<!ELEMENT csvWTDocumentDependencyLink ( csvdoc, csvreferenceddoc, csvcomment )>
+
+<!ATTLIST csvWTDocumentDependencyLink  handler CDATA #IMPLIED>
+<!ELEMENT csvdoc (#PCDATA) >
+<!ELEMENT csvreferenceddoc (#PCDATA) >
+
+
+<!ATTLIST csvDocument  handler CDATA #IMPLIED>
+<!ELEMENT csvuser (#PCDATA) >
+<!ELEMENT csvname (#PCDATA) >
+<!ELEMENT csvtitle (#PCDATA) >
+<!ELEMENT csvnumber (#PCDATA) >
+<!ELEMENT csvtype (#PCDATA) >
+<!ELEMENT csvdescription (#PCDATA) >
+<!ELEMENT csvdepartment (#PCDATA) >
+<!ELEMENT csvsaveIn (#PCDATA) >
+<!ELEMENT csvteamTemplate (#PCDATA) >
+<!ELEMENT csvdomain (#PCDATA) >
+<!ELEMENT csvlifecycletemplate (#PCDATA) >
+<!ELEMENT csvlifecyclestate (#PCDATA) >
+<!ELEMENT csvtypedef (#PCDATA) >
+<!ELEMENT csvprimarycontenttype (#PCDATA) >
+<!ELEMENT csvpath (#PCDATA) >
+<!ELEMENT csvformat (#PCDATA) >
+<!ELEMENT csvcontdesc (#PCDATA) >
+<!ELEMENT csvversion (#PCDATA) >
+<!ELEMENT csviteration (#PCDATA) >
+
+<!ELEMENT csvSiteAdmin ( csvuser, csvnewUser, csvwebServerID, csvfullName, csvLast, csvLocale, csvEmail, csvDescription, csvTitle, csvOrganization, csvStreet1, csvStreet2, csvCity, csvState, csvCountry, csvZipCode, csvignore, csvpassword )>
+
+<!ATTLIST csvSiteAdmin  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvWfTimerTemplateBegin ( csvxCoordinate, csvyCoordinate, csvrouterType, csvroutingEvents, csvautoRoutingExpression, csvuniqueId, csvname, csvdescription, csvcategory, csvinstructions, csviconName, csvduration, csvprocessDuration, csvstartDelay, csvstartProcessDelay, csvnotifyBeforeDeadline, csvtimeToDeadline, csvnotifyAfterDeadline, csvtimePastDeadline, csvresponsibleRole, csvhost, csvtimerDelay, csvtimerProcessDelay )>
+
+<!ATTLIST csvWfTimerTemplateBegin  handler CDATA #IMPLIED>
+<!ELEMENT csvxCoordinate (#PCDATA) >
+<!ELEMENT csvyCoordinate (#PCDATA) >
+<!ELEMENT csvrouterType (#PCDATA) >
+<!ELEMENT csvroutingEvents (#PCDATA) >
+<!ELEMENT csvautoRoutingExpression (#PCDATA) >
+<!ELEMENT csvuniqueId (#PCDATA) >
+<!ELEMENT csvcategory (#PCDATA) >
+<!ELEMENT csvinstructions (#PCDATA) >
+<!ELEMENT csviconName (#PCDATA) >
+<!ELEMENT csvduration (#PCDATA) >
+<!ELEMENT csvprocessDuration (#PCDATA) >
+<!ELEMENT csvstartDelay (#PCDATA) >
+<!ELEMENT csvstartProcessDelay (#PCDATA) >
+<!ELEMENT csvnotifyBeforeDeadline (#PCDATA) >
+<!ELEMENT csvtimeToDeadline (#PCDATA) >
+<!ELEMENT csvnotifyAfterDeadline (#PCDATA) >
+<!ELEMENT csvtimePastDeadline (#PCDATA) >
+<!ELEMENT csvresponsibleRole (#PCDATA) >
+<!ELEMENT csvhost (#PCDATA) >
+<!ELEMENT csvtimerDelay (#PCDATA) >
+<!ELEMENT csvtimerProcessDelay (#PCDATA) >
+<!ELEMENT csvdedicatedQueue (#PCDATA) >
+
+<!ELEMENT csvProject2End  EMPTY >
+<!ATTLIST csvProject2End  handler CDATA #IMPLIED>
+
+<!ELEMENT csvPrefEntry ( csvname, csvvalue, csvnode, csvuser, csvcontext )>
+
+<!ATTLIST csvPrefEntry  handler CDATA #IMPLIED>
+<!ELEMENT csvvalue (#PCDATA) >
+<!ELEMENT csvnode (#PCDATA) >
+<!ELEMENT csvcontext (#PCDATA) >
+
+
+<!ELEMENT csvWfSynchRobotTemplateBegin ( csvxCoordinate, csvyCoordinate, csvrouterType, csvroutingEvents, csvautoRoutingExpression, csvuniqueId, csvname, csvdescription, csvcategory, csvinstructions, csviconName, csvduration, csvprocessDuration, csvstartDelay, csvstartProcessDelay, csvnotifyBeforeDeadline, csvtimeToDeadline, csvnotifyAfterDeadline, csvtimePastDeadline, csvresponsibleRole, csvhost, csveventKey, csvtargetClass, csvsynchType, csvtargetVariableName )>
+
+<!ATTLIST csvWfSynchRobotTemplateBegin  handler CDATA #IMPLIED>
+<!ELEMENT csveventKey (#PCDATA) >
+<!ELEMENT csvtargetClass (#PCDATA) >
+<!ELEMENT csvsynchType (#PCDATA) >
+<!ELEMENT csvtargetVariableName (#PCDATA) >
+
+
+<!ELEMENT csvEndBusinessEntity  EMPTY >
+<!ATTLIST csvEndBusinessEntity  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvWfEnvironment ( csvenvironment )>
+
+<!ATTLIST csvWfEnvironment  handler CDATA #IMPLIED>
+<!ELEMENT csvenvironment (#PCDATA) >
+
+
+<!ELEMENT csvClassificationImagesRootDir ( csvimageDir )>
+
+<!ATTLIST csvClassificationImagesRootDir  handler CDATA #IMPLIED>
+<!ELEMENT csvimageDir (#PCDATA) >
+
+
+<!ELEMENT csvCreateFileBasedBegin ( csvfileName )>
+
+<!ATTLIST csvCreateFileBasedBegin  handler CDATA #IMPLIED>
+<!ELEMENT csvfileName (#PCDATA) >
+
+
+<!ELEMENT csvActorRoleHolder2 ( csvroleToAssign, csvassignedActorRole )>
+
+<!ATTLIST csvActorRoleHolder2  handler CDATA #IMPLIED>
+<!ELEMENT csvroleToAssign (#PCDATA) >
+<!ELEMENT csvassignedActorRole (#PCDATA) >
+
+
+<!ELEMENT csvWfConnectorTemplate ( csvxCoordinate, csvyCoordinate, csvrouterType, csvroutingEvents, csvautoRoutingExpression, csvuniqueId, csvfunction, csvtype, csvthreshold, csvterminateActivities )>
+
+<!ATTLIST csvWfConnectorTemplate  handler CDATA #IMPLIED>
+<!ELEMENT csvfunction (#PCDATA) >
+<!ELEMENT csvthreshold (#PCDATA) >
+<!ELEMENT csvterminateActivities (#PCDATA) >
+
+
+<!ELEMENT csvWfSynchRobotTemplateEnd  EMPTY >
+<!ATTLIST csvWfSynchRobotTemplateEnd  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvAddPrincipalToRole ( csvcontainerClass, csvcontainerName, csvrole, csvprincipalNameOrDN, csvserviceName, csvuseSharedTeam*)>
+
+<!ATTLIST csvAddPrincipalToRole  handler CDATA #IMPLIED>
+<!ELEMENT csvcontainerClass (#PCDATA) >
+<!ELEMENT csvcontainerName (#PCDATA) >
+<!ELEMENT csvrole (#PCDATA) >
+<!ELEMENT csvprincipalNameOrDN (#PCDATA) >
+<!ELEMENT csvserviceName (#PCDATA) >
+<!ELEMENT csvuseSharedTeam (#PCDATA) >
+
+
+<!ELEMENT csvExchangeContainer ( csvcontainerClass, csvcontainerTemplateRef, csvbusinessNamespace, csvsharingEnabled, csvcreator, csvowner, csvsubscriber, csvconferencingURL, csvcreatorSelector )>
+
+<!ATTLIST csvExchangeContainer  handler CDATA #IMPLIED>
+<!ELEMENT csvcontainerTemplateRef (#PCDATA) >
+<!ELEMENT csvbusinessNamespace (#PCDATA) >
+<!ELEMENT csvsharingEnabled (#PCDATA) >
+<!ELEMENT csvcreator (#PCDATA) >
+<!ELEMENT csvowner (#PCDATA) >
+<!ELEMENT csvsubscriber (#PCDATA) >
+<!ELEMENT csvconferencingURL (#PCDATA) >
+<!ELEMENT csvcreatorSelector (#PCDATA) >
+
+
+<!ELEMENT csvPhaseTemplateBegin ( csvname, csvphaseState, csvphaseWorkflow, csvgateWorkflow, csvseriesSelector )>
+
+<!ATTLIST csvPhaseTemplateBegin  handler CDATA #IMPLIED>
+<!ELEMENT csvphaseState (#PCDATA) >
+<!ELEMENT csvphaseWorkflow (#PCDATA) >
+<!ELEMENT csvgateWorkflow (#PCDATA) >
+<!ELEMENT csvseriesSelector (#PCDATA) >
+
+
+<!ELEMENT csvLifeCycleTemplateBegin ( csvname, csvdescription, csvsupportedClass, csvfolderLocation, csvenabled, csvrouting, csvbasic )>
+
+<!ATTLIST csvLifeCycleTemplateBegin  handler CDATA #IMPLIED>
+<!ELEMENT csvsupportedClass (#PCDATA) >
+<!ELEMENT csvfolderLocation (#PCDATA) >
+<!ELEMENT csvenabled (#PCDATA) >
+<!ELEMENT csvrouting (#PCDATA) >
+<!ELEMENT csvbasic (#PCDATA) >
+
+
+<!ELEMENT csvPartRepresentation ( csvpartNumber, csvpartVersion, csvpartIteration, csvrepDirectory, csvrepName, csvrepDescription, csvrepDefault, csvrepCreateThumbnail, csvrepStoreEdz, csvpartView, csvpartVariation1?, csvpartVariation2?, csvorganizationName?, csvorganizationID? )>
+
+<!ATTLIST csvPartRepresentation  handler CDATA #IMPLIED>
+<!ELEMENT csvpartNumber (#PCDATA) >
+<!ELEMENT csvpartVersion (#PCDATA) >
+<!ELEMENT csvpartIteration (#PCDATA) >
+<!ELEMENT csvrepDirectory (#PCDATA) >
+<!ELEMENT csvrepName (#PCDATA) >
+<!ELEMENT csvrepDescription (#PCDATA) >
+<!ELEMENT csvrepDefault (#PCDATA) >
+<!ELEMENT csvrepCreateThumbnail (#PCDATA) >
+<!ELEMENT csvrepStoreEdz (#PCDATA) >
+<!ELEMENT csvpartView (#PCDATA) >
+<!ELEMENT csvpartVariation1 (#PCDATA) >
+<!ELEMENT csvpartVariation2 (#PCDATA) >
+
+
+<!ELEMENT csvReplaceContentFile ( csvuser, csvpath )>
+
+<!ATTLIST csvReplaceContentFile  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvAddCreator ( csvuserNameOrDN, csvcontainerClassName )>
+
+<!ATTLIST csvAddCreator  handler CDATA #IMPLIED>
+<!ELEMENT csvuserNameOrDN (#PCDATA) >
+<!ELEMENT csvcontainerClassName (#PCDATA) >
+
+
+<!ELEMENT csvWfOverdueNotificationRoleAssignee ( csvrole )>
+
+<!ATTLIST csvWfOverdueNotificationRoleAssignee  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvSiteOrgContainer ( csvcontainerTemplateRef )>
+
+<!ATTLIST csvSiteOrgContainer  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvContainerConstraint ( csvConstraintType, csvminimum, csvmaximum, csvdiscreteSet )>
+
+<!ATTLIST csvContainerConstraint  handler CDATA #IMPLIED>
+<!ELEMENT csvConstraintType (#PCDATA) >
+<!ELEMENT csvminimum (#PCDATA) >
+<!ELEMENT csvmaximum (#PCDATA) >
+<!ELEMENT csvdiscreteSet (#PCDATA) >
+
+
+<!ELEMENT csvWfPrincipalAssignee ( csvprincipal, csvrequired, csvcompletionPolicyType, csvcompletionPolicyValue )>
+
+<!ATTLIST csvWfPrincipalAssignee  handler CDATA #IMPLIED>
+<!ELEMENT csvprincipal (#PCDATA) >
+<!ELEMENT csvrequired (#PCDATA) >
+<!ELEMENT csvcompletionPolicyType (#PCDATA) >
+<!ELEMENT csvcompletionPolicyValue (#PCDATA) >
+
+<!ELEMENT csvCreateTaskformTemplate ( csvFileName, csvFilePath, csvTaskType, csvPboClass, csvFileFormat, csvdescription )>
+
+<!ATTLIST csvCreateTaskformTemplate  handler CDATA #IMPLIED>
+<!ELEMENT csvFileName (#PCDATA) >
+<!ELEMENT csvFilePath (#PCDATA) >
+<!ELEMENT csvTaskType (#PCDATA) >
+<!ELEMENT csvPboClass (#PCDATA) >
+<!ELEMENT csvFileFormat (#PCDATA) >
+
+
+<!ELEMENT csvWfExternalMethodTemplateEnd  EMPTY >
+<!ATTLIST csvWfExternalMethodTemplateEnd  handler CDATA #IMPLIED>
+
+<!ELEMENT csvProject2User ( csvuser, csvrole )>
+
+<!ATTLIST csvProject2User  handler CDATA #IMPLIED>
+
+<!ELEMENT csvTeamTemplateEnd  EMPTY >
+<!ATTLIST csvTeamTemplateEnd  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvWfProxyTemplateBegin ( csvxCoordinate, csvyCoordinate, csvrouterType, csvroutingEvents, csvautoRoutingExpression, csvuniqueId, csvname, csvdescription, csvcategory, csvinstructions, csviconName, csvduration, csvprocessDuration, csvstartDelay, csvstartProcessDelay, csvnotifyBeforeDeadline, csvtimeToDeadline, csvnotifyAfterDeadline, csvtimePastDeadline, csvresponsibleRole, csvsubTemplate )>
+
+<!ATTLIST csvWfProxyTemplateBegin  handler CDATA #IMPLIED>
+<!ELEMENT csvsubTemplate (#PCDATA) >
+
+
+<!ELEMENT csvWTSerialNumberedEffectivity ( csvstartNumber, csvendNumber, csvconfigItem )>
+
+<!ATTLIST csvWTSerialNumberedEffectivity  handler CDATA #IMPLIED>
+<!ELEMENT csvstartNumber (#PCDATA) >
+<!ELEMENT csvendNumber (#PCDATA) >
+<!ELEMENT csvconfigItem (#PCDATA) >
+
+
+<!ELEMENT csvProductLotNumberEffectivity ( csvprodNumber, csvtype?, csvtargetNumber, csvtargetVer?, csvtypeModifier?, csvstartNumber, csvendNumber? )>
+
+<!ATTLIST csvProductLotNumberEffectivity  handler CDATA #IMPLIED>
+<!ELEMENT csvtypeModifier (#PCDATA) >
+<!ELEMENT csvprodNumber (#PCDATA) >
+<!ELEMENT csvtargetNumber (#PCDATA) >
+<!ELEMENT csvtargetVer (#PCDATA) >
+
+<!ELEMENT csvProductSerialNumberEffectivity ( csvprodNumber, csvtype?, csvtargetNumber, csvtargetVer?, csvtypeModifier?, csvstartNumber, csvendNumber? )>
+
+<!ATTLIST csvProductSerialNumberEffectivity  handler CDATA #IMPLIED>
+
+<!ELEMENT csvProductMSNEffectivity ( csvprodNumber, csvtype?, csvtargetNumber, csvtargetVer?, csvtypeModifier?, csvstartNumber, csvendNumber? )>
+
+<!ATTLIST csvProductMSNEffectivity  handler CDATA #IMPLIED>
+
+<!ELEMENT csvProductBlockEffectivity ( csvprodNumber, csvtype?, csvtargetNumber, csvtargetVer?, csvtypeModifier?, csvstartNumber, csvendNumber? )>
+
+<!ATTLIST csvProductBlockEffectivity  handler CDATA #IMPLIED>
+
+<!-- Engine effectivity -->
+<!ELEMENT csvChangeDirectiveMSNEffectivity ( csvchangeDirectiveNumber, csveffContextNumber, csvtypeModifier?, csvstartNumber, csvendNumber? )>
+<!ATTLIST csvChangeDirectiveMSNEffectivity handler CDATA #IMPLIED>
+<!ELEMENT csvchangeDirectiveNumber (#PCDATA) >
+<!ELEMENT csveffContextNumber (#PCDATA) >
+
+<!ELEMENT csvConfigurableMastersLink ( csvlinkType, csvroleANumber, csvroleAOrganizationId?, csvroleAOrganizationName?, csvroleBNumber, csvroleBOrganizationId?, csvroleBOrganizationName? )>
+
+<!ATTLIST csvConfigurableMastersLink  handler CDATA #IMPLIED>
+
+<!ELEMENT csvConfigurableDescribeLink ( csvlinkType, csvroleANumber, csvroleAVersion?, csvroleAIteration?, csvroleAView?, csvroleAVariation1?, csvroleAVariation2?, csvroleAOrganizationId?, csvroleAOrganizationName?, csvroleBNumber, csvroleBVersion?, csvroleBIteration?, csvroleBView?, csvroleBVariation1?, csvroleBVariation2?, csvroleBOrganizationId?, csvroleBOrganizationName?, csvissuspect? )>
+
+<!ATTLIST csvConfigurableDescribeLink  handler CDATA #IMPLIED>
+<!ELEMENT csvroleBVersion (#PCDATA) >
+<!ELEMENT csvroleBIteration (#PCDATA) >
+<!ELEMENT csvroleBView (#PCDATA) >
+<!ELEMENT csvroleBVariation1 (#PCDATA) >
+<!ELEMENT csvroleBVariation2 (#PCDATA) >
+<!ELEMENT csvissuspect (#PCDATA) >
+
+<!ELEMENT csvBeginConfigurableLink ( csvlinkType, csvroleANumber, csvroleAVersion?, csvroleAIteration?, csvroleAView?, csvroleAVariation1?, csvroleAVariation2?, csvroleAOrganizationId?, csvroleAOrganizationName?, csvroleBNumber, csvroleBVersion?, csvroleBIteration?, csvroleBView?, csvroleBVariation1?, csvroleBVariation2?, csvroleBOrganizationId?, csvroleBOrganizationName?)>
+<!ATTLIST csvBeginConfigurableLink  handler CDATA #IMPLIED>
+
+<!ELEMENT csvEndConfigurableLink EMPTY>
+<!ATTLIST csvEndConfigurableLink  handler CDATA #IMPLIED>
+
+<!ATTLIST csvManagedBaseline  handler CDATA #IMPLIED>
+<!ELEMENT csvManagedBaseline ( csvname, csvnumber, csvdescription, csvdirty, csvstrict, csvtopObject )>
+<!ELEMENT csvdirty (#PCDATA) >
+<!ELEMENT csvstrict (#PCDATA) >
+<!ELEMENT csvtopObject (#PCDATA) >
+
+<!ELEMENT csvSaveNavStruct  EMPTY >
+<!ATTLIST csvSaveNavStruct  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvBeginWTDocument ( csvname, csvtitle, csvnumber, csvtype, csvdescription, csvdepartment, csvsaveIn, csvteamTemplate, csvdomain, csvlifecycletemplate, csvlifecyclestate, csvtypedef, csvversion, csviteration, csvsecurityLabels? )>
+
+<!ATTLIST csvBeginWTDocument  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvWfInternalMethodTemplateEnd  EMPTY >
+<!ATTLIST csvWfInternalMethodTemplateEnd  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvBeginWTDocumentRetainContent ( csvname, csvtitle, csvnumber, csvtype, csvdescription, csvdepartment, csvsaveIn, csvteamTemplate, csvdomain, csvlifecycletemplate, csvlifecyclestate, csvtypedef, csvversion, csviteration, csvsecurityLabels? )>
+
+<!ATTLIST csvBeginWTDocumentRetainContent  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvAddElementToNodeTab ( csvnavType, csvnodeName, csvtargetTab, csvtype, csvdefinition, csvtbNot, csvvisible, csvenforced, csvorder )>
+
+<!ATTLIST csvAddElementToNodeTab  handler CDATA #IMPLIED>
+<!ELEMENT csvnavType (#PCDATA) >
+<!ELEMENT csvnodeName (#PCDATA) >
+<!ELEMENT csvtargetTab (#PCDATA) >
+<!ELEMENT csvtbNot (#PCDATA) >
+<!ELEMENT csvvisible (#PCDATA) >
+<!ELEMENT csvenforced (#PCDATA) >
+<!ELEMENT csvorder (#PCDATA) >
+
+
+<!ELEMENT csvBeginCreateOrUpdateWTPart ( csvpartName, csvpartNumber, csvtype, csvgenericType?, csvcollapsible?,csvlogicbasePath?, csvsource, csvfolder, csvlifecycle, csvview, csvvariation1?, csvvariation2?, csvteamTemplate, csvlifecyclestate, csvtypedef, csvclassToUpdate, csvorganizationName?, csvorganizationID?, csvsecurityLabels?, csvserviceable?, csvservicekit?, csvauthoringLanguage?)>
+
+<!ATTLIST csvBeginCreateOrUpdateWTPart  handler CDATA #IMPLIED>
+<!ELEMENT csvpartName (#PCDATA) >
+<!ELEMENT csvsource (#PCDATA) >
+<!ELEMENT csvfolder (#PCDATA) >
+<!ELEMENT csvlifecycle (#PCDATA) >
+<!ELEMENT csvview (#PCDATA) >
+<!ELEMENT csvvariation1 (#PCDATA) >
+<!ELEMENT csvvariation2 (#PCDATA) >
+
+<!ELEMENT csvclassToUpdate (#PCDATA) >
+
+
+<!ELEMENT csvPartDocLink ( csvdocNumber, csvdocVersion, csvdocIteration, csvpartNumber, csvpartVersion, csvpartIteration, csvpartView, csvpartVariation1?, csvpartVariation2?, csvorganizationName?, csvorganizationID?, csvdocRemoveOldRev? )>
+
+<!ATTLIST csvPartDocLink  handler CDATA #IMPLIED>
+<!ELEMENT csvdocNumber (#PCDATA) >
+<!ELEMENT csvdocVersion (#PCDATA) >
+<!ELEMENT csvdocIteration (#PCDATA) >
+<!ELEMENT csvdocRemoveOldRev (#PCDATA) >
+
+
+<!ELEMENT csvIndirectRoleHolder ( csvroleToAssign, csvassignedRole )>
+
+<!ATTLIST csvIndirectRoleHolder  handler CDATA #IMPLIED>
+<!ELEMENT csvassignedRole (#PCDATA) >
+
+
+<!ELEMENT csvBeginClassNode ( csvstructureClassName, csvnodeName, csvparentID, csvdescription, csvimageFile, csvrefDefName, csvinternalID )>
+
+<!ATTLIST csvBeginClassNode  handler CDATA #IMPLIED>
+<!ELEMENT csvstructureClassName (#PCDATA) >
+<!ELEMENT csvparentID (#PCDATA) >
+<!ELEMENT csvimageFile (#PCDATA) >
+<!ELEMENT csvrefDefName (#PCDATA) >
+<!ELEMENT csvinternalID (#PCDATA) >
+
+
+<!ELEMENT csvContentURL ( csvuser, csvlinkTo, csvcontdesc )>
+
+<!ATTLIST csvContentURL  handler CDATA #IMPLIED>
+<!ELEMENT csvlinkTo (#PCDATA) >
+
+
+<!ELEMENT csvWfProcessTemplateEnd  EMPTY >
+<!ATTLIST csvWfProcessTemplateEnd  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvWfExternalMethodTemplateBegin ( csvxCoordinate, csvyCoordinate, csvrouterType, csvroutingEvents, csvautoRoutingExpression, csvuniqueId, csvname, csvdescription, csvcategory, csvinstructions, csviconName, csvduration, csvprocessDuration, csvstartDelay, csvstartProcessDelay, csvnotifyBeforeDeadline, csvtimeToDeadline, csvnotifyAfterDeadline, csvtimePastDeadline, csvresponsibleRole, csvhost, csvserviceName, csvmethodName, csvmethodReturn )>
+
+<!ATTLIST csvWfExternalMethodTemplateBegin  handler CDATA #IMPLIED>
+<!ELEMENT csvmethodName (#PCDATA) >
+<!ELEMENT csvmethodReturn (#PCDATA) >
+
+
+<!ELEMENT csvWfNodeTemplateLinkEnd  EMPTY >
+<!ATTLIST csvWfNodeTemplateLinkEnd  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvBeginCSMConstraints ( csvstructureClassName, csvnodeName, csvparentID, csvimportOption )>
+
+<!ATTLIST csvBeginCSMConstraints  handler CDATA #IMPLIED>
+<!ELEMENT csvimportOption (#PCDATA) >
+
+
+<!ELEMENT csvNewViewVersion ( csvpartName, csvpartNumber, csvpartVersion, csvpartIteration, csvpartView?, csvpartVariation1?, csvpartVariation2?, csvtype,csvgenericType?,csvlogicbasePath?, csvsource, csvfolder, csvlifecycle, csvview, csvvariation1?, csvvariation2?, csvteamTemplate, csvlifecyclestate, csvtypedef, csvversion, csviteration, csvparentContainerPath, csvorganizationName?, csvorganizationID? )>
+
+<!ATTLIST csvNewViewVersion  handler CDATA #IMPLIED>
+<!ELEMENT csvparentContainerPath (#PCDATA) >
+
+
+<!ELEMENT csvWTLotEffectivity ( csvstartNumber, csvendNumber, csvconfigItem )>
+
+<!ATTLIST csvWTLotEffectivity  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvRemoveCSMConstraint  EMPTY >
+<!ATTLIST csvRemoveCSMConstraint  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvOccurrencedAssemblyAdd ( csvassemblyPartNumber, csvassemblyPartVersion, csvconstituentPartNumber, csvconstituentPartQty, csvconstituentPartUnit,csvcomponentId?, csvinclusionOption?, csvquantityOption?, csvreference?, csvlineNumber, csvfindNumber?, csvoccurrenceLocation, csvreferenceDesignator, csvassemblyPartIteration, csvassemblyPartView, csvassemblyPartVariation1?, csvassemblyPartVariation2?, csvorganizationName?, csvorganizationID? )>
+
+<!ATTLIST csvOccurrencedAssemblyAdd  handler CDATA #IMPLIED>
+<!ELEMENT csvassemblyPartNumber (#PCDATA) >
+<!ELEMENT csvassemblyPartVersion (#PCDATA) >
+<!ELEMENT csvconstituentPartNumber (#PCDATA) >
+<!ELEMENT csvconstituentPartQty (#PCDATA) >
+<!ELEMENT csvconstituentPartUnit (#PCDATA) >
+<!ELEMENT csvlineNumber (#PCDATA) >
+<!ELEMENT csvfindNumber (#PCDATA) >
+<!ELEMENT csvoccurrenceLocation (#PCDATA) >
+<!ELEMENT csvreferenceDesignator (#PCDATA) >
+<!ELEMENT csvassemblyPartIteration (#PCDATA) >
+<!ELEMENT csvassemblyPartView (#PCDATA) >
+<!ELEMENT csvassemblyPartVariation1 (#PCDATA) >
+<!ELEMENT csvassemblyPartVariation2 (#PCDATA) >
+
+<!ELEMENT csvBeginOccurrencedAssemblyAdd ( csvassemblyPartNumber, csvassemblyPartVersion, csvconstituentPartNumber, csvconstituentPartQty, csvconstituentPartUnit,csvcomponentId?, csvinclusionOption?, csvquantityOption?, csvreference?, csvlineNumber, csvfindNumber?, csvoccurrenceLocation, csvreferenceDesignator, csvassemblyPartIteration, csvassemblyPartView, csvassemblyPartVariation1?, csvassemblyPartVariation2?, csvorganizationName?, csvorganizationID? )>
+<!ATTLIST csvBeginOccurrencedAssemblyAdd  handler CDATA #IMPLIED>
+
+<!ELEMENT csvEndOccurrencedAssemblyAdd  EMPTY >
+<!ATTLIST csvEndOccurrencedAssemblyAdd  handler CDATA #IMPLIED>
+
+<!ELEMENT csvAddSiteAdministrator ( csvuserNameOrDN )>
+
+<!ATTLIST csvAddSiteAdministrator  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvRelationshipMapDef ( csvpath, csvuniqueId )>
+
+<!ATTLIST csvRelationshipMapDef  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvNotebookTemplate ( csvisUser )>
+
+<!ATTLIST csvNotebookTemplate  handler CDATA #IMPLIED>
+<!ELEMENT csvisUser (#PCDATA) >
+
+
+<!ELEMENT csvQuantityOfMeasure ( csvname, csvdescription, csvbaseUnitSymbol, csvnameAndValuePairs )>
+
+<!ATTLIST csvQuantityOfMeasure  handler CDATA #IMPLIED>
+<!ELEMENT csvbaseUnitSymbol (#PCDATA) >
+<!ELEMENT csvnameAndValuePairs (#PCDATA) >
+
+<!ELEMENT csvBeginNavStruct ( csvnavType, csvname, csvlabel, csvtargetClassName, csvshowGraphTab, csvshowAllAttributes )>
+
+<!ATTLIST csvBeginNavStruct  handler CDATA #IMPLIED>
+<!ELEMENT csvlabel (#PCDATA) >
+<!ELEMENT csvtargetClassName (#PCDATA) >
+<!ELEMENT csvshowGraphTab (#PCDATA) >
+<!ELEMENT csvshowAllAttributes (#PCDATA) >
+
+
+<!ELEMENT csvWfVariable ( csvname, csvtype, csvrequired, csvvisible, csvmutable, csvresetable, csvinitializeFrom, csvcopyInto, csvdefaultValue, csvpermissionList, csvreadOnly, csvdisplayNames )>
+
+<!ATTLIST csvWfVariable  handler CDATA #IMPLIED>
+<!ELEMENT csvmutable (#PCDATA) >
+<!ELEMENT csvresetable (#PCDATA) >
+<!ELEMENT csvinitializeFrom (#PCDATA) >
+<!ELEMENT csvcopyInto (#PCDATA) >
+<!ELEMENT csvdefaultValue (#PCDATA) >
+<!ELEMENT csvpermissionList (#PCDATA) >
+<!ELEMENT csvreadOnly (#PCDATA) >
+<!ELEMENT csvdisplayNames (#PCDATA) >
+
+
+<!ELEMENT csvAddOrgAdministrator ( csvuserNameOrDN )>
+
+<!ATTLIST csvAddOrgAdministrator  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvNotebook ( csvparentContainerPath )>
+
+<!ATTLIST csvNotebook  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvWfExprRobotTemplateEnd  EMPTY >
+<!ATTLIST csvWfExprRobotTemplateEnd  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvSetElementValue ( csvtype, csvdefinition, csvvalueType, csvvalue1, csvvalue2 )>
+
+<!ATTLIST csvSetElementValue  handler CDATA #IMPLIED>
+<!ELEMENT csvvalueType (#PCDATA) >
+<!ELEMENT csvvalue2 (#PCDATA) >
+
+
+<!ELEMENT csvSetDefaultDirectory ( csvdefaultDirectory )>
+
+<!ATTLIST csvSetDefaultDirectory  handler CDATA #IMPLIED>
+<!ELEMENT csvdefaultDirectory (#PCDATA) >
+
+
+<!ELEMENT csvAttrDefinizer ( csvname, csvhierarchyDisplayName, csvorganizerPaths, csvdefinitionPaths, csvdisplay_name, csvdescription, csvdata_type, csvQoMName, csvnameValuePairs, csvlogicalIdentifier )>
+
+<!ATTLIST csvAttrDefinizer  handler CDATA #IMPLIED>
+<!ELEMENT csvhierarchyDisplayName (#PCDATA) >
+<!ELEMENT csvorganizerPaths (#PCDATA) >
+<!ELEMENT csvdefinitionPaths (#PCDATA) >
+<!ELEMENT csvdisplay_name (#PCDATA) >
+<!ELEMENT csvdata_type (#PCDATA) >
+<!ELEMENT csvQoMName (#PCDATA) >
+<!ELEMENT csvnameValuePairs (#PCDATA) >
+<!ELEMENT csvlogicalIdentifier (#PCDATA) >
+
+<!ELEMENT csvRenameAttrDefinizer ( csvname, csvvalue, csvmandated? )>
+<!ATTLIST csvRenameAttrDefinizer  handler CDATA #IMPLIED>
+
+<!ELEMENT csvSingleDefinitionConstraint ( csvattrHierarchyID, csvConstraintType, csvminimum, csvmaximum, csvdiscreteSet, csvappliesToDescendents )>
+
+<!ATTLIST csvSingleDefinitionConstraint  handler CDATA #IMPLIED>
+<!ELEMENT csvattrHierarchyID (#PCDATA) >
+<!ELEMENT csvappliesToDescendents (#PCDATA) >
+
+
+<!ELEMENT csvWfApplRobotTemplateBegin ( csvxCoordinate, csvyCoordinate, csvrouterType, csvroutingEvents, csvautoRoutingExpression, csvuniqueId, csvname, csvdescription, csvcategory, csvinstructions, csviconName, csvduration, csvprocessDuration, csvstartDelay, csvstartProcessDelay, csvnotifyBeforeDeadline, csvtimeToDeadline, csvnotifyAfterDeadline, csvtimePastDeadline, csvresponsibleRole, csvhost, csvcommand, csvsynchronous )>
+
+<!ATTLIST csvWfApplRobotTemplateBegin  handler CDATA #IMPLIED>
+<!ELEMENT csvcommand (#PCDATA) >
+<!ELEMENT csvsynchronous (#PCDATA) >
+
+
+<!ELEMENT csvOrgAdmin ( csvuser, csvnewUser, csvwebServerID, csvfullName, csvLast, csvLocale, csvEmail, csvDescription, csvTitle, csvOrganization, csvStreet1, csvStreet2, csvCity, csvState, csvCountry, csvZipCode, csvignore, csvpassword)>
+
+<!ATTLIST csvOrgAdmin  handler CDATA #IMPLIED>
+<!ELEMENT csvnewUser (#PCDATA) >
+<!ELEMENT csvwebServerID (#PCDATA) >
+<!ELEMENT csvfullName (#PCDATA) >
+<!ELEMENT csvLast (#PCDATA) >
+<!ELEMENT csvLocale (#PCDATA) >
+<!ELEMENT csvEmail (#PCDATA) >
+<!ELEMENT csvDescription (#PCDATA) >
+<!ELEMENT csvTitle (#PCDATA) >
+<!ELEMENT csvOrganization (#PCDATA) >
+<!ELEMENT csvStreet1 (#PCDATA) >
+<!ELEMENT csvStreet2 (#PCDATA) >
+<!ELEMENT csvCity (#PCDATA) >
+<!ELEMENT csvState (#PCDATA) >
+<!ELEMENT csvCountry (#PCDATA) >
+<!ELEMENT csvZipCode (#PCDATA) >
+<!ELEMENT csvignore (#PCDATA) >
+<!ELEMENT csvpassword (#PCDATA) >
+
+
+<!ELEMENT csvContentAggregateURL ( csvuser, csvlinkTo, csvcontdesc )>
+
+<!ATTLIST csvContentAggregateURL  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvEndCSMConstraints  EMPTY >
+<!ATTLIST csvEndCSMConstraints  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvWfTeamAssignee ( csvteamAssignee, csvrequired, csvcompletionPolicyType, csvcompletionPolicyValue )>
+
+<!ATTLIST csvWfTeamAssignee  handler CDATA #IMPLIED>
+<!ELEMENT csvteamAssignee (#PCDATA) >
+
+
+<!ELEMENT csvWfOverdueAction ( csvoverdueAction, csvoverdueActionFlag )>
+
+<!ATTLIST csvWfOverdueAction  handler CDATA #IMPLIED>
+<!ELEMENT csvoverdueAction (#PCDATA) >
+<!ELEMENT csvoverdueActionFlag (#PCDATA) >
+
+
+<!ELEMENT csvAddNavTab ( csvnewTabLabel, csvrefDefinition )>
+
+<!ATTLIST csvAddNavTab  handler CDATA #IMPLIED>
+<!ELEMENT csvnewTabLabel (#PCDATA) >
+<!ELEMENT csvrefDefinition (#PCDATA) >
+
+
+<!ELEMENT csvEndAttributeHierarchyLoader  EMPTY >
+<!ATTLIST csvEndAttributeHierarchyLoader  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvBeginWTPart ( csvuser?, csvpartName, csvpartNumber, csvtype, csvgenericType?, csvcollapsible?, csvlogicbasePath?, csvsource, csvfolder, csvlifecycle, csvview, csvvariation1?, csvvariation2?, csvteamTemplate, csvlifecyclestate, csvtypedef, csvversion, csviteration, csvenditem?, csvtraceCode?, csvorganizationName?, csvorganizationID?, csvsecurityLabels?, csvcreateTimestamp?, csvmodifyTimestamp?, csvminRequired?,csvmaxAllowed?,csvdefaultUnit?, csvserviceable?, csvservicekit?,csvauthoringLanguage?)>
+
+<!ATTLIST csvBeginWTPart  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvBeginExport ( csvExportMechanismClassName, csvExportMechanismParameters )>
+
+<!ATTLIST csvBeginExport  handler CDATA #IMPLIED>
+<!ELEMENT csvExportMechanismClassName (#PCDATA) >
+<!ELEMENT csvExportMechanismParameters (#PCDATA) >
+
+
+<!ELEMENT csvEndWTPart ( csvparentContainerPath )>
+
+<!ATTLIST csvEndWTPart  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvEndExport  EMPTY >
+<!ATTLIST csvEndExport  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvExport ( csvmapFileKey, csvexportClassName, csvobjectLocator, csvsearchCriteria, csvimageRootDir, csvcomment )>
+
+<!ATTLIST csvExport  handler CDATA #IMPLIED>
+<!ELEMENT csvmapFileKey (#PCDATA) >
+<!ELEMENT csvexportClassName (#PCDATA) >
+<!ELEMENT csvobjectLocator (#PCDATA) >
+<!ELEMENT csvsearchCriteria (#PCDATA) >
+<!ELEMENT csvimageRootDir (#PCDATA) >
+<!ELEMENT csvcomment (#PCDATA) >
+
+
+<!ELEMENT csvActivateContainer ( csvcontainerClass, csvcontainerName )>
+
+<!ATTLIST csvActivateContainer  handler CDATA #IMPLIED>
+
+<!ELEMENT csvContentFile ( csvuser, csvpath )>
+
+<!ATTLIST csvContentFile  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvWfURLRobotTemplateEnd  EMPTY >
+<!ATTLIST csvWfURLRobotTemplateEnd  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvCachePart ( csvpartNumber, csvpartVersion, csvpartIteration, csvpartView, csvpartVariation1?, csvpartVariation2?, csvorganizationName?, csvorganizationID? )>
+
+<!ATTLIST csvCachePart  handler CDATA #IMPLIED>
+<!ELEMENT csvorganizationName (#PCDATA) >
+<!ELEMENT csvorganizationID (#PCDATA) >
+
+<!ELEMENT csvWfProjectAssignee ( csvprojectAssignee, csvrequired, csvcompletionPolicyType, csvcompletionPolicyValue )>
+
+<!ATTLIST csvWfProjectAssignee  handler CDATA #IMPLIED>
+<!ELEMENT csvprojectAssignee (#PCDATA) >
+
+
+<!ELEMENT csvEndWTDocumentRetainContent ( csvprimarycontenttype, csvpath, csvformat, csvcontdesc )>
+
+<!ATTLIST csvEndWTDocumentRetainContent  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvRelationshipMaps ( csvmapDefinitionId )>
+
+<!ATTLIST csvRelationshipMaps  handler CDATA #IMPLIED>
+<!ELEMENT csvmapDefinitionId (#PCDATA) >
+
+
+<!ELEMENT csvAccessRule ( csvuser, csvdomain, csvtypeId, csvpermission, csvprincipal, csvpermissionList, csvstate, csvallExceptPrincipal? )>
+
+<!ATTLIST csvAccessRule  handler CDATA #IMPLIED>
+<!ELEMENT csvtypeId (#PCDATA) >
+<!ELEMENT csvpermission (#PCDATA) >
+<!ELEMENT csvstate (#PCDATA) >
+<!ELEMENT csvallExceptPrincipal (#PCDATA) >
+
+
+<!ELEMENT csvContentAggregate ( csvuser, csvpath, csvformat, csvcontdesc )>
+
+<!ATTLIST csvContentAggregate  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvWfInternalMethodTemplateBegin ( csvxCoordinate, csvyCoordinate, csvrouterType, csvroutingEvents, csvautoRoutingExpression, csvuniqueId, csvname, csvdescription, csvcategory, csvinstructions, csviconName, csvduration, csvprocessDuration, csvstartDelay, csvstartProcessDelay, csvnotifyBeforeDeadline, csvtimeToDeadline, csvnotifyAfterDeadline, csvtimePastDeadline, csvresponsibleRole, csvhost, csvserviceName, csvmethodName, csvmethodReturn )>
+
+<!ATTLIST csvWfInternalMethodTemplateBegin  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvLifeCycleTemplateEnd  EMPTY >
+<!ATTLIST csvLifeCycleTemplateEnd  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvCreateOrUpdateIBAValue ( csvdefinition, csvvalue1, csvvalue2, csvdependency_id )>
+
+<!ATTLIST csvCreateOrUpdateIBAValue  handler CDATA #IMPLIED>
+<!ELEMENT csvdependency_id (#PCDATA) >
+
+
+<!ELEMENT csvContainer ( csvcontainerClass, csvcontainerName, csvsharedTeamName*, csvcontainerExtendable*, csvparentContainerPath, csvcontainerTemplateRef, csvbusinessNamespace, csvsharingEnabled, csvcreator, csvowner, csvsubscriber, csvconferencingURL, csvdescription, csvorganization, csvcreatorSelector, csvstartProject?, csvidentifyOutOfDateSharedObjects? )>
+
+<!ATTLIST csvContainer  handler CDATA #IMPLIED>
+<!ELEMENT csvorganization (#PCDATA) >
+<!ELEMENT csvstartProject (#PCDATA) >
+<!ELEMENT csvidentifyOutOfDateSharedObjects (#PCDATA) >
+
+
+<!ELEMENT csvOLDIBAValue ( csvdefinition, csvvalue1, csvvalue2, csvdependent-definition, csvdependent-locator, csvdependent-identifier )>
+
+<!ATTLIST csvOLDIBAValue  handler CDATA #IMPLIED>
+<!ELEMENT csvdependent-definition (#PCDATA) >
+<!ELEMENT csvdependent-locator (#PCDATA) >
+<!ELEMENT csvdependent-identifier (#PCDATA) >
+
+<!ELEMENT csvFolderShortcut ( csvuser, csvshortcutTarget, csvfolderPath )>
+
+<!ATTLIST csvFolderShortcut  handler CDATA #IMPLIED>
+<!ELEMENT csvshortcutTarget (#PCDATA) >
+<!ELEMENT csvfolderPath (#PCDATA) >
+
+
+<!ELEMENT csvWfAdHocActivityTemplateBegin ( csvxCoordinate, csvyCoordinate, csvrouterType, csvroutingEvents, csvautoRoutingExpression, csvuniqueId, csvname, csvdescription, csvcategory, csvinstructions, csviconName, csvduration, csvprocessDuration, csvstartDelay, csvstartProcessDelay, csvnotifyBeforeDeadline, csvtimeToDeadline, csvnotifyAfterDeadline, csvtimePastDeadline, csvresponsibleRole, csvtask, csvsendNotification, csvlocalProject, csvvariableProject, csvsigningRequired )>
+
+<!ATTLIST csvWfAdHocActivityTemplateBegin  handler CDATA #IMPLIED>
+<!ELEMENT csvtask (#PCDATA) >
+<!ELEMENT csvsendNotification (#PCDATA) >
+<!ELEMENT csvlocalProject (#PCDATA) >
+<!ELEMENT csvvariableProject (#PCDATA) >
+<!ELEMENT csvsigningRequired (#PCDATA) >
+
+
+<!ELEMENT csvWfAssignedActivityTemplateBegin ( csvxCoordinate, csvyCoordinate, csvrouterType, csvroutingEvents, csvautoRoutingExpression, csvuniqueId, csvname, csvdescription, csvcategory, csvinstructions, csviconName, csvduration, csvprocessDuration, csvstartDelay, csvstartProcessDelay, csvnotifyBeforeDeadline, csvtimeToDeadline, csvnotifyAfterDeadline, csvtimePastDeadline, csvresponsibleRole, csvtask,csvsendNotification, csvlocalProject, csvvariableProject, csvsigningRequired )>
+
+<!ATTLIST csvWfAssignedActivityTemplateBegin  handler CDATA #IMPLIED>
+
+<!ELEMENT csvClassicContainer ( csvcontainerClass, csvcontainerTemplateRef, csvbusinessNamespace, csvsharingEnabled, csvcreator, csvowner, csvsubscriber, csvconferencingURL, csvcreatorSelector )>
+
+<!ATTLIST csvClassicContainer  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvUser ( csvuser, csvnewUser, csvwebServerID, csvfullName, csvLast, csvLocale, csvEmail, csvDescription, csvTitle, csvOrganization, csvStreet1, csvStreet2, csvCity, csvState, csvCountry, csvZipCode, csvignore?, csvpassword, csvDirectoryService?, csvAllowLdapSync? )>
+
+<!ATTLIST csvUser  handler CDATA #IMPLIED>
+<!ELEMENT csvDirectoryService (#PCDATA)>
+<!ELEMENT csvAllowLdapSync (#PCDATA)>
+
+<!ELEMENT csvUserPicture ( csvuserName, csvpath)>
+
+<!ATTLIST csvUserPicture handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvEndIBAContainer  EMPTY >
+<!ATTLIST csvEndIBAContainer  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvShortcut ( csvuser, csvshortcutTarget, csvfolderPath )>
+
+<!ATTLIST csvShortcut  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvEndCreateOrUpdateWTPart ( csvparentContainerPath )>
+
+<!ATTLIST csvEndCreateOrUpdateWTPart  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvCreateContainerTemplate ( csvname, csvenabled, csvxmlPath, csvcontainerClassName, csvparentContainerPath, csvdescription )>
+
+<!ATTLIST csvCreateContainerTemplate  handler CDATA #IMPLIED>
+<!ELEMENT csvxmlPath (#PCDATA) >
+
+<!ELEMENT csvCreateSharedTeamTemplate ( csvname, csvenabled, csvxmlPath, csvparentContainerPath, csvdescription )>
+<!ATTLIST csvCreateSharedTeamTemplate  handler CDATA #IMPLIED>
+
+<!ELEMENT csvProject2Begin ( csvname, csvdescription, csvtemplate )>
+
+<!ATTLIST csvProject2Begin  handler CDATA #IMPLIED>
+
+<!ELEMENT csvQualityBegin (csvcontainerClass, csvcontainerName, csvcontainerTemplateRef, csvdescription, csvparentContainerPath, csvcreator, csvowner)>
+<!ATTLIST csvQualityBegin handler CDATA #IMPLIED>
+<!ELEMENT csvQualityEnd EMPTY >
+<!ATTLIST csvQualityEnd handler CDATA #IMPLIED>
+
+<!ELEMENT csvactiveIndicator (#PCDATA) >
+<!ELEMENT csvNewPlaceBegin (csvtype, csvactiveIndicator, csvstatus, csvname, csvcontainerClass, csvcontainerName, csvdescription, csvparentContainerPath)>
+<!ATTLIST csvNewPlaceBegin handler CDATA #IMPLIED>
+<!ELEMENT csvNewPlaceEnd EMPTY >
+<!ATTLIST csvNewPlaceEnd handler CDATA #IMPLIED>
+
+<!ELEMENT csvNewPersonBegin (csvtype, csvactiveIndicator, csvstatus, csvFirst, csvLast, csvcontainerClass, csvcontainerName, csvdescription, csvparentContainerPath)>
+<!ATTLIST csvNewPersonBegin handler CDATA #IMPLIED>
+<!ELEMENT csvNewPersonEnd EMPTY >
+<!ATTLIST csvNewPersonEnd handler CDATA #IMPLIED>
+
+<!ELEMENT csvsubjectType (#PCDATA) >
+<!ELEMENT csvsourceType (#PCDATA) >
+<!ELEMENT csvcontrolAuthority (#PCDATA) >
+<!ELEMENT csvCAPAChangeRequestBegin (csvname, csvsubjectType, csvsourceType, csvcontrolAuthority, csvcontainerClass, csvcontainerName, csvcontainerTemplateRef, csvdescription, csvparentContainerPath)>
+<!ATTLIST csvCAPAChangeRequestBegin handler CDATA #IMPLIED>
+<!ELEMENT csvCAPAChangeRequestEnd EMPTY >
+<!ATTLIST csvCAPAChangeRequestEnd handler CDATA #IMPLIED>
+
+<!ELEMENT csvNonconformanceBegin (csvname, csvcontainerClass, csvcontainerName, csvcontainerTemplateRef, csvdescription, csvparentContainerPath, csvrelatedPersonnelAndLocation)>
+<!ATTLIST csvNonconformanceBegin handler CDATA #IMPLIED>
+<!ELEMENT csvaffectedObjectName (#PCDATA) >
+<!ELEMENT csvaffectedObjectQuantity (#PCDATA) >
+<!ELEMENT csvaffectedObjectUnitType (#PCDATA) >
+<!ELEMENT csvNonconformanceEnd (csvaffectedObjectName, csvaffectedObjectQuantity, csvaffectedObjectUnitType)>
+<!ATTLIST csvNonconformanceEnd handler CDATA #IMPLIED>
+
+<!ELEMENT csvrelatedProductName (#PCDATA) >
+<!ELEMENT csvrelatedProductQuantity (#PCDATA) >
+<!ELEMENT csvrelatedProductUnit (#PCDATA) >
+<!ELEMENT csvCustomerExperienceBegin (csvrelatedPersonnelAndLocation, csvrelatedProductName, csvrelatedProductQuantity, csvrelatedProductUnit, csvcontainerClass, csvcontainerName, csvcontainerTemplateRef, csvdescription, csvparentContainerPath)>
+<!ATTLIST csvCustomerExperienceBegin handler CDATA #IMPLIED>
+<!ELEMENT csvCustomerExperienceEnd EMPTY >
+<!ATTLIST csvCustomerExperienceEnd handler CDATA #IMPLIED>
+
+<!ELEMENT csvsubmissionTemplateName (#PCDATA) >
+<!ELEMENT csvUDISubmissionBegin (csvrelatedProductName, csvsubmissionTemplateName, csvcontainerClass, csvcontainerName, csvcontainerTemplateRef, csvdescription, csvparentContainerPath)>
+<!ATTLIST csvUDISubmissionBegin handler CDATA #IMPLIED>
+<!ELEMENT csvUDISubmissionEnd EMPTY >
+<!ATTLIST csvUDISubmissionEnd handler CDATA #IMPLIED>
+
+<!ELEMENT csvtemplate (#PCDATA) >
+
+<!ELEMENT csvPartDocReference ( csvdocNumber, csvpartNumber, csvpartVersion, csvpartIteration, csvpartView, csvpartVariation1?, csvpartVariation2?, csvorganizationName?, csvorganizationID? )>
+
+<!ATTLIST csvPartDocReference  handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginWTPartReferenceLink ( csvdocNumber, csvpartNumber, csvpartVersion, csvpartIteration, csvpartView, csvpartVariation1?, csvpartVariation2?, csvorganizationName?, csvorganizationID? )>
+<!ATTLIST csvBeginWTPartReferenceLink  handler CDATA #IMPLIED>
+
+<!ELEMENT csvEndWTPartReferenceLink EMPTY>
+<!ATTLIST csvEndWTPartReferenceLink  handler CDATA #IMPLIED>
+
+<!ELEMENT csvConfigurableLink ( csvlinkType, csvroleANumber, csvroleAVersion?, csvroleAIteration?, csvroleAView?, csvroleAVariation1?, csvroleAVariation2?, csvroleAOrganizationId?, csvroleAOrganizationName?, csvroleBNumber, csvroleBOrganizationId?, csvroleBOrganizationName?)>
+
+<!ATTLIST csvConfigurableLink  handler CDATA #IMPLIED>
+<!ELEMENT csvroleAName (#PCDATA) >
+<!ELEMENT csvroleANumber (#PCDATA) >
+<!ELEMENT csvroleAVersion (#PCDATA) >
+<!ELEMENT csvroleAIteration (#PCDATA) >
+<!ELEMENT csvroleAView (#PCDATA) >
+<!ELEMENT csvroleAVariation1 (#PCDATA) >
+<!ELEMENT csvroleAVariation2 (#PCDATA) >
+<!ELEMENT csvroleAOrganizationId (#PCDATA) >
+<!ELEMENT csvroleAOrganizationName (#PCDATA) >
+<!ELEMENT csvroleBName (#PCDATA) >
+<!ELEMENT csvroleBNumber (#PCDATA) >
+<!ELEMENT csvroleBOrganizationId (#PCDATA) >
+<!ELEMENT csvroleBOrganizationName (#PCDATA) >
+
+
+<!ELEMENT csvPart ( csvuser, csvpartName, csvpartNumber, csvtype, csvgenericType?, csvcollapsible?, csvlogicbasePath?, csvsource, csvfolder, csvlifecycle, csvview, csvvariation1?, csvvariation2?, csvteamTemplate, csvlifecyclestate, csvtypedef, csvversion, csviteration, csvparentContainerPath, csvenditem?, csvtraceCode?, csvorganizationName?, csvorganizationID?, csvcreateTimestamp?, csvmodifyTimestamp?, csvsecurityLabels?, csvminRequired?, csvmaxAllowed?, csvdefaultUnit?,csvphantom?, csvserviceable?, csvservicekit?,csvauthoringLanguage?)>
+
+<!ATTLIST csvPart  handler CDATA #IMPLIED>
+<!ELEMENT csvphantom (#PCDATA) >
+<!ELEMENT csvenditem (#PCDATA) >
+<!ELEMENT csvtraceCode (#PCDATA) >
+<!ELEMENT csvcreateTimestamp (#PCDATA)>
+<!ELEMENT csvmodifyTimestamp (#PCDATA)>
+<!ELEMENT csvminRequired (#PCDATA) >
+<!ELEMENT csvmaxAllowed (#PCDATA) >
+<!ELEMENT csvservicekit (#PCDATA) >
+<!ELEMENT csvauthoringLanguage (#PCDATA) >
+
+
+<!ELEMENT csvWfNodeTemplateLinkBegin ( csvsourceNode, csvdestNode, csvbackLoop )>
+
+<!ATTLIST csvWfNodeTemplateLinkBegin  handler CDATA #IMPLIED>
+<!ELEMENT csvsourceNode (#PCDATA) >
+<!ELEMENT csvdestNode (#PCDATA) >
+<!ELEMENT csvbackLoop (#PCDATA) >
+
+<!ELEMENT csvPartList ( csvuser, csvname, csvnumber, csvfolder, csvlifecycle, csvtypedef, csvview, csvteamTemplate, csvlifecyclestate,  csvparentContainerPath, csvversion, csviteration, csvdescription?, csvinformationType?, csvpartListItemType?, csvorganizationName?, csvorganizationID?, csvcreateTimestamp?, csvmodifyTimestamp? )>
+<!ATTLIST csvPartList handler CDATA #REQUIRED>
+<!ELEMENT csvinformationType (#PCDATA) >
+<!ELEMENT csvpartListItemType (#PCDATA) >
+
+<!ELEMENT csvBeginPartList ( csvuser, csvname, csvnumber, csvfolder, csvlifecycle, csvtypedef, csvview, csvteamTemplate, csvlifecyclestate,  csvparentContainerPath, csvversion, csviteration, csvdescription?, csvinformationType?, csvpartListItemType?, csvorganizationName?, csvorganizationID?, csvcreateTimestamp?, csvmodifyTimestamp?, csvauthoringLanguage? )>
+<!ATTLIST csvBeginPartList handler CDATA #REQUIRED>
+
+<!ELEMENT csvEndPartList EMPTY>
+<!ATTLIST csvEndPartList handler CDATA #REQUIRED>
+
+<!ELEMENT csvPartListItem ( csvparentNumber, csvparentVersion, csvparentIteration, csvparentView, csvchildNumber, csvitemNumber?, csvlineNumber?, csvitemSequenceNumber, csvindenture, csvquantity, csvserviceable, csvillustrated, csvremarks, csvinstanceIds, csvcomponentIds, csvstructureId, csvgraphicRef?, csvorganizationName, csvorganizationID, csvtypedef? )>
+<!ATTLIST csvPartListItem  handler CDATA #IMPLIED>
+<!ELEMENT csvitemNumber (#PCDATA) >
+<!ELEMENT csvitemSequenceNumber (#PCDATA) >
+<!ELEMENT csvindenture (#PCDATA) >
+<!ELEMENT csvquantityUnit (#PCDATA) >
+<!ELEMENT csvserviceable (#PCDATA) >
+<!ELEMENT csvillustrated (#PCDATA) >
+<!ELEMENT csvremarks (#PCDATA) >
+<!ELEMENT csvinstanceIds (#PCDATA) >
+<!ELEMENT csvcomponentIds (#PCDATA) >
+<!ELEMENT csvstructureId (#PCDATA) >
+<!ELEMENT csvpartListNumber (#PCDATA) >
+<!ELEMENT csvpartListVersion (#PCDATA) >
+<!ELEMENT csvpartListIteration (#PCDATA) >
+<!ELEMENT csvpartListView (#PCDATA) >
+
+<!ELEMENT csvBeginPartListItem ( csvparentNumber, csvparentVersion, csvparentIteration, csvparentView, csvchildNumber, csvitemNumber?, csvlineNumber?, csvitemSequenceNumber, csvindenture, csvquantity, csvserviceable, csvillustrated, csvremarks, csvinstanceIds, csvcomponentIds, csvstructureId, csvgraphicRef?, csvorganizationName, csvorganizationID, csvtypedef? )>
+<!ATTLIST csvBeginPartListItem handler CDATA #REQUIRED>
+
+<!ELEMENT csvEndPartListItem EMPTY>
+<!ATTLIST csvEndPartListItem handler CDATA #REQUIRED>
+
+<!ELEMENT csvPartToPartListLink ( csvpartNumber, csvpartVersion?, csvpartIteration?, csvpartView?, csvpartListNumber ) >
+<!ATTLIST csvPartToPartListLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvPartListToPartLink ( csvpartListNumber, csvpartListVersion?, csvpartListIteration?, csvpartListView?, csvpartNumber, csvpartVersion?, csvpartIteration?, csvpartView? ) >
+<!ATTLIST csvPartListToPartLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvPartListToEPMDocumentLink ( csvpartListNumber, csvpartListVersion?, csvpartListIteration?, csvpartListView?, (csvfileName|csvdocNumber), csvdocVersion?, csvdocIteration?, csvformat, csvgraphicRef, csvprintOrder, csvprintView)>
+<!ATTLIST csvPartListToEPMDocumentLink handler CDATA #REQUIRED>
+<!ELEMENT csvgraphicRef (#PCDATA) >
+<!ELEMENT csvprintOrder (#PCDATA) >
+<!ELEMENT csvprintView (#PCDATA) >
+
+<!ELEMENT csvTranslationLink ( csvsourceNumber, csvsourceVersion?, csvsourceIteration?, csvtranslationNumber, csvtranslationVersion?, csvtranslationIteration?, csvlanguage )>
+<!ATTLIST csvTranslationLink  handler CDATA #REQUIRED>
+
+<!ELEMENT csvsourceNumber (#PCDATA) >
+<!ELEMENT csvsourceName (#PCDATA) >
+<!ELEMENT csvsourceVersion (#PCDATA) >
+<!ELEMENT csvsourceIteration (#PCDATA) >
+<!ELEMENT csvtranslationNumber (#PCDATA) >
+<!ELEMENT csvtranslationName (#PCDATA) >
+<!ELEMENT csvtranslationVersion (#PCDATA) >
+<!ELEMENT csvtranslationIteration (#PCDATA) >
+<!ELEMENT csvlanguage (#PCDATA) >
+
+<!ELEMENT csvWfURLRobotTemplateBegin ( csvxCoordinate, csvyCoordinate, csvrouterType, csvroutingEvents, csvautoRoutingExpression, csvuniqueId, csvname, csvdescription, csvcategory, csvinstructions, csviconName, csvduration, csvprocessDuration, csvstartDelay, csvstartProcessDelay, csvnotifyBeforeDeadline, csvtimeToDeadline, csvnotifyAfterDeadline, csvtimePastDeadline, csvresponsibleRole, csvhost, csvtaskURL, csvtaskResponseVariable )>
+
+<!ATTLIST csvWfURLRobotTemplateBegin  handler CDATA #IMPLIED>
+<!ELEMENT csvtaskURL (#PCDATA) >
+<!ELEMENT csvtaskResponseVariable (#PCDATA) >
+
+
+<!ELEMENT csvWfAdHocActivityTemplateEnd  EMPTY >
+<!ATTLIST csvWfAdHocActivityTemplateEnd  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvWTDatedEffectivity ( csvprodNumber?, csvtypeModifier?, csvstartDate, csvendDate, csvconfigItem )>
+
+<!ATTLIST csvWTDatedEffectivity  handler CDATA #IMPLIED>
+<!ELEMENT csvstartDate (#PCDATA) >
+<!ELEMENT csvendDate (#PCDATA) >
+
+
+<!ELEMENT csvWfApplRobotTemplateEnd  EMPTY >
+<!ATTLIST csvWfApplRobotTemplateEnd  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvWfProcessTemplateBegin ( csvxCoordinate, csvyCoordinate, csvrouterType, csvroutingEvents, csvautoRoutingExpression, csvuniqueId, csvname, csvdescription, csvcategory, csvinstructions, csviconName, csvduration, csvprocessDuration, csvstartDelay, csvstartProcessDelay, csvnotifyBeforeDeadline, csvtimeToDeadline, csvnotifyAfterDeadline, csvtimePastDeadline, csvresponsibleRole, csvenabled, csvfolderLocation, csvdedicatedQueue? )>
+
+<!ATTLIST csvWfProcessTemplateBegin  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvBeginUpdateBusinessEntity ( csvname )>
+
+<!ATTLIST csvBeginUpdateBusinessEntity  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvendIBAHolder  EMPTY >
+<!ATTLIST csvendIBAHolder  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvProductContainer ( csvuser, csvname, csvnumber, csvsharedTeamName*, csvcontainerExtendable*, csvdescription, csvview, csvvariation1?, csvvariation2?, csvsource, csvdefaultUnit, csvtype, csvcontainerTemplate, csvorganizationName?, csvorganizationID?, csvcreatePrimaryEndItem?)>
+
+<!ATTLIST csvProductContainer  handler CDATA #IMPLIED>
+<!ELEMENT csvdefaultUnit (#PCDATA) >
+<!ELEMENT csvcontainerTemplate (#PCDATA) >
+<!ELEMENT csvcreatePrimaryEndItem (#PCDATA) >
+<!ELEMENT csvcontainerExtendable (#PCDATA) >
+
+
+<!ELEMENT csvSetAsPrimaryEndItem ( csvpartNumber)>
+
+<!ATTLIST csvSetAsPrimaryEndItem  handler CDATA #IMPLIED>
+
+<!ELEMENT csvWfSignature ( csvsignature )>
+
+<!ATTLIST csvWfSignature  handler CDATA #IMPLIED>
+<!ELEMENT csvsignature (#PCDATA) >
+
+
+<!ELEMENT csvAssemblyAddLoad ( csvassemblyPartNumber, csvconstituentPartNumber, csvconstituentPartQty, csvconstituentPartUnit, csvcomponentId?, csvinclusionOption?, csvquantityOption?, csvreference?, csvassemblyPartVersion, csvassemblyPartIteration, csvassemblyPartView, csvassemblyPartVariation1?, csvassemblyPartVariation2?, csvorganizationName?, csvorganizationID? )>
+
+<!ATTLIST csvAssemblyAddLoad  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvViewPreference ( csvuser, csvview )>
+
+<!ATTLIST csvViewPreference  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvSiteViewPreference ( csvview )>
+
+<!ATTLIST csvSiteViewPreference  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvWfEventActionPair ( csvevent, csvaction )>
+
+<!ATTLIST csvWfEventActionPair  handler CDATA #IMPLIED>
+<!ELEMENT csvevent (#PCDATA) >
+<!ELEMENT csvaction (#PCDATA) >
+
+
+<!ELEMENT csvRoleHolder ( csvroleToAssign, csvassignedPrincipal )>
+
+<!ATTLIST csvRoleHolder  handler CDATA #IMPLIED>
+<!ELEMENT csvassignedPrincipal (#PCDATA) >
+
+
+<!ELEMENT csvUserGroup ( csvuser, csvgroupName, csvgroupNameDirectoryService?, csvuserName, csvuserNameDirectoryService?, csvDirectoryService? )>
+        
+
+<!ATTLIST csvUserGroup  handler CDATA #IMPLIED>
+<!ELEMENT csvgroupName (#PCDATA) >
+<!ELEMENT csvgroupNameDirectoryService (#PCDATA) >
+<!ELEMENT csvuserName (#PCDATA) >
+<!ELEMENT csvuserNameDirectoryService (#PCDATA) >
+
+<!ELEMENT csvGroupGroup ( csvuser, csvparentGroupName, csvchildGroupName, csvparentDirectoryService?, csvchildDirectoryService? )>
+
+<!ATTLIST csvGroupGroup  handler CDATA #IMPLIED>
+<!ELEMENT csvparentGroupName (#PCDATA) >
+<!ELEMENT csvchildGroupName (#PCDATA) >
+<!ELEMENT csvparentDirectoryService (#PCDATA) >
+<!ELEMENT csvchildDirectoryService (#PCDATA) >
+
+
+<!ELEMENT csvAssemblyRemove ( csvassemblyPartNumber, csvassemblyPartVersion, csvconstituentPartNumber, csvassemblyPartIteration, csvassemblyPartView, csvassemblyPartVariation1?, csvassemblyPartVariation2?, csvorganizationName?, csvorganizationID? )>
+
+<!ATTLIST csvAssemblyRemove  handler CDATA #IMPLIED>
+
+<!ELEMENT csvOrgContainer ( csvcontainerName, csvcontainerTemplateRef, csvbusinessNamespace, csvsharingEnabled, csvcreator, csvowner, csvsubscriber, csvconferencingURL, csvdescription, csvinternetDomain, csvOrganizationAddress?, csvconferencingID?, csvrestrictedDirectorySearchScope?)>
+
+<!ATTLIST csvOrgContainer  handler CDATA #IMPLIED>
+<!ELEMENT csvinternetDomain (#PCDATA) >
+<!ELEMENT csvOrganizationAddress (#PCDATA) >
+<!ELEMENT csvconferencingID (#PCDATA) >
+<!ELEMENT csvrestrictedDirectorySearchScope (#PCDATA) >
+
+<!ELEMENT csvTeamTemplateBegin ( csvname, csvdescription, csvfolderLocation, csvenabled )>
+
+<!ATTLIST csvTeamTemplateBegin  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvEndWTDocument ( csvprimarycontenttype, csvpath, csvformat, csvcontdesc, csvparentContainerPath )>
+
+<!ATTLIST csvEndWTDocument  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvWfTransition ( csvtransition, csvexprBody, csvcheckSyntax )>
+
+<!ATTLIST csvWfTransition  handler CDATA #IMPLIED>
+<!ELEMENT csvtransition (#PCDATA) >
+<!ELEMENT csvexprBody (#PCDATA) >
+<!ELEMENT csvcheckSyntax (#PCDATA) >
+
+
+<!ELEMENT csvWfActorAssignee ( csvactor, csvrequired, csvcompletionPolicyType, csvcompletionPolicyValue )>
+
+<!ATTLIST csvWfActorAssignee  handler CDATA #IMPLIED>
+<!ELEMENT csvactor (#PCDATA) >
+
+
+<!ELEMENT csvProductUser ( csvuser, csvname, csvrole )>
+
+<!ATTLIST csvProductUser  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvSubFolder ( csvuser, csvfolderPath, csvadminDomain )>
+
+<!ATTLIST csvSubFolder  handler CDATA #IMPLIED>
+<!ELEMENT csvadminDomain (#PCDATA) >
+
+
+<!ELEMENT csvWfNotificationEnd  EMPTY >
+<!ATTLIST csvWfNotificationEnd  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvWfVariableAssignee ( csvvariableAssignee, csvrequired, csvcompletionPolicyType, csvcompletionPolicyValue )>
+
+<!ATTLIST csvWfVariableAssignee  handler CDATA #IMPLIED>
+<!ELEMENT csvvariableAssignee (#PCDATA) >
+
+
+<!ELEMENT csvSingleDefinitionConstraintByName ( csvattributeName, csvConstraintType, csvminimum, csvmaximum, csvdiscreteSet, csvappliesToDescendents )>
+
+<!ATTLIST csvSingleDefinitionConstraintByName  handler CDATA #IMPLIED>
+<!ELEMENT csvattributeName (#PCDATA) >
+
+
+<!ELEMENT csvViewAssociation ( csvparentView, csvchildView )>
+
+<!ATTLIST csvViewAssociation  handler CDATA #IMPLIED>
+<!ELEMENT csvparentView (#PCDATA) >
+<!ELEMENT csvchildView (#PCDATA) >
+
+
+<!ELEMENT csvBeginIBAContainer ( csvcontainer-name )>
+
+<!ATTLIST csvBeginIBAContainer  handler CDATA #IMPLIED>
+<!ELEMENT csvcontainer-name (#PCDATA) >
+
+
+<!ELEMENT csvBaseCriterionDef ( csvpath, csvuniqueId, csvprimaryDef )>
+
+<!ATTLIST csvBaseCriterionDef  handler CDATA #IMPLIED>
+<!ELEMENT csvprimaryDef (#PCDATA) >
+
+
+<!ELEMENT csvRoleHolder2 ( csvroleToAssign, csvassignedPrincipal )>
+
+<!ATTLIST csvRoleHolder2  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvCreateRankingContext ( csvname, csvdescription, csvcriteriaMap )>
+
+<!ATTLIST csvCreateRankingContext  handler CDATA #IMPLIED>
+<!ELEMENT csvcriteriaMap (#PCDATA) >
+
+<!ELEMENT csvWfProxyTemplateEnd  EMPTY >
+<!ATTLIST csvWfProxyTemplateEnd  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvWTAclEntry ( csvrole, csvpermission )>
+
+<!ATTLIST csvWTAclEntry  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvDataFormat ( csvformatName, csvmimeType, csvdescription, csvindexable, csvfileFormatOnly, csvstandardIconStr, csvextensions )>
+
+<!ATTLIST csvDataFormat  handler CDATA #IMPLIED>
+<!ELEMENT csvformatName (#PCDATA) >
+<!ELEMENT csvmimeType (#PCDATA) >
+<!ELEMENT csvindexable (#PCDATA) >
+<!ELEMENT csvfileFormatOnly (#PCDATA) >
+<!ELEMENT csvstandardIconStr (#PCDATA) >
+<!ELEMENT csvextensions (#PCDATA) >
+
+
+<!ELEMENT csvBeginBusinessEntity ( csvname )>
+
+<!ATTLIST csvBeginBusinessEntity  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvView ( csvviewName )>
+
+<!ATTLIST csvView  handler CDATA #IMPLIED>
+<!ELEMENT csvviewName (#PCDATA) >
+
+
+<!ELEMENT csvIBAValue ( csvdefinition, csvvalue1, csvvalue2, csvdependency_id )>
+
+<!ATTLIST csvIBAValue  handler CDATA #IMPLIED>
+<!ELEMENT csvdefinition (#PCDATA) >
+<!ELEMENT csvvalue1 (#PCDATA) >
+
+
+<!ELEMENT csvEndClassNode  EMPTY >
+<!ATTLIST csvEndClassNode  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvEndWTPM  EMPTY >
+<!ATTLIST csvEndWTPM  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvWfBlockTemplateEnd  EMPTY >
+<!ATTLIST csvWfBlockTemplateEnd  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvAssemblyAdd ( csvassemblyPartNumber, csvconstituentPartNumber, csvconstituentPartQty, csvconstituentPartUnit, csvcomponentId?, csvinclusionOption?, csvquantityOption?, csvreference?, csvassemblyPartVersion, csvassemblyPartIteration, csvassemblyPartView, csvassemblyPartVariation1?, csvassemblyPartVariation2?, csvorganizationName?, csvorganizationID?, csvlineNumber? )>
+
+<!ATTLIST csvAssemblyAdd  handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginAttributeHierarchyLoader  EMPTY >
+<!ATTLIST csvBeginAttributeHierarchyLoader  handler CDATA #IMPLIED>
+
+<!ELEMENT csvProductPlanTemplate ( csvfolder, csvname, csvdescription, csvxml, csvxslType, csvservice, csvcontainerPath)>
+
+<!ATTLIST csvProductPlanTemplate  handler CDATA #IMPLIED>
+<!ELEMENT csvxml (#PCDATA) >
+<!ELEMENT csvxslType (#PCDATA) >
+<!ELEMENT csvservice (#PCDATA) >
+<!ELEMENT csvcontainerPath (#PCDATA) >
+
+<!ELEMENT csvReportTemplate ( csvfolder, csvname, csvdescription, csvxml, csvxslType, csvservice, csvcontainerPath, csvurl1, csvurl2, csvinputPage?, csvresourceBundle?, csvexposeasreport?, csvupdate? )>
+
+<!ATTLIST csvReportTemplate  handler CDATA #IMPLIED>
+<!ELEMENT csvurl1 (#PCDATA) >
+<!ELEMENT csvurl2 (#PCDATA) >
+<!ELEMENT csvexposeasreport (#PCDATA) >
+<!ELEMENT csvupdate (#PCDATA) >
+
+<!ELEMENT csvCreateReport ( csvname, csvcontainerPath, csvdescription, csvinputPage, csvresourceBundle, csvuiContext, csvfolderPath?, csvthirdPartyReport?, csvreadyForUse, csvsoapClass, csvsoapMethod, csvreportTemplateName, csvreportTemplateContainerPath, csvupdate? )>
+
+<!ATTLIST csvCreateReport  handler CDATA #IMPLIED>
+<!ELEMENT csvinputPage (#PCDATA) >
+<!ELEMENT csvresourceBundle (#PCDATA) >
+<!ELEMENT csvuiContext (#PCDATA) >
+<!ELEMENT csvthirdPartyReport (#PCDATA) >
+<!ELEMENT csvreadyForUse (#PCDATA) >
+<!ELEMENT csvsoapClass (#PCDATA) >
+<!ELEMENT csvsoapMethod (#PCDATA) >
+<!ELEMENT csvreportTemplateName (#PCDATA) >
+<!ELEMENT csvreportTemplateContainerPath (#PCDATA) >
+
+<!ELEMENT csvCriterionDefValidWith ( csvsourceNode, csvtargetNodes )>
+
+<!ATTLIST csvCriterionDefValidWith  handler CDATA #IMPLIED>
+<!ELEMENT csvtargetNodes (#PCDATA) >
+
+
+<!ELEMENT csvPhaseTemplateEnd  EMPTY >
+<!ATTLIST csvPhaseTemplateEnd  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvWfRoleAssignee ( csvrole, csvrequired, csvcompletionPolicyType, csvcompletionPolicyValue )>
+
+<!ATTLIST csvWfRoleAssignee  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvEndExportNodeTemplate  EMPTY >
+<!ATTLIST csvEndExportNodeTemplate  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvOccurrencedAssemblyAddLoad ( csvassemblyPartNumber, csvassemblyPartVersion, csvconstituentPartNumber, csvconstituentPartQty, csvconstituentPartUnit, csvcomponentId?, csvinclusionOption?, csvquantityOption?, csvreference?,  csvlineNumber, csvfindNumber?, csvoccurrenceLocation, csvreferenceDesignator, csvassemblyPartIteration, csvassemblyPartView, csvassemblyPartVariation1?, csvassemblyPartVariation2?, csvorganizationName?, csvorganizationID? )>
+
+<!ATTLIST csvOccurrencedAssemblyAddLoad  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvBeginSpecification ( csvnumber, csvuser, csvname, csvdescription, csvpriority,  csvfolder, csvsofttype?, csvattachments? )>
+<!ATTLIST csvBeginSpecification  handler CDATA #IMPLIED>
+
+<!ELEMENT csvEndSpecification EMPTY>
+<!ATTLIST csvEndSpecification  handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginRequirement ( csvnumber, csvuser, csvname, csvdescription, csvpriority, csvfolder, csvsofttype?, csvverificationRequired?, csvattachments? )>
+<!ATTLIST csvBeginRequirement  handler CDATA #IMPLIED>
+
+<!ELEMENT csvEndRequirement EMPTY>
+<!ATTLIST csvEndRequirement  handler CDATA #IMPLIED>
+
+<!ELEMENT csvSpecificationUsageLink ( csvparentnumber, csvchildnumber )>
+
+<!ATTLIST csvSpecificationUsageLink handler CDATA #IMPLIED>
+<!ELEMENT csvparentnumber (#PCDATA) >
+<!ELEMENT csvchildnumber (#PCDATA) >
+
+<!ELEMENT csvpriority (#PCDATA) >
+<!ELEMENT csvattachments (#PCDATA) >
+<!ELEMENT csvverificationRequired (#PCDATA) >
+<!ELEMENT csvsofttype (#PCDATA) >
+<!ELEMENT csvsoftattribute ( csvsofttype, csvnumber, csvname, csvtype, csvvalue )>
+<!ATTLIST csvsoftattribute handler CDATA #IMPLIED>
+<!ELEMENT csvattribute ( csvname, csvvalue, csvtype ) >
+
+<!ELEMENT csvWfExceptionAction ( csvexceptionAction, csvexceptionActionFlag )>
+
+<!ATTLIST csvWfExceptionAction  handler CDATA #IMPLIED>
+<!ELEMENT csvexceptionAction (#PCDATA) >
+<!ELEMENT csvexceptionActionFlag (#PCDATA) >
+
+<!ELEMENT csvWfAuditAction ( csvauditAction, csvauditActionFlag )>
+
+<!ATTLIST csvWfAuditAction  handler CDATA #IMPLIED>
+<!ELEMENT csvauditAction (#PCDATA) >
+<!ELEMENT csvauditActionFlag (#PCDATA) >
+
+<!ELEMENT csvWfVotingAction ( csvvotingAction, csvvotingActionFlag )>
+
+<!ATTLIST csvWfVotingAction  handler CDATA #IMPLIED>
+<!ELEMENT csvvotingAction (#PCDATA) >
+<!ELEMENT csvvotingActionFlag (#PCDATA) >
+
+<!ELEMENT csvWfIgnoreUnresolvedRoleAction ( csvignoreUnresolvedRoleAction, csvignoreUnresolvedRoleActionFlag )>
+
+<!ATTLIST csvWfIgnoreUnresolvedRoleAction  handler CDATA #IMPLIED>
+<!ELEMENT csvignoreUnresolvedRoleAction (#PCDATA) >
+<!ELEMENT csvignoreUnresolvedRoleActionFlag (#PCDATA) >
+
+<!ELEMENT csvTypeNodeIconRoot ( csviconRoot )>
+
+<!ATTLIST csvTypeNodeIconRoot  handler CDATA #IMPLIED>
+<!ELEMENT csviconRoot (#PCDATA) >
+
+<!ELEMENT csvContentRoot ( csvcontentRoot )>
+
+<!ATTLIST csvContentRoot  handler CDATA #IMPLIED>
+<!ELEMENT csvcontentRoot (#PCDATA) >
+
+<!ELEMENT csvBeginExportNodeTemplate ( csvname, csvlabel, csvtargetClassName )>
+
+<!ATTLIST csvBeginExportNodeTemplate  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvDomain ( csvuser, csvname, csvdescription, csvparentDomainPath )>
+
+<!ATTLIST csvDomain  handler CDATA #IMPLIED>
+<!ELEMENT csvparentDomainPath (#PCDATA) >
+
+
+<!ELEMENT csvPhaseSuccessionBegin ( csvlifeCycleName, csvpredecessorPhaseState, csvsuccessorPhaseState, csvphaseTransition )>
+
+<!ATTLIST csvPhaseSuccessionBegin  handler CDATA #IMPLIED>
+<!ELEMENT csvlifeCycleName (#PCDATA) >
+<!ELEMENT csvpredecessorPhaseState (#PCDATA) >
+<!ELEMENT csvsuccessorPhaseState (#PCDATA) >
+<!ELEMENT csvphaseTransition (#PCDATA) >
+
+
+<!ELEMENT csvMeasurementSystem ( csvname, csvdescription, csvnameValuePairs )>
+
+<!ATTLIST csvMeasurementSystem  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvBeginWTPM ( csvnumber, csvname )>
+
+<!ATTLIST csvBeginWTPM  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvEndNavStruct  EMPTY >
+<!ATTLIST csvEndNavStruct  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvAddIndependentNode ( csvindependentNodes )>
+
+<!ATTLIST csvAddIndependentNode  handler CDATA #IMPLIED>
+<!ELEMENT csvindependentNodes (#PCDATA) >
+
+
+<!ELEMENT csvCreateRankingData ( csvcontextName, csvrankableClassname, csvpartName, csvnodeId, csvcriterionClassname, csvcriterionData, csvcriteriaKey )>
+
+<!ATTLIST csvCreateRankingData  handler CDATA #IMPLIED>
+<!ELEMENT csvcontextName (#PCDATA) >
+<!ELEMENT csvrankableClassname (#PCDATA) >
+<!ELEMENT csvnodeId (#PCDATA) >
+<!ELEMENT csvcriterionClassname (#PCDATA) >
+<!ELEMENT csvcriterionData (#PCDATA) >
+<!ELEMENT csvcriteriaKey (#PCDATA) >
+
+
+<!ELEMENT csvAddGuest ( csvcontainerClass, csvcontainerName, csvprincipalNameOrDN, csvserviceName )>
+
+<!ATTLIST csvAddGuest  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvProjectBegin ( csvname, csvdescription, csvfolderLocation, csvenabled )>
+
+<!ATTLIST csvProjectBegin  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvClassificationNavStruct ( csvname, csvparentID, csvuniqueID, csvdescription )>
+
+<!ATTLIST csvClassificationNavStruct  handler CDATA #IMPLIED>
+<!ELEMENT csvuniqueID (#PCDATA) >
+
+
+<!ELEMENT csvWfExprRobotTemplateBegin ( csvxCoordinate, csvyCoordinate, csvrouterType, csvroutingEvents, csvautoRoutingExpression, csvuniqueId, csvname, csvdescription, csvcategory, csvinstructions, csviconName, csvduration, csvprocessDuration, csvstartDelay, csvstartProcessDelay, csvnotifyBeforeDeadline, csvtimeToDeadline, csvnotifyAfterDeadline, csvtimePastDeadline, csvresponsibleRole, csvhost )>
+
+<!ATTLIST csvWfExprRobotTemplateBegin  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvWfExpression ( csvexpression, csvexprBody, csvcheckSyntax )>
+
+<!ATTLIST csvWfExpression  handler CDATA #IMPLIED>
+<!ELEMENT csvexpression (#PCDATA) >
+<!ELEMENT csvexpressionString (#PCDATA) >
+
+<!ELEMENT csvGeneral ( csvuser, csvname, csvtitle, csvnumber, csvtype, csvdescription, csvdepartment, csvsaveIn, csvteamTemplate, csvdomain, csvlifecycletemplate, csvlifecyclestate, csvtypedef, csvprimarycontenttype, csvpath, csvformat, csvcontdesc, csvversion, csviteration )>
+
+<!ATTLIST csvGeneral  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvContentAggregateFile ( csvuser, csvpath )>
+
+<!ATTLIST csvContentAggregateFile  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvAddElementToNavTab ( csvtargetTab, csvtype, csvdefinition, csvtbNot, csvvisible, csvenforced, csvorder )>
+
+<!ATTLIST csvAddElementToNavTab  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvEndUpdateBusinessEntity  EMPTY >
+<!ATTLIST csvEndUpdateBusinessEntity  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvActorRoleHolder ( csvroleToAssign, csvassignedActorRole )>
+
+<!ATTLIST csvActorRoleHolder  handler CDATA #IMPLIED>
+
+<!ELEMENT csvCreateDefaultAssociationConstraintItem ( csvlinkType, csvroleAType, csvroleBType )>
+<!ELEMENT csvlinkType (#PCDATA) >
+<!ELEMENT csvroleAType (#PCDATA) >
+<!ELEMENT csvroleBType (#PCDATA) >
+<!ATTLIST csvCreateDefaultAssociationConstraintItem  handler CDATA #IMPLIED>
+
+<!ELEMENT csvProjectEnd  EMPTY >
+<!ATTLIST csvProjectEnd  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvDocumentRetainContent ( csvuser, csvname, csvtitle, csvnumber, csvtype, csvdescription, csvdepartment, csvsaveIn, csvteamTemplate, csvdomain, csvlifecycletemplate, csvlifecyclestate, csvtypedef, csvprimarycontenttype, csvpath, csvformat, csvcontdesc, csvversion, csviteration )>
+
+<!ATTLIST csvDocumentRetainContent  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvCabinet ( csvuser, csvcabinet, csvadminDomain, csvdescription, csvowner, csvisPersonal )>
+
+<!ATTLIST csvCabinet  handler CDATA #IMPLIED>
+<!ELEMENT csvcabinet (#PCDATA) >
+<!ELEMENT csvisPersonal (#PCDATA) >
+
+
+<!ELEMENT csvSetDefaultURL ( csvdefaultURL )>
+
+<!ATTLIST csvSetDefaultURL  handler CDATA #IMPLIED>
+<!ELEMENT csvdefaultURL (#PCDATA) >
+
+
+<!ELEMENT csvPartDocDescribes ( csvdocNumber, csvdocVersion, csvdocIteration, csvpartNumber, csvpartVersion, csvpartIteration, csvpartView, csvpartVariation1?, csvpartVariation2?, csvorganizationName?, csvorganizationID? )>
+
+<!ATTLIST csvPartDocDescribes  handler CDATA #IMPLIED>
+
+<!ELEMENT csvPartEPMDocDescribes ( (csvfileName|csvdocNumber), csvdocVersion, csvdocIteration, csvpartNumber, csvpartVersion, csvpartIteration, csvpartView, csvpartVariation1?, csvpartVariation2?, csvorganizationName?, csvorganizationID? )>
+
+<!ATTLIST csvPartEPMDocDescribes  handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginWTPartDescribeLink ( csvdocNumber, csvdocVersion, csvdocIteration, csvpartNumber, csvpartVersion, csvpartIteration, csvpartView, csvpartVariation1?, csvpartVariation2?, csvorganizationName?, csvorganizationID? )>
+<!ATTLIST csvBeginWTPartDescribeLink  handler CDATA #IMPLIED>
+
+<!ELEMENT csvEndWTPartDescribeLink EMPTY>
+<!ATTLIST csvEndWTPartDescribeLink  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvWfAssignedActivityTemplateEnd  EMPTY >
+<!ATTLIST csvWfAssignedActivityTemplateEnd  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvConfigurationItem ( csvname, csvdescription, csveffectivityType, csvfolder, csvlifecycle, csvteamTemplate, csvlifecyclestate )>
+
+<!ATTLIST csvConfigurationItem  handler CDATA #IMPLIED>
+<!ELEMENT csveffectivityType (#PCDATA) >
+
+
+<!ELEMENT csvWfBlockTemplateBegin ( csvxCoordinate, csvyCoordinate, csvrouterType, csvroutingEvents, csvautoRoutingExpression, csvuniqueId, csvname, csvdescription, csvcategory, csvinstructions, csviconName, csvduration, csvprocessDuration, csvstartDelay, csvstartProcessDelay, csvnotifyBeforeDeadline, csvtimeToDeadline, csvnotifyAfterDeadline, csvtimePastDeadline, csvresponsibleRole )>
+
+<!ATTLIST csvWfBlockTemplateBegin  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvWfTimerTemplateEnd  EMPTY >
+<!ATTLIST csvWfTimerTemplateEnd  handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvIndexPolicyRule ( csvuser, csvdomain, csvtype, csvevent, csvstate, csvcollection )>
+
+<!ATTLIST csvIndexPolicyRule  handler CDATA #IMPLIED>
+<!ELEMENT csvcollection (#PCDATA) >
+
+
+<!ELEMENT csvCriterion ( csvassertion, csvsatisfied )>
+
+<!ATTLIST csvCriterion  handler CDATA #IMPLIED>
+<!ELEMENT csvassertion (#PCDATA) >
+<!ELEMENT csvsatisfied (#PCDATA) >
+
+
+<!ELEMENT csvWfNotificationBegin ( csvsubject, csvbody, csvxCoordinate, csvyCoordinate )>
+
+<!ATTLIST csvWfNotificationBegin  handler CDATA #IMPLIED>
+<!ELEMENT csvsubject (#PCDATA) >
+<!ELEMENT csvbody (#PCDATA) >
+
+
+<!ELEMENT csvGroup ( csvuser, csvgroupName, csvdescription,csvDirectoryService? )>
+
+<!ATTLIST csvGroup  handler CDATA #IMPLIED>
+
+<!--BC X-20 ESI (Enterprise System Integration) : ESI Objects-->
+
+<!--BC X-20 ESI (Enterprise System Integration) : distribution target i.e. ESITarget Object-->
+<!ELEMENT csvBeginESITarget ( csvtypedef, csvnumber, csvname, csvdescription, csvtaskURI?, csvdefaultForContext?, csvstatus?, csvresponseMetaInfoPath? )>
+
+<!ATTLIST csvBeginESITarget  handler CDATA #IMPLIED>
+<!ELEMENT csvtaskURI (#PCDATA) >
+<!ELEMENT csvdefaultForContext (#PCDATA) >
+<!ELEMENT csvstatus (#PCDATA) >
+<!ELEMENT csvresponseMetaInfoPath (#PCDATA) >
+
+<!ELEMENT csvEndESITarget EMPTY>
+
+<!ATTLIST csvEndESITarget handler CDATA #IMPLIED>
+
+<!--EC X-20 ESI (Enterprise System Integration) : distribution target i.e. ESITarget Object-->
+
+<!--BC X-20 ESI (Enterprise System Integration) : distribution target link i.e. ESITargetAssignmentLink Object-->
+
+<!ELEMENT csvESITargetAssignmentLink (csvreleasableObjectNumber, csvreleasableObjectType, csvversion, csviteration, csvnumber, csvview? )>
+
+<!ATTLIST csvESITargetAssignmentLink  handler CDATA #IMPLIED>
+
+<!ELEMENT csvreleasableObjectNumber (#PCDATA) >
+<!ELEMENT csvreleasableObjectType (#PCDATA) >
+
+<!ELEMENT csvBeginESITargetAssignmentLink (csvtypedef, csvreleasableObjectNumber, csvreleasableObjectType, csvversion, csviteration, csvnumber, csvview? )>
+
+<!ATTLIST csvBeginESITargetAssignmentLink handler CDATA #IMPLIED>
+
+<!ELEMENT csvEndESITargetAssignmentLink EMPTY>
+<!ATTLIST csvEndESITargetAssignmentLink handler CDATA #IMPLIED>
+
+<!--EC X-20 ESI (Enterprise System Integration) : distribution target link i.e. ESITargetAssignmentLink Object-->
+<!--BC X-20 ESI (Enterprise System Integration) : ESI Objects-->
+
+<!ELEMENT csvEPMAuthoringAppVersion (csvauthoringApp, csvversionNumber, csvversionName) >
+<!ATTLIST csvEPMAuthoringAppVersion handler CDATA #IMPLIED>
+<!ELEMENT csvauthoringApp (#PCDATA) >
+<!ELEMENT csvversionNumber (#PCDATA) >
+<!ELEMENT csvversionName (#PCDATA) >
+
+<!ELEMENT csvCreateWTOrganization (csvname, csvcodingSystem, csvorganizationId, csvdescription, csvaddress, csvconferencingURL, csvconferencingId, csvdomain, csvinternetDomain, csvclassification, csvdirectoryService)>
+<!ATTLIST csvCreateWTOrganization handler CDATA #IMPLIED>
+<!ELEMENT csvcodingSystem (#PCDATA)>
+<!ELEMENT csvconferencingId (#PCDATA)>
+<!ELEMENT csvclassification (#PCDATA)>
+<!ELEMENT csvorganizationId (#PCDATA)>
+<!ELEMENT csvaddress (#PCDATA)>
+<!ELEMENT csvdirectoryService (#PCDATA)>
+
+<!ELEMENT csvCreateSupplier (csvSupplierType, csvorganization, csvdomain, csvlifecycletemplate, csvlifecyclestate, csvteamTemplate, csvtype)>
+<!ATTLIST csvCreateSupplier handler CDATA #IMPLIED>
+<!ELEMENT csvEndSupplier EMPTY>
+<!ATTLIST csvEndSupplier handler CDATA #IMPLIED>
+<!ELEMENT csvSupplierType (#PCDATA)>
+<!ELEMENT csvAddContactToSupplier (csvSupplierType, csvorganization, csvuser, csvname, csvdescription, csvEmail, csvphone)>
+<!ATTLIST csvAddContactToSupplier handler CDATA #IMPLIED>
+<!ELEMENT csvphone (#PCDATA)>
+<!ELEMENT csvAddDocumentToSupplier (csvSupplierType, csvorganization, csvdocNumber, csvdocContainerPath)>
+<!ATTLIST csvAddDocumentToSupplier handler CDATA #IMPLIED>
+<!ELEMENT csvdocContainerPath (#PCDATA)>
+
+<!ELEMENT csvManufacturerPart ( csvuser, csvpartName, csvpartNumber, csvtype, csvsource, csvfolder, csvlifecycle, csvview, csvvariation1?, csvvariation2?, csvteamTemplate, csvlifecyclestate, csvtypedef, csvversion, csviteration, csvparentContainerPath, csvmanufacturerID, csvmanufacturerName, csvsecurityLabels?, csvserviceable?, csvservicekit? )>
+<!ATTLIST csvManufacturerPart  handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginManufacturerPart ( csvpartName, csvpartNumber, csvtype, csvsource, csvfolder, csvlifecycle, csvview, csvvariation1?, csvvariation2?, csvteamTemplate, csvlifecyclestate, csvtypedef, csvversion, csviteration, csvmanufacturerID, csvmanufacturerName, csvsecurityLabels?, csvserviceable?, csvservicekit?  )>
+<!ATTLIST csvBeginManufacturerPart  handler CDATA #IMPLIED>
+
+<!ELEMENT csvEndManufacturerPart ( csvparentContainerPath )>
+<!ATTLIST csvEndManufacturerPart  handler CDATA #IMPLIED>
+
+<!ELEMENT csvVendorPart ( csvuser, csvpartName, csvpartNumber, csvtype, csvsource, csvfolder, csvlifecycle, csvview, csvvariation1?, csvvariation2?, csvteamTemplate, csvlifecyclestate, csvtypedef, csvversion, csviteration, csvparentContainerPath, csvvendorID, csvvendorName, csvsecurityLabels?, csvserviceable?, csvservicekit? )>
+<!ATTLIST csvVendorPart  handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginVendorPart ( csvpartName, csvpartNumber, csvtype, csvsource, csvfolder, csvlifecycle, csvview, csvvariation1?, csvvariation2?, csvteamTemplate, csvlifecyclestate, csvtypedef, csvversion, csviteration, csvvendorID, csvvendorName, csvsecurityLabels?, csvserviceable?, csvservicekit? )>
+<!ATTLIST csvBeginVendorPart  handler CDATA #IMPLIED>
+
+<!ELEMENT csvEndVendorPart ( csvparentContainerPath )>
+<!ATTLIST csvEndVendorPart  handler CDATA #IMPLIED>
+
+<!ELEMENT csvAddAML ( csvOEMPartNumber, csvOEMVersion, csvOEMIteration, csvOEMView, csvOEMVariation1?, csvOEMVariation2?, csvOEMOrganizationID, csvOEMOrganizationName, csvsourcingContext, csvmanufacturerPartNumber, csvmanufacturerName, csvmanufacturerID, csvmanufacturerPartContainer, csvmanufacturerSourcingStatus )>
+<!ATTLIST csvAddAML  handler CDATA #IMPLIED>
+
+<!ELEMENT csvAddAVL ( csvOEMPartNumber, csvOEMVersion, csvOEMIteration, csvOEMView, csvOEMVariation1?, csvOEMVariation2?, csvOEMOrganizationID, csvOEMOrganizationName, csvsourcingContext, csvvendorPartNumber, csvvendorName, csvvendorID, csvvendorPartContainer, csvvendorSourcingStatus, csvmanufacturerPartNumber, csvmanufacturerName, csvmanufacturerID, csvmanufacturerPartContainer )>
+<!ATTLIST csvAddAVL  handler CDATA #IMPLIED>
+
+<!ELEMENT csvRemoveAML ( csvOEMPartNumber, csvOEMVersion, csvOEMIteration, csvOEMView, csvOEMVariation1?, csvOEMVariation2?, csvOEMOrganizationID, csvOEMOrganizationName, csvsourcingContext, csvmanufacturerPartNumber, csvmanufacturerName, csvmanufacturerID, csvmanufacturerPartContainer )>
+<!ATTLIST csvRemoveAML  handler CDATA #IMPLIED>
+
+<!ELEMENT csvRemoveAVL ( csvOEMPartNumber, csvOEMVersion, csvOEMIteration, csvOEMView, csvOEMVariation1?, csvOEMVariation2?, csvOEMOrganizationID, csvOEMOrganizationName, csvsourcingContext, csvvendorPartNumber, csvvendorName, csvvendorID, csvvendorPartContainer )>
+<!ATTLIST csvRemoveAVL  handler CDATA #IMPLIED>
+
+<!ELEMENT csvSetAMLPreference ( csvOEMPartNumber, csvOEMVersion, csvOEMIteration, csvOEMView, csvOEMVariation1?, csvOEMVariation2?, csvOEMOrganizationID, csvOEMOrganizationName, csvsourcingContext, csvmanufacturerPartNumber, csvmanufacturerName, csvmanufacturerID, csvmanufacturerPartContainer, csvmanufacturerSourcingStatus )>
+<!ATTLIST csvSetAMLPreference  handler CDATA #IMPLIED>
+
+<!ELEMENT csvSetAVLPreference ( csvOEMPartNumber, csvOEMVersion, csvOEMIteration, csvOEMView, csvOEMVariation1?, csvOEMVariation2?, csvOEMOrganizationID, csvOEMOrganizationName, csvsourcingContext, csvvendorPartNumber, csvvendorName, csvvendorID, csvvendorPartContainer, csvvendorSourcingStatus )>
+<!ATTLIST csvSetAVLPreference  handler CDATA #IMPLIED>
+
+<!ELEMENT csvSourcingContext ( csvname, csvtypedef )>
+<!ATTLIST csvSourcingContext  handler CDATA #IMPLIED>
+
+<!ELEMENT csvEndSourcingContext EMPTY>
+<!ATTLIST csvEndSourcingContext  handler CDATA #IMPLIED>
+
+<!ELEMENT csvOEMPartNumber (#PCDATA) >
+<!ELEMENT csvOEMVersion (#PCDATA) >
+<!ELEMENT csvOEMIteration (#PCDATA) >
+<!ELEMENT csvOEMView (#PCDATA) >
+<!ELEMENT csvOEMVariation1 (#PCDATA) >
+<!ELEMENT csvOEMVariation2 (#PCDATA) >
+<!ELEMENT csvOEMOrganizationID (#PCDATA) >
+<!ELEMENT csvOEMOrganizationName (#PCDATA) >
+<!ELEMENT csvsourcingContext (#PCDATA) >
+<!ELEMENT csvvendorPartNumber (#PCDATA) >
+<!ELEMENT csvvendorPartContainer (#PCDATA) >
+<!ELEMENT csvmanufacturerPartNumber (#PCDATA) >
+<!ELEMENT csvmanufacturerName (#PCDATA) >
+<!ELEMENT csvmanufacturerID (#PCDATA) >
+<!ELEMENT csvmanufacturerPartContainer (#PCDATA) >
+<!ELEMENT csvmanufacturerSourcingStatus (#PCDATA) >
+<!ELEMENT csvvendorSourcingStatus (#PCDATA) >
+<!ELEMENT csvvendorID (#PCDATA) >
+<!ELEMENT csvvendorName (#PCDATA) >
+
+<!ELEMENT csvPreferenceCategory ( csvname, csvparentName?, csvdisplayName, csvdescription?)>
+<!ATTLIST csvPreferenceCategory handler CDATA #IMPLIED>
+<!ELEMENT csvPreferenceClient ( csvname, csvparentName?, csvdisplayName, csvdescription?)>
+<!ATTLIST csvPreferenceClient handler CDATA #IMPLIED>
+<!ELEMENT csvPreferenceDefinition ( csvname, csvvisibility, csvcategoryName, csvdisplayName, csvdescription, csvlongDescription, csvdefaultValue , csvhandler, csvdefaultComments?, csvclientOverride?, csvclientDelegate?, csvclientData?, csvshowIfInstalled?, csvhideIfInstalled?)>
+<!ATTLIST csvPreferenceDefinition handler CDATA #IMPLIED>
+<!ELEMENT csvLinkPreferenceClientDefinition ( csvname, csvclientName)>
+<!ATTLIST csvLinkPreferenceClientDefinition handler CDATA #IMPLIED>
+<!ELEMENT csvLinkPreferenceCategoryDefinition ( csvname, csvcategoryName, csvcategoryRole)>
+<!ATTLIST csvLinkPreferenceCategoryDefinition handler CDATA #IMPLIED>
+<!ELEMENT csvUnlinkPreferenceClientDefinition ( csvname, csvclientName)>
+<!ATTLIST csvUnlinkPreferenceClientDefinition handler CDATA #IMPLIED>
+<!ELEMENT csvPreferenceInstance ( csvname, csvcomments?, csvcontainerClass?, csvcontainerName?, csvorganization?, csvparentContainerPath?, csvuser?, csvclientName?, csvvalue, csvlock?, csvlockOnly?)>
+<!ATTLIST csvPreferenceInstance handler CDATA #IMPLIED>
+<!ELEMENT csvDeletePreferenceCategory ( csvname )>
+<!ATTLIST csvDeletePreferenceCategory handler CDATA #IMPLIED>
+<!ELEMENT csvDeletePreferenceClient ( csvname )>
+<!ATTLIST csvDeletePreferenceClient handler CDATA #IMPLIED>
+<!ELEMENT csvDeletePreferenceDefinition ( csvname )>
+<!ATTLIST csvDeletePreferenceDefinition handler CDATA #IMPLIED>
+<!ELEMENT csvDeletePreferenceInstance ( csvname, csvcontainerClass?, csvcontainerName?, csvorganization?, csvparentContainerPath?, csvuser?, csvclientName?)>
+<!ATTLIST csvDeletePreferenceInstance handler CDATA #IMPLIED>
+
+<!ELEMENT csvvisibility (#PCDATA)>
+<!ELEMENT csvcategoryName (#PCDATA)>
+<!ELEMENT csvcategoryRole (#PCDATA)>
+<!ELEMENT csvclientName (#PCDATA)>
+<!ELEMENT csvlongDescription (#PCDATA)>
+<!ELEMENT csvparentName (#PCDATA)>
+<!ELEMENT csvhandler (#PCDATA)>
+<!ELEMENT csvlock (#PCDATA)>
+<!ELEMENT csvclientOverride (#PCDATA)>
+<!ELEMENT csvclientDelegate (#PCDATA)>
+<!ELEMENT csvclientData (#PCDATA)>
+<!ELEMENT csvlockOnly (#PCDATA)>
+<!ELEMENT csvcomments (#PCDATA)>
+<!ELEMENT csvdefaultComments (#PCDATA)>
+<!ELEMENT csvshowIfInstalled (#PCDATA)>
+<!ELEMENT csvhideIfInstalled (#PCDATA)>
+<!ELEMENT csvdisplayName (#PCDATA) >
+
+<!ELEMENT csvParamAttrDefnLink ( csvgenericNumber, csvgenericVersion, csvgenericIteration, csvparameterName, csvdefinition)>
+<!ELEMENT csvgenericNumber (#PCDATA) >
+<!ELEMENT csvgenericVersion (#PCDATA) >
+<!ELEMENT csvgenericIteration (#PCDATA) >
+<!ELEMENT csvparameterName (#PCDATA)>
+
+<!ATTLIST csvParamAttrDefnLink  handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginGenericVariantLinks (#PCDATA)>
+<!ATTLIST csvBeginGenericVariantLinks handler CDATA #IMPLIED>
+
+<!ELEMENT csvGenericVariantLink ( csvgenericNumber, csvgenericVersion, csvvariantNumber, csvvariantVersion, csvorganizationName?, csvorganizationID?)>
+<!ELEMENT csvvariantNumber (#PCDATA) >
+<!ELEMENT csvvariantVersion (#PCDATA) >
+
+<!ATTLIST csvGenericVariantLink handler CDATA #IMPLIED>
+<!ELEMENT csvgenericType (#PCDATA) >
+<!ELEMENT csvcollapsible (#PCDATA) >
+<!ELEMENT csvlogicbasePath (#PCDATA) >
+<!ELEMENT csvcomponentId (#PCDATA) >
+<!ELEMENT csvinclusionOption (#PCDATA) >
+<!ELEMENT csvquantityOption (#PCDATA) >
+<!ELEMENT csvreference (#PCDATA) >
+
+<!ELEMENT csvEndGenericVariantLinks (#PCDATA)>
+<!ATTLIST csvEndGenericVariantLinks handler CDATA #IMPLIED>
+
+<!ELEMENT csvVariantSpec (csvbatchInputFilePath, csvdescription, csvfolder, csvlifecycle, csvlifecyclestate, csvparentContainerPath, csvorganizationName?, csvorganizationID?, csvbaselinenumber?, csvnavcriteria?)>
+
+<!ATTLIST csvVariantSpec  handler CDATA #IMPLIED>
+<!ELEMENT csvbatchInputFilePath (#PCDATA)>
+<!ELEMENT csvnavcriteria (#PCDATA)>
+<!ELEMENT csvbaselinenumber (#PCDATA)>
+
+<!ELEMENT csvWfRoleSetup ( csvassigneeType, csvassigneeName, csvrole, csvviewPermission, csvaddPermission, csvremovePermission)>
+<!ATTLIST csvWfRoleSetup handler CDATA #IMPLIED>
+<!ELEMENT csvassigneeType (#PCDATA) >
+<!ELEMENT csvassigneeName (#PCDATA) >
+<!ELEMENT csvviewPermission (#PCDATA) >
+<!ELEMENT csvaddPermission (#PCDATA) >
+<!ELEMENT csvremovePermission (#PCDATA) >
+
+<!ELEMENT csvWfResourcePool ( csvrole,csvresourcePoolType,csvresourcePoolName)>
+<!ATTLIST csvWfResourcePool handler CDATA #IMPLIED>
+<!ELEMENT csvresourcePoolType (#PCDATA) >
+<!ELEMENT csvresourcePoolName (#PCDATA) >
+
+<!ELEMENT csvWfRoleResetMap ( csvrole, csvreset)>
+
+<!ATTLIST csvWfRoleResetMap handler CDATA #IMPLIED>
+
+<!ELEMENT csvreset (#PCDATA) >
+
+
+
+<!ELEMENT csvCreateProcessOverview (csvcontentID?,csvcontentLocale?,csvfileName?)>
+
+<!ATTLIST csvCreateProcessOverview  handler CDATA #IMPLIED>
+<!ELEMENT csvcontentID (#PCDATA)>
+<!ELEMENT csvcontentLocale (#PCDATA)>
+
+<!ELEMENT csvLoadProcessOverview (csvcontentLocale?, csvfileName?)>
+<!ATTLIST csvLoadProcessOverview handler CDATA #IMPLIED>
+
+<!ELEMENT csvProblemReport ( csvproblemReportName, csvproblemReportNumber, csvproblemReportDescription, csvlifecyclestate? )>
+<!ATTLIST csvProblemReport handler CDATA #IMPLIED>
+<!ELEMENT csvproblemReportName (#PCDATA) >
+<!ELEMENT csvproblemReportNumber (#PCDATA) >
+<!ELEMENT csvproblemReportDescription (#PCDATA) >
+
+<!ELEMENT csvWTVariance ( csvWTVarianceName, csvWTVarianceNumber, csvWTVarianceDescription, csvlifecyclestate? )>
+<!ATTLIST csvWTVariance handler CDATA #IMPLIED>
+<!ELEMENT csvWTVarianceName (#PCDATA) >
+<!ELEMENT csvWTVarianceNumber (#PCDATA) >
+<!ELEMENT csvWTVarianceDescription (#PCDATA) >
+
+<!ELEMENT csvChangeRequest ( csvchangeRequestName, csvchangeRequestNumber, csvchangeRequestDescription , csvlifecyclestate? )>
+<!ATTLIST csvChangeRequest handler CDATA #IMPLIED>
+<!ELEMENT csvchangeRequestName (#PCDATA) >
+<!ELEMENT csvchangeRequestNumber (#PCDATA) >
+<!ELEMENT csvchangeRequestDescription (#PCDATA) >
+
+<!ELEMENT csvChangeNotice ( csvchangeNoticeName, csvchangeNoticeNumber, csvchangeNoticeDescription, csvlifecyclestate? )>
+<!ATTLIST csvChangeNotice handler CDATA #IMPLIED>
+<!ELEMENT csvchangeNoticeName (#PCDATA) >
+<!ELEMENT csvchangeNoticeNumber (#PCDATA) >
+<!ELEMENT csvchangeNoticeDescription (#PCDATA) >
+
+<!ELEMENT csvChangeActivity ( csvchangeActivityName, csvchangeActivityNumber, csvchangeActivityDescription, csvlifecyclestate? )>
+<!ATTLIST csvChangeActivity handler CDATA #IMPLIED>
+<!ELEMENT csvchangeActivityName (#PCDATA) >
+<!ELEMENT csvchangeActivityNumber (#PCDATA) >
+<!ELEMENT csvchangeActivityDescription (#PCDATA) >
+
+<!ELEMENT csvchangeObject (#PCDATA) >
+<!ELEMENT csvchangeableNumber (#PCDATA) >
+<!ELEMENT csvchangeableType (#PCDATA) >
+
+<!ELEMENT csvBeginChangeDirective ( csvchgDirectiveNumber, csvtypedef, csvdescription?, csvneedDate?, csvfolder?, csvlifecycle?, csvlifecyclestate?, csvteamTemplate?, csvcreateTimestamp?, csvmodifyTimestamp?, csvuser? )>
+<!ATTLIST csvBeginChangeDirective  handler CDATA #IMPLIED>
+<!ELEMENT csvchgDirectiveNumber (#PCDATA) >
+<!ELEMENT csvneedDate (#PCDATA) >
+
+<!ELEMENT csvEndChangeDirective EMPTY >
+<!ATTLIST csvEndChangeDirective  handler CDATA #IMPLIED>
+
+<!ELEMENT csvAddImpactedItem ( csvchgDirectiveNumber, csvimpactedItemNumber )>
+<!ATTLIST csvAddImpactedItem  handler CDATA #IMPLIED>
+<!ELEMENT csvimpactedItemNumber (#PCDATA) >
+
+<!ELEMENT csvRelevantRequestData ( csvchangeObject, csvchangeableNumber, csvchangeableType )>
+<!ATTLIST csvRelevantRequestData handler CDATA #IMPLIED>
+
+<!ELEMENT csvAffectedActivityData ( csvchangeObject, csvchangeableNumber, csvchangeableType )>
+<!ATTLIST csvAffectedActivityData handler CDATA #IMPLIED>
+
+<!ELEMENT csvChangeRecord ( csvchangeObject, csvchangeableNumber, csvchangeableType )>
+<!ATTLIST csvChangeRecord handler CDATA #IMPLIED>
+
+<!ELEMENT csvCreateChangeLinkBegin EMPTY >
+<!ATTLIST csvCreateChangeLinkBegin handler CDATA #IMPLIED>
+
+<!ELEMENT csvCreateChangeLinkEnd EMPTY >
+<!ATTLIST csvCreateChangeLinkEnd handler CDATA #IMPLIED>
+
+<!ELEMENT csvPromotionNotice ( csvpromotionNoticeName, csvpromotionNoticeNumber, csvpromotionNoticeDescription )>
+<!ATTLIST csvPromotionNotice handler CDATA #IMPLIED>
+<!ELEMENT csvpromotionNoticeName (#PCDATA) >
+<!ELEMENT csvpromotionNoticeNumber (#PCDATA) >
+<!ELEMENT csvpromotionNoticeDescription (#PCDATA) >
+
+<!ELEMENT csvpersistableNumber (#PCDATA) >
+<!ELEMENT csvpersistableType (#PCDATA) >
+<!ELEMENT csvisPromotionTarget (#PCDATA) >
+
+<!ELEMENT csvAddPromotionObject ( csvpersistableNumber, csvpersistableType, csvisPromotionTarget )>
+<!ATTLIST csvAddPromotionObject handler CDATA #IMPLIED>
+
+<!ELEMENT csvCreateMaturityLinkBegin EMPTY >
+<!ATTLIST csvCreateMaturityLinkBegin handler CDATA #IMPLIED>
+
+<!ELEMENT csvCreateMaturityLinkEnd EMPTY >
+<!ATTLIST csvCreateMaturityLinkEnd handler CDATA #IMPLIED>
+
+<!ELEMENT csvRenderChoice ( csvrender )>
+<!ATTLIST csvRenderChoice  handler CDATA #IMPLIED>
+<!ELEMENT csvrender (#PCDATA) >
+
+<!ELEMENT csvTaskFormTemplate ( csvTemplateName )>
+<!ATTLIST csvTaskFormTemplate  handler CDATA #IMPLIED>
+<!ELEMENT csvTemplateName (#PCDATA) >
+
+<!ELEMENT csvWfDefaultRoleSetup ( csvvalue )>
+<!ATTLIST csvWfDefaultRoleSetup handler CDATA #IMPLIED>
+
+<!ELEMENT csvCreateSharedTeam (csvsharedTeamName, csvsharedTeamDescription, csvsharedTeamOwner, csvsharedTeamInvitation, csvsharedTeamEnabled, csvsharedTeamExtendable )>
+<!ATTLIST csvCreateSharedTeam handler CDATA #IMPLIED>
+<!ELEMENT csvsharedTeamName (#PCDATA) >
+<!ELEMENT csvsharedTeamDescription (#PCDATA) >
+<!ELEMENT csvsharedTeamOwner (#PCDATA) >
+<!ELEMENT csvsharedTeamInvitation (#PCDATA) >
+<!ELEMENT csvsharedTeamEnabled (#PCDATA) >
+<!ELEMENT csvsharedTeamExtendable (#PCDATA) >
+
+<!-- AuthorizationAgreement sequence -->
+<!ELEMENT csvAuthorizationAgreement ( csvagreementName, csvagreementStartDate, csvagreementEndDate, csvagreementIsActive, csvagreementAuthorizedRelatedChangeTypes, csvauthorizedParts, csvauthorizedPrincipals, csvfolder, csvview )>
+<!ATTLIST csvAuthorizationAgreement handler CDATA #IMPLIED>
+<!ELEMENT csvagreementName (#PCDATA) >
+<!ELEMENT csvagreementStartDate (#PCDATA) >
+<!ELEMENT csvagreementEndDate (#PCDATA) >
+<!ELEMENT csvagreementIsActive (#PCDATA) >
+<!ELEMENT csvagreementAuthorizedRelatedChangeTypes (#PCDATA) >
+<!ELEMENT csvauthorizedParts (#PCDATA) >
+<!ELEMENT csvauthorizedPrincipals (#PCDATA) >
+
+<!-- HandleNewTableViewsOnUpgrade sequence -->
+<!ELEMENT csvHandleNewTableViewsOnUpgrade ( csvTableID )>
+<!ATTLIST csvHandleNewTableViewsOnUpgrade handler CDATA #IMPLIED>
+<!ELEMENT csvTableID (#PCDATA) >
+
+<!-- csvUpdateTableView sequence -->
+<!ELEMENT csvUpdateTableView ( csvTableID , csvViewName, csvObjectType)>
+<!ATTLIST csvUpdateTableView handler CDATA #IMPLIED>
+<!ELEMENT csvViewName (#PCDATA) >
+<!ELEMENT csvObjectType (#PCDATA) >
+
+<!--
+Collector Preferences. It has no sub-elelemts. The handler implicitly loads all the preference
+definitions as it parses another XML Schema instance based configuration file.
+ -->
+<!ELEMENT csvCollectorPreferenceDefinition  EMPTY>
+<!ATTLIST csvCollectorPreferenceDefinition  handler CDATA #REQUIRED>
+
+<!-- X-12 ATO (AssembleToOrder): Navigation Filter Template -->
+<!ELEMENT csvBeginNavigationFilterTemplate (csvname, csvtype, csvdescription?, csvsupportExclusion?, csvsupportPartIba?)>
+<!ATTLIST csvBeginNavigationFilterTemplate handler CDATA #REQUIRED>
+<!ELEMENT csvsupportExclusion (#PCDATA)>
+<!ELEMENT csvsupportPartIba (#PCDATA)>
+
+<!-- value = attribute-value:attribute-value-description (description is optional) -->
+<!ELEMENT csvAddNavigationFilterAttribute (csvname, csvtype, csvgroup?, csvvalue?)>
+<!ATTLIST csvAddNavigationFilterAttribute handler CDATA #REQUIRED>
+
+<!ELEMENT csvgroup (#PCDATA)>
+
+<!ELEMENT csvEndNavigationFilterTemplate EMPTY>
+<!ATTLIST csvEndNavigationFilterTemplate handler CDATA #REQUIRED>
+
+<!ELEMENT csvRegisterNavigationFilterTemplate (csvname, csvtype, csvtemplateContainerPath?, csvtargetContainerPath)>
+<!ATTLIST csvRegisterNavigationFilterTemplate handler CDATA #REQUIRED>
+
+<!ELEMENT csvtargetContainerPath (#PCDATA)>
+
+<!-- BC ATO (AssembleToOrder): Navigation Filter Template -->
+
+<!-- BC Option GROUP-->
+
+<!ELEMENT csvOptionGroup (csvname,csvoptionTypeDef)>
+<!ATTLIST csvOptionGroup handler CDATA #REQUIRED>
+
+<!ELEMENT csvoptionTypeDef (#PCDATA)>
+
+<!-- EC Option GROUP-->
+
+<!-- BC Option -->
+<!ELEMENT csvBeginOption (csvtypedef, csvname, csvdescription?, csvoptionDataType?, csvQoMName?, csvOverrideDisplayUnits?, csvoptionGroup?, csvrequiredOption?, csvsingleChoiceSelection?, csvnumber?)>
+<!ATTLIST csvBeginOption handler CDATA #REQUIRED>
+
+<!ELEMENT csvBeginEditOption (csvnumber?, csvname, csvcontainerPath, csvdescription?, csvoptionDataType?, csvQoMName?, csvOverrideDisplayUnits?, csvrequiredOption?, csvsingleChoiceSelection?)>
+
+<!ATTLIST csvBeginEditOption handler CDATA #REQUIRED>
+
+
+
+<!ELEMENT csvEndEditOption EMPTY>
+
+<!ATTLIST csvEndEditOption handler CDATA #REQUIRED>
+
+
+
+<!ELEMENT csvOverrideDisplayUnits (#PCDATA)>
+
+<!ELEMENT csvoptionDataType (#PCDATA)>
+<!ELEMENT csvoptionGroup (#PCDATA)>
+<!ELEMENT csvrequiredOption (#PCDATA)>
+<!ELEMENT csvsingleChoiceSelection (#PCDATA)>
+
+<!ELEMENT csvEndOption EMPTY>
+<!ATTLIST csvEndOption handler CDATA #REQUIRED>
+
+<!-- EC Option -->
+
+<!-- BC Choice -->
+<!ELEMENT csvBeginChoice (csvname, csvdescription?, csvchoiceDataValue?, csvoption, csvtypedef, csvnumber?)>
+
+<!ATTLIST csvBeginChoice handler CDATA #REQUIRED>
+
+<!ELEMENT csvchoiceDataValue (#PCDATA)>
+<!ELEMENT csvoption (#PCDATA)>
+<!ELEMENT csvEndChoice EMPTY>
+<!ATTLIST csvEndChoice handler CDATA #REQUIRED>
+
+<!ELEMENT csvEditChoice (csvnumber?, csvname, csvdescription?, csvchoiceDataValue?)>
+
+<!ATTLIST csvEditChoice handler CDATA #REQUIRED>
+
+
+
+<!-- EC Choice -->
+
+<!-- BC ExpressionAlias -->
+<!ELEMENT csvBeginAlias (csvtypedef, csvname, csvexpressionString, csvversion?, csviteration?, csvnumber?, csvdescription?, csvcontainerPath?, csvfolder?, csvlifecycletemplate?, csvlifecyclestate?)>
+<!ATTLIST csvBeginAlias handler CDATA #REQUIRED>
+
+<!ELEMENT csvEndAlias EMPTY>
+<!ATTLIST csvEndAlias handler CDATA #REQUIRED>
+
+
+<!-- EC ExpressionAlias -->
+
+<!-- BC OptionSet -->
+
+<!ELEMENT csvBeginOptionSet (csvname, csvtypedef?, csvdescription?, csvsupportExclusionOptionChoices?, csvsupportItemOptionChoices?, csvsupportEffectivityOnOptionChoices?, csvreferenceOptionPoolRulesAutomatically?, csvmanageLocalRuleChangesIndependently? )>
+<!ATTLIST csvBeginOptionSet handler CDATA #REQUIRED>
+
+<!ELEMENT csvsupportExclusionOptionChoices (#PCDATA)>
+<!ELEMENT csvsupportItemOptionChoices (#PCDATA)>
+<!ELEMENT csvsupportEffectivityOnOptionChoices (#PCDATA)>
+<!ELEMENT csvreferenceOptionPoolRulesAutomatically (#PCDATA)>
+<!ELEMENT csvmanageLocalRuleChangesIndependently (#PCDATA)>
+
+<!ELEMENT csvAddChoice (csvname, csvoption?, csvcontainerPath?, csvstartDate?, csvendDate? )>
+<!ATTLIST csvAddChoice handler CDATA #REQUIRED>
+
+<!ELEMENT csvEndOptionSet EMPTY>
+<!ATTLIST csvEndOptionSet handler CDATA #REQUIRED>
+
+<!-- EC  Option Set -->
+
+<!-- BC ChoiceMappableChoiceLink -->
+<!ELEMENT csvChoiceMappableChoiceLink ( csvchoiceName, csvoption?, csvInstanceValue, csvExclude, csvcontainerPath? )>
+
+<!ATTLIST csvChoiceMappableChoiceLink  handler CDATA #IMPLIED>
+
+<!ELEMENT csvchoiceName (#PCDATA) >
+<!ELEMENT csvInstanceValue (#PCDATA) >
+<!ELEMENT csvExclude (#PCDATA) >
+
+<!-- EC for ChoiceMappableChoiceLink -->
+
+<!-- BC Choice Mapping -->
+<!ELEMENT csvBeginChoiceMapping (csvsourceChoiceName, csvnumber?, csvversion?, csviteration?, csvdescription?, csvlocal?, csvoptionSet?, csvcontainerPath?, csvlifecycletemplate?, csvlifecyclestate?, csvteamTemplate?)>
+<!ATTLIST csvBeginChoiceMapping handler CDATA #REQUIRED>
+
+<!ELEMENT csvsourceChoiceName (#PCDATA)>
+<!ELEMENT csvlocal (#PCDATA)>
+
+<!ELEMENT csvChoiceMappingTargetChoice (csvtargetChoiceName, csvcontainerPath?)>
+<!ATTLIST csvChoiceMappingTargetChoice handler CDATA #REQUIRED>
+
+<!ELEMENT csvtargetChoiceName (#PCDATA)>
+
+<!ELEMENT csvEndChoiceMapping EMPTY>
+<!ATTLIST csvEndChoiceMapping handler CDATA #REQUIRED>
+<!-- EC Choice Mapping -->
+
+<!-- BC Choice Enable -->
+<!ELEMENT csvBeginChoiceEnable (csvsourceChoiceName, csvnumber?, csvversion?, csviteration?, csvdescription?, csvlocal?, csvoptionSet?, csvcontainerPath?, csvlifecycletemplate?, csvlifecyclestate?, csvteamTemplate?)>
+<!ATTLIST csvBeginChoiceEnable handler CDATA #REQUIRED>
+
+<!ELEMENT csvChoiceEnableTargetChoice (csvtargetChoiceName, csvcontainerPath?)>
+<!ATTLIST csvChoiceEnableTargetChoice handler CDATA #REQUIRED>
+
+<!ELEMENT csvEndChoiceEnable EMPTY>
+<!ATTLIST csvEndChoiceEnable handler CDATA #REQUIRED>
+<!-- EC Choice Enable -->
+
+<!-- BC Choice Constraint -->
+<!ELEMENT csvBeginChoiceConstraint (csvnumber?, csvversion?, csviteration?, csvdescription?, csvlocal?, csvoptionSet?, csvlifecycletemplate?, csvlifecyclestate?, csvteamTemplate?)>
+<!ATTLIST csvBeginChoiceConstraint handler CDATA #REQUIRED>
+
+<!ELEMENT csvConstraintChoice (csvname, csvcontainerPath?)>
+<!ATTLIST csvConstraintChoice handler CDATA #REQUIRED>
+
+<!ELEMENT csvEndChoiceConstraint EMPTY>
+
+<!ATTLIST csvEndChoiceConstraint handler CDATA #REQUIRED>
+<!-- EC Choice Constraint -->
+
+<!-- Condition Rules -->
+<!ELEMENT csvruleType (#PCDATA)>
+<!ELEMENT csvBeginConditionalRule (csvnumber?, csvversion?, csviteration?, csvdescription?, csvruleType, csvlocal?, csvoptionSet?, csvcontainerPath?, csvlifecycletemplate?, csvlifecyclestate?, csvteamTemplate?)>
+<!ATTLIST csvBeginConditionalRule handler CDATA #REQUIRED>
+
+<!ELEMENT csvEndConditionalRule EMPTY>
+<!ATTLIST csvEndConditionalRule handler CDATA #REQUIRED>
+
+<!-- Rule Member -->
+<!ELEMENT csvBeginRuleMemberAction (csvruleMemberAction)>
+<!ATTLIST csvBeginRuleMemberAction handler CDATA #REQUIRED>
+<!ELEMENT csvEndRuleMemberAction EMPTY>
+<!ATTLIST csvEndRuleMemberAction handler CDATA #REQUIRED>
+
+<!ELEMENT csvAddRuleActionMember (csvmemberName, csvmemberNumber?, csvmemberClass, csvcontainerPath?)>
+<!ATTLIST csvAddRuleActionMember handler CDATA #REQUIRED>
+<!ELEMENT csvAddRuleMember (csvmemberName, csvmemberNumber?, csvmemberClass, csvcontainerPath?, csvruleMemberAction)>
+<!ATTLIST csvAddRuleMember handler CDATA #REQUIRED>
+<!ELEMENT csvmemberName (#PCDATA)>
+<!ELEMENT csvmemberNumber (#PCDATA)>
+<!ELEMENT csvmemberClass (#PCDATA)>
+<!ELEMENT csvruleMemberAction (#PCDATA)>
+
+<!-- BC Register Option Set -->
+
+<!ELEMENT csvRegisterOptionSet (csvname, csvstate?, csvoptionSetContainerPath?, csvOptionSetAssignableClass?, csvOptionSetAssignableNumber?)>
+<!ATTLIST csvRegisterOptionSet handler CDATA #REQUIRED>
+
+<!ELEMENT csvoptionSetContainerPath (#PCDATA)>
+
+<!ELEMENT csvOptionSetAssignableClass (#PCDATA)>
+<!ELEMENT csvOptionSetAssignableNumber (#PCDATA)>
+
+<!-- EC Register Option Set -->
+
+<!-- BC Nav Criteria creation -->
+
+<!ELEMENT csvBeginNavCriteria (csvname, csvuser?, csvpartNumber, csvapplicableType?, csvsharedToAll?)>
+<!ATTLIST csvBeginNavCriteria handler CDATA #REQUIRED>
+<!ELEMENT csvapplicableType (#PCDATA)>
+<!ELEMENT csvsharedToAll (#PCDATA)>
+
+<!ELEMENT csvEndNavCriteria EMPTY>
+<!ATTLIST csvEndNavCriteria handler CDATA #REQUIRED>
+
+<!-- EC Nav Criteria creation -->
+
+<!-- BC Nav Filter creation -->
+<!ELEMENT csvBeginNavFilter (csvoptionSet, csvfilterMode?)>
+<!ATTLIST csvBeginNavFilter handler CDATA #REQUIRED>
+
+<!ELEMENT csvoptionSet (#PCDATA) >
+<!ELEMENT csvfilterMode (#PCDATA)>
+
+<!ELEMENT csvEndNavFilter EMPTY>
+<!ATTLIST csvEndNavFilter handler CDATA #REQUIRED>
+
+<!-- EC Nav Filter creation -->
+
+<!-- assign basic expression csvreferenceDesignator is optional and should be used when assigning expressions to occurrences-->
+<!ELEMENT csvBeginAssignBasicExpression (csvoptionSet, csvreferenceDesignator?)>
+<!ATTLIST csvBeginAssignBasicExpression handler CDATA #REQUIRED>
+
+<!ELEMENT csvEndAssignBasicExpression EMPTY>
+<!ATTLIST csvEndAssignBasicExpression handler CDATA #REQUIRED>
+
+<!ELEMENT csvAddBasicExpressionMember ( csvchoiceName, csvoption?, csvInstanceValue, csvExclude, csvcontainerPath? )>
+<!ATTLIST csvAddBasicExpressionMember  handler CDATA #IMPLIED>
+<!-- end assign basic expression -->
+
+<!-- assign expression csvreferenceDesignator is optional and should be used when assigning expressions to occurrences-->
+<!ELEMENT csvBeginAssignExpression (csvexpression, csvreferenceDesignator?)>
+<!ATTLIST csvBeginAssignExpression handler CDATA #REQUIRED>
+
+<!ELEMENT csvAddLogicalExpression (csvnumber, csvexpression, csvdescription?)>
+<!ATTLIST csvAddLogicalExpression handler CDATA #REQUIRED>
+
+<!ELEMENT csvAddLogicalExpressionMember (csvmemberName, csvmemberNumber?, csvmemberClass, csvcontainerPath?)>
+<!ATTLIST csvAddLogicalExpressionMember handler CDATA #REQUIRED>
+
+<!ELEMENT csvEndLogicalExpression EMPTY>
+<!ATTLIST csvEndLogicalExpression handler CDATA #REQUIRED>
+
+<!ELEMENT csvEndAssignExpression EMPTY>
+<!ATTLIST csvEndAssignExpression handler CDATA #REQUIRED>
+<!-- EC assign expression -->
+
+<!-- BC assign independent expression -->
+<!ELEMENT csvBeginIndependentAssignExpression (csvexpression, csvname?, csvnumber?, csvversion?, csviteration?, csvreferenceDesignator?)>
+<!ATTLIST csvBeginIndependentAssignExpression handler CDATA #REQUIRED>
+
+<!ELEMENT csvEndIndependentAssignExpression EMPTY>
+<!ATTLIST csvEndIndependentAssignExpression handler CDATA #REQUIRED>
+
+<!ELEMENT csvBeginAssignBasicIndependentExpression (csvoptionSet, csvname?, csvnumber?, csvversion?, csviteration?, csvreferenceDesignator?)>
+<!ATTLIST csvBeginAssignBasicIndependentExpression handler CDATA #REQUIRED>
+
+<!ELEMENT csvEndAssignBasicIndependentExpression EMPTY>
+<!ATTLIST csvEndAssignBasicIndependentExpression handler CDATA #REQUIRED>
+<!-- EC assign independent expression -->
+
+<!-- BC ExternalLogicLink -->
+<!ELEMENT csvExternalLogicLink (csvassemblyPartNumber, csvconstituentPartNumber, csvreference)>
+<!ATTLIST csvExternalLogicLink handler CDATA #REQUIRED>
+<!-- EC ExternalLogicLink -->
+
+<!-- EC ATO (AssembleToOrder): Navigation Filter Template -->
+
+<!ELEMENT csvFormulaMetaData ( csvuser, csvname, csvdescription, csvtype, csvformulaClassName, csvlogicbasePath?, csvfolder, csvparentContainerPath, csvorganizationName?, csvorganizationID?, csvcreateTimestamp?, csvmodifyTimestamp? )>
+<!ATTLIST csvFormulaMetaData  handler CDATA #IMPLIED>
+<!ELEMENT csvFormulaSet ( csvuser, csvname, csvdescription, csvlogicbasePath?, csvfolder, csvparentContainerPath, csvorganizationName?, csvorganizationID?, csvcreateTimestamp?, csvmodifyTimestamp? )>
+<!ATTLIST csvFormulaSet  handler CDATA #IMPLIED>
+<!ELEMENT csvAddFormulaMetaData ( csvformulaSetName, csvformulaMetaDataName, csvattributeName, csvorganizationName?, csvorganizationID? )>
+<!ATTLIST csvAddFormulaMetaData  handler CDATA #IMPLIED>
+<!ELEMENT csvRemoveFormulaMetaData ( csvformulaSetName, csvformulaMetaDataName, csvattributeName, csvorganizationName?, csvorganizationID? )>
+<!ATTLIST csvRemoveFormulaMetaData  handler CDATA #IMPLIED>
+
+<!ELEMENT csvformulaSetName (#PCDATA)>
+<!ELEMENT csvformulaMetaDataName (#PCDATA)>
+<!ELEMENT csvformulaClassName (#PCDATA)>
+
+<!-- MPMLink Objects Start -->
+
+<!ELEMENT csvparentNumber (#PCDATA) >
+<!ELEMENT csvparentVersion (#PCDATA) >
+<!ELEMENT csvparentIteration (#PCDATA) >
+<!ELEMENT csvparentType (#PCDATA) >
+<!ELEMENT csvchildNumber (#PCDATA) >
+<!ELEMENT csvchildVersion (#PCDATA) >
+<!ELEMENT csvchildIteration (#PCDATA) >
+<!ELEMENT csvchildType (#PCDATA) >
+<!ELEMENT csvchildName (#PCDATA) >
+<!ELEMENT csvupstreamContext (#PCDATA) >
+<!ELEMENT csvdownstreamContext (#PCDATA) >
+<!ELEMENT csvconsumable (#PCDATA) >
+<!ELEMENT csvstandardProcessPlan (#PCDATA) >
+<!ELEMENT csvopLabel (#PCDATA) >
+<!ELEMENT csvseqLinkNumber (#PCDATA) >
+<!ELEMENT csvseqBranchingOpLabel (#PCDATA) >
+<!ELEMENT csvseqReturnOpLabel (#PCDATA) >
+<!ELEMENT csvquantity (#PCDATA) >
+<!ELEMENT csvallocationNumber (#PCDATA) >
+<!ELEMENT csvscheduled (#PCDATA) >
+<!ELEMENT csvusageRate (#PCDATA) >
+<!ELEMENT csvplantNumber (#PCDATA) >
+<!ELEMENT csvplantVersion (#PCDATA) >
+<!ELEMENT csvplantIteration (#PCDATA) >
+<!ELEMENT csvplantView (#PCDATA) >
+<!ELEMENT csvallocationType (#PCDATA) >
+<!ELEMENT csvcmpIdPath (#PCDATA) >
+<!ELEMENT csvlineNumberPath (#PCDATA) >
+<!ELEMENT csvassemblyNumber (#PCDATA) >
+<!ELEMENT csvconstraintType (#PCDATA) >
+<!ELEMENT csvexternal (#PCDATA) >
+<!ELEMENT csvusage (#PCDATA) >
+<!ELEMENT csverpValidationCode (#PCDATA) >
+<!ELEMENT csvcompatibilityType (#PCDATA)>
+<!ELEMENT csvstepUsageRate1 (#PCDATA)>
+<!ELEMENT csvstepUsageRate2 (#PCDATA)>
+<!ELEMENT csvstepUsageRate3 (#PCDATA)>
+<!ELEMENT csvstepUsageRate4 (#PCDATA)>
+<!ELEMENT csvstepUsageRate5 (#PCDATA)>
+<!ELEMENT csvstepUsageRate6 (#PCDATA)>
+<!ELEMENT csvstepUsageRate7 (#PCDATA)>
+<!ELEMENT csvstepUsageRate8 (#PCDATA)>
+<!ELEMENT csvalternateUnit (#PCDATA)>
+<!ELEMENT csvnumerator (#PCDATA)>
+<!ELEMENT csvdenominator (#PCDATA)>
+<!ELEMENT csvdownStreamRootPartNumber (#PCDATA)>
+<!ELEMENT csvdownStreamPath (#PCDATA)>
+<!ELEMENT csvdownStreamLeafPartView (#PCDATA)>
+<!ELEMENT csvupStreamRootPartNumber (#PCDATA)>
+<!ELEMENT csvupStreamPath (#PCDATA)>
+<!ELEMENT csvupStreamLeafPartView (#PCDATA)>
+
+<!-- PROCESSPLAN RELATED OBJECTS -->
+
+<!ELEMENT csvCreateProcessPlanRepresentation ( csvparentNumber, csvparentVersion, csvparentIteration, csvparentView, csvrepDirectory, csvrepName, csvrepDescription, csvrepDefault, csvrepCreateThumbnail, csvrepStoreEdz, csvorganizationName?, csvorganizationID? )>
+<!ATTLIST csvCreateProcessPlanRepresentation handler CDATA #REQUIRED>
+
+<!ELEMENT csvCreateProcessPlan ( csvuser, csvname, csvnumber, csvcategory, csvdescription, csvstandardProcessPlan, csvdefaultUnit, csvfolder, csvlifecycle, csvview, csvteamTemplate, csvlifecyclestate, csvtypedef, csvparentContainerPath, csvversion, csviteration, csvorganizationName?, csvorganizationID?, csvcreateTimestamp?, csvmodifyTimestamp? )>
+<!ATTLIST csvCreateProcessPlan handler CDATA #REQUIRED>
+
+<!ELEMENT csvBeginProcessPlan ( csvuser, csvname, csvnumber, csvcategory, csvdescription, csvstandardProcessPlan, csvdefaultUnit, csvfolder, csvlifecycle, csvview, csvteamTemplate, csvlifecyclestate, csvtypedef, csvparentContainerPath, csvversion, csviteration, csvorganizationName?, csvorganizationID?, csvcreateTimestamp?, csvmodifyTimestamp? )>
+<!ATTLIST csvBeginProcessPlan handler CDATA #REQUIRED>
+
+<!ELEMENT csvEndProcessPlan EMPTY>
+<!ATTLIST csvEndProcessPlan handler CDATA #REQUIRED>
+
+<!ELEMENT csvCreateOperationRepresentation ( csvparentNumber, csvparentVersion, csvparentIteration, csvparentView, csvrepDirectory, csvrepName, csvrepDescription, csvrepDefault, csvrepCreateThumbnail, csvrepStoreEdz, csvorganizationName?, csvorganizationID? )>
+<!ATTLIST csvCreateOperationRepresentation handler CDATA #REQUIRED>
+
+<!ELEMENT csvCreateOperation ( csvuser, csvname, csvnumber, csvcategory, csvdescription, csvdefaultUnit, csvfolder, csvlifecycle, csvview, csvteamTemplate, csvlifecyclestate, csvtypedef, csvparentContainerPath, csvversion, csviteration, csvorganizationName?, csvorganizationID?, csvcreateTimestamp?, csvmodifyTimestamp? )>
+<!ATTLIST csvCreateOperation handler CDATA #REQUIRED>
+
+<!ELEMENT csvBeginOperation ( csvuser, csvname, csvnumber, csvcategory, csvdescription, csvdefaultUnit, csvfolder, csvlifecycle, csvview, csvteamTemplate, csvlifecyclestate, csvtypedef, csvparentContainerPath, csvversion, csviteration, csvorganizationName?, csvorganizationID?, csvcreateTimestamp?, csvmodifyTimestamp? )>
+<!ATTLIST csvBeginOperation handler CDATA #REQUIRED>
+
+<!ELEMENT csvEndOperation EMPTY>
+<!ATTLIST csvEndOperation handler CDATA #REQUIRED>
+
+<!ELEMENT csvCreateOperationUsageLink ( csvtypedef, csvparentNumber, csvparentVersion, csvparentIteration, csvparentView, csvparentType, csvchildNumber, csvopLabel )>
+<!ATTLIST csvCreateOperationUsageLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvBeginOperationUsageLink ( csvtypedef, csvparentNumber, csvparentVersion, csvparentIteration, csvparentView, csvparentType, csvchildNumber, csvopLabel )>
+<!ATTLIST csvBeginOperationUsageLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvEndOperationUsageLink EMPTY>
+<!ATTLIST csvEndOperationUsageLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvCreateSequenceRepresentation ( csvparentNumber, csvparentVersion, csvparentIteration, csvparentView, csvrepDirectory, csvrepName, csvrepDescription, csvrepDefault, csvrepCreateThumbnail, csvrepStoreEdz, csvorganizationName?, csvorganizationID? )>
+<!ATTLIST csvCreateSequenceRepresentation handler CDATA #REQUIRED>
+
+<!ELEMENT csvCreateSequence ( csvuser, csvname, csvnumber, csvdescription, csvdefaultUnit, csvfolder, csvlifecycle, csvview, csvteamTemplate, csvlifecyclestate, csvtypedef, csvparentContainerPath, csvversion, csviteration, csvorganizationName?, csvorganizationID?, csvcreateTimestamp?, csvmodifyTimestamp? )>
+<!ATTLIST csvCreateSequence handler CDATA #REQUIRED>
+
+<!ELEMENT csvBeginSequence ( csvuser, csvname, csvnumber, csvdescription, csvdefaultUnit, csvfolder, csvlifecycle, csvview, csvteamTemplate, csvlifecyclestate, csvtypedef, csvparentContainerPath, csvversion, csviteration, csvorganizationName?, csvorganizationID?, csvcreateTimestamp?, csvmodifyTimestamp? )>
+<!ATTLIST csvBeginSequence handler CDATA #REQUIRED>
+
+<!ELEMENT csvEndSequence EMPTY>
+<!ATTLIST csvEndSequence handler CDATA #REQUIRED>
+
+<!ELEMENT csvCreateSequenceUsageLink ( csvtypedef, csvparentNumber, csvparentVersion, csvparentIteration, csvparentView, csvparentType, csvchildNumber, csvseqLinkNumber, csvcategory,csvseqBranchingOpLabel, csvseqReturnOpLabel )>
+<!ATTLIST csvCreateSequenceUsageLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvBeginSequenceUsageLink ( csvtypedef, csvparentNumber, csvparentVersion, csvparentIteration, csvparentView, csvparentType, csvchildNumber, csvseqLinkNumber, csvcategory,csvseqBranchingOpLabel, csvseqReturnOpLabel )>
+<!ATTLIST csvBeginSequenceUsageLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvEndSequenceUsageLink EMPTY>
+<!ATTLIST csvEndSequenceUsageLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvCreatePartToProcessPlanLink ( csvtypedef, csvparentNumber, csvparentVersion, csvparentIteration, csvparentView, csvchildNumber, csvchildVersion, csvchildIteration, csvchildView  )>
+<!ATTLIST csvCreatePartToProcessPlanLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvBeginPartToProcessPlanLink ( csvtypedef, csvparentNumber, csvparentVersion, csvparentIteration, csvparentView, csvchildNumber, csvchildVersion, csvchildIteration, csvchildView )>
+<!ATTLIST csvBeginPartToProcessPlanLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvEndPartToProcessPlanLink EMPTY>
+<!ATTLIST csvEndPartToProcessPlanLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvCreatePlantAssignmentLink ( csvtypedef, csvparentNumber, csvparentVersion, csvparentIteration, csvparentView, csvparentType, csvchildNumber )>
+<!ATTLIST csvCreatePlantAssignmentLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvBeginPlantAssignmentLink ( csvtypedef, csvparentNumber, csvparentVersion, csvparentIteration, csvparentView, csvparentType, csvchildNumber )>
+<!ATTLIST csvBeginPlantAssignmentLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvEndPlantAssignmentLink EMPTY>
+<!ATTLIST csvEndPlantAssignmentLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvCreateOperationToConsumableLink ( csvtypedef, csvparentNumber, csvparentVersion, csvparentIteration, csvparentView, csvchildNumber, csvdefaultUnit, csvquantity, csvallocationNumber, csvdescription, csvscheduled, csvusageRate )>
+<!ATTLIST csvCreateOperationToConsumableLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvBeginOperationToConsumableLink ( csvtypedef, csvparentNumber, csvparentVersion, csvparentIteration, csvparentView, csvchildNumber, csvdefaultUnit, csvquantity, csvallocationNumber, csvdescription, csvscheduled, csvusageRate )>
+<!ATTLIST csvBeginOperationToConsumableLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvEndOperationToConsumableLink EMPTY>
+<!ATTLIST csvEndOperationToConsumableLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvCreateOperationToWorkCenterLink ( csvtypedef, csvparentNumber, csvparentVersion, csvparentIteration, csvparentView, csvchildNumber, csvplantNumber, csvplantVersion, csvplantIteration, csvplantView, csvdepartment, csvdescription )>
+<!ATTLIST csvCreateOperationToWorkCenterLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvBeginOperationToWorkCenterLink ( csvtypedef, csvparentNumber, csvparentVersion, csvparentIteration, csvparentView, csvchildNumber, csvplantNumber, csvplantVersion, csvplantIteration, csvplantView, csvdepartment, csvdescription  )>
+<!ATTLIST csvBeginOperationToWorkCenterLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvEndOperationToWorkCenterLink EMPTY>
+<!ATTLIST csvEndOperationToWorkCenterLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvCreateOperationToOperatedPartLink ( csvtypedef, csvparentNumber, csvparentVersion, csvparentIteration, csvparentView, csvchildNumber, csvquantity, csvdefaultUnit, csvdescription )>
+<!ATTLIST csvCreateOperationToOperatedPartLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvBeginOperationToOperatedPartLink ( csvtypedef, csvparentNumber, csvparentVersion, csvparentIteration, csvparentView, csvchildNumber, csvquantity, csvdefaultUnit, csvdescription )>
+<!ATTLIST csvBeginOperationToOperatedPartLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvEndOperationToOperatedPartLink EMPTY>
+<!ATTLIST csvEndOperationToOperatedPartLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvCreateOperationProcessLink ( csvtypedef, csvparentNumber, csvparentVersion, csvparentIteration, csvparentView, csvchildNumber, csvdescription)>
+<!ATTLIST csvCreateOperationProcessLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvBeginOperationProcessLink ( csvtypedef, csvparentNumber, csvparentVersion, csvparentIteration, csvparentView, csvchildNumber, csvdescription)>
+<!ATTLIST csvBeginOperationProcessLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvEndOperationProcessLink EMPTY>
+<!ATTLIST csvEndOperationProcessLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvCreateOperationToPartLink ( csvtypedef, csvparentNumber, csvparentVersion, csvparentIteration, csvparentView, csvchildNumber, csvdefaultUnit, csvquantity, csvallocationType, csvcmpIdPath, csvlineNumberPath, csvassemblyNumber, csvdescription )>
+<!ATTLIST csvCreateOperationToPartLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvBeginOperationToPartLink ( csvtypedef, csvparentNumber, csvparentVersion, csvparentIteration, csvparentView, csvchildNumber, csvdefaultUnit, csvquantity, csvallocationType, csvcmpIdPath, csvlineNumberPath, csvassemblyNumber, csvdescription  )>
+<!ATTLIST csvBeginOperationToPartLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvEndOperationToPartLink EMPTY>
+<!ATTLIST csvEndOperationToPartLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvCreatePrecedenceConstraintLink ( csvtypedef, csvparentNumber, csvparentVersion, csvparentIteration, csvparentView, csvchildNumber, csvchildType, csvopLabel, csvrequired, csvconstraintType)>
+<!ATTLIST csvCreatePrecedenceConstraintLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvBeginPrecedenceConstraintLink ( csvtypedef, csvparentNumber, csvparentVersion, csvparentIteration, csvparentView, csvchildNumber, csvchildType, csvopLabel, csvrequired, csvconstraintType)>
+<!ATTLIST csvBeginPrecedenceConstraintLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvEndPrecedenceConstraintLink EMPTY>
+<!ATTLIST csvEndPrecedenceConstraintLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvCreateStandardProcedureLink ( csvtypedef, csvparentNumber, csvparentVersion, csvparentIteration, csvparentView, csvparentType, csvchildNumber, csvopLabel )>
+<!ATTLIST csvCreateStandardProcedureLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvBeginStandardProcedureLink ( csvtypedef, csvparentNumber, csvparentVersion, csvparentIteration, csvparentView, csvparentType, csvchildNumber, csvopLabel )>
+<!ATTLIST csvBeginStandardProcedureLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvEndStandardProcedureLink EMPTY>
+<!ATTLIST csvEndStandardProcedureLink handler CDATA #REQUIRED>
+
+
+<!-- RESOURCE -->
+
+<!ELEMENT csvCreateResourceRepresentation ( csvparentNumber, csvparentVersion, csvparentIteration, csvparentView, csvrepDirectory, csvrepName, csvrepDescription, csvrepDefault, csvrepCreateThumbnail, csvrepStoreEdz, csvorganizationName?, csvorganizationID? )>
+<!ATTLIST csvCreateResourceRepresentation handler CDATA #REQUIRED>
+
+<!ELEMENT csvMPMPlant (csvuser, csvname, csvnumber, csvsource,csvcategory,csvfolder,csvlifecycle,csvview,csvteamTemplate,csvlifecyclestate,csvtypedef, csvparentContainerPath,csvversion,csviteration,csvorganizationName?,csvorganizationID?,csvcreateTimestamp?,csvmodifyTimestamp?,csvexternal,csvdescription,csvaddress,csvCity,csvState,csvCountry,csvZipCode)>
+<!ATTLIST csvMPMPlant  handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginMPMPlant (csvuser, csvname, csvnumber, csvsource,csvcategory,csvfolder,csvlifecycle,csvview,csvteamTemplate,csvlifecyclestate,csvtypedef, csvparentContainerPath,csvversion,csviteration,csvorganizationName?,csvorganizationID?,csvcreateTimestamp?,csvmodifyTimestamp?,csvexternal,csvdescription,csvaddress,csvCity,csvState,csvCountry,csvZipCode)>
+<!ATTLIST csvBeginMPMPlant  handler CDATA #IMPLIED>
+
+<!ELEMENT csvEndMPMPlant EMPTY>
+<!ATTLIST csvEndMPMPlant  handler CDATA #IMPLIED>
+
+<!ELEMENT csvMPMWorkCenter (csvuser, csvname, csvnumber, csvsource,csvdefaultUnit,csvcategory,csvusage,csvfolder,csvlifecycle,csvview,csvteamTemplate,csvlifecyclestate,csvtypedef, csvparentContainerPath,csvversion,csviteration,csvorganizationName?,csvorganizationID?,csvcreateTimestamp?,csvmodifyTimestamp?,csverpValidationCode,csvexternal,csvdescription)>
+<!ATTLIST csvMPMWorkCenter  handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginMPMWorkCenter (csvuser, csvname, csvnumber, csvsource,csvdefaultUnit,csvcategory,csvusage,csvfolder,csvlifecycle,csvview,csvteamTemplate,csvlifecyclestate,csvtypedef, csvparentContainerPath,csvversion,csviteration,csvorganizationName?,csvorganizationID?,csvcreateTimestamp?,csvmodifyTimestamp?,csverpValidationCode,csvexternal,csvdescription)>
+<!ATTLIST csvBeginMPMWorkCenter  handler CDATA #IMPLIED>
+
+<!ELEMENT csvEndMPMWorkCenter EMPTY>
+<!ATTLIST csvEndMPMWorkCenter  handler CDATA #IMPLIED>
+
+<!ELEMENT csvMPMTooling (csvuser, csvname, csvnumber, csvsource,csvdefaultUnit,csvcategory,csvusage,csvfolder,csvlifecycle,csvview,csvteamTemplate,csvlifecyclestate,csvtypedef, csvparentContainerPath,csvversion,csviteration,csvorganizationName?,csvorganizationID?,csvcreateTimestamp?,csvmodifyTimestamp?,csvdescription)>
+<!ATTLIST csvMPMTooling  handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginMPMTooling (csvuser, csvname, csvnumber, csvsource,csvdefaultUnit,csvcategory,csvusage,csvfolder,csvlifecycle,csvview,csvteamTemplate,csvlifecyclestate,csvtypedef, csvparentContainerPath,csvversion,csviteration,csvorganizationName?,csvorganizationID?,csvcreateTimestamp?,csvmodifyTimestamp?,csvdescription)>
+<!ATTLIST csvBeginMPMTooling  handler CDATA #IMPLIED>
+
+<!ELEMENT csvEndMPMTooling EMPTY>
+<!ATTLIST csvEndMPMTooling  handler CDATA #IMPLIED>
+
+<!ELEMENT csvMPMSkill (csvuser, csvname, csvnumber, csvdefaultUnit,csvcategory,csvusage,csvfolder,csvlifecycle,csvview,csvteamTemplate,csvlifecyclestate,csvtypedef, csvparentContainerPath,csvversion,csviteration,csvorganizationName?,csvorganizationID?,csvcreateTimestamp?,csvmodifyTimestamp?,csvdescription)>
+<!ATTLIST csvMPMSkill  handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginMPMSkill (csvuser, csvname, csvnumber, csvdefaultUnit,csvcategory,csvusage,csvfolder,csvlifecycle,csvview,csvteamTemplate,csvlifecyclestate,csvtypedef, csvparentContainerPath,csvversion,csviteration,csvorganizationName?,csvorganizationID?,csvcreateTimestamp?,csvmodifyTimestamp?,csvdescription)>
+<!ATTLIST csvBeginMPMSkill  handler CDATA #IMPLIED>
+
+<!ELEMENT csvEndMPMSkill EMPTY>
+<!ATTLIST csvEndMPMSkill  handler CDATA #IMPLIED>
+
+<!ELEMENT csvMPMProcessingMaterial (csvuser, csvname, csvnumber, csvsource,csvdefaultUnit,csvcategory,csvusage,csvfolder,csvlifecycle,csvview,csvteamTemplate,csvlifecyclestate,csvtypedef, csvparentContainerPath,csvversion,csviteration,csvorganizationName?,csvorganizationID?,csvcreateTimestamp?,csvmodifyTimestamp?,csvdescription)>
+<!ATTLIST csvMPMProcessingMaterial  handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginMPMProcessingMaterial (csvuser, csvname, csvnumber, csvsource,csvdefaultUnit,csvcategory,csvusage,csvfolder,csvlifecycle,csvview,csvteamTemplate,csvlifecyclestate,csvtypedef, csvparentContainerPath,csvversion,csviteration,csvorganizationName?,csvorganizationID?,csvcreateTimestamp?,csvmodifyTimestamp?,csvdescription)>
+<!ATTLIST csvBeginMPMProcessingMaterial  handler CDATA #IMPLIED>
+
+<!ELEMENT csvEndMPMProcessingMaterial EMPTY>
+<!ATTLIST csvEndMPMProcessingMaterial  handler CDATA #IMPLIED>
+
+<!ELEMENT csvMPMResourceGroup (csvuser, csvname, csvnumber, csvdefaultUnit,csvcategory,csvdepartment,csvfolder,csvlifecycle,csvview,csvteamTemplate,csvlifecyclestate,csvtypedef, csvparentContainerPath,csvversion,csviteration,csvorganizationName?,csvorganizationID?,csvcreateTimestamp?,csvmodifyTimestamp?,csvdescription)>
+<!ATTLIST csvMPMResourceGroup  handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginMPMResourceGroup (csvuser, csvname, csvnumber, csvdefaultUnit,csvcategory,csvdepartment,csvfolder,csvlifecycle,csvview,csvteamTemplate,csvlifecyclestate,csvtypedef, csvparentContainerPath,csvversion,csviteration,csvorganizationName?,csvorganizationID?,csvcreateTimestamp?,csvmodifyTimestamp?,csvdescription)>
+<!ATTLIST csvBeginMPMResourceGroup  handler CDATA #IMPLIED>
+
+<!ELEMENT csvEndMPMResourceGroup EMPTY>
+<!ATTLIST csvEndMPMResourceGroup  handler CDATA #IMPLIED>
+
+<!ELEMENT csvResourceToResourceLink ( csvtypedef, csvassemblyPartNumber, csvconstituentPartNumber, csvconstituentPartQty, csvconstituentPartUnit, csvcomponentId?, csvinclusionOption?, csvquantityOption?, csvreference?, csvassemblyPartVersion, csvassemblyPartIteration, csvassemblyPartView, csvassemblyPartVariation1?, csvassemblyPartVariation2?, csvorganizationName?, csvorganizationID? )>
+<!ATTLIST csvResourceToResourceLink  handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginResourceToResourceLink ( csvtypedef, csvassemblyPartNumber, csvassemblyPartVersion, csvconstituentPartNumber, csvconstituentPartQty, csvconstituentPartUnit,csvcomponentId?, csvinclusionOption?, csvquantityOption?, csvreference?, csvlineNumber, csvfindNumber?, csvoccurrenceLocation, csvreferenceDesignator, csvassemblyPartIteration, csvassemblyPartView, csvassemblyPartVariation1?, csvassemblyPartVariation2?, csvorganizationName?, csvorganizationID? )>
+<!ATTLIST csvBeginResourceToResourceLink  handler CDATA #IMPLIED>
+
+<!ELEMENT csvEndResourceToResourceLink EMPTY>
+<!ATTLIST csvEndResourceToResourceLink  handler CDATA #IMPLIED>
+
+<!ELEMENT csvCreateWorkcenterToFormulasetLink ( csvtypedef, csvparentNumber, csvparentVersion, csvparentIteration, csvparentView, csvchildName )>
+<!ATTLIST csvCreateWorkcenterToFormulasetLink  handler CDATA #IMPLIED>
+
+
+<!--MANUFACTURING STANDARD EXPLORERS-->
+
+<!ELEMENT csvMfgStandardGroup ( csvuser, csvname, csvnumber, csvdescription, csvview, csvfolder, csvlifecycle, csvlifecyclestate, csvteamTemplate, csvtypedef, csvparentContainerPath, csvversion, csviteration, csvcreateTimestamp?, csvmodifyTimestamp?)>
+<!ATTLIST csvMfgStandardGroup  handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginMPMMfgStandardGroup ( csvuser, csvname, csvnumber, csvdescription, csvview, csvfolder, csvlifecycle, csvlifecyclestate, csvteamTemplate, csvtypedef, csvparentContainerPath, csvversion, csviteration, csvcreateTimestamp?, csvmodifyTimestamp?)>
+<!ATTLIST csvBeginMPMMfgStandardGroup  handler CDATA #IMPLIED>
+
+<!ELEMENT csvEndMPMMfgStandardGroup EMPTY >
+<!ATTLIST csvEndMPMMfgStandardGroup  handler CDATA #IMPLIED>
+
+<!ELEMENT csvMfgProcess ( csvuser, csvname, csvnumber, csvcategory, csvdescription, csvlongDescription, csvview, csvfolder, csvlifecycle, csvlifecyclestate, csvteamTemplate, csvtypedef, csvparentContainerPath, csvversion, csviteration, csvcreateTimestamp?, csvmodifyTimestamp?)>
+<!ATTLIST csvMfgProcess  handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginMPMMfgProcess ( csvuser, csvname, csvnumber, csvcategory, csvdescription, csvlongDescription, csvview, csvfolder, csvlifecycle, csvlifecyclestate, csvteamTemplate, csvtypedef, csvparentContainerPath, csvversion, csviteration, csvcreateTimestamp?, csvmodifyTimestamp?)>
+<!ATTLIST csvBeginMPMMfgProcess  handler CDATA #IMPLIED>
+
+<!ELEMENT csvEndMPMMfgProcess EMPTY >
+<!ATTLIST csvEndMPMMfgProcess  handler CDATA #IMPLIED>
+
+<!ELEMENT csvCreateStandardUsageLink ( csvtypedef, csvparentNumber, csvparentVersion, csvparentIteration, csvparentView, csvchildType, csvchildNumber)>
+<!ATTLIST csvCreateStandardUsageLink handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginMPMMfgStandardUsageLink ( csvtypedef, csvparentNumber, csvparentVersion, csvparentIteration, csvparentView, csvchildType, csvchildNumber)>
+<!ATTLIST csvBeginMPMMfgStandardUsageLink handler CDATA #IMPLIED>
+
+<!ELEMENT csvEndMPMMfgStandardUsageLink EMPTY>
+<!ATTLIST csvEndMPMMfgStandardUsageLink handler CDATA #IMPLIED>
+
+<!ELEMENT csvCreateCompatibilityLink ( csvtypedef, csvparentType, csvparentNumber, csvparentVersion, csvparentIteration, csvparentView, csvchildType, csvchildNumber, csvcompatibilityType, csvstepUsageRate1, csvstepUsageRate2, csvstepUsageRate3, csvstepUsageRate4, csvstepUsageRate5, csvstepUsageRate6, csvstepUsageRate7, csvstepUsageRate8)>
+<!ATTLIST csvCreateCompatibilityLink handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginMPMCompatibilityLink ( csvtypedef, csvparentType, csvparentNumber, csvparentVersion, csvparentIteration, csvparentView, csvchildType, csvchildNumber, csvcompatibilityType, csvstepUsageRate1, csvstepUsageRate2, csvstepUsageRate3, csvstepUsageRate4, csvstepUsageRate5, csvstepUsageRate6, csvstepUsageRate7, csvstepUsageRate8)>
+<!ATTLIST csvBeginMPMCompatibilityLink handler CDATA #IMPLIED>
+
+<!ELEMENT csvEndMPMCompatibilityLink EMPTY>
+<!ATTLIST csvEndMPMCompatibilityLink handler CDATA #IMPLIED>
+
+<!ELEMENT csvCreateMPMDocumentDescribeLink ( csvparentType, csvparentNumber, csvparentVersion, csvparentIteration, csvparentView, csvchildNumber, csvchildVersion, csvchildIteration)>
+<!ATTLIST csvCreateMPMDocumentDescribeLink handler CDATA #IMPLIED>
+
+<!ELEMENT csvCreateMPMDocumentReferenceLink ( csvparentType, csvparentNumber, csvparentVersion, csvparentIteration, csvparentView, csvchildNumber)>
+<!ATTLIST csvCreateMPMDocumentReferenceLink handler CDATA #IMPLIED>
+
+
+<!--MANUFACTURING PRODUCT STRUCTURE EXPLORERS-->
+
+<!ELEMENT csvCreateAlternateUnitLink ( csvtypedef, csvparentType, csvparentNumber, csvalternateUnit, csvnumerator, csvdenominator)>
+<!ATTLIST csvCreateAlternateUnitLink handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginAlternateUnitLink ( csvtypedef, csvparentType, csvparentNumber, csvalternateUnit, csvnumerator, csvdenominator)>
+<!ATTLIST csvBeginAlternateUnitLink handler CDATA #IMPLIED>
+
+<!ELEMENT csvEndAlternateUnitLink EMPTY>
+<!ATTLIST csvEndAlternateUnitLink handler CDATA #IMPLIED>
+
+<!ELEMENT csvCreatePartToPlantAsignmentLink ( csvtypedef, csvparentNumber, csvparentVersion, csvparentIteration, csvparentView, csvchildNumber)>
+<!ATTLIST csvCreatePartToPlantAsignmentLink handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginMPMPartToPlantAssignmentLink ( csvtypedef, csvparentNumber, csvparentVersion, csvparentIteration, csvparentView, csvchildNumber)>
+<!ATTLIST csvBeginMPMPartToPlantAssignmentLink handler CDATA #IMPLIED>
+
+<!ELEMENT csvEndMPMPartToPlantAssignmentLink EMPTY>
+<!ATTLIST csvEndMPMPartToPlantAssignmentLink handler CDATA #IMPLIED>
+
+<!ELEMENT csvCreateEquivalenceLink ( csvtypedef, csvparentNumber, csvparentVersion, csvparentIteration, csvparentView, csvchildNumber, csvchildVersion, csvchildIteration, csvchildView, csvdescription, csvupstreamContext, csvdownstreamContext, csvconsumable)>
+<!ATTLIST csvCreateEquivalenceLink handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginEquivalenceLink ( csvtypedef, csvparentNumber, csvparentVersion, csvparentIteration, csvparentView, csvchildNumber, csvchildVersion, csvchildIteration, csvchildView, csvdescription, csvupstreamContext, csvdownstreamContext, csvconsumable)>
+<!ATTLIST csvBeginEquivalenceLink handler CDATA #IMPLIED>
+
+<!ELEMENT csvEndEquivalenceLink EMPTY>
+<!ATTLIST csvEndEquivalenceLink handler CDATA #IMPLIED>
+
+<!ELEMENT csvCreateConsumptionLink ( csvdownStreamRootPartNumber, csvdownStreamPath, csvdownStreamLeafPartView, csvupStreamRootPartNumber, csvupStreamPath, csvupStreamLeafPartView)>
+<!ATTLIST csvCreateConsumptionLink handler CDATA #IMPLIED>
+
+<!-- MPMLink Objects End -->
+
+<!--ERPMaterial Start-->
+
+<!ELEMENT csvCreateERPMaterialLink ( csvtypedef, csvpartNumber, csvmodifyTimestamp? )>
+<!ATTLIST csvCreateERPMaterialLink handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginERPMaterialLink ( csvtypedef, csvpartNumber, csvmodifyTimestamp? )>
+<!ATTLIST csvBeginERPMaterialLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvEndERPMaterialLink EMPTY>
+<!ATTLIST csvEndERPMaterialLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvCreateERPMaterial ( csvtypedef, csvuser, csvpartNumber, csvrevisionLabel, csvmodifyTimestamp? )>
+<!ATTLIST csvCreateERPMaterial handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginERPMaterial ( csvtypedef, csvuser, csvpartNumber, csvrevisionLabel, csvmodifyTimestamp? )>
+<!ATTLIST csvBeginERPMaterial handler CDATA #REQUIRED>
+
+<!ELEMENT csvEndERPMaterial EMPTY>
+<!ATTLIST csvEndERPMaterial handler CDATA #REQUIRED>
+
+<!ELEMENT csvCreateERPPartSpecificPlantDataLink ( csvtypedef, csvpartNumber, csverpMaterialRevisionLabel, csvplantTypedef, csvview, csvstorageLocation?, csvcreateTimestamp?, csvmodifyTimestamp? )>
+<!ATTLIST csvCreateERPPartSpecificPlantDataLink handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginERPPartSpecificPlantDataLink ( csvtypedef, csvpartNumber, csverpMaterialRevisionLabel, csvplantTypedef, csvview, csvstorageLocation?, csvcreateTimestamp?, csvmodifyTimestamp? )>
+<!ATTLIST csvBeginERPPartSpecificPlantDataLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvEndERPPartSpecificPlantDataLink EMPTY>
+<!ATTLIST csvEndERPPartSpecificPlantDataLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvBeginUpdateERPPartSpecificPlantData ( csvtypedef, csvuser, csvpartNumber, csverpMaterialRevisionLabel, csvview, csvstorageLocation?, csvmodifyTimestamp? )>
+<!ATTLIST csvBeginUpdateERPPartSpecificPlantData handler CDATA #REQUIRED>
+
+<!ELEMENT csvEndUpdateERPPartSpecificPlantData EMPTY>
+<!ATTLIST csvEndUpdateERPPartSpecificPlantData handler CDATA #REQUIRED>
+
+<!ELEMENT csvCreateERPMaterialDocumentDescribeLink ( csvtypedef, csvpartNumber, csverpMaterialRevisionLabel, csvchildNumber, csvchildVersion, csvchildIteration)>
+<!ATTLIST csvCreateERPMaterialDocumentDescribeLink handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginERPMaterialDocumentDescribeLink ( csvtypedef, csvpartNumber, csverpMaterialRevisionLabel, csvchildNumber, csvchildVersion, csvchildIteration)>
+<!ATTLIST csvBeginERPMaterialDocumentDescribeLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvEndERPMaterialDocumentDescribeLink EMPTY>
+<!ATTLIST csvEndERPMaterialDocumentDescribeLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvCreateERPMaterialDocumentReferenceLink ( csvtypedef, csvpartNumber, csverpMaterialRevisionLabel, csvchildNumber)>
+<!ATTLIST csvCreateERPMaterialDocumentReferenceLink handler CDATA #IMPLIED>
+
+<!ELEMENT csvBeginERPMaterialDocumentReferenceLink ( csvtypedef, csvpartNumber, csverpMaterialRevisionLabel, csvchildNumber)>
+<!ATTLIST csvBeginERPMaterialDocumentReferenceLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvEndERPMaterialDocumentReferenceLink EMPTY>
+<!ATTLIST csvEndERPMaterialDocumentReferenceLink handler CDATA #REQUIRED>
+
+<!ELEMENT csvrevisionLabel (#PCDATA)>
+<!ELEMENT csverpMaterialRevisionLabel (#PCDATA)>
+<!ELEMENT csvstorageLocation (#PCDATA)>
+<!ELEMENT csvplantTypedef (#PCDATA)>
+
+<!--ERPMaterial End-->
+
+<!ELEMENT csvBeginMVPreferenceInstance ( csvname, csvcomments?, csvcontainerClass?, csvcontainerName?, csvorganization?, csvparentContainerPath?, csvuser?, csvclientName?, csvlock?, csvlockOnly?)>
+<!ATTLIST csvBeginMVPreferenceInstance handler CDATA #IMPLIED>
+
+<!ELEMENT csvvaluekey (#PCDATA) >
+<!ELEMENT csvMVPreferenceInstance ( csvvaluekey, csvvalue?, csvlock?)>
+<!ATTLIST csvMVPreferenceInstance handler CDATA #IMPLIED>
+
+<!ELEMENT csvEndMVPreferenceInstance EMPTY>
+<!ATTLIST csvEndMVPreferenceInstance handler CDATA #IMPLIED>
+
+<!ELEMENT csvCollaborationSite ( csvname, csvdescription?, csvsiteURL?, csvrepositoryName, csvrepositoryGUID, csvrepositoryDomain, csvsitePrincipal?)>
+
+<!ATTLIST csvCollaborationSite  handler CDATA #IMPLIED>
+<!ELEMENT csvsiteURL (#PCDATA) >
+<!ELEMENT csvrepositoryName (#PCDATA) >
+<!ELEMENT csvrepositoryGUID (#PCDATA) >
+<!ELEMENT csvrepositoryDomain (#PCDATA) >
+<!ELEMENT csvsitePrincipal (#PCDATA) >
+
+<!-- for conflict farmework-->
+<!ELEMENT csvCreateConflictResolution (csvconflictType, csvresolutionType, csvcontextKey, csvcontextValue)>
+<!ATTLIST csvCreateConflictResolution handler CDATA #IMPLIED>
+<!ELEMENT csvconflictType (#PCDATA)>
+<!ELEMENT csvresolutionType (#PCDATA)>
+<!ELEMENT csvcontextKey (#PCDATA)>
+<!ELEMENT csvcontextValue (#PCDATA)>
+
+<!ELEMENT csvGetConflictResolution (csvcontextKey, csvcontextValue)>
+<!ATTLIST csvGetConflictResolution handler CDATA #IMPLIED>
+
+
+<!ELEMENT csvDeleteConflictResolution (csvconflictType, csvresolutionType, csvcontextKey, csvcontextValue)>
+<!ATTLIST csvDeleteConflictResolution handler CDATA #IMPLIED>
+
+<!ELEMENT csvDeleteAllConflictResolution (csvcontextKey, csvcontextValue)>
+<!ATTLIST csvDeleteAllConflictResolution handler CDATA #IMPLIED>
+
+<!-- Site InformationCategory Information -->
+<!ELEMENT csvSystemConfigurationCollectorCategory (csvcategoryMbeanName, csvcategoryDisplayName, csvcategoryDescription, csvcategoryEditable, csvpluginClassNames*)>
+<!ATTLIST csvSystemConfigurationCollectorCategory handler CDATA #IMPLIED>
+<!ELEMENT csvcategoryMbeanName (#PCDATA)>
+<!ELEMENT csvcategoryDisplayName (#PCDATA)>
+<!ELEMENT csvcategoryDescription (#PCDATA)>
+<!ELEMENT csvcategoryEditable (#PCDATA)>
+<!ELEMENT csvpluginClassNames (#PCDATA)>
+
+<!-- ClientTab -->
+<!ELEMENT csvClientTab (csvcomponents?, csvobjtype, csvtabsetkey?,csvname, csvparentContainerPath?, csvuser?)>
+<!ATTLIST csvClientTab handler CDATA #IMPLIED>
+<!ELEMENT csvcomponents (#PCDATA)>
+<!ELEMENT csvobjtype (#PCDATA)>
+<!ELEMENT csvtabsetkey (#PCDATA)>
+
+<!ELEMENT csvLoadLicenseGroups EMPTY>
+<!ATTLIST csvLoadLicenseGroups handler CDATA #IMPLIED>
+
+<!-- Start MasterProcessTemplate -->
+<!ELEMENT csvMasterProcessTemplate (csvname,csvdescription?,csvxmlPath)>
+<!ATTLIST csvMasterProcessTemplate  handler CDATA #IMPLIED>
+<!-- MasterProcessTemplate End-->
+

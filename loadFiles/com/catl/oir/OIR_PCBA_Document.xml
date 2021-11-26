@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE OrganizationConfig SYSTEM "standardX24.dtd">
+<OrganizationConfig>
+	<TypeBasedRule>
+		<EngineRule isDefault="false" enabled="true">
+			<ruleName>PCBA_Document</ruleName>
+			<ruleSpecification><![CDATA[
+			<AttributeValues objType="com.CATLBattery.pcbaDrawing">
+                <AttrValue id="lifeCycle.id" algorithm="com.ptc.core.foundation.lifecycle.server.impl.LifeCycleTemplateAttributeAlgorithm">
+                    <Arg>LC_doc_cycle_phase2</Arg>
+               </AttrValue>
+            </AttributeValues>
+			 
+			  ]]></ruleSpecification>
+		    <ruleType type="INIT" />
+		</EngineRule>
+		<className>wt.doc.WTDocument|com.CATLBattery.CATLDocument|com.CATLBattery.pcbaDrawing</className>
+	</TypeBasedRule>
+</OrganizationConfig>  
+               
+             

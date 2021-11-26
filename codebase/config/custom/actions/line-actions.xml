@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE listofactions SYSTEM '../../actions.dtd'>
+
+<listofactions>
+
+   <objecttype name="line"  resourceBundle="com.catl.line.resource.lineRB">               
+        <action name="derivePN">
+            <command url="netmarkets/jsp/catl/line/derivePN.jsp" windowType="popup"/>
+            <moreurlinfo>resizable=yes,scrollbars=no,menubar=no,toolbar=no,location=no,status=yes,height=700,width=1300</moreurlinfo>
+            <includeFilter name="CATLCreateChildPNFilter"/>
+        </action>
+        <action name="createBoxExplain">
+            <command url="netmarkets/jsp/catl/line/createBoxExplain.jsp" windowType="popup" />
+            <moreurlinfo>resizable=yes,scrollbars=no,menubar=no,toolbar=no,location=no,status=yes,height=700,width=1300</moreurlinfo>
+            <includeFilter name="CATLCreateBoxExplainFilter"/>
+        </action>
+          <action name="FillMPN">
+            <command url="netmarkets/jsp/catl/line/FillMPN.jsp" windowType="page" />
+        </action>
+         <action name="updateDerivePN">
+            <command url="netmarkets/jsp/catl/line/updateDerivePN.jsp" windowType="popup" />
+            <moreurlinfo>resizable=yes,scrollbars=no,menubar=no,toolbar=no,location=no,status=yes,height=700,width=1300</moreurlinfo>
+             <includeFilter name="CATLUpdateChildPNFilter"/>
+        </action>
+         <action name="multiPart">
+            <command url="netmarkets/jsp/catl/line/multiPart.jsp" windowType="popup" />
+            <moreurlinfo>resizable=yes,scrollbars=no,menubar=no,toolbar=no,location=no,status=yes,height=700,width=1300</moreurlinfo>
+            <includeFilter name="CATLMultiPartFilter"/>
+        </action>
+        <action name="multiDoc">
+            <command url="netmarkets/jsp/catl/line/multiDoc.jsp" windowType="popup" />
+            <moreurlinfo>resizable=yes,scrollbars=no,menubar=no,toolbar=no,location=no,status=yes,height=700,width=1300</moreurlinfo>
+            <includeFilter name="CATLMultiDocFilter"/>
+        </action>
+   </objecttype>
+</listofactions>

@@ -1,0 +1,79 @@
+<%@page language="java" session="true"	contentType="text/html; charset=UTF-8"%>
+<%@taglib uri="http://www.ptc.com/infoengine/taglib/core" prefix="ie"%>
+<%@page import="com.infoengine.au.NamingService, java.util.*, org.apache.commons.lang.StringUtils" %>
+<%
+//System.out.println("----------------- Start Invoke Task --------------------");
+//System.out.println(this.getParam("baseWhereClause"));
+//System.out.println(this.getParam("objectType"));
+//System.out.println(this.getParam("containerRef"));
+//System.out.println(this.getParam("name"));
+//System.out.println(this.getParam("number"));
+//System.out.println(this.getParam("state"));
+//System.out.println(this.getParam("creator"));
+//System.out.println(this.getParam("modifier"));
+//System.out.println(this.getParam("createOn_FromDate"));
+//System.out.println(this.getParam("createOn_ToDate"));
+//System.out.println(this.getParam("lastModified_FromDate"));
+//System.out.println(this.getParam("lastModified_ToDate"));
+
+// 注意以下大坑:
+// where字句中不能出现空格,否则提示where语法错误
+// TYPE必须使用WTCTYPE开头
+// 属性的值必须使用''括起来
+// 注意AND运算符 & 在XML必须写为&amp;
+String where = "(iterationInfo.latest='true')&(checkoutInfo.state!='wrk')&(checkoutInfo.state!='wrk-p')";
+if (StringUtils.isNotBlank((String) this.getParam("baseWhereClause"))) {
+	where = where + "&("+this.getParam("baseWhereClause").toString()+")";
+}
+if (StringUtils.isNotBlank((String) this.getParam("containerRef"))) {
+	where = where + "&(containerReference='"+this.getParam("containerRef").toString()+"')";
+}
+if (StringUtils.isNotEmpty((String) this.getParam("name"))) {
+	where = where + "&(name='"+this.getParam("name").toString()+"')";
+}
+if (StringUtils.isNotEmpty((String) this.getParam("number"))) {
+	where = where + "&(number='"+this.getParam("number").toString()+"')";
+}
+if (StringUtils.isNotEmpty((String) this.getParam("state"))) {
+	where = where + "&(state.state='" + this.getParam("state").toString() + "')";
+}
+if (StringUtils.isNotEmpty((String) this.getParam("creator"))) {
+	where = where + "&(iterationInfo.creator='" + this.getParam("creator").toString() + "')";
+}
+if (StringUtils.isNotEmpty((String) this.getParam("modifier"))) {
+	where = where + "&(iterationInfo.modifier='" + this.getParam("modifier").toString() + "')";
+}
+if (StringUtils.isNotEmpty((String) this.getParam("createOn_FromDate"))) {
+	where = where + "&(thePersistInfo.createStamp>='" + this.getParam("createOn_FromDate").toString() + "')";
+}
+if (StringUtils.isNotEmpty((String) this.getParam("createOn_ToDate"))) {
+	where = where + "&(thePersistInfo.createStamp<'" + this.getParam("createOn_ToDate").toString() + "')";
+}
+if (StringUtils.isNotEmpty((String) this.getParam("lastModified_FromDate"))) {
+	where = where + "&(thePersistInfo.modifyStamp>='" + this.getParam("lastModified_FromDate").toString() + "')";
+}
+if (StringUtils.isNotEmpty((String) this.getParam("lastModified_ToDate"))) {
+	where = where + "&(thePersistInfo.modifyStamp<'" + this.getParam("lastModified_ToDate").toString() + "')";
+}
+//System.out.println(where);
+%>
+
+<ie:webject name="Search-Objects" type="OBJ">
+
+	<ie:param name="INSTANCE" data="${@FORM[]supporting-adapter[*]}" valueSeparator=";" delim=";" default="<%=NamingService.getVMName()%>" />
+	<ie:param name="AUTHORIZATION" data="${@SERVER[]authorization[0]}"/>
+	<ie:param name="ATTRIBUTE_TYPE_CONTEXT" data="${@FORM[]objectType[0]}" />
+	<ie:param name="ATTRIBUTE" data="*"/>
+	<!-- TYPE必须是已WCTYPE开头的完整类型名称,如果有多个,则会造成只能查询出不同类型共有的属性 -->
+	<ie:param name="TYPE" data="${@FORM[]objectType[0]}" delim=","/>
+	<!-- 需要排除子类型的类型 -->
+	<ie:param name="TYPES_TO_EXCLUDE_SUBTYPES" data="${@FORM[]typesToExcludeSubtypes[]}" delim=","/>
+	<ie:param name="KEYWORD" data=""/>
+	<ie:param name="WHERE" data="(<%=where%>)"/>
+	<ie:param name="ITERATION" data="LATEST"/>
+	<ie:param name="VERSION" data="${@FORM[]revision[0]}"/>
+	<ie:param name="SHOW_WORKING_COPY" data="false" default="false"/>
+    <ie:param name="SORTBY" data="thePersistInfo.modifyStamp"/>
+    <ie:param name="SORTED" data="DESC"/>	
+	<ie:param name="GROUP_OUT" data="resultObjects"/>
+</ie:webject>

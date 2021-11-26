@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE loadFileList SYSTEM "/wt/load/windchillLoad.dtd">
+<loadFileList>
+	
+	<!-- Phase 1 Lifecycle Templates -->
+	<loadFile filename="com/catl/lifecycle/LC_doc_Cycle.xml" title="doc_LC.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/lifecycle/LC_ECA.xml" title="LC_ECA.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+    <loadFile filename="com/catl/lifecycle/LC_ECN.xml" title="LC_ECN.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+    <loadFile filename="com/catl/lifecycle/LC_ECR.xml" title="LC_ECR.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+    <loadFile filename="com/catl/lifecycle/LC_Promotion_PartApply.xml" title="LC_Promotion_PartApply.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+    <loadFile filename="com/catl/lifecycle/LC_Promotion_BOM.xml" title="LC_Promotion_BOM.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	
+	<!-- 设计变更相关LC -->
+	<loadFile filename="com/catl/lifecycle/LC_DCA.xml" title="LC_DCA.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+    <loadFile filename="com/catl/lifecycle/LC_DCN.xml" title="LC_DCN.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+    
+    <!-- 设计禁用相关LC -->
+    <loadFile filename="com/catl/lifecycle/LC_DesignDisabled_Cycle.xml" title="LC_物料设计禁用单" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/lifecycle/LC_doc_cycle_phase2.xml" title="LC_doc_cycle_phase2.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>    
+    <loadFile filename="com/catl/lifecycle/LC_epmdoc_Cycle.xml" title="EPM_LC.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+    <loadFile filename="com/catl/lifecycle/LC_Part_Cycle.xml" title="Part_LC.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+    
+    <!-- Datasheet相关LC -->
+	<loadFile filename="com/catl/lifecycle/LC_EDatasheetDoc_cycle.xml" title="LC_EDatasheetDoc_cycle.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	
+	<!-- 物料成熟度管理 -->
+    <loadFile filename="com/catl/lifecycle/LC_NFAEMaturityUp3Report.xml" title="非FAE物料成熟度3升级报告LC" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+	<loadFile filename="com/catl/lifecycle/LC_FAE_MaterialsMaturity.xml" title="LC_FAE物料成熟度升级单" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+
+	<!-- 研发过程文档、产品技术文档 -->
+	<loadFile filename="com/catl/lifecycle/LC_doc_Cycle_Rd_TechnicalDoc.xml" title="LC_doc_Cycle_Rd_TechnicalDoc.xml" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile> 
+
+	
+	<!-- 采购类型变更管理 -->
+	<loadFile filename="com/catl/lifecycle/LC_SourceChange_Cycle.xml" title="LC_采购类型变更单" containerPath="/wt.inf.container.OrgContainer=CATL"></loadFile>
+</loadFileList>

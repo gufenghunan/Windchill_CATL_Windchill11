@@ -1,0 +1,30 @@
+ResourceInfo.class=wt.tools.resource.EnumResourceInfo
+
+# 立即报废
+SCRAPIMMEDIATELY.value=\u7acb\u5373\u62a5\u5e9f
+SCRAPIMMEDIATELY.order=10
+
+# 全部返工
+REWORKCOMPLETELY.value=\u5168\u90e8\u8fd4\u5de5
+REWORKCOMPLETELY.order=20
+
+# 用完切换
+SWITCHAFTERUSING.value=\u7528\u5b8c\u5207\u6362
+SWITCHAFTERUSING.order=30
+
+# 配套用完切换，其余报废
+SCRAPOTHERS.value=\u914d\u5957\u7528\u5b8c\u5207\u6362\uff0c\u5176\u4f59\u62a5\u5e9f
+SCRAPOTHERS.order=40
+
+#用于其他项目
+OTHERPROJECTUSE.value=\u7528\u4e8e\u5176\u4ed6\u9879\u76ee
+OTHERPROJECTUSE.order=50
+
+# 齐套切换
+MATCHCHANGE.value=\u9f50\u5957\u5207\u6362
+MATCHCHANGE.order=60
+
+# 转其他用途
+OTHERUSE.value=\u8f6c\u5176\u4ed6\u7528\u9014
+OTHERUSE.order=70
+

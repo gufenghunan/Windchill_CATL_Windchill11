@@ -1,0 +1,930 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <style type="text/css">
+ .bom_t1 input{
+   -webkit-margin-before: 0px;
+   -webkit-padding-before: 0px;
+   border:0px !important;
+   width:80px;
+   height:100%;
+}
+.bom_t1 td{
+   width:80px;
+}
+.bom_t1 select{
+   -webkit-margin-before: 0px;
+   -webkit-padding-before: 0px;
+   border:0px !important;
+   width:120px;
+   height:100%;
+}
+#bom_D11 input{
+   width:120px;
+}
+
+#bom_D14 input{
+    width:120px;
+}
+
+#bom_D21 input{
+   width:120px;
+}
+.bom_t1{
+width:1200px;
+}
+ input::-webkit-outer-spin-button,
+ input::-webkit-inner-spin-button {
+     -webkit-appearance: none;
+ }
+ input[type="number"]{
+     -moz-appearance: textfield;
+ }
+ 
+.bom_b1{white-space-collapsing:preserve;}
+.bom_t1{border-collapse:collapse;border-spacing:0;}
+.bom_r1{height:25.5pt;}
+.bom_r2{height:15.75pt;}
+.bom_c1{white-space:pre-wrap;text-align:left;background-color:silver;border-top:thin solid black;border-right:thin solid black;border-bottom:thin solid black;border-left:thin solid black;font-size:10pt;}
+.bom_c2{white-space:pre-wrap;background-color:silver;border-top:thin solid black;border-right:thin solid black;border-bottom:thin solid black;border-left:thin solid black;font-size:10pt;}
+.bom_c3{white-space:pre-wrap;text-align:center;background-color:silver;border-top:thin solid black;border-right:thin solid black;border-bottom:thin solid black;border-left:thin solid black;font-size:10pt;}
+.bom_c4{white-space:pre-wrap;font-size:10pt;}
+.bom_c5{white-space:pre-wrap;text-align:center;background-color:silver;border-top:thin solid black;border-right:thin solid black;border-bottom:thin solid black;font-size:10pt;}
+.bom_c6{white-space:pre-wrap;text-align:center;border-top:thin solid black;border-bottom:thin solid black;border-right:thin solid black;border-left:thin solid black;font-size:10pt;}
+.bom_c7{white-space:pre-wrap;text-align:left;background-color:white;border-top:thin solid black;border-right:thin solid black;border-bottom:thin solid black;border-left:thin solid black;font-size:10pt;}
+.bom_c8{white-space:pre-wrap;text-align:right;background-color:white;border-top:thin solid black;border-right:thin solid black;border-bottom:thin solid black;border-left:thin solid black;font-size:10pt;}
+.bom_c9{white-space:pre-wrap;border-top:thin solid black;border-right:thin solid black;border-bottom:thin solid black;border-left:thin solid black;font-size:10pt;}
+.bom_c10{white-space:pre-wrap;text-align:center;background-color:#FFF;border-top:thin solid black;border-right:thin solid black;border-bottom:thin solid black;border-left:thin solid black;font-size:10pt;}
+.bom_c11{white-space:pre-wrap;background-color:#FFF;border-top:thin solid black;border-right:thin solid black;border-bottom:thin solid black;border-left:thin solid black;font-size:10pt;}
+.bom_c12{white-space:pre-wrap;background-color:white;border-top:thin solid black;border-right:thin solid black;border-bottom:thin solid black;border-left:thin solid black;font-size:10pt;}
+.bom_c13{white-space:pre-wrap;text-align:right;background-color:white;border-top:thin solid black;border-right:thin solid black;border-bottom:thin solid black;font-size:10pt;}
+.bom_c14{white-space:pre-wrap;text-align:center;border-top:thin solid black;border-right:thin solid black;border-bottom:thin solid black;border-left:thin solid black;font-size:10pt;}
+.bom_c15{white-space:pre-wrap;font-size:12pt;font-style:italic;}
+</style></head>
+   <body class="bom_b1">
+      <div style="padding:10px;"><span>电芯数量:</span><input type="number" onchange="refreshDesign();" id="input_bom_F3" name="F3"/></div>
+         <table class="bom_t1">
+         <colgroup>
+            <col width="63">
+            <col width="80">
+            <col width="100">
+            <col width="60">
+            <col width="60">
+            <col width="50">
+            <col width="50">
+            <col width="50">
+            <col width="60">
+            <col width="50">
+            <col width="25">
+            <col width="60">
+            <col width="60">
+            <col width="60">
+            <col width="60">
+            <col width="60">
+         </colgroup>
+         <tbody>
+            <tr class="bom_r1">
+               <td class="bom_c1">Item</td>
+               <td class="bom_c2"><div style="width:100px">Material name</div></td>
+               <td class="bom_c2">P/N</td>
+               <td class="bom_c3">Ratio</td>
+               <td class="bom_c3">Total<br/>(不含优率)</td>
+               <td class="bom_c3">Total(含优率)
+               </td>
+               <td class="bom_c3">Unit </td>
+               <td class="bom_c3">优率</td>
+               <td class="bom_c3">PMC确认</td>
+               <td class="bom_c3">备注</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c3">Price<br/>(RMB/unit)</td>
+               <td class="bom_c3">Weight(kg)</td>
+               <td class="bom_c3">RMB of cell</td>
+               <td class="bom_c3">Cost Ratio</td>
+               <td class="bom_c5">Weight Raito</td>
+            </tr>
+            <tr class="bom_r2">
+               <td class="bom_c6" rowspan="9">Cathode</td>
+               <td id="bom_C6" class="bom_c7"></td>
+               <td id="bom_D6" class="bom_c7"></td>
+               <td id="bom_E6" class="bom_c8"></td>
+               <td id="bom_F6" class="bom_c8"></td>
+               <td id="bom_G6" class="bom_c8"></td>
+               <td id="bom_H6" class="bom_c9"></td>
+               <td id="bom_I6" class="bom_c10"></td>
+               <td id="bom_J6" class="bom_c10"></td>
+               <td id="bom_K6" class="bom_c9"></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td id="bom_M6" class="bom_c11"></td>
+               <td id="bom_N6" class="bom_c12"></td>
+               <td id="bom_O6" class="bom_c12"></td>
+               <td id="bom_P6" class="bom_c12"></td>
+               <td id="bom_Q6" class="bom_c13"></td>
+            </tr>
+            <tr class="bom_r2">
+               <td id="bom_C7" class="bom_c7"></td>
+               <td id="bom_D7" class="bom_c7"></td>
+               <td id="bom_E7" class="bom_c8"></td>
+               <td id="bom_F7" class="bom_c8"></td>
+               <td id="bom_G7" class="bom_c8"></td>
+               <td id="bom_H7" class="bom_c9"></td>
+               <td id="bom_I7" class="bom_c10"></td>
+               <td id="bom_J7" class="bom_c10"></td>
+               <td id="bom_K7" class="bom_c9"></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td id="bom_M7" class="bom_c11"></td>
+               <td id="bom_N7" class="bom_c12"></td>
+               <td id="bom_O7" class="bom_c12"></td>
+               <td id="bom_P7" class="bom_c12"></td>
+               <td id="bom_Q7" class="bom_c13"></td>
+            </tr>
+            <tr class="bom_r2">
+               <td id="bom_C8" class="bom_c7"></td>
+               <td id="bom_D8" class="bom_c7"></td>
+               <td id="bom_E8" class="bom_c8"></td>
+               <td id="bom_F8" class="bom_c8"></td>
+               <td id="bom_G8" class="bom_c8"></td>
+               <td id="bom_H8" class="bom_c9"></td>
+               <td id="bom_I8" class="bom_c10"></td>
+               <td id="bom_J8" class="bom_c10"></td>
+               <td id="bom_K8" class="bom_c9"></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td id="bom_M8" class="bom_c11"></td>
+               <td id="bom_N8" class="bom_c12"></td>
+               <td id="bom_O8" class="bom_c12"></td>
+               <td id="bom_P8" class="bom_c12"></td>
+               <td id="bom_Q8" class="bom_c13"></td>
+            </tr>
+            <tr class="bom_r2">
+               <td id="bom_C9" class="bom_c7"></td>
+               <td id="bom_D9" class="bom_c7"></td>
+               <td id="bom_E9" class="bom_c8"></td>
+               <td id="bom_F9" class="bom_c8"></td>
+               <td id="bom_G9" class="bom_c8"></td>
+               <td id="bom_H9" class="bom_c9"></td>
+               <td id="bom_I9" class="bom_c10"></td>
+               <td id="bom_J9" class="bom_c10"></td>
+               <td id="bom_K9" class="bom_c9"></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td id="bom_M9" class="bom_c11"></td>
+               <td id="bom_N9" class="bom_c12"></td>
+               <td id="bom_O9" class="bom_c12"></td>
+               <td id="bom_P9" class="bom_c12"></td>
+               <td id="bom_Q9" class="bom_c13"></td>
+            </tr>
+            <tr class="bom_r2">
+               <td id="bom_C10" class="bom_c7"></td>
+               <td id="bom_D10" class="bom_c7"></td>
+               <td id="bom_E10" class="bom_c8"></td>
+               <td id="bom_F10" class="bom_c8"></td>
+               <td id="bom_G10" class="bom_c8"></td>
+               <td id="bom_H10" class="bom_c9"></td>
+               <td id="bom_I10" class="bom_c10"></td>
+               <td id="bom_J10" class="bom_c10"></td>
+               <td id="bom_K10" class="bom_c9"></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td id="bom_M10" class="bom_c11"></td>
+               <td id="bom_N10" class="bom_c12"></td>
+               <td id="bom_O10" class="bom_c12"></td>
+               <td id="bom_P10" class="bom_c12"></td>
+               <td id="bom_Q10" class="bom_c13"></td>
+            </tr>
+            <tr class="bom_r2">
+               <td id="bom_C11" class="bom_c7"></td>
+               <td id="bom_D11" class="bom_c7"></td>
+               <td id="bom_E11" class="bom_c8"></td>
+               <td id="bom_F11" class="bom_c8"></td>
+               <td id="bom_G11" class="bom_c8"></td>
+               <td id="bom_H11" class="bom_c9"></td>
+               <td id="bom_I11" class="bom_c10"></td>
+               <td id="bom_J11" class="bom_c10"></td>
+               <td id="bom_K11" class="bom_c9"></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td id="bom_M11" class="bom_c11"></td>
+               <td id="bom_N11" class="bom_c12"></td>
+               <td id="bom_O11" class="bom_c12"></td>
+               <td id="bom_P11" class="bom_c12"></td>
+               <td id="bom_Q11" class="bom_c13"></td>
+            </tr>
+            <tr class="bom_r2">
+               <td id="bom_C12" class="bom_c7"></td>
+               <td id="bom_D12" class="bom_c7"></td>
+               <td id="bom_E12" class="bom_c8"></td>
+               <td id="bom_F12" class="bom_c8 symbol" ext:qtip="An TaiHua:<br/>总基材面积"></td>
+               <td id="bom_G12" class="bom_c8"></td>
+               <td id="bom_H12" class="bom_c9"></td>
+               <td id="bom_I12" class="bom_c10"></td>
+               <td id="bom_J12" class="bom_c10"></td>
+               <td id="bom_K12" class="bom_c9 symbol" ext:qtip="Li ZhongHong:<br/>基材总宽"></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td id="bom_M12" class="bom_c11"></td>
+               <td id="bom_N12" class="bom_c12"></td>
+               <td id="bom_O12" class="bom_c12"></td>
+               <td id="bom_P12" class="bom_c12"></td>
+               <td id="bom_Q12" class="bom_c13"></td>
+            </tr>
+            <tr class="bom_r2">
+               <td id="bom_C13" class="bom_c7"></td>
+               <td id="bom_D13" class="bom_c7"></td>
+               <td id="bom_E13" class="bom_c8"></td>
+               <td id="bom_F13" class="bom_c8"></td>
+               <td id="bom_G13" class="bom_c8"></td>
+               <td id="bom_H13" class="bom_c9"></td>
+               <td id="bom_I13" class="bom_c10"></td>
+               <td id="bom_J13" class="bom_c10"></td>
+               <td id="bom_K13" class="bom_c9 symbol" ext:qtip="Li ZhongHong:<br/>极耳高"></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td id="bom_M13" class="bom_c11"></td>
+               <td id="bom_N13" class="bom_c12"></td>
+               <td id="bom_O13" class="bom_c12"></td>
+               <td id="bom_P13" class="bom_c12"></td>
+               <td id="bom_Q13" class="bom_c13"></td>
+            </tr>
+            <tr class="bom_r2">
+               <td id="bom_C14" class="bom_c7"></td>
+               <td id="bom_D14" class="bom_c7"></td>
+               <td id="bom_E14" class="bom_c8 symbol" ext:qtip="An TaiHua:<br/>单位：g/m^2"></td>
+               <td id="bom_F14" class="bom_c8"></td>
+               <td id="bom_G14" class="bom_c8"></td>
+               <td id="bom_H14" class="bom_c9"></td>
+               <td id="bom_I14" class="bom_c10"></td>
+               <td id="bom_J14" class="bom_c10"></td>
+               <td id="bom_K14" class="bom_c9"></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td id="bom_M14" class="bom_c11"></td>
+               <td id="bom_N14" class="bom_c12"></td>
+               <td id="bom_O14" class="bom_c12"></td>
+               <td id="bom_P14" class="bom_c12"></td>
+               <td id="bom_Q14" class="bom_c13"></td>
+            </tr>
+            <tr class="bom_r2">
+               <td class="bom_c14" rowspan="9">Anode</td>
+               <td id="bom_C15" class="bom_c7"></td>
+               <td id="bom_D15" class="bom_c7"></td>
+               <td id="bom_E15" class="bom_c8"></td>
+               <td id="bom_F15" class="bom_c8"></td>
+               <td id="bom_G15" class="bom_c8"></td>
+               <td id="bom_H15" class="bom_c9"></td>
+               <td id="bom_I15" class="bom_c10"></td>
+               <td id="bom_J15" class="bom_c10"></td>
+               <td id="bom_K15" class="bom_c9"></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td id="bom_M15" class="bom_c11"></td>
+               <td id="bom_N15" class="bom_c12"></td>
+               <td id="bom_O15" class="bom_c12"></td>
+               <td id="bom_P15" class="bom_c12"></td>
+               <td id="bom_Q15" class="bom_c13"></td>
+            </tr>
+            <tr class="bom_r2">
+               <td id="bom_C16" class="bom_c7"></td>
+               <td id="bom_D16" class="bom_c7"></td>
+               <td id="bom_E16" class="bom_c8"></td>
+               <td id="bom_F16" class="bom_c8"></td>
+               <td id="bom_G16" class="bom_c8"></td>
+               <td id="bom_H16" class="bom_c9"></td>
+               <td id="bom_I16" class="bom_c10"></td>
+               <td id="bom_J16" class="bom_c10"></td>
+               <td id="bom_K16" class="bom_c9"></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td id="bom_M16" class="bom_c11"></td>
+               <td id="bom_N16" class="bom_c12"></td>
+               <td id="bom_O16" class="bom_c12"></td>
+               <td id="bom_P16" class="bom_c12"></td>
+               <td id="bom_Q16" class="bom_c13"></td>
+            </tr>
+            <tr class="bom_r2">
+               <td id="bom_C17" class="bom_c7"></td>
+               <td id="bom_D17" class="bom_c7"></td>
+               <td id="bom_E17" class="bom_c8"></td>
+               <td id="bom_F17" class="bom_c8"></td>
+               <td id="bom_G17" class="bom_c8"></td>
+               <td id="bom_H17" class="bom_c9"></td>
+               <td id="bom_I17" class="bom_c10"></td>
+               <td id="bom_J17" class="bom_c10"></td>
+               <td id="bom_K17" class="bom_c9"></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td id="bom_M17" class="bom_c11"></td>
+               <td id="bom_N17" class="bom_c12"></td>
+               <td id="bom_O17" class="bom_c12"></td>
+               <td id="bom_P17" class="bom_c12"></td>
+               <td id="bom_Q17" class="bom_c13"></td>
+            </tr>
+            <tr class="bom_r2">
+               <td id="bom_C18" class="bom_c7"></td>
+               <td id="bom_D18" class="bom_c7"></td>
+               <td id="bom_E18" class="bom_c8"></td>
+               <td id="bom_F18" class="bom_c8"></td>
+               <td id="bom_G18" class="bom_c8"></td>
+               <td id="bom_H18" class="bom_c9"></td>
+               <td id="bom_I18" class="bom_c10"></td>
+               <td id="bom_J18" class="bom_c10"></td>
+               <td id="bom_K18" class="bom_c9"></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td id="bom_M18" class="bom_c11"></td>
+               <td id="bom_N18" class="bom_c12"></td>
+               <td id="bom_O18" class="bom_c12"></td>
+               <td id="bom_P18" class="bom_c12"></td>
+               <td id="bom_Q18" class="bom_c13"></td>
+            </tr>
+            <tr class="bom_r2">
+               <td id="bom_C19" class="bom_c7"></td>
+               <td id="bom_D19" class="bom_c7"></td>
+               <td id="bom_E19" class="bom_c8"></td>
+               <td id="bom_F19" class="bom_c8"></td>
+               <td id="bom_G19" class="bom_c8"></td>
+               <td id="bom_H19" class="bom_c9"></td>
+               <td id="bom_I19" class="bom_c10"></td>
+               <td id="bom_J19" class="bom_c10"></td>
+               <td id="bom_K19" class="bom_c9"></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td id="bom_M19" class="bom_c11"></td>
+               <td id="bom_N19" class="bom_c12"></td>
+               <td id="bom_O19" class="bom_c12"></td>
+               <td id="bom_P19" class="bom_c12"></td>
+               <td id="bom_Q19" class="bom_c13"></td>
+            </tr>
+            <tr class="bom_r2">
+               <td id="bom_C20" class="bom_c7"></td>
+               <td id="bom_D20" class="bom_c7"></td>
+               <td id="bom_E20" class="bom_c8"></td>
+               <td id="bom_F20" class="bom_c8"></td>
+               <td id="bom_G20" class="bom_c8"></td>
+               <td id="bom_H20" class="bom_c9"></td>
+               <td id="bom_I20" class="bom_c10"></td>
+               <td id="bom_J20" class="bom_c10"></td>
+               <td id="bom_K20" class="bom_c9"></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td id="bom_M20" class="bom_c11"></td>
+               <td id="bom_N20" class="bom_c12"></td>
+               <td id="bom_O20" class="bom_c12"></td>
+               <td id="bom_P20" class="bom_c12"></td>
+               <td id="bom_Q20" class="bom_c13"></td>
+            </tr>
+            <tr class="bom_r2">
+               <td id="bom_C21" class="bom_c7"></td>
+               <td id="bom_D21" class="bom_c7"></td>
+               <td id="bom_E21" class="bom_c8"></td>
+               <td id="bom_F21" class="bom_c8"></td>
+               <td id="bom_G21" class="bom_c8"></td>
+               <td id="bom_H21" class="bom_c9"></td>
+               <td id="bom_I21" class="bom_c10"></td>
+               <td id="bom_J21" class="bom_c10"></td>
+               <td id="bom_K21" class="bom_c9"></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td id="bom_M21" class="bom_c11"></td>
+               <td id="bom_N21" class="bom_c12"></td>
+               <td id="bom_O21" class="bom_c12"></td>
+               <td id="bom_P21" class="bom_c12"></td>
+               <td id="bom_Q21" class="bom_c13"></td>
+            </tr>
+            <tr class="bom_r2">
+               <td id="bom_C22" class="bom_c7"></td>
+               <td id="bom_D22" class="bom_c7"></td>
+               <td id="bom_E22" class="bom_c8"></td>
+               <td id="bom_F22" class="bom_c8 symbol" ext:qtip="An TaiHua:<br/>总基材面积"></td>
+               <td id="bom_G22" class="bom_c8"></td>
+               <td id="bom_H22" class="bom_c9"></td>
+               <td id="bom_I22" class="bom_c10"></td>
+               <td id="bom_J22" class="bom_c10"></td>
+               <td id="bom_K22" class="bom_c9 symbol" ext:qtip="Li ZhongHong:<br/>基材总宽"></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td id="bom_M22" class="bom_c11"></td>
+               <td id="bom_N22" class="bom_c12"></td>
+               <td id="bom_O22" class="bom_c12"></td>
+               <td id="bom_P22" class="bom_c12"></td>
+               <td id="bom_Q22" class="bom_c13"></td>
+            </tr>
+            <tr class="bom_r2">
+               <td id="bom_C23" class="bom_c7"></td>
+               <td id="bom_D23" class="bom_c7"></td>
+               <td id="bom_E23" class="bom_c8"></td>
+               <td id="bom_F23" class="bom_c8"></td>
+               <td id="bom_G23" class="bom_c8"></td>
+               <td id="bom_H23" class="bom_c9"></td>
+               <td id="bom_I23" class="bom_c10"></td>
+               <td id="bom_J23" class="bom_c10"></td>
+               <td id="bom_K23" class="bom_c9 symbol" ext:qtip="Li ZhongHong:<br/>极耳高"></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td id="bom_M23" class="bom_c11"></td>
+               <td id="bom_N23" class="bom_c12"></td>
+               <td id="bom_O23" class="bom_c12"></td>
+               <td id="bom_P23" class="bom_c12"></td>
+               <td id="bom_Q23" class="bom_c13"></td>
+            </tr>
+            <tr class="bom_r2">
+               <td class="bom_c9">Electrolyte</td>
+               <td id="bom_C24" class="bom_c7"></td>
+               <td id="bom_D24" class="bom_c7"></td>
+               <td id="bom_E24" class="bom_c8"></td>
+               <td id="bom_F24" class="bom_c8"></td>
+               <td id="bom_G24" class="bom_c8"></td>
+               <td id="bom_H24" class="bom_c9"></td>
+               <td id="bom_I24" class="bom_c10"></td>
+               <td id="bom_J24" class="bom_c10"></td>
+               <td id="bom_K24" class="bom_c9"></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td id="bom_M24" class="bom_c11"></td>
+               <td id="bom_N24" class="bom_c12"></td>
+               <td id="bom_O24" class="bom_c12"></td>
+               <td id="bom_P24" class="bom_c12"></td>
+               <td id="bom_Q24" class="bom_c13"></td>
+            </tr>
+            <tr class="bom_r2">
+               <td class="bom_c9">Seperator </td>
+               <td id="bom_C25" class="bom_c7"></td>
+               <td id="bom_D25" class="bom_c7"></td>
+               <td id="bom_E25" class="bom_c8"></td>
+               <td id="bom_F25" class="bom_c8 symbol" ext:qtip="An TaiHua:<br/>面积"></td>
+               <td id="bom_G25" class="bom_c8"></td>
+               <td id="bom_H25" class="bom_c9"></td>
+               <td id="bom_I25" class="bom_c10"></td>
+               <td id="bom_J25" class="bom_c10"></td>
+               <td id="bom_K25" class="bom_c9"></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td id="bom_M25" class="bom_c11"></td>
+               <td id="bom_N25" class="bom_c12"></td>
+               <td id="bom_O25" class="bom_c12"></td>
+               <td id="bom_P25" class="bom_c12"></td>
+               <td id="bom_Q25" class="bom_c13"></td>
+            </tr>
+            <tr class="bom_r2">
+               <td class="bom_c6" rowspan="18">机械物料</td>
+               <td id="bom_C26" class="bom_c7"></td>
+               <td id="bom_D26" class="bom_c7"></td>
+               <td id="bom_E26" class="bom_c8"></td>
+               <td id="bom_F26" class="bom_c8"></td>
+               <td id="bom_G26" class="bom_c8"></td>
+               <td id="bom_H26" class="bom_c9"></td>
+               <td id="bom_I26" class="bom_c10"></td>
+               <td id="bom_J26" class="bom_c10"></td>
+               <td id="bom_K26" class="bom_c9"></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td id="bom_M26" class="bom_c11"></td>
+               <td id="bom_N26" class="bom_c12"></td>
+               <td id="bom_O26" class="bom_c12"></td>
+               <td id="bom_P26" class="bom_c12"></td>
+               <td id="bom_Q26" class="bom_c13"></td>
+            </tr>
+            <tr class="bom_r2">
+               <td id="bom_C27" class="bom_c7"></td>
+               <td id="bom_D27" class="bom_c7"></td>
+               <td id="bom_E27" class="bom_c8"></td>
+               <td id="bom_F27" class="bom_c8"></td>
+               <td id="bom_G27" class="bom_c8"></td>
+               <td id="bom_H27" class="bom_c9"></td>
+               <td id="bom_I27" class="bom_c10"></td>
+               <td id="bom_J27" class="bom_c10"></td>
+               <td id="bom_K27" class="bom_c9"></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td id="bom_M27" class="bom_c11"></td>
+               <td id="bom_N27" class="bom_c12"></td>
+               <td id="bom_O27" class="bom_c12"></td>
+               <td id="bom_P27" class="bom_c12"></td>
+               <td id="bom_Q27" class="bom_c13"></td>
+            </tr>
+            <tr class="bom_r2">
+               <td id="bom_C28" class="bom_c7"></td>
+               <td id="bom_D28" class="bom_c7"></td>
+               <td id="bom_E28" class="bom_c8"></td>
+               <td id="bom_F28" class="bom_c8"></td>
+               <td id="bom_G28" class="bom_c8"></td>
+               <td id="bom_H28" class="bom_c9"></td>
+               <td id="bom_I28" class="bom_c10"></td>
+               <td id="bom_J28" class="bom_c10"></td>
+               <td id="bom_K28" class="bom_c9"></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td id="bom_M28" class="bom_c11"></td>
+               <td id="bom_N28" class="bom_c12"></td>
+               <td id="bom_O28" class="bom_c12"></td>
+               <td id="bom_P28" class="bom_c12"></td>
+               <td id="bom_Q28" class="bom_c13"></td>
+            </tr>
+            <tr class="bom_r2">
+               <td id="bom_C29" class="bom_c7"></td>
+               <td id="bom_D29" class="bom_c7"></td>
+               <td id="bom_E29" class="bom_c8"></td>
+               <td id="bom_F29" class="bom_c8"></td>
+               <td id="bom_G29" class="bom_c8"></td>
+               <td id="bom_H29" class="bom_c9"></td>
+               <td id="bom_I29" class="bom_c10"></td>
+               <td id="bom_J29" class="bom_c10"></td>
+               <td id="bom_K29" class="bom_c9"></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td id="bom_M29" class="bom_c11"></td>
+               <td id="bom_N29" class="bom_c12"></td>
+               <td id="bom_O29" class="bom_c12"></td>
+               <td id="bom_P29" class="bom_c12"></td>
+               <td id="bom_Q29" class="bom_c13"></td>
+            </tr>
+            <tr class="bom_r2">
+               <td id="bom_C30" class="bom_c7"></td>
+               <td id="bom_D30" class="bom_c7"></td>
+               <td id="bom_E30" class="bom_c8"></td>
+               <td id="bom_F30" class="bom_c8"></td>
+               <td id="bom_G30" class="bom_c8"></td>
+               <td id="bom_H30" class="bom_c9"></td>
+               <td id="bom_I30" class="bom_c10"></td>
+               <td id="bom_J30" class="bom_c10"></td>
+               <td id="bom_K30" class="bom_c9"></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td id="bom_M30" class="bom_c11"></td>
+               <td id="bom_N30" class="bom_c12"></td>
+               <td id="bom_O30" class="bom_c12"></td>
+               <td id="bom_P30" class="bom_c12"></td>
+               <td id="bom_Q30" class="bom_c13"></td>
+            </tr>
+            <tr class="bom_r2">
+               <td id="bom_C31" class="bom_c7"></td>
+               <td id="bom_D31" class="bom_c7"></td>
+               <td id="bom_E31" class="bom_c8"></td>
+               <td id="bom_F31" class="bom_c8"></td>
+               <td id="bom_G31" class="bom_c8"></td>
+               <td id="bom_H31" class="bom_c9"></td>
+               <td id="bom_I31" class="bom_c10"></td>
+               <td id="bom_J31" class="bom_c10"></td>
+               <td id="bom_K31" class="bom_c9"></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td id="bom_M31" class="bom_c11"></td>
+               <td id="bom_N31" class="bom_c12"></td>
+               <td id="bom_O31" class="bom_c12"></td>
+               <td id="bom_P31" class="bom_c12"></td>
+               <td id="bom_Q31" class="bom_c13"></td>
+            </tr>
+            <tr class="bom_r2">
+               <td id="bom_C32" class="bom_c7"></td>
+               <td id="bom_D32" class="bom_c7"></td>
+               <td id="bom_E32" class="bom_c8"></td>
+               <td id="bom_F32" class="bom_c8"></td>
+               <td id="bom_G32" class="bom_c8"></td>
+               <td id="bom_H32" class="bom_c9"></td>
+               <td id="bom_I32" class="bom_c10"></td>
+               <td id="bom_J32" class="bom_c10"></td>
+               <td id="bom_K32" class="bom_c9"></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td id="bom_M32" class="bom_c11"></td>
+               <td id="bom_N32" class="bom_c12"></td>
+               <td id="bom_O32" class="bom_c12"></td>
+               <td id="bom_P32" class="bom_c12"></td>
+               <td id="bom_Q32" class="bom_c13"></td>
+            </tr>
+            <tr class="bom_r2">
+               <td id="bom_C33" class="bom_c7"></td>
+               <td id="bom_D33" class="bom_c7"></td>
+               <td id="bom_E33" class="bom_c8"></td>
+               <td id="bom_F33" class="bom_c8"></td>
+               <td id="bom_G33" class="bom_c8"></td>
+               <td id="bom_H33" class="bom_c9"></td>
+               <td id="bom_I33" class="bom_c10"></td>
+               <td id="bom_J33" class="bom_c10"></td>
+               <td id="bom_K33" class="bom_c9"></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td id="bom_M33" class="bom_c11"></td>
+               <td id="bom_N33" class="bom_c12"></td>
+               <td id="bom_O33" class="bom_c12"></td>
+               <td id="bom_P33" class="bom_c12"></td>
+               <td id="bom_Q33" class="bom_c13"></td>
+            </tr>
+            <tr class="bom_r2">
+               <td id="bom_C34" class="bom_c7"></td>
+               <td id="bom_D34" class="bom_c7"></td>
+               <td id="bom_E34" class="bom_c8"></td>
+               <td id="bom_F34" class="bom_c8"></td>
+               <td id="bom_G34" class="bom_c8"></td>
+               <td id="bom_H34" class="bom_c9"></td>
+               <td id="bom_I34" class="bom_c10"></td>
+               <td id="bom_J34" class="bom_c10"></td>
+               <td id="bom_K34" class="bom_c9"></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td id="bom_M34" class="bom_c11"></td>
+               <td id="bom_N34" class="bom_c12"></td>
+               <td id="bom_O34" class="bom_c12"></td>
+               <td id="bom_P34" class="bom_c12"></td>
+               <td id="bom_Q34" class="bom_c13"></td>
+            </tr>
+            <tr class="bom_r2">
+               <td id="bom_C35" class="bom_c7"></td>
+               <td id="bom_D35" class="bom_c7"></td>
+               <td id="bom_E35" class="bom_c8"></td>
+               <td id="bom_F35" class="bom_c8"></td>
+               <td id="bom_G35" class="bom_c8"></td>
+               <td id="bom_H35" class="bom_c9"></td>
+               <td id="bom_I35" class="bom_c10"></td>
+               <td id="bom_J35" class="bom_c10"></td>
+               <td id="bom_K35" class="bom_c9"></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td id="bom_M35" class="bom_c11"></td>
+               <td id="bom_N35" class="bom_c12"></td>
+               <td id="bom_O35" class="bom_c12"></td>
+               <td id="bom_P35" class="bom_c12"></td>
+               <td id="bom_Q35" class="bom_c13"></td>
+            </tr>
+            <tr class="bom_r2">
+               <td id="bom_C36" class="bom_c7"></td>
+               <td id="bom_D36" class="bom_c7"></td>
+               <td id="bom_E36" class="bom_c8"></td>
+               <td id="bom_F36" class="bom_c8"></td>
+               <td id="bom_G36" class="bom_c8"></td>
+               <td id="bom_H36" class="bom_c9"></td>
+               <td id="bom_I36" class="bom_c10"></td>
+               <td id="bom_J36" class="bom_c10"></td>
+               <td id="bom_K36" class="bom_c9"></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td id="bom_M36" class="bom_c11"></td>
+               <td id="bom_N36" class="bom_c12"></td>
+               <td id="bom_O36" class="bom_c12"></td>
+               <td id="bom_P36" class="bom_c12"></td>
+               <td id="bom_Q36" class="bom_c13"></td>
+            </tr>
+            <tr class="bom_r2">
+               <td id="bom_C37" class="bom_c7"></td>
+               <td id="bom_D37" class="bom_c7"></td>
+               <td id="bom_E37" class="bom_c8"></td>
+               <td id="bom_F37" class="bom_c8"></td>
+               <td id="bom_G37" class="bom_c8"></td>
+               <td id="bom_H37" class="bom_c9"></td>
+               <td id="bom_I37" class="bom_c10"></td>
+               <td id="bom_J37" class="bom_c10"></td>
+               <td id="bom_K37" class="bom_c9"></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td id="bom_M37" class="bom_c11"></td>
+               <td id="bom_N37" class="bom_c12"></td>
+               <td id="bom_O37" class="bom_c12"></td>
+               <td id="bom_P37" class="bom_c12"></td>
+               <td id="bom_Q37" class="bom_c13"></td>
+            </tr>
+            <tr class="bom_r2">
+               <td id="bom_C38" class="bom_c7"></td>
+               <td id="bom_D38" class="bom_c7"></td>
+               <td id="bom_E38" class="bom_c8"></td>
+               <td id="bom_F38" class="bom_c8"></td>
+               <td id="bom_G38" class="bom_c8"></td>
+               <td id="bom_H38" class="bom_c9"></td>
+               <td id="bom_I38" class="bom_c10"></td>
+               <td id="bom_J38" class="bom_c10"></td>
+               <td id="bom_K38" class="bom_c9"></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td id="bom_M38" class="bom_c11"></td>
+               <td id="bom_N38" class="bom_c12"></td>
+               <td id="bom_O38" class="bom_c12"></td>
+               <td id="bom_P38" class="bom_c12"></td>
+               <td id="bom_Q38" class="bom_c13"></td>
+            </tr>
+            <tr class="bom_r2">
+               <td id="bom_C39" class="bom_c7"></td>
+               <td id="bom_D39" class="bom_c7"></td>
+               <td id="bom_E39" class="bom_c8"></td>
+               <td id="bom_F39" class="bom_c8"></td>
+               <td id="bom_G39" class="bom_c8"></td>
+               <td id="bom_H39" class="bom_c9"></td>
+               <td id="bom_I39" class="bom_c10"></td>
+               <td id="bom_J39" class="bom_c10"></td>
+               <td id="bom_K39" class="bom_c9"></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td id="bom_M39" class="bom_c11"></td>
+               <td id="bom_N39" class="bom_c12"></td>
+               <td id="bom_O39" class="bom_c12"></td>
+               <td id="bom_P39" class="bom_c12"></td>
+               <td id="bom_Q39" class="bom_c13"></td>
+            </tr>
+            <tr class="bom_r2">
+               <td id="bom_C40" class="bom_c7"></td>
+               <td id="bom_D40" class="bom_c7"></td>
+               <td id="bom_E40" class="bom_c8"></td>
+               <td id="bom_F40" class="bom_c8"></td>
+               <td id="bom_G40" class="bom_c8"></td>
+               <td id="bom_H40" class="bom_c9"></td>
+               <td id="bom_I40" class="bom_c10"></td>
+               <td id="bom_J40" class="bom_c10"></td>
+               <td id="bom_K40" class="bom_c9"></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td id="bom_M40" class="bom_c11"></td>
+               <td id="bom_N40" class="bom_c12"></td>
+               <td id="bom_O40" class="bom_c12"></td>
+               <td id="bom_P40" class="bom_c12"></td>
+               <td id="bom_Q40" class="bom_c13"></td>
+            </tr>
+            <tr class="bom_r2">
+               <td id="bom_C41" class="bom_c7"></td>
+               <td id="bom_D41" class="bom_c7"></td>
+               <td id="bom_E41" class="bom_c8"></td>
+               <td id="bom_F41" class="bom_c8"></td>
+               <td id="bom_G41" class="bom_c8"></td>
+               <td id="bom_H41" class="bom_c9"></td>
+               <td id="bom_I41" class="bom_c10"></td>
+               <td id="bom_J41" class="bom_c10"></td>
+               <td id="bom_K41" class="bom_c9"></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td id="bom_M41" class="bom_c11"></td>
+               <td id="bom_N41" class="bom_c12"></td>
+               <td id="bom_O41" class="bom_c12"></td>
+               <td id="bom_P41" class="bom_c12"></td>
+               <td id="bom_Q41" class="bom_c13"></td>
+            </tr>
+            <tr class="bom_r2">
+               <td id="bom_C42" class="bom_c7"></td>
+               <td id="bom_D42" class="bom_c7"></td>
+               <td id="bom_E42" class="bom_c8"></td>
+               <td id="bom_F42" class="bom_c8"></td>
+               <td id="bom_G42" class="bom_c8"></td>
+               <td id="bom_H42" class="bom_c9"></td>
+               <td id="bom_I42" class="bom_c10"></td>
+               <td id="bom_J42" class="bom_c10"></td>
+               <td id="bom_K42" class="bom_c9"></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td id="bom_M42" class="bom_c11"></td>
+               <td id="bom_N42" class="bom_c12"></td>
+               <td id="bom_O42" class="bom_c12"></td>
+               <td id="bom_P42" class="bom_c12"></td>
+               <td id="bom_Q42" class="bom_c13"></td>
+            </tr>
+            <tr class="bom_r2">
+               <td id="bom_C43" class="bom_c7"></td>
+               <td id="bom_D43" class="bom_c7"></td>
+               <td id="bom_E43" class="bom_c8"></td>
+               <td id="bom_F43" class="bom_c8"></td>
+               <td id="bom_G43" class="bom_c8"></td>
+               <td id="bom_H43" class="bom_c9"></td>
+               <td id="bom_I43" class="bom_c10"></td>
+               <td id="bom_J43" class="bom_c10"></td>
+               <td id="bom_K43" class="bom_c9"></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td id="bom_M43" class="bom_c11"></td>
+               <td id="bom_N43" class="bom_c12"></td>
+               <td id="bom_O43" class="bom_c12"></td>
+               <td id="bom_P43" class="bom_c12"></td>
+               <td id="bom_Q43" class="bom_c13"></td>
+            </tr>
+            <tr class="bom_r2">
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td id="bom_M44" class="bom_c11"></td>
+               <td id="bom_N44" class="bom_c12"></td>
+               <td id="bom_O44" class="bom_c12"></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+            </tr>
+            <tr class="bom_r2">
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td id="bom_M45" class="bom_c11"></td>
+               <td id="bom_N45" class="bom_c12"></td>
+               <td id="bom_O45" class="bom_c12"></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+            </tr>
+            <tr class="bom_r2">
+               <td class="bom_c15">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+            </tr>
+            <tr class="bom_r2">
+               <td></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+            </tr>
+            <tr class="bom_r2">
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+            </tr>
+            <tr class="bom_r2">
+               <td></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+            </tr>
+            <tr class="bom_r2">
+               <td></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+            </tr>
+            <tr class="bom_r2">
+               <td></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+            </tr>
+            <tr class="bom_r2">
+               <td></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+            </tr>
+            <tr class="bom_r2">
+               <td></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+            </tr>
+            <tr class="bom_r2">
+               <td></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+            </tr>
+            <tr class="bom_r2">
+               <td></td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+               <td class="bom_c4">&nbsp;</td>
+            </tr>
+         </tbody>
+      </table>
+   </body>
+</html>

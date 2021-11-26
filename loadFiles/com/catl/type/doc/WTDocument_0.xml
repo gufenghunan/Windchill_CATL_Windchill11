@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE NmLoader
+  SYSTEM "standardX26.dtd">
+<NmLoader>
+   <csvQuantityOfMeasure handler="wt.units.service.UnitsLoader.createQOM">
+      <csvname>Mass</csvname>
+      <csvdescription/>
+      <csvbaseUnitSymbol>kg</csvbaseUnitSymbol>
+      <csvnameAndValuePairs></csvnameAndValuePairs>
+   </csvQuantityOfMeasure>
+   <csvQuantityOfMeasure handler="wt.units.service.UnitsLoader.createQOM">
+      <csvname>Area</csvname>
+      <csvdescription/>
+      <csvbaseUnitSymbol>m**2</csvbaseUnitSymbol>
+      <csvnameAndValuePairs></csvnameAndValuePairs>
+   </csvQuantityOfMeasure>
+</NmLoader>

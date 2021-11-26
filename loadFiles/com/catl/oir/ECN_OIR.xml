@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE OrganizationConfig SYSTEM "standardX24.dtd">
+<OrganizationConfig>
+	<TypeBasedRule>
+		<EngineRule isDefault="false" enabled="true">
+			<ruleName>CATL ECN</ruleName>
+			<ruleSpecification><![CDATA[
+			
+			<AttributeValues objType="wt.change2.WTChangeOrder2">
+
+			  <!-- set the folder -->
+			  <AttrValue id="folder.id" algorithm="com.ptc.core.foundation.folder.server.impl.FolderPathAttributeAlgorithm">
+				 <Arg>/Default/更改通告</Arg>
+			  </AttrValue>
+
+                <AttrValue id="lifeCycle.id" algorithm="com.ptc.core.foundation.lifecycle.server.impl.LifeCycleTemplateAttributeAlgorithm">
+                    <Arg>LC_ECN</Arg>
+               </AttrValue>
+
+			   <AttrConstraint id="folder.id" algorithm="com.ptc.core.rule.server.impl.GatherAttributeConstraints">
+	       	      <Value algorithm="com.ptc.core.rule.server.impl.GetServerPreGeneratedValue"/>  
+				  <Value algorithm="com.ptc.core.rule.server.impl.GetRendererConstraint">
+                     <Arg>SelectGeneratedFolderByDefault</Arg>
+                  </Value>           
+	          </AttrConstraint>
+
+           </AttributeValues>
+
+		  
+
+		  			  ]]></ruleSpecification>
+		    <ruleType type="INIT" />
+		</EngineRule>
+		<className>wt.change2.WTChangeOrder2</className>
+	</TypeBasedRule>
+</OrganizationConfig>  
+             
+
+         

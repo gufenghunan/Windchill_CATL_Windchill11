@@ -1,0 +1,11 @@
+<classExporter>
+    <class>com.ptc.core.htmlcomp.tableview.TableViewDescriptor</class>
+    <dtd>standardX26.dtd</dtd>
+    <targetTag>default</targetTag>
+    <handler>com.ptc.core.htmlcomp.tableview.ixb.handlers.forclasses.ExpImpForTableViewDescriptor</handler>
+</classExporter>
+<elementImporter>
+    <tag>TableViewDescriptor</tag>
+    <dtd>standardX26.dtd</dtd>
+    <handler>com.ptc.xworks.ixb.UpdateExpImpForTableViewDescriptor</handler>
+</elementImporter>
